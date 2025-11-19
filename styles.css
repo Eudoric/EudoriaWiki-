@@ -1,0 +1,7973 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap');
+
+:root {
+    /* Forest & Earth Tones - Mother Nature Theme */
+    --bg-primary: #1a3a2e;
+    --bg-secondary: rgba(45, 80, 62, 0.85);
+    --bg-tertiary: rgba(62, 74, 61, 0.9);
+    --accent-primary: #d4af37;
+    --accent-secondary: #f4e4c1;
+    --text-primary: #f5f5dc;
+    --text-secondary: #c4d4c8;
+    --text-muted: #8fa895;
+    --border-color: #4a5a4a;
+    --hover-bg: rgba(212, 175, 55, 0.2);
+    --sage-green: #a8d5ba;
+    --soft-green: #90c695;
+    --success: #10b981;
+    --warning: #f59e0b;
+
+    /* Union-specific backgrounds */
+    --wesari-bg: linear-gradient(135deg, rgba(106, 190, 48, 0.15), rgba(163, 230, 53, 0.15));
+    --estara-bg: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(245, 158, 11, 0.15));
+    --sundra-bg: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(14, 165, 233, 0.15));
+    --norvayn-bg: linear-gradient(135deg, rgba(186, 230, 253, 0.15), rgba(224, 242, 254, 0.15));
+}
+
+/* Overview tagline styling */
+.overview-tagline {
+    font-style: italic;
+    color: var(--accent-secondary);
+    font-size: 1.1rem;
+}
+
+/* Noga Calendar Styles */
+.moons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.moon-card {
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.moon-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(45, 122, 79, 0.15);
+    border-color: var(--accent-secondary);
+}
+
+.moon-number {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    background: var(--accent-primary);
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.moon-icon {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+}
+
+.moon-card h3 {
+    font-size: 1.25rem;
+    color: var(--accent-primary);
+    margin-bottom: 0.75rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.moon-meaning {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.moon-season {
+    display: inline-block;
+    background: var(--accent-secondary);
+    color: white;
+    padding: 0.375rem 0.875rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.key-facts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.key-facts-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.key-facts-list li:last-child {
+    border-bottom: none;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(27, 67, 50, 0.7);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
+    margin: 5% auto;
+    padding: 0;
+    border: 3px solid var(--accent-primary);
+    border-radius: 1.5rem;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    color: var(--text-muted);
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: var(--accent-primary);
+    background: rgba(255, 255, 255, 0.9);
+    transform: rotate(90deg);
+}
+
+/* Image Modal Styles */
+.image-modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.image-modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.image-modal-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(218, 165, 32, 0.6);
+}
+
+.image-modal-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-modal-close:hover {
+    background: rgba(218, 165, 32, 0.8);
+    transform: rotate(90deg);
+}
+
+#modalImageCaption {
+    color: #daa520;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+}
+
+#modalBody {
+    padding: 2.5rem;
+}
+
+.zodiac-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.zodiac-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.zodiac-sign {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.zodiac-symbol {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.zodiac-moon-name {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.zodiac-body {
+    text-align: center;
+}
+
+.zodiac-essence {
+    background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.zodiac-caption {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    font-style: italic;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    border-left: 4px solid var(--accent-secondary);
+}
+
+.moon-card {
+    cursor: pointer;
+}
+
+.moon-card:hover {
+    border-color: var(--accent-primary);
+}
+
+/* Eudora Profile Styles */
+.eudora-profile {
+    background: linear-gradient(135deg, rgba(240, 250, 245, 0.95), rgba(255, 255, 255, 0.95));
+}
+
+/* Make ALL text in Eudora section green */
+.eudora-profile,
+.eudora-profile * {
+    color: #2d7a4f !important;
+}
+
+.eudora-profile h1,
+.eudora-profile h2,
+.eudora-profile h3,
+.eudora-profile h4,
+.eudora-profile h5,
+.eudora-profile h6 {
+    color: #2d7a4f !important;
+}
+
+.eudora-profile p,
+.eudora-profile li,
+.eudora-profile span,
+.eudora-profile strong,
+.eudora-profile em,
+.eudora-profile td,
+.eudora-profile th,
+.eudora-profile a,
+.eudora-profile label {
+    color: #2d7a4f !important;
+}
+
+.eudora-header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.eudora-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.eudora-heavenly-name {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.eudora-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.eudora-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.domains-container,
+.symbols-container,
+.colors-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.domain-tag,
+.symbol-tag {
+    background: var(--accent-secondary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.color-tag {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.relationship-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+}
+
+.relationship-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.relationship-list li:before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--accent-secondary);
+    font-weight: bold;
+}
+
+.festivals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.festival-card {
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.festival-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(45, 122, 79, 0.15);
+    border-color: var(--accent-secondary);
+}
+
+.festival-card h4 {
+    color: var(--accent-primary);
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.festival-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.festival-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+    color: white;
+    padding: 0.375rem 0.875rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Region Card Flag Thumbnails */
+.flag-thumbnail {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 0.75rem 0.75rem 0 0;
+    margin: -1rem -1rem 1rem -1rem;
+    background: var(--bg-primary);
+}
+
+.flag-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Region Modal Styles */
+.region-modal-content {
+    text-align: left;
+}
+
+.region-flag-large {
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    background: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.region-flag-large img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.region-modal-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-align: center;
+}
+
+.region-modal-union {
+    text-align: center;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.region-modal-section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.region-modal-section:last-child {
+    border-bottom: none;
+}
+
+.region-modal-section h4 {
+    color: var(--accent-secondary);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.region-modal-section p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Quiz Styles */
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.quiz-header h2 {
+    font-size: 2.5rem;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.quiz-header p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+#quizContent {
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border-color);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-start-btn {
+    background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+    color: white;
+    font-size: 1.5rem;
+    padding: 1.25rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(45, 122, 79, 0.3);
+}
+
+.quiz-start-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(45, 122, 79, 0.4);
+}
+
+.quiz-progress {
+    width: 100%;
+    height: 8px;
+    background: rgba(45, 122, 79, 0.2);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.quiz-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary));
+    transition: width 0.5s ease;
+    border-radius: 1rem;
+}
+
+.quiz-question-number {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.quiz-question {
+    width: 100%;
+}
+
+.quiz-question h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--accent-primary);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.quiz-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.quiz-answer-btn {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    font-family: 'Cinzel', serif;
+}
+
+.quiz-answer-btn:hover {
+    background: var(--hover-bg);
+    border-color: var(--accent-secondary);
+    transform: translateX(5px);
+}
+
+/* Quiz Results */
+.quiz-results {
+    text-align: center;
+    width: 100%;
+}
+
+.quiz-results h2 {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.quiz-result-flag {
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    background: var(--bg-primary);
+}
+
+.quiz-result-flag img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.quiz-result-region {
+    font-size: 3rem;
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.quiz-result-union {
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.quiz-result-description {
+    background: rgba(82, 183, 136, 0.1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--accent-secondary);
+}
+
+.quiz-result-description p {
+    color: var(--text-primary);
+    line-height: 1.7;
+}
+
+.quiz-result-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.quiz-result-detail {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-color);
+}
+
+.quiz-result-detail strong {
+    color: var(--accent-secondary);
+    margin-right: 0.5rem;
+}
+
+.quiz-result-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quiz-restart-btn,
+.quiz-explore-btn {
+    padding: 0.875rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    transition: all 0.3s ease;
+}
+
+.quiz-restart-btn {
+    background: var(--bg-secondary);
+    border: 2px solid var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.quiz-restart-btn:hover {
+    background: var(--hover-bg);
+}
+
+.quiz-explore-btn {
+    background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+    color: white;
+    box-shadow: 0 4px 15px rgba(45, 122, 79, 0.3);
+}
+
+.quiz-explore-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(45, 122, 79, 0.4);
+}
+
+/* Divine Quiz Styling */
+.god-quiz-container {
+    position: relative;
+}
+
+.divine-quiz-header {
+    position: relative;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.05), rgba(205, 127, 50, 0.05));
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.divine-symbol-small {
+    font-size: 3rem;
+    color: #daa520;
+    text-shadow:
+        0 0 20px rgba(218, 165, 32, 0.6),
+        0 0 40px rgba(218, 165, 32, 0.3);
+    margin-bottom: 1rem;
+    animation: rotateDivine 10s linear infinite;
+}
+
+.quiz-tagline {
+    color: #cd7f32;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 0.5rem 0 1rem;
+    font-family: 'Cinzel', serif;
+}
+
+.divine-start-btn {
+    background: linear-gradient(135deg, #cd7f32, #daa520);
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.4);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.divine-start-btn:hover {
+    box-shadow: 0 6px 25px rgba(218, 165, 32, 0.6);
+}
+
+.divine-progress {
+    background: rgba(218, 165, 32, 0.15);
+}
+
+.divine-progress-bar {
+    background: linear-gradient(90deg, #cd7f32, #daa520);
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+}
+
+.divine-question-number {
+    color: #b8860b;
+}
+
+.divine-answer-btn {
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    transition: all 0.3s ease;
+}
+
+.divine-answer-btn:hover {
+    background: rgba(218, 165, 32, 0.1);
+    border-color: #daa520;
+    transform: translateX(8px);
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.2);
+}
+
+/* Divine Quiz Results */
+.divine-quiz-results {
+    position: relative;
+    padding: 2rem;
+}
+
+.divine-light-glow {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(218, 165, 32, 0.2) 0%, transparent 70%);
+    animation: pulseDivineLight 3s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.divine-symbol-large {
+    font-size: 4rem;
+    color: #daa520;
+    text-shadow:
+        0 0 30px rgba(218, 165, 32, 0.8),
+        0 0 60px rgba(218, 165, 32, 0.4);
+    animation: rotateDivine 15s linear infinite;
+    margin-bottom: 1rem;
+}
+
+.god-quiz-result-name {
+    font-size: 3.5rem;
+    color: #daa520;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 0 2px 10px rgba(218, 165, 32, 0.3);
+}
+
+.god-quiz-result-titles {
+    color: #cd7f32;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.god-quiz-result-attributes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.attribute-badge {
+    background: linear-gradient(135deg, #cd7f32, #daa520);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+    font-family: 'Cinzel', serif;
+}
+
+.divine-result-description {
+    background: rgba(218, 165, 32, 0.08);
+    border-left: 4px solid #daa520;
+}
+
+.god-quiz-result-symbols {
+    background: rgba(218, 165, 32, 0.05);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(218, 165, 32, 0.2);
+    color: #5f4a1d;
+}
+
+.god-quiz-result-symbols strong {
+    color: #cd7f32;
+}
+
+.divine-result-actions {
+    margin-top: 2.5rem;
+}
+
+.divine-restart-btn {
+    background: var(--bg-secondary);
+    border: 2px solid #daa520;
+    color: #b8860b;
+}
+
+.divine-restart-btn:hover {
+    background: rgba(218, 165, 32, 0.1);
+    border-color: #cd7f32;
+}
+
+.divine-explore-btn {
+    background: linear-gradient(135deg, #cd7f32, #daa520);
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.4);
+}
+
+.divine-explore-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(218, 165, 32, 0.6);
+}
+
+/* Zodiac Quiz Specific Styles */
+.zodiac-symbol-large {
+    font-size: 5rem;
+    color: #daa520;
+    text-shadow:
+        0 0 30px rgba(218, 165, 32, 0.8),
+        0 0 60px rgba(218, 165, 32, 0.4);
+    margin-bottom: 1rem;
+}
+
+.zodiac-quiz-result-name {
+    font-size: 3rem;
+    color: #daa520;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 0 2px 10px rgba(218, 165, 32, 0.3);
+}
+
+.zodiac-motto {
+    color: #cd7f32;
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(218, 165, 32, 0.05);
+    border-radius: 0.5rem;
+}
+
+.zodiac-details {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.zodiac-details p {
+    color: #daa520;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(218, 165, 32, 0.08);
+    border-radius: 0.5rem;
+    border: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.zodiac-details strong {
+    color: #cd7f32;
+}
+
+.zodiac-quiz-result-strengths,
+.zodiac-quiz-result-weaknesses {
+    background: rgba(218, 165, 32, 0.05);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    border: 1px solid rgba(218, 165, 32, 0.2);
+    color: #cd7f32;
+}
+
+.zodiac-quiz-result-strengths strong,
+.zodiac-quiz-result-weaknesses strong {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+}
+
+/* Eudoric Gods Styles */
+.gods-pantheon {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.gods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.god-card {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.15), rgba(184, 134, 11, 0.1));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.god-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(218, 165, 32, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.god-card:hover::before {
+    opacity: 1;
+}
+
+.god-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(218, 165, 32, 0.6);
+    box-shadow: 0 12px 40px rgba(218, 165, 32, 0.3);
+}
+
+.god-card-icon {
+    font-size: 3rem;
+    color: #daa520;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(218, 165, 32, 0.5);
+}
+
+.god-card-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(218, 165, 32, 0.5);
+    box-shadow:
+        0 0 20px rgba(218, 165, 32, 0.4),
+        0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.god-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.god-card h3 {
+    font-size: 1.75rem;
+    color: #daa520;
+    margin-bottom: 0.75rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.god-card-titles {
+    color: #cd7f32;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.god-realm-tag {
+    display: inline-block;
+    background: rgba(218, 165, 32, 0.2);
+    color: #daa520;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid rgba(218, 165, 32, 0.4);
+}
+
+/* God Profile Styles */
+.god-profile {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.god-header {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.2), rgba(184, 134, 11, 0.15));
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.god-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(218, 165, 32, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.god-icon-large {
+    font-size: 5rem;
+    color: #daa520;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 30px rgba(218, 165, 32, 0.6);
+    animation: godGlow 3s ease-in-out infinite;
+}
+
+.god-profile-image {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(218, 165, 32, 0.6);
+    box-shadow:
+        0 0 40px rgba(218, 165, 32, 0.5),
+        0 0 80px rgba(218, 165, 32, 0.3),
+        0 8px 25px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: godImageGlow 3s ease-in-out infinite;
+}
+
+.god-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes godImageGlow {
+    0%, 100% {
+        box-shadow:
+            0 0 40px rgba(218, 165, 32, 0.5),
+            0 0 80px rgba(218, 165, 32, 0.3),
+            0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow:
+            0 0 60px rgba(218, 165, 32, 0.7),
+            0 0 100px rgba(218, 165, 32, 0.5),
+            0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@keyframes godGlow {
+    0%, 100% { text-shadow: 0 0 30px rgba(218, 165, 32, 0.6); }
+    50% { text-shadow: 0 0 50px rgba(218, 165, 32, 0.9); }
+}
+
+.god-name {
+    font-size: 3.5rem;
+    color: #daa520;
+    margin-bottom: 1rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.alt-name {
+    font-size: 2rem;
+    color: #cd7f32;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.god-titles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.god-title-tag {
+    background: rgba(218, 165, 32, 0.2);
+    color: #daa520;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(218, 165, 32, 0.4);
+}
+
+.god-realm {
+    color: #cd7f32;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.attributes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.attribute-tag {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.15), rgba(184, 134, 11, 0.1));
+    color: #cd7f32;
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(205, 127, 50, 0.3);
+}
+
+.symbols-list,
+.creations-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.symbols-list li,
+.creations-list li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: #cd7f32;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.symbols-list li:before,
+.creations-list li:before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #daa520;
+    font-weight: bold;
+}
+
+.symbols-list li:last-child,
+.creations-list li:last-child {
+    border-bottom: none;
+}
+
+.powers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.power-card {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.1), rgba(184, 134, 11, 0.05));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.power-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(218, 165, 32, 0.5);
+    box-shadow: 0 8px 25px rgba(218, 165, 32, 0.2);
+}
+
+.power-card h4 {
+    color: #daa520;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.power-card p {
+    color: #cd7f32;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Tati'anna-specific: Role and Legacy */
+.role-legacy-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.legacy-card {
+    background: linear-gradient(135deg, rgba(147, 112, 219, 0.15), rgba(138, 43, 226, 0.1));
+    border: 2px solid rgba(147, 112, 219, 0.4);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.legacy-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(147, 112, 219, 0.6);
+    box-shadow: 0 8px 25px rgba(147, 112, 219, 0.3);
+}
+
+.legacy-card h4 {
+    color: #9370db;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.legacy-card p {
+    color: #cd7f32;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Tati'anna-specific: Personality */
+.personality-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.personality-trait {
+    background: linear-gradient(135deg, rgba(218, 112, 214, 0.12), rgba(186, 85, 211, 0.08));
+    border: 2px solid rgba(218, 112, 214, 0.35);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.personality-trait:hover {
+    transform: translateY(-4px);
+    border-color: rgba(218, 112, 214, 0.5);
+    box-shadow: 0 8px 25px rgba(218, 112, 214, 0.25);
+}
+
+.personality-trait h4 {
+    color: #da70d6;
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.personality-trait p {
+    color: #cd7f32;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.feats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.feat-card {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.15), rgba(184, 134, 11, 0.1));
+    border: 2px solid rgba(205, 127, 50, 0.4);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feat-card::before {
+    content: '⚔';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.8rem;
+    color: rgba(205, 127, 50, 0.3);
+    transition: all 0.3s ease;
+}
+
+.feat-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(205, 127, 50, 0.6);
+    box-shadow: 0 8px 25px rgba(205, 127, 50, 0.25);
+}
+
+.feat-card:hover::before {
+    color: rgba(205, 127, 50, 0.6);
+    transform: scale(1.2);
+}
+
+.feat-card h4 {
+    color: #cd7f32;
+    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 0 0 8px rgba(205, 127, 50, 0.3);
+}
+
+.feat-card p {
+    color: #cd7f32;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
+
+.domains-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.domain-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.08));
+    border: 2px solid rgba(218, 165, 32, 0.4);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.domain-card::before {
+    content: '✦';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: rgba(218, 165, 32, 0.3);
+    transition: all 0.3s ease;
+}
+
+.domain-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(218, 165, 32, 0.6);
+    box-shadow: 0 10px 30px rgba(218, 165, 32, 0.25);
+}
+
+.domain-card:hover::before {
+    color: rgba(218, 165, 32, 0.6);
+    transform: rotate(90deg);
+}
+
+.domain-card h4 {
+    color: #daa520;
+    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+}
+
+.domain-card p {
+    color: #cd7f32;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.myths-container {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.myth-quote {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(205, 127, 50, 0.05));
+    border-left: 4px solid #daa520;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color: #cd7f32;
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    position: relative;
+}
+
+.myth-quote::before {
+    content: '✦';
+    position: absolute;
+    top: 1rem;
+    left: -0.7rem;
+    color: #daa520;
+    font-size: 1.2rem;
+    background: #0a0806;
+    padding: 0 0.2rem;
+}
+
+.divine-law {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(205, 127, 50, 0.05));
+    border-left: 4px solid #daa520;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    color: #cd7f32;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.god-history {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #cd7f32;
+    padding: 1.25rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.06), rgba(184, 134, 11, 0.04));
+    border-radius: 0.5rem;
+    border-left: 3px solid rgba(218, 165, 32, 0.4);
+}
+
+.legend-container {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(205, 127, 50, 0.06));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 1.75rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.legend-container::before {
+    content: '✦';
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: rgba(218, 165, 32, 0.2);
+}
+
+.legend-title {
+    color: #daa520;
+    font-size: 1.3rem;
+    font-family: 'Cinzel Decorative', serif;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+}
+
+.legend-story {
+    color: #cd7f32;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.companion-container {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.12), rgba(184, 134, 11, 0.08));
+    border: 2px solid rgba(205, 127, 50, 0.35);
+    border-radius: 1rem;
+    padding: 1.75rem;
+    margin-top: 1rem;
+}
+
+.companion-name {
+    color: #cd7f32;
+    font-size: 1.3rem;
+    font-family: 'Cinzel Decorative', serif;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(205, 127, 50, 0.3);
+}
+
+.companion-description {
+    color: #cd7f32;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.phenomena-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.phenomenon-card {
+    background: linear-gradient(135deg, rgba(184, 134, 11, 0.12), rgba(205, 127, 50, 0.08));
+    border: 2px solid rgba(184, 134, 11, 0.35);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.phenomenon-card::before {
+    content: '◈';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: rgba(184, 134, 11, 0.3);
+    transition: all 0.3s ease;
+}
+
+.phenomenon-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(184, 134, 11, 0.5);
+    box-shadow: 0 8px 25px rgba(184, 134, 11, 0.2);
+}
+
+.phenomenon-card:hover::before {
+    color: rgba(184, 134, 11, 0.5);
+    transform: rotate(45deg);
+}
+
+.phenomenon-card h4 {
+    color: #b8860b;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 0 0 8px rgba(184, 134, 11, 0.3);
+}
+
+.phenomenon-card p {
+    color: #cd7f32;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.forms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.form-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(205, 127, 50, 0.08));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.form-card::before {
+    content: '⟡';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.8rem;
+    color: rgba(218, 165, 32, 0.3);
+    transition: all 0.3s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(218, 165, 32, 0.5);
+    box-shadow: 0 8px 25px rgba(218, 165, 32, 0.2);
+}
+
+.form-card:hover::before {
+    color: rgba(218, 165, 32, 0.6);
+    transform: scale(1.2) rotate(180deg);
+}
+
+.form-card h4 {
+    color: #daa520;
+    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+}
+
+.form-card p {
+    color: #cd7f32;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.god-quote {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(205, 127, 50, 0.1));
+    border-left: 5px solid #daa520;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    color: #daa520;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.god-quote::before {
+    content: '❝';
+    position: absolute;
+    top: -0.5rem;
+    left: 1rem;
+    font-size: 3rem;
+    color: rgba(218, 165, 32, 0.3);
+}
+
+.god-quote::after {
+    content: '❞';
+    position: absolute;
+    bottom: -1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: rgba(218, 165, 32, 0.3);
+}
+
+.prophecies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.prophecy-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(184, 134, 11, 0.06));
+    border: 2px solid rgba(218, 165, 32, 0.35);
+    border-left: 4px solid #daa520;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.prophecy-card::before {
+    content: '⚬';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: rgba(218, 165, 32, 0.25);
+    transition: all 0.3s ease;
+}
+
+.prophecy-card:hover {
+    transform: translateY(-4px);
+    border-left-color: #daa520;
+    box-shadow: 0 8px 25px rgba(218, 165, 32, 0.25);
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.08));
+}
+
+.prophecy-card:hover::before {
+    color: rgba(218, 165, 32, 0.5);
+    transform: scale(1.3);
+}
+
+.prophecy-card h4 {
+    color: #daa520;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 0 0 8px rgba(218, 165, 32, 0.3);
+    font-style: italic;
+}
+
+.prophecy-card p {
+    color: #cd7f32;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* Doctrine Styling */
+.doctrine-container {
+    margin-top: 1.5rem;
+}
+
+.doctrine-title {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+}
+
+.doctrine-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.doctrine-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(184, 134, 11, 0.06));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.doctrine-step:hover {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.08));
+    border-color: rgba(218, 165, 32, 0.5);
+    transform: translateX(5px);
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #daa520, #b8860b);
+    color: #0a0806;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(218, 165, 32, 0.4);
+}
+
+.step-content h5 {
+    color: #daa520;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.step-content p {
+    color: #cd7f32;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.doctrine-philosophy {
+    color: #daa520;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-style: italic;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(205, 127, 50, 0.08));
+    border-left: 4px solid #daa520;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+/* Weapon Styling */
+.weapon-container {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(184, 134, 11, 0.08));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.weapon-name {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.4);
+}
+
+.weapon-feat {
+    color: #cd7f32;
+    line-height: 1.8;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Tools Styling */
+.tools-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tool-item {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(184, 134, 11, 0.06));
+    border: 2px solid rgba(218, 165, 32, 0.25);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.tool-item:hover {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.08));
+    border-color: rgba(218, 165, 32, 0.4);
+    transform: translateY(-2px);
+}
+
+.tool-item h4 {
+    color: #daa520;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel', serif;
+}
+
+.tool-item p {
+    color: #cd7f32;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Teaching Styling */
+.divine-teaching {
+    color: #daa520;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    font-style: italic;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(205, 127, 50, 0.08));
+    border-left: 4px solid #daa520;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+/* Relationship Styling */
+.relationship-container {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(184, 134, 11, 0.06));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.relationship-god {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.relationship-connection {
+    color: #cd7f32;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* Family Container Styling */
+.family-container {
+    background: linear-gradient(135deg, rgba(34, 139, 34, 0.1), rgba(46, 125, 50, 0.08));
+    border: 2px solid rgba(76, 175, 80, 0.4);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.family-entry {
+    color: #cd7f32;
+    line-height: 2;
+    font-size: 1rem;
+    margin: 0.75rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid rgba(76, 175, 80, 0.5);
+}
+
+.family-entry strong {
+    color: #4caf50;
+}
+
+/* Sacred Elements Container Styling */
+.sacred-elements-container {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.1), rgba(160, 82, 45, 0.08));
+    border: 2px solid rgba(205, 133, 63, 0.4);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.sacred-element {
+    color: #cd7f32;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(139, 69, 19, 0.05);
+    border-radius: 0.5rem;
+    border-left: 3px solid rgba(205, 133, 63, 0.5);
+}
+
+.sacred-element strong {
+    color: #cd853f;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.sacred-element p {
+    color: #daa520;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Worship Styling */
+.divine-worship {
+    color: #daa520;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-style: italic;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(205, 127, 50, 0.06));
+    border: 2px solid rgba(218, 165, 32, 0.25);
+    border-radius: 0.75rem;
+}
+
+/* Origin Styling */
+.divine-origin {
+    color: #cd7f32;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.god-temperament {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #cd7f32;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.05), rgba(184, 134, 11, 0.03));
+    border-radius: 0.5rem;
+    font-style: italic;
+}
+
+.god-nature {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cd7f32;
+    font-style: italic;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.1), rgba(184, 134, 11, 0.05));
+    border-left: 4px solid #daa520;
+    border-radius: 0.5rem;
+}
+
+/* Eudoric Numerals Styling */
+.numerals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.numeral-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(184, 134, 11, 0.08));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.numeral-card:hover {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(184, 134, 11, 0.12));
+    border-color: rgba(218, 165, 32, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(218, 165, 32, 0.2);
+}
+
+.numeral-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(218, 165, 32, 0.2);
+}
+
+.numeral-symbol {
+    font-size: 3rem;
+    color: #daa520;
+    text-shadow: 0 0 15px rgba(218, 165, 32, 0.5);
+    flex-shrink: 0;
+}
+
+.numeral-info {
+    flex-grow: 1;
+}
+
+.numeral-number {
+    display: inline-block;
+    background: linear-gradient(135deg, #daa520, #b8860b);
+    color: #0a0806;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.numeral-name {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.numeral-meaning {
+    color: #b8860b;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.numeral-description {
+    color: #cd7f32;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.myth-quote-numeral {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(205, 127, 50, 0.1));
+    border-left: 4px solid #daa520;
+    padding: 1.5rem 2rem;
+    margin: 1rem 0;
+    color: #daa520;
+    font-size: 1.15rem;
+    font-style: italic;
+    text-align: center;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.myth-quote-numeral::before {
+    content: '✦';
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: rgba(218, 165, 32, 0.4);
+}
+
+/* Eudoric Letters Styling */
+.letters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.letter-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(184, 134, 11, 0.06));
+    border: 2px solid rgba(218, 165, 32, 0.25);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.letter-card:hover {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.1));
+    border-color: rgba(218, 165, 32, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(218, 165, 32, 0.15);
+}
+
+.letter-symbol {
+    font-size: 3.5rem;
+    color: #daa520;
+    text-shadow: 0 0 12px rgba(218, 165, 32, 0.4);
+    margin-bottom: 0.75rem;
+    line-height: 1;
+}
+
+.letter-info {
+    width: 100%;
+}
+
+.letter-sound {
+    display: inline-block;
+    background: linear-gradient(135deg, #daa520, #b8860b);
+    color: #0a0806;
+    font-weight: bold;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.letter-name {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.letter-meaning {
+    color: #cd7f32;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.application-section {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(184, 134, 11, 0.06));
+    border-radius: 0.75rem;
+    border: 2px solid rgba(218, 165, 32, 0.2);
+}
+
+.application-section h4 {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.application-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.application-section ul li {
+    color: #cd7f32;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.application-section ul li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: #daa520;
+}
+
+.inscription-example {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(184, 134, 11, 0.12));
+    border: 3px solid rgba(218, 165, 32, 0.4);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+
+.inscription-text {
+    font-size: 2.5rem;
+    color: #daa520;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 20px rgba(218, 165, 32, 0.5);
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+}
+
+.inscription-breakdown {
+    color: #b8860b;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.inscription-translation {
+    color: #cd7f32;
+    font-size: 1.1rem;
+    text-align: center;
+    font-style: italic;
+    padding-top: 1rem;
+    border-top: 2px solid rgba(218, 165, 32, 0.3);
+}
+
+/* Eudoric Welcome Screen - Divine & Mystic */
+.eudoric-welcome-screen {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Holy Light Effects */
+.divine-rays {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle,
+        rgba(218, 165, 32, 0.3) 0%,
+        rgba(218, 165, 32, 0.15) 30%,
+        rgba(218, 165, 32, 0.05) 50%,
+        transparent 70%
+    );
+    animation: pulseDivineLight 4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.divine-light-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle,
+        rgba(218, 165, 32, 0.4) 0%,
+        rgba(184, 134, 11, 0.2) 40%,
+        transparent 70%
+    );
+    animation: pulseDivineLight 3s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes pulseDivineLight {
+    0%, 100% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+.eudoric-welcome-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 900px;
+    padding: 3rem;
+    background: linear-gradient(135deg,
+        rgba(10, 8, 6, 0.9) 0%,
+        rgba(26, 20, 16, 0.95) 50%,
+        rgba(10, 8, 6, 0.9) 100%
+    );
+    border: 3px solid rgba(218, 165, 32, 0.5);
+    border-radius: 1.5rem;
+    box-shadow:
+        0 0 50px rgba(218, 165, 32, 0.4),
+        inset 0 0 50px rgba(218, 165, 32, 0.1);
+}
+
+.divine-symbol {
+    font-size: 5rem;
+    color: #daa520;
+    text-shadow:
+        0 0 20px rgba(218, 165, 32, 0.8),
+        0 0 40px rgba(218, 165, 32, 0.6),
+        0 0 60px rgba(218, 165, 32, 0.4);
+    margin-bottom: 1.5rem;
+    animation: rotateDivine 10s linear infinite;
+}
+
+@keyframes rotateDivine {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.eudoric-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3rem;
+    color: #daa520;
+    text-shadow:
+        0 0 15px rgba(218, 165, 32, 0.8),
+        0 0 30px rgba(218, 165, 32, 0.5);
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.eudoric-tagline {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: #b8860b;
+    font-style: italic;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+    margin-bottom: 2rem;
+}
+
+.divine-divider {
+    width: 60%;
+    height: 2px;
+    margin: 2rem auto;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(218, 165, 32, 0.8) 50%,
+        transparent 100%
+    );
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.6);
+}
+
+.eudoric-description {
+    font-size: 1.2rem;
+    color: #cd7f32;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 5px rgba(218, 165, 32, 0.3);
+}
+
+.eudoric-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.divine-stat-card {
+    background: linear-gradient(135deg,
+        rgba(218, 165, 32, 0.15) 0%,
+        rgba(184, 134, 11, 0.1) 100%
+    );
+    border: 2px solid rgba(218, 165, 32, 0.4);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 20px rgba(218, 165, 32, 0.2);
+}
+
+.divine-stat-card:hover {
+    background: linear-gradient(135deg,
+        rgba(218, 165, 32, 0.25) 0%,
+        rgba(184, 134, 11, 0.2) 100%
+    );
+    border-color: rgba(218, 165, 32, 0.7);
+    transform: translateY(-10px);
+    box-shadow:
+        0 15px 40px rgba(218, 165, 32, 0.4),
+        0 0 30px rgba(218, 165, 32, 0.3);
+}
+
+.divine-stat-card .stat-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 10px rgba(218, 165, 32, 0.6));
+}
+
+.divine-stat-card h3 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.5rem;
+    color: #daa520;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.6);
+}
+
+.divine-stat-card p {
+    font-family: 'Cinzel', serif;
+    color: #b8860b;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.divine-invitation {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: rgba(218, 165, 32, 0.08);
+    border-top: 2px solid rgba(218, 165, 32, 0.3);
+    border-bottom: 2px solid rgba(218, 165, 32, 0.3);
+}
+
+.divine-invitation p {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: #daa520;
+    font-style: italic;
+    text-shadow: 0 0 5px rgba(218, 165, 32, 0.4);
+}
+
+/* Eudraneth Page Styling */
+.eudraneth-page .union-header {
+    position: relative;
+    padding-top: 2rem;
+}
+
+.eudraneth-icon {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.5));
+}
+
+.eudraneth-image-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow:
+        0 10px 40px rgba(218, 165, 32, 0.3),
+        0 0 60px rgba(218, 165, 32, 0.2);
+    border: 3px solid rgba(218, 165, 32, 0.4);
+}
+
+.eudraneth-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.eudraneth-description {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #daa520;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.eudraneth-essence {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #cd7f32;
+    font-style: italic;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(184, 134, 11, 0.06));
+    border-left: 4px solid #daa520;
+    border-radius: 0.5rem;
+}
+
+.community-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.1));
+    border: 3px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+.community-card:hover {
+    border-color: rgba(218, 165, 32, 0.5);
+    box-shadow: 0 10px 30px rgba(218, 165, 32, 0.2);
+}
+
+.community-header h3 {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.community-subtitle {
+    color: #b8860b;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.community-alt-name {
+    color: #cd7f32;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.community-quote {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(205, 127, 50, 0.12));
+    border-left: 4px solid #daa520;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    color: #daa520;
+    font-size: 1.1rem;
+    font-style: italic;
+    border-radius: 0.5rem;
+}
+
+.quote-source {
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #b8860b;
+    font-style: normal;
+}
+
+.community-content {
+    margin-top: 1.5rem;
+}
+
+.community-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #cd7f32;
+    margin-bottom: 1.5rem;
+}
+
+.community-detail {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background: rgba(218, 165, 32, 0.08);
+    border-radius: 0.75rem;
+    border-left: 3px solid rgba(218, 165, 32, 0.4);
+}
+
+.community-detail.warning {
+    background: rgba(205, 50, 50, 0.1);
+    border-left-color: rgba(205, 50, 50, 0.5);
+}
+
+.community-detail h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.community-detail.warning h4 {
+    color: #ff6b6b;
+}
+
+.community-detail p {
+    color: #cd7f32;
+    line-height: 1.7;
+}
+
+.community-architecture,
+.community-features,
+.community-symbolism,
+.community-myths {
+    margin-top: 2rem;
+}
+
+.community-architecture h4,
+.community-features h4,
+.community-symbolism h4,
+.community-myths h4 {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(218, 165, 32, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.arch-item {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(184, 134, 11, 0.06));
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    border: 2px solid rgba(218, 165, 32, 0.25);
+}
+
+.arch-item h5 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.arch-item p {
+    color: #cd7f32;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(184, 134, 11, 0.08));
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(184, 134, 11, 0.12));
+    border-color: rgba(218, 165, 32, 0.5);
+    transform: translateY(-3px);
+}
+
+.feature-card h5 {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+    color: #cd7f32;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.community-symbolism p {
+    color: #cd7f32;
+    line-height: 1.8;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(218, 165, 32, 0.05);
+    border-radius: 0.5rem;
+}
+
+.community-symbolism strong {
+    color: #daa520;
+}
+
+.community-myths .myth-quote {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(205, 127, 50, 0.08));
+    border-left: 4px solid #daa520;
+    padding: 1.25rem 1.75rem;
+    margin: 1rem 0;
+    color: #daa520;
+    font-size: 1.05rem;
+    font-style: italic;
+    border-radius: 0.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', 'Georgia', serif;
+    /* Dark forest canopy background with subtle overlay */
+    background-image: url('Images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: darken;
+    color: var(--text-primary);
+    overflow: hidden;
+    transition: background 0.5s ease;
+}
+
+/* Eudoric Divine Background */
+body.eudoric-mode {
+    background: #0a0806;
+    background-image:
+        linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(26, 20, 16, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%),
+        linear-gradient(135deg, rgba(205, 127, 50, 0.15) 0%, transparent 50%, rgba(184, 134, 11, 0.15) 100%),
+        radial-gradient(circle at 20% 30%, rgba(205, 127, 50, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(184, 134, 11, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(218, 165, 32, 0.08) 0%, transparent 70%),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" opacity="0.25"><circle cx="200" cy="150" r="3" fill="%23daa520"/><circle cx="400" cy="250" r="2" fill="%23cd7f32"/><circle cx="600" cy="180" r="4" fill="%23b8860b"/><circle cx="800" cy="300" r="3" fill="%23daa520"/><circle cx="1000" cy="200" r="2" fill="%23cd7f32"/><circle cx="300" cy="450" r="3" fill="%23b8860b"/><circle cx="700" cy="550" r="4" fill="%23daa520"/><circle cx="900" cy="650" r="2" fill="%23cd7f32"/><path d="M100,400 L150,350 L200,400 L150,375 Z" fill="%23daa520" opacity="0.5"/><path d="M500,300 L550,250 L600,300 L550,275 Z" fill="%23cd7f32" opacity="0.5"/><path d="M900,500 L950,450 L1000,500 L950,475 Z" fill="%23b8860b" opacity="0.5"/></svg>'),
+        url('Images/Eudraneth.jpg');
+    background-size: cover, cover, cover, cover, cover, cover, cover;
+    background-position: center, center, center, center, center, center, center;
+    background-attachment: fixed;
+    background-blend-mode: normal, screen, screen, screen, screen, normal, normal;
+}
+
+/* Eudoric Mode Overrides - Maintain Dark Divine Aesthetic */
+body.eudoric-mode .sidebar {
+    background: #000000;
+}
+
+body.eudoric-mode .app-header {
+    background: #000000;
+    border-bottom: 2px solid #333;
+}
+
+body.eudoric-mode .search-box {
+    background: #000000;
+    border-bottom: 1px solid #333;
+}
+
+body.eudoric-mode .search-box input {
+    background: #1a1a1a;
+    border-color: #333;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 280px;
+    background: var(--bg-primary);
+    border-right: 2px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.app-header {
+    padding: 2rem 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+    background: var(--bg-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.app-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d4af37;
+    margin-bottom: 0.25rem;
+    font-family: 'Cinzel Decorative', 'Georgia', serif;
+    text-shadow: 0 2px 4px rgba(212, 175, 55, 0.3);
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    color: #f4e4c1;
+    font-weight: 400;
+}
+
+/* Mode Tabs */
+.mode-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    background: rgba(168, 213, 186, 0.2);
+    border-radius: 2rem;
+    padding: 0.25rem;
+}
+
+.mode-tab {
+    flex: 1;
+    padding: 0.625rem 1rem;
+    background: transparent;
+    border: none;
+    border-radius: 2rem;
+    color: #f4e4c1;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Cinzel', serif;
+}
+
+.mode-tab:hover {
+    color: #d4af37;
+    background: rgba(212, 175, 55, 0.15);
+}
+
+.mode-tab.active {
+    background: #90c695;
+    color: #000000;
+    box-shadow: 0 2px 8px rgba(144, 198, 149, 0.4);
+}
+
+.mode-navigation {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.search-box {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-primary);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.625rem 1rem;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #90c695;
+    box-shadow: 0 0 0 3px rgba(168, 213, 186, 0.2);
+}
+
+.search-box input::placeholder {
+    color: #a8d5ba;
+}
+
+/* Navigation */
+.nav-menu {
+    padding: 1rem 0;
+    flex: 1;
+}
+
+.nav-section {
+    margin-bottom: 1.5rem;
+}
+
+.nav-section h3 {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #a8d5ba;
+    text-shadow: 0 1px 2px rgba(168, 213, 186, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+/* Small vine decoration before sidebar section headers */
+.nav-section h3::before {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M2 10 Q5 8 8 10 Q10 12 12 12' stroke='%234a3728' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M6 9 Q5 7 3 8 L2 9 Q1 10 2 11 L3 12 Q4 13 5 11 Z' fill='%232d5016' opacity='0.8'/%3E%3Cpath d='M10 11 Q9 9 7 10 L6 11 Q5 12 6 13 L7 14 Q8 15 9 13 Z' fill='%234a7c2c' opacity='0.75'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.6;
+}
+
+.nav-button {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border: none;
+    color: #f5f5dc;
+    text-shadow: none;
+    text-align: left;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+}
+
+.nav-button:hover {
+    background: rgba(212, 175, 55, 0.15);
+    color: #d4af37;
+    text-shadow: 0 1px 2px rgba(212, 175, 55, 0.3);
+    border-left-color: #90c695;
+}
+
+.nav-button.active {
+    background: rgba(212, 175, 55, 0.15);
+    color: #d4af37;
+    text-shadow: 0 1px 2px rgba(212, 175, 55, 0.3);
+    border-left-color: #90c695;
+    font-weight: 500;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+    background: var(--bg-primary);
+}
+
+.content-area {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #C19A6B;
+}
+
+/* Override text colors for main content area - dark text on light backgrounds */
+.content-area h1,
+.content-area h2,
+.content-area h3,
+.content-area h4,
+.content-area h5,
+.content-area h6 {
+    color: #2d6a4f;
+}
+
+.content-area p,
+.content-area li,
+.content-area td,
+.content-area span:not(.wiki-infobox-label) {
+    color: #C19A6B;
+}
+
+.content-area .union-header h2 {
+    color: #2d6a4f !important;
+}
+
+.content-area .union-header p {
+    color: #C19A6B !important;
+}
+
+/* Keep gold for labels and special elements */
+.content-area .wiki-infobox-label {
+    color: #d4af37;
+}
+
+.wiki-infobox-value {
+    color: #C19A6B !important;
+}
+
+.wiki-toc-title {
+    color: #2d6a4f !important;
+}
+
+/* Breadcrumbs - keep readable colors */
+.content-area .wiki-breadcrumbs {
+    color: #666666 !important;
+}
+
+.content-area .wiki-breadcrumbs a {
+    color: #d4af37 !important;
+}
+
+.content-area .wiki-breadcrumbs span {
+    color: #666666 !important;
+}
+
+/* Table of contents links */
+.content-area .wiki-toc a {
+    color: #d4af37 !important;
+}
+
+.content-area .wiki-toc a:hover {
+    color: #b8960a !important;
+}
+
+.content-area .wiki-toc li::before {
+    color: #d4af37 !important;
+}
+
+/* Hero/welcome description text */
+.content-area .hero-description,
+.content-area .coming-soon-description {
+    color: #C19A6B !important;
+}
+
+/* ==========================================
+   FANDOM WIKI STYLING
+   ========================================== */
+
+/* Breadcrumb Navigation */
+.wiki-breadcrumbs {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.wiki-breadcrumbs a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.wiki-breadcrumbs a:hover {
+    color: var(--accent-secondary);
+    text-decoration: underline;
+}
+
+.wiki-breadcrumbs span {
+    margin: 0 0.5rem;
+    color: var(--text-muted);
+}
+
+/* Character Infobox */
+.wiki-infobox {
+    float: right;
+    width: 300px;
+    margin: 0 0 1.5rem 1.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wiki-infobox-header {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.wiki-infobox-image {
+    width: 100%;
+    height: 300px;
+    background: rgba(45, 122, 79, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.wiki-infobox-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wiki-infobox-placeholder {
+    font-size: 4rem;
+    color: var(--accent-secondary);
+    opacity: 0.3;
+}
+
+.wiki-infobox-body {
+    padding: 1rem;
+}
+
+.wiki-infobox-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(149, 213, 178, 0.2);
+}
+
+.wiki-infobox-row:last-child {
+    border-bottom: none;
+}
+
+.wiki-infobox-label {
+    font-weight: 600;
+    color: var(--accent-primary);
+    font-size: 0.85rem;
+}
+
+.wiki-infobox-value {
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* Table of Contents */
+.wiki-toc {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.wiki-toc-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.wiki-toc-toggle {
+    cursor: pointer;
+    user-select: none;
+    color: var(--accent-primary);
+    font-weight: 700;
+}
+
+.wiki-toc-content {
+    padding-left: 0.5rem;
+}
+
+.wiki-toc-content.collapsed {
+    display: none;
+}
+
+.wiki-toc ol {
+    list-style: none;
+    counter-reset: toc-counter;
+    padding: 0;
+    margin: 0;
+}
+
+.wiki-toc li {
+    counter-increment: toc-counter;
+    margin: 0.25rem 0;
+}
+
+.wiki-toc li::before {
+    content: counters(toc-counter, ".") " ";
+    color: var(--accent-primary);
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.wiki-toc a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.wiki-toc a:hover {
+    color: var(--accent-secondary);
+    text-decoration: underline;
+}
+
+/* Main Article Link Box */
+.wiki-main-article {
+    background: rgba(82, 183, 136, 0.1);
+    border-left: 4px solid var(--accent-secondary);
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.wiki-main-article strong {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.wiki-main-article a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wiki-main-article a:hover {
+    text-decoration: underline;
+}
+
+/* See Also Section */
+.wiki-see-also {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.wiki-see-also h3 {
+    color: var(--accent-primary);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-secondary);
+}
+
+.wiki-see-also ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5rem;
+}
+
+.wiki-see-also li {
+    padding: 0.25rem 0;
+}
+
+.wiki-see-also li::before {
+    content: "→";
+    color: var(--accent-secondary);
+    margin-right: 0.5rem;
+}
+
+.wiki-see-also a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.wiki-see-also a:hover {
+    color: var(--accent-secondary);
+    text-decoration: underline;
+}
+
+/* Category Tags */
+.wiki-categories {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.wiki-categories-title {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.wiki-categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.wiki-category-tag {
+    background: var(--accent-secondary);
+    color: white;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.wiki-category-tag:hover {
+    background: var(--accent-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(45, 122, 79, 0.3);
+}
+
+/* Cross-reference Links */
+.wiki-link {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px dotted var(--accent-primary);
+    transition: all 0.2s;
+}
+
+.wiki-link:hover {
+    color: var(--accent-secondary);
+    border-bottom-style: solid;
+}
+
+/* Wiki-style section headers */
+.wiki-section-header {
+    font-family: 'Cinzel', serif;
+    color: var(--accent-primary);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments for wiki elements */
+@media (max-width: 768px) {
+    .wiki-infobox {
+        float: none;
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .wiki-toc {
+        width: 100%;
+    }
+
+    .wiki-see-also ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================
+   SVG VINE DECORATIONS - EUDORIA THEME
+   ========================================== */
+
+/* Subtle vine animation keyframes */
+@keyframes vineSwayGentle {
+    0%, 100% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-50%) rotate(2deg);
+    }
+}
+
+@keyframes vineSwayLeft {
+    0%, 100% {
+        transform: translateY(-50%) translateX(0);
+    }
+    50% {
+        transform: translateY(-50%) translateX(-2px);
+    }
+}
+
+@keyframes vineSwayRight {
+    0%, 100% {
+        transform: translateY(-50%) scaleX(-1) translateX(0);
+    }
+    50% {
+        transform: translateY(-50%) scaleX(-1) translateX(-2px);
+    }
+}
+
+@keyframes vineGrowIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+}
+
+@keyframes vineFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.3;
+    }
+}
+
+/* Reusable vine SVG patterns */
+.vine-corner-topleft {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' fill='none'%3E%3Cpath d='M5 5 Q15 5 20 10 Q25 15 25 25 T30 40 Q35 50 40 52' stroke='%234a3728' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M18 12 Q16 8 12 9 L10 11 Q8 13 10 15 L12 17 Q14 19 16 16 Z' fill='%232d5016' opacity='0.85'/%3E%3Cpath d='M28 25 Q26 21 22 22 L20 24 Q18 26 20 28 L22 30 Q24 32 26 29 Z' fill='%234a7c2c' opacity='0.8'/%3E%3Cpath d='M12 20 Q10 16 6 17 L4 19 Q2 21 4 23 L6 25 Q8 27 10 24 Z' fill='%236b8e5f' opacity='0.75'/%3E%3Cpath d='M22 15 L20 13 Q18 11 16 13 L14 15 Q12 17 14 19 L16 21 Q18 23 20 21 Z' fill='%234a7c2c' opacity='0.7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+}
+
+.vine-corner-topright {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' fill='none'%3E%3Cpath d='M75 5 Q65 5 60 10 Q55 15 55 25 T50 40 Q45 50 40 52' stroke='%234a3728' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M62 12 Q64 8 68 9 L70 11 Q72 13 70 15 L68 17 Q66 19 64 16 Z' fill='%232d5016' opacity='0.85'/%3E%3Cpath d='M52 25 Q54 21 58 22 L60 24 Q62 26 60 28 L58 30 Q56 32 54 29 Z' fill='%234a7c2c' opacity='0.8'/%3E%3Cpath d='M68 20 Q70 16 74 17 L76 19 Q78 21 76 23 L74 25 Q72 27 70 24 Z' fill='%236b8e5f' opacity='0.75'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+}
+
+.vine-corner-bottomleft {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' fill='none'%3E%3Cpath d='M5 75 Q15 75 20 70 Q25 65 25 55 T30 40 Q35 30 40 28' stroke='%234a3728' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M18 68 Q16 72 12 71 L10 69 Q8 67 10 65 L12 63 Q14 61 16 64 Z' fill='%232d5016' opacity='0.85'/%3E%3Cpath d='M28 55 Q26 59 22 58 L20 56 Q18 54 20 52 L22 50 Q24 48 26 51 Z' fill='%234a7c2c' opacity='0.8'/%3E%3Cpath d='M12 60 Q10 64 6 63 L4 61 Q2 59 4 57 L6 55 Q8 53 10 56 Z' fill='%236b8e5f' opacity='0.75'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+}
+
+.vine-corner-bottomright {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' fill='none'%3E%3Cpath d='M75 75 Q65 75 60 70 Q55 65 55 55 T50 40 Q45 30 40 28' stroke='%234a3728' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M62 68 Q64 72 68 71 L70 69 Q72 67 70 65 L68 63 Q66 61 64 64 Z' fill='%232d5016' opacity='0.85'/%3E%3Cpath d='M52 55 Q54 59 58 58 L60 56 Q62 54 60 52 L58 50 Q56 48 54 51 Z' fill='%234a7c2c' opacity='0.8'/%3E%3Cpath d='M68 60 Q70 64 74 63 L76 61 Q78 59 76 57 L74 55 Q72 53 70 56 Z' fill='%236b8e5f' opacity='0.75'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+}
+
+.vine-border-horizontal {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 30' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M0 15 Q25 10 50 15 T100 15 Q125 20 150 15 T200 15' stroke='%234a3728' stroke-width='2' fill='none'/%3E%3Cpath d='M50 15 Q48 11 44 12 L42 14 Q40 16 42 18 L44 20 Q46 22 48 19 Z' fill='%232d5016' opacity='0.8'/%3E%3Cpath d='M100 15 Q98 11 94 12 L92 14 Q90 16 92 18 L94 20 Q96 22 98 19 Z' fill='%234a7c2c' opacity='0.75'/%3E%3Cpath d='M150 15 Q148 11 144 12 L142 14 Q140 16 142 18 L144 20 Q146 22 148 19 Z' fill='%236b8e5f' opacity='0.7'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 200px 30px;
+}
+
+.vine-border-vertical {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 200' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M15 0 Q10 25 15 50 T15 100 Q20 125 15 150 T15 200' stroke='%234a3728' stroke-width='2' fill='none'/%3E%3Cpath d='M15 50 Q11 48 12 44 L14 42 Q16 40 18 42 L20 44 Q22 46 19 48 Z' fill='%232d5016' opacity='0.8'/%3E%3Cpath d='M15 100 Q11 98 12 94 L14 92 Q16 90 18 92 L20 94 Q22 96 19 98 Z' fill='%234a7c2c' opacity='0.75'/%3E%3Cpath d='M15 150 Q11 148 12 144 L14 142 Q16 140 18 142 L20 144 Q22 146 19 148 Z' fill='%236b8e5f' opacity='0.7'/%3E%3C/svg%3E");
+    background-repeat: repeat-y;
+    background-size: 30px 200px;
+}
+
+/* Welcome Screen */
+.welcome-screen {
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+}
+
+.welcome-screen h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #2d7a4f, #52b788);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Cinzel Decorative', 'Georgia', serif;
+    position: relative;
+    display: inline-block;
+    padding: 0 4rem;
+}
+
+/* Vine frame around Welcome heading */
+.welcome-screen h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none'%3E%3Cpath d='M5 30 Q10 20 20 25 Q25 28 30 28' stroke='%234a3728' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M15 25 Q13 21 9 22 L7 24 Q5 26 7 28 L9 30 Q11 32 13 29 Z' fill='%232d5016' opacity='0.9'/%3E%3Cpath d='M22 28 Q20 24 16 25 L14 27 Q12 29 14 31 L16 33 Q18 35 20 32 Z' fill='%234a7c2c' opacity='0.85'/%3E%3Cpath d='M10 33 Q8 29 4 30 L2 32 Q0 34 2 36 L4 38 Q6 40 8 37 Z' fill='%236b8e5f' opacity='0.8'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: vineSwayLeft 4s ease-in-out infinite;
+}
+
+.welcome-screen h2::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) scaleX(-1);
+    width: 60px;
+    height: 60px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none'%3E%3Cpath d='M5 30 Q10 20 20 25 Q25 28 30 28' stroke='%234a3728' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M15 25 Q13 21 9 22 L7 24 Q5 26 7 28 L9 30 Q11 32 13 29 Z' fill='%232d5016' opacity='0.9'/%3E%3Cpath d='M22 28 Q20 24 16 25 L14 27 Q12 29 14 31 L16 33 Q18 35 20 32 Z' fill='%234a7c2c' opacity='0.85'/%3E%3Cpath d='M10 33 Q8 29 4 30 L2 32 Q0 34 2 36 L4 38 Q6 40 8 37 Z' fill='%236b8e5f' opacity='0.8'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: vineSwayRight 4s ease-in-out infinite;
+}
+
+.welcome-screen > p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+.stats {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Stat cards with vine corner decorations */
+.stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid var(--border-color);
+    min-width: 150px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(45, 122, 79, 0.1);
+    position: relative;
+    overflow: visible;
+}
+
+/* Corner vine decorations for stat cards */
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 50px;
+    height: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50' fill='none'%3E%3Cpath d='M2 2 Q8 2 12 6 Q16 10 16 16 T20 28' stroke='%234a3728' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M10 8 Q8 5 5 6 L3 8 Q1 10 3 12 L5 14 Q7 16 9 13 Z' fill='%232d5016' opacity='0.9'/%3E%3Cpath d='M16 16 Q14 13 11 14 L9 16 Q7 18 9 20 L11 22 Q13 24 15 21 Z' fill='%234a7c2c' opacity='0.85'/%3E%3Cpath d='M7 14 Q5 11 2 12 L1 14 Q0 16 1 18 L3 20 Q5 22 7 19 Z' fill='%236b8e5f' opacity='0.8'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    animation: vineGrowIn 0.6s ease-out;
+}
+
+.stat-card::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 50px;
+    height: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50' fill='none'%3E%3Cpath d='M48 48 Q42 48 38 44 Q34 40 34 34 T30 22' stroke='%234a3728' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M40 42 Q42 45 45 44 L47 42 Q49 40 47 38 L45 36 Q43 34 41 37 Z' fill='%232d5016' opacity='0.9'/%3E%3Cpath d='M34 34 Q36 37 39 36 L41 34 Q43 32 41 30 L39 28 Q37 26 35 29 Z' fill='%234a7c2c' opacity='0.85'/%3E%3Cpath d='M43 36 Q45 39 48 38 L49 36 Q50 34 49 32 L47 30 Q45 28 43 31 Z' fill='%236b8e5f' opacity='0.8'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    animation: vineGrowIn 0.6s ease-out 0.2s backwards;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 8px 24px rgba(45, 122, 79, 0.2);
+}
+
+.stat-card:hover::before,
+.stat-card:hover::after {
+    opacity: 1;
+}
+
+.stat-card h3 {
+    font-size: 3rem;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Union View */
+.union-view {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.union-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.union-header h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.union-header p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.regions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.region-card {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(45, 122, 79, 0.08);
+}
+
+.region-card .flag-container {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: var(--bg-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.region-card .flag-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.region-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+}
+
+.region-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.region-card .region-info {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.region-card .region-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--bg-tertiary);
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    color: var(--accent-secondary);
+    margin-top: 0.75rem;
+}
+
+/* Region Detail View */
+.region-detail {
+    animation: fadeIn 0.3s ease;
+}
+
+.region-detail .back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: all 0.2s;
+}
+
+.region-detail .back-button:hover {
+    background: var(--hover-bg);
+    color: var(--text-primary);
+    border-color: var(--accent-primary);
+}
+
+.region-detail h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.region-detail .flag-header {
+    width: 120px;
+    height: 80px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.region-detail .flag-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.region-detail .detail-section {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.region-detail .detail-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--accent-secondary);
+}
+
+.region-detail .detail-section p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* Laws of Eimes Styles */
+.laws-page .divine-symbol-header {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.5));
+}
+
+.laws-description {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #daa520;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.origin-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(184, 134, 11, 0.08));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.origin-card h4 {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.origin-details {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid rgba(218, 165, 32, 0.2);
+}
+
+.laws-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.law-card {
+    display: flex;
+    gap: 2rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.1));
+    border: 3px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.law-card:hover {
+    border-color: rgba(218, 165, 32, 0.5);
+    box-shadow: 0 10px 30px rgba(218, 165, 32, 0.2);
+    transform: translateY(-3px);
+}
+
+.law-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    min-width: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 2px 10px rgba(218, 165, 32, 0.5);
+}
+
+.law-content {
+    flex: 1;
+}
+
+.law-name {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.law-principle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #cd7f32;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid #daa520;
+}
+
+.law-description {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.law-consequence {
+    background: rgba(218, 165, 32, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-left: 3px solid #cd7f32;
+    margin-top: 1rem;
+}
+
+.keeper-card, .first-stone-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(184, 134, 11, 0.12));
+    border: 2px solid rgba(218, 165, 32, 0.4);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.keeper-role {
+    margin-top: 1rem;
+    color: #daa520;
+    font-weight: 600;
+}
+
+/* Work in Progress Banner */
+.wip-banner {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15), rgba(255, 152, 0, 0.1));
+    border: 3px solid rgba(255, 193, 7, 0.5);
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);
+}
+
+.wip-icon {
+    font-size: 3rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.wip-content h3 {
+    color: #ffc107;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.wip-content p {
+    margin: 0;
+    color: #ffecb3;
+    line-height: 1.6;
+}
+
+/* War of Gods Styles */
+.war-page .divine-symbol-header {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.5));
+}
+
+.war-description {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #daa520;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.war-timeline {
+    font-style: italic;
+    color: #cd7f32;
+    margin-top: 1rem;
+}
+
+.causes-grid, .consequences-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cause-card, .consequence-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(184, 134, 11, 0.08));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.cause-card:hover, .consequence-card:hover {
+    border-color: rgba(218, 165, 32, 0.5);
+    box-shadow: 0 8px 20px rgba(218, 165, 32, 0.2);
+}
+
+.cause-card h4, .consequence-card h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.75rem;
+}
+
+.factions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.faction-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(184, 134, 11, 0.12));
+    border: 3px solid rgba(218, 165, 32, 0.4);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.faction-card:hover {
+    border-color: rgba(218, 165, 32, 0.6);
+    box-shadow: 0 10px 30px rgba(218, 165, 32, 0.3);
+    transform: translateY(-5px);
+}
+
+.faction-card h3 {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.faction-leader {
+    color: #cd7f32;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+/* Detailed Faction Cards */
+.factions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.faction-detail-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(184, 134, 11, 0.12));
+    border: 3px solid rgba(218, 165, 32, 0.4);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.faction-detail-card:hover {
+    border-color: rgba(218, 165, 32, 0.6);
+    box-shadow: 0 10px 30px rgba(218, 165, 32, 0.3);
+}
+
+.faction-name {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid rgba(218, 165, 32, 0.3);
+    padding-bottom: 1rem;
+}
+
+.faction-count, .faction-description {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.faction-lie-section, .faction-truth-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(218, 165, 32, 0.1);
+    border-radius: 0.75rem;
+    border-left: 4px solid #cd7f32;
+}
+
+.faction-lie-section h4, .faction-truth-section h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+}
+
+.faction-context {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #e6c66f;
+}
+
+.faction-leadership, .faction-heavy-hitters {
+    margin: 1.5rem 0;
+}
+
+.faction-leadership h4, .faction-heavy-hitters h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+}
+
+.leadership-list, .heavy-hitters-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.leadership-list li, .heavy-hitters-list li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.leadership-list li::before {
+    content: '👑';
+    position: absolute;
+    left: 0;
+}
+
+.heavy-hitters-list li::before {
+    content: '⚔️';
+    position: absolute;
+    left: 0;
+}
+
+.faction-defenders {
+    margin: 2rem 0;
+}
+
+.faction-defenders h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1.5rem;
+}
+
+.defender-card {
+    background: rgba(218, 165, 32, 0.08);
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.defender-card:hover {
+    border-color: rgba(218, 165, 32, 0.5);
+    box-shadow: 0 5px 15px rgba(218, 165, 32, 0.2);
+}
+
+.defender-card h5 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.defender-title {
+    color: #cd7f32;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.defender-role {
+    line-height: 1.8;
+}
+
+.faction-fate {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0.75rem;
+    border: 2px solid rgba(218, 165, 32, 0.4);
+}
+
+.faction-fate h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+}
+
+/* Conflicted & Neutral Gods */
+.conflicted-gods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.conflicted-god-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.1));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.conflicted-god-card:hover {
+    border-color: rgba(218, 165, 32, 0.5);
+    box-shadow: 0 8px 20px rgba(218, 165, 32, 0.2);
+}
+
+.god-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.god-header h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.god-status {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: rgba(218, 165, 32, 0.2);
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #daa520;
+    border: 1px solid rgba(218, 165, 32, 0.4);
+}
+
+.god-title {
+    color: #cd7f32;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.god-story {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.god-quote {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: #daa520;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-left: 4px solid #cd7f32;
+    border-radius: 0.5rem;
+    font-style: italic;
+}
+
+.god-aftermath {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #e6c66f;
+}
+
+.god-turning {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(218, 165, 32, 0.15);
+    border-radius: 0.5rem;
+    border-left: 4px solid #cd7f32;
+}
+
+/* Final Note Card */
+.final-note-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.2), rgba(184, 134, 11, 0.15));
+    border: 3px solid rgba(218, 165, 32, 0.5);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-style: italic;
+    text-align: center;
+    color: #e6c66f;
+}
+
+/* Specific Battles & Events */
+.specific-battles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.specific-battle-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.1));
+    border: 3px solid rgba(218, 165, 32, 0.35);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.specific-battle-card:hover {
+    border-color: rgba(218, 165, 32, 0.5);
+    box-shadow: 0 10px 25px rgba(218, 165, 32, 0.25);
+}
+
+.battle-name {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(218, 165, 32, 0.3);
+    padding-bottom: 0.75rem;
+}
+
+.battle-timeline, .battle-duration, .battle-location-detail, .battle-participants, .battle-allies {
+    color: #cd7f32;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+.battle-description {
+    line-height: 1.8;
+    margin: 1.5rem 0;
+    font-size: 1.05rem;
+}
+
+.battle-conflict, .battle-intervention, .battle-declaration,
+.battle-turning, .battle-aftermath, .battle-significance,
+.battle-outcome, .battle-discovery, .battle-consequence,
+.battle-main-conflict, .battle-trigger, .battle-confrontation,
+.battle-catastrophe, .battle-scope, .battle-devastation,
+.battle-action, .battle-almost-ending, .battle-reaction,
+.battle-escape, .battle-witness, .battle-vanishing, .battle-last-words {
+    line-height: 1.8;
+    margin: 1rem 0;
+}
+
+.battle-significance {
+    color: #e6c66f;
+    font-style: italic;
+    padding-left: 1.5rem;
+    border-left: 3px solid rgba(218, 165, 32, 0.4);
+}
+
+.battle-consequence {
+    background: rgba(218, 165, 32, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid #cd7f32;
+}
+
+.battle-casualties {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.75rem;
+    border: 2px solid rgba(218, 165, 32, 0.3);
+}
+
+.battle-casualties h5 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+}
+
+.battle-casualties ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.battle-casualties li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.battle-casualties li:last-child {
+    border-bottom: none;
+}
+
+.battle-casualties li::before {
+    content: '⚔️';
+    position: absolute;
+    left: 0;
+}
+
+.battle-quote, .suleiman-quote, .final-quote {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    color: #daa520;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #cd7f32;
+    border-radius: 0.5rem;
+    font-style: italic;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.4);
+}
+
+.battle-devastation, .battle-escape {
+    font-weight: 600;
+    color: #daa520;
+}
+
+.battle-last-words {
+    font-style: italic;
+    color: #cd7f32;
+    margin-top: 1.5rem;
+}
+
+.final-quote {
+    font-size: 1.5rem;
+    border-left: 5px solid #daa520;
+    background: rgba(218, 165, 32, 0.15);
+    text-shadow: 0 0 15px rgba(218, 165, 32, 0.6);
+}
+
+/* Aftermath Section */
+.aftermath-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #e6c66f;
+    font-style: italic;
+}
+
+.judgments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.judgment-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(184, 134, 11, 0.12));
+    border: 3px solid rgba(218, 165, 32, 0.4);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.judgment-card:hover {
+    border-color: rgba(218, 165, 32, 0.6);
+    box-shadow: 0 10px 30px rgba(218, 165, 32, 0.3);
+    transform: translateY(-5px);
+}
+
+.judgment-category {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid rgba(218, 165, 32, 0.3);
+    padding-bottom: 0.75rem;
+}
+
+.judgment-count {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #cd7f32;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.judgment-destination {
+    margin-bottom: 1rem;
+    color: #e6c66f;
+}
+
+.judgment-fate {
+    color: #daa520;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.judgment-description {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.notable-gods {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.75rem;
+    border: 2px solid rgba(218, 165, 32, 0.3);
+}
+
+.notable-gods h5 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+}
+
+.notable-gods ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.notable-gods li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.notable-gods li:last-child {
+    border-bottom: none;
+}
+
+.notable-gods li::before {
+    content: '🔗';
+    position: absolute;
+    left: 0;
+}
+
+.judgment-legacy {
+    margin-top: 1rem;
+    color: #cd7f32;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.sunarians-section {
+    margin: 3rem 0;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.18), rgba(184, 134, 11, 0.15));
+    border: 3px solid rgba(218, 165, 32, 0.5);
+    border-radius: 1rem;
+}
+
+.sunarians-section h4 {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.sunarians-section p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.sunarian-symbol {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #e6c66f;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.alsekemu-exile-section {
+    margin: 3rem 0;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.2), rgba(184, 134, 11, 0.18));
+    border: 3px solid rgba(218, 165, 32, 0.6);
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px rgba(218, 165, 32, 0.3);
+}
+
+.alsekemu-exile-section h4 {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.4);
+}
+
+.exile-sentence {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.transformation-details {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0.75rem;
+    border-left: 5px solid #cd7f32;
+}
+
+.transformation-details p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.transformation-changes {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.transformation-changes li {
+    padding: 0.75rem 0;
+    padding-left: 2.5rem;
+    position: relative;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.transformation-changes li:last-child {
+    border-bottom: none;
+}
+
+.transformation-changes li::before {
+    content: '⚡';
+    position: absolute;
+    left: 0;
+    color: #daa520;
+}
+
+.exile-naming {
+    line-height: 1.8;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(218, 165, 32, 0.1);
+    border-radius: 0.5rem;
+}
+
+.exile-declaration {
+    font-size: 1.2rem;
+    color: #daa520;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.exile-strategy {
+    line-height: 1.8;
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: #e6c66f;
+    border-top: 2px solid rgba(218, 165, 32, 0.3);
+    padding-top: 1.5rem;
+}
+
+.battles-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.battle-card {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.15), rgba(184, 134, 11, 0.1));
+    border: 2px solid rgba(218, 165, 32, 0.4);
+    border-radius: 1rem;
+    padding: 2rem;
+    border-left: 5px solid #cd7f32;
+}
+
+.battle-card h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.battle-location {
+    color: #cd7f32;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.battle-outcome {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(218, 165, 32, 0.1);
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.legacy-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(184, 134, 11, 0.12));
+    border: 3px solid rgba(218, 165, 32, 0.4);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.legacy-card .lessons {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid rgba(218, 165, 32, 0.3);
+}
+
+.legacy-card h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.75rem;
+}
+
+.legacy-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.legacy-card li {
+    padding-left: 2rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.legacy-card li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: #daa520;
+}
+
+/* War of Gods - New Overview Styles */
+.war-metadata {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(218, 165, 32, 0.1);
+    border-radius: 0.5rem;
+}
+
+.war-metadata p {
+    margin: 0;
+    color: #cd7f32;
+}
+
+.war-overview-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.1));
+    border: 3px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.war-overview-card p {
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
+}
+
+.war-conflict {
+    color: #e6c66f;
+    font-style: italic;
+}
+
+.war-ignition {
+    color: #daa520;
+    font-weight: 600;
+    padding: 1rem;
+    background: rgba(218, 165, 32, 0.15);
+    border-radius: 0.5rem;
+    border-left: 4px solid #cd7f32;
+}
+
+/* Faction Cards - Additional Styles */
+.faction-count, .faction-description {
+    margin-bottom: 1rem;
+}
+
+.faction-allies {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid rgba(218, 165, 32, 0.2);
+}
+
+.faction-allies ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+}
+
+.faction-allies li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.faction-allies li::before {
+    content: '⚔';
+    position: absolute;
+    left: 0;
+    color: #daa520;
+}
+
+/* Turning Points */
+.turning-points-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.turning-point-card {
+    display: flex;
+    gap: 2rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.1));
+    border: 3px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.turning-point-card:hover {
+    border-color: rgba(218, 165, 32, 0.5);
+    box-shadow: 0 10px 25px rgba(218, 165, 32, 0.25);
+    transform: translateX(5px);
+}
+
+.point-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    min-width: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.point-content h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.point-outcomes {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(218, 165, 32, 0.1);
+    border-radius: 0.5rem;
+}
+
+.point-outcomes li {
+    padding-left: 2rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.point-outcomes li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #cd7f32;
+    font-weight: bold;
+}
+
+/* Outcome Card */
+.outcome-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(184, 134, 11, 0.12));
+    border: 3px solid rgba(218, 165, 32, 0.4);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Impact Cards */
+.impact-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.1));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.impact-card:hover {
+    border-color: rgba(218, 165, 32, 0.5);
+    box-shadow: 0 8px 20px rgba(218, 165, 32, 0.2);
+}
+
+.impact-card h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.impact-card p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Unfinished War Special Card */
+.unfinished-war {
+    border: 3px solid rgba(218, 165, 32, 0.5);
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.18), rgba(184, 134, 11, 0.15));
+}
+
+.last-words {
+    font-style: italic;
+    color: #cd7f32;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.alsekemu-quote {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: #daa520;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #cd7f32;
+    border-radius: 0.5rem;
+    font-style: italic;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+}
+
+/* Eudoric Zodiac Styles */
+.zodiac-page .divine-symbol-header {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.5));
+}
+
+.zodiac-description {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #daa520;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.zodiac-calculation {
+    font-style: italic;
+    color: #cd7f32;
+    margin-top: 1rem;
+}
+
+.zodiac-houses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.zodiac-house-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.1));
+    border: 3px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.zodiac-house-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(218, 165, 32, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.zodiac-house-card:hover::before {
+    opacity: 1;
+}
+
+.zodiac-house-card:hover {
+    border-color: rgba(218, 165, 32, 0.6);
+    box-shadow: 0 12px 35px rgba(218, 165, 32, 0.3);
+    transform: translateY(-5px);
+}
+
+.house-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.house-symbol {
+    font-size: 3rem;
+    text-shadow: 0 0 15px rgba(218, 165, 32, 0.5);
+}
+
+.zodiac-sign-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(218, 165, 32, 0.5);
+    box-shadow:
+        0 0 20px rgba(218, 165, 32, 0.4),
+        0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.zodiac-sign-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.house-number {
+    background: linear-gradient(135deg, #cd7f32, #daa520);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+}
+
+.house-name {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.house-god, .house-element, .house-season {
+    margin-bottom: 0.5rem;
+    color: #cd7f32;
+}
+
+.house-traits {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(218, 165, 32, 0.08);
+    border-radius: 0.75rem;
+}
+
+.house-traits h4 {
+    color: #daa520;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.trait-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.trait-tag {
+    background: linear-gradient(135deg, #cd7f32, #daa520);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(218, 165, 32, 0.2);
+}
+
+.house-details {
+    margin-top: 1.5rem;
+    line-height: 1.8;
+}
+
+.house-details p {
+    margin-bottom: 1rem;
+}
+
+.house-compatibility {
+    color: #cd7f32;
+    font-style: italic;
+}
+
+.divination-methods {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(184, 134, 11, 0.08));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.divination-methods h4 {
+    color: #daa520;
+    margin-bottom: 0.75rem;
+}
+
+.divination-methods ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.divination-methods li {
+    padding-left: 2rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.divination-methods li::before {
+    content: '✨';
+    position: absolute;
+    left: 0;
+}
+
+.myth-quote-zodiac {
+    background: rgba(218, 165, 32, 0.08);
+    padding: 1.5rem;
+    border-left: 4px solid #daa520;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #cd7f32;
+    line-height: 1.8;
+}
+
+.temple-inscription {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.1));
+    border: 2px solid rgba(218, 165, 32, 0.4);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    color: #cd7f32;
+    font-size: 1.1rem;
+}
+
+.coming-soon-text {
+    text-align: center;
+    color: #cd7f32;
+    font-style: italic;
+    padding: 3rem;
+    font-size: 1.2rem;
+}
+
+/* Vivatasia Section */
+.vivatasia-section {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(184, 134, 11, 0.05));
+    border: 3px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    margin-top: 2rem;
+}
+
+.vivatasia-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(218, 165, 32, 0.3);
+}
+
+.vivatasia-symbol {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 30px rgba(218, 165, 32, 0.6);
+    animation: godGlow 3s ease-in-out infinite;
+}
+
+.vivatasia-header h2 {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.vivatasia-titles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.vivatasia-title-tag {
+    background: linear-gradient(135deg, #cd7f32, #daa520);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+    font-family: 'Cinzel', serif;
+}
+
+.vivatasia-info {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #cd7f32;
+}
+
+.vivatasia-overview,
+.vivatasia-personality,
+.vivatasia-relationships,
+.vivatasia-legends,
+.vivatasia-sayings-section {
+    margin-top: 2rem;
+}
+
+.vivatasia-overview h3,
+.vivatasia-personality h3,
+.vivatasia-relationships h3,
+.vivatasia-legends h3,
+.vivatasia-sayings-section h3 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.vivatasia-quote {
+    background: rgba(218, 165, 32, 0.12);
+    padding: 1.5rem;
+    border-left: 4px solid #daa520;
+    border-radius: 0.75rem;
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: #cd7f32;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.relationship-item {
+    background: rgba(218, 165, 32, 0.08);
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid #cd7f32;
+}
+
+.relationship-item strong {
+    color: #daa520;
+}
+
+.legend-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(184, 134, 11, 0.08));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.legend-card:hover {
+    border-color: rgba(218, 165, 32, 0.5);
+    box-shadow: 0 8px 20px rgba(218, 165, 32, 0.2);
+    transform: translateY(-3px);
+}
+
+.legend-card h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.vivatasia-saying {
+    background: rgba(218, 165, 32, 0.08);
+    padding: 1rem 1.5rem;
+    border-left: 4px solid #daa520;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+    color: #cd7f32;
+    font-size: 1.05rem;
+}
+
+.house-caption {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(218, 165, 32, 0.08);
+    border-radius: 0.5rem;
+    font-style: italic;
+    color: #cd7f32;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.house-essence {
+    color: #daa520;
+    font-weight: 600;
+}
+
+.house-element, .house-ruling-planet {
+    color: #cd7f32;
+    margin-bottom: 0.5rem;
+}
+
+.house-motto {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(218, 165, 32, 0.1);
+    border-left: 3px solid #daa520;
+    border-radius: 0.5rem;
+    font-style: italic;
+    color: #cd7f32;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.house-strengths-weaknesses {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.house-strengths h4, .house-weaknesses h4 {
+    color: #daa520;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.strength-tag {
+    background: linear-gradient(135deg, #52b788, #2d9a5f);
+    color: white;
+    padding: 0.35rem 0.9rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(82, 183, 136, 0.3);
+}
+
+.weakness-tag {
+    background: linear-gradient(135deg, #cd7f32, #b8860b);
+    color: white;
+    padding: 0.35rem 0.9rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(205, 127, 50, 0.3);
+}
+
+.house-personality {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid rgba(218, 165, 32, 0.2);
+}
+
+.house-personality h4 {
+    color: #daa520;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.house-personality p {
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-tertiary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border-color);
+}
+
+/* ============================================
+   DOMAINKEEPERS STYLES
+   ============================================ */
+
+.domainkeepers-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dk-overview {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.08));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.dk-overview-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.dk-critical-note {
+    background: rgba(255, 193, 7, 0.15);
+    border-left: 4px solid #daa520;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.dk-category-section {
+    margin-bottom: 3rem;
+}
+
+.dk-category-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid rgba(218, 165, 32, 0.4);
+}
+
+.dk-category-header h3 {
+    color: #daa520;
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 0 15px rgba(218, 165, 32, 0.4);
+}
+
+.dk-category-description {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.dk-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.domainkeeper-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(184, 134, 11, 0.08));
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.domainkeeper-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(218, 165, 32, 0.25);
+    border-color: rgba(218, 165, 32, 0.5);
+}
+
+.dk-header {
+    border-bottom: 2px solid rgba(218, 165, 32, 0.3);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.dk-name {
+    color: #daa520;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+}
+
+.dk-titles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.dk-title-tag {
+    background: rgba(218, 165, 32, 0.2);
+    color: #daa520;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    border: 1px solid rgba(218, 165, 32, 0.4);
+}
+
+.dk-parent-god {
+    background: rgba(218, 165, 32, 0.08);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid #cd7f32;
+}
+
+.dk-domain {
+    background: rgba(184, 134, 11, 0.08);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid #b8860b;
+}
+
+.dk-etymology,
+.dk-meaning {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #daa520;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+}
+
+.dk-description {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.dk-abilities,
+.dk-examples,
+.dk-physical-form,
+.dk-personality,
+.dk-historical-note {
+    margin: 1.5rem 0;
+}
+
+.dk-abilities h5,
+.dk-examples h5,
+.dk-physical-form h5,
+.dk-personality h5,
+.dk-historical-note h5 {
+    color: #daa520;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dk-abilities ul,
+.dk-examples ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.dk-abilities li,
+.dk-examples li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.dk-abilities li::before,
+.dk-examples li::before {
+    content: "⚡";
+    position: absolute;
+    left: 0;
+    color: #daa520;
+}
+
+.dk-physical-form,
+.dk-personality {
+    background: rgba(218, 165, 32, 0.05);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-left: 3px solid #b8860b;
+}
+
+.dk-quote {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.15), rgba(184, 134, 11, 0.1));
+    border-left: 4px solid #cd7f32;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: #daa520;
+    text-shadow: 0 0 5px rgba(218, 165, 32, 0.2);
+}
+
+.dk-historical-note {
+    background: rgba(184, 134, 11, 0.08);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.dk-special-note {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.2), rgba(218, 165, 32, 0.15));
+    border: 2px solid #daa520;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.dk-special-note h5 {
+    color: #daa520;
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dk-legend {
+    background: rgba(205, 127, 50, 0.1);
+    border: 1px solid rgba(218, 165, 32, 0.3);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.dk-legend h5 {
+    color: #cd7f32;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.dk-legend p {
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.dk-savra-special {
+    border: 3px solid rgba(75, 0, 130, 0.5);
+    background: linear-gradient(135deg, rgba(25, 25, 112, 0.2), rgba(75, 0, 130, 0.15));
+}
+
+.dk-savra-special .dk-name {
+    color: #9370db;
+    text-shadow: 0 0 15px rgba(75, 0, 130, 0.5);
+}
+
+.dk-savra-special .dk-title-tag {
+    background: rgba(75, 0, 130, 0.2);
+    color: #9370db;
+    border-color: rgba(75, 0, 130, 0.4);
+}
+
+.dk-savra-special:hover {
+    border-color: rgba(75, 0, 130, 0.7);
+    box-shadow: 0 8px 25px rgba(75, 0, 130, 0.4);
+}
+
+/* ============================================
+   MOBILE RESPONSIVENESS
+   ============================================ */
+
+/* Tablets and smaller desktops (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .app-container {
+        grid-template-columns: 280px 1fr;
+    }
+    
+    .sidebar {
+        width: 280px;
+    }
+}
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .app-container {
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+    
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        width: 280px;
+        z-index: 1000;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .sidebar.mobile-open {
+        left: 0;
+    }
+    
+    /* Mobile menu button */
+    .mobile-menu-btn {
+        display: block !important;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 999;
+        background: var(--accent-primary);
+        color: white;
+        border: none;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 1.25rem;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .main-content {
+        padding: 1rem;
+        margin-top: 4rem;
+    }
+    
+    /* Adjust grids for tablets */
+    .unions-grid, .pillars-grid, .regions-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Responsive vine decorations for tablets */
+    .welcome-screen h2 {
+        padding: 0 3rem;
+    }
+
+    .welcome-screen h2::before,
+    .welcome-screen h2::after {
+        width: 40px;
+        height: 40px;
+    }
+
+    .stat-card::before,
+    .stat-card::after {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Reduce profile vine borders on smaller screens */
+    .member-profile::before,
+    .member-profile::after,
+    .child-profile::before,
+    .child-profile::after {
+        width: 20px;
+        background-size: 20px 150px;
+        opacity: 0.2;
+    }
+    
+    .moons-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .stats {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+/* Mobile phones (480px and below) */
+@media screen and (max-width: 480px) {
+    .app-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .app-header .subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .mode-tabs {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .mode-tab {
+        width: 100%;
+    }
+    
+    .search-box input {
+        font-size: 0.9rem;
+        padding: 0.625rem;
+    }
+    
+    .nav-button {
+        font-size: 0.9rem;
+        padding: 0.625rem 0.75rem;
+    }
+    
+    .main-content {
+        padding: 0.75rem;
+    }
+    
+    /* Smaller cards on mobile */
+    .union-card, .pillar-card, .region-card {
+        padding: 1rem;
+    }
+
+    .union-card h3, .pillar-card h3, .region-card h3 {
+        font-size: 1.25rem;
+    }
+
+    /* Further reduce vine decorations on small phones for readability */
+    .welcome-screen h2 {
+        padding: 0 2.5rem;
+        font-size: 2rem;
+    }
+
+    .welcome-screen h2::before,
+    .welcome-screen h2::after {
+        width: 30px;
+        height: 30px;
+    }
+
+    .stat-card::before,
+    .stat-card::after {
+        width: 25px;
+        height: 25px;
+        opacity: 0.5;
+    }
+
+    /* Hide profile vine borders on very small screens to maximize content space */
+    .member-profile::before,
+    .member-profile::after,
+    .child-profile::before,
+    .child-profile::after {
+        display: none;
+    }
+
+    /* Reduce sidebar section header vine icons */
+    .nav-section h3::before {
+        width: 15px;
+        height: 15px;
+        left: 0.5rem;
+    }
+
+    .nav-section h3 {
+        padding-left: 2rem;
+    }
+    
+    /* Moon cards */
+    .moons-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .moon-card {
+        padding: 1.25rem;
+    }
+    
+    /* Stats */
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+    }
+    
+    .stat-card h3 {
+        font-size: 2rem;
+    }
+    
+    /* God cards */
+    .gods-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .god-card {
+        padding: 1.25rem;
+    }
+    
+    .god-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    /* Zodiac */
+    .zodiac-houses-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .zodiac-house-card {
+        padding: 1.25rem;
+    }
+    
+    .zodiac-sign-image,
+    .zodiac-sign-image img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* War of Gods */
+    .factions-container,
+    .specific-battles-container,
+    .turning-points-container {
+        gap: 1.5rem;
+    }
+    
+    .faction-detail-card,
+    .specific-battle-card,
+    .turning-point-card {
+        padding: 1.25rem;
+    }
+    
+    .battle-name {
+        font-size: 1.35rem;
+    }
+    
+    .point-number {
+        font-size: 2rem;
+        min-width: 60px;
+    }
+    
+    .turning-point-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    /* Judgments */
+    .judgments-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Domainkeepers */
+    .dk-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .judgment-card {
+        padding: 1.25rem;
+    }
+    
+    /* Conflicted gods */
+    .conflicted-gods-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Numerals and Letters */
+    .numerals-grid,
+    .letters-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    
+    /* Timeline */
+    .timeline-item {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-item::before {
+        left: 0;
+    }
+    
+    /* Quiz */
+    .quiz-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .quiz-option {
+        padding: 1rem;
+    }
+    
+    /* Modal */
+    .modal-content {
+        width: 95%;
+        max-height: 90vh;
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    /* Font sizes */
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    h4 {
+        font-size: 1.1rem;
+    }
+    
+    /* WIP Banner */
+    .wip-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.25rem;
+    }
+    
+    .wip-icon {
+        font-size: 2.5rem;
+    }
+}
+
+/* Extra small phones (360px and below) */
+@media screen and (max-width: 360px) {
+    .mobile-menu-btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+    }
+    
+    .app-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .numerals-grid,
+    .letters-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+    
+    .main-content {
+        padding: 0.5rem;
+    }
+}
+
+/* Flora & Fauna Styles */
+.flora-fauna-view {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flora-fauna-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(82, 183, 136, 0.08), rgba(106, 190, 48, 0.08));
+    border-radius: 1rem;
+    border: 2px solid rgba(82, 183, 136, 0.3);
+}
+
+.nature-symbol {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: gentle-sway 3s ease-in-out infinite;
+}
+
+@keyframes gentle-sway {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+}
+
+.flora-fauna-tagline {
+    color: #52b788;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+.flora-fauna-description {
+    color: #cd7f32;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+/* Intro Cards */
+.flora-fauna-intro-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.intro-card {
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid;
+    transition: all 0.3s ease;
+}
+
+.divine-creation-card {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(205, 127, 50, 0.08));
+    border-color: rgba(218, 165, 32, 0.4);
+}
+
+.divine-creation-card h3 {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.native-species-card {
+    background: linear-gradient(135deg, rgba(82, 183, 136, 0.08), rgba(106, 190, 48, 0.08));
+    border-color: rgba(82, 183, 136, 0.4);
+}
+
+.native-species-card h3 {
+    color: #52b788;
+    font-family: 'Cinzel', serif;
+}
+
+.intro-card p {
+    color: #cd7f32;
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+.intro-note {
+    font-style: italic;
+    color: #b8860b;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+.intro-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Category Sections */
+.flora-fauna-category {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(10, 8, 6, 0.6);
+    border-radius: 1rem;
+    border: 1px solid rgba(82, 183, 136, 0.4);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(82, 183, 136, 0.4);
+}
+
+.category-icon {
+    font-size: 2.5rem;
+}
+
+.category-header h3 {
+    color: #7ed6a8;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+}
+
+.category-description {
+    color: #e8d4a8;
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+.coming-soon-message {
+    text-align: center;
+    padding: 3rem;
+    background: rgba(82, 183, 136, 0.05);
+    border-radius: 0.75rem;
+    border: 2px dashed rgba(82, 183, 136, 0.3);
+}
+
+.coming-soon-message p {
+    color: #52b788;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+/* Flora & Fauna Grid */
+.flora-fauna-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.flora-fauna-card {
+    background: rgba(10, 8, 6, 0.85);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.divine-item {
+    border-color: rgba(218, 165, 32, 0.6);
+    background: linear-gradient(135deg, rgba(10, 8, 6, 0.9), rgba(15, 12, 8, 0.9));
+}
+
+.native-item {
+    border-color: rgba(82, 183, 136, 0.6);
+    background: linear-gradient(135deg, rgba(10, 8, 6, 0.9), rgba(15, 12, 8, 0.9));
+}
+
+.flora-fauna-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.item-header h4 {
+    color: #52b788;
+    font-size: 1.5rem;
+    font-family: 'Cinzel', serif;
+}
+
+.divine-item .item-header h4 {
+    color: #daa520;
+}
+
+.item-type-badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.divine-badge {
+    background: linear-gradient(135deg, #cd7f32, #daa520);
+    color: white;
+}
+
+.native-badge {
+    background: linear-gradient(135deg, #52b788, #6abe30);
+    color: white;
+}
+
+.item-classification,
+.item-origin {
+    color: #f0c674;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.item-detail {
+    color: #e8d4a8;
+    line-height: 1.7;
+    margin: 0.75rem 0;
+}
+
+.item-detail strong {
+    color: #7ed6a8;
+}
+
+.divine-item .item-detail strong {
+    color: #ffd966;
+}
+
+.item-location {
+    color: #a8e6c8;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    background: rgba(82, 183, 136, 0.15);
+    border-radius: 0.5rem;
+    border-left: 3px solid #52b788;
+}
+
+.divine-item .item-location {
+    color: #ffd966;
+    background: rgba(218, 165, 32, 0.15);
+    border-left-color: #daa520;
+}
+
+.item-uses {
+    color: #e8d4a8;
+    margin: 0.75rem 0;
+}
+
+.item-uses strong {
+    color: #7ed6a8;
+}
+
+.divine-item .item-uses strong {
+    color: #ffd966;
+}
+
+.item-lore {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(82, 183, 136, 0.3);
+}
+
+.item-lore strong {
+    color: #7ed6a8;
+    font-family: 'Cinzel', serif;
+}
+
+.divine-item .item-lore strong {
+    color: #ffd966;
+}
+
+.item-lore p {
+    color: #e8d4a8;
+    font-style: italic;
+    line-height: 1.7;
+    margin-top: 0.5rem;
+}
+
+/* Sacred Groves Section */
+.sacred-groves-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.05), rgba(82, 183, 136, 0.05));
+    border-radius: 1rem;
+    border: 2px solid rgba(218, 165, 32, 0.3);
+}
+
+.sacred-groves-section h3 {
+    color: #daa520;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sacred-groves-section > p {
+    color: #cd7f32;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.sacred-groves-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.sacred-grove-card {
+    background: rgba(10, 8, 6, 0.5);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(218, 165, 32, 0.4);
+    transition: all 0.3s ease;
+}
+
+.sacred-grove-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(218, 165, 32, 0.3);
+}
+
+.sacred-grove-card h4 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.sacred-grove-card p {
+    color: #cd7f32;
+    margin: 0.5rem 0;
+    line-height: 1.7;
+}
+
+.sacred-grove-card strong {
+    color: #52b788;
+}
+
+.grove-significance {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(218, 165, 32, 0.3);
+    font-style: italic;
+    color: #b8860b;
+}
+
+/* Responsive Design for Flora & Fauna */
+@media (max-width: 768px) {
+    .flora-fauna-intro-cards,
+    .flora-fauna-grid,
+    .sacred-groves-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flora-fauna-header {
+        padding: 1.5rem;
+    }
+
+    .nature-symbol {
+        font-size: 3rem;
+    }
+
+    .category-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .flora-fauna-category {
+        padding: 1.5rem;
+    }
+}
+
+/* ==========================================
+   INNER CIRCLE SECTION
+   ========================================== */
+
+.inner-circle-pantheon {
+    padding: 2rem;
+    position: relative;
+}
+
+.inner-circle-pantheon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 40'%3E%3Cpath d='M0,20 Q50,10 100,20 T200,20 Q250,15 300,20 T400,20 Q450,25 500,20 T600,20 Q650,15 700,20 T800,20' stroke='%23228B22' stroke-width='2' fill='none'/%3E%3Cpath d='M100,20 Q95,15 90,18 L85,22 Q80,25 85,28 L90,32 Q95,35 100,30 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M300,20 Q295,15 290,18 L285,22 Q280,25 285,28 L290,32 Q295,35 300,30 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M500,20 Q495,15 490,18 L485,22 Q480,25 485,28 L490,32 Q495,35 500,30 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M700,20 Q695,15 690,18 L685,22 Q680,25 685,28 L690,32 Q695,35 700,30 Z' fill='%2352b788' opacity='0.6'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 400px 40px;
+    pointer-events: none;
+}
+
+.inner-circle-pantheon::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 40'%3E%3Cpath d='M0,20 Q50,30 100,20 T200,20 Q250,25 300,20 T400,20 Q450,15 500,20 T600,20 Q650,25 700,20 T800,20' stroke='%23228B22' stroke-width='2' fill='none'/%3E%3Cpath d='M100,20 Q95,25 90,22 L85,18 Q80,15 85,12 L90,8 Q95,5 100,10 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M300,20 Q295,25 290,22 L285,18 Q280,15 285,12 L290,8 Q295,5 300,10 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M500,20 Q495,25 490,22 L485,18 Q480,15 485,12 L490,8 Q495,5 500,10 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M700,20 Q695,25 690,22 L685,18 Q680,15 685,12 L690,8 Q695,5 700,10 Z' fill='%2352b788' opacity='0.6'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 400px 40px;
+    pointer-events: none;
+}
+
+/* Member Cards Grid */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.member-card {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.08), rgba(245, 245, 220, 0.6));
+    border: 3px solid rgba(101, 67, 33, 0.3);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 4px 15px rgba(101, 67, 33, 0.1);
+}
+
+.member-card::before {
+    content: '🌿';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.member-card::after {
+    content: '🌿';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.member-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(34, 139, 34, 0.5);
+    box-shadow: 0 12px 40px rgba(34, 139, 34, 0.2);
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.12), rgba(245, 245, 220, 0.8));
+}
+
+.member-card-icon {
+    font-size: 3rem;
+    color: #8B4513;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(34, 139, 34, 0.3);
+}
+
+.member-card-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(34, 139, 34, 0.5);
+    box-shadow:
+        0 0 20px rgba(34, 139, 34, 0.3),
+        0 4px 15px rgba(101, 67, 33, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.member-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.member-card h3 {
+    font-size: 1.75rem;
+    color: #722F37;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.member-card-subtitle {
+    color: #2F6F4F;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}
+
+.member-card-titles {
+    color: #654321;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Member Profile Styles */
+.member-profile {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Decorative vine borders along the profile sides */
+.member-profile::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 200' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M15 0 Q10 25 15 50 T15 100 Q20 125 15 150 T15 200' stroke='%234a3728' stroke-width='2' fill='none'/%3E%3Cpath d='M15 50 Q11 48 12 44 L14 42 Q16 40 18 42 L20 44 Q22 46 19 48 Z' fill='%232d5016' opacity='0.8'/%3E%3Cpath d='M15 100 Q11 98 12 94 L14 92 Q16 90 18 92 L20 94 Q22 96 19 98 Z' fill='%234a7c2c' opacity='0.75'/%3E%3Cpath d='M15 150 Q11 148 12 144 L14 142 Q16 140 18 142 L20 144 Q22 146 19 148 Z' fill='%236b8e5f' opacity='0.7'/%3E%3C/svg%3E");
+    background-repeat: repeat-y;
+    background-size: 30px 200px;
+    pointer-events: none;
+    opacity: 0.3;
+    animation: vineFadeIn 0.8s ease-in;
+}
+
+.member-profile::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 200' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M15 0 Q10 25 15 50 T15 100 Q20 125 15 150 T15 200' stroke='%234a3728' stroke-width='2' fill='none'/%3E%3Cpath d='M15 50 Q11 48 12 44 L14 42 Q16 40 18 42 L20 44 Q22 46 19 48 Z' fill='%232d5016' opacity='0.8'/%3E%3Cpath d='M15 100 Q11 98 12 94 L14 92 Q16 90 18 92 L20 94 Q22 96 19 98 Z' fill='%234a7c2c' opacity='0.75'/%3E%3Cpath d='M15 150 Q11 148 12 144 L14 142 Q16 140 18 142 L20 144 Q22 146 19 148 Z' fill='%236b8e5f' opacity='0.7'/%3E%3C/svg%3E");
+    background-repeat: repeat-y;
+    background-size: 30px 200px;
+    pointer-events: none;
+    opacity: 0.3;
+    animation: vineFadeIn 0.8s ease-in 0.2s backwards;
+}
+
+.member-header {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.08), rgba(245, 245, 220, 0.6));
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+    border: 3px double rgba(34, 139, 34, 0.4);
+    box-shadow: 0 4px 20px rgba(101, 67, 33, 0.1);
+    position: relative;
+}
+
+.member-header::before {
+    content: '🌿🍃🌿';
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    opacity: 0.4;
+}
+
+.member-header::after {
+    content: '🌿🍃🌿';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    font-size: 1.5rem;
+    opacity: 0.4;
+}
+
+.member-icon-large {
+    font-size: 5rem;
+    color: #8B4513;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 30px rgba(34, 139, 34, 0.3);
+}
+
+.member-profile-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px double rgba(34, 139, 34, 0.6);
+    box-shadow:
+        0 0 30px rgba(34, 139, 34, 0.4),
+        0 8px 25px rgba(101, 67, 33, 0.3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.member-name {
+    font-size: 3rem;
+    color: #722F37;
+    margin-bottom: 1rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 0 2px 10px rgba(114, 47, 55, 0.2);
+}
+
+.member-name .alt-name {
+    color: #2F6F4F;
+    font-size: 1.75rem;
+    display: block;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.member-full-title {
+    color: #654321;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.death-section {
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.15), rgba(178, 34, 34, 0.1));
+    border: 2px solid rgba(139, 0, 0, 0.3);
+    border-radius: 1rem;
+}
+
+.death-section h3 {
+    color: #cd5c5c;
+}
+
+/* Collapsible Sections in Profile */
+.collapsible-sections {
+    margin-top: 2rem;
+}
+
+.collapsible-section {
+    margin-bottom: 0.75rem;
+    border: 2px solid rgba(34, 139, 34, 0.3);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgba(245, 245, 220, 0.3), rgba(255, 255, 255, 0.5));
+    position: relative;
+}
+
+.collapsible-section::before {
+    content: '🌿';
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.collapsible-section:hover {
+    border-color: rgba(34, 139, 34, 0.5);
+    box-shadow: 0 2px 10px rgba(34, 139, 34, 0.1);
+}
+
+.section-toggle {
+    width: 100%;
+    background: rgba(139, 69, 19, 0.08);
+    border: none;
+    padding: 0.9rem 1.2rem 0.9rem 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Cinzel', serif;
+}
+
+.section-toggle:hover {
+    background: rgba(34, 139, 34, 0.12);
+}
+
+.collapsible-section.active .section-toggle {
+    background: rgba(34, 139, 34, 0.15);
+}
+
+.toggle-icon {
+    color: #2F6F4F;
+    font-size: 1.3rem;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.section-title {
+    color: #722F37;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: linear-gradient(135deg, rgba(245, 245, 220, 0.4), rgba(255, 255, 255, 0.6));
+}
+
+.section-content p {
+    color: #654321;
+    line-height: 1.8;
+    margin: 0;
+    padding: 1.2rem;
+}
+
+.death-section-collapsible {
+    border-color: rgba(139, 0, 0, 0.3);
+}
+
+.death-section-collapsible:hover {
+    border-color: rgba(139, 0, 0, 0.5);
+}
+
+.death-section-collapsible .section-toggle {
+    background: rgba(139, 0, 0, 0.1);
+}
+
+.death-section-collapsible .section-toggle:hover {
+    background: rgba(139, 0, 0, 0.15);
+}
+
+.death-section-collapsible.active .section-toggle {
+    background: rgba(139, 0, 0, 0.2);
+}
+
+.death-section-collapsible .toggle-icon {
+    color: #cd5c5c;
+}
+
+.death-section-collapsible .section-title {
+    color: #f08080;
+}
+
+/* Responsive Design for Inner Circle */
+@media (max-width: 768px) {
+    .members-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .member-name {
+        font-size: 2rem;
+    }
+
+    .member-name .alt-name {
+        font-size: 1.25rem;
+    }
+
+    .member-card {
+        padding: 1.5rem;
+    }
+
+    .member-profile {
+        padding: 1rem;
+    }
+
+    .member-header {
+        padding: 2rem 1rem;
+    }
+}
+
+/* ==========================================
+   EUDORA'S CHILDREN SECTION
+   ========================================== */
+
+/* SVG Vine Border Patterns */
+.vine-border-top {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 40'%3E%3Cpath d='M0,20 Q50,10 100,20 T200,20 Q250,15 300,20 T400,20 Q450,25 500,20 T600,20 Q650,15 700,20 T800,20' stroke='%23228B22' stroke-width='2' fill='none'/%3E%3Cpath d='M100,20 Q95,15 90,18 L85,22 Q80,25 85,28 L90,32 Q95,35 100,30 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M300,20 Q295,15 290,18 L285,22 Q280,25 285,28 L290,32 Q295,35 300,30 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M500,20 Q495,15 490,18 L485,22 Q480,25 485,28 L490,32 Q495,35 500,30 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M700,20 Q695,15 690,18 L685,22 Q680,25 685,28 L690,32 Q695,35 700,30 Z' fill='%2352b788' opacity='0.6'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 400px 40px;
+    height: 40px;
+    width: 100%;
+}
+
+.vine-border-bottom {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 40'%3E%3Cpath d='M0,20 Q50,30 100,20 T200,20 Q250,25 300,20 T400,20 Q450,15 500,20 T600,20 Q650,25 700,20 T800,20' stroke='%23228B22' stroke-width='2' fill='none'/%3E%3Cpath d='M100,20 Q95,25 90,22 L85,18 Q80,15 85,12 L90,8 Q95,5 100,10 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M300,20 Q295,25 290,22 L285,18 Q280,15 285,12 L290,8 Q295,5 300,10 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M500,20 Q495,25 490,22 L485,18 Q480,15 485,12 L490,8 Q495,5 500,10 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M700,20 Q695,25 690,22 L685,18 Q680,15 685,12 L690,8 Q695,5 700,10 Z' fill='%2352b788' opacity='0.6'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 400px 40px;
+    height: 40px;
+    width: 100%;
+}
+
+.vine-border-corner {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cpath d='M5,5 Q20,5 30,15 T50,30 Q55,40 55,55' stroke='%23228B22' stroke-width='2.5' fill='none'/%3E%3Cpath d='M30,15 Q28,10 25,12 L22,15 Q20,18 23,20 L26,22 Q29,24 32,20 Z' fill='%2352b788' opacity='0.7'/%3E%3Cpath d='M15,8 Q13,5 10,6 L8,9 Q6,11 8,13 L10,15 Q13,17 15,13 Z' fill='%238B4513' opacity='0.5'/%3E%3Cpath d='M45,45 Q43,42 40,43 L38,46 Q36,48 38,50 L40,52 Q43,54 45,50 Z' fill='%2352b788' opacity='0.7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+}
+
+.children-pantheon {
+    padding: 2rem;
+    position: relative;
+}
+
+.children-pantheon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 40'%3E%3Cpath d='M0,20 Q50,10 100,20 T200,20 Q250,15 300,20 T400,20 Q450,25 500,20 T600,20 Q650,15 700,20 T800,20' stroke='%23228B22' stroke-width='2' fill='none'/%3E%3Cpath d='M100,20 Q95,15 90,18 L85,22 Q80,25 85,28 L90,32 Q95,35 100,30 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M300,20 Q295,15 290,18 L285,22 Q280,25 285,28 L290,32 Q295,35 300,30 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M500,20 Q495,15 490,18 L485,22 Q480,25 485,28 L490,32 Q495,35 500,30 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M700,20 Q695,15 690,18 L685,22 Q680,25 685,28 L690,32 Q695,35 700,30 Z' fill='%2352b788' opacity='0.6'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 400px 40px;
+    pointer-events: none;
+}
+
+.children-pantheon::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 40'%3E%3Cpath d='M0,20 Q50,30 100,20 T200,20 Q250,25 300,20 T400,20 Q450,15 500,20 T600,20 Q650,25 700,20 T800,20' stroke='%23228B22' stroke-width='2' fill='none'/%3E%3Cpath d='M100,20 Q95,25 90,22 L85,18 Q80,15 85,12 L90,8 Q95,5 100,10 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M300,20 Q295,25 290,22 L285,18 Q280,15 285,12 L290,8 Q295,5 300,10 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M500,20 Q495,25 490,22 L485,18 Q480,15 485,12 L490,8 Q495,5 500,10 Z' fill='%2352b788' opacity='0.6'/%3E%3Cpath d='M700,20 Q695,25 690,22 L685,18 Q680,15 685,12 L690,8 Q695,5 700,10 Z' fill='%2352b788' opacity='0.6'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 400px 40px;
+    pointer-events: none;
+}
+
+/* Children Cards Grid */
+.children-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.child-card {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.08), rgba(245, 245, 220, 0.6));
+    border: 3px solid rgba(101, 67, 33, 0.3);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 4px 15px rgba(101, 67, 33, 0.1);
+}
+
+.child-card::before {
+    content: '🌿';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.child-card::after {
+    content: '🌿';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.child-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(34, 139, 34, 0.5);
+    box-shadow: 0 12px 40px rgba(34, 139, 34, 0.2);
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.12), rgba(245, 245, 220, 0.8));
+}
+
+.child-card-icon {
+    font-size: 3rem;
+    color: #8B4513;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(34, 139, 34, 0.3);
+}
+
+.child-card-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(34, 139, 34, 0.5);
+    box-shadow:
+        0 0 20px rgba(34, 139, 34, 0.3),
+        0 4px 15px rgba(101, 67, 33, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.child-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.child-card h3 {
+    font-size: 1.75rem;
+    color: #722F37;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.child-card-subtitle {
+    color: #2F6F4F;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}
+
+.child-card-titles {
+    color: #654321;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Child Profile Styles */
+.child-profile {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Decorative vine borders along the profile sides */
+.child-profile::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 200' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M15 0 Q10 25 15 50 T15 100 Q20 125 15 150 T15 200' stroke='%234a3728' stroke-width='2' fill='none'/%3E%3Cpath d='M15 50 Q11 48 12 44 L14 42 Q16 40 18 42 L20 44 Q22 46 19 48 Z' fill='%232d5016' opacity='0.8'/%3E%3Cpath d='M15 100 Q11 98 12 94 L14 92 Q16 90 18 92 L20 94 Q22 96 19 98 Z' fill='%234a7c2c' opacity='0.75'/%3E%3Cpath d='M15 150 Q11 148 12 144 L14 142 Q16 140 18 142 L20 144 Q22 146 19 148 Z' fill='%236b8e5f' opacity='0.7'/%3E%3C/svg%3E");
+    background-repeat: repeat-y;
+    background-size: 30px 200px;
+    pointer-events: none;
+    opacity: 0.3;
+    animation: vineFadeIn 0.8s ease-in;
+}
+
+.child-profile::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 200' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M15 0 Q10 25 15 50 T15 100 Q20 125 15 150 T15 200' stroke='%234a3728' stroke-width='2' fill='none'/%3E%3Cpath d='M15 50 Q11 48 12 44 L14 42 Q16 40 18 42 L20 44 Q22 46 19 48 Z' fill='%232d5016' opacity='0.8'/%3E%3Cpath d='M15 100 Q11 98 12 94 L14 92 Q16 90 18 92 L20 94 Q22 96 19 98 Z' fill='%234a7c2c' opacity='0.75'/%3E%3Cpath d='M15 150 Q11 148 12 144 L14 142 Q16 140 18 142 L20 144 Q22 146 19 148 Z' fill='%236b8e5f' opacity='0.7'/%3E%3C/svg%3E");
+    background-repeat: repeat-y;
+    background-size: 30px 200px;
+    pointer-events: none;
+    opacity: 0.3;
+    animation: vineFadeIn 0.8s ease-in 0.2s backwards;
+}
+
+.child-header {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.08), rgba(245, 245, 220, 0.6));
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+    border: 3px double rgba(34, 139, 34, 0.4);
+    box-shadow: 0 4px 20px rgba(101, 67, 33, 0.1);
+    position: relative;
+}
+
+.child-header::before {
+    content: '🌿🍃🌿';
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    opacity: 0.4;
+}
+
+.child-header::after {
+    content: '🌿🍃🌿';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    font-size: 1.5rem;
+    opacity: 0.4;
+}
+
+.child-icon-large {
+    font-size: 5rem;
+    color: #8B4513;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 30px rgba(34, 139, 34, 0.3);
+}
+
+.child-profile-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px double rgba(34, 139, 34, 0.6);
+    box-shadow:
+        0 0 30px rgba(34, 139, 34, 0.4),
+        0 8px 25px rgba(101, 67, 33, 0.3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.child-name {
+    font-size: 3rem;
+    color: #722F37;
+    margin-bottom: 1rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 0 2px 10px rgba(114, 47, 55, 0.2);
+}
+
+.child-name .alt-name {
+    color: #2F6F4F;
+    font-size: 1.75rem;
+    display: block;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.child-full-title {
+    color: #654321;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Prophecy Section Special Styling */
+.prophecy-section-collapsible {
+    border-color: rgba(138, 43, 226, 0.3);
+}
+
+.prophecy-section-collapsible:hover {
+    border-color: rgba(138, 43, 226, 0.5);
+}
+
+.prophecy-section-collapsible .section-toggle {
+    background: rgba(138, 43, 226, 0.1);
+}
+
+.prophecy-section-collapsible .section-toggle:hover {
+    background: rgba(138, 43, 226, 0.15);
+}
+
+.prophecy-section-collapsible.active .section-toggle {
+    background: rgba(138, 43, 226, 0.2);
+}
+
+.prophecy-section-collapsible .toggle-icon {
+    color: #ba55d3;
+}
+
+.prophecy-section-collapsible .section-title {
+    color: #da70d6;
+}
+
+/* Responsive Design for Children */
+@media (max-width: 768px) {
+    .children-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .child-name {
+        font-size: 2rem;
+    }
+
+    .child-name .alt-name {
+        font-size: 1.25rem;
+    }
+
+    .child-card {
+        padding: 1.5rem;
+    }
+
+    .child-profile {
+        padding: 1rem;
+    }
+
+    .child-header {
+        padding: 2rem 1rem;
+    }
+}
+
+/* ==========================================
+   EUDORIA WELCOME SCREEN - ATMOSPHERIC REDESIGN
+   ========================================== */
+
+/* Main welcome container */
+.eudoria-welcome-screen {
+    position: relative;
+    padding: 2rem;
+    background: linear-gradient(135deg,
+        rgba(82, 183, 136, 0.05) 0%,
+        rgba(139, 69, 19, 0.03) 50%,
+        rgba(82, 183, 136, 0.05) 100%);
+    background-image:
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(82, 183, 136, 0.02) 10px, rgba(82, 183, 136, 0.02) 20px),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20,50 Q30,30 40,50 T60,50" fill="none" stroke="rgba(82,183,136,0.05)" stroke-width="0.5"/></svg>');
+    overflow: hidden;
+}
+
+/* Floating leaf animations */
+.floating-leaves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.floating-leaves .leaf {
+    position: absolute;
+    font-size: 1.5rem;
+    opacity: 0.3;
+    animation: floatLeaf 15s infinite ease-in-out;
+}
+
+.floating-leaves .leaf:nth-child(1) {
+    left: 10%;
+    top: -50px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.floating-leaves .leaf:nth-child(2) {
+    left: 30%;
+    top: -80px;
+    animation-delay: 3s;
+    animation-duration: 15s;
+}
+
+.floating-leaves .leaf:nth-child(3) {
+    left: 50%;
+    top: -100px;
+    animation-delay: 6s;
+    animation-duration: 18s;
+}
+
+.floating-leaves .leaf:nth-child(4) {
+    left: 70%;
+    top: -60px;
+    animation-delay: 9s;
+    animation-duration: 14s;
+}
+
+.floating-leaves .leaf:nth-child(5) {
+    left: 85%;
+    top: -90px;
+    animation-delay: 12s;
+    animation-duration: 16s;
+}
+
+@keyframes floatLeaf {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Hero Section */
+.eudoria-hero {
+    position: relative;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 0 auto 3rem;
+    max-width: 900px;
+    background: linear-gradient(135deg,
+        rgba(82, 183, 136, 0.1) 0%,
+        rgba(139, 69, 19, 0.05) 100%);
+    border-radius: 1rem;
+    border: 2px solid rgba(82, 183, 136, 0.2);
+    box-shadow:
+        0 8px 32px rgba(82, 183, 136, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* Glowing background effect */
+.nature-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(82, 183, 136, 0.2) 0%, transparent 70%);
+    animation: pulseGlow 4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+/* Vine frame decorations */
+.vine-frame {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    pointer-events: none;
+}
+
+.vine-top-left {
+    top: -10px;
+    left: -10px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M0,0 Q20,0 30,15 T35,40 Q35,50 30,60 L25,65" fill="none" stroke="%2352B788" stroke-width="2"/><circle cx="15" cy="20" r="4" fill="%2352B788"/><circle cx="25" cy="35" r="3" fill="%2352B788"/><circle cx="20" cy="50" r="3" fill="%2352B788"/></svg>') no-repeat;
+    background-size: contain;
+}
+
+.vine-top-right {
+    top: -10px;
+    right: -10px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M100,0 Q80,0 70,15 T65,40 Q65,50 70,60 L75,65" fill="none" stroke="%2352B788" stroke-width="2"/><circle cx="85" cy="20" r="4" fill="%2352B788"/><circle cx="75" cy="35" r="3" fill="%2352B788"/><circle cx="80" cy="50" r="3" fill="%2352B788"/></svg>') no-repeat;
+    background-size: contain;
+}
+
+.vine-bottom-left {
+    bottom: -10px;
+    left: -10px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M0,100 Q20,100 30,85 T35,60 Q35,50 30,40 L25,35" fill="none" stroke="%238B4513" stroke-width="2"/><circle cx="15" cy="80" r="4" fill="%238B4513"/><circle cx="25" cy="65" r="3" fill="%238B4513"/><circle cx="20" cy="50" r="3" fill="%238B4513"/></svg>') no-repeat;
+    background-size: contain;
+}
+
+.vine-bottom-right {
+    bottom: -10px;
+    right: -10px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M100,100 Q80,100 70,85 T65,60 Q65,50 70,40 L75,35" fill="none" stroke="%238B4513" stroke-width="2"/><circle cx="85" cy="80" r="4" fill="%238B4513"/><circle cx="75" cy="65" r="3" fill="%238B4513"/><circle cx="80" cy="50" r="3" fill="%238B4513"/></svg>') no-repeat;
+    background-size: contain;
+}
+
+/* Hero content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.nature-symbol {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: gentleRotate 20s linear infinite;
+}
+
+@keyframes gentleRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-title {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin: 0.5rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+}
+
+.hero-subtitle {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: #d4af37;
+    font-style: italic;
+    margin: 0.5rem 0 2rem;
+    opacity: 0.9;
+}
+
+/* Nature divider */
+.nature-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.divider-line {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent-primary), transparent);
+}
+
+.divider-leaf,
+.divider-flower {
+    font-size: 1.2rem;
+    color: var(--accent-primary);
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.95;
+}
+
+/* Stats Section */
+.eudoria-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+    z-index: 2;
+    position: relative;
+}
+
+.nature-stat {
+    position: relative;
+    background: linear-gradient(135deg,
+        rgba(82, 183, 136, 0.15) 0%,
+        rgba(139, 69, 19, 0.08) 100%);
+    border: 2px solid rgba(82, 183, 136, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.nature-stat::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.nature-stat:hover::before {
+    left: 100%;
+}
+
+.nature-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(82, 183, 136, 0.3);
+    border-color: var(--accent-primary);
+}
+
+.stat-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.nature-stat h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: var(--accent-primary);
+    margin: 0.5rem 0;
+}
+
+.nature-stat p {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin: 0;
+}
+
+.stat-decoration {
+    margin-top: 1rem;
+    height: 3px;
+    width: 60px;
+    background: linear-gradient(to right, transparent, var(--accent-primary), transparent);
+    margin: 1rem auto 0;
+}
+
+/* Featured Sections */
+.featured-sections {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    z-index: 2;
+    position: relative;
+}
+
+.featured-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--accent-primary);
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.title-vine {
+    font-size: 2rem;
+    animation: vineWiggle 3s ease-in-out infinite;
+}
+
+@keyframes vineWiggle {
+    0%, 100% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+/* Featured cards grid */
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.featured-card {
+    position: relative;
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(82, 183, 136, 0.05) 100%);
+    border: 2px solid rgba(82, 183, 136, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.featured-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+        var(--accent-primary),
+        rgba(139, 69, 19, 0.5),
+        var(--accent-primary));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.featured-card:hover::before {
+    transform: scaleX(1);
+}
+
+.featured-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(82, 183, 136, 0.25);
+    border-color: var(--accent-primary);
+}
+
+/* Card vine border decoration */
+.card-vine-border {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M50,0 Q40,5 35,15 T30,30" fill="none" stroke="%2352B788" stroke-width="2" opacity="0.3"/><circle cx="40" cy="10" r="2" fill="%2352B788" opacity="0.3"/></svg>') no-repeat;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.featured-card:hover .card-vine-border {
+    opacity: 1;
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.featured-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: var(--accent-primary);
+    margin: 0 0 1rem 0;
+}
+
+.card-teaser {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.card-link {
+    display: inline-block;
+    font-weight: 600;
+    color: var(--accent-secondary);
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.featured-card:hover .card-link {
+    color: var(--accent-primary);
+    transform: translateX(5px);
+}
+
+/* Specific card colors */
+.eudora-card {
+    background: linear-gradient(135deg,
+        rgba(82, 183, 136, 0.1) 0%,
+        rgba(255, 215, 0, 0.05) 100%);
+}
+
+.protectors-card {
+    background: linear-gradient(135deg,
+        rgba(139, 69, 19, 0.1) 0%,
+        rgba(82, 183, 136, 0.05) 100%);
+}
+
+.triplets-card {
+    background: linear-gradient(135deg,
+        rgba(255, 192, 203, 0.15) 0%,
+        rgba(138, 43, 226, 0.05) 100%);
+}
+
+.flora-card {
+    background: linear-gradient(135deg,
+        rgba(34, 139, 34, 0.1) 0%,
+        rgba(82, 183, 136, 0.08) 100%);
+}
+
+/* Footer vines decoration */
+.welcome-footer-vines {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.footer-vine {
+    height: 3px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(to right,
+        transparent,
+        var(--accent-primary),
+        rgba(139, 69, 19, 0.5),
+        var(--accent-primary),
+        transparent);
+    position: relative;
+}
+
+.footer-vine::before,
+.footer-vine::after {
+    content: '🍃';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.footer-vine::before {
+    left: -30px;
+}
+
+.footer-vine::after {
+    right: -30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .eudoria-hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .eudoria-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-title {
+        font-size: 2rem;
+    }
+
+    .nature-symbol {
+        font-size: 3rem;
+    }
+
+    .vine-frame {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* ==========================================
+   COMING SOON PAGE
+   ========================================== */
+
+.coming-soon-page {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.coming-soon-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg,
+        rgba(82, 183, 136, 0.1) 0%,
+        rgba(139, 69, 19, 0.05) 100%);
+    border-radius: 1rem;
+    border: 2px solid rgba(82, 183, 136, 0.2);
+    box-shadow: 0 8px 32px rgba(82, 183, 136, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.coming-soon-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(82, 183, 136, 0.15) 0%, transparent 70%);
+    animation: pulseGlow 4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.coming-soon-icon {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.coming-soon-title {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: var(--accent-primary);
+    margin: 1rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.coming-soon-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    max-width: 600px;
+    margin: 2rem auto;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.coming-soon-status {
+    margin: 2.5rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg,
+        rgba(245, 158, 11, 0.15) 0%,
+        rgba(251, 191, 36, 0.15) 100%);
+    border: 2px solid rgba(245, 158, 11, 0.4);
+    border-radius: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #b45309;
+}
+
+.status-icon {
+    font-size: 1.5rem;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.status-text {
+    font-family: 'Cinzel', serif;
+}
+
+.coming-soon-note {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 2rem auto;
+    position: relative;
+    z-index: 1;
+}
+
+.back-home-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-primary);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 12px rgba(82, 183, 136, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.back-home-btn:hover {
+    background: var(--accent-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(82, 183, 136, 0.4);
+}
+
+.back-home-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .coming-soon-hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .coming-soon-title {
+        font-size: 2rem;
+    }
+
+    .coming-soon-icon {
+        font-size: 4rem;
+    }
+
+    .coming-soon-description {
+        font-size: 1.1rem;
+    }
+}
+
+/* Falcon King Page - Gold and Black Theme */
+.falcon-king-page {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+    background-image:
+        linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.05) 100%),
+        linear-gradient(to bottom, #000000, #1a1a1a);
+    position: relative;
+}
+
+.falcon-king-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.falcon-king-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+.falcon-king-page h1,
+.falcon-king-page h2,
+.falcon-king-page h3,
+.falcon-king-page h4,
+.falcon-king-page h5 {
+    color: #d4af37;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.falcon-king-page p,
+.falcon-king-page li {
+    color: #e8e8e8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.falcon-king-page .overview-tagline {
+    color: #d4af37;
+    font-style: italic;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+.falcon-king-page .wiki-infobox {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.falcon-king-page .wiki-infobox-title {
+    background: linear-gradient(90deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%);
+    color: #000000;
+    font-weight: 700;
+    text-shadow: none;
+}
+
+.falcon-king-page .wiki-infobox-label {
+    color: #d4af37;
+}
+
+.falcon-king-page .wiki-infobox-value {
+    color: #e8e8e8;
+}
+
+.falcon-king-page .wiki-toc {
+    background: rgba(26, 26, 26, 0.8);
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.falcon-king-page .wiki-toc-title {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+.falcon-king-page .wiki-toc a {
+    color: #d4af37;
+}
+
+.falcon-king-page .wiki-toc a:hover {
+    color: #f4d03f;
+}
+
+.falcon-king-page .wiki-toc li::before {
+    color: #d4af37;
+}
+
+.falcon-king-page details {
+    background: rgba(26, 26, 26, 0.6) !important;
+    border-color: #d4af37 !important;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+.falcon-king-page summary {
+    color: #d4af37 !important;
+}
+
+.falcon-king-page .detail-section {
+    background: rgba(212, 175, 55, 0.1) !important;
+    border-left-color: #d4af37 !important;
+}
+
+.falcon-king-page .wiki-section-header {
+    color: #d4af37;
+    border-bottom-color: #d4af37;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.falcon-king-page strong {
+    color: #f4d03f;
+}
+
+.falcon-king-page .breadcrumbs {
+    color: #d4af37;
+}
+
+.falcon-king-page .breadcrumb-separator {
+    color: #d4af37;
+}
+
+.falcon-king-page .wiki-see-also {
+    background: rgba(26, 26, 26, 0.8);
+    border-top: 2px solid #d4af37;
+}
+
+.falcon-king-page .wiki-see-also h3 {
+    color: #d4af37;
+}
+
+.falcon-king-page .wiki-categories {
+    background: rgba(26, 26, 26, 0.8);
+    border-top: 2px solid #d4af37;
+}
+
+.falcon-king-page .category-tag {
+    background: rgba(212, 175, 55, 0.2);
+    color: #d4af37;
+    border: 1px solid #d4af37;
+}
+
+.falcon-king-page .category-tag:hover {
+    background: rgba(212, 175, 55, 0.3);
+    color: #f4d03f;
+}

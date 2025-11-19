@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(open index.html)",
+      "Bash(open:*)",
+      "Bash(npm install)",
+      "Bash(npm start)",
+      "WebFetch(domain:joyful-heliotrope-40e461.netlify.app)",
+      "Read(//Users/sashamone/Downloads/**)",
+      "Bash(python3:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

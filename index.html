@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eudoria Wiki</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" style="display: none;" onclick="toggleMobileMenu()">☰ Menu</button>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="app-header">
+                <h1>Eudoria</h1>
+                <p class="subtitle">Wiki</p>
+                <div class="mode-tabs">
+                    <button class="mode-tab active" data-mode="eudoria">Eudoria</button>
+                    <button class="mode-tab" data-mode="eudoric">Eudoric</button>
+                </div>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search Eudoria..." />
+            </div>
+
+            <nav class="nav-menu">
+                <!-- Eudoria Mode Navigation -->
+                <div id="eudoriaNav" class="mode-navigation">
+                    <div class="nav-section">
+                        <h3>About</h3>
+                        <button class="nav-button" data-view="eudoria-overview">Eudoria Overview</button>
+                        <button class="nav-button" data-view="eudora-profile">Eudora, Mother Nature</button>
+                        <button class="nav-button" data-view="noga-calendar">Noga Calendar</button>
+                        <button class="nav-button" data-view="eudoria-saga">The Eudoria Saga</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Regions</h3>
+                        <button class="nav-button" data-view="all-regions-nested">Regions of Eudoria</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Nature & Wildlife</h3>
+                        <button class="nav-button" data-view="flora-fauna">Flora & Fauna</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Protectors</h3>
+                        <button class="nav-button" data-view="inner-circle">Eudora's Inner Circle</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Family</h3>
+                        <button class="nav-button" data-view="eudora-children">Eudora's Children</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>History & Lore</h3>
+                        <button class="nav-button" data-view="falcon-king">300 Years of the Falcon King</button>
+                        <button class="nav-button" data-view="the-silence">The Silence</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Notable Figures</h3>
+                        <button class="nav-button" data-view="royalty">Royalty</button>
+                        <button class="nav-button" data-view="companions-allies">Companions & Allies</button>
+                        <button class="nav-button" data-view="other-characters">Other Important Characters</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Future</h3>
+                        <button class="nav-button" data-view="eudoria-2025">Eudoria 2025</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Quick Access</h3>
+                        <button class="nav-button" data-view="all-regions">All Regions</button>
+                        <button class="nav-button" data-view="region-quiz">Which Region Are You?</button>
+                        <button class="nav-button" data-view="children-quiz">Which Child Is Your Best Friend?</button>
+                        <button class="nav-button" data-view="timeline">Author Wiki</button>
+                    </div>
+                </div>
+
+                <!-- Eudoric Mode Navigation (Hidden by default) -->
+                <div id="eudoricNav" class="mode-navigation" style="display: none;">
+                    <div class="nav-section">
+                        <h3>About</h3>
+                        <button class="nav-button" data-view="eudraneth">Eudraneth Overview</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Pantheon</h3>
+                        <button class="nav-button" data-view="eudoric-gods">Eudoric Gods</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Divine Order</h3>
+                        <button class="nav-button" data-view="domainkeepers">Domainkeepers</button>
+                        <button class="nav-button" data-view="seven-heads">The Seven Heads</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Sacred Knowledge</h3>
+                        <button class="nav-button" data-view="eudoric-numerals">Eudoric Numerals</button>
+                        <button class="nav-button" data-view="eudoric-letters">Eudoric Letters</button>
+                        <button class="nav-button" data-view="eudoric-zodiac">Eudoric Zodiac</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Divine History</h3>
+                        <button class="nav-button" data-view="laws-of-eimes">Laws of Eimes</button>
+                        <button class="nav-button" data-view="war-of-gods">War of Gods</button>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Divine Discovery</h3>
+                        <button class="nav-button" data-view="god-quiz">Which God Are You?</button>
+                        <button class="nav-button" data-view="zodiac-quiz">Which Zodiac Are You?</button>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div id="contentArea" class="content-area">
+                <!-- Dynamic content will load here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Zodiac Modal -->
+    <div id="zodiacModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalBody">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal for God Portraits -->
+    <div id="imageModal" class="modal image-modal">
+        <div class="image-modal-content">
+            <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div id="modalImageCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
