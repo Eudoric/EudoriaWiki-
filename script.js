@@ -16478,3 +16478,347 @@ document.addEventListener('keydown', function(event) {
         closeImageModal();
     }
 });
+
+// =====================================================
+// SEARCH FUNCTIONALITY
+// =====================================================
+
+// Build search index from all content
+function buildSearchIndex() {
+    const index = [];
+
+    // Index Eudoric Gods
+    if (eudoriaData.eudoricGods) {
+        Object.entries(eudoriaData.eudoricGods).forEach(([key, god]) => {
+            // God name and titles
+            index.push({
+                type: 'God',
+                category: 'Eudoric Gods',
+                title: god.name,
+                content: god.description || '',
+                keywords: [god.name, ...(god.titles || []), ...(god.attributes || [])].join(' '),
+                view: 'eudoric-gods',
+                icon: '👑',
+                godKey: key
+            });
+
+            // God domains
+            if (god.domains) {
+                god.domains.forEach(domain => {
+                    index.push({
+                        type: 'Domain',
+                        category: `${god.name}'s Domain`,
+                        title: domain.name,
+                        content: domain.description || '',
+                        keywords: `${god.name} ${domain.name}`,
+                        view: 'eudoric-gods',
+                        icon: '⚡',
+                        godKey: key
+                    });
+                });
+            }
+        });
+    }
+
+    // Index Laws of Eimes
+    if (eudoriaData.lawsOfEimes) {
+        const laws = eudoriaData.lawsOfEimes;
+
+        // Main Laws page
+        index.push({
+            type: 'Sacred Knowledge',
+            category: 'Laws of Eimes',
+            title: 'The Laws of Eimes',
+            content: laws.definition.description || '',
+            keywords: 'laws eimes cosmic rules suleiman 100000',
+            view: 'laws-of-eimes',
+            icon: '⚖️'
+        });
+
+        // Pillars
+        if (laws.pillars && laws.pillars.list) {
+            laws.pillars.list.forEach(pillar => {
+                index.push({
+                    type: 'Pillar',
+                    category: 'Laws of Eimes',
+                    title: pillar.name,
+                    content: pillar.subtitle || '',
+                    keywords: `${pillar.name} ${pillar.subtitle} pillar tier`,
+                    view: 'laws-of-eimes',
+                    icon: '📜'
+                });
+            });
+        }
+
+        // FAQ
+        if (laws.faq && laws.faq.questions) {
+            laws.faq.questions.forEach(faq => {
+                index.push({
+                    type: 'FAQ',
+                    category: 'Laws of Eimes FAQ',
+                    title: faq.question,
+                    content: faq.answer.replace(/<[^>]*>/g, '').substring(0, 200),
+                    keywords: faq.question + ' ' + faq.answer.replace(/<[^>]*>/g, ''),
+                    view: 'laws-of-eimes',
+                    icon: '❓'
+                });
+            });
+        }
+    }
+
+    // Index Regions
+    if (eudoriaData.unions) {
+        Object.entries(eudoriaData.unions).forEach(([unionKey, union]) => {
+            Object.entries(union.regions).forEach(([regionKey, region]) => {
+                index.push({
+                    type: 'Region',
+                    category: union.name,
+                    title: region.name,
+                    content: region.overview || '',
+                    keywords: `${region.name} ${union.name} region`,
+                    view: 'region',
+                    icon: '🏛️',
+                    regionKey: `${unionKey}.${regionKey}`
+                });
+            });
+        });
+    }
+
+    // Index War of Gods
+    if (eudoriaData.warOfGods) {
+        const war = eudoriaData.warOfGods;
+        index.push({
+            type: 'Historical Event',
+            category: 'Divine History',
+            title: war.name,
+            content: war.description || '',
+            keywords: 'war gods divine conflict suleiman alsekemu',
+            view: 'war-of-gods',
+            icon: '⚔️'
+        });
+    }
+
+    // Index Eudraneth
+    if (eudoriaData.eudraneth) {
+        const eudraneth = eudoriaData.eudraneth;
+        index.push({
+            type: 'Realm',
+            category: 'Divine Realm',
+            title: eudraneth.name,
+            content: eudraneth.description || '',
+            keywords: 'eudraneth divine realm heaven gods',
+            view: 'eudraneth',
+            icon: '✨'
+        });
+
+        // Index locations in Eudraneth
+        if (eudraneth.locations) {
+            eudraneth.locations.forEach(location => {
+                index.push({
+                    type: 'Location',
+                    category: 'Eudraneth',
+                    title: location.name,
+                    content: location.description || '',
+                    keywords: `${location.name} eudraneth ${location.subtitle || ''}`,
+                    view: 'eudraneth',
+                    icon: '🏰'
+                });
+            });
+        }
+    }
+
+    // Index Eudoric Numerals
+    if (eudoriaData.eudoricNumerals) {
+        index.push({
+            type: 'Sacred Knowledge',
+            category: 'Eudoric System',
+            title: 'Eudoric Numerals',
+            content: 'The divine number system of Eudoria',
+            keywords: 'eudoric numerals numbers divine mathematics',
+            view: 'eudoric-numerals',
+            icon: '🔢'
+        });
+    }
+
+    // Index Eudoric Zodiac
+    if (eudoriaData.eudoricZodiac) {
+        index.push({
+            type: 'Sacred Knowledge',
+            category: 'Eudoric System',
+            title: 'Eudoric Zodiac',
+            content: 'The 12 divine zodiac signs of Eudoria',
+            keywords: 'eudoric zodiac astrology vivatasia houses signs',
+            view: 'eudoric-zodiac',
+            icon: '♈'
+        });
+    }
+
+    // Index Domainkeepers
+    if (eudoriaData.domainkeepers) {
+        const dk = eudoriaData.domainkeepers;
+        index.push({
+            type: 'Divine Order',
+            category: 'Sacred Roles',
+            title: dk.name,
+            content: dk.description || '',
+            keywords: 'domainkeepers divine order seven guardians',
+            view: 'domainkeepers',
+            icon: '🛡️'
+        });
+    }
+
+    // Index Eudora
+    if (eudoriaData.eudora) {
+        const eudora = eudoriaData.eudora;
+        index.push({
+            type: 'Deity',
+            category: 'Mother Nature',
+            title: eudora.name,
+            content: eudora.description || '',
+            keywords: 'eudora mother nature afriyah queen gardens earth',
+            view: 'eudora-profile',
+            icon: '🌿'
+        });
+    }
+
+    return index;
+}
+
+// Search function
+function performSearch(query) {
+    if (!query || query.length < 2) return [];
+
+    const searchIndex = buildSearchIndex();
+    const lowerQuery = query.toLowerCase();
+    const terms = lowerQuery.split(' ').filter(t => t.length > 1);
+
+    const results = searchIndex.filter(item => {
+        const searchText = (item.title + ' ' + item.content + ' ' + item.keywords).toLowerCase();
+
+        // Check if all terms are present
+        return terms.every(term => searchText.includes(term));
+    });
+
+    // Sort by relevance (title matches first)
+    results.sort((a, b) => {
+        const aTitle = a.title.toLowerCase();
+        const bTitle = b.title.toLowerCase();
+        const aScore = aTitle.includes(lowerQuery) ? 1 : 0;
+        const bScore = bTitle.includes(lowerQuery) ? 1 : 0;
+        return bScore - aScore;
+    });
+
+    return results.slice(0, 10); // Limit to 10 results
+}
+
+// Display search results
+function displaySearchResults(results) {
+    const searchResults = document.getElementById('searchResults');
+
+    if (results.length === 0) {
+        searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
+        searchResults.style.display = 'block';
+        return;
+    }
+
+    const resultsHTML = results.map(result => {
+        const resultData = JSON.stringify(result).replace(/"/g, '&quot;');
+        return `<div class="search-result-item" onclick='navigateToResult("${result.view}", ${resultData})'>
+            <div class="search-result-icon">${result.icon}</div>
+            <div class="search-result-content">
+                <div class="search-result-category">${result.category}</div>
+                <div class="search-result-title">${result.title}</div>
+                ${result.content ? `<div class="search-result-snippet">${result.content.substring(0, 100)}...</div>` : ''}
+            </div>
+        </div>`;
+    }).join('');
+
+    searchResults.innerHTML = resultsHTML;
+    searchResults.style.display = 'block';
+}
+
+// Navigate to search result
+function navigateToResult(view, result) {
+    const searchResults = document.getElementById('searchResults');
+    const searchInput = document.getElementById('searchInput');
+
+    // Hide search results
+    searchResults.style.display = 'none';
+    searchInput.value = '';
+
+    // Navigate based on view type
+    if (view === 'eudoric-gods' && result.godKey) {
+        renderEudoricGods();
+        // Scroll to specific god (optional enhancement)
+    } else if (view === 'region' && result.regionKey) {
+        const [unionKey, regionKey] = result.regionKey.split('.');
+        renderRegionDetail(unionKey, regionKey);
+    } else {
+        // For other views, just call the appropriate render function
+        const viewFunctionMap = {
+            'laws-of-eimes': renderLawsOfEimes,
+            'war-of-gods': renderWarOfGods,
+            'eudraneth': renderEudraneth,
+            'eudoric-numerals': renderEudoricNumerals,
+            'eudoric-zodiac': renderEudoricZodiac,
+            'domainkeepers': renderDomainkeepers,
+            'eudora-profile': renderEudoraProfile
+        };
+
+        if (viewFunctionMap[view]) {
+            viewFunctionMap[view]();
+        }
+    }
+
+    // Update active nav button
+    document.querySelectorAll('.nav-button').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-view') === view) {
+            btn.classList.add('active');
+        }
+    });
+
+    // Scroll to top
+    document.getElementById('contentArea').scrollTo(0, 0);
+}
+
+// Initialize search
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
+    if (!searchInput) return;
+
+    // Search on input
+    let searchTimeout;
+    searchInput.addEventListener('input', (e) => {
+        clearTimeout(searchTimeout);
+        const query = e.target.value.trim();
+
+        if (query.length < 2) {
+            searchResults.style.display = 'none';
+            return;
+        }
+
+        // Debounce search
+        searchTimeout = setTimeout(() => {
+            const results = performSearch(query);
+            displaySearchResults(results);
+        }, 300);
+    });
+
+    // Clear search on escape
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            searchInput.value = '';
+            searchResults.style.display = 'none';
+        }
+    });
+
+    // Close search results when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.style.display = 'none';
+        }
+    });
+});
