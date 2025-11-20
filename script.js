@@ -4134,7 +4134,7 @@ const eudoriaData = {
 
                 creatorOfTheTriOrbUncredited: "E'kar is the creator of the Tri-Orb. The three components: The Mentalith Orb (mind reality orb), The Necrocore Orb, The Soul Orb. But E'kar is NOT credited for creating these orbs. Credit goes to either Suleiman or the Creator himself.",
 
-                theInventionsSuleimanGetsCredit For: "1. The First Reality Threads: E'kar created the invisible 'threads' that gods manipulate to perform miracles. Without E'kar, spells, blessings, creation miracles—none of it works. But Suleiman documented them, so Suleiman took the credit. E'kar invented them. 2. The First Language: E'kar created the underlying 'root language' that all divine languages branch from—not words, but the logic of meaning. Suleiman wrote prophecy using it → everyone assumes Suleiman invented the sacred tongue. But E'kar made the alphabet of existence. 3. The Dream Weave: E'kar created the ability for gods to enter mortal dreams safely and without overwriting their minds. Tia uses this constantly. She gives him no credit.",
+                theInventionsSuleimanGetsCreditFor: "1. The First Reality Threads: E'kar created the invisible 'threads' that gods manipulate to perform miracles. Without E'kar, spells, blessings, creation miracles—none of it works. But Suleiman documented them, so Suleiman took the credit. E'kar invented them. 2. The First Language: E'kar created the underlying 'root language' that all divine languages branch from—not words, but the logic of meaning. Suleiman wrote prophecy using it → everyone assumes Suleiman invented the sacred tongue. But E'kar made the alphabet of existence. 3. The Dream Weave: E'kar created the ability for gods to enter mortal dreams safely and without overwriting their minds. Tia uses this constantly. She gives him no credit.",
 
                 whyEkarGetsNoCredit: "E'kar is a builder, not a leader. He works quietly, doesn't speak up, and doesn't claim recognition. Suleiman interpreted, documented, and institutionalized everything—so naturally history remembers him. E'kar is the engineer. Suleiman is the public intellectual. And you know how history treats engineers.",
 
@@ -4150,7 +4150,7 @@ const eudoriaData = {
 
                 ekarBlamesSuleiman: "E'kar blamed Suleiman for it, saying: 'If you hadn't come to her rescue, she wouldn't be sent to Shadeward Hollow.' E'kar never found love after that.",
 
-                rumoredChildWithSuleimans Daughter: "There's a rumor that E'kar had a child with one of Suleiman's daughters, but it's unconfirmed.",
+                rumoredChildWithSuleimansDaughter: "There's a rumor that E'kar had a child with one of Suleiman's daughters, but it's unconfirmed.",
 
                 otherChildrenMothersUnknown: "E'kar does have other children, but no one knows who the mothers are."
             },
