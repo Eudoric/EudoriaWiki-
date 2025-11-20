@@ -7119,47 +7119,47 @@ function renderEudraneth() {
                 </div>
 
                 <div class="community-content">
-                    <p class="community-description">${community.description}</p>
+                    <p class="community-description">${addCrossReferences(community.description, 3)}</p>
 
                     ${community.appearance ? `
                         <div class="community-detail">
                             <h4>Appearance</h4>
-                            <p>${community.appearance}</p>
+                            <p>${addCrossReferences(community.appearance, 3)}</p>
                         </div>
                     ` : ''}
 
                     ${community.atmosphere ? `
                         <div class="community-detail">
                             <h4>Atmosphere</h4>
-                            <p>${community.atmosphere}</p>
+                            <p>${addCrossReferences(community.atmosphere, 3)}</p>
                         </div>
                     ` : ''}
 
                     ${community.purpose ? `
                         <div class="community-detail">
                             <h4>Purpose</h4>
-                            <p>${community.purpose}</p>
+                            <p>${addCrossReferences(community.purpose, 3)}</p>
                         </div>
                     ` : ''}
 
                     ${community.pathway ? `
                         <div class="community-detail">
                             <h4>Pathway to the Divine</h4>
-                            <p>${community.pathway}</p>
+                            <p>${addCrossReferences(community.pathway, 3)}</p>
                         </div>
                     ` : ''}
 
                     ${community.history ? `
                         <div class="community-detail">
                             <h4>History and Scars</h4>
-                            <p>${community.history}</p>
+                            <p>${addCrossReferences(community.history, 3)}</p>
                         </div>
                     ` : ''}
 
                     ${community.danger ? `
                         <div class="community-detail warning">
                             <h4>Danger</h4>
-                            <p>${community.danger}</p>
+                            <p>${addCrossReferences(community.danger, 3)}</p>
                         </div>
                     ` : ''}
 
@@ -7169,15 +7169,15 @@ function renderEudraneth() {
                             <div class="architecture-grid">
                                 <div class="arch-item">
                                     <h5>Layout</h5>
-                                    <p>${community.architecture.layout}</p>
+                                    <p>${addCrossReferences(community.architecture.layout, 3)}</p>
                                 </div>
                                 <div class="arch-item">
                                     <h5>Material</h5>
-                                    <p>${community.architecture.material}</p>
+                                    <p>${addCrossReferences(community.architecture.material, 3)}</p>
                                 </div>
                                 <div class="arch-item">
                                     <h5>The Roof</h5>
-                                    <p>${community.architecture.roof}</p>
+                                    <p>${addCrossReferences(community.architecture.roof, 3)}</p>
                                 </div>
                             </div>
                         </div>
@@ -7190,7 +7190,7 @@ function renderEudraneth() {
                                 ${community.features.map(feature => `
                                     <div class="feature-card">
                                         <h5>${feature.name}</h5>
-                                        <p>${feature.description}</p>
+                                        <p>${addCrossReferences(feature.description, 3)}</p>
                                     </div>
                                 `).join('')}
                             </div>
@@ -7200,8 +7200,8 @@ function renderEudraneth() {
                     ${community.symbolism ? `
                         <div class="community-symbolism">
                             <h4>Symbolic Meaning</h4>
-                            ${community.symbolism.alsekemu ? `<p><strong>Al'sekemu's Vision:</strong> ${community.symbolism.alsekemu}</p>` : ''}
-                            ${community.symbolism.sulieman ? `<p><strong>Suleiman's Intervention:</strong> ${community.symbolism.sulieman}</p>` : ''}
+                            ${community.symbolism.alsekemu ? `<p><strong>Al'sekemu's Vision:</strong> ${addCrossReferences(community.symbolism.alsekemu, 3)}</p>` : ''}
+                            ${community.symbolism.sulieman ? `<p><strong>Suleiman's Intervention:</strong> ${addCrossReferences(community.symbolism.sulieman, 3)}</p>` : ''}
                         </div>
                     ` : ''}
 
@@ -7563,7 +7563,7 @@ function showGodDetail(godKey) {
 
             <div class="detail-section">
                 <h3>Divine Essence</h3>
-                <p>${god.description}</p>
+                <p>${addCrossReferences(god.description, 5)}</p>
             </div>
 
             ${sistersHTML}
@@ -9329,7 +9329,7 @@ function renderWarOfGods() {
             </div>
 
             <div class="detail-section">
-                <p class="war-description">${war.description}</p>
+                <p class="war-description">${addCrossReferences(war.description, 5)}</p>
                 <div class="war-metadata">
                     <p><strong>Timeline:</strong> ${war.timeline}</p>
                     <p><strong>Duration:</strong> ${war.duration}</p>
@@ -9340,9 +9340,9 @@ function renderWarOfGods() {
             <div class="detail-section">
                 <h3>${war.overview.title}</h3>
                 <div class="war-overview-card">
-                    <p>${war.overview.description}</p>
-                    <p class="war-conflict">${war.overview.conflict}</p>
-                    <p class="war-ignition"><strong>The Ignition:</strong> ${war.overview.ignition}</p>
+                    <p>${addCrossReferences(war.overview.description, 3)}</p>
+                    <p class="war-conflict">${addCrossReferences(war.overview.conflict, 3)}</p>
+                    <p class="war-ignition"><strong>The Ignition:</strong> ${addCrossReferences(war.overview.ignition, 3)}</p>
                 </div>
             </div>
 
@@ -9510,14 +9510,14 @@ function renderDomainkeepers() {
             const specialNoteHTML = domainkeeper.specialNote ?
                 `<div class="dk-special-note">
                     <h5>⭐ Special Note:</h5>
-                    <p>${domainkeeper.specialNote}</p>
+                    <p>${addCrossReferences(domainkeeper.specialNote, 3)}</p>
                 </div>` : '';
 
             // Build legend
             const legendHTML = domainkeeper.legend ?
                 `<div class="dk-legend">
                     <h5>Legend:</h5>
-                    <p>${domainkeeper.legend}</p>
+                    <p>${addCrossReferences(domainkeeper.legend, 3)}</p>
                 </div>` : '';
 
             return `
@@ -9530,7 +9530,7 @@ function renderDomainkeepers() {
                     ${domainHTML}
                     ${etymologyHTML}
                     ${meaningHTML}
-                    <p class="dk-description">${domainkeeper.description}</p>
+                    <p class="dk-description">${addCrossReferences(domainkeeper.description, 3)}</p>
                     ${specialNoteHTML}
                     ${legendHTML}
                 </div>
@@ -9559,9 +9559,9 @@ function renderDomainkeepers() {
             </div>
 
             <div class="detail-section dk-overview">
-                <p class="dk-overview-text">${dk.overview.description}</p>
+                <p class="dk-overview-text">${addCrossReferences(dk.overview.description, 3)}</p>
                 <div class="dk-critical-note">
-                    <strong>⚠️ Critical:</strong> ${dk.overview.criticalNote}
+                    <strong>⚠️ Critical:</strong> ${addCrossReferences(dk.overview.criticalNote, 3)}
                 </div>
             </div>
 
@@ -15847,35 +15847,35 @@ function showRegionDetail(regionId, unionKey) {
             ${region.government ? `
                 <div class="detail-section">
                     <h3>Government</h3>
-                    <p>${region.government}</p>
+                    <p>${addCrossReferences(region.government, 3)}</p>
                 </div>
             ` : ''}
-            
+
             ${region.description ? `
                 <div class="detail-section">
                     <h3>Overview</h3>
-                    <p>${region.description}</p>
+                    <p>${addCrossReferences(region.description, 3)}</p>
                 </div>
             ` : ''}
-            
+
             ${region.culture ? `
                 <div class="detail-section">
                     <h3>Culture</h3>
-                    <p>${region.culture}</p>
+                    <p>${addCrossReferences(region.culture, 3)}</p>
                 </div>
             ` : ''}
-            
+
             ${region.keyLocations ? `
                 <div class="detail-section">
                     <h3>Key Locations</h3>
-                    <p>${region.keyLocations}</p>
+                    <p>${addCrossReferences(region.keyLocations, 3)}</p>
                 </div>
             ` : ''}
-            
+
             ${region.notes ? `
                 <div class="detail-section">
                     <h3>Additional Notes</h3>
-                    <p>${region.notes}</p>
+                    <p>${addCrossReferences(region.notes, 3)}</p>
                 </div>
             ` : ''}
         </div>
@@ -16822,3 +16822,220 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// =====================================================
+// CROSS-REFERENCE SYSTEM
+// =====================================================
+
+// Build keyword dictionary for cross-references
+function buildCrossReferenceDict() {
+    const dict = {};
+
+    // Gods
+    const gods = eudoriaData.eudoricGods || {};
+    Object.entries(gods).forEach(([key, god]) => {
+        dict[god.name.toLowerCase()] = {
+            type: 'god',
+            view: 'eudoric-gods',
+            display: god.name,
+            godKey: key,
+            icon: '👑'
+        };
+    });
+
+    // Special god names and aliases
+    const godAliases = {
+        'alsekemu': 'al\'sekemu',
+        'al sekemu': 'al\'sekemu',
+        'ekar': 'e\'kar',
+        'e kar': 'e\'kar',
+        'tahanne': 'ta\'hanne',
+        'ta hanne': 'ta\'hanne'
+    };
+
+    Object.entries(godAliases).forEach(([alias, canonical]) => {
+        if (dict[canonical]) {
+            dict[alias] = dict[canonical];
+        }
+    });
+
+    // Regions
+    const unions = eudoriaData.unions || {};
+    Object.entries(unions).forEach(([unionKey, union]) => {
+        Object.entries(union.regions || {}).forEach(([regionKey, region]) => {
+            dict[region.name.toLowerCase()] = {
+                type: 'region',
+                view: 'region',
+                display: region.name,
+                regionKey: `${unionKey}.${regionKey}`,
+                icon: '🏛️'
+            };
+        });
+    });
+
+    // Major concepts and pages
+    const concepts = [
+        { keyword: 'laws of eimes', view: 'laws-of-eimes', display: 'Laws of Eimes', icon: '⚖️' },
+        { keyword: 'war of gods', view: 'war-of-gods', display: 'War of Gods', icon: '⚔️' },
+        { keyword: 'eudraneth', view: 'eudraneth', display: 'Eudraneth', icon: '✨' },
+        { keyword: 'eudoric numerals', view: 'eudoric-numerals', display: 'Eudoric Numerals', icon: '🔢' },
+        { keyword: 'eudoric zodiac', view: 'eudoric-zodiac', display: 'Eudoric Zodiac', icon: '♈' },
+        { keyword: 'domainkeepers', view: 'domainkeepers', display: 'Domainkeepers', icon: '🛡️' },
+        { keyword: 'landkeepers', view: 'laws-of-eimes', display: 'Landkeepers', icon: '🌿' },
+        { keyword: 'the oristhar', view: 'eudraneth', display: 'The Oristhar', icon: '⚖️' },
+        { keyword: 'oristhar', view: 'eudraneth', display: 'Oristhar', icon: '⚖️' }
+    ];
+
+    concepts.forEach(concept => {
+        dict[concept.keyword.toLowerCase()] = {
+            type: 'concept',
+            view: concept.view,
+            display: concept.display,
+            icon: concept.icon
+        };
+    });
+
+    // Specific terms
+    const terms = {
+        'tier 1': { view: 'laws-of-eimes', display: 'Tier 1', icon: '📜' },
+        'tier 29': { view: 'laws-of-eimes', display: 'Tier 29', icon: '📜' },
+        'ilun': { view: 'laws-of-eimes', display: 'Ilun', icon: '🜁' },
+        'solun': { view: 'laws-of-eimes', display: 'Solun', icon: '🜀' },
+        'eudoria codex': { view: 'laws-of-eimes', display: 'Eudoria Codex', icon: '📜' },
+        'eudran codex': { view: 'laws-of-eimes', display: 'Eudran Codex', icon: '📜' },
+        'law of zamara': { view: 'eudoric-gods', display: 'Law of ZAMARA', icon: '⚡' },
+        'the creator': { view: 'laws-of-eimes', display: 'The Creator', icon: '✨' }
+    };
+
+    Object.entries(terms).forEach(([keyword, data]) => {
+        dict[keyword.toLowerCase()] = {
+            type: 'term',
+            ...data
+        };
+    });
+
+    return dict;
+}
+
+// Process text to add cross-references
+function addCrossReferences(text, maxLinks = 3) {
+    if (!text || typeof text !== 'string') return text;
+
+    const dict = buildCrossReferenceDict();
+    let processedText = text;
+    let linksAdded = 0;
+
+    // Sort keywords by length (longest first) to avoid partial matches
+    const sortedKeywords = Object.keys(dict).sort((a, b) => b.length - a.length);
+
+    // Track which keywords we've already linked to avoid over-linking
+    const linkedKeywords = new Set();
+
+    sortedKeywords.forEach(keyword => {
+        if (linksAdded >= maxLinks) return;
+        if (linkedKeywords.has(keyword)) return;
+
+        const data = dict[keyword];
+        const regex = new RegExp(`\\b${keyword}\\b`, 'i');
+
+        // Only link if the keyword exists in the text and isn't already linked
+        if (regex.test(processedText) && !processedText.includes(`data-xref="${keyword}"`)) {
+            // Create cross-reference link
+            const refData = JSON.stringify(data).replace(/"/g, '&quot;');
+            const replacement = `<span class="xref-link" data-xref="${keyword}" data-ref='${refData}' onclick="navigateFromXRef(this)">$&<span class="xref-icon">${data.icon}</span></span>`;
+
+            // Replace only the first occurrence
+            processedText = processedText.replace(regex, replacement);
+            linkedKeywords.add(keyword);
+            linksAdded++;
+        }
+    });
+
+    return processedText;
+}
+
+// Navigate from cross-reference link
+function navigateFromXRef(element) {
+    const refData = element.getAttribute('data-ref');
+    if (!refData) return;
+
+    try {
+        const data = JSON.parse(refData.replace(/&quot;/g, '"'));
+
+        // Navigate based on type
+        if (data.type === 'god' && data.godKey) {
+            renderEudoricGods();
+            // Optionally scroll to specific god
+            setTimeout(() => {
+                const godElement = document.getElementById(data.godKey);
+                if (godElement) {
+                    godElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        } else if (data.type === 'region' && data.regionKey) {
+            const [unionKey, regionKey] = data.regionKey.split('.');
+            renderRegionDetail(unionKey, regionKey);
+        } else if (data.view) {
+            // For other views, use the view function map
+            const viewFunctionMap = {
+                'laws-of-eimes': renderLawsOfEimes,
+                'war-of-gods': renderWarOfGods,
+                'eudraneth': renderEudraneth,
+                'eudoric-numerals': renderEudoricNumerals,
+                'eudoric-zodiac': renderEudoricZodiac,
+                'domainkeepers': renderDomainkeepers,
+                'eudora-profile': renderEudoraProfile
+            };
+
+            if (viewFunctionMap[data.view]) {
+                viewFunctionMap[data.view]();
+            }
+        }
+
+        // Update active nav button
+        document.querySelectorAll('.nav-button').forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-view') === data.view) {
+                btn.classList.add('active');
+            }
+        });
+
+        // Scroll to top
+        document.getElementById('contentArea').scrollTo(0, 0);
+    } catch (error) {
+        console.error('Error navigating from cross-reference:', error);
+    }
+}
+
+// Helper function to process HTML content with cross-references
+function processContentWithXRefs(html) {
+    if (!html || typeof html !== 'string') return html;
+
+    // Create a temporary div to parse HTML
+    const temp = document.createElement('div');
+    temp.innerHTML = html;
+
+    // Process text nodes only (avoid processing inside tags)
+    const processTextNodes = (node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+            const parent = node.parentNode;
+            if (parent && !parent.classList.contains('xref-link')) {
+                const processedText = addCrossReferences(node.textContent, 3);
+                if (processedText !== node.textContent) {
+                    const span = document.createElement('span');
+                    span.innerHTML = processedText;
+                    parent.replaceChild(span, node);
+                }
+            }
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+            // Skip code blocks, pre tags, and already processed xrefs
+            if (!['CODE', 'PRE', 'SCRIPT', 'STYLE'].includes(node.tagName) &&
+                !node.classList.contains('xref-link')) {
+                Array.from(node.childNodes).forEach(processTextNodes);
+            }
+        }
+    };
+
+    processTextNodes(temp);
+    return temp.innerHTML;
+}

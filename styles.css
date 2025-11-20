@@ -8831,3 +8831,79 @@ body.eudoric-mode .search-box input {
         font-size: 0.8rem;
     }
 }
+
+/* ========================================== */
+/* CROSS-REFERENCE LINKS */
+/* ========================================== */
+
+.xref-link {
+    position: relative;
+    display: inline;
+    color: #daa520;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(218, 165, 32, 0.5);
+    transition: all 0.2s ease;
+    padding-right: 18px;
+}
+
+.xref-link:hover {
+    color: #f4d03f;
+    border-bottom-color: #f4d03f;
+    text-shadow: 0 0 8px rgba(244, 208, 63, 0.3);
+}
+
+.xref-icon {
+    position: absolute;
+    font-size: 0.7rem;
+    margin-left: 2px;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.xref-link:hover .xref-icon {
+    opacity: 1;
+    transform: translateX(2px);
+}
+
+/* Different styles for different content types */
+.xref-link[data-xref*="suleiman"],
+.xref-link[data-xref*="alsekemu"],
+.xref-link[data-xref*="zenitha"],
+.xref-link[data-xref*="eudora"] {
+    color: #daa520;
+}
+
+.xref-link[data-xref*="tier"],
+.xref-link[data-xref*="law"],
+.xref-link[data-xref*="pillar"] {
+    color: #cd7f32;
+}
+
+.xref-link[data-xref*="region"] {
+    color: #b8960d;
+}
+
+/* Subtle glow effect on hover */
+.xref-link:hover {
+    background: linear-gradient(to right, transparent, rgba(218, 165, 32, 0.1), transparent);
+}
+
+/* Ensure links work in different text contexts */
+p .xref-link,
+li .xref-link,
+div .xref-link {
+    display: inline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .xref-icon {
+        font-size: 0.65rem;
+    }
+
+    .xref-link {
+        padding-right: 16px;
+    }
+}
