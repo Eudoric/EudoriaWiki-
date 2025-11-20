@@ -7189,47 +7189,47 @@ function renderEudraneth() {
                 </div>
 
                 <div class="community-content">
-                    <p class="community-description">${addCrossReferences(community.description, 3)}</p>
+                    <p class="community-description">${community.description}</p>
 
                     ${community.appearance ? `
                         <div class="community-detail">
                             <h4>Appearance</h4>
-                            <p>${addCrossReferences(community.appearance, 3)}</p>
+                            <p>${community.appearance}</p>
                         </div>
                     ` : ''}
 
                     ${community.atmosphere ? `
                         <div class="community-detail">
                             <h4>Atmosphere</h4>
-                            <p>${addCrossReferences(community.atmosphere, 3)}</p>
+                            <p>${community.atmosphere}</p>
                         </div>
                     ` : ''}
 
                     ${community.purpose ? `
                         <div class="community-detail">
                             <h4>Purpose</h4>
-                            <p>${addCrossReferences(community.purpose, 3)}</p>
+                            <p>${community.purpose}</p>
                         </div>
                     ` : ''}
 
                     ${community.pathway ? `
                         <div class="community-detail">
                             <h4>Pathway to the Divine</h4>
-                            <p>${addCrossReferences(community.pathway, 3)}</p>
+                            <p>${community.pathway}</p>
                         </div>
                     ` : ''}
 
                     ${community.history ? `
                         <div class="community-detail">
                             <h4>History and Scars</h4>
-                            <p>${addCrossReferences(community.history, 3)}</p>
+                            <p>${community.history}</p>
                         </div>
                     ` : ''}
 
                     ${community.danger ? `
                         <div class="community-detail warning">
                             <h4>Danger</h4>
-                            <p>${addCrossReferences(community.danger, 3)}</p>
+                            <p>${community.danger}</p>
                         </div>
                     ` : ''}
 
@@ -7239,15 +7239,15 @@ function renderEudraneth() {
                             <div class="architecture-grid">
                                 <div class="arch-item">
                                     <h5>Layout</h5>
-                                    <p>${addCrossReferences(community.architecture.layout, 3)}</p>
+                                    <p>${community.architecture.layout}</p>
                                 </div>
                                 <div class="arch-item">
                                     <h5>Material</h5>
-                                    <p>${addCrossReferences(community.architecture.material, 3)}</p>
+                                    <p>${community.architecture.material}</p>
                                 </div>
                                 <div class="arch-item">
                                     <h5>The Roof</h5>
-                                    <p>${addCrossReferences(community.architecture.roof, 3)}</p>
+                                    <p>${community.architecture.roof}</p>
                                 </div>
                             </div>
                         </div>
@@ -7260,7 +7260,7 @@ function renderEudraneth() {
                                 ${community.features.map(feature => `
                                     <div class="feature-card">
                                         <h5>${feature.name}</h5>
-                                        <p>${addCrossReferences(feature.description, 3)}</p>
+                                        <p>${feature.description}</p>
                                     </div>
                                 `).join('')}
                             </div>
@@ -7270,8 +7270,8 @@ function renderEudraneth() {
                     ${community.symbolism ? `
                         <div class="community-symbolism">
                             <h4>Symbolic Meaning</h4>
-                            ${community.symbolism.alsekemu ? `<p><strong>Al'sekemu's Vision:</strong> ${addCrossReferences(community.symbolism.alsekemu, 3)}</p>` : ''}
-                            ${community.symbolism.sulieman ? `<p><strong>Suleiman's Intervention:</strong> ${addCrossReferences(community.symbolism.sulieman, 3)}</p>` : ''}
+                            ${community.symbolism.alsekemu ? `<p><strong>Al'sekemu's Vision:</strong> ${community.symbolism.alsekemu}</p>` : ''}
+                            ${community.symbolism.sulieman ? `<p><strong>Suleiman's Intervention:</strong> ${community.symbolism.sulieman}</p>` : ''}
                         </div>
                     ` : ''}
 
