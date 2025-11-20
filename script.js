@@ -6792,12 +6792,65 @@ let currentView = 'welcome';
 // Current mode state
 let currentMode = 'eudoria';
 
+// ===================================
+// SMOOTH PAGE TRANSITION HELPERS
+// ===================================
+
+/**
+ * Triggers a smooth fade-in transition for the content area
+ * Call this after updating innerHTML to create a storybook page-turn effect
+ */
+function triggerPageTransition() {
+    const contentArea = document.getElementById('contentArea');
+
+    // Remove loaded class to trigger fade-out
+    contentArea.classList.remove('loaded');
+
+    // Wait a moment, then add loaded class to trigger fade-in
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            contentArea.classList.add('loaded');
+        });
+    });
+
+    // Scroll to top smoothly
+    contentArea.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/**
+ * Triggers a mode switch animation (Eudoria <-> Eudoric)
+ * @param {string} toMode - The mode we're switching to ('eudoria' or 'eudoric')
+ */
+function triggerModeSwitch(toMode) {
+    const appContainer = document.querySelector('.app-container');
+    const contentArea = document.getElementById('contentArea');
+
+    // Add mode-switching class
+    appContainer.classList.add('mode-switching');
+    appContainer.classList.add(toMode === 'eudoric' ? 'to-eudoric' : 'to-eudoria');
+
+    // Remove loaded class for fade-out
+    contentArea.classList.remove('loaded');
+
+    // After animation completes, clean up classes
+    setTimeout(() => {
+        appContainer.classList.remove('mode-switching', 'to-eudoric', 'to-eudoria');
+        contentArea.classList.add('loaded');
+    }, 500);
+}
+
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
     setupNavigation();
     setupSearch();
     setupModeTabs();
     renderWelcomeScreen(); // Load the beautiful welcome screen on page load
+
+    // Add loaded class after initial render for smooth entrance
+    setTimeout(() => {
+        const contentArea = document.getElementById('contentArea');
+        contentArea.classList.add('loaded');
+    }, 100);
 });
 
 // Setup mode tabs
@@ -6818,6 +6871,9 @@ function setupModeTabs() {
 // Switch between Eudoria and Eudoric modes
 function switchMode(mode) {
     currentMode = mode;
+
+    // Trigger mode switch animation
+    triggerModeSwitch(mode);
 
     // Toggle navigation visibility
     const eudoriaNav = document.getElementById('eudoriaNav');
@@ -6948,6 +7004,9 @@ function navigateTo(view) {
             renderWelcomeScreen();
         }
     }
+
+    // Trigger smooth page transition
+    triggerPageTransition();
 }
 
 // Update background based on current view
@@ -17130,8 +17189,8 @@ function navigateFromXRef(element) {
             }
         });
 
-        // Scroll to top
-        document.getElementById('contentArea').scrollTo(0, 0);
+        // Trigger smooth page transition
+        triggerPageTransition();
     } catch (error) {
         console.error('Error navigating from cross-reference:', error);
     }
