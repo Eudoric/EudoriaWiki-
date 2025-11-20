@@ -688,71 +688,127 @@ const eudoriaData = {
     },
     lawsOfEimes: {
         name: "The Laws of Eimes",
-        tagline: "The Sacred Covenant Between Gods and Mortals",
+        tagline: "The Skeleton of Reality Itself",
         workInProgress: true,
-        wipMessage: "This section is currently being developed with detailed lore. Check back soon for the complete Laws of Eimes!",
-        description: "The Laws of Eimes are the divine principles established by Suleiman and Al'sekemu at the dawn of creation. These laws govern the relationship between the divine and mortal realms, ensuring balance, order, and mutual respect. They were carved into the First Stone and placed at the heart of Eudraneth.",
-        origin: {
-            title: "Origin of the Laws",
-            event: "The First Council",
-            description: "At the beginning of time, chaos threatened to consume creation. Suleiman, God of Wisdom, and Al'sekemu, God of Time and Truth, convened the First Council. Together with the assembled gods, they forged the Laws of Eimes — a sacred covenant that would bind both divine and mortal beings to principles of balance, justice, and cosmic order.",
-            location: "The Hall of Eternal Thought, Eudraneth",
-            witnesses: ["All the gods of the Eudoric Pantheon", "The First Souls", "The Primordial Elements"]
+        wipMessage: "This section contains the overview. Detailed information about the 10 Great Pillars and specific laws is being developed. Check back soon!",
+
+        definition: {
+            title: "Definition",
+            description: "The Laws of Eimes are a set of 100,000 cosmic rules made by Suleiman at the very beginning of the universe.",
+            concepts: [
+                { name: "Structure", description: "The fundamental framework of existence" },
+                { name: "Order", description: "The organization of all cosmic elements" },
+                { name: "Wisdom", description: "The divine knowledge embedded in reality" },
+                { name: "Rules", description: "The unchangeable principles governing all things" },
+                { name: "Foundation", description: "The base upon which all reality rests" }
+            ],
+            note: "These are the Eudoric language meanings of 'Eimes'"
         },
-        laws: [
-            {
-                number: 1,
-                name: "Law of Divine Separation",
-                principle: "The realms of gods and mortals shall remain separate",
-                description: "No god may walk freely among mortals without purpose or invitation. No mortal may ascend to Eudraneth without divine transformation. This law preserves the sanctity of both realms and prevents chaos.",
-                consequence: "Violation results in the loss of divine power or mortal life essence"
-            },
-            {
-                number: 2,
-                name: "Law of Balance",
-                principle: "For every act of creation, there must be space for destruction",
-                description: "The universe requires equilibrium. Life and death, light and darkness, order and chaos must exist in harmony. No god may tip the scales too far in any direction without facing divine judgment.",
-                consequence: "The offending deity's power becomes unstable, affecting their domain"
-            },
-            {
-                number: 3,
-                name: "Law of Free Will",
-                principle: "Mortals possess the sacred right to choose their path",
-                description: "Gods may guide, inspire, and challenge mortals, but they cannot force obedience or remove the capacity for choice. Even in worship, mortals must come freely.",
-                consequence: "Any god who enslaves mortal will loses their connection to worshippers"
-            },
-            {
-                number: 4,
-                name: "Law of Divine Consequence",
-                principle: "Gods are not above the laws they create",
-                description: "Divine beings must answer for their actions just as mortals do. When a god breaks sacred law, they face judgment from the Council of the Divine, led by Suleiman and Al'sekemu.",
-                consequence: "Exile, depowerment, or binding to mortal form"
-            },
-            {
-                number: 5,
-                name: "Law of Sacred Oaths",
-                principle: "An oath sworn in the name of Eimes cannot be broken",
-                description: "When gods or mortals invoke Eimes in their promises, the universe itself binds the oath. Breaking such a vow tears at the fabric of reality and brings immediate divine retribution.",
-                consequence: "The oath-breaker suffers a curse matching the severity of their betrayal"
-            },
-            {
-                number: 6,
-                name: "Law of Divine Intervention",
-                principle: "Gods may only intervene in mortal affairs during moments of cosmic imbalance",
-                description: "Direct divine intervention in the mortal realm is restricted to catastrophic events that threaten the balance of creation itself. Personal desires or favoritism are forbidden.",
-                consequence: "The intervening god must sacrifice a portion of their divine essence"
+
+        nature: {
+            title: "Nature",
+            description: "The Laws of Eimes are more than just a legal code. They are the main reason everything in Eudoria exists. They act as the 'skeleton of reality itself.'",
+            characteristics: [
+                { name: "Fundamental", description: "The basis of all existence" },
+                { name: "Impersonal", description: "They apply equally to all beings" },
+                { name: "Unchangeable", description: "They cannot be changed or broken without causing disaster" }
+            ],
+            note: "The Laws of Eimes are cosmic rules, not laws made by people."
+        },
+
+        whatTheyGovern: {
+            title: "What They Govern",
+            description: "The Laws of Eimes govern everything:",
+            domains: [
+                "The movement of stars",
+                "The growth of seeds",
+                "The cycle of seasons",
+                "The consequences of choices",
+                "Creation, Time, Balance, Death, and more",
+                "Biology, Weather, Magic, Souls, and more"
+            ],
+            note: "They are the foundation for all Eudorian law."
+        },
+
+        creator: {
+            title: "Creator",
+            name: "Suleiman",
+            description: "Suleiman, the God of Wisdom and Wealth, created the Laws of Eimes. He is called the 'First Teacher' and is seen as the one who designed creation."
+        },
+
+        structure: {
+            title: "Structure",
+            description: "The Laws of Eimes are organized in a hierarchy:",
+            summary: "100,000 Laws → organized into 100 Orders → grouped under 10 Great Pillars",
+            levels: [
+                {
+                    level: "Pillars",
+                    name: "Cosmic Themes",
+                    purpose: "Creation, Time, Balance, Death, etc."
+                },
+                {
+                    level: "Orders",
+                    name: "Specific Law Categories",
+                    purpose: "Biology, Weather, Magic, Souls, etc."
+                },
+                {
+                    level: "Laws",
+                    name: "Exact Rules",
+                    purpose: "Individual cosmic commands"
+                }
+            ]
+        },
+
+        pillars: {
+            title: "Examples of the 10 Great Pillars",
+            description: "Three of the 10 Great Pillars are:",
+            list: [
+                {
+                    name: "Tier 1 (Ilun and Solun)",
+                    description: "Details to be added",
+                    status: "pending"
+                },
+                {
+                    name: "Tier 29 (Gods Only)",
+                    description: "Details to be added",
+                    status: "pending"
+                },
+                {
+                    name: "Eudoria (FKA Eudran) Codex",
+                    description: "Details to be added",
+                    status: "pending"
+                }
+            ],
+            note: "The remaining pillars are universal laws, some that are not in use or deemed less important."
+        },
+
+        impactOnEudoria: {
+            title: "Impact on Eudoria",
+            description: "With the new world, Eudoria, following these laws (and Eudora, Mother Nature of Earth and Gardens):",
+            achievements: [
+                "Eudoria is the only civilization that has lasted longer (over 2,000 years and counting).",
+                "This era is known as the Unified Balance and Harmony Era."
+            ]
+        },
+
+        foundationOfReality: {
+            title: "The Foundation of Reality",
+            description: "The Laws of Eimes are considered the very structure of reality itself.",
+            withoutThem: {
+                title: "Without them:",
+                consequences: [
+                    "Stars would not move",
+                    "Seeds would not grow",
+                    "Seasons would not cycle",
+                    "Choices would have no consequences",
+                    "Reality would collapse into chaos"
+                ]
             }
-        ],
-        keeper: {
-            name: "The Keeper of the Laws",
-            description: "Al'sekemu serves as the eternal Keeper of the Laws of Eimes. He records every violation, judges every transgression, and ensures that even the gods themselves remain accountable to the sacred covenant.",
-            role: "Judge, Record Keeper, Divine Enforcer"
         },
-        theFirstStone: {
-            name: "The First Stone of Eimes",
-            description: "An enormous monolith at the center of Eudraneth, upon which the Laws of Eimes are inscribed in Eudoric script. The stone is said to be older than the gods themselves, placed by the First Force that birthed existence.",
-            appearance: "Black obsidian shot through with veins of golden light, covered in glowing Eudoric numerals and letters",
-            power: "The stone resonates when a law is broken, sending shockwaves through both divine and mortal realms"
+
+        skeletonOfReality: {
+            title: "The 'Skeleton of Reality'",
+            description: "The Laws of Eimes serve as the 'skeleton of reality itself,' the invisible framework that holds existence together. Just as a skeleton supports the body, the Laws of Eimes support the universe."
         }
     },
     warOfGods: {
@@ -7400,18 +7456,51 @@ function renderLawsOfEimes() {
     const contentArea = document.getElementById('contentArea');
     const laws = eudoriaData.lawsOfEimes;
 
-    const lawsHTML = laws.laws.map(law => `
-        <div class="law-card">
-            <div class="law-number">${law.number}</div>
-            <div class="law-content">
-                <h3 class="law-name">${law.name}</h3>
-                <p class="law-principle">"${law.principle}"</p>
-                <p class="law-description">${law.description}</p>
-                <div class="law-consequence">
-                    <strong>Consequence:</strong> ${law.consequence}
-                </div>
-            </div>
+    // Render concepts (5 meanings of Eimes)
+    const conceptsHTML = laws.definition.concepts.map(concept => `
+        <div class="concept-card">
+            <h4>${concept.name}</h4>
+            <p>${concept.description}</p>
         </div>
+    `).join('');
+
+    // Render characteristics
+    const characteristicsHTML = laws.nature.characteristics.map(char => `
+        <div class="characteristic-item">
+            <strong>${char.name}:</strong> ${char.description}
+        </div>
+    `).join('');
+
+    // Render what they govern
+    const domainsHTML = laws.whatTheyGovern.domains.map(domain => `
+        <li>${domain}</li>
+    `).join('');
+
+    // Render structure levels
+    const levelsHTML = laws.structure.levels.map(level => `
+        <tr>
+            <td><strong>${level.level}</strong></td>
+            <td>${level.name}</td>
+            <td>${level.purpose}</td>
+        </tr>
+    `).join('');
+
+    // Render pillars
+    const pillarsHTML = laws.pillars.list.map(pillar => `
+        <div class="pillar-card ${pillar.status}">
+            <h4>${pillar.name}</h4>
+            <p>${pillar.description}</p>
+        </div>
+    `).join('');
+
+    // Render impact achievements
+    const achievementsHTML = laws.impactOnEudoria.achievements.map(achievement => `
+        <li>${achievement}</li>
+    `).join('');
+
+    // Render foundation consequences
+    const consequencesHTML = laws.foundationOfReality.withoutThem.consequences.map(consequence => `
+        <li>${consequence}</li>
     `).join('');
 
     contentArea.innerHTML = `
@@ -7433,42 +7522,92 @@ function renderLawsOfEimes() {
             ` : ''}
 
             <div class="detail-section">
-                <p class="laws-description">${laws.description}</p>
+                <h3>${laws.definition.title}</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">${laws.definition.description}</p>
+                <div class="concepts-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
+                    ${conceptsHTML}
+                </div>
+                <p class="note-text" style="font-style: italic; color: var(--text-secondary); margin-top: 1rem;">${laws.definition.note}</p>
             </div>
 
             <div class="detail-section">
-                <h3>${laws.origin.title}</h3>
-                <div class="origin-card">
-                    <h4>${laws.origin.event}</h4>
-                    <p>${laws.origin.description}</p>
-                    <div class="origin-details">
-                        <p><strong>Location:</strong> ${laws.origin.location}</p>
-                        <p><strong>Witnesses:</strong> ${laws.origin.witnesses.join(', ')}</p>
-                    </div>
+                <h3>${laws.nature.title}</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">${laws.nature.description}</p>
+                <div class="characteristics-list" style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem;">
+                    ${characteristicsHTML}
+                </div>
+                <p class="note-text" style="font-style: italic; color: var(--text-secondary); margin-top: 1rem;">${laws.nature.note}</p>
+            </div>
+
+            <div class="detail-section">
+                <h3>${laws.whatTheyGovern.title}</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.whatTheyGovern.description}</p>
+                <ul class="key-facts-list" style="margin-bottom: 1rem;">
+                    ${domainsHTML}
+                </ul>
+                <p class="note-text" style="font-style: italic; color: var(--text-secondary);">${laws.whatTheyGovern.note}</p>
+            </div>
+
+            <div class="detail-section">
+                <h3>${laws.creator.title}</h3>
+                <div class="creator-card" style="background: var(--background-elevated); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-primary);">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--accent-primary);">${laws.creator.name}</h4>
+                    <p>${laws.creator.description}</p>
                 </div>
             </div>
 
             <div class="detail-section">
-                <h3>The Six Sacred Laws</h3>
-                <div class="laws-grid">
-                    ${lawsHTML}
+                <h3>${laws.structure.title}</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.structure.description}</p>
+                <p style="font-size: 1.1rem; font-weight: 600; color: var(--accent-primary); margin-bottom: 1.5rem; text-align: center;">${laws.structure.summary}</p>
+                <div style="overflow-x: auto;">
+                    <table class="structure-table" style="width: 100%; border-collapse: collapse; background: var(--background-elevated); border-radius: 8px; overflow: hidden;">
+                        <thead>
+                            <tr style="background: var(--accent-primary); color: white;">
+                                <th style="padding: 1rem; text-align: left;">Level</th>
+                                <th style="padding: 1rem; text-align: left;">Name</th>
+                                <th style="padding: 1rem; text-align: left;">Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${levelsHTML}
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
             <div class="detail-section">
-                <h3>${laws.keeper.name}</h3>
-                <div class="keeper-card">
-                    <p>${laws.keeper.description}</p>
-                    <p class="keeper-role"><strong>Role:</strong> ${laws.keeper.role}</p>
+                <h3>${laws.pillars.title}</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">${laws.pillars.description}</p>
+                <div class="pillars-grid" style="display: grid; gap: 1rem; margin-bottom: 1rem;">
+                    ${pillarsHTML}
+                </div>
+                <p class="note-text" style="font-style: italic; color: var(--text-secondary); margin-top: 1rem;">${laws.pillars.note}</p>
+            </div>
+
+            <div class="detail-section">
+                <h3>${laws.impactOnEudoria.title}</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.impactOnEudoria.description}</p>
+                <ul class="key-facts-list">
+                    ${achievementsHTML}
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h3>${laws.foundationOfReality.title}</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.foundationOfReality.description}</p>
+                <div class="consequences-box" style="background: var(--background-elevated); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #d32f2f; margin-top: 1rem;">
+                    <h4 style="margin-bottom: 1rem; color: #d32f2f;">${laws.foundationOfReality.withoutThem.title}</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        ${consequencesHTML}
+                    </ul>
                 </div>
             </div>
 
             <div class="detail-section">
-                <h3>${laws.theFirstStone.name}</h3>
-                <div class="first-stone-card">
-                    <p>${laws.theFirstStone.description}</p>
-                    <p><strong>Appearance:</strong> ${laws.theFirstStone.appearance}</p>
-                    <p><strong>Power:</strong> ${laws.theFirstStone.power}</p>
+                <h3>${laws.skeletonOfReality.title}</h3>
+                <div class="skeleton-card" style="background: var(--background-elevated); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--accent-primary);">
+                    <p style="font-size: 1.1rem; line-height: 1.8; font-style: italic;">${laws.skeletonOfReality.description}</p>
                 </div>
             </div>
         </div>
