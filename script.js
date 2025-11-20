@@ -760,23 +760,716 @@ const eudoriaData = {
         },
 
         pillars: {
-            title: "Examples of the 10 Great Pillars",
+            title: "The 10 Great Pillars",
             description: "Three of the 10 Great Pillars are:",
             list: [
                 {
-                    name: "Tier 1 (Ilun and Solun)",
-                    description: "Details to be added",
-                    status: "pending"
+                    name: "Pillar 1: Tier 1 - Ilun & Solun",
+                    subtitle: "The Pillar of Origin & Return",
+                    status: "complete",
+
+                    cosmicTheme: {
+                        title: "Cosmic Theme: Origin & Return",
+                        description: "The beginning and the ending of all cycles. Pillar 1 asserts that existence follows a circular, rather than linear, progression.",
+                        principles: [
+                            "Everything that exists began because Ilun sparked it",
+                            "Everything that exists returns because Solun completes it"
+                        ]
+                    },
+
+                    description: {
+                        title: "Description",
+                        summary: "Pillar 1 is the Pillar of Origin & Return, the beginning and the ending of all cycles.",
+                        governs: [
+                            "Birth, creation, purpose",
+                            "Endings, death, resurrection",
+                            "Cycles, restoration, and renewal"
+                        ],
+                        philosophy: "This pillar defines the reasons for beginnings and endings, emphasizing that each ending initiates a new beginning. Ilun and Solun represent the same force manifesting at distinct points within the cycle, rather than functioning as opposites.",
+                        analogies: [
+                            "Ilun = the ignition (the spark, the first breath, the key that opens)",
+                            "Solun = the re-ignition (rebirth, completion, the key that closes)",
+                            "If Ilun is analogous to sunrise, then Solun corresponds to the dawn that follows an extended night."
+                        ]
+                    },
+
+                    whatIsTier1: {
+                        title: "What Is Tier 1?",
+                        definition: "Tier 1 is the highest level of the Laws of Eimes, known as the Core Principles or the Cosmic Foundation.",
+                        characteristics: [
+                            "Unbreakable",
+                            "Self-enforcing",
+                            "Not written but discovered, having existed prior to being named",
+                            "Only created by Suleiman, but interpreted by others",
+                            "The laws' reality followed before it had names"
+                        ],
+                        violation: "If a Tier 1 law is violated, existence does not punish the transgressor; instead, reality itself is disrupted.",
+                        essence: "These laws constitute the fundamental mathematics underlying existence."
+                    },
+
+                    ilunAndSolun: {
+                        title: "Ilun & Solun - The Dual Keys",
+                        philosophy: "They are not opposites—they are the same force at two different points in the cycle.",
+                        analogies: [
+                            "Ilun = the ignition",
+                            "Solun = the re-ignition",
+                            "If Ilun is sunrise, Solun is dawn after a long night."
+                        ],
+                        dualKeys: [
+                            {
+                                name: "Ilun",
+                                meaning: "Origin, spark, first breath",
+                                function: "Starts existence",
+                                symbolicRole: "The Key That Opens",
+                                symbol: "🜁"
+                            },
+                            {
+                                name: "Solun",
+                                meaning: "Rebirth, cycles, completion",
+                                function: "Ends existence into a new form",
+                                symbolicRole: "The Key That Closes",
+                                symbol: "🜀"
+                            }
+                        ]
+                    },
+
+                    whatDoesThisPillarGovern: {
+                        title: "What Does This Pillar Govern?",
+                        domains: [
+                            "Birth, conception, emergence",
+                            "Soul creation & assignment",
+                            "Death, dissolution & return",
+                            "Reincarnation and re-embodiment",
+                            "Ascension into divine status",
+                            "Cycle resets",
+                            "Cosmic seasonal resets (The Great Year Cycle)",
+                            "World renewal events"
+                        ]
+                    },
+
+                    mortalTerms: {
+                        title: "In Mortal Terms",
+                        governs: [
+                            "Childbirth",
+                            "Soul placement",
+                            "Resurrection",
+                            "Fate resets",
+                            "Pre-destined births",
+                            "Prophetic rebirths",
+                            "Reincarnation loops",
+                            "Divine lineage"
+                        ]
+                    },
+
+                    divineTerms: {
+                        title: "In Divine Terms",
+                        governs: [
+                            "God births",
+                            "Ascensions",
+                            "New realms forming",
+                            "The death of gods and worlds",
+                            "How do gods reform after death"
+                        ]
+                    },
+
+                    keyOrders: {
+                        title: "Key Orders (Examples)",
+                        note: "Scholars in-universe disagree on exact names, but here's a strong canonical structure",
+                        ordersOfIlun: {
+                            title: "Orders of Ilun (Origin)",
+                            orders: [
+                                { name: "Order of First Breath", description: "Why Life Can Begin" },
+                                { name: "Order of Soul Assignment", description: "How souls are matched to bodies" },
+                                { name: "Order of Purpose", description: "Nothing is born without intention" },
+                                { name: "Order of Bequeathed Memory", description: "Ancestry imprints destiny" }
+                            ]
+                        },
+                        ordersOfSolun: {
+                            title: "Orders of Solun (Return)",
+                            orders: [
+                                { name: "Order of Sacred Death", description: "Death must serve the cycle" },
+                                { name: "Order of Return Pathways", description: "Where souls go next" },
+                                { name: "Order of Rebirth", description: "Reincarnation through cycles" },
+                                { name: "Order of Ascended Form", description: "Transformation into higher beings" }
+                            ]
+                        },
+                        combinedOrders: {
+                            title: "Combined Orders (Cycle Laws)",
+                            orders: [
+                                { name: "Order of Eternal Loops", description: "Life must feed life" },
+                                { name: "Order of Cycle Purification", description: "Trauma cannot carry into rebirth" },
+                                { name: "Order of Restored Forms", description: "Reborn bodies must repurpose the past" }
+                            ]
+                        },
+                        conclusion: "These principles establish Pillar 1 as the engine of existence, rather than merely a pair of laws."
+                    },
+
+                    tier1LawsAndEudoricNumerals: {
+                        title: "The Pillar 1 (Tier 1) Laws & Eudoric Numerals",
+                        description: "The Pillar 1 (Tier 1) Laws are named after the Eudoric numerals. The Eudoric numerals originated from the Laws of Eimes.",
+                        note: "(Please refer to the Eudoric Numerals documentation to learn more about them.)",
+                        structure: [
+                            "Ilun & Solun = Tier 1 (the foundation)",
+                            "The 20,000 laws under Tier 1 = The raw laws of origin/return",
+                            "The Eudoric Numerals = These laws distilled into glyphs and arithmetic"
+                        ]
+                    },
+
+                    importance: {
+                        title: "Importance/Impact",
+                        whyEssential: {
+                            title: "Why This Pillar Is Essential",
+                            description: "Pillar 1 serves as the engine of existence. In its absence:",
+                            withoutIt: [
+                                "Nothing could begin",
+                                "Nothing could end",
+                                "Cycles would cease",
+                                "Souls would have nowhere to go",
+                                "Death would be deletion instead of transformation",
+                                "Reality would become linear and stagnant"
+                            ],
+                            ensures: [
+                                "Existence is circular, not linear",
+                                "Endings feed beginnings",
+                                "Death serves life",
+                                "Trauma transforms into purpose",
+                                "Nothing occurs randomly; every event possesses an origin and purpose"
+                            ]
+                        }
+                    },
+
+                    notableLaws: {
+                        title: "Notable Laws (Examples)",
+                        laws: [
+                            {
+                                number: "1️⃣",
+                                name: "Law of Unchosen Birth",
+                                type: "(Ilun)",
+                                statement: "A soul cannot enter existence without origin-purpose embedded into its essence.",
+                                meaning: "No being is born randomly; even stillborn or ill-fated births possess an embedded, albeit unrealized, purpose.",
+                                whyItMatters: [
+                                    "Every birth has meaning, even if that meaning is tragic or incomplete",
+                                    "Prophecies and divine lineages are rooted in this law",
+                                    "This law governs pre-destined births (like the Primrose Triplets)"
+                                ]
+                            },
+                            {
+                                number: "2️⃣",
+                                name: "Law of Sacred Dissolution",
+                                type: "(Solun)",
+                                statement: "Nothing ends without returning to a prior state that serves the cycle.",
+                                meaning: "Death does not signify deletion; rather, it necessitates transformation.",
+                                whyItMatters: [
+                                    "Godevea's execution didn't erase her curse; Solun forced it to persist (her curse became part of the cycle)",
+                                    "Shadeward Hollow traps beings in a form where they cannot return, which is why it's considered a cosmic violation (but it can be bypassed)",
+                                    "Gods can die if their death feeds a greater cycle (Zenitha's death created the Law of ZAMARA)",
+                                    "This principle also explains why Umar's solar cycles facilitate the resurrection of ecosystems"
+                                ]
+                            },
+                            {
+                                number: "3️⃣",
+                                name: "Law of Reforged Essence",
+                                type: "(Cycle Law — Ilun ↔ Solun)",
+                                statement: "A soul cannot reincarnate carrying unprocessed trauma; memory must convert into purpose before rebirth.",
+                                meaning: "This is why past-life trauma manifests as: Personality tendencies, Instinctive fears, Divine callings. However, this transformation does not include the retention of conscious memory.",
+                                whyItMatters: [
+                                    "Souls are purified between lives",
+                                    "Trauma becomes purpose instead of pain",
+                                    "This prevents infinite loops of suffering",
+                                    "This explains why reincarnated beings do not directly recall their past lives, but instead experience residual effects"
+                                ]
+                            }
+                        ]
+                    },
+
+                    whoEnforcesIt: {
+                        title: "Who Enforces It",
+                        description: "Tier 1 laws are self-enforcing. Gods do not enforce them; reality itself enforces them.",
+                        violation: "If a Tier 1 law is violated, existence does not punish the transgressor; instead, reality itself is disrupted.",
+                        interpreters: "However, certain gods interpret and safeguard Tier 1:",
+                        gods: [
+                            { name: "Suleiman", role: "created and documented Tier 1" },
+                            { name: "Cheary", role: "ensures cycles remain harmonious" },
+                            { name: "The Iluries", role: "judge ascensions according to Tier 1" }
+                        ]
+                    },
+
+                    relationshipToOtherPillars: {
+                        title: "Relationship to Other Pillars",
+                        description: "Pillar 1 is the FOUNDATION of all other pillars.",
+                        withoutPillar1: [
+                            "Pillar 2 (Tier 29 - Gods Only) could not exist (gods are born and die according to Ilun & Solun)",
+                            "Pillar 3 (Eudoria Codex) could not function (mortal law is built on cosmic cycles)",
+                            "The other seven pillars [CLASSIFIED - SULEIMAN'S EYES ONLY] would collapse"
+                        ],
+                        conclusion: "Pillar 1 serves as the structural foundation supporting all other pillars."
+                    }
                 },
                 {
-                    name: "Tier 29 (Gods Only)",
-                    description: "Details to be added",
-                    status: "pending"
+                    name: "Pillar 2: Tier 29 (Gods Only)",
+                    subtitle: "The Pillar of Divine Governance",
+                    status: "complete",
+
+                    cosmicTheme: {
+                        title: "Cosmic Theme: Divine Governance",
+                        description: "The regulations governing how gods may conduct themselves within reality.",
+                        quote: "Where Tier 1 governs existence itself, Tier 29 governs how gods are allowed to exist among each other."
+                    },
+
+                    description: {
+                        title: "Description",
+                        summary: "Tier 29 is organized by articles, in contrast to the more structured Tier 1.",
+                        governs: [
+                            "Behavior",
+                            "Authority",
+                            "Lineage",
+                            "Territorial rights",
+                            "Conflicts of gods and semi-divine beings"
+                        ],
+                        distinctions: [
+                            "Cosmic law (Tier 1) → How reality works",
+                            "Tier 29 → How gods are allowed to conduct themselves inside that reality"
+                        ],
+                        essence: "In essence, it functions as the governmental system of the divine realm."
+                    },
+
+                    keyDifferenceFromTier1: {
+                        title: "Key Difference from Tier 1",
+                        description: "Unlike Tier 1, which is eternal and unbreakable, Tier 29 may be:",
+                        characteristics: [
+                            "Enforced",
+                            "Violated",
+                            "Amended",
+                            "Weaponized"
+                        ],
+                        consequence: "As a result, many divine conflicts depend on the interpretation of these laws."
+                    },
+
+                    whatDoesTier29Mean: {
+                        title: "What Does \"Tier 29\" Mean?",
+                        hierarchy: "Tier 29 is lower in the hierarchy because it governs specific entities rather than existence itself.",
+                        appliesTo: "It applies exclusively to Eudoric gods, subgods, demigods, and high-ranking divine beings.",
+                        doesNotApplyTo: "Mortals and outer-realm spirits are not subject to these laws."
+                    },
+
+                    whatDoesThisPillarGovern: {
+                        title: "What Does This Pillar Govern?",
+                        regulations: [
+                            "God's powers & limitations",
+                            "Domain control & boundaries",
+                            "Succession, heirs, divine birth",
+                            "War between gods",
+                            "Right to intervene in mortal affairs",
+                            "Punishments for divine wrongdoing",
+                            "Legitimacy of godhood itself"
+                        ]
+                    },
+
+                    numberOfOrders: {
+                        title: "Number of Orders",
+                        description: "Tier 29 is divided into three major articles, each containing multiple orders and laws."
+                    },
+
+                    keyDivisions: {
+                        title: "Key Divisions (Articles)",
+                        articles: [
+                            {
+                                number: "I",
+                                name: "THE ARTICLES OF DOMAIN",
+                                whatItDefines: "What a god can rule and touch.",
+                                purpose: "To prevent gods from encroaching on each other's territories and initiating large-scale conflicts.",
+                                examples: [
+                                    "Oceania governs oceans; cannot claim rain (Sky/Water overlap goes to Sove)",
+                                    "Zane trains warriors; he cannot provoke wars without divine sanction",
+                                    "Ta'hanne governs nature; she cannot weaponize vegetation against gods without a mandate"
+                                ]
+                            },
+                            {
+                                number: "II",
+                                name: "THE ARTICLES OF CONDUCT",
+                                whatItDefines: "Expected standards of behavior for gods.",
+                                rules: [
+                                    "No weaponizing mortals in divine disputes",
+                                    "No creation of life forms without balance-tier approval",
+                                    "No emotional manipulation of lower gods for power"
+                                ],
+                                example: "Bawksin violated this section, resulting in his reassignment to the underworld."
+                            },
+                            {
+                                number: "III",
+                                name: "THE ARTICLES OF LINEAGE",
+                                whatItRegulates: "The following aspects of divine lineage:",
+                                aspects: [
+                                    "Divine unions",
+                                    "Legitimacy of god-children",
+                                    "Sacred marriages (e.g., Namorian Union)",
+                                    "Domain inheritance",
+                                    "Bloodline authority"
+                                ],
+                                example: "This law affirms the inherent divine legitimacy of Sove and Ta'hanne's children."
+                            }
+                        ]
+                    },
+
+                    importance: {
+                        title: "Importance/Impact",
+                        whyThisTierMatters: {
+                            description: "Tier 29 enables gods to coexist rather than destabilize reality.",
+                            withoutTier29: [
+                                "Zenitha would wage war constantly",
+                                "Sove would act without restraint, affecting the entire continent",
+                                "Bawksin wouldn't be restrained",
+                                "Eudora could control every realm through nature alone",
+                                "Malachai's order would be an absolute dictatorship"
+                            ],
+                            conclusion: "Tier 29 prevents divinity from devolving into tyranny."
+                        }
+                    },
+
+                    notableLaws: {
+                        title: "Notable Laws (Examples)",
+                        laws: [
+                            {
+                                section: "§29.1",
+                                name: "Law of Domain Integrity",
+                                statement: "A god may not manifest divine power outside their assigned domain unless sanctioned by a higher-tier mandate.",
+                                significance: "This law prevents the following:",
+                                prevents: [
+                                    "Oceania from causing storms inland",
+                                    "Zenitha from declaring war without cosmic approval"
+                                ]
+                            },
+                            {
+                                section: "§29.12",
+                                name: "Law of Divine Interference",
+                                statement: "No god may alter mortal destiny without presenting cause before the Oristhar.",
+                                significance: "Violating this law results in consequences such as:",
+                                consequences: [
+                                    "Jodami's exile (to Shadeward Hollow)",
+                                    "Naime's temporary power removal",
+                                    "Sove's scandals are being legally documented"
+                                ]
+                            },
+                            {
+                                section: "§29.34",
+                                name: "Bloodline Mandate",
+                                statement: "Children of divine origin inherit proportional authority based on lineage, not favoritism.",
+                                whyItMatters: [
+                                    "Nasr's status as eldest not granting him higher rank than Malak",
+                                    "Power distributed evenly",
+                                    "Why Nasr being eldest doesn't mean he outranks Malak",
+                                    "Why Valiyah's power was unavoidable"
+                                ],
+                                conclusion: "This law prevents divine bloodlines from devolving into excessive dynastic conflict."
+                            },
+                            {
+                                section: "§29.87",
+                                name: "The War Sanction Decree",
+                                statement: "No divine war may begin without a minimum of:",
+                                requirements: [
+                                    "Three consenting High-Domain gods, OR",
+                                    "One Supreme Domain mandate"
+                                ],
+                                significance: [
+                                    "This law prevents Zane from initiating wars at will",
+                                    "It also legitimizes past divine wars as lawful events rather than uprisings"
+                                ]
+                            }
+                        ]
+                    },
+
+                    whoEnforcesIt: {
+                        title: "Who Enforces It",
+                        enforcers: [
+                            { name: "The Oristhar", role: "Supreme Assembly of Cosmic Governance" },
+                            { name: "Suleiman", role: "Supreme God and creator of the Laws" },
+                            { name: "Al'sekemu", role: "God of Order" },
+                            { name: "High-Domain gods", role: "depending on the article violated" }
+                        ],
+                        punishments: {
+                            description: "Violations of Tier 29 may result in the following punishments:",
+                            examples: [
+                                "Reassignment (Bawksin to the underworld)",
+                                "Exile (Jodami to Shadeward Hollow)",
+                                "Power removal (temporary or permanent)",
+                                "Legal documentation (scandals recorded in divine records)"
+                            ]
+                        }
+                    },
+
+                    relationshipToOtherPillars: {
+                        title: "Relationship to Other Pillars",
+                        dependsOnTier1: {
+                            description: "Tier 29 depends on Tier 1:",
+                            relationship: [
+                                "Without Pillar 1 (Origin and Return), gods would not exist to be governed",
+                                "Tier 29 governs how gods exist among each other within the framework of Tier 1's cycles"
+                            ]
+                        },
+                        informsPillar3: {
+                            description: "Tier 29 informs Pillar 3 (Eudoria Codex):",
+                            relationship: [
+                                "Mortal laws are built on divine precedent",
+                                "Many mortal legal structures mirror Tier 29 Articles"
+                            ]
+                        },
+                        otherPillars: "Tier 29 interacts with the other 7 pillars: [CLASSIFIED - SULEIMAN'S EYES ONLY]"
+                    }
                 },
                 {
-                    name: "Eudoria (FKA Eudran) Codex",
-                    description: "Details to be added",
-                    status: "pending"
+                    name: "Pillar 3: The Eudoria Codex (FKA Eudran Codex)",
+                    subtitle: "The Pillar of Human Law",
+                    status: "complete",
+
+                    cosmicTheme: {
+                        title: "Cosmic Theme: Mortal Law & Sacred Stewardship",
+                        description: "How to be a civilized species without ruining everything.",
+                        quote: "Where Tiers 1 and 29 govern cosmic law and divine law, Pillar 3 governs the law of the land."
+                    },
+
+                    description: {
+                        title: "Description",
+                        summary: "Pillar 3 is the legal and moral code that governs mortals, not gods.",
+                        comparison: "Where Tier 1 governs cosmic existence and Tier 29 governs divine behavior, Pillar 3 governs:",
+                        governs: [
+                            "Human behavior",
+                            "Ethical conduct",
+                            "Civilization",
+                            "How people treat the world and each other"
+                        ],
+                        essence: "It is the law of the land. This pillar is less about cosmic balance and more about how to be a civilized species without ruining everything."
+                    },
+
+                    whyItWasRenamed: {
+                        title: "Why It Was Renamed",
+                        oldName: "Eudran Codex",
+                        newName: "Eudoria Codex",
+                        transition: [
+                            {
+                                era: "Ancient Era",
+                                name: "Eudran Codex",
+                                meaning: "Humanity under early divine rule"
+                            },
+                            {
+                                era: "Reformed Era",
+                                name: "Eudoria Codex",
+                                meaning: "Reborn world after unity & restoration"
+                            }
+                        ],
+                        explanation: "Suleiman renamed it when the world transitioned from Eudran (the old world) to Eudoria (the unified, restored world).",
+                        marked: [
+                            "A new identity",
+                            "New accountability",
+                            "New covenant between mortals and divinity"
+                        ],
+                        handoff: "And then… 📌 He handed the pillar to The Creator. The heavens enforce it. Eudora speaks for it.",
+                        analogy: "Think: \"Moses had the tablets, but God wrote them.\""
+                    },
+
+                    whoControlsThisPillar: {
+                        title: "Who Controls This Pillar",
+                        controllers: [
+                            { role: "The Creator", function: "Author and enforcer" },
+                            { role: "Heavens", function: "Judges and observers" },
+                            { role: "Eudora", function: "Spokesperson & earthly interpreter" },
+                            { role: "Landkeepers", function: "Mortal enforcers/protectors" }
+                        ],
+                        note: "Eudora does not command humans; she guides them, representing harmony rather than domination."
+                    },
+
+                    structureOfTheCodex: {
+                        title: "Structure of the Codex",
+                        description: "The Eudoria Codex contains 12 primary rules:",
+                        breakdown: [
+                            "First 10 → Moral Law (Commandments)",
+                            "Last 2 → Nature Law (Eudora's Principles)"
+                        ]
+                    },
+
+                    whatDoesThisPillarGovern: {
+                        title: "What Does This Pillar Govern?",
+                        description: "The 10 Commandments regulate:",
+                        regulations: [
+                            "Ethical behavior",
+                            "Justice",
+                            "Personal conduct",
+                            "Societal order",
+                            "Reverence for divine authority"
+                        ]
+                    },
+
+                    numberOfOrders: {
+                        title: "Number of Orders",
+                        description: "Pillar 3 contains 12 Rules (10 Commandments + 2 Nature Laws)."
+                    },
+
+                    keyArticles: {
+                        title: "Key Articles",
+                        tenCommandments: {
+                            title: "THE 10 COMMANDMENTS (MORAL LAW)",
+                            commandments: [
+                                {
+                                    number: 1,
+                                    name: "Creator First",
+                                    meaning: "Supreme source of power, even over gods"
+                                },
+                                {
+                                    number: 2,
+                                    name: "No Idolatry",
+                                    meaning: "Respect symbols; don't worship them"
+                                },
+                                {
+                                    number: 3,
+                                    name: "Sacred Language",
+                                    meaning: "No divine fraud"
+                                },
+                                {
+                                    number: 4,
+                                    name: "Rest Cycle",
+                                    meaning: "Spiritual + natural alignment"
+                                },
+                                {
+                                    number: 5,
+                                    name: "Honor Lineage",
+                                    meaning: "Family extends to ancestors & creation"
+                                },
+                                {
+                                    number: 6,
+                                    name: "Justified War Only",
+                                    meaning: "Killing must align with divine purpose"
+                                },
+                                {
+                                    number: 7,
+                                    name: "Sacred Bonds",
+                                    meaning: "Unions are spiritual contracts"
+                                },
+                                {
+                                    number: 8,
+                                    name: "Theft of Fate = Worst Sin",
+                                    meaning: "Not just objects"
+                                },
+                                {
+                                    number: 9,
+                                    name: "Truth as Cosmic Law",
+                                    meaning: "Lies distort creation"
+                                },
+                                {
+                                    number: 10,
+                                    name: "Do Not Covet Destiny",
+                                    meaning: "Stay in your assigned purpose"
+                                }
+                            ]
+                        },
+                        finalTwoLaws: {
+                            title: "THE FINAL TWO LAWS (EUDORA'S LAWS / NATURE LAW)",
+                            laws: [
+                                {
+                                    number: 11,
+                                    name: "The Law of Coexistence (Honor the Natural Order)",
+                                    statement: "Humans must live in harmony with nature, animals, and ecosystems, without domination, exploitation, or unnecessary cruelty.",
+                                    whatItCreated: [
+                                        "Wildlife sanctuaries",
+                                        "Forbidden hunting zones",
+                                        "Sacred groves",
+                                        "Animal guardianship rites"
+                                    ],
+                                    note: "It also marks animals as citizens of the world, not resources.",
+                                    culturalApplications: [
+                                        "Hunting laws",
+                                        "Seasonal respect",
+                                        "Sacred groves",
+                                        "Animal rights",
+                                        "No bloodshed in the holy land"
+                                    ],
+                                    impact: "This law created the Landkeepers, guardians of the realm."
+                                },
+                                {
+                                    number: 12,
+                                    name: "The Law of Stewardship (Respect the Earth That Sustains You)",
+                                    statement: "The land is not owned; it is entrusted. Humans must tend it, heal it, and restore what they take.",
+                                    meaning: "Eudoria is not a resource; it's a living body connected to Eudora herself.",
+                                    culturalApplications: [
+                                        "Pollution is a spiritual crime",
+                                        "Deforestation = assault on the queen",
+                                        "Mines require blessing and offering"
+                                    ],
+                                    consequences: "Regions that violate this are cursed with famine or with silence from nature.",
+                                    impact: "This is the law that birthed the Landkeepers."
+                                }
+                            ]
+                        }
+                    },
+
+                    importance: {
+                        title: "Importance/Impact",
+                        whyThisPillarMatters: {
+                            description: "Without this pillar:",
+                            withoutIt: [
+                                "Humans exploit nature",
+                                "Divine guardians burn out",
+                                "Ecosystems collapse",
+                                "Eudoria becomes mortal-run chaos"
+                            ],
+                            conclusion: "Pillar 3 is what makes humans worthy of living in a divinely-governed world. It keeps civilization from becoming parasitic."
+                        }
+                    },
+
+                    whoAreTheLandkeepers: {
+                        title: "Who Are The Landkeepers?",
+                        description: "Mortals trained in sacred stewardship are part warrior, part ranger, part druid.",
+                        theyExistBecause: [
+                            "Guardians retire",
+                            "Demons return",
+                            "The world must be defended by mortals, not gods alone"
+                        ],
+                        identity: "They are not soldiers for Eudora, they are soldiers for Eudoria itself.",
+                        analogy: "Think: Park ranger + paladin + nature knight",
+                        theyProtect: [
+                            "Sacred forests",
+                            "Ecosystems",
+                            "Divine gardens",
+                            "Endangered beasts",
+                            "Ley lines and divine places"
+                        ],
+                        allegiance: "They answer to the land itself, not kings."
+                    },
+
+                    whoEnforcesIt: {
+                        title: "Who Enforces It",
+                        enforcers: [
+                            { role: "The Creator", function: "Author and ultimate enforcer" },
+                            { role: "Heavens", function: "Judges and observers" },
+                            { role: "Eudora", function: "Spokesperson & earthly interpreter" },
+                            { role: "Landkeepers", function: "Mortal enforcers/protectors on the ground" }
+                        ],
+                        punishments: {
+                            description: "Punishments for violations include:",
+                            examples: [
+                                "Spiritual crimes (pollution, deforestation)",
+                                "Famine or silence from nature (regions cursed)",
+                                "Loss of divine favor",
+                                "Landkeeper intervention"
+                            ]
+                        }
+                    },
+
+                    relationshipToOtherPillars: {
+                        title: "Relationship to Other Pillars",
+                        comparison: [
+                            { pillar: "Tier 1", governs: "Existence", appliesTo: "Reality itself", enforces: "Creator + Cosmic Law" },
+                            { pillar: "Tier 29", governs: "Gods & divinity", appliesTo: "Eudoric pantheon", enforces: "Oristhar" },
+                            { pillar: "Pillar 3", governs: "Mankind", appliesTo: "Humans & societies", enforces: "Creator → Eudora → Landkeepers" }
+                        ],
+                        symmetry: {
+                            description: "Notice the symmetry:",
+                            structure: [
+                                "Tier 1 = laws of creation",
+                                "Tier 29 = laws of the gods",
+                                "Pillar 3 = laws of the created"
+                            ],
+                            conclusion: "It brings the hierarchy full circle."
+                        }
+                    }
                 }
             ],
             note: "The remaining pillars are universal laws, some that are not in use or deemed less important."
@@ -809,6 +1502,267 @@ const eudoriaData = {
         skeletonOfReality: {
             title: "The 'Skeleton of Reality'",
             description: "The Laws of Eimes serve as the 'skeleton of reality itself,' the invisible framework that holds existence together. Just as a skeleton supports the body, the Laws of Eimes support the universe."
+        },
+
+        faq: {
+            title: "Frequently Asked Questions (FAQ)",
+            questions: [
+                {
+                    id: "faq1",
+                    question: "What about the other 7 pillars? Why can we only access 3?",
+                    answer: `Of the 10 Great Pillars, only 3 have been made accessible to mortals, lesser gods, and scholars:
+                    <ul>
+                        <li>Pillar 1: Tier 1 (Ilun & Solun) - Origin & Return</li>
+                        <li>Pillar 2: Tier 29 (Gods Only) - Divine Governance</li>
+                        <li>Pillar 3: Eudoria Codex - Mortal Law</li>
+                    </ul>
+                    <p>The remaining 7 pillars are <strong>[CLASSIFIED - SULEIMAN'S EYES ONLY]</strong>.</p>
+                    <p><strong>Suleiman's official reason:</strong> "The remaining pillars govern universal laws that are either not currently in use, deemed less important for Eudoria's function, or too dangerous for mortal or divine comprehension. They are classified for the stability of existence."</p>
+                    <p><strong>The real reason?</strong> No one knows. Suleiman refuses to elaborate, saying only: "They are mine to bear. Not yours to know."</p>`
+                },
+                {
+                    id: "faq2",
+                    question: "Is Eudora part of the Eudoric pantheon?",
+                    answer: `<p><strong>No.</strong></p>
+                    <p>Eudora is not part of the Eudoric pantheon; she is <strong>Heaven-bound</strong>.</p>
+                    <p>While she serves as Mother Nature of Earth and Gardens and is the spokesperson for the Eudoria Codex (Pillar 3), her allegiance and origin are tied to the Heavens and the Creator, not to the Eudoric divine structure.</p>
+                    <p><strong>This is why:</strong></p>
+                    <ul>
+                        <li>She can stand above divine politics</li>
+                        <li>She interprets the Creator's will for mortals</li>
+                        <li>She is favored by Cheary (their philosophies align: balance, not domination)</li>
+                        <li>She occupies the central throne in the Oristhar</li>
+                    </ul>
+                    <p>Eudora bridges the gap between Heaven and Eudoria, but she is not bound by Tier 29 (Gods Only) the way Eudoric gods are.</p>`
+                },
+                {
+                    id: "faq3",
+                    question: "Is Suleiman above the Laws of Eimes?",
+                    answer: `<p><strong>No.</strong></p>
+                    <p>Suleiman is NOT above the Laws of Eimes.</p>
+                    <p>Even though he created them, he is bound by them just like every other god and mortal.</p>
+                    <p>The reason Suleiman doesn't break the law is that he is <strong>extremely strict and rigid</strong>. He holds himself to the highest standard of cosmic order. To him, breaking the laws he created would be the ultimate hypocrisy and a betrayal of his purpose as the God of Wisdom.</p>
+                    <p><strong>If Suleiman violated a Tier 1 law, reality itself would break</strong>—not as punishment, but as a consequence. The laws are self-enforcing, and no one is exempt, not even their creator.</p>`
+                },
+                {
+                    id: "faq4",
+                    question: "Why did Al'sekemu betray Suleiman in the War of Gods?",
+                    answer: `<p>Al'sekemu betrayed Suleiman for two major reasons:</p>
+                    <p><strong>1. Suleiman lied to him.</strong><br>
+                    Throughout their history, Suleiman made promises, gave assurances, and withheld truths. The final lie, whatever it was, shattered Al'sekemu's trust completely.</p>
+                    <p><strong>2. Al'sekemu was tired of Suleiman doing experiments on him.</strong><br>
+                    When Suleiman created Al'sekemu (his "brother"), he used Zane's strength as a foundation. But Al'sekemu was not perfect.<br>
+                    He is <strong>72% imperfect</strong>.<br>
+                    And he <em>hates</em> it.</p>
+                    <p>Suleiman treated him as a project to refine, constantly analyzing, adjusting, and testing him. Al'sekemu came to resent being Suleiman's living experiment rather than his equal.</p>
+                    <p>The betrayal was not just about power or ambition—it was about <strong>dignity, autonomy, and the exhaustion of being "almost perfect" but never enough</strong>.</p>`
+                },
+                {
+                    id: "faq5",
+                    question: "Which gods are above the Laws of Eimes?",
+                    answer: `<p><strong>None of them.</strong></p>
+                    <p>No god or goddess is above the Laws of Eimes.</p>
+                    <p>Not Suleiman. Not Al'sekemu. Not Eudora. Not even Ta'hanne (with one exception, see Q9).</p>
+                    <p>The Laws of Eimes are <strong>fundamental, impersonal, and unchangeable</strong>. They govern all of existence, and no divine being is exempt.</p>
+                    <p>The only entity potentially above the Laws of Eimes is <strong>the Creator</strong>, because the Creator IS Tier 1 (Origin & Return). The Creator does not "follow" the laws; the Creator embodies them.</p>`
+                },
+                {
+                    id: "faq6",
+                    question: "Which pillar/tier is most important?",
+                    answer: `<p><strong>Tier 1 (Ilun & Solun)</strong> is the most important.</p>
+                    <p><strong>Why?</strong><br>
+                    Because Tier 1 governs existence itself: birth, death, cycles, soul creation, resurrection, and cosmic renewal.</p>
+                    <p><strong>Without Tier 1:</strong></p>
+                    <ul>
+                        <li>Reality would not function</li>
+                        <li>Nothing could begin or end</li>
+                        <li>Cycles would cease</li>
+                        <li>Souls would have nowhere to go</li>
+                        <li>The other pillars would collapse</li>
+                    </ul>
+                    <p>Tier 1 is the foundation upon which all other laws are built. It is the "skeleton of reality itself."</p>`
+                },
+                {
+                    id: "faq7",
+                    question: "What is the 100,000th law?",
+                    answer: `<p>The 100,000th law is:</p>
+                    <p><strong>The Law Against Sexual Assault.</strong></p>
+                    <p>Surprisingly, this law is often overlooked, despite being one of the final and most specific laws in the entire system.</p>
+                    <p><strong>It governs:</strong></p>
+                    <ul>
+                        <li>Consent as a cosmic principle</li>
+                        <li>Violation of bodily autonomy as a reality-level crime</li>
+                        <li>Consequences for those who commit such acts</li>
+                    </ul>
+                    <p><strong>Why it matters:</strong></p>
+                    <ul>
+                        <li>This is the law Tevye and Nasr violated when they assaulted Malai Kanya</li>
+                        <li>Suleiman's failure to enforce it immediately led to Malai Kanya's transformation into the Halonas and remains his greatest regret</li>
+                        <li>The fact that this law exists at all shows that even in a divinely-governed world, consent and bodily autonomy are sacred</li>
+                    </ul>
+                    <p>The tragedy is that it's the 100,000th law—meaning it took that long to be codified, and it's still frequently ignored or dismissed.</p>`
+                },
+                {
+                    id: "faq8",
+                    question: "How many laws fall under Tier 1 (Ilun & Solun)?",
+                    answer: `<p><strong>20,000 laws.</strong></p>
+                    <p>Out of the 100,000 total laws in the Laws of Eimes, 20,000 are classified under Tier 1 (Ilun & Solun), the Pillar of Origin & Return.</p>
+                    <p><strong>These laws govern:</strong></p>
+                    <ul>
+                        <li>Birth, creation, purpose</li>
+                        <li>Death, dissolution, return</li>
+                        <li>Soul creation & assignment</li>
+                        <li>Reincarnation and re-embodiment</li>
+                        <li>Ascension into divine status</li>
+                        <li>Cycle resets and cosmic renewal</li>
+                    </ul>
+                    <p>Tier 1 is the largest pillar by sheer number of laws, reflecting its role as the foundation of all existence.</p>`
+                },
+                {
+                    id: "faq9",
+                    question: "Is Ta'hanne more important than the Laws of Eimes?",
+                    answer: `<p>In a sense, yes—but not in the way you'd think.</p>
+                    <p>Ta'hanne is NOT above Tier 1 (Ilun & Solun), Tier 29 (Gods Only), or the Eudoria Codex.</p>
+                    <p>Those laws govern existence, divinity, and mortal behavior, and no one—not even Ta'hanne—can override them.</p>
+                    <p><strong>However:</strong></p>
+                    <p>Ta'hanne occupies a unique sacred position in the cosmic hierarchy. She is:</p>
+                    <ul>
+                        <li>The Goddess of Fertility, Desire, and Sacred Union</li>
+                        <li>The mother of divine bloodlines</li>
+                        <li>The embodiment of creation through union</li>
+                    </ul>
+                    <p><strong>There is no god or goddess that can be above Ta'hanne. She is sacred.</strong></p>
+                    <p><strong>Why?</strong><br>
+                    Because creation itself depends on her. Without Ta'hanne:</p>
+                    <ul>
+                        <li>Divine bloodlines would not exist</li>
+                        <li>Sacred unions would not be blessed</li>
+                        <li>The cycle of life (governed by Tier 1) would have no divine spark to ignite it</li>
+                    </ul>
+                    <p>She is not above the laws, but she is <strong>essential to their function</strong>.</p>
+                    <p><strong>Think of it this way:</strong></p>
+                    <ul>
+                        <li>Tier 1 provides the structure of birth and creation</li>
+                        <li>Ta'hanne provides the divine spark that makes it sacred</li>
+                    </ul>
+                    <p>She is woven into the fabric of existence in a way that makes her untouchable—not because she's more powerful, but because she is foundational.</p>`
+                },
+                {
+                    id: "faq10",
+                    question: "Does the Creator follow the Laws of Eimes?",
+                    answer: `<p><strong>No.</strong></p>
+                    <p>The Creator does not "follow" the Laws of Eimes.</p>
+                    <p><strong>Why?</strong><br>
+                    Because the Creator IS Tier 1 (Ilun & Solun).</p>
+                    <p>The Creator embodies the laws of Origin & Return. The Creator:</p>
+                    <ul>
+                        <li>Is the ignition (Ilun)</li>
+                        <li>Is the re-ignition (Solun)</li>
+                        <li>Is the cycle itself</li>
+                    </ul>
+                    <p>The Creator does not obey the laws; <strong>the Creator IS the laws</strong>.</p>
+                    <p>To ask if the Creator follows the Laws of Eimes is like asking if water follows the law of being wet. It's not a rule the Creator obeys; it's the Creator's nature.</p>`
+                },
+                {
+                    id: "faq11",
+                    question: "What are the rumors about Suleiman possibly governing another world?",
+                    answer: `<p>The most persistent rumor among divine scholars is this:</p>
+                    <p><strong>Suleiman is the Supreme God of 2 worlds, not just one.</strong></p>
+                    <p><strong>The Theory:</strong></p>
+                    <ul>
+                        <li><strong>World 1:</strong> Eudoria (the known world, governed by the 3 accessible pillars and the 7 hidden ones)</li>
+                        <li><strong>World 2:</strong> [UNKNOWN] (a parallel world or alternate reality, governed by some or all of the 7 hidden pillars)</li>
+                    </ul>
+                    <p><strong>Evidence cited by believers:</strong></p>
+                    <ul>
+                        <li>Suleiman's unexplained absences throughout history (Where does he go?)</li>
+                        <li>His visions sometimes reference places, events, and beings that don't exist in Eudoria</li>
+                        <li>He created 100,000 laws—far more than would be needed for a single world</li>
+                        <li>Yusha (God of Time and Space) once said: "Suleiman sees threads I cannot follow."</li>
+                        <li>E'kar (God of Creation) once muttered: "He builds foundations for structures I've never been asked to manifest."</li>
+                    </ul>
+                    <p><strong>If this rumor is true, it would explain:</strong></p>
+                    <ul>
+                        <li>Why is Suleiman so secretive about the 7 pillars</li>
+                        <li>Why does he work constantly (even gods tell him to slow down)</li>
+                        <li>Why does he seem emotionally distant? He's juggling two entire realities</li>
+                        <li>Why the Laws of Eimes are so vast and intricate</li>
+                    </ul>
+                    <p><strong>Suleiman's response when asked directly:</strong><br>
+                    "They are mine to bear. Not yours to know."</p>`
+                },
+                {
+                    id: "faq12",
+                    question: "Can the Laws of Eimes be changed or amended?",
+                    answer: `<p><strong>It depends on the tier.</strong></p>
+                    <p><strong>Tier 1 (Ilun & Solun):</strong> Cannot be changed. These are the raw laws of existence. If altered, reality breaks.</p>
+                    <p><strong>Tier 29 (Gods Only):</strong> Can be enforced, violated, amended, and weaponized. This is why divine conflicts often hinge on the interpretation of these laws. They are more like constitutional law—flexible within bounds, but with consequences for violation.</p>
+                    <p><strong>Pillar 3 (Eudoria Codex):</strong> Can be interpreted and adapted by the Creator, the Heavens, and Eudora. Mortal enforcement (via Landkeepers) allows for cultural interpretation, but the core 12 Articles remain fixed.</p>
+                    <p><strong>The 7 Hidden Pillars:</strong> Unknown. Since they're classified, no one knows if they can be changed.</p>`
+                },
+                {
+                    id: "faq13",
+                    question: "What happens if someone breaks a Tier 1 law?",
+                    answer: `<p><strong>Reality breaks.</strong></p>
+                    <p>Tier 1 laws are self-enforcing. If violated, existence doesn't punish the offender—<strong>reality fractures instead</strong>.</p>
+                    <p><strong>Examples of what could happen:</strong></p>
+                    <ul>
+                        <li>Time loops collapse</li>
+                        <li>Souls cannot reincarnate</li>
+                        <li>Birth and death stop functioning</li>
+                        <li>Cycles freeze or reverse chaotically</li>
+                        <li>The fabric of space-time tears</li>
+                    </ul>
+                    <p>This is why no one—not even Suleiman—can break Tier 1 laws.</p>`
+                },
+                {
+                    id: "faq14",
+                    question: "Why are the Laws of Eimes so important to Eudoria's success?",
+                    answer: `<p>Because <strong>Eudoria is the only civilization that has lasted 2,000+ years</strong>.</p>
+                    <p>By following the Laws of Eimes (and with Eudora as Mother Nature guiding them), Eudoria has achieved what no other civilization could:</p>
+                    <p><strong>The Unified Balance and Harmony Era.</strong></p>
+                    <p><strong>Without the Laws of Eimes:</strong></p>
+                    <ul>
+                        <li>Divine chaos would destabilize the world</li>
+                        <li>Mortals would exploit nature into collapse</li>
+                        <li>Gods would war endlessly</li>
+                        <li>Cycles would break</li>
+                        <li>Reality would fragment</li>
+                    </ul>
+                    <p>The Laws of Eimes are the reason Eudoria thrives.</p>`
+                },
+                {
+                    id: "faq15",
+                    question: "Who enforces the Laws of Eimes?",
+                    answer: `<p><strong>It depends on the tier/pillar:</strong></p>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                        <thead>
+                            <tr style="background: rgba(218, 165, 32, 0.2); border-bottom: 2px solid #daa520;">
+                                <th style="padding: 0.8rem; text-align: left; color: #daa520;">Tier/Pillar</th>
+                                <th style="padding: 0.8rem; text-align: left; color: #daa520;">Enforced By</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid rgba(218, 165, 32, 0.2);">
+                                <td style="padding: 0.8rem;"><strong>Tier 1 (Ilun & Solun)</strong></td>
+                                <td style="padding: 0.8rem;">Self-enforcing (reality itself)</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(218, 165, 32, 0.2);">
+                                <td style="padding: 0.8rem;"><strong>Tier 29 (Gods Only)</strong></td>
+                                <td style="padding: 0.8rem;">The Oristhar, Suleiman, Al'sekemu</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(218, 165, 32, 0.2);">
+                                <td style="padding: 0.8rem;"><strong>Pillar 3 (Eudoria Codex)</strong></td>
+                                <td style="padding: 0.8rem;">The Creator → Heavens → Eudora → Landkeepers</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.8rem;"><strong>The 7 Hidden Pillars</strong></td>
+                                <td style="padding: 0.8rem;">Unknown (Suleiman's jurisdiction)</td>
+                            </tr>
+                        </tbody>
+                    </table>`
+                }
+            ]
         }
     },
     warOfGods: {
@@ -7451,6 +8405,509 @@ function renderEudoricLetters() {
     `;
 }
 
+// Helper function to render full pillar details
+function renderPillarFullDetails(pillar) {
+    let html = '';
+
+    // What Is Tier1/Tier29
+    if (pillar.whatIsTier1) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.whatIsTier1.title}</h4>
+                <p>${pillar.whatIsTier1.definition}</p>
+                <ul class="pillar-characteristics">
+                    ${pillar.whatIsTier1.characteristics.map(c => `<li>${c}</li>`).join('')}
+                </ul>
+                <p class="pillar-note">${pillar.whatIsTier1.violation}</p>
+                <p class="pillar-essence">${pillar.whatIsTier1.essence}</p>
+            </div>
+        `;
+    }
+
+    if (pillar.whatDoesTier29Mean) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.whatDoesTier29Mean.title}</h4>
+                <p>${pillar.whatDoesTier29Mean.hierarchy}</p>
+                <p><strong>Applies to:</strong> ${pillar.whatDoesTier29Mean.appliesTo}</p>
+                <p><strong>Does not apply to:</strong> ${pillar.whatDoesTier29Mean.doesNotApplyTo}</p>
+            </div>
+        `;
+    }
+
+    // Key Difference from Tier 1
+    if (pillar.keyDifferenceFromTier1) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.keyDifferenceFromTier1.title}</h4>
+                <p>${pillar.keyDifferenceFromTier1.description}</p>
+                <ul class="pillar-characteristics">
+                    ${pillar.keyDifferenceFromTier1.characteristics.map(c => `<li>${c}</li>`).join('')}
+                </ul>
+                <p class="pillar-note">${pillar.keyDifferenceFromTier1.consequence}</p>
+            </div>
+        `;
+    }
+
+    // Why It Was Renamed (Pillar 3 specific)
+    if (pillar.whyItWasRenamed) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.whyItWasRenamed.title}</h4>
+                <p><strong>Old Name:</strong> ${pillar.whyItWasRenamed.oldName} → <strong>New Name:</strong> ${pillar.whyItWasRenamed.newName}</p>
+                <div class="transition-table">
+                    ${pillar.whyItWasRenamed.transition.map(t => `
+                        <div class="transition-row">
+                            <strong>${t.era}:</strong> ${t.name} - <em>${t.meaning}</em>
+                        </div>
+                    `).join('')}
+                </div>
+                <p style="margin-top: 1rem;">${pillar.whyItWasRenamed.explanation}</p>
+                <p><strong>This marked:</strong></p>
+                <ul class="pillar-list">
+                    ${pillar.whyItWasRenamed.marked.map(m => `<li>${m}</li>`).join('')}
+                </ul>
+                <p class="pillar-note">${pillar.whyItWasRenamed.handoff}</p>
+                <p style="font-style: italic; color: #cd7f32;">${pillar.whyItWasRenamed.analogy}</p>
+            </div>
+        `;
+    }
+
+    // Who Controls This Pillar (Pillar 3 specific)
+    if (pillar.whoControlsThisPillar) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.whoControlsThisPillar.title}</h4>
+                <div class="controllers-table">
+                    ${pillar.whoControlsThisPillar.controllers.map(c => `
+                        <div class="controller-row">
+                            <strong>${c.role}:</strong> ${c.function}
+                        </div>
+                    `).join('')}
+                </div>
+                <p class="pillar-note">${pillar.whoControlsThisPillar.note}</p>
+            </div>
+        `;
+    }
+
+    // Structure of the Codex (Pillar 3 specific)
+    if (pillar.structureOfTheCodex) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.structureOfTheCodex.title}</h4>
+                <p>${pillar.structureOfTheCodex.description}</p>
+                <ul class="pillar-list">
+                    ${pillar.structureOfTheCodex.breakdown.map(b => `<li>${b}</li>`).join('')}
+                </ul>
+            </div>
+        `;
+    }
+
+    // Key Articles (Pillar 3 specific - 10 Commandments + 2 Nature Laws)
+    if (pillar.keyArticles) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.keyArticles.title}</h4>
+
+                ${pillar.keyArticles.tenCommandments ? `
+                    <div class="commandments-section">
+                        <h5>${pillar.keyArticles.tenCommandments.title}</h5>
+                        <div class="commandments-grid">
+                            ${pillar.keyArticles.tenCommandments.commandments.map(cmd => `
+                                <div class="commandment-card">
+                                    <div class="commandment-number">${cmd.number}</div>
+                                    <h6>${cmd.name}</h6>
+                                    <p>${cmd.meaning}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                ` : ''}
+
+                ${pillar.keyArticles.finalTwoLaws ? `
+                    <div class="nature-laws-section">
+                        <h5 style="margin-top: 2rem;">${pillar.keyArticles.finalTwoLaws.title}</h5>
+                        ${pillar.keyArticles.finalTwoLaws.laws.map(law => `
+                            <div class="nature-law-card">
+                                <div class="law-number">${law.number}</div>
+                                <h6>${law.name}</h6>
+                                <p class="law-statement"><strong>Statement:</strong> ${law.statement}</p>
+                                ${law.meaning ? `<p><strong>Meaning:</strong> ${law.meaning}</p>` : ''}
+                                ${law.whatItCreated ? `
+                                    <div class="law-created">
+                                        <p><strong>What It Created:</strong></p>
+                                        <ul>
+                                            ${law.whatItCreated.map(w => `<li>${w}</li>`).join('')}
+                                        </ul>
+                                    </div>
+                                ` : ''}
+                                ${law.culturalApplications ? `
+                                    <div class="law-applications">
+                                        <p><strong>Cultural Applications:</strong></p>
+                                        <ul>
+                                            ${law.culturalApplications.map(c => `<li>${c}</li>`).join('')}
+                                        </ul>
+                                    </div>
+                                ` : ''}
+                                ${law.note ? `<p class="pillar-note">${law.note}</p>` : ''}
+                                ${law.consequences ? `<p class="pillar-note"><strong>Consequences:</strong> ${law.consequences}</p>` : ''}
+                                ${law.impact ? `<p class="pillar-conclusion">${law.impact}</p>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                ` : ''}
+            </div>
+        `;
+    }
+
+    // Who Are The Landkeepers (Pillar 3 specific)
+    if (pillar.whoAreTheLandkeepers) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.whoAreTheLandkeepers.title}</h4>
+                <p>${pillar.whoAreTheLandkeepers.description}</p>
+                <p><strong>They exist because:</strong></p>
+                <ul class="pillar-list">
+                    ${pillar.whoAreTheLandkeepers.theyExistBecause.map(t => `<li>${t}</li>`).join('')}
+                </ul>
+                <p class="pillar-conclusion">${pillar.whoAreTheLandkeepers.identity}</p>
+                <p style="font-style: italic; color: #cd7f32; margin-top: 1rem;">${pillar.whoAreTheLandkeepers.analogy}</p>
+                <p><strong>They protect:</strong></p>
+                <ul class="pillar-list">
+                    ${pillar.whoAreTheLandkeepers.theyProtect.map(t => `<li>${t}</li>`).join('')}
+                </ul>
+                <p class="pillar-note">${pillar.whoAreTheLandkeepers.allegiance}</p>
+            </div>
+        `;
+    }
+
+    // Ilun and Solun (Tier 1 specific)
+    if (pillar.ilunAndSolun) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.ilunAndSolun.title}</h4>
+                <p>${pillar.ilunAndSolun.philosophy}</p>
+                <div class="dual-keys-grid">
+                    ${pillar.ilunAndSolun.dualKeys.map(key => `
+                        <div class="dual-key-card">
+                            <div class="key-symbol">${key.symbol}</div>
+                            <h5>${key.name}</h5>
+                            <p><strong>Meaning:</strong> ${key.meaning}</p>
+                            <p><strong>Function:</strong> ${key.function}</p>
+                            <p><strong>Role:</strong> ${key.symbolicRole}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    }
+
+    // What Does This Pillar Govern
+    if (pillar.whatDoesThisPillarGovern) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.whatDoesThisPillarGovern.title}</h4>
+                <ul class="pillar-list">
+                    ${(pillar.whatDoesThisPillarGovern.domains || pillar.whatDoesThisPillarGovern.regulations).map(d => `<li>${d}</li>`).join('')}
+                </ul>
+            </div>
+        `;
+    }
+
+    // In Mortal Terms
+    if (pillar.mortalTerms) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.mortalTerms.title}</h4>
+                <ul class="pillar-list">
+                    ${pillar.mortalTerms.governs.map(g => `<li>${g}</li>`).join('')}
+                </ul>
+            </div>
+        `;
+    }
+
+    // In Divine Terms
+    if (pillar.divineTerms) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.divineTerms.title}</h4>
+                <ul class="pillar-list">
+                    ${pillar.divineTerms.governs.map(g => `<li>${g}</li>`).join('')}
+                </ul>
+            </div>
+        `;
+    }
+
+    // Key Orders / Key Divisions
+    if (pillar.keyOrders) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.keyOrders.title}</h4>
+                <p class="pillar-note">${pillar.keyOrders.note}</p>
+
+                ${pillar.keyOrders.ordersOfIlun ? `
+                    <div class="orders-section">
+                        <h5>${pillar.keyOrders.ordersOfIlun.title}</h5>
+                        <ul class="orders-list">
+                            ${pillar.keyOrders.ordersOfIlun.orders.map(o => `
+                                <li><strong>${o.name}:</strong> ${o.description}</li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+
+                ${pillar.keyOrders.ordersOfSolun ? `
+                    <div class="orders-section">
+                        <h5>${pillar.keyOrders.ordersOfSolun.title}</h5>
+                        <ul class="orders-list">
+                            ${pillar.keyOrders.ordersOfSolun.orders.map(o => `
+                                <li><strong>${o.name}:</strong> ${o.description}</li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+
+                ${pillar.keyOrders.combinedOrders ? `
+                    <div class="orders-section">
+                        <h5>${pillar.keyOrders.combinedOrders.title}</h5>
+                        <ul class="orders-list">
+                            ${pillar.keyOrders.combinedOrders.orders.map(o => `
+                                <li><strong>${o.name}:</strong> ${o.description}</li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+
+                ${pillar.keyOrders.conclusion ? `<p class="pillar-conclusion">${pillar.keyOrders.conclusion}</p>` : ''}
+            </div>
+        `;
+    }
+
+    if (pillar.keyDivisions) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.keyDivisions.title}</h4>
+                ${pillar.keyDivisions.articles.map(article => `
+                    <div class="article-card">
+                        <h5>${article.number}. ${article.name}</h5>
+                        <p><strong>${article.whatItDefines ? 'What It Defines' : 'What It Regulates'}:</strong> ${article.whatItDefines || article.whatItRegulates}</p>
+                        ${article.purpose ? `<p><strong>Purpose:</strong> ${article.purpose}</p>` : ''}
+                        ${article.rules ? `
+                            <p><strong>Rules:</strong></p>
+                            <ul>
+                                ${article.rules.map(r => `<li>${r}</li>`).join('')}
+                            </ul>
+                        ` : ''}
+                        ${article.aspects ? `
+                            <ul>
+                                ${article.aspects.map(a => `<li>${a}</li>`).join('')}
+                            </ul>
+                        ` : ''}
+                        ${article.examples ? `
+                            <p><strong>Examples:</strong></p>
+                            <ul>
+                                ${article.examples.map(e => `<li>${e}</li>`).join('')}
+                            </ul>
+                        ` : ''}
+                        ${article.example ? `<p class="pillar-note"><strong>Example:</strong> ${article.example}</p>` : ''}
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    // Importance/Impact
+    if (pillar.importance) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.importance.title}</h4>
+                ${pillar.importance.whyEssential ? `
+                    <p>${pillar.importance.whyEssential.description}</p>
+                    <div class="without-section">
+                        <p><strong>Without it:</strong></p>
+                        <ul class="consequences-list">
+                            ${pillar.importance.whyEssential.withoutIt.map(w => `<li>${w}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ${pillar.importance.whyEssential.ensures ? `
+                        <div class="ensures-section">
+                            <p><strong>It ensures:</strong></p>
+                            <ul class="ensures-list">
+                                ${pillar.importance.whyEssential.ensures.map(e => `<li>${e}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                ` : ''}
+                ${pillar.importance.whyThisTierMatters ? `
+                    <p>${pillar.importance.whyThisTierMatters.description}</p>
+                    <div class="without-section">
+                        <p><strong>Without Tier 29:</strong></p>
+                        <ul class="consequences-list">
+                            ${pillar.importance.whyThisTierMatters.withoutTier29.map(w => `<li>${w}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <p class="pillar-conclusion">${pillar.importance.whyThisTierMatters.conclusion}</p>
+                ` : ''}
+            </div>
+        `;
+    }
+
+    // Notable Laws
+    if (pillar.notableLaws) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.notableLaws.title}</h4>
+                ${pillar.notableLaws.laws.map(law => `
+                    <div class="law-card">
+                        <h5>${law.number || law.section} ${law.name} ${law.type || ''}</h5>
+                        <p class="law-statement"><strong>Statement:</strong> ${law.statement}</p>
+                        ${law.meaning ? `<p><strong>Meaning:</strong> ${law.meaning}</p>` : ''}
+                        ${law.significance ? `<p><strong>Significance:</strong> ${law.significance}</p>` : ''}
+                        ${law.whyItMatters ? `
+                            <div class="why-matters">
+                                <p><strong>Why It Matters:</strong></p>
+                                <ul>
+                                    ${law.whyItMatters.map(w => `<li>${w}</li>`).join('')}
+                                </ul>
+                            </div>
+                        ` : ''}
+                        ${law.prevents ? `
+                            <ul>
+                                ${law.prevents.map(p => `<li>${p}</li>`).join('')}
+                            </ul>
+                        ` : ''}
+                        ${law.consequences ? `
+                            <ul>
+                                ${law.consequences.map(c => `<li>${c}</li>`).join('')}
+                            </ul>
+                        ` : ''}
+                        ${law.requirements ? `
+                            <ul>
+                                ${law.requirements.map(r => `<li>${r}</li>`).join('')}
+                            </ul>
+                        ` : ''}
+                        ${law.conclusion ? `<p class="pillar-conclusion">${law.conclusion}</p>` : ''}
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    // Who Enforces It
+    if (pillar.whoEnforcesIt) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.whoEnforcesIt.title}</h4>
+                <p>${pillar.whoEnforcesIt.description}</p>
+                ${pillar.whoEnforcesIt.violation ? `<p class="pillar-note">${pillar.whoEnforcesIt.violation}</p>` : ''}
+                ${pillar.whoEnforcesIt.interpreters ? `<p>${pillar.whoEnforcesIt.interpreters}</p>` : ''}
+                <ul class="enforcers-list">
+                    ${(pillar.whoEnforcesIt.gods || pillar.whoEnforcesIt.enforcers).map(g => `
+                        <li><strong>${g.name}:</strong> ${g.role}</li>
+                    `).join('')}
+                </ul>
+                ${pillar.whoEnforcesIt.punishments ? `
+                    <div class="punishments-section">
+                        <p>${pillar.whoEnforcesIt.punishments.description}</p>
+                        <ul>
+                            ${pillar.whoEnforcesIt.punishments.examples.map(p => `<li>${p}</li>`).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+            </div>
+        `;
+    }
+
+    // Relationship to Other Pillars
+    if (pillar.relationshipToOtherPillars) {
+        html += `
+            <div class="pillar-subsection">
+                <h4>${pillar.relationshipToOtherPillars.title}</h4>
+                ${pillar.relationshipToOtherPillars.description ? `<p>${pillar.relationshipToOtherPillars.description}</p>` : ''}
+
+                ${pillar.relationshipToOtherPillars.comparison ? `
+                    <div class="pillars-comparison-table">
+                        <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                            <thead>
+                                <tr style="background: rgba(218, 165, 32, 0.2); border-bottom: 2px solid #daa520;">
+                                    <th style="padding: 0.8rem; text-align: left; color: #daa520;">Pillar</th>
+                                    <th style="padding: 0.8rem; text-align: left; color: #daa520;">Governs</th>
+                                    <th style="padding: 0.8rem; text-align: left; color: #daa520;">Applies To</th>
+                                    <th style="padding: 0.8rem; text-align: left; color: #daa520;">Enforces</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${pillar.relationshipToOtherPillars.comparison.map(row => `
+                                    <tr style="border-bottom: 1px solid rgba(218, 165, 32, 0.2);">
+                                        <td style="padding: 0.8rem;"><strong>${row.pillar}</strong></td>
+                                        <td style="padding: 0.8rem;">${row.governs}</td>
+                                        <td style="padding: 0.8rem;">${row.appliesTo}</td>
+                                        <td style="padding: 0.8rem;">${row.enforces}</td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                ` : ''}
+
+                ${pillar.relationshipToOtherPillars.symmetry ? `
+                    <div class="symmetry-section" style="margin-top: 1.5rem;">
+                        <p><strong>${pillar.relationshipToOtherPillars.symmetry.description}</strong></p>
+                        <ul class="pillar-list">
+                            ${pillar.relationshipToOtherPillars.symmetry.structure.map(s => `<li>${s}</li>`).join('')}
+                        </ul>
+                        <p class="pillar-conclusion">${pillar.relationshipToOtherPillars.symmetry.conclusion}</p>
+                    </div>
+                ` : ''}
+
+                ${pillar.relationshipToOtherPillars.withoutPillar1 ? `
+                    <p><strong>Without Pillar 1:</strong></p>
+                    <ul>
+                        ${pillar.relationshipToOtherPillars.withoutPillar1.map(w => `<li>${w}</li>`).join('')}
+                    </ul>
+                ` : ''}
+                ${pillar.relationshipToOtherPillars.dependsOnTier1 ? `
+                    <p><strong>${pillar.relationshipToOtherPillars.dependsOnTier1.description}</strong></p>
+                    <ul>
+                        ${pillar.relationshipToOtherPillars.dependsOnTier1.relationship.map(r => `<li>${r}</li>`).join('')}
+                    </ul>
+                ` : ''}
+                ${pillar.relationshipToOtherPillars.informsPillar3 ? `
+                    <p><strong>${pillar.relationshipToOtherPillars.informsPillar3.description}</strong></p>
+                    <ul>
+                        ${pillar.relationshipToOtherPillars.informsPillar3.relationship.map(r => `<li>${r}</li>`).join('')}
+                    </ul>
+                ` : ''}
+                ${pillar.relationshipToOtherPillars.conclusion ? `<p class="pillar-conclusion">${pillar.relationshipToOtherPillars.conclusion}</p>` : ''}
+                ${pillar.relationshipToOtherPillars.otherPillars ? `<p class="pillar-note">${pillar.relationshipToOtherPillars.otherPillars}</p>` : ''}
+            </div>
+        `;
+    }
+
+    return html;
+}
+
+// Toggle pillar details visibility
+function togglePillarDetails(pillarId) {
+    const detailsDiv = document.getElementById(`pillar-${pillarId}`);
+    const button = event.target.closest('.expand-pillar-btn');
+    const expandText = button.querySelector('.expand-text');
+    const collapseText = button.querySelector('.collapse-text');
+    const icon = button.querySelector('.expand-icon');
+
+    if (detailsDiv.style.display === 'none') {
+        detailsDiv.style.display = 'block';
+        expandText.style.display = 'none';
+        collapseText.style.display = 'inline';
+        icon.style.transform = 'rotate(180deg)';
+    } else {
+        detailsDiv.style.display = 'none';
+        expandText.style.display = 'inline';
+        collapseText.style.display = 'none';
+        icon.style.transform = 'rotate(0deg)';
+    }
+}
+
 // Render Laws of Eimes
 function renderLawsOfEimes() {
     const contentArea = document.getElementById('contentArea');
@@ -7486,12 +8943,74 @@ function renderLawsOfEimes() {
     `).join('');
 
     // Render pillars
-    const pillarsHTML = laws.pillars.list.map(pillar => `
-        <div class="pillar-card ${pillar.status}">
-            <h4>${pillar.name}</h4>
-            <p>${pillar.description}</p>
-        </div>
-    `).join('');
+    const pillarsHTML = laws.pillars.list.map(pillar => {
+        if (pillar.status === 'pending') {
+            // Simple card for pending pillars
+            return `
+                <div class="pillar-card ${pillar.status}">
+                    <h4>${pillar.name}</h4>
+                    <p>${pillar.description}</p>
+                </div>
+            `;
+        } else {
+            // Detailed card for complete pillars
+            return `
+                <div class="pillar-detail-card complete">
+                    <div class="pillar-header">
+                        <h3>${pillar.name}</h3>
+                        <p class="pillar-subtitle">${pillar.subtitle}</p>
+                    </div>
+
+                    ${pillar.cosmicTheme ? `
+                        <div class="pillar-section">
+                            <h4>${pillar.cosmicTheme.title}</h4>
+                            <p>${pillar.cosmicTheme.description}</p>
+                            ${pillar.cosmicTheme.quote ? `<p class="pillar-quote">"${pillar.cosmicTheme.quote}"</p>` : ''}
+                            ${pillar.cosmicTheme.principles ? `
+                                <ul class="pillar-principles">
+                                    ${pillar.cosmicTheme.principles.map(p => `<li>${p}</li>`).join('')}
+                                </ul>
+                            ` : ''}
+                        </div>
+                    ` : ''}
+
+                    ${pillar.description && pillar.description.summary ? `
+                        <div class="pillar-section">
+                            <h4>${pillar.description.title}</h4>
+                            <p>${pillar.description.summary}</p>
+                            ${pillar.description.governs ? `
+                                <ul class="pillar-list">
+                                    ${pillar.description.governs.map(g => `<li>${g}</li>`).join('')}
+                                </ul>
+                            ` : ''}
+                            ${pillar.description.philosophy ? `<p class="pillar-philosophy">${pillar.description.philosophy}</p>` : ''}
+                            ${pillar.description.analogies ? `
+                                <ul class="pillar-analogies">
+                                    ${pillar.description.analogies.map(a => `<li>${a}</li>`).join('')}
+                                </ul>
+                            ` : ''}
+                            ${pillar.description.distinctions ? `
+                                <ul class="pillar-distinctions">
+                                    ${pillar.description.distinctions.map(d => `<li>${d}</li>`).join('')}
+                                </ul>
+                            ` : ''}
+                            ${pillar.description.essence ? `<p class="pillar-essence">${pillar.description.essence}</p>` : ''}
+                        </div>
+                    ` : ''}
+
+                    <button class="expand-pillar-btn" onclick="togglePillarDetails('${pillar.name.replace(/[^a-zA-Z0-9]/g, '')}')">
+                        <span class="expand-text">Show Full Details</span>
+                        <span class="collapse-text" style="display: none;">Hide Full Details</span>
+                        <span class="expand-icon">▼</span>
+                    </button>
+
+                    <div class="pillar-full-details" id="pillar-${pillar.name.replace(/[^a-zA-Z0-9]/g, '')}" style="display: none;">
+                        ${renderPillarFullDetails(pillar)}
+                    </div>
+                </div>
+            `;
+        }
+    }).join('');
 
     // Render impact achievements
     const achievementsHTML = laws.impactOnEudoria.achievements.map(achievement => `
@@ -7610,8 +9129,43 @@ function renderLawsOfEimes() {
                     <p style="font-size: 1.1rem; line-height: 1.8; font-style: italic;">${laws.skeletonOfReality.description}</p>
                 </div>
             </div>
+
+            <div class="detail-section faq-section">
+                <h3>${laws.faq.title}</h3>
+                <div class="faq-container">
+                    ${laws.faq.questions.map((faq, index) => `
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ('${faq.id}')">
+                                <span class="faq-number">Q${index + 1}</span>
+                                <span class="faq-question-text">${faq.question}</span>
+                                <span class="faq-icon">▼</span>
+                            </button>
+                            <div class="faq-answer" id="${faq.id}" style="display: none;">
+                                ${faq.answer}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
         </div>
     `;
+}
+
+// Toggle FAQ answer visibility
+function toggleFAQ(faqId) {
+    const answer = document.getElementById(faqId);
+    const button = event.target.closest('.faq-question');
+    const icon = button.querySelector('.faq-icon');
+
+    if (answer.style.display === 'none') {
+        answer.style.display = 'block';
+        icon.style.transform = 'rotate(180deg)';
+        button.classList.add('active');
+    } else {
+        answer.style.display = 'none';
+        icon.style.transform = 'rotate(0deg)';
+        button.classList.remove('active');
+    }
 }
 
 // Render War of Gods
