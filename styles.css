@@ -2512,16 +2512,45 @@
 }
 
 /* Eudraneth Page Styling */
+/* Eudraneth Divine Page Styling - Bronze/Gold Theme */
+.eudraneth-page {
+    background: linear-gradient(135deg,
+        rgba(42, 35, 25, 1) 0%,
+        rgba(55, 45, 30, 1) 25%,
+        rgba(45, 38, 28, 1) 50%,
+        rgba(60, 48, 32, 1) 75%,
+        rgba(48, 40, 30, 1) 100%
+    );
+    background-attachment: fixed;
+}
+
 .eudraneth-page .union-header {
     position: relative;
     padding-top: 2rem;
+    background: linear-gradient(135deg, rgba(139, 90, 43, 0.15), rgba(75, 54, 124, 0.12));
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 2px solid rgba(218, 165, 32, 0.3);
+}
+
+.eudraneth-page .union-header h2 {
+    color: #daa520;
+    text-shadow: 0 0 20px rgba(218, 165, 32, 0.6);
+    font-size: 3rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.eudraneth-page .overview-tagline {
+    color: #f5deb3;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 .eudraneth-icon {
     font-size: 4rem;
     text-align: center;
     margin-bottom: 1rem;
-    filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.5));
+    filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.7));
 }
 
 .eudraneth-image-container {
@@ -2542,10 +2571,35 @@
     display: block;
 }
 
+/* Eudraneth Page Section Styling */
+.eudraneth-page .detail-section {
+    background: rgba(139, 90, 43, 0.08);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 2px solid rgba(218, 165, 32, 0.2);
+}
+
+.eudraneth-page .detail-section h3 {
+    color: #daa520;
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid rgba(218, 165, 32, 0.4);
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.4);
+}
+
+.eudraneth-page .detail-section p {
+    color: #f5deb3;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
 .eudraneth-description {
     font-size: 1.15rem;
     line-height: 1.9;
-    color: #daa520;
+    color: #f5deb3;
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
@@ -2553,26 +2607,28 @@
 .eudraneth-essence {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: #cd7f32;
+    color: #f5deb3;
     font-style: italic;
     padding: 1.5rem;
-    background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(184, 134, 11, 0.06));
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1));
     border-left: 4px solid #daa520;
     border-radius: 0.5rem;
 }
 
 .community-card {
-    background: linear-gradient(135deg, rgba(218, 165, 32, 0.12), rgba(184, 134, 11, 0.1));
-    border: 3px solid rgba(218, 165, 32, 0.3);
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.08));
+    border: 3px solid rgba(218, 165, 32, 0.4);
     border-radius: 1rem;
     padding: 2rem;
     margin-top: 2rem;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.15);
 }
 
 .community-card:hover {
-    border-color: rgba(218, 165, 32, 0.5);
-    box-shadow: 0 10px 30px rgba(218, 165, 32, 0.2);
+    border-color: rgba(218, 165, 32, 0.6);
+    box-shadow: 0 10px 30px rgba(218, 165, 32, 0.3), 0 0 20px rgba(75, 54, 124, 0.2);
+    transform: translateY(-2px);
 }
 
 .community-header h3 {
@@ -2622,21 +2678,21 @@
 .community-description {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: #cd7f32;
+    color: #f5deb3;
     margin-bottom: 1.5rem;
 }
 
 .community-detail {
     margin-top: 1.5rem;
     padding: 1.25rem;
-    background: rgba(218, 165, 32, 0.08);
+    background: rgba(218, 165, 32, 0.1);
     border-radius: 0.75rem;
-    border-left: 3px solid rgba(218, 165, 32, 0.4);
+    border-left: 3px solid rgba(218, 165, 32, 0.5);
 }
 
 .community-detail.warning {
-    background: rgba(205, 50, 50, 0.1);
-    border-left-color: rgba(205, 50, 50, 0.5);
+    background: rgba(205, 50, 50, 0.15);
+    border-left-color: rgba(205, 50, 50, 0.6);
 }
 
 .community-detail h4 {
@@ -2647,11 +2703,11 @@
 }
 
 .community-detail.warning h4 {
-    color: #ff6b6b;
+    color: #ff8888;
 }
 
 .community-detail p {
-    color: #cd7f32;
+    color: #f5deb3;
     line-height: 1.7;
 }
 

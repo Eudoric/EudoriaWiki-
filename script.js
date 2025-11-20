@@ -391,36 +391,41 @@ const eudoriaData = {
     eudraneth: {
         name: "Eudraneth",
         tagline: "The Sacred Realm of the Eudoric Gods",
-        description: "Eudraneth is the ethereal seat of divine law — the realm of gods, equations, and eternal order. It was conceived by Suleiman, the God of Wisdom and Wealth, as a perfect realm built not from stone or stars, but from thought, memory, and geometry.",
-        essence: "It is said that every inch of Eudraneth exists because an idea was made obedient to divine law. To mortals, Eudraneth appears as a structure too vast to comprehend — a realm that bends dimension, where time behaves like music and light takes on the shape of understanding.",
+        description: "Eudraneth is the ethereal seat of divine law, the realm of gods, equations, and eternal order. Conceived by Suleiman, the God of Wisdom and Wealth, it is a perfect realm built not from stone or stars, but from thought, memory, and geometry.",
+        essence: "Every inch of Eudraneth exists because an idea was made obedient to divine law. To mortals, Eudraneth feels like a memory too perfect to be real, a realm that exists above, beyond, and within all things. It is where cosmic law is written, divine justice is administered, and the gods convene to shape reality.",
         structure: {
-            title: "Structure and Entry",
-            description: "Eudraneth is composed entirely of divine Domains, each governed by one god or goddess. These Domains are not regions of land, but expressions of power — realms formed by their ruler's nature and authority.",
-            entry: "Only gods and chosen souls may enter a Domain. Mortals cannot reach Eudraneth by devotion or death alone — they must be invited by a god and guided through a divine transformation.",
-            communities: "Yet, three transitional spaces exist — rare, liminal planes where mortals may linger on the edges of eternity. These are the Communities of Passage: the Ascending, the Afterhall, and the Oristhar."
+            title: "The Structure of Eudraneth",
+            description: "Eudraneth is not a single palace or city; it is a vast divine realm with multiple territories, sacred sites, and cosmic structures:",
+            parts: [
+                "The Central Court: Where the Oristhar (the supreme divine assembly) meets to govern existence",
+                "The Divine Territories: Celestial courts and domains where gods reside, including Zamazara (Al'sekemu's Court of Order and War) and other divine holdings",
+                "The Bonnia: A multi-realm battlefield, training ground, and playfield where gods test their power, settle disputes, and prepare for cosmic threats",
+                "The Three Communities of Passage: Sacred thresholds where mortal souls ascend toward divinity",
+                "The Outer Boundaries: The edge of divine law, where Eudraneth meets the void"
+            ]
         },
         communities: [
             {
-                name: "The Ascending",
+                name: "Tīa Ascending",
                 subtitle: "The Paradise Between Worlds",
-                alternativeName: "Also called the Point of No Return",
-                description: "The Ascending is a mythic landscape where mortal devotion touches divine invitation. It is the first threshold to Eudraneth — the waiting meadow of souls destined for more.",
-                appearance: "Endless meadows of glowing green grass, each blade shining like woven emeralds. The sky is an eternal spring — brilliant blue with a sun like a golden coin, and a golden moon visible at the same time, an omen of the ancient cosmic war.",
-                atmosphere: "The air hums softly, filled with laughter, hymns, and the footsteps of mythical creatures — unicorns, phoenixes, and other spirits of rebirth.",
-                purpose: "It is the holding place for mortals who have served the gods faithfully in life. Here they await transformation — to be made \"more,\" becoming demigods, guardians, or divine attendants.",
-                pathway: "From the Ascending, chosen souls may summon the Bronze Stairs of Eudraneth, an immense spiral staircase that rises into the heavens, fading from sight as it breaches the veil of reality.",
-                myth: "To climb is to leave all behind — for nothing mortal can return from the Ascending."
+                alternativeName: "Also Called: The Point of No Return",
+                description: "The Ascending is a mythic landscape where mortal devotion meets divine invitation. It is the first threshold to Eudraneth, the waiting meadow of souls destined for more.",
+                appearance: "Endless meadows of glowing green grass, each blade shining like woven emeralds. The sky is an eternal spring, brilliant blue with a sun like a golden coin and a golden moon visible at the same time, an omen of the ancient cosmic war.",
+                atmosphere: "The air hums softly, filled with laughter, hymns, and the footsteps of mythical creatures, unicorns, phoenixes, and other spirits of rebirth.",
+                purpose: "It is the holding place for mortals who have served the gods faithfully in life. Here, they await transformation into demigods, Guardians, or divine attendants.",
+                pathway: "From The Ascending, chosen souls may summon the Bronze Stairs of Eudraneth, an immense spiral staircase that rises into the heavens and fades from sight as it breaches the veil of reality.",
+                myth: ""
             },
             {
                 name: "The Afterhall",
                 subtitle: "The Corridor of Becoming",
-                description: "The Afterhall is the sacred intermediary — a corridor between mortality and divinity, between promise and proof. It is here that souls are refined, rewritten, or forgotten.",
+                description: "The Afterhall is the passage between The Ascending and The Oristhar—a sacred corridor where transformation occurs. As souls walk this hall, they are tested, refined, and reshaped. Memories are processed, trauma purified, and purpose crystallized. By the time a soul reaches the end of The Afterhall, they are no longer what they were.",
                 appearance: "Endless bronze corridors, walls inscribed with Eudoric numerals that shimmer and shift, retelling stories of gods who once ascended from flesh.",
-                atmosphere: "The air echoes with soft metallic tones, and the floors glow with faint footprints — the traces of those who passed through and those who never did.",
+                atmosphere: "The air echoes with soft metallic tones, and the floors glow with faint footprints, the traces of those who passed through and those who never did.",
                 purpose: "It serves as a divine staging ground for transformation. According to the Laws of Eimes, every mortal chosen for ascension must dwell here until their new Domain can be created.",
-                history: "The walls still bear scorch marks and gouges — remnants of ancient conflicts fought when ascension was contested among gods.",
-                danger: "Many have become lost within the Afterhall — wandering endlessly, forgotten by the gods who promised them eternity. These forsaken souls are known as the Echoed.",
-                myth: "It is not death that traps you in the Afterhall — it is being forgotten."
+                history: "The walls still bear scorch marks and gouges, remnants of ancient conflicts fought when ascension was contested among gods.",
+                danger: "Many have become lost within the Afterhall, wandering endlessly, forgotten by the gods who promised them eternity. These forsaken souls are known as the Echoed.",
+                myth: "It is not death that traps you in the Afterhall, it is being forgotten."
             },
             {
                 name: "The Oristhar",
@@ -449,12 +454,77 @@ const eudoriaData = {
                 ]
             }
         ],
+        bonnia: {
+            title: "The Bonnia",
+            subtitle: "The Multi-Realm of War, Training, and Trial",
+            description: "The Bonnia is not a garden; it is a battlefield, a training ground, and a playfield all at once. It is a multi-realm that shifts between three purposes: Battlefield (where gods wage war and settle cosmic disputes), Training Ground (where divine warriors hone their power), and Playfield (where gods test their abilities in controlled combat).",
+            history: "The Bonnia is where the War of Gods began. Though many texts say the War of Gods began on Mount Siemoun, the truth is that Mount Siemoun lies within the Bonnia, the sacred mountain where the first divine blood was spilled, where alliances shattered, and where brother turned against brother.",
+            fallingBonnia: {
+                title: "The Falling Bonnia",
+                subtitle: "The Wound in Reality",
+                description: "The Falling Bonnia is a location within the Bonnia realm, a permanent scar left by the War of Gods.",
+                whatItIs: "When the gods fought in the Bonnia, the realm could not hold the power of such divine conflict. One theory is that Bawksin's phoenix power (uncontrolled, explosive, chaotic) split one of the reality threads that holds the Bonnia together, resulting in the never-ending fall.",
+                appearance: "A massive crack in the earth, but instead of stone or void beneath, there is only blackness, an infinite darkness that swallows light, sound, and hope. When someone falls into it, they fall forever, but they remain in the same place. The fall is slow and sometimes painful. You can still see the sky above, but you feel the darkness closing in.",
+                euoraQuote: "Euora, who once fell into it during the war, described it as: 'The fall was slow and sometimes painful. I could still see the sky, but I felt darkness—like drowning in nothing, like being erased one breath at a time.'",
+                theCold: "As you approach The Falling Bonnia, you feel the cold, not physical cold, but the absence of warmth, the absence of life, the absence of being. It is the cold of non-existence leaking through a tear in reality.",
+                canItBeFixed: "Yes. Suleiman can fix it. But he chooses not to.",
+                why: "Some say it serves as a permanent scar, reminding the gods of the cost of divine war. Some say it is a warning or a deterrent to prevent future conflicts from escalating to that level again. Some say it is a punishment, a wound the gods must live with, a consequence they cannot erase. And some say Suleiman keeps it because he is tired of fixing what the gods break.",
+                consequences: "The Falling Bonnia is a wound in reality. Because one of the reality threads is loose, the area around it is unstable: Time moves strangely near the edge, visions flicker (past, present, future bleed together), divine power weakens the closer you get. Some gods refuse to enter the Bonnia at all because of it. It is not a forbidden zone, gods CAN enter, but most choose not to unless necessary."
+            }
+        },
+        residents: {
+            title: "Who Resides in Eudraneth",
+            permanent: {
+                title: "Permanent Residents:",
+                list: [
+                    "The Seven Heads (the supreme gods of the Oristhar and ruling councils)",
+                    "The Domainkeepers (seven divine protectors who guard cosmic balance)",
+                    "The Iluries (beings of pure light created by Cheary to judge ascension)"
+                ]
+            },
+            frequent: {
+                title: "Frequent Visitors:",
+                list: [
+                    "Gods who maintain courts elsewhere but attend divine assemblies",
+                    "Celestial warriors and divine attendants",
+                    "Ascended mortals undergoing transformation"
+                ]
+            },
+            forbidden: {
+                title: "Forbidden Beings:",
+                list: [
+                    "Demons (cannot breach Eudraneth's boundaries)",
+                    "Mortals who have not been summoned or ascended",
+                    "Those who violate Tier 29 laws and are exiled"
+                ]
+            }
+        },
+        access: {
+            title: "Accessing Eudraneth",
+            howToEnter: {
+                title: "How to Enter:",
+                methods: [
+                    "The Bronze Stairs - Summoned from The Ascending by chosen souls",
+                    "Divine Summoning - A god can call another being to Eudraneth",
+                    "Sacred Rituals - Specific ceremonies allow temporary passage",
+                    "Birthright - Gods born in Eudraneth have inherent access"
+                ]
+            },
+            cannotEnter: {
+                title: "Who Cannot Enter:",
+                restrictions: [
+                    "Mortals without divine invitation",
+                    "Demons and corrupted beings",
+                    "Gods who have been exiled or stripped of divine status",
+                    "Those who violate cosmic law"
+                ]
+            }
+        },
         meaning: {
             title: "The Meaning of Eudraneth",
-            mortal: "To mortals, Eudraneth is a myth.",
-            divine: "To the divine, it is the structure of all that is real — a living equation where thought becomes matter, and every action creates its own reflection.",
-            essence: "It is the mind of creation, divided into domains, kept stable by law, faith, and divine memory.",
-            myth: "Eudraneth is not a place. It is the moment when a thought becomes truth."
+            translation: "In the Eudoric language, \"Eudraneth\" translates to: \"The place where law breathes.\"",
+            realmWhere: "It is the realm where: Divine will becomes reality, Cosmic law is enforceable, Order triumphs over chaos, Eternity has structure.",
+            promise: "Eudraneth is not just a place, it is a promise: that existence has meaning, that law has power, and that even gods are bound by something greater than themselves."
         }
     },
     godQuiz: {
@@ -7231,6 +7301,7 @@ function renderEudraneth() {
             </div>
 
             <div class="detail-section">
+                <h3>What Is Eudraneth?</h3>
                 <p class="eudraneth-description">${eudraneth.description}</p>
                 <p class="eudraneth-essence">${eudraneth.essence}</p>
             </div>
@@ -7238,21 +7309,80 @@ function renderEudraneth() {
             <div class="detail-section">
                 <h3>${eudraneth.structure.title}</h3>
                 <p>${eudraneth.structure.description}</p>
-                <p style="margin-top: 1rem;">${eudraneth.structure.entry}</p>
-                <p style="margin-top: 1rem; font-style: italic; color: #daa520;">${eudraneth.structure.communities}</p>
+                <ul style="margin-top: 1.5rem; padding-left: 1.5rem;">
+                    ${eudraneth.structure.parts.map(part => `<li style="margin-bottom: 0.75rem; color: #f5deb3; line-height: 1.7;">${part}</li>`).join('')}
+                </ul>
             </div>
 
             <div class="detail-section">
                 <h3>The Three Communities of Passage</h3>
+                <p style="margin-bottom: 2rem;">These are the sacred thresholds between mortality and divinity—three stages through which souls must pass to reach Eudraneth proper.</p>
                 ${communitiesHTML}
             </div>
 
             <div class="detail-section">
+                <h3>${eudraneth.bonnia.title}</h3>
+                <p class="community-subtitle">${eudraneth.bonnia.subtitle}</p>
+                <p style="margin-top: 1rem;">${eudraneth.bonnia.description}</p>
+                <p style="margin-top: 1rem;">${eudraneth.bonnia.history}</p>
+
+                <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(205, 50, 50, 0.12); border-left: 4px solid rgba(205, 50, 50, 0.5); border-radius: 0.75rem;">
+                    <h4 style="color: #daa520; margin-bottom: 1rem;">${eudraneth.bonnia.fallingBonnia.title}</h4>
+                    <p style="color: #ff8888; font-style: italic; margin-bottom: 1rem;">${eudraneth.bonnia.fallingBonnia.subtitle}</p>
+                    <p style="margin-bottom: 1rem;">${eudraneth.bonnia.fallingBonnia.description}</p>
+                    <p style="margin-bottom: 1rem;"><strong>What It Is:</strong> ${eudraneth.bonnia.fallingBonnia.whatItIs}</p>
+                    <p style="margin-bottom: 1rem;"><strong>What It Looks Like:</strong> ${eudraneth.bonnia.fallingBonnia.appearance}</p>
+                    <p style="margin-bottom: 1rem; padding: 1rem; background: rgba(0, 0, 0, 0.3); border-radius: 0.5rem; font-style: italic;">${eudraneth.bonnia.fallingBonnia.euoraQuote}</p>
+                    <p style="margin-bottom: 1rem;"><strong>The Cold:</strong> ${eudraneth.bonnia.fallingBonnia.theCold}</p>
+                    <p style="margin-bottom: 1rem;"><strong>Can It Be Fixed?</strong> ${eudraneth.bonnia.fallingBonnia.canItBeFixed}</p>
+                    <p style="margin-bottom: 1rem;"><strong>Why?</strong> ${eudraneth.bonnia.fallingBonnia.why}</p>
+                    <p><strong>Consequences & Effects:</strong> ${eudraneth.bonnia.fallingBonnia.consequences}</p>
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <h3>${eudraneth.residents.title}</h3>
+                <div style="margin-top: 1.5rem;">
+                    <h4 style="color: #daa520; margin-bottom: 0.75rem;">${eudraneth.residents.permanent.title}</h4>
+                    <ul style="padding-left: 1.5rem;">
+                        ${eudraneth.residents.permanent.list.map(item => `<li style="margin-bottom: 0.5rem; color: #f5deb3;">${item}</li>`).join('')}
+                    </ul>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <h4 style="color: #daa520; margin-bottom: 0.75rem;">${eudraneth.residents.frequent.title}</h4>
+                    <ul style="padding-left: 1.5rem;">
+                        ${eudraneth.residents.frequent.list.map(item => `<li style="margin-bottom: 0.5rem; color: #f5deb3;">${item}</li>`).join('')}
+                    </ul>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <h4 style="color: #daa520; margin-bottom: 0.75rem;">${eudraneth.residents.forbidden.title}</h4>
+                    <ul style="padding-left: 1.5rem;">
+                        ${eudraneth.residents.forbidden.list.map(item => `<li style="margin-bottom: 0.5rem; color: #f5deb3;">${item}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <h3>${eudraneth.access.title}</h3>
+                <div style="margin-top: 1.5rem;">
+                    <h4 style="color: #daa520; margin-bottom: 0.75rem;">${eudraneth.access.howToEnter.title}</h4>
+                    <ul style="padding-left: 1.5rem;">
+                        ${eudraneth.access.howToEnter.methods.map(method => `<li style="margin-bottom: 0.5rem; color: #f5deb3;">${method}</li>`).join('')}
+                    </ul>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <h4 style="color: #daa520; margin-bottom: 0.75rem;">${eudraneth.access.cannotEnter.title}</h4>
+                    <ul style="padding-left: 1.5rem;">
+                        ${eudraneth.access.cannotEnter.restrictions.map(restriction => `<li style="margin-bottom: 0.5rem; color: #f5deb3;">${restriction}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detail-section">
                 <h3>${eudraneth.meaning.title}</h3>
-                <p><strong>To mortals:</strong> ${eudraneth.meaning.mortal}</p>
-                <p style="margin-top: 1rem;"><strong>To the divine:</strong> ${eudraneth.meaning.divine}</p>
-                <p style="margin-top: 1rem;">${eudraneth.meaning.essence}</p>
-                <div class="myth-quote-numeral" style="margin-top: 1.5rem;">"${eudraneth.meaning.myth}"</div>
+                <p style="margin-top: 1rem; font-size: 1.1rem; color: #daa520; font-style: italic;">${eudraneth.meaning.translation}</p>
+                <p style="margin-top: 1rem;">${eudraneth.meaning.realmWhere}</p>
+                <p style="margin-top: 1rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-style: italic;">${eudraneth.meaning.promise}</p>
             </div>
         </div>
     `;
