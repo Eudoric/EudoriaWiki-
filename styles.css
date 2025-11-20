@@ -357,11 +357,52 @@ html {
 }
 
 /* Image Modal Styles */
+/* ===================================
+   DIVINE MODAL EFFECTS
+   =================================== */
+
 .image-modal {
     display: none;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Expanding glow ring */
+.image-modal::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(218, 165, 32, 0.4) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.image-modal.opening::before {
+    animation: expandingRing 1.2s ease-out forwards;
+}
+
+@keyframes expandingRing {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        width: 200vmax;
+        height: 200vmax;
+        opacity: 0;
+    }
 }
 
 .image-modal-content {
@@ -371,17 +412,43 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: zoomIn 0.3s ease;
+    animation: divineRevelation 1s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-@keyframes zoomIn {
-    from {
-        transform: scale(0.7);
+/* Divine revelation animation - image materializes */
+@keyframes divineRevelation {
+    0% {
+        transform: scale(0.5) translateY(50px);
         opacity: 0;
+        filter: blur(20px) brightness(3);
     }
-    to {
-        transform: scale(1);
+    50% {
+        filter: blur(5px) brightness(1.5);
+    }
+    100% {
+        transform: scale(1) translateY(0);
         opacity: 1;
+        filter: blur(0) brightness(1);
+    }
+}
+
+/* Heat shimmer effect */
+@keyframes heatShimmer {
+    0%, 100% {
+        transform: translateX(0) scale(1);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translateX(-2px) scale(1.01);
+        opacity: 0.9;
+    }
+    50% {
+        transform: translateX(2px) scale(1.02);
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(-1px) scale(1.01);
+        opacity: 0.9;
     }
 }
 
@@ -390,8 +457,94 @@ html {
     max-height: 80vh;
     object-fit: contain;
     border-radius: 1rem;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-    border: 3px solid rgba(218, 165, 32, 0.6);
+    box-shadow:
+        0 0 40px rgba(218, 165, 32, 0.6),
+        0 0 80px rgba(218, 165, 32, 0.4),
+        0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(218, 165, 32, 0.8);
+    position: relative;
+    animation: heatShimmer 0.6s ease-in-out;
+}
+
+/* Pulsing divine glow on the image */
+.image-modal-content img::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 1rem;
+    background: radial-gradient(circle, rgba(218, 165, 32, 0.3) 0%, transparent 70%);
+    animation: divineGlow 2s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes divineGlow {
+    0%, 100% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+/* Divine light particles */
+.divine-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: radial-gradient(circle, rgba(218, 165, 32, 1) 0%, transparent 70%);
+    border-radius: 50%;
+    opacity: 0;
+    animation: floatParticle 3s ease-in-out forwards;
+}
+
+@keyframes floatParticle {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-200px) scale(1.5);
+    }
+}
+
+/* Caption divine glow */
+#modalImageCaption {
+    animation: captionAppear 1s ease-out 0.5s both;
+}
+
+@keyframes captionAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
 }
 
 .image-modal-close {

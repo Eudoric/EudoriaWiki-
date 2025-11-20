@@ -16637,13 +16637,71 @@ function openImageModal(imageSrc, godName) {
     const modalImg = document.getElementById('modalImage');
     const caption = document.getElementById('modalImageCaption');
 
+    // Display modal
     modal.style.display = 'flex';
+
+    // Trigger divine entrance animation
+    requestAnimationFrame(() => {
+        modal.classList.add('opening');
+    });
+
+    // Set image and caption
     modalImg.src = imageSrc;
     modalImg.alt = godName;
     caption.textContent = godName;
 
+    // Create divine particles
+    createDivineParticles(modal);
+
+    // Remove opening class after animation completes
+    setTimeout(() => {
+        modal.classList.remove('opening');
+    }, 1200);
+
     // Prevent body scrolling when modal is open
     document.body.style.overflow = 'hidden';
+}
+
+// Create divine light particles that float upward
+function createDivineParticles(modal) {
+    // Remove existing particles if any
+    const existingParticles = modal.querySelector('.divine-particles');
+    if (existingParticles) {
+        existingParticles.remove();
+    }
+
+    const particlesContainer = document.createElement('div');
+    particlesContainer.className = 'divine-particles';
+    modal.appendChild(particlesContainer);
+
+    // Create 30 light particles
+    const particleCount = 30;
+    for (let i = 0; i < particleCount; i++) {
+        setTimeout(() => {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+
+            // Random position
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 50 + 50 + '%'; // Start from bottom half
+
+            // Random delay and duration for natural feel
+            particle.style.animationDelay = Math.random() * 0.5 + 's';
+            particle.style.animationDuration = (Math.random() * 2 + 2) + 's';
+
+            particlesContainer.appendChild(particle);
+
+            // Remove particle after animation
+            setTimeout(() => {
+                particle.remove();
+            }, 5000);
+        }, i * 50); // Stagger particle creation
+    }
+
+    // Clean up particles container after all animations
+    setTimeout(() => {
+        particlesContainer.remove();
+    }, 6000);
 }
 
 function closeImageModal() {
