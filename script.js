@@ -3585,71 +3585,637 @@ const eudoriaData = {
         },
         zane: {
             name: "Zane",
-            titles: ["God of War", "Former Seven Head", "The Fallen Warrior"],
-            attributes: ["Physical strength", "Brutal combat", "Chaotic warfare"],
-            symbols: ["Content coming soon"],
-            description: "Profile content coming soon. Zane was the God of War, representing its physical, brutal, and chaotic aspects. He was a Former Seven Head who died in the devastating Sunarian ambush.",
-            appearance: {
-                description: "Appearance details will be added soon."
-            },
-            powers: [
+            titles: [
+                "God of War",
+                "The Foundational War God",
+                "Husband of Zenitha (Mother of War)",
+                "Father of the Zen Brothers (Zendon, Zan, Zevon, Zavi)",
+                "Father of Zendayah (Guardian of War) and Zenna (Goddess of Battle)",
+                "The One Who Killed Ten Thousand Demons Alone",
+                "Dragon Neck Breaker",
+                "Protector of Suleiman",
+                "The Million Warriors in One",
+                "Former Member of the Seven Heads (replaced by Erah after his death)"
+            ],
+            attributes: [
+                "Foundational and essential (his strength was used to create Al'sekemu!)",
+                "Physically imposing (much taller than everyone)",
+                "Looks terrifying but is actually lovable and jokes constantly",
+                "Talks in war terms only (hard to understand unless you're a warrior)",
+                "Fiercely protective (especially of Suleiman and his daughters)",
+                "Softer with his daughters than his sons",
+                "Died saving Zenna from Akili-Chazak's betrayal",
+                "Irreplaceable (Erah was created to take his place but could never truly replace him)"
+            ],
+            symbols: [
+                "The massive two-headed axe (his primary weapon)",
+                "The four-bladed sword (cracks the earth when plunged into the ground)",
+                "The dragon skull war horn (shatters shields, breaks mage focus)",
+                "White flowing hair and a long beard, both like weapons themselves",
+                "Ten thousand demon corpses (the valley he cleared alone)",
+                "Mountains (he helped Ta'hanne create them, and can move them)",
+                "His family (the Zen Brothers, Zendayah, Zenna, Zenitha)"
+            ],
+            description: "Zane is the Foundational War God, the one who embodies the physical, brutal, and chaotic aspects of war. He doesn't care for strategy or order—only raw combat, relentless violence, and unstoppable force. He is war itself: the clash of steel, the breaking of bones, the roar of battle. Zane killed ten thousand demons alone in one night and walked out at dawn laughing. He broke a dragon's neck with his bare hands and turned its skull into a war horn. He won a war without touching a weapon, using only terrain, snow, and silence. He moved literal mountains and helped Ta'hanne create them. They say he's like a million warriors in one. When Suleiman created Al'sekemu, he used Zane's strength. Zane met Zenitha in battle and fell in love when she shattered a mountain with one stomp. He wooed her with mountains of war-blooms, battle strategies carved in stone that spelled 'I LOVE YOU,' and the only time he ever knelt. Together they had the Zen Brothers and two daughters: Zendayah and Zenna. Zane was fiercely protective, especially of his daughters—so soft with them he couldn't bear to train them the way he did his sons. He died saving Zenna from Akili-Chazak's betrayal, killing the traitor instantly before he fell. After his death, Eudraneth lost its first protection. They created Erah to replace him, but you cannot replace a legend.",
+
+            domains: [
                 {
-                    name: "Placeholder Power",
-                    description: "Powers will be added soon."
+                    name: "War (Physical, Brutal, Chaotic Aspects)",
+                    description: "Zane is a foundational god, the one who makes space for gods like Erah, Umar, and Kraft. When Suleiman created his brother Al'sekemu, he relied on Zane's strength. Zane rules over the physical, brutal, and chaotic sides of war. He doesn't care for strategy or order, only raw combat, relentless violence, and unstoppable force. He is war itself: the clash of steel, the breaking of bones, the roar of battle. He doesn't plan battles; he wins them with sheer, overwhelming power. Zane is the kind of war god who: Fights ten thousand demons alone and walks out at dawn laughing, Breaks a dragon's neck with his bare hands, Wins a war without touching a weapon, Moves literal mountains (even helped Ta'hanne create mountains!). They say he's like a million warriors in one."
                 }
             ],
-            nature: "Nature and detailed content coming soon."
+
+            appearance: {
+                description: "Zane is physically imposing—much taller than everyone, towering and massive, built like a mountain made flesh. His long, flowing white hair reaches his back like a wild, untamed waterfall of snow. His long beard is like a weapon itself, thick, powerful, and dangerous even in how it looks. Zane looks MEAN. He looks as if you talk to him, he will snatch your head off. His face is all sharp angles, battle scars, and intensity—the face of someone who has killed ten thousand demons alone and laughed about it. He is massive and muscular, as if carved from war itself. Every muscle is a weapon, and every movement shows calculated violence. When Zane enters, the ground seems to shake. You hear echoes of a thousand battles. Instinct tells you not to fight this god unless you want to die.",
+                height: "Much taller than everyone, towering and imposing, built like a mountain made flesh",
+                hair: "Long, flowing white hair that reaches his back, like a wild, untamed waterfall of snow",
+                beard: "Long beard like a weapon itself, thick, powerful, and dangerous even in how it looks",
+                face: "MEAN. Sharp angles, battle scars, and intensity—looks as if he'll snatch your head off if you talk to him",
+                build: "Massive and muscular, as if carved from war itself. Every muscle is a weapon, every movement shows calculated violence",
+                eyes: "Pale gray, like storm clouds, holding the calm before destruction. Reflect a thousand battles: victories, defeats, and faces of those who challenged him and lost. Softened when he looked at Zenitha for the first time. Gentle, protective, and warm when looking at his daughters. Pure, focused rage when he looked at Akili-Chazak before killing him instantly.",
+                presence: "Overwhelming and absolute, like standing in the path of an avalanche made of muscle and fury. When he walks, the ground trembles. When he speaks, his voice is deep, gravelly, and commanding. Even his jokes sound like battle commands. When he fights, you feel the chaos of war itself: unstoppable, brutal, and inevitable. But when he's with his family, his presence softens—still powerful, but also warm, protective, and loving.",
+                scent: "Iron, sweat, and frozen blood—the scent of war itself, ancient and relentless. Trace of snow and stone, like standing at the peak of a mountain after a battle",
+                weapons: "The Massive Two-Headed Axe (so heavy most gods can't lift it, can cut through armor, bone, and mountains; leaves cracks when dragged across the ground); The Four-Bladed Sword (cracks the earth when plunged into the ground, splits battlefields, creates fissures); The Dragon Skull War Horn (shatters shields, breaks mage focus, spreads fear across battlefields)"
+            },
+
+            roleAndLegacy: {
+                theFoundationalWarGod: "Zane is a foundational god, the one who makes room for gods like Erah, Umar, and Kraft. When Suleiman created his brother, Al'sekemu, he used Zane's strength.",
+
+                theTenThousandDemons: "In the early era, when a demon host poured through a rift in Norvayn, the gods were scattered. Zane went alone. Ten thousand demons. One war god. No army. No strategy council. No speeches. He walked into the valley at dusk and came out at dawn, dragging his axe, armor cracked, laughing hoarsely. The valley floor was glazed over with frozen blood and shattered bone. Bards don't even exaggerate this story. They can't. There's nowhere left to add to it.",
+
+                protectorOfSuleiman: "Zane was the one who defeated 500 enemies when Suleiman was ambushed. For a period, Suleiman was targeted as he was the supreme god. Zane was there protecting Suleiman in every battle. He would tell Suleiman: 'Do I have to put a bell on you?' And Suleiman would say: 'I think so.' Though Suleiman was able to handle his own, Zane knew how important Suleiman is.",
+
+                theDayHeBrokeADragonsNeck: "A fire-drake once descended on Zendonia, melting battlements and devouring warriors in armor like they were nuts in a shell. Zane didn't summon his axe. He climbed the mountain bare-handed, grabbed the dragon by its horns, and snapped its neck against the cliff face. Everyone says this is exaggerated. Zane never corrects the story. He turned the dragon's skull into a war horn. When that horn sounds: Enemy mages lose their focus, Shields shatter like glass.",
+
+                theWarHeFoughtWithoutWeapons: "Once, someone challenged Zane: 'Can you win a war without touching a weapon?' So Zane agreed. He trained a mortal militia for thirty days. Taught them how to use terrain, snow, and silence as weapons. On the final day, he marched with them unarmed, hands empty. They still won. Enemies were: Buried in avalanches, Lured over cliffs, Frozen in supply lines, Ambushed in blizzards. Zane's only act of violence was breaking the enemy commander's sword over his knee.",
+
+                heCanMoveLiteralMountains: "Zane can move literal mountains. He even helped Ta'hanne create mountains.",
+
+                hisPersonality: "Zane is lovable, always making jokes. He talks in war terms only, and sometimes it's harder to understand unless you're a warrior. They say he's like a million warriors in one.",
+
+                meetingZenitha: "Zane met Zenitha in battle as demons crawled across the field. They were nonstop everywhere. For the first time, Zane called for help. And the person who came was Zenitha. When demons saw her, they RAN. They knew who Zenitha was—Mother of War—she could change the course of battle in her favor, and there was nothing they could do about it. She slammed her foot down on the mountain and shattered it—debris fell onto the demons, ending the battle instantly. Zane was in shock and in love in that moment. He needed her. He had to have her.",
+
+                theCourtship: "But the rumor about her and Al'sekemu was everywhere. Zane told her that he could help her change the rumor if everyone saw them together. Zenitha laughed and told him, 'It's complicated.' But Zane didn't stop. He would go to Romeo (Obe) and ask for help being romantic with Zenitha. Romeo even said: 'Why??' But Zane still tried.",
+
+                romanticGestures: "1. The Mountain of Flowers: Zane moved an entire mountain and planted a thousand wildflowers on its peak—war-blooms, flowers that only grow where blood has been spilled and life has been reborn. He brought Zenitha to the peak at sunrise and said, 'Even war can make beauty. Like you.' Zenitha was speechless. 2. The Battle Letter: Zane couldn't write poetry (he tried, and Romeo laughed for three days straight). So instead, he carved a battle strategy into stone, but the strategy spelled out 'I LOVE YOU' when read in war terms. Only Zenitha understood it. She kept that stone for centuries. 3. The Sparring Match: Zane challenged Zenitha to a sparring match—no weapons, just hand-to-hand combat. They fought for six hours straight, laughing, bleeding, grinning. At the end, both collapsed, exhausted and exhilarated. Zane looked at her and said, 'I've never fought someone who didn't break.' Zenitha looked back: 'I've never fought someone who made me want to keep going.' That's when she knew. 4. The War Horn Serenade: Zane tried to be romantic by blowing his dragon skull war horn outside Zenitha's court at midnight. It shattered every window in Zamazara. Mages lost focus. Shields cracked. Dogs howled. Zenitha came out, furious and laughing, and said: 'You're an IDIOT!' Zane grinned: 'But I'm YOUR idiot.' 5. The Promise: Zane knelt before Zenitha (the ONLY time anyone ever saw him kneel) and said: 'I can't promise you peace. I can't promise you softness. But I promise you this: I will fight beside you. I will never let you fall. And if the world tries to break you, I will break the world first.' Zenitha kissed him. And that was it.",
+
+                marriageAndChildren: "After Zane and Zenitha had sex for the first time, she was pregnant with the Zen Brothers. They are 1 year apart from each other: Zendon - Protection, Zan - Persistence, Zevon - Perception, Zavi - Passion. Then she had Zendayah (Guardian of War) and Zenna (Goddess of Battle) a couple years later.",
+
+                trainingHisChildren: "Zane trained all his children. But he was much softer with his daughters, treating them like they were above war. This is why Zendayah was trained by her brothers—because her father wouldn't train her like he did the sons. He wanted his daughters to be warriors, but he couldn't bring himself to hurt them in training the way he hurt his sons. He was too soft with them.",
+
+                theDeathOfZane: "Zane died saving Zenna when Akili-Chazak (the betrayer) infiltrated Zamazara. Zane saved his daughter by pushing her out of the way of Akili-Chazak's striking weapon. And killed Akili-Chazak instantly after being mortally wounded.",
+
+                afterTheDeathOfZane: "The Zen Brothers' deaths shortly followed. Eudraneth fell tremendously. Zane and the Zen Brothers were the strongest gods. Eudraneth lost its first protection.",
+
+                theCreationOfErah: "With this, the gods created Erah to take Zane's place. But still, they could never replace Zane. Erah was too much like Zane, and it was a bittersweet moment, a reminder of what they had lost."
+            },
+
+            powers: [
+                {
+                    name: "Unmatched Combat Prowess",
+                    description: "Killed ten thousand demons alone in one night."
+                },
+                {
+                    name: "Dragon Slaying",
+                    description: "Broke a fire-drake's neck with bare hands."
+                },
+                {
+                    name: "Mountain Moving",
+                    description: "Can literally move mountains, helped Ta'hanne create them."
+                },
+                {
+                    name: "Weaponless War Mastery",
+                    description: "Won a war without touching a weapon."
+                },
+                {
+                    name: "Earth Cracking",
+                    description: "Four-bladed sword cracks the earth when plunged into the ground."
+                },
+                {
+                    name: "War Horn Power",
+                    description: "Dragon skull war horn shatters shields, breaks mage focus."
+                },
+                {
+                    name: "Foundational Strength",
+                    description: "His strength was used to create Al'sekemu."
+                },
+                {
+                    name: "Unstoppable Force",
+                    description: "Like a million warriors in one."
+                },
+                {
+                    name: "Training Mastery",
+                    description: "Trained mortal militia in 30 days to win wars."
+                },
+                {
+                    name: "Protective Instinct",
+                    description: "Saved Suleiman from 500 enemies, died saving Zenna."
+                }
+            ],
+
+            myths: [
+                "Zane walked into a valley of ten thousand demons at dusk and came out at dawn, dragging his axe, laughing. The valley floor was glazed over with frozen blood. Bards don't exaggerate—they can't.",
+                "He broke a dragon's neck with his bare hands and turned its skull into a war horn. When it sounds, shields shatter and mages lose focus.",
+                "He won a war without touching a weapon—only terrain, snow, and silence. His only violence was breaking the enemy commander's sword over his knee.",
+                "When Suleiman was ambushed by 500 enemies, Zane won alone. He asked Suleiman: 'Do I got to put a bell on you?' Suleiman said: 'I think so.'",
+                "He met Zenitha in battle. She slammed her foot down and shattered a mountain. Demons ran. Zane fell in love instantly.",
+                "He moved a mountain and planted a thousand war-blooms to win her heart. He carved 'I LOVE YOU' into stone using battle strategy. He knelt—the only time anyone saw him kneel—and promised: 'If the world tries to break you, I will break the world first.'",
+                "He was softer with his daughters than his sons. He wanted them to be warriors but treated them like they were above war. Zendayah was trained by her brothers because Zane couldn't bring himself to hurt her.",
+                "He died saving Zenna from Akili-Chazak's betrayal. He pushed her out of the way and killed the betrayer instantly. Then he fell.",
+                "After his death, Eudraneth lost its first protection. They created Erah to replace him, but you cannot replace a legend. Erah was too much like Zane—a bittersweet reminder of what they'd lost."
+            ],
+
+            nature: "Zane embodies raw, unstoppable war: brutal, chaotic, and glorious. He is not the strategic war god who plans campaigns or writes treatises on combat. He is the war god who fights ten thousand demons alone and walks out laughing. He represents what happens when power meets purpose: you become inevitable. You don't need a strategy when you can move mountains. You don't need an army when you ARE an army. You don't need speeches when your actions speak louder than words ever could. But beneath the brutality, Zane was deeply loving. He joked constantly, protected Suleiman like a brother, wooed Zenitha with flowers and battle strategies, and was so gentle with his daughters that he couldn't bear to train them the way he did his sons. He wanted them to be warriors, but also to be above war: safe, protected, and loved. His nature is a reminder that even the most brutal warriors can love deeply. Even the god who breaks dragon necks can kneel before the woman he loves. Even the one who kills ten thousand demons can die saving his daughter. And when he died, Eudraneth lost its first protection, because you cannot replace a legend. You can only honor what he was and mourn what he could have been."
         },
         malaikanya: {
-            name: "Malai Kanya",
-            titles: ["Goddess of the Hearth, Womanhood, and Family"],
-            attributes: ["Content coming soon"],
-            symbols: ["Content coming soon"],
-            description: "Profile content coming soon. Malai Kanya is the Goddess of the Hearth, Womanhood, and Family.",
-            appearance: {
-                description: "Appearance details will be added soon."
-            },
-            powers: [
+            name: "Malai Kanya / The Halonas",
+            titles: [
+                "Goddess of the Hearth, Womanhood, and Family (formerly)",
+                "The Young Goddess Under Godevea",
+                "Creator of the First Hearthfire",
+                "Establisher of the Doctrine of Shared Motherhood",
+                "Builder of the Sanctuary Lodges",
+                "The Ritual of Unbreaking",
+                "Influencer of the Legacy Laws",
+                "The Halonas (after transformation)",
+                "The Screamless (Suleiman's name for her - because no one saved her, no one heard her scream)",
+                "The Woman Who Warns Wives",
+                "Suleiman's Greatest Failure and Deepest Regret"
+            ],
+            attributes: [
+                "Before Transformation: Young goddess under Godevea's mentorship",
+                "Worked closely with Al'sekemu (who believed in Godevea's visions)",
+                "Believed in Tia's equality",
+                "Gentle but powerful",
+                "Nurturing and wise",
+                "Builder of legacies",
+                "Creator of sanctuaries",
+                "Teacher of emotional restoration",
+                "Advocate for women's inheritance rights",
+                "After Transformation: Monstrous appearance (hideousness, dry scaly skin, black claws, empty dead eyes)",
+                "The Halonas (warns women she will kill their husbands and explains why)",
+                "Traumatized and screaming (roams mountains, screaming like a traumatized woman)",
+                "Protected by Suleiman (anyone who harms her will be banished to Shadeward Hollow)",
+                "Suleiman's greatest regret"
+            ],
+            symbols: [
+                "Before Transformation: The Hearthfire (a flame that never extinguishes)",
+                "A flame shaped like a cradle (nurture and warmth)",
+                "Braided fire (generational bonds)",
+                "Crowning braids (rites of womanhood)",
+                "The Sanctuary Lodges (temples of refuge)",
+                "Legacy Laws (daughters inherit land, titles, power)",
+                "After Transformation: Screaming in the dark (her eternal trauma)",
+                "Black claws (the violence done to her made manifest)",
+                "Empty eyes (the death of who she was)",
+                "Mountains at night (where you hear her screams)",
+                "The warning to wives (justice for women whose husbands harm them)"
+            ],
+            description: "Malai Kanya was the Goddess of the Hearth, Womanhood, and Family, a young goddess who worked under Godevea to finish what she started. She created the First Hearthfire that never extinguishes, established the Doctrine of Shared Motherhood to end the isolation of motherhood, built the Sanctuary Lodges for women fleeing violence, performed the Ritual of Unbreaking to restore women shattered by trauma, and influenced Legacy Laws so daughters inherit power. She was the goddess who kept civilizations together when they were falling apart. But everything changed when Tevye and Nasr sexually assaulted her by the ocean for hours while she cried. She escaped and ran to Suleiman, battered and terrified, collapsing into his arms. Suleiman ignored her pleas and didn't believe her immediately—he was working with Tevye and didn't want to complicate things. This is his greatest failure. Malai Kanya begged to be freed from her cosmic role: 'I don't want to take care of the world. I want to be free.' Suleiman freed her, but it became a curse. Her skin turned dry and scaly, her nails became black claws, her eyes became empty and dead. She saw herself and screamed, blamed Suleiman, and fled into the night. Now she is the Halonas, the woman who warns wives that she will kill their husbands who harm them. She roams the mountains, screaming like a traumatized woman. You hear her in the dark, alone. Suleiman calls her 'The Screamless'—because no one saved her, no one heard her scream. He protects her fiercely: if any god harms her, they will be banished to Shadeward Hollow. She is his greatest regret, his deepest failure, the reminder that even gods can fail so catastrophically that they create eternal suffering.",
+
+            domains: [
                 {
-                    name: "Placeholder Power",
-                    description: "Powers will be added soon."
+                    name: "The Hearth (Before Transformation)",
+                    description: "Malai Kanya is not about birth—that was Godevea's domain. She focuses on what comes after: raising, shaping, bonding, and building the generational strength that shapes a culture. While Godevea fought for rights, Malai Kanya focused on preserving legacy. She represents: Womanhood through nurture, protection, and wisdom; The fire that keeps families alive in harsh worlds; Self-sacrifice without erasure; The sanctity of home, not domestication. She is the goddess who holds things together when civilizations are falling apart. To Malai Kanya, the Hearth represents: A safe place where weapons are lowered; A generational bond passed from mother to daughter; A communal sanctuary in war; Culture preserved through stories, meals, rituals, and tradition; A space where women lead, not by hierarchy, but through guardianship. Her symbol is a flame shaped like a cradle or a braided fire."
+                },
+                {
+                    name: "Womanhood (Before Transformation)",
+                    description: "Malai Kanya teaches women things Godevea didn't focus on: She teaches women how to build, not just fight for, their identity. Core contributions: 1. The Art of Gentleness Without Weakness: Teaching softness that does not surrender power. 2. Matriarchal Guidance: How to raise daughters with agency and sons with respect. 3. Rites of Womanhood: Ceremonies passed down through generations (Crowning braids, Fire-circle teachings, First-flame ritual). 4. Emotional Restoration: She teaches how women heal after trauma. 5. Legacy Over Survival: Her teachings ensure that even if the world collapses, culture remains. Women looked up to her because she does not ask for rebellion. Instead, she strengthens them so they do not break in the first place."
+                },
+                {
+                    name: "Family (Before Transformation)",
+                    description: "She represents the family unit, generational bonds, and the strength of communal support. She established the Doctrine of Shared Motherhood, introducing the idea that a child can belong to many women, not just one, ending the isolation of motherhood."
                 }
             ],
-            nature: "Nature and detailed content coming soon."
+
+            appearance: {
+                beforeTransformation: "Her skin was the radiant gold of dawn, warm and glowing, nurturing like the first light of morning. Her long, thick hair was decorated with braids that held cultural meaning—each braid stood for a generation, a story, or a legacy. Her eyes were powerful and beautiful, full of warmth, wisdom, and compassion—they could comfort a grieving mother or give strength to a frightened daughter. She was strong but gentle, made for nurturing rather than fighting, yet strong enough to support families through hard times. She wore robes made from hearthfire threads in warm colors like orange, red, and gold, decorated with symbols of cradles, flames, and braids. When Malai Kanya entered, you felt warmth, safety, and a sense of home. Being near her was like sitting by a fire after a long journey: comforting, grounding, and restoring.",
+                afterTransformation: "Her skin, once the radiant gold of dawn, became dry, scaly, and tough—cracked like earth that had suffered too much drought and pain. Her fingernails turned into long, black claws, sharp and dangerous, showing the violence she had suffered. Her once powerful and beautiful eyes became empty and dead, hollow and lifeless, staring into nothing. Her hair was still long and decorated with cultural patterns, but now it was wild, unkempt, and tangled, showing her broken spirit. She remained strong, but her body was now twisted by trauma, a prison she could not escape. When the Halonas appears, you feel dread, sorrow, and a sense of warning. Being near her is like standing at the edge of a cliff in the dark, knowing something terrible is close and you cannot stop it.",
+                eyesBefore: "Warm amber, like firelight shining in honey, full of compassion, wisdom, and nurturing love. When she looked at women, they felt seen, protected, valued. When she looked at children, they felt safe.",
+                eyesAfter: "Empty and dead, hollow and lifeless, staring but not seeing. When she looks at you now, you see only the emptiness left by trauma, the absence of the woman she once was.",
+                scentBefore: "Hearthfire smoke, warm bread, and honey—the scent of home, comfort, and safety.",
+                scentAfter: "Ash, earth, and sorrow—the scent of something burned, something lost, and something that can never be restored.",
+                presenceBefore: "Warm, grounding, and healing—like sitting by a fire after a long journey, feeling safe, loved, and at peace.",
+                presenceAfter: "Terrifying and full of sorrow, like hearing a woman scream far away and knowing you cannot help her. You hear her before you see her. She screams like a traumatized woman, her voice echoing through mountains and darkness. When she appears to warn a wife that she will kill her husband, you feel dread, inevitability, and the weight of justice."
+            },
+
+            roleAndLegacy: {
+                theYoungGoddessUnderGodevea: "Malai Kanya was a young goddess who worked under Godevea. When Godevea died, Malai Kanya wanted to finish what she started. She worked closely with Al'sekemu, who believed in Godevea's visions.",
+
+                alsekemyBeliefInEquality: "When Malai Kanya asked Al'sekemu why he would align with Godevea and what it would mean for his wife, Tia, Al'sekemu said: 'The only differences are their role and destinies. Besides that, I will never see Tia as unequal.'",
+
+                whatMalaiKanyaRepresents: "Malai Kanya isn't about birth (that was Godevea). She's about what happens after birth—the raising, shaping, bonding, and generational strength that defines a culture. Where Godevea fought for rights, Malai reinforces the legacy. She represents: Womanhood through nurture, protection, and wisdom; The fire that keeps families alive in harsh worlds; Self-sacrifice without erasure; The sanctity of home, not domestication. She is the goddess who keeps things together when civilizations fall apart.",
+
+                herAchievements: "1. The First Hearthfire: She created a flame that never extinguishes, allowing families to survive endless winters and wars. Many rulers still carry embers of that original fire. 2. The Doctrine of Shared Motherhood: She established the idea that a child can belong to many women, not just one, introducing communal raising and ending the isolation of motherhood. 3. The Sanctuary Lodges: Temples where women fleeing war, violence, or abandonment could seek refuge. 4. The Ritual of Unbreaking: A spiritual rite that restores women shattered by loss, war, or childbirth trauma. 5. Legacy Laws: She influenced divine law so daughters inherit land, titles, and ancestral power—preventing the erasure of women's lineage.",
+
+                theAssault: "But that soon started to change. Malai Kanya was at the ocean, getting water, when she met Tevye, who was already in the sea. He grabbed her out of nowhere. He took her to where he and Nasr were. They sexually assaulted her for hours, some say. They laughed and joked while she was crying. She escaped after kicking Tevye in the mouth and running to Suleiman.",
+
+                runningToSuleiman: "Malai Kanya ran to Suleiman in the room full of gods when he was demonstrating something. She came battered, torn, and terrified, collapsing into his arms.",
+
+                suleimansFailure: "Suleiman ignored her pleas for help and did not believe her immediately, attributing Tevye's actions to his being unable to 'assault women or any being'. It isn't like Suleiman didn't want to believe her, but he was working closely with Tevye on a task and didn't want to complicate things. He told everyone to leave, believing he hadn't done much, but he did give her privacy.",
+
+                theConsequencesOfHisInaction: "Malai Kanya is critically important to Suleiman because her tragedy represents his greatest failure and most profound regret, and catalyzes his ultimate sacrifice. He confessed that he had ignored her cries, and this failure led to immense mortal suffering as her distress caused destructive weather: Her tears drowned mortals, Destroyed homes. Suleiman admits he tried to help her, but 'perhaps I made it worse for her'.",
+
+                herWishForFreedom: "Suleiman asked Malai Kanya: 'What can I do?' She told him she explicitly wished to be released from her cosmic role. She 'wanted to be different, independent'. 'She didn't want to take care of the world. She wanted to be free.' Suleiman confessed that he acquiesced to this wish for independence, stating: 'So I freed her.'",
+
+                theCurseOfFreedom: "Suleiman regarded the act of setting her free as a profound failure and a 'curse'. This liberation triggered a terrible transformation in her physical form, contrasting sharply with the notion of freedom enjoyed by others like Eudora: She transformed 'to a woman of hideousness': Her skin, which had once been radiant gold of the dawn, became dry, scaly, and tough. Her fingernails developed into long claws, black as night. Her once powerful and beautiful eyes became empty and dead.",
+
+                herReaction: "When she saw the monstrous physical change in herself, she panicked, blamed Suleiman, attacked him, and then fled, screaming into the night.",
+
+                suleimansRegret: "Suleiman carries this event as his most profound regret, viewing his inaction and the ultimate consequence of her freedom as a failure in his design, stating that her ordeal 'was not only the worst day of her life, but it was the rest of her life'.",
+
+                theHalonas: "She is known now as the Halonas, which is a woman who appears to warn women that she is going to kill their husbands and let them know why. There have been many complaints about this, as the gods wanted to end her. But Suleiman will never allow it. He told them that if anyone laid a hand on her, they would be banished to the Shadeward Hollow.",
+
+                whereSheRoams: "You can hear her screams when you're in the dark, alone, by mountains. Suleiman went to visit her once—he could see her roaming around, screaming like a traumatized woman. He does nothing. He feels bad about her.",
+
+                theScreamless: "Suleiman labeled her 'The Screamless' because no one saved her, no one heard her scream. He wishes he could return the time."
+            },
+
+            powers: [
+                {
+                    name: "Hearthfire Creation (Before)",
+                    description: "Created a flame that never extinguishes."
+                },
+                {
+                    name: "Emotional Restoration (Before)",
+                    description: "Can restore women shattered by trauma."
+                },
+                {
+                    name: "Communal Motherhood Establishment (Before)",
+                    description: "Introduced shared raising of children."
+                },
+                {
+                    name: "Sanctuary Creation (Before)",
+                    description: "Built temples of refuge for women."
+                },
+                {
+                    name: "Ritual of Unbreaking (Before)",
+                    description: "Spiritual rite to heal trauma."
+                },
+                {
+                    name: "Legacy Law Influence (Before)",
+                    description: "Ensured daughters inherit land, titles, and power."
+                },
+                {
+                    name: "Cultural Preservation (Before)",
+                    description: "Keeps culture alive through stories, meals, and rituals."
+                },
+                {
+                    name: "Generational Bonding (Before)",
+                    description: "Passes wisdom from mother to daughter."
+                },
+                {
+                    name: "Gentleness Without Weakness (Before)",
+                    description: "Teaches softness that retains power."
+                },
+                {
+                    name: "Husband Killing (After)",
+                    description: "Appears to warn women, then kills their husbands (if they have harmed women)."
+                },
+                {
+                    name: "Weather Manipulation Through Trauma (After)",
+                    description: "Her tears drown mortals, her distress destroys homes."
+                },
+                {
+                    name: "Eternal Screaming (After)",
+                    description: "Her screams echo through mountains and darkness."
+                },
+                {
+                    name: "Warning Visions (After)",
+                    description: "Appears to women to warn them of her justice."
+                },
+                {
+                    name: "Unkillable (After)",
+                    description: "Protected by Suleiman (anyone who harms her is banished to Shadeward Hollow)."
+                },
+                {
+                    name: "Presence of Dread (After)",
+                    description: "Her appearance brings terror and sorrow."
+                }
+            ],
+
+            myths: [
+                "She was the goddess who kept families alive in endless winters. She created the Hearthfire that never extinguishes. She taught women how to build, not just fight for, their identity.",
+                "She worked under Godevea and finished what she started. She influenced divine law so that daughters inherit power. She ended the isolation of motherhood.",
+                "Tevye and Nasr grabbed her by the ocean. They assaulted her for hours. They laughed while she cried. She escaped and ran to Suleiman.",
+                "Suleiman didn't believe her immediately. He was working with Tevye and didn't want to complicate things. He ignored her cries. This is his greatest failure.",
+                "She begged to be freed from her cosmic role. 'I don't want to take care of the world. I want to be free.' Suleiman freed her. It became a curse.",
+                "Her skin turned dry and scaly. Her nails became black claws. Her eyes became empty and dead. She saw herself and screamed. She blamed Suleiman. She fled into the night.",
+                "Now she is the Halonas. She warns women that she will kill their husbands. She roams the mountains, screaming like a traumatized woman. You hear her in the dark, alone.",
+                "Suleiman calls her 'The Screamless'—because no one saved her, no one heard her scream. He wishes he could return the time.",
+                "If any god harms her, Suleiman will banish them to Shadeward Hollow. She is his greatest regret. His deepest failure. The reminder that even gods can fail so catastrophically that they create eternal suffering."
+            ],
+
+            nature: "Malai Kanya embodies the death of nurture through violence. She was the goddess who kept civilizations together, who taught women how to build legacies, who created the Hearthfire that never extinguishes—and she was destroyed by the very men she tried to teach respect. She represents what happens when the protector is not protected, when the nurturer is violated, when the one who heals is shattered beyond repair. Her transformation into the Halonas is not a punishment—it is a consequence of trauma weaponized. She did not choose to become a monster. She was made into one by Tevye and Nasr, by Suleiman's failure to believe her, by a world that did not save her when she screamed. Now she roams the mountains, screaming eternally—not because she wants to, but because the scream never ended. The moment of her assault replays forever in her mind, and the only justice she can claim is warning other women and killing the men who harm them. Her nature is a warning: If you fail to protect the protector or ignore the cries of the nurturer, you do not just break a goddess. You create a monster. And that monster will remember. She will make you remember too. Suleiman calls her 'The Screamless' because no one saved her, no one heard her scream. And now, everyone hears her scream, but it's too late to save her. She is his greatest failure. His deepest regret. The reminder that even gods can fail so catastrophically that they create eternal suffering."
         },
         qlackic: {
             name: "Qlackic",
-            titles: ["God of Water Spirits"],
-            attributes: ["Content coming soon"],
-            symbols: ["Content coming soon"],
-            description: "Profile content coming soon. Qlackic is the God of Water Spirits associated with the sea.",
-            appearance: {
-                description: "Appearance details will be added soon."
-            },
-            powers: [
+            titles: [
+                "God of Water Spirits",
+                "The Soul Taker of the Drowned",
+                "Master of Qlacking (The Siren Song)",
+                "The Shipwreck Bringer",
+                "Poisoner of Lakes",
+                "Kidnapper of Mermaids",
+                "The Petty One (Against Oceania)",
+                "Husband of a Duck",
+                "The Green Terror of Rivers, Oceans, Seas, and Lakes"
+            ],
+            attributes: [
+                "Chaotic neutral: not good or evil, but does both",
+                "Unpredictable and petty",
+                "Drowns people but sometimes saves them",
+                "Creates shipwrecks for fun (or spite)",
+                "Kidnaps mermaids",
+                "Poisons lakes when rejected",
+                "Afraid of Oceania deep down",
+                "Works alongside other sea gods/goddesses",
+                "Married to a duck and has children with her",
+                "Associated with ducks",
+                "Green skin, gills, merman-like",
+                "Black and blue seaweed hair, made from blue lagoon seaweed found in Nubi"
+            ],
+            symbols: [
+                "The Qlacking (his siren song)",
+                "Green skin and gills (merman features)",
+                "Black and blue seaweed hair, made from blue lagoon seaweed from Nubi",
+                "Drowned souls (he takes them)",
+                "Shipwrecks (he causes them)",
+                "Poisoned lakes, which he uses for petty revenge",
+                "Ducks, which he is associated with and even married to",
+                "Webbed hands with sharp nails, used for grabbing victims"
+            ],
+            description: "Qlackic is the God of Water Spirits, the Soul Taker of the Drowned, and Master of Qlacking—the siren song that lures people to their deaths. He is not the god of water itself (that's Oceania), but he governs the spirits within water, the feeling of drowning, and the souls lost below. He is a merman with deep green skin like moss-covered stones, gills along his neck and ribs, and black and blue seaweed hair made from Nubi's blue lagoon seaweed. His eyes are milky white like pearls in murky water. When someone drowns, Qlackic takes their soul—not as punishment or mercy, but because death by water belongs to him. The Qlacking is his infamous siren song: beautiful, haunting, irresistible, and fatal. Villages warn: 'Do not be out at night by bodies of water. Qlackic can snatch you.' He is chaotic neutral—neither good nor evil. He might save a little girl from drowning, but he also lures grown men to their deaths for no reason. He creates shipwrecks and then delivers the bad news himself. He kidnapped Oceania's mermaids once (Suleiman made him give them back). When Oceania rejected him, he poisoned her lake. He's petty, but deep down, he's afraid of her. He tried to poison Al'sekemu once—Al'sekemu threw him back in the ocean. And yes, he married a duck. They have duck-water spirit hybrid children. Do not anger the ducks. They are his spies.",
+
+            domains: [
                 {
-                    name: "Placeholder Power",
-                    description: "Powers will be added soon."
+                    name: "Water Spirits",
+                    description: "Qlackic rules over all water spirits, the beings living in rivers, oceans, seas, and lakes. He is not the god of water itself—that belongs to Oceania—but instead, he governs the spirits within water, the feeling of drowning, and the souls lost below. He is the one who appears when someone drowns—he takes their soul, guiding them into the water's embrace, claiming them for the deep. He is neither savior nor executioner—he simply is. Death by water belongs to him."
+                },
+                {
+                    name: "The Qlacking (The Siren Song)",
+                    description: "Qlackic is infamous for what is called in Eudoric 'Qlacking,' a siren song that lures people to bodies of water. When you hear the Qlacking: The water calls to you, You feel an irresistible pull, Your feet move without your permission, You walk into the water, deeper and deeper, And then he takes you. Villages warn people not to be out at night near water, because Qlackic can snatch them. The song is beautiful, haunting, impossible to resist, and fatal."
                 }
             ],
-            nature: "Nature and detailed content coming soon."
+
+            appearance: {
+                description: "Qlackic is a merman, half-man and half-fish, living in the space between land and water, life and death. His skin is deep green, like moss-covered stones at the bottom of a river, slick and cold to the touch. It shimmers faintly in moonlight, almost translucent in certain angles, revealing the veins of water flowing beneath. He has gills along his neck and ribs, slits that open and close in rhythm, letting him breathe water as easily as mortals breathe air. His hair is black and blue seaweed, with long, thick strands that float around his head like living tendrils, moving even when there is no current. The blue seaweed is the well-known blue lagoon seaweed from Nubi, which Nubians use for crafts, food, and clothing. Some say Qlackic's hair IS the blue lagoon seaweed—that it grows from his scalp and spreads across the oceans, and when Nubians harvest it, they're harvesting pieces of him. His eyes are milky white, like pearls submerged in murky water. They see through darkness, through depths, and through the veil between life and death. When he looks at you, you feel as if you are already drowning. He is lean and sinewy, built for gliding through water. His torso is humanoid, but his lower half is a strong fish tail, scaled in greens and blues, able to move him through currents faster than any ship. His fingers are webbed, with sharp nails like fish hooks, made to grab, pull, and drag victims into the deep.",
+                skin: "Deep green, like moss-covered stones at the bottom of a river, slick and cold, shimmering faintly in moonlight",
+                gills: "Along his neck and ribs, slits that open and close in rhythm, letting him breathe water",
+                hair: "Black and blue seaweed—long, thick strands that float like living tendrils. The blue lagoon seaweed from Nubi. Some say when Nubians harvest it, they're harvesting pieces of him.",
+                eyes: "Milky white, like pearls submerged in murky water. They see through darkness, through depths, and through the veil between life and death. When he looks at you, you feel as if you are already drowning.",
+                build: "Lean and sinewy, built for gliding through water. Humanoid torso, strong fish tail scaled in greens and blues",
+                hands: "Webbed fingers with sharp nails like fish hooks, made to grab, pull, and drag victims into the deep",
+                scent: "Saltwater, algae, and decay—like something that has been underwater too long, with the faint rot of drowned things and the mineral tang of deep ocean trenches",
+                presence: "Wet and suffocating. When he is near, the air feels heavy, damp, and harder to breathe. You hear water dripping even when there's no water. You feel something watching you from the depths. You taste salt on your tongue. And if you are near water at night, you hear it: the Qlacking, the siren song, calling you home."
+            },
+
+            roleAndLegacy: {
+                theSoulTakerOfTheDrowned: "Qlackic lives in water: rivers, oceans, seas, and lakes. He dwells anywhere water gathers. He is the one who, when someone drowns, takes their soul. He does this not as punishment or mercy, but simply because it is his role. Death by water belongs to him.",
+
+                theQlackingTheSirenSong: "Qlackic is infamous for what is called in Eudoric 'Qlacking,' a siren song that lures people to bodies of water. When they go into the deep, he takes them. Villages warn people: 'Do not be out at night by bodies of water. Qlackic can snatch you.' The song is beautiful. Haunting. Irresistible. And fatal.",
+
+                notGoodOrEvilInBetween: "Qlackic is not good or evil; he is somewhere in between. He does good and he does bad. For example: He might save a little girl from drowning (for the drama of it, to be unpredictable). But he also lures grown men to their deaths for no reason other than the water called him to. He is chaos in the form of water. You never know if he will save you or drown you.",
+
+                theShipwreckBringer: "Qlackic is known to start shipwrecks. He can create storms at sea to drown ships or anything else he can. Sailors fear him. They leave offerings (ducks, seaweed, salt), hoping he'll spare their voyage. Sometimes he does. Sometimes he doesn't.",
+
+                theBattleWithOceania: "Qlackic once fought Oceania after Oceania kidnapped her mermaids. But Suleiman told him to give her back the mermaids because of Oceania's priority. Qlackic obeyed because, deep down, he is afraid of her.",
+
+                thePoisonedLakePettyRevenge: "When Oceania created a lake, it was Qlackic who poisoned it after he was rejected. He only commits petty acts against her and does not take it further, because deep down, he is afraid of her. But he WILL poison her lakes, kidnap her mermaids, and make snide comments from a safe distance.",
+
+                workingAlongsideOtherSeaGods: "Despite his chaotic nature, Qlackic works alongside other sea gods and goddesses. For example: He delivers bad news about shipwrecks to families. He is the one who caused the shipwreck in the first place. He plays both sides, acting as both the messenger of tragedy and its cause.",
+
+                theAttemptedPoisoningOfAlsekemu: "Qlackic once tried to poison Al'sekemu with poisoned water. But Al'sekemu was too smart for him and threw him back in the ocean. Qlackic learned: Do not mess with the God of Order.",
+
+                associatedWithDucks: "Qlackic is associated with ducks. Why? No one knows. But he even married one and had children with her. Yes. A duck. Qlackic's wife is a duck. They have duck-water spirit hybrid children who waddle on land and glide through water, quacking ominously at sailors. Some say the ducks you see on lakes are Qlackic's spies. Some say if a duck stares at you too long, Qlackic is watching through its eyes. Do not anger the ducks.",
+
+                theBlueLagoonSeaweed: "The blue lagoon is a seaweed found in Nubi. This is associated with Qlackic. Some say it is his hair, since he has blue and green seaweed hair. The Nubians use the blue lagoon seaweed for: Crafts, Food, Clothing. When they harvest it, they thank Qlackic, just in case it really is his hair and he becomes angry."
+            },
+
+            powers: [
+                {
+                    name: "Soul Taking of the Drowned",
+                    description: "Claims the souls of those who die in water."
+                },
+                {
+                    name: "The Qlacking (Siren Song)",
+                    description: "Irresistible song that lures people to drown."
+                },
+                {
+                    name: "Shipwreck Creation",
+                    description: "Can create storms to sink ships."
+                },
+                {
+                    name: "Water Spirit Mastery",
+                    description: "Commands all spirits that dwell in water."
+                },
+                {
+                    name: "Lake Poisoning",
+                    description: "Can poison bodies of water out of spite."
+                },
+                {
+                    name: "Mermaid Kidnapping",
+                    description: "Can abduct mermaids (though Oceania makes him give them back)."
+                },
+                {
+                    name: "Storm Summoning",
+                    description: "Creates ocean storms."
+                },
+                {
+                    name: "Underwater Speed",
+                    description: "Faster than any ship."
+                },
+                {
+                    name: "Drowning",
+                    description: "Can drag victims into the depths."
+                },
+                {
+                    name: "Petty Revenge",
+                    description: "Specializes in small, annoying acts of vengeance."
+                },
+                {
+                    name: "Duck Communion",
+                    description: "Married to a duck, has duck children, associated with ducks."
+                },
+                {
+                    name: "Blue Lagoon Seaweed Growth",
+                    description: "His hair may be the source of Nubi's blue lagoon seaweed."
+                }
+            ],
+
+            myths: [
+                "Do not be out at night by bodies of water. Qlackic can snatch you.",
+                "When you hear the Qlacking—the siren song—it's already too late. Your feet will move. You will walk into the water. And he will take you.",
+                "He drowns people. But sometimes, he saves a little girl. No one knows why. He is neither good nor evil. He is water.",
+                "He creates shipwrecks and then delivers the bad news to families. 'I'm so sorry for your loss,' he says, dripping seawater, knowing full well he caused it.",
+                "He kidnapped Oceania's mermaids once. Suleiman made him give them back. Deep down, Qlackic is afraid of her.",
+                "When Oceania rejected him, he poisoned her lake. Petty? Yes. But he doesn't take it further. He knows better.",
+                "He tried to poison Al'sekemu once. Al'sekemu threw him back in the ocean. Qlackic learned: do not mess with the God of Order.",
+                "He is associated with ducks. He married one. They have children. Do not ask. Do not anger the ducks. They are his spies.",
+                "The blue lagoon seaweed in Nubi? Some say it's Qlackic's hair. Nubians harvest it for crafts, food, and clothing. They thank him, just in case."
+            ],
+
+            nature: "Qlackic represents the chaotic neutrality of water itself. Sometimes water gives life, sometimes it takes it. Sometimes it is calm, sometimes it is a storm. Sometimes it saves, sometimes it drowns. He is not a villain; he is simply water's will made flesh. He does not drown out of malice, but because that is what water does. He does not save out of kindness, but because sometimes water spares you. He represents what happens when nature has no morality, only action. The ocean does not care if you live or die. The river does not judge you. The lake neither forgives nor condemns. It simply is. And Qlackic? He simply is. But he IS petty. He WILL poison your lake if you reject him. He WILL kidnap mermaids to annoy Oceania. He WILL create shipwrecks and then deliver the bad news himself. And yes, he married a duck. No one knows why. He does not explain, and neither does the duck. They have children. Do not ask questions. His nature is a reminder that water is beautiful, deadly, life-giving, and merciless. And sometimes, it marries a duck."
         },
         ekar: {
             name: "E'kar",
-            titles: ["God of Creation and the Reality Embedder"],
-            attributes: ["Content coming soon"],
-            symbols: ["Content coming soon"],
-            description: "Profile content coming soon. E'kar is the God of Creation and the Reality Embedder.",
-            appearance: {
-                description: "Appearance details will be added soon."
-            },
-            powers: [
+            titles: [
+                "God of Creation",
+                "The Reality Embedder",
+                "Executive Authority of the Oristhar",
+                "Throne of Manifestation (positioned to Eudora's left)",
+                "Co-Architect of Existence (alongside Suleiman and Yusha)",
+                "Creator of Reality Interfaces",
+                "Inventor of the First Reality Threads",
+                "Creator of the First Language (Root Language of Meaning)",
+                "Creator of the Dream Weave",
+                "Creator of the Tri-Orb (uncredited)",
+                "The Engineer Behind Suleiman's Genius",
+                "The Builder Who Gets No Credit",
+                "The God Used by Goddesses",
+                "Father of Multiple Children (mothers unknown)"
+            ],
+            attributes: [
+                "Brilliant engineer and builder",
+                "Co-architect of existence (alongside Suleiman and Yusha)",
+                "Quiet, doesn't speak up, doesn't claim recognition",
+                "Craves romance but is used by goddesses",
+                "Heartbroken over Jodami (still blames Suleiman)",
+                "Father of many children (mothers often unknown)",
+                "Created foundational systems but Suleiman gets the credit",
+                "Loyal until betrayed",
+                "Resentful but resigned",
+                "The brain behind Suleiman's designs"
+            ],
+            symbols: [
+                "The massive golden-rimmed glasses (analyzers, vision-sharers, invisibility tools)",
+                "Reality Interfaces (invisible mathematical protocols)",
+                "The First Reality Threads (invisible threads that gods manipulate for miracles)",
+                "The Root Language (underlying logic of meaning)",
+                "The Dream Weave (allows gods to enter mortal dreams safely)",
+                "The Tri-Orb (Mentalith Orb, Necrocore Orb, Soul Orb - uncredited creation)",
+                "The Throne of Manifestation (his seat in the Oristhar, to Eudora's left)"
+            ],
+            description: "E'kar is the God of Creation and the Reality Embedder, the co-architect of existence alongside Suleiman and Yusha. While Suleiman designs blueprints and Yusha weaves time and space, E'kar builds—he turns divine will into reality. He spent 1,847 years creating Reality Interfaces, invisible mathematical protocols that let Suleiman's abstract Cosmic Arithmetic control physical processes like plant growth, weather systems, and architectural harmony. He created the First Reality Threads (the invisible strings gods pull to perform miracles), the Root Language (the logic of meaning itself), and the Dream Weave (allowing gods to enter mortal dreams safely). He even created the Tri-Orb (Mentalith, Necrocore, and Soul Orbs), but he gets no credit—Suleiman documented everything, so history remembers him. E'kar wears massive golden-rimmed glasses that are actually Analyzers—with them, he can see through reality, become invisible, and share his visions. He occupies the Throne of Manifestation in the Oristhar, to Eudora's left. But despite his genius, goddesses use him. Euora used him to sabotage Ta'hanne (he threw her into Bonnia of Doom for a promised kiss). He fell in love with Jodami and had four children with her in secret. When Suleiman found out, he sent E'kar on a death mission. They haven't spoken in centuries. When Jodami betrayed Suleiman and was sent to Shadeward Hollow, E'kar blamed Suleiman: 'If you hadn't come to her rescue, she wouldn't be imprisoned forever.' He never found love again. He is the engineer. Suleiman is the public intellectual. And history remembers the one who wrote it down, not the one who made it real.",
+
+            domains: [
                 {
-                    name: "Placeholder Power",
-                    description: "Powers will be added soon."
+                    name: "Creation",
+                    description: "E'kar is the God of Creation, but not in an abstract or theoretical way. While Suleiman designs blueprints and Yusha weaves time and space, E'kar builds. He is the one who turns divine will into real things, taking abstract numbers and making them work in the world. He is the implementer, the engineer, the builder. Without him, none of Suleiman's designs would actually work."
+                },
+                {
+                    name: "The Reality Embedder",
+                    description: "E'kar's greatest achievement was creating 'Reality Interfaces,' which are invisible mathematical protocols that let Suleiman's abstract Cosmic Arithmetic control physical processes. He spent 1,847 years creating these interfaces so that: Plant growth follows numerical patterns (Veyh/5 patterns: five petals, five growth cycles, five-year renewal); Weather systems follow mathematical principles (Zerith/6 principles: beneficial chaos preventing stagnant air); Architectural harmony ensures buildings self-reinforce rather than deteriorate. E'kar's domain is like the world's operating system. It quietly translates the high-level code of cosmic law, designed by Suleiman, into practical and tangible functions that keep the universe running."
                 }
             ],
-            nature: "Nature and detailed content coming soon."
+
+            appearance: {
+                description: "E'kar looks like an engineer. He is not massive like Zane or imposing like Suleiman, but he is solid, practical, and grounded. His body shows the marks of someone who has spent ages building reality with his own hands. He wears massive glasses with golden rims—but he does not need them to see better. They are Analyzers. With these glasses, he can: See his creations up close, See through things (analyze their structure, their reality threads), Become invisible, Share his visions (when he has visions, you can see them through the glasses). The glasses are part of his power. They are tools for creation, analysis, and manifestation. His hair is dark, practical, and kept short or tied back. He cares about function, not appearance. He wears functional robes, often covered in dust from construction and residue from building reality. He looks like someone who has been working, not posing. His hands are calloused and scarred—hands that have built worlds, woven reality threads, and embedded mathematical protocols into existence.",
+                build: "Solid, practical, and grounded. Not massive like Zane or imposing like Suleiman, but he shows the marks of someone who has spent ages building reality",
+                glasses: "Massive glasses with golden rims—Analyzers that let him see creations up close, see through things, become invisible, and share his visions",
+                hair: "Dark, practical, kept short or tied back. Function over appearance",
+                clothing: "Functional robes covered in dust from construction and residue from building reality. Looks like someone who has been working, not posing",
+                hands: "Calloused and scarred. Hands that have built worlds, woven reality threads, and embedded mathematical protocols into existence",
+                eyes: "Deep brown, tired, and kind. The eyes of someone who has worked endlessly and received little recognition. When he looks at his creations, his eyes light up with pride. When he looks at Suleiman, his eyes hold resentment and resignation. When he looked at Jodami, his eyes were full of love—the only time anyone saw him truly happy.",
+                scent: "Stone dust, metal, and ozone—the scent of creation itself, of reality being forged",
+                presence: "Grounding and stabilizing. When he enters, you feel like the world makes sense and everything is held together properly. But there is also a sadness to his presence—the feeling of someone who has built everything but received no credit."
+            },
+
+            roleAndLegacy: {
+                positionInTheOristhar: "E'kar holds the position of Executive Authority in the Oristhar, the supreme assembly of cosmic governance. He occupies the Throne of Manifestation, positioned to Eudora's left. His role: Implement decisions in physical reality, Oversee cosmic construction projects, Transform divine will into concrete existence, Manage the physical consequences of the Oristhar's decisions.",
+
+                roleInTheArchitectureOfExistence: "E'kar was essential in establishing the foundational structure of reality, working in harmony with Suleiman and Yusha. The Three Architects: Suleiman: Created the theoretical framework and mathematical consciousness. Yusha: Served as the Dimensional Weaver, ensuring stability across time and space. E'kar: Made abstract numbers function in concrete reality. E'kar's Role (Integration): While Suleiman designed the theoretical blueprint, E'kar faced the immense task of making it WORK. He had to ensure that Suleiman's complex Cosmic Arithmetic could govern everything from planetary orbits to the growth patterns of flowers. This collaboration required: 3,000 years of negotiation, 1,847 years of implementation.",
+
+                theEmbeddingProcessRealityInterfaces: "E'kar's most significant achievement was the creation of 'Reality Interfaces'. He spent 1,847 years creating these invisible mathematical protocols. These interfaces allow Suleiman's abstract numbers to control physical processes without mortals noticing the mechanisms. Examples: 1. Plant Growth: Ensuring the Lifebloom Fields of Jamara bloom according to Veyh (5) patterns: Five petals, Five growth cycles, Five-year renewal phases. 2. Weather Systems: Designing storm formations to follow Zerith (6) principles, creating beneficial chaos that prevents stagnant air patterns. 3. Architectural Harmony: Ensuring that buildings constructed using sacred proportions self-reinforce rather than deteriorate over time.",
+
+                ekarsDomainTheWorldsOperatingSystem: "E'kar's domain is like the world's operating system. It quietly translates the high-level code of cosmic law, designed by Suleiman, into practical functions like plant growth, weather patterns, and architectural stability. Without this, the universe could not run.",
+
+                theMassiveGoldenRimmedGlasses: "E'kar wears massive glasses with golden rims. But these glasses are not because he can't see well. They are Analyzers. With these glasses, he can: See his creations up close, See through things (analyze structure, reality threads), Become invisible, Share his visions (when he has visions, you can see them through the glasses). The glasses are part of his power.",
+
+                creatorOfTheTriOrbUncredited: "E'kar is the creator of the Tri-Orb. The three components: The Mentalith Orb (mind reality orb), The Necrocore Orb, The Soul Orb. But E'kar is NOT credited for creating these orbs. Credit goes to either Suleiman or the Creator himself.",
+
+                theInventionsSuleimanGetsCredit For: "1. The First Reality Threads: E'kar created the invisible 'threads' that gods manipulate to perform miracles. Without E'kar, spells, blessings, creation miracles—none of it works. But Suleiman documented them, so Suleiman took the credit. E'kar invented them. 2. The First Language: E'kar created the underlying 'root language' that all divine languages branch from—not words, but the logic of meaning. Suleiman wrote prophecy using it → everyone assumes Suleiman invented the sacred tongue. But E'kar made the alphabet of existence. 3. The Dream Weave: E'kar created the ability for gods to enter mortal dreams safely and without overwriting their minds. Tia uses this constantly. She gives him no credit.",
+
+                whyEkarGetsNoCredit: "E'kar is a builder, not a leader. He works quietly, doesn't speak up, and doesn't claim recognition. Suleiman interpreted, documented, and institutionalized everything—so naturally history remembers him. E'kar is the engineer. Suleiman is the public intellectual. And you know how history treats engineers.",
+
+                theTruth: "Though Suleiman is largely important to reality and the world, E'kar is the helper and the brain behind it. E'kar never really got the credit he deserved. He stays behind Suleiman. Goddesses don't look his way, but they know he craves romance. Some goddesses use him to get what they want, and when they're done, they move on from him.",
+
+                euoraUsedForSabotage: "E'kar was in the middle of the sister drama between Euora and Ta'hanne. E'kar begged Euora to bear his children, and he'd do whatever she asked. She agreed. And for that, he helped sabotage Ta'hanne (throwing Euora into the Bonnia of Doom for a promised KISS from Ta'hanne!). They had two children: Kat, Rhay.",
+
+                jodamiTheLoveHeLost: "When Jodami was crying over Suleiman, it was E'kar who comforted her. The two fell in love and had four children: Ha'ruis (God of the River), Pajah (Associated with winged horses), Kimonarni (Goddess associated with dawn and food), Wequari (Associated with tigers and mountains). Their relationship was kept hidden because Jodami was one of Suleiman's women, and E'kar was one of Suleiman's advisors.",
+
+                suleimansJealousy: "When Suleiman found out, he ordered E'kar on a mission—knowing E'kar does not have strength (he's a builder, not a warrior). It was essentially a death sentence. But Suleiman decided to let E'kar stop the mission (when Jodami confronted him about his feelings). Yet Suleiman never talked to E'kar again. It's been centuries.",
+
+                jodamisBetrayal: "Jodami stayed with E'kar until she betrayed Suleiman in the War of Gods. She set up a fake scheme to call Suleiman, so Al'sekemu's forces could ambush him. After the war, Jodami was sent to Shadeward Hollow (an eternal prison with no return).",
+
+                ekarBlamesSuleiman: "E'kar blamed Suleiman for it, saying: 'If you hadn't come to her rescue, she wouldn't be sent to Shadeward Hollow.' E'kar never found love after that.",
+
+                rumoredChildWithSuleimans Daughter: "There's a rumor that E'kar had a child with one of Suleiman's daughters, but it's unconfirmed.",
+
+                otherChildrenMothersUnknown: "E'kar does have other children, but no one knows who the mothers are."
+            },
+
+            powers: [
+                {
+                    name: "Reality Embedding",
+                    description: "Transforms abstract mathematics into physical reality."
+                },
+                {
+                    name: "Reality Interface Creation",
+                    description: "Created invisible protocols that govern existence."
+                },
+                {
+                    name: "Reality Thread Creation",
+                    description: "Invented the threads gods use for miracles."
+                },
+                {
+                    name: "Root Language Creation",
+                    description: "Created the underlying logic of meaning for all divine languages."
+                },
+                {
+                    name: "Dream Weave Creation",
+                    description: "Allows gods to enter mortal dreams safely."
+                },
+                {
+                    name: "Tri-Orb Creation",
+                    description: "Created Mentalith, Necrocore, and Soul Orbs (uncredited)."
+                },
+                {
+                    name: "Analyzer Glasses",
+                    description: "Can see through things, become invisible, share visions."
+                },
+                {
+                    name: "Cosmic Construction",
+                    description: "Oversees all physical manifestations of divine will."
+                },
+                {
+                    name: "Architectural Harmony",
+                    description: "Ensures buildings self-reinforce."
+                },
+                {
+                    name: "Weather System Design",
+                    description: "Created storm patterns following mathematical principles."
+                },
+                {
+                    name: "Plant Growth Programming",
+                    description: "Embedded numerical patterns into natural growth."
+                }
+            ],
+
+            myths: [
+                "E'kar spent 1,847 years embedding Suleiman's abstract mathematics into reality. Without him, plants would not grow, weather would not follow patterns, buildings would crumble.",
+                "He created the Reality Threads—the invisible strings gods pull to perform miracles. Suleiman documented them. History credits Suleiman.",
+                "He invented the Root Language—the logic of meaning itself. Suleiman wrote prophecy with it. Everyone thinks Suleiman created it.",
+                "He created the Dream Weave so gods could enter mortal dreams safely. Tia uses it constantly. She gives him no credit.",
+                "He wears massive golden-rimmed glasses—not because he can't see, but because they are Analyzers. With them, he sees through reality, becomes invisible, shares his visions.",
+                "Euora used him. She asked him to bear her children in exchange for sabotaging Ta'hanne. He threw her into the Bonnia of Doom for a promised kiss from Ta'hanne. They had two children: Kat and Rhay.",
+                "He fell in love with Jodami when she was crying over Suleiman. They had four children in secret. When Suleiman found out, he sent E'kar on a death mission. They haven't spoken in centuries.",
+                "When Jodami betrayed Suleiman in the War of Gods, she was sent to Shadeward Hollow. E'kar blames Suleiman: 'If you hadn't come to her rescue, she wouldn't be imprisoned forever.'",
+                "E'kar never found love after that. Some say he had a child with one of Suleiman's daughters, but it's unconfirmed. He has other children. No one knows who the mothers are.",
+                "He is the engineer. Suleiman is the public intellectual. And history remembers the one who wrote it down, not the one who made it real."
+            ],
+
+            nature: "E'kar is the classic unsung genius, the engineer who builds everything but gets no credit. He is the brain behind Suleiman's brilliance and the hands that turned theory into reality. He is the architect who actually built existence, but history remembers Suleiman, not him. He represents what happens when you do the work, but someone else writes the book. When you invent the alphabet, but someone else writes the prophecy. When you create the tools, but someone else gets famous using them. His nature is both essential and invisible. Without E'kar, reality does not function. Without E'kar, Suleiman's theories remain theories. Without E'kar, gods cannot perform miracles, plants do not grow according to divine patterns, and weather does not follow cosmic law. But E'kar is quiet. He does not speak up or ask for recognition. Because of this, goddesses use him, Suleiman takes credit for his work, and history forgets him. His love life is just as tragic. He was used by Euora to sabotage Ta'hanne, fell in love with Jodami but lost her to Suleiman's jealousy and then to eternal imprisonment, was blamed for her fate, and never found love again. E'kar reminds us that the engineer is as important as the architect, and the builder is as essential as the designer. But history remembers the one who wrote things down, not the one who made them real."
         },
         godevea: {
             name: "Godevea",
@@ -3889,37 +4455,341 @@ const eudoriaData = {
         },
         cheary: {
             name: "Cheary",
-            titles: ["God of Light and Harmony", "Creator of the Iluries"],
-            attributes: ["Content coming soon"],
-            symbols: ["Content coming soon"],
-            description: "Profile content coming soon. Cheary is the God of Light and Harmony who created the Iluries.",
-            appearance: {
-                description: "Appearance details will be added soon."
-            },
-            powers: [
+            titles: [
+                "God of Light and Harmony",
+                "Universal Peace Authority",
+                "Creator of the Iluries (Beings of Pure Light)",
+                "Builder of the Ascension Pathway",
+                "The Cosmic Tuning Fork",
+                "Regulator of Divine Emotional Fallout",
+                "Inventor of Cold Illumination (Light Without Heat)",
+                "Father of 1,000+ Iluries",
+                "The Unproblematic God",
+                "Eudora's Favored God (Their Philosophies Align)",
+                "Second God (Besides Naymor) to Work with the Heavens"
+            ],
+            attributes: [
+                "The most unproblematic god in all of Eudoric",
+                "Peaceful, balanced, harmonious",
+                "Regulates divine emotional fallout",
+                "Created the Iluries (beings of pure light)",
+                "Built the Ascension Pathway (so mortals can become gods fairly)",
+                "Tempers gods without force",
+                "Works mostly with Suleiman",
+                "Created from light to maintain it",
+                "Not close to other gods (only when they need him)",
+                "Father of 1,000+ children (all Iluries)",
+                "Second god (besides Naymor) to work with the Heavens"
+            ],
+            symbols: [
+                "Twelve Rotating Halos (cosmic cycles, balance, ascension)",
+                "Open Palms / Outstretched Hands (acceptance without force)",
+                "Starlit Staff or Rod (he directs light, doesn't emit it)",
+                "Fractured Halo Rejoined (healing of fractured purpose)",
+                "Mirror Eyes (reflecting truth and clarity)",
+                "Cold Illumination (light without heat)",
+                "The Iluries (his 1,000+ children, beings of pure light)"
+            ],
+            description: "Cheary is the God of Light and Harmony, the Universal Peace Authority, and the most unproblematic god in all of Eudoric. His light isn't like fire—it is cold illumination, spiritual clarity that reveals without destroying. He created the Iluries, beings of pure light who judge ascension and escort mortals to divinity, because 'Emotion clouds judgment; light does not.' He built the Ascension Pathway so mortals become gods based on purpose, not popularity. He regulates divine emotional fallout: calming Zenitha during the War of Gods by showing her the souls behind the soldiers, guiding Ta'hanne's mind during her spiral, preventing Oceania from drowning all islands after her trauma. He doesn't stop wars—he re-aligns their purpose so they aren't meaningless. He doesn't remove darkness—he gives mortals the clarity to walk through it without becoming it. His eyes are mirrors; when you look into them, you see yourself as you truly are. He wears twelve rotating halos that represent cosmic cycles and balance. He carries a starlit staff to direct light—he doesn't emit it himself. He invented cold illumination (light without heat) so blind mortals could see, deep-sea civilizations could grow, and shadow creatures could exist without suffering. He is the cosmic tuning fork, aligning everything to a singular, peaceful frequency. He has 1,000+ children (all Iluries), works mostly with Suleiman, and is one of the second gods (besides Naymor) to work with the Heavens. Eudora favors him because his philosophy aligns with hers: balance, not domination. Harmony, not hierarchy.",
+
+            domains: [
                 {
-                    name: "Placeholder Power",
-                    description: "Powers will be added soon."
+                    name: "Light (Spiritual Illumination)",
+                    description: "Cheary's light isn't like sunshine or fire. Instead, it is a form of spiritual illumination: Perception, Truth, Order, Emotional equilibrium, Moral clarity. He brings clarity to the lost, purpose to the confused, and balance to the chaotic. His light does not burn; it reveals. It does not conquer darkness, but instead gives mortals the clarity to walk through darkness without becoming it."
+                },
+                {
+                    name: "Harmony",
+                    description: "Cheary restores harmony to realms that are overwhelmed by emotional, divine, or moral imbalance. He doesn't stop the war. He re-aligns purpose so war isn't meaningless. He doesn't remove darkness. He gives mortals the clarity to walk through darkness without becoming it. This is why Eudora favors him. His philosophy matches hers: balance, not domination."
                 }
             ],
-            nature: "Nature and detailed content coming soon."
+
+            appearance: {
+                description: "Tall, serene, and luminous, Cheary looks like someone who belongs more to the spiritual realm than the physical. His form is solid but seems to radiate, as if he is part presence and part light. His skin glows faintly with a soft, cold light—not hot like fire, but cool like moonlight and soothing like dawn. The color shifts between pale gold and silver, depending on the time and need. His hair is long and flowing, the color of starlight—white-gold and almost translucent. It moves as if caught in an invisible breeze. His eyes are Mirror Eyes, reflective like polished silver. When you look into them, you see yourself as you truly are: your truth, your purpose, and your balance (or lack of it). He wears twelve halos that rotate around his head, each one representing cosmic cycles, balance, and ascension. They glow softly, spinning slowly and rhythmically like a cosmic clock. His hands are always in open palms or outstretched—a symbol of acceptance without force. He never clenches his fists, never grabs, and only offers. He carries a starlit staff, which he uses to direct light, but he does not emit light himself. The staff is a conduit, not a source. He wears flowing robes of white and silver, adorned with fractured halos rejoined—a symbol of healing fractured purpose.",
+                build: "Tall, serene, and luminous. His form is solid but seems to radiate, as if he is part presence and part light",
+                skin: "Glows faintly with a soft, cold light—not hot like fire, but cool like moonlight and soothing like dawn. The color shifts between pale gold and silver",
+                hair: "Long and flowing, the color of starlight—white-gold and almost translucent. Moves as if caught in an invisible breeze",
+                eyes: "Mirror Eyes. Reflective like polished silver. When you look into them, you see yourself as you truly are: your truth, your purpose, your balance (or lack of it). To mortals, his eyes are humbling and clarifying. To gods, his eyes are grounding and revealing.",
+                halos: "Twelve halos that rotate around his head, each one representing cosmic cycles, balance, and ascension. They glow softly, spinning slowly and rhythmically like a cosmic clock",
+                hands: "Open palms or outstretched hands—a symbol of acceptance without force. He never clenches his fists, never grabs, only offers",
+                staff: "Starlit staff. He uses it to direct light, but he does not emit light himself. The staff is a conduit, not a source",
+                clothing: "Flowing robes of white and silver, adorned with fractured halos rejoined—a symbol of healing fractured purpose",
+                scent: "Ozone, starlight, and calm—like the scent that lingers after a storm clears, bringing clarity after confusion and peace after chaos",
+                presence: "Calming, grounding, and illuminating. When he enters, you feel: Clarity (confusion fades), Balance (emotions stabilize), Peace (chaos quiets). His presence does not force peace; it offers it. You can reject it if you want, but most people do not."
+            },
+
+            roleAndLegacy: {
+                positionInTheOristhar: "As the God of Light and Harmony and the holder of the Universal Peace Authority, Cheary maintains spiritual and ethical balance within the Oristhar. His presence on the Secondary Council, alongside deities like Sove (Sky and Stars) and Erah (Weapons and War), suggests he contributes to decisions that stabilize the cosmic environment and resolve inter-reality issues. Cheary's role is integral to the broader divine structure that ensures Eudoria and its people function according to the principles of balance and harmony championed by Queen Eudora and the cosmic laws established by Suleiman.",
+
+                theCosmicTuningFork: "To understand Cheary's influence, think of him as the cosmic tuning fork for the universe. His domain, Light and Harmony, ensures that everything—from the selection of ascending mortals (through the Iluries) to the function of the supreme divine court—is aligned to a singular, peaceful frequency. When something is out of balance, his essence provides the blueprint for restoring equilibrium.",
+
+                createdTheIluries: "Cheary created the Iluries—beings of pure light who serve as: Messengers, Escorts, Judges of Ascension. They determine if a mortal is worthy of divinity. They escort dying heroes to their final fate. They act as divine auditors of the soul. Why He Created Them: Cheary created the Iluries because no other god could be unbiased enough to choose which mortals should ascend. 'Emotion clouds judgment; light does not.' — Cheary",
+
+                builtTheAscensionPathway: "Cheary designed the cosmic system by which mortals become gods. He: Designed the spiritual architecture, Instituted tests of motive, character, and sacrifice, Ensured gods are made for a purpose, not popularity. Ascension is no longer random; it is earned. Without Cheary, the divine realm would be filled with unworthy or unstable gods, wreaking havoc.",
+
+                regulatorOfDivineEmotionalFallout: "When gods lose themselves to their extremes (war, sorrow, desire, vengeance), Cheary tempers them without force. Examples: 1. He Calmed Zenitha During the War of Gods: He let her see the souls behind the soldiers—not just enemies, but people with families, dreams, fears. It didn't stop her from fighting, but it gave her purpose instead of rage. 2. He guided Ta'hanne's Mind Briefly During Her Spiral: So she wouldn't tear open the realm too early (during her jealousy over Euora and rage over betrayals). 3. He prevented Oceania from drowning all islands after Her Trauma: Helping her rule instead of destroying after Tangaroa's betrayal and Merlily's death. Cheary Regulates Divine Emotional Fallout on a Cosmic Scale.",
+
+                heCreatedLightWithoutHeat: "Cheary invented cold illumination—spiritual light that doesn't burn. This allowed: Blind mortals to see (spiritual sight), Deep-sea civilizations to grow (light in the abyss), Arctic regions to have auroras instead of famine (beauty and warmth without fire), Shadow creatures exist without suffering (coexistence of light and dark). He did not conquer darkness; he evolved it.",
+
+                hisThousandPlusChildren: "Cheary has over 1,000 children, but they are all Iluries—beings of pure light. They are not traditional offspring. Instead, they are extensions of his purpose and embodiments of his philosophy.",
+
+                hisRelationships: "Cheary is not close to the other gods and interacts with them only when they need him. He primarily works with Suleiman (they share a focus on order, balance, and cosmic structure). He was created from light to maintain it. He is also one of the second gods (besides Naymor) to work with the Heavens."
+            },
+
+            powers: [
+                {
+                    name: "Spiritual Illumination",
+                    description: "Provides perception, truth, order, emotional equilibrium, and moral clarity."
+                },
+                {
+                    name: "Harmony Restoration",
+                    description: "Re-aligns purpose, brings balance without force."
+                },
+                {
+                    name: "Divine Emotional Regulation",
+                    description: "Tempers gods without forcing them."
+                },
+                {
+                    name: "Iluries Creation",
+                    description: "Created 1,000+ beings of pure light to judge ascension."
+                },
+                {
+                    name: "Ascension Pathway Design",
+                    description: "Built the system by which mortals become gods fairly."
+                },
+                {
+                    name: "Cold Illumination",
+                    description: "Invented light without heat (spiritual light)."
+                },
+                {
+                    name: "Clarity Vision",
+                    description: "Gives mortals the ability to walk through darkness without becoming it."
+                },
+                {
+                    name: "Mirror Eyes",
+                    description: "Reflects truth, purpose, and balance back to those who look."
+                },
+                {
+                    name: "Fractured Purpose Healing",
+                    description: "Rejoins broken purpose, restores moral clarity."
+                },
+                {
+                    name: "Cosmic Tuning",
+                    description: "Aligns everything to a singular, peaceful frequency."
+                },
+                {
+                    name: "Light Direction",
+                    description: "Directs light through his starlit staff, doesn't emit it himself."
+                }
+            ],
+
+            myths: [
+                "Cheary's light is not like fire; it does not burn. It is cold illumination, spiritual clarity that reveals without destroying.",
+                "He created the Iluries—beings of pure light—because no god could be unbiased enough to judge ascension. 'Emotion clouds judgment; light does not.'",
+                "He built the Ascension Pathway so mortals become gods based on purpose, not popularity. Without him, the divine realm would be chaos.",
+                "When Zenitha lost herself to war, he calmed her by showing her the souls behind the soldiers. When Ta'hanne spiraled, he guided her mind. When Oceania nearly drowned all islanders, he helped her rule instead of destroying.",
+                "He doesn't stop the war. He re-aligns purpose so war isn't meaningless. He doesn't remove darkness. He gives mortals the clarity to walk through it without becoming it.",
+                "He invented cold illumination—light without heat—so blind mortals could see, deep-sea civilizations could grow, and shadow creatures could exist without suffering.",
+                "He has over 1,000 children, but they are all Iluries. He is not close to other gods—only when they need him. He works mostly with Suleiman.",
+                "His eyes are mirrors. When you look into them, you see yourself as you truly are—your truth, your purpose, your balance.",
+                "He is the cosmic tuning fork. When something is out of balance, his essence provides the blueprint for equilibrium.",
+                "Eudora favors him because his philosophy aligns with hers: balance, not domination. Harmony, not hierarchy."
+            ],
+
+            nature: "Cheary stands for balance without domination, clarity without force, and light without heat. He is the most unproblematic god in all of Eudoric, not because he avoids conflict, but because he resolves it before it turns into chaos. He represents what happens when power is used to illuminate rather than destroy. When light is used to reveal truth, it is not blind, but when harmony is achieved through understanding, not suppression. His nature is peaceful but not passive. He does not stop wars; instead, he re-aligns their purpose so they are not meaningless. He does not remove darkness, but gives mortals the clarity to walk through it without being consumed. He is the cosmic therapist, the divine mediator, and the tuning fork of the universe. He ensures that gods do not lose themselves to their extremes, that mortals ascend based on worth rather than popularity, and that balance is maintained across all realms. His philosophy matches Eudora's: balance instead of domination, coexistence instead of conquest, and harmony instead of hierarchy. And unlike most gods, he doesn't need recognition. He doesn't need to be close to others. He simply exists where he's needed, offers what is required, and leaves when balance is restored. He serves as a reminder that true power does not demand submission. Instead, it provides clarity, which is the greatest gift a god can give."
         },
         umar: {
             name: "Umar",
-            titles: ["God of Creation, the Sun, and Power"],
-            attributes: ["Content coming soon"],
-            symbols: ["Content coming soon"],
-            description: "Profile content coming soon. Umar is the God of Creation, the Sun, and Power.",
-            appearance: {
-                description: "Appearance details will be added soon."
-            },
-            powers: [
+            titles: [
+                "God of Creation, Sun, and Power",
+                "The Overachiever God",
+                "Forger of the Current Sun",
+                "Dragon Slayer",
+                "Defeater of the Troll Clans",
+                "Beheader of Buku (The Crocodile Deity)",
+                "Finder of the Akka Laws (Part of the Laws of Eimes)",
+                "Creator of the Solar System (with Ceana, the Solar Goddess)",
+                "Stabilizer of Planetary Rotation",
+                "The One Who Walks on the Sun During Solstice",
+                "Inventor of Solar Calendars (Before the Noga System)",
+                "Creator of Heat-Resistant Plants and Metals",
+                "The First God to Wear Sandals",
+                "Husband of Swai (Goddess of Wind, Sove's Little Sister)",
+                "The God Who Got Eyeshadow from Tati'anna"
+            ],
+            attributes: [
+                "Overachiever (all about achievements and feats)",
+                "Workaholic (Suleiman even tells him to slow down!)",
+                "Sometimes plans feats just to be the hero",
+                "Dragon slayer",
+                "Defeated troll clans",
+                "Beheaded Buku (the Crocodile deity)",
+                "Stopped the sun from falling into Oceania",
+                "Found the Akka Laws (stolen by Cris, the god of death and chaos)",
+                "Created the solar system with Ceana",
+                "Walks on the sun during the solstice",
+                "Invented solar calendars before the Noga system",
+                "Created heat-resistant plants and metals",
+                "First god to wear sandals",
+                "Got eyeshadow from Tati'anna to make his eyes pop",
+                "Married to Swai (Sove's little sister, and Sove hates it)"
+            ],
+            symbols: [
+                "The sun (forged from the First Star)",
+                "The scar on his chest (molten gold, reignited the sun)",
+                "Gravitational chains of fire (stabilizes planetary rotation)",
+                "The Blister Year (when he dragged the sun closer)",
+                "Sunsteel (forgeable only under eclipse)",
+                "Embergrass (survives volcanic soil)",
+                "Sandals (first god to wear them!)",
+                "Scepter with rotating sun/ball of light (his weapon)",
+                "Burnt orange eyes with subtle eyeshadow (thanks to Tati'anna!)",
+                "Dragon slaying, troll defeating, crocodile deity beheading"
+            ],
+            description: "Umar is the God of Creation, Sun, and Power—the ultimate overachiever who forged the current sun from the dying embers of the First Star using his own divine marrow. The scar on his chest glows like molten gold. He stabilizes planetary rotation with gravitational chains of fire that only he can see. He once dragged the sun closer to scorch a demonic invasion—The Blister Year. He walks on the sun during solstice to reforge his power. He invented solar calendars before the Noga system, created Sunsteel (forgeable only under eclipse) and Embergrass (survives volcanic soil), defeated the Troll Clans, beheaded Buku the Crocodile Deity, stopped the sun from falling into Oceania, and found the Akka Laws (part of the Laws of Eimes) after Cris stole them. Together with Ceana the Solar Goddess, he created the solar system—the eight planets of Eudoric. He's a workaholic; even Suleiman tells him to slow down. He sometimes plans feats just to be the hero—creating a problem, solving it spectacularly, then adding it to his list. He's the first god to wear sandals (practical for walking on the sun) and asked Tati'anna to make his eyes pop with subtle eyeshadow. He's married to Swai, Sove's little sister (Sove hates it). His eyes are burnt orange like the sun, his skin is sun-kissed bronze and golden, and when he enters a room, he blazes in. He never stops working, creating, or conquering. He is ambition incarnate.",
+
+            domains: [
                 {
-                    name: "Placeholder Power",
-                    description: "Powers will be added soon."
+                    name: "Creation",
+                    description: "Umar is a creation god, but unlike E'kar or Suleiman, he doesn't work in abstract or theoretical ways. He creates using fire, power, and pure determination. He is called a creation god because, together with Ceana the Solar Goddess, he made the solar system and the eight planets of Eudoric."
+                },
+                {
+                    name: "The Sun",
+                    description: "Umar rules over the sun, not just as a star in the sky, but as a source of life, power, and order in the universe. He made the current sun from the last embers of the First Star. When the old star died, Umar brought it back to life with his own divine marrow. Now, a scar glows on his chest like molten gold."
+                },
+                {
+                    name: "Power",
+                    description: "Umar is the god of power, which means more than just physical strength. He controls cosmic forces, gravity, and raw divine energy. He keeps the planets spinning at the right speed. Without him, the world would spin too fast, but Umar slows it down with invisible chains of fire. He can move the sun closer or farther away. Once, he pulled the sun closer to burn away a demonic invasion. People still call that time The Blister Year."
                 }
             ],
-            nature: "Nature and detailed content coming soon."
+
+            appearance: {
+                description: "Umar has sun-kissed skin and strong, powerful muscles, built like a warrior who has battled dragons, trolls, demons, and even forged the sun. His skin is bronze and golden, glowing faintly as if he has absorbed centuries of sunlight. The scar on his chest glows like molten gold, marking the moment he reignited the sun's core with his own divine marrow. It pulses with light, always reminding him of the cost of creation. His eyes are burnt orange like the sun, bright, intense, powerful, and glowing even in darkness. Tati'anna gave him subtle eyeshadow to make his eyes stand out—he is the only god who ever asked the Goddess of Beauty for makeup advice. His hair is short and practical, maybe fiery red or sun-gold, always kept ready for battle and work. He wears war attire, practical armor made for combat instead of ceremonial robes. He always looks ready to fight. Umar is the first god who literally wore sandals—practical footwear for someone who walks on the sun during the solstice. He carries a scepter topped with a small sun or a ball of light, signifying his control over the sun and his ability to use solar energy as a weapon.",
+                build: "Sun-kissed skin and strong, powerful muscles, built like a warrior who has battled dragons, trolls, demons, and forged the sun",
+                skin: "Bronze and golden, glowing faintly as if he has absorbed centuries of sunlight",
+                scar: "The scar on his chest glows like molten gold, marking the moment he reignited the sun's core with his own divine marrow. It pulses with light.",
+                eyes: "Burnt orange like the sun, bright, intense, and full of power. When he looks at you, you feel the heat of judgment, the burn of ambition, the weight of cosmic force. And yes, he's wearing subtle eyeshadow (courtesy of Tati'anna) to make them pop.",
+                hair: "Short and practical, fiery red or sun-gold, always kept ready for battle and work",
+                clothing: "War attire, practical armor made for combat. Always looks ready to fight",
+                sandals: "The first god to wear sandals—practical footwear for walking on the sun",
+                weapon: "Scepter topped with a small sun or ball of light, signifying his control over the sun and solar energy",
+                scent: "Smoke, ember, and molten metal—the scent of forge fires, burning starlight, and scorched earth",
+                presence: "Overwhelming and energizing. When he enters, you feel heat, power, and urgency. The air around him is warmer. Light seems brighter. Energy feels amplified. He doesn't just walk into a room; he blazes in."
+            },
+
+            roleAndLegacy: {
+                theGodOfAchievementsAndFeats: "Umar is the god of achievements and feats. He doesn't just exist; he accomplishes, conquers, creates, and defeats.",
+
+                forgedTheCurrentSun: "Umar forged the current sun from the dying embers of the First Star. When the old star collapsed, Umar reignited its core using his own divine marrow. The scar on his chest glows like molten gold, a lasting reminder of his sacrifice.",
+
+                stabilizesPlanetaryRotation: "The world would spin too fast if not for Umar, who slows it down with chains of fire only he can see. Without him, planetary motion would collapse into chaos.",
+
+                canPullTheSunCloser: "Umar can manipulate the sun's position. He once dragged the sun closer to scorch a demonic invasion. People remember this as The Blister Year, when the heat was so strong that rivers dried up, crops burned, and demons were destroyed.",
+
+                walksOnTheSunDuringSolstice: "Umar walks on the sun during the solstice. It's his pilgrimage, a ritual where he reforges his power and burns away weakness.",
+
+                inventedSolarCalendars: "Umar invented Solar Calendars long before the Noga system. Mortals still use his solar year for harvest schedules.",
+
+                createdHeatResistantPlantsAndMetals: "Umar created: Sunsteel (only forgeable under eclipse), Embergrass (survives volcanic soil). These materials are essential for survival in harsh climates and forging divine weapons.",
+
+                powersCertainGodsAndCelestialBeasts: "His light powers certain gods. He fuels: Lesser sun spirits, Celestial beasts like: The Day Serpents, The Gold-Horned Stags, The Sunhounds (war mounts for royals).",
+
+                defeatedTheTrollClans: "Umar defeated the Troll Clans in battle—a legendary feat of strength and strategy.",
+
+                beheadedBuku: "Umar beheaded Buku, the Crocodile Deity, in single combat.",
+
+                stoppedTheSunFromFalling: "When cosmic forces threatened to pull the sun into the ocean, Umar anchored it in place, saving the world from eternal darkness.",
+
+                foundTheAkkaLaws: "Umar discovered the Akka Laws, which govern languages and talents. These laws are part of the Laws of Eimes. They were stolen by Cris, the god of death and chaos, but Umar reclaimed them.",
+
+                plansSomeFeatsJustToBeTheHero: "Umar is so competitive and focused on achievements that he sometimes plans feats just to make himself the hero. He'll create a problem, then solve it spectacularly, just to add another accomplishment to his list.",
+
+                theWorkaholicGod: "Umar loves to do work—even Suleiman tells him to slow down, but he doesn't. He's always: Forging something, Fighting something, Creating something, Achieving something. Rest is for mortals. Umar keeps working.",
+
+                creatorOfTheSolarSystem: "The reason Umar is a creation god is because, alongside Ceana (the Solar Goddess), he created the solar system—the eight planets of Eudoric.",
+
+                theFirstGodToWearSandals: "Umar is the first god to have literally worn sandals. Why? Because they're practical. He walks on the sun during the solstice; he needs footwear that can handle extreme heat!",
+
+                theEyeshadowIncident: "Umar once asked Tati'anna (Goddess of Beauty, Art, and Music) to make his eyes pop. She gave him subtle eyeshadow. He's worn it ever since.",
+
+                marriageToSwai: "Umar is the husband of Swai, the Goddess of Wind, who is Sove's little sister. Sove hates it, not because he dislikes Umar, but because he thinks no one is good enough for his sister."
+            },
+
+            powers: [
+                {
+                    name: "Sun Forging",
+                    description: "Forged the current sun from the First Star using his own divine marrow."
+                },
+                {
+                    name: "Planetary Rotation Stabilization",
+                    description: "Slows the world's spin with gravitational chains of fire."
+                },
+                {
+                    name: "Sun Manipulation",
+                    description: "Can pull the sun closer or push it farther."
+                },
+                {
+                    name: "Solar Power",
+                    description: "Fuels lesser sun spirits and celestial beasts."
+                },
+                {
+                    name: "Heat-Resistant Creation",
+                    description: "Created Sunsteel and Embergrass."
+                },
+                {
+                    name: "Solar Calendar Invention",
+                    description: "Created the first solar calendar system."
+                },
+                {
+                    name: "Dragon Slaying",
+                    description: "Defeated dragons in combat."
+                },
+                {
+                    name: "Troll Clan Defeating",
+                    description: "Conquered the Troll Clans."
+                },
+                {
+                    name: "Crocodile Deity Beheading",
+                    description: "Beheaded Buku in single combat."
+                },
+                {
+                    name: "Cosmic Anchoring",
+                    description: "Stopped the sun from falling into Oceania."
+                },
+                {
+                    name: "Akka Laws Discovery",
+                    description: "Found the laws governing languages and talents."
+                },
+                {
+                    name: "Solstice Sun Walking",
+                    description: "Walks on the sun to reforge his power."
+                },
+                {
+                    name: "The Blister Year",
+                    description: "Dragged the sun closer to scorch demonic invasion."
+                },
+                {
+                    name: "Feat Planning",
+                    description: "Plans heroic feats to boost his achievements."
+                }
+            ],
+
+            myths: [
+                "Umar forged the current sun from the dying embers of the First Star. He reignited its core using his own divine marrow. The scar glows through his chest like molten gold.",
+                "He stabilizes planetary rotation with gravitational chains of fire that only he can see. Without him, the world would spin too fast.",
+                "He once dragged the sun closer to scorch a demonic invasion. The event is remembered as The Blister Year.",
+                "He walks on the sun during solstice, a pilgrimage where he reforges his power and burns away weakness.",
+                "He invented solar calendars before the Noga system. Mortals still use his solar year for harvest schedules.",
+                "He created Sunsteel (forgeable only under eclipse) and Embergrass (survives volcanic soil).",
+                "He defeated the Troll Clans, beheaded Buku the Crocodile Deity, and stopped the sun from falling into Oceania.",
+                "He found the Akka Laws—part of the Laws of Eimes, which govern languages and talents. They were stolen by Cris, the god of death and chaos, but Umar reclaimed them.",
+                "He plans some feats just to be the hero. He'll create a problem, solve it spectacularly, and add another achievement to his list.",
+                "Even Suleiman tells him to slow down. He doesn't.",
+                "He's the first god to wear sandals. Practical footwear for walking on the sun.",
+                "He asked Tati'anna to make his eyes pop. She gave him subtle eyeshadow. He's been wearing it ever since.",
+                "He's married to Swai, Sove's little sister. Sove hates it—not because he doesn't like Umar, but because no one is good enough for his sister."
+            ],
+
+            nature: "Umar stands for ambition, achievement, and unstoppable power. He never stops working, creating, or conquering. He doesn't rest or slow down. He forges suns, defeats demons, slays dragons, and creates solar systems, all while wearing sandals and subtle eyeshadow. He shows what happens when power, purpose, and pride come together. He doesn't just want power; he wants to be remembered for it. He doesn't just want to create; he wants recognition for his creations. Sometimes, he even plans feats just to be the hero. He might create a problem, solve it in a grand way, and add it to his list of achievements. Is it manipulative? Maybe. Is it effective? Absolutely. His nature is a reminder: Ambition drives progress. Achievement builds legacy. And sometimes, the most incredible feats are the ones you plan yourself. Also, he was the first god to wear sandals and got eyeshadow from the Goddess of Beauty. Truly a legend."
         },
         euora: {
             name: "Euora",
