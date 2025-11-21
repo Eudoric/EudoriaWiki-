@@ -2631,6 +2631,205 @@ const eudoriaData = {
             }
         ]
     },
+    sacredTexts: {
+        bookOfSuleiman: {
+            name: "The Book of Suleiman",
+            subtitle: "The Book of Wisdom",
+            icon: "📖",
+            author: "Suleiman, God of Wisdom and Wealth",
+            pages: "Over 1,000",
+            language: "Old Eudoric (numerals and languages only Suleiman spoke fluently)",
+            status: "Sacred, protected",
+            description: "The Book of Suleiman, also called The Book of Wisdom, is a huge and powerful book made by Suleiman. It holds knowledge and power meant to save the realm of Eudraneth.",
+            whatItIs: {
+                title: "What It Is",
+                content: "The book contains everything Suleiman could remember about existence, including:",
+                items: [
+                    "Every design",
+                    "Every law of creation",
+                    "Every secret of divine power",
+                    "The fundamental equations of creation itself",
+                    "Numerals and old Eudoric languages"
+                ]
+            },
+            whyCreated: {
+                title: "Why It Was Created",
+                content: "Suleiman created the book during a dark age in Eudraneth, when magic was fading and he was losing his divine memories and wisdom.",
+                story: "Suleiman was forgetting. Desperate, he quickly wrote down everything he could before it was lost forever. The book has over a thousand pages, all written in Suleiman's flowing script. He filled it with a universe of knowledge and power in just seconds. The information contained within the book ultimately saved the realm from becoming powerless."
+            },
+            whatItCanDo: {
+                title: "What It Can Do",
+                content: "The Book of Suleiman is described as a creation book: What it brings to life, it can also bring to death. This dual nature exists because the King of Death (whom Valiyah killed) blessed it before his demise."
+            },
+            whereItIs: {
+                title: "Where It Is Now",
+                content: "The book is heavily protected and kept in a sacred location within Eudraneth. Access is extremely restricted. Only those with divine authority or Suleiman's direct permission can see it."
+            },
+            significance: {
+                title: "Significance",
+                content: "The Book of Suleiman is more than a historical artifact. It is a living record of existence, a backup of reality written by its creator. If the Laws of Eimes are the skeleton of reality, then the Book of Suleiman is the instruction manual."
+            }
+        },
+        bookOfQuireth: {
+            name: "The Book of Quireth",
+            subtitle: "The Gospel of Order",
+            icon: "⚖️",
+            author: "Al'sekemu, God of Order",
+            timeToWrite: "2,000 years",
+            language: "Elegant Hannite script",
+            status: "Sacred to the Order of Hannas, controversial to others",
+            description: "The Book of Quireth is the sacred text for the Order of Hannas and Al'sekemu. It contains laws for perfect order and tells a very biased history of the War of Gods.",
+            whatItIs: {
+                title: "What It Is",
+                content: "Al'sekemu, the Author of Order, spent two thousand years writing the book. It is written in elegant Hannite script and acts like a cosmic legal document. Al'sekemu used it to record:",
+                items: [
+                    "The Laws of Truth",
+                    "The Words of the Author of Order",
+                    "Instructions for binding spirits to mortal flesh",
+                    "Methods for creating vessels capable of containing divine consciousness"
+                ]
+            },
+            twoVersions: {
+                title: "The Two Books of Quireth",
+                content: "There are two versions of the Book of Quireth.",
+                versions: [
+                    {
+                        name: "The Original Book of Quireth",
+                        description: "Written by Al'sekemu himself, containing the actual Laws of Truth and divine instructions"
+                    },
+                    {
+                        name: "The Dark Gospel: Book of Al'sekemu",
+                        description: "Written by the Hannas Dynasty, containing propaganda and a biased history of Al'sekemu, framing him as a righteous figure and Suleiman as a tyrant"
+                    }
+                ]
+            },
+            controversy: {
+                title: "Controversy",
+                content: "The Book of Quireth, especially the Dark Gospel version, is highly controversial for several reasons.",
+                reasons: [
+                    "It presents a heavily biased account of the War of Gods",
+                    "It glorifies Al'sekemu while demonizing Suleiman",
+                    "It contains dangerous knowledge about binding spirits and creating divine vessels",
+                    "It has been used to justify the Order of Hannas' authoritarian methods"
+                ]
+            },
+            significance: {
+                title: "Significance",
+                content: "The Book of Quireth shows Al'sekemu's effort to rewrite history and make his version of cosmic order the accepted truth. Depending on who reads it, the book can be seen as a sacred legal text or as a tool for propaganda."
+            }
+        },
+        threeCodeices: {
+            name: "The Three Codices",
+            subtitle: "The Flood Survivors",
+            icon: "📜",
+            author: "E'kar, God of Creation (known as 'The Storyteller' in Eudoria)",
+            status: "Ancient, foundational, sacred",
+            preservation: "The Ehloheem Office (built in E'kar's honor)",
+            description: "The Three Codices are ancient texts that survived the Great Flood. They are the main sources for almost all later Eudorian history, law, and theology.",
+            whatTheyAre: {
+                title: "What They Are",
+                content: "These codices were created by E'kar, who is known as 'The Storyteller' in Eudoria. The Ehloheem Office, spelled just like that, was built to honor E'kar. Human chancellors work there to preserve E'kar's writings."
+            },
+            codex1: {
+                title: "CODEX 1: THE EUDORIC SYSTEM",
+                theme: "The Foundation of Order",
+                content: "Governance, cosmic law, divine hierarchy",
+                topics: [
+                    "The Architecture of Creation (how existence was built)",
+                    "The Hierarchy (the Oristhar court and divine structure)",
+                    "The Cosmic Laws that govern reality itself (the Laws of Eimes)",
+                    "The Sacred Mathematics of universal balance",
+                    "The Primordial Covenants between mortal worlds"
+                ],
+                significance: "This codex serves as the basis for all other knowledge. It answers the question: 'How does reality work?'"
+            },
+            codex2: {
+                title: "CODEX 2: ILUN WORLD, EUDRAN",
+                theme: "The Transitional World",
+                content: "Ancient civilization before the Flood",
+                timePeriod: "Over 3,000 years",
+                description: "First World, Eudran records the Transitional World, the mortal land that existed before it became Eudoria. It chronicles the ancient world of Eudran, comprising fifty-three regions and lasting over 3,000 years before the Great Flood.",
+                topics: [
+                    "The Age of First Creation (when the world began)",
+                    "The Genesis of Eudran (from the union of Suleiman and Ta'hanne)",
+                    "The Fifty-Three Lost Worlds (the original regions before the Flood)",
+                    "Continental Conflicts (like the War of Norvayn vs Estara)",
+                    "The Great Gender Crisis (a massive societal upheaval)"
+                ],
+                significance: "This codex is the historical record of the old world, a civilization that no longer exists but whose remains became Eudoria. It answers the question: 'Where did we come from?'"
+            },
+            codex3: {
+                title: "CODEX 3: OUR WORLD, EUDORIA",
+                theme: "Modern Civilization",
+                content: "The world after the Flood",
+                timePeriod: "Post-Flood to present (2,000+ years of the Unified Era)",
+                description: "Our World, Eudoria is the sacred record of modern civilization. It describes the time after the Flood and how the world changed. It specifically details how Queen Eudora transformed the remnants of ancient Eudran into the harmonious world known today.",
+                topics: [
+                    "The development of modern civilization after restoration",
+                    "Queen Eudora's arrival (from Afriyah to Eudora)",
+                    "The establishment of the Concept of Eudoria: Balance and Harmony",
+                    "The Heartland region (the central hub of civilization)",
+                    "The establishment of the 17 Regions (organized into 4 unions)",
+                    "The creation of Eudoria's foundational Systems (like the Laws vs Rules Framework)"
+                ],
+                significance: "This codex connects the past and present. It shows how a ruined world was rebuilt into something better. It answers the question: 'How did we become who we are?'"
+            },
+            together: {
+                title: "The Three Codices Together",
+                summary: [
+                    "The Eudoric System → How reality works",
+                    "Ilun World, Eudran → Where we came from",
+                    "Our World, Eudoria → How we became who we are"
+                ],
+                conclusion: "Together, these texts tell the full story of existence, history, and civilization."
+            },
+            ehloheem: {
+                title: "The Ehloheem Office",
+                content: "The Ehloheem Office, spelled just like that, was built to honor E'kar. It is staffed by human chancellors who are tasked with:",
+                duties: [
+                    "Preserving E'kar's works",
+                    "Interpreting the Three Codices",
+                    "Ensuring the historical record remains intact",
+                    "Teaching new generations about Eudoria's history"
+                ],
+                conclusion: "E'kar is called 'The Storyteller' in Eudoria. The Ehloheem Office makes sure his stories are never lost."
+            }
+        },
+        lawsOfEimes: {
+            name: "The Laws of Eimes",
+            subtitle: "The Skeleton of Reality",
+            icon: "⚡",
+            author: "Suleiman, God of Wisdom and Wealth",
+            creationTime: "10,000 years",
+            totalLaws: "100,000",
+            status: "Cosmic law, foundational",
+            description: "The Laws of Eimes are the 100,000 cosmic laws that structure all of existence. They are organized into 10 Great Pillars, of which only 3 are publicly accessible.",
+            crossLink: {
+                text: "For full documentation, see the Laws of Eimes page",
+                view: "laws-of-eimes"
+            }
+        },
+        forbiddenTexts: {
+            name: "Forbidden & Demonic Texts",
+            subtitle: "Dangerous Knowledge",
+            icon: "🔥",
+            status: "Dangerous, restricted, often cursed",
+            description: "Not all sacred texts are good. Some books hold dark knowledge, forbidden rituals, and demonic power.",
+            examples: {
+                title: "Examples",
+                items: [
+                    "Demonic grimoires used by dark practitioners",
+                    "Cursed tomes from the Age of Demons",
+                    "Texts Valiyah has touched or used (specific titles to be documented)",
+                    "The Dark Gospel: Book of Al'sekemu (Hannas Dynasty propaganda, see above)"
+                ]
+            },
+            restrictions: {
+                title: "Restrictions",
+                content: "These texts are tightly restricted and kept under guard, or sometimes destroyed completely. Possession of a forbidden text is often a crime punishable by exile or death."
+            }
+        }
+    },
     eudoricGods: {
         sulieman: {
             name: "Suleiman",
@@ -7079,6 +7278,8 @@ function navigateTo(view) {
         renderEudoricNumerals();
     } else if (view === 'eudoric-letters') {
         renderEudoricLetters();
+    } else if (view === 'sacred-texts') {
+        renderSacredTexts();
     } else if (view === 'eudraneth') {
         renderEudraneth();
     } else if (view === 'laws-of-eimes') {
@@ -7566,6 +7767,299 @@ function renderEudraneth() {
             </div>
         </div>
     `;
+}
+
+// Render Sacred Texts & Tomes
+function renderSacredTexts() {
+    const contentArea = document.getElementById('contentArea');
+    const texts = eudoriaData.sacredTexts;
+
+    // Create text cards for overview
+    const textCardsHTML = Object.keys(texts).map(textKey => {
+        const text = texts[textKey];
+
+        return `
+            <div class="god-card" onclick="showTextDetail('${textKey}')">
+                <div class="god-card-icon" style="font-size: 4rem;">${text.icon}</div>
+                <h3>${text.name}</h3>
+                <p class="god-card-titles" style="font-style: italic; color: #cd7f32;">${text.subtitle}</p>
+                ${text.author ? `<span class="god-realm-tag" style="font-size: 0.85rem;">By ${text.author}</span>` : ''}
+            </div>
+        `;
+    }).join('');
+
+    contentArea.innerHTML = `
+        <div class="gods-pantheon">
+            <div class="union-header">
+                <h2>📚 Sacred Texts & Tomes</h2>
+                <p>The Written Foundation of Divine and Mortal Knowledge</p>
+                <p style="margin-top: 1rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                    Eudoria's history, laws, and cosmic knowledge are kept in ancient texts. Some are divine, some are mortal, and some are dangerous. These sacred books form the base of civilization, holding power and recording both truth and propaganda.
+                </p>
+            </div>
+            <div class="gods-grid">
+                ${textCardsHTML}
+            </div>
+        </div>
+    `;
+}
+
+// Show detailed sacred text profile
+function showTextDetail(textKey) {
+    const text = eudoriaData.sacredTexts[textKey];
+
+    if (!text) {
+        console.error(`Sacred text not found for key: ${textKey}`);
+        return;
+    }
+
+    const contentArea = document.getElementById('contentArea');
+
+    // Special handling for different text types
+    let detailHTML = '';
+
+    if (textKey === 'bookOfSuleiman') {
+        detailHTML = `
+            <div class="text-profile">
+                <button class="back-button" onclick="renderSacredTexts()">← Back to Sacred Texts</button>
+
+                <div class="god-header">
+                    <div class="god-icon-large" style="font-size: 6rem;">${text.icon}</div>
+                    <h1 class="god-name">${text.name}</h1>
+                    <p class="god-realm" style="font-style: italic; color: #cd7f32; font-size: 1.3rem; margin-top: 0.5rem;">${text.subtitle}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Divine Essence</h3>
+                    <p>${text.description}</p>
+                    <p style="margin-top: 1rem;"><strong>Author:</strong> ${text.author}</p>
+                    <p><strong>Pages:</strong> ${text.pages}</p>
+                    <p><strong>Language:</strong> ${text.language}</p>
+                    <p><strong>Status:</strong> ${text.status}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.whatItIs.title}</h3>
+                    <p>${text.whatItIs.content}</p>
+                    <ul class="symbols-list" style="margin-top: 1rem;">
+                        ${text.whatItIs.items.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.whyCreated.title}</h3>
+                    <p>${text.whyCreated.content}</p>
+                    <p style="margin-top: 1rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-style: italic;">${text.whyCreated.story}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.whatItCanDo.title}</h3>
+                    <p style="padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(218, 165, 32, 0.05)); border-left: 4px solid #8b4513; border-radius: 0.5rem;">${text.whatItCanDo.content}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.whereItIs.title}</h3>
+                    <p>${text.whereItIs.content}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.significance.title}</h3>
+                    <p style="padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-weight: 600;">${text.significance.content}</p>
+                </div>
+            </div>
+        `;
+    } else if (textKey === 'bookOfQuireth') {
+        detailHTML = `
+            <div class="text-profile">
+                <button class="back-button" onclick="renderSacredTexts()">← Back to Sacred Texts</button>
+
+                <div class="god-header">
+                    <div class="god-icon-large" style="font-size: 6rem;">${text.icon}</div>
+                    <h1 class="god-name">${text.name}</h1>
+                    <p class="god-realm" style="font-style: italic; color: #cd7f32; font-size: 1.3rem; margin-top: 0.5rem;">${text.subtitle}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Divine Essence</h3>
+                    <p>${text.description}</p>
+                    <p style="margin-top: 1rem;"><strong>Author:</strong> ${text.author}</p>
+                    <p><strong>Time to Write:</strong> ${text.timeToWrite}</p>
+                    <p><strong>Language:</strong> ${text.language}</p>
+                    <p><strong>Status:</strong> ${text.status}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.whatItIs.title}</h3>
+                    <p>${text.whatItIs.content}</p>
+                    <ul class="symbols-list" style="margin-top: 1rem;">
+                        ${text.whatItIs.items.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.twoVersions.title}</h3>
+                    <p style="margin-bottom: 1.5rem;">${text.twoVersions.content}</p>
+                    ${text.twoVersions.versions.map(version => `
+                        <div style="margin: 1rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(139, 69, 19, 0.05)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
+                            <h4 style="color: #daa520; margin-bottom: 0.75rem;">${version.name}</h4>
+                            <p style="color: #f5deb3;">${version.description}</p>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.controversy.title}</h3>
+                    <p style="margin-bottom: 1rem;">${text.controversy.content}</p>
+                    <ul class="symbols-list">
+                        ${text.controversy.reasons.map(reason => `<li>${reason}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.significance.title}</h3>
+                    <p style="padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-weight: 600;">${text.significance.content}</p>
+                </div>
+            </div>
+        `;
+    } else if (textKey === 'threeCodeices') {
+        detailHTML = `
+            <div class="text-profile">
+                <button class="back-button" onclick="renderSacredTexts()">← Back to Sacred Texts</button>
+
+                <div class="god-header">
+                    <div class="god-icon-large" style="font-size: 6rem;">${text.icon}</div>
+                    <h1 class="god-name">${text.name}</h1>
+                    <p class="god-realm" style="font-style: italic; color: #cd7f32; font-size: 1.3rem; margin-top: 0.5rem;">${text.subtitle}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Divine Essence</h3>
+                    <p>${text.description}</p>
+                    <p style="margin-top: 1rem;"><strong>Author:</strong> ${text.author}</p>
+                    <p><strong>Status:</strong> ${text.status}</p>
+                    <p><strong>Preservation:</strong> ${text.preservation}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.whatTheyAre.title}</h3>
+                    <p>${text.whatTheyAre.content}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.codex1.title}</h3>
+                    <p style="color: #daa520; font-style: italic; margin-bottom: 0.5rem;"><strong>Theme:</strong> ${text.codex1.theme}</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Content:</strong> ${text.codex1.content}</p>
+                    <h4 style="color: #daa520; margin-top: 1.5rem; margin-bottom: 0.75rem;">Topics Covered:</h4>
+                    <ul class="symbols-list">
+                        ${text.codex1.topics.map(topic => `<li>${topic}</li>`).join('')}
+                    </ul>
+                    <p style="margin-top: 1.5rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-weight: 600;"><strong>Significance:</strong> ${text.codex1.significance}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.codex2.title}</h3>
+                    <p style="color: #daa520; font-style: italic; margin-bottom: 0.5rem;"><strong>Theme:</strong> ${text.codex2.theme}</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Content:</strong> ${text.codex2.content}</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Time Period:</strong> ${text.codex2.timePeriod}</p>
+                    <p style="margin-top: 1rem;">${text.codex2.description}</p>
+                    <h4 style="color: #daa520; margin-top: 1.5rem; margin-bottom: 0.75rem;">Topics Covered:</h4>
+                    <ul class="symbols-list">
+                        ${text.codex2.topics.map(topic => `<li>${topic}</li>`).join('')}
+                    </ul>
+                    <p style="margin-top: 1.5rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-weight: 600;"><strong>Significance:</strong> ${text.codex2.significance}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.codex3.title}</h3>
+                    <p style="color: #daa520; font-style: italic; margin-bottom: 0.5rem;"><strong>Theme:</strong> ${text.codex3.theme}</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Content:</strong> ${text.codex3.content}</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Time Period:</strong> ${text.codex3.timePeriod}</p>
+                    <p style="margin-top: 1rem;">${text.codex3.description}</p>
+                    <h4 style="color: #daa520; margin-top: 1.5rem; margin-bottom: 0.75rem;">Topics Covered:</h4>
+                    <ul class="symbols-list">
+                        ${text.codex3.topics.map(topic => `<li>${topic}</li>`).join('')}
+                    </ul>
+                    <p style="margin-top: 1.5rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-weight: 600;"><strong>Significance:</strong> ${text.codex3.significance}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.together.title}</h3>
+                    <ul class="symbols-list" style="margin-bottom: 1.5rem;">
+                        ${text.together.summary.map(item => `<li style="font-weight: 600; color: #daa520;">${item}</li>`).join('')}
+                    </ul>
+                    <p style="padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-weight: 600;">${text.together.conclusion}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.ehloheem.title}</h3>
+                    <p style="margin-bottom: 1rem;">${text.ehloheem.content}</p>
+                    <ul class="symbols-list">
+                        ${text.ehloheem.duties.map(duty => `<li>${duty}</li>`).join('')}
+                    </ul>
+                    <p style="margin-top: 1.5rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-weight: 600;">${text.ehloheem.conclusion}</p>
+                </div>
+            </div>
+        `;
+    } else if (textKey === 'lawsOfEimes') {
+        detailHTML = `
+            <div class="text-profile">
+                <button class="back-button" onclick="renderSacredTexts()">← Back to Sacred Texts</button>
+
+                <div class="god-header">
+                    <div class="god-icon-large" style="font-size: 6rem;">${text.icon}</div>
+                    <h1 class="god-name">${text.name}</h1>
+                    <p class="god-realm" style="font-style: italic; color: #cd7f32; font-size: 1.3rem; margin-top: 0.5rem;">${text.subtitle}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Divine Essence</h3>
+                    <p>${text.description}</p>
+                    <p style="margin-top: 1rem;"><strong>Author:</strong> ${text.author}</p>
+                    <p><strong>Creation Time:</strong> ${text.creationTime}</p>
+                    <p><strong>Total Laws:</strong> ${text.totalLaws}</p>
+                    <p><strong>Status:</strong> ${text.status}</p>
+                </div>
+
+                <div class="detail-section" style="padding: 2rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; text-align: center;">
+                    <h3 style="color: #daa520; margin-bottom: 1rem;">📖 Full Documentation</h3>
+                    <p style="margin-bottom: 1.5rem;">${text.crossLink.text}</p>
+                    <button class="back-button" style="display: inline-block; background: linear-gradient(135deg, rgba(218, 165, 32, 0.2), rgba(184, 134, 11, 0.15)); border: 2px solid #daa520;" onclick="navigateTo('${text.crossLink.view}')">View Laws of Eimes →</button>
+                </div>
+            </div>
+        `;
+    } else if (textKey === 'forbiddenTexts') {
+        detailHTML = `
+            <div class="text-profile">
+                <button class="back-button" onclick="renderSacredTexts()">← Back to Sacred Texts</button>
+
+                <div class="god-header">
+                    <div class="god-icon-large" style="font-size: 6rem;">${text.icon}</div>
+                    <h1 class="god-name">${text.name}</h1>
+                    <p class="god-realm" style="font-style: italic; color: #cd7f32; font-size: 1.3rem; margin-top: 0.5rem;">${text.subtitle}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Divine Essence</h3>
+                    <p>${text.description}</p>
+                    <p style="margin-top: 1rem;"><strong>Status:</strong> ${text.status}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.examples.title}</h3>
+                    <ul class="symbols-list">
+                        ${text.examples.items.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h3>${text.restrictions.title}</h3>
+                    <p style="padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(218, 165, 32, 0.05)); border-left: 4px solid #8b4513; border-radius: 0.5rem; font-weight: 600; color: #f4d03f;">${text.restrictions.content}</p>
+                </div>
+            </div>
+        `;
+    }
+
+    contentArea.innerHTML = detailHTML;
 }
 
 // Render Eudoric Gods
