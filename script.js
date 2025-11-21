@@ -7859,63 +7859,305 @@ function showGodDetail(godKey) {
         </div>` :
         `<div class="god-icon-large">✦</div>`;
 
-    contentArea.innerHTML = `
-        <div class="god-profile">
-            <button class="back-button" onclick="renderEudoricGods()">← Back to Pantheon</button>
+    // Check if god has special tabbed sections
+    const hasTabbedSections = god.relationships && god.lawsOfEimes && god.regrets && god.fatalFlaw && god.rumors;
 
-            <div class="god-header">
-                ${profileImageHTML}
-                <h1 class="god-name">${god.name}${god.alternativeName ? ` <span class="alt-name">(${god.alternativeName})</span>` : ''}</h1>
-                <div class="god-titles">
-                    ${titlesHTML}
+    // If god has tabbed sections, create tabbed interface
+    if (hasTabbedSections) {
+        contentArea.innerHTML = `
+            <div class="god-profile">
+                <button class="back-button" onclick="renderEudoricGods()">← Back to Pantheon</button>
+
+                <div class="god-header">
+                    ${profileImageHTML}
+                    <h1 class="god-name">${god.name}${god.alternativeName ? ` <span class="alt-name">(${god.alternativeName})</span>` : ''}</h1>
+                    <div class="god-titles">
+                        ${titlesHTML}
+                    </div>
+                </div>
+
+                <div class="god-tabs">
+                    <button class="god-tab active" onclick="switchGodTab(event, 'divine-profile')">Divine Profile</button>
+                    <button class="god-tab" onclick="switchGodTab(event, 'relationships')">Relationships & Legacy</button>
+                    <button class="god-tab" onclick="switchGodTab(event, 'laws')">The Laws of Eimes</button>
+                    <button class="god-tab" onclick="switchGodTab(event, 'regrets')">Regrets & Flaws</button>
+                    <button class="god-tab" onclick="switchGodTab(event, 'mysteries')">Mysteries</button>
+                </div>
+
+                <div id="divine-profile" class="god-tab-panel active">
+                    <div class="detail-section">
+                        <h3>Divine Essence</h3>
+                        <p>${addCrossReferences(god.description, 5)}</p>
+                    </div>
+
+                    ${domainsHTML ? `
+                    <div class="detail-section">
+                        <h3>Divine Domains</h3>
+                        <div class="domains-grid">
+                            ${domainsHTML}
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    <div class="detail-section">
+                        <h3>Attributes</h3>
+                        <div class="attributes-container">
+                            ${attributesHTML}
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Sacred Symbols</h3>
+                        <ul class="symbols-list">
+                            ${symbolsHTML}
+                        </ul>
+                    </div>
+
+                    ${creationsHTML ? `
+                    <div class="detail-section">
+                        <h3>Divine Creations</h3>
+                        <ul class="creations-list">
+                            ${creationsHTML}
+                        </ul>
+                    </div>
+                    ` : ''}
+
+                    ${god.appearance && god.appearance.description ? `
+                    <div class="detail-section">
+                        <h3>Divine Appearance</h3>
+                        <p>${god.appearance.description}</p>
+                        ${god.appearance.hair ? `<p style="margin-top: 1rem;"><strong>Hair:</strong> ${god.appearance.hair}</p>` : ''}
+                        ${god.appearance.skin ? `<p style="margin-top: 1rem;"><strong>Skin:</strong> ${god.appearance.skin}</p>` : ''}
+                        ${god.appearance.clothing ? `<p style="margin-top: 1rem;"><strong>Clothing:</strong> ${god.appearance.clothing}</p>` : ''}
+                        ${god.appearance.eyes ? `<p style="margin-top: 1rem;"><strong>Eyes:</strong> ${god.appearance.eyes}</p>` : ''}
+                        ${god.appearance.symbol ? `<p style="margin-top: 1rem;"><strong>Sacred Mark:</strong> ${god.appearance.symbol}</p>` : ''}
+                        ${god.appearance.essence ? `<p style="margin-top: 1rem;"><strong>Essence:</strong> ${god.appearance.essence}</p>` : ''}
+                        ${god.appearance.presence ? `<p style="margin-top: 1rem;"><strong>Presence:</strong> ${god.appearance.presence}</p>` : ''}
+                        ${god.appearance.powerEmanation ? `<p style="margin-top: 1rem;"><strong>Power Emanation:</strong> ${god.appearance.powerEmanation}</p>` : ''}
+                        ${god.appearance.scars ? `<p style="margin-top: 1rem;"><strong>Divine Scars:</strong> ${god.appearance.scars}</p>` : ''}
+                        ${god.appearance.armor ? `<p style="margin-top: 1rem;"><strong>Armor:</strong> ${god.appearance.armor}</p>` : ''}
+                        ${god.appearance.voice ? `<p style="margin-top: 1rem;"><strong>Voice:</strong> ${god.appearance.voice}</p>` : ''}
+                        ${god.appearance.scent ? `<p style="margin-top: 1rem;"><strong>Scent:</strong> ${god.appearance.scent}</p>` : ''}
+                        ${god.appearance.aura ? `<p style="margin-top: 1rem;"><strong>Aura:</strong> ${god.appearance.aura}</p>` : ''}
+                    </div>
+                    ` : ''}
+
+                    ${powersHTML ? `
+                    <div class="detail-section">
+                        <h3>Divine Powers</h3>
+                        <div class="powers-grid">
+                            ${powersHTML}
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    ${god.nature ? `
+                    <div class="detail-section">
+                        <h3>Divine Nature</h3>
+                        <p class="god-nature">${god.nature}</p>
+                    </div>
+                    ` : ''}
+                </div>
+
+                <div id="relationships" class="god-tab-panel">
+                    ${god.relationships ? `
+                    <div class="detail-section">
+                        <h3>${god.relationships.title}</h3>
+                        <p style="font-style: italic; color: #daa520; margin-bottom: 0.5rem;">${god.relationships.subtitle}</p>
+                        <p style="margin-bottom: 1.5rem;">${god.relationships.description}</p>
+                        ${god.relationships.connections.map(connection => `
+                            <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(139, 69, 19, 0.05)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
+                                <h4 style="color: #daa520; margin-bottom: 0.75rem;">${connection.name}</h4>
+                                <p style="color: #f5deb3; line-height: 1.6;">${connection.description}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                    ` : ''}
+                </div>
+
+                <div id="laws" class="god-tab-panel">
+                    ${god.lawsOfEimes ? `
+                    <div class="detail-section">
+                        <h3>${god.lawsOfEimes.title}</h3>
+                        <p style="font-style: italic; color: #daa520; margin-bottom: 0.5rem;">${god.lawsOfEimes.subtitle}</p>
+                        <p style="margin-bottom: 1.5rem;">${god.lawsOfEimes.description}</p>
+
+                        ${god.lawsOfEimes.timeline ? `
+                        <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
+                            <h4 style="color: #daa520; margin-bottom: 0.75rem;">${god.lawsOfEimes.timeline.title}</h4>
+                            <p style="margin-bottom: 1rem; color: #f5deb3;">${god.lawsOfEimes.timeline.description}</p>
+                            <ul style="padding-left: 1.5rem;">
+                                ${god.lawsOfEimes.timeline.phases.map(phase => `
+                                    <li style="margin-bottom: 0.75rem; color: #f5deb3; line-height: 1.6;">${phase}</li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${god.lawsOfEimes.structure ? `
+                        <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
+                            <h4 style="color: #daa520; margin-bottom: 0.75rem;">${god.lawsOfEimes.structure.title}</h4>
+                            <ul style="padding-left: 1.5rem;">
+                                ${god.lawsOfEimes.structure.parts.map(part => `
+                                    <li style="margin-bottom: 0.5rem; color: #f5deb3;">${part}</li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+                    </div>
+                    ` : ''}
+                </div>
+
+                <div id="regrets" class="god-tab-panel">
+                    ${god.regrets ? `
+                    <div class="detail-section">
+                        <h3>${god.regrets.title}</h3>
+                        <p style="font-style: italic; color: #daa520; margin-bottom: 1.5rem;">${god.regrets.subtitle}</p>
+                        ${god.regrets.list.map((regret, index) => `
+                            <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(218, 165, 32, 0.05)); border-left: 4px solid #8b4513; border-radius: 0.5rem;">
+                                <h4 style="color: #daa520; margin-bottom: 0.75rem;">${index + 1}. ${regret.name}</h4>
+                                <p style="color: #f5deb3; line-height: 1.6;">${regret.description}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                    ` : ''}
+
+                    ${god.fatalFlaw ? `
+                    <div class="detail-section">
+                        <h3>${god.fatalFlaw.title}</h3>
+                        <p style="font-style: italic; color: #daa520; margin-bottom: 0.5rem;">${god.fatalFlaw.subtitle}</p>
+                        <p style="margin-bottom: 1.5rem;">${god.fatalFlaw.description}</p>
+
+                        ${god.fatalFlaw.examples ? `
+                        <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(139, 69, 19, 0.05)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
+                            <h4 style="color: #daa520; margin-bottom: 1rem;">Examples:</h4>
+                            <ul style="padding-left: 1.5rem;">
+                                ${god.fatalFlaw.examples.map(example => `
+                                    <li style="margin-bottom: 1rem; color: #f5deb3; line-height: 1.6;">${example}</li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${god.fatalFlaw.pattern ? `
+                        <p style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-style: italic; color: #f5deb3;">${god.fatalFlaw.pattern}</p>
+                        ` : ''}
+
+                        ${god.fatalFlaw.irony ? `
+                        <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(218, 165, 32, 0.05)); border-left: 4px solid #8b4513; border-radius: 0.5rem;">
+                            <h4 style="color: #daa520; margin-bottom: 1rem;">${god.fatalFlaw.irony.title}</h4>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1rem;">
+                                <div>
+                                    <h5 style="color: #daa520; margin-bottom: 0.5rem;">He Can:</h5>
+                                    <ul style="padding-left: 1.5rem;">
+                                        ${god.fatalFlaw.irony.canDo.map(item => `
+                                            <li style="margin-bottom: 0.5rem; color: #f5deb3;">${item}</li>
+                                        `).join('')}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 style="color: #daa520; margin-bottom: 0.5rem;">He Cannot:</h5>
+                                    <ul style="padding-left: 1.5rem;">
+                                        ${god.fatalFlaw.irony.cannotDo.map(item => `
+                                            <li style="margin-bottom: 0.5rem; color: #f5deb3;">${item}</li>
+                                        `).join('')}
+                                    </ul>
+                                </div>
+                            </div>
+                            <p style="margin-top: 1rem; padding: 1rem; background: rgba(218, 165, 32, 0.1); border-radius: 0.5rem; font-style: italic; font-weight: bold; color: #daa520; text-align: center;">${god.fatalFlaw.irony.conclusion}</p>
+                        </div>
+                        ` : ''}
+                    </div>
+                    ` : ''}
+                </div>
+
+                <div id="mysteries" class="god-tab-panel">
+                    ${god.rumors ? `
+                    <div class="detail-section">
+                        <h3>${god.rumors.title}</h3>
+                        <p style="font-style: italic; color: #daa520; margin-bottom: 1.5rem;">${god.rumors.subtitle}</p>
+                        ${god.rumors.items.map(item => `
+                            <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(75, 54, 124, 0.2), rgba(218, 165, 32, 0.1)); border-left: 4px solid #4b367c; border-radius: 0.5rem;">
+                                <h4 style="color: #daa520; margin-bottom: 0.75rem;">${item.name}</h4>
+                                <p style="color: #f5deb3; line-height: 1.6; margin-bottom: 1rem;">${item.description}</p>
+                                ${item.officialExplanation ? `
+                                    <p style="padding: 1rem; background: rgba(218, 165, 32, 0.1); border-radius: 0.5rem; margin-top: 1rem; color: #f5deb3; border-left: 3px solid #daa520;">
+                                        <strong style="color: #daa520;">Official Explanation:</strong><br>
+                                        ${item.officialExplanation}
+                                    </p>
+                                ` : ''}
+                                ${item.furtherPressed ? `
+                                    <p style="padding: 1rem; background: rgba(139, 69, 19, 0.2); border-radius: 0.5rem; margin-top: 1rem; color: #f5deb3; font-style: italic; border-left: 3px solid #8b4513;">
+                                        <strong style="color: #daa520;">When Further Pressed:</strong><br>
+                                        ${item.furtherPressed}
+                                    </p>
+                                ` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                    ` : ''}
                 </div>
             </div>
+        `;
+    } else {
+        // Standard god profile layout for gods without tabbed sections
+        contentArea.innerHTML = `
+            <div class="god-profile">
+                <button class="back-button" onclick="renderEudoricGods()">← Back to Pantheon</button>
 
-            <div class="detail-section">
-                <h3>Divine Essence</h3>
-                <p>${addCrossReferences(god.description, 5)}</p>
-            </div>
-
-            ${sistersHTML}
-
-            ${brothersHTML}
-
-            ${god.origin ? `
-            <div class="detail-section">
-                <h3>Divine Origin</h3>
-                <p class="divine-origin">${god.origin}</p>
-            </div>
-            ` : ''}
-
-            ${god.history ? `
-            <div class="detail-section">
-                <h3>History & Role</h3>
-                <p class="god-history">${god.history}</p>
-            </div>
-            ` : ''}
-
-            ${domainsHTML ? `
-            <div class="detail-section">
-                <h3>Divine Domains</h3>
-                <div class="domains-grid">
-                    ${domainsHTML}
+                <div class="god-header">
+                    ${profileImageHTML}
+                    <h1 class="god-name">${god.name}${god.alternativeName ? ` <span class="alt-name">(${god.alternativeName})</span>` : ''}</h1>
+                    <div class="god-titles">
+                        ${titlesHTML}
+                    </div>
                 </div>
-            </div>
-            ` : ''}
 
-            <div class="detail-section">
-                <h3>Attributes</h3>
-                <div class="attributes-container">
-                    ${attributesHTML}
+                <div class="detail-section">
+                    <h3>Divine Essence</h3>
+                    <p>${addCrossReferences(god.description, 5)}</p>
                 </div>
-            </div>
 
-            <div class="detail-section">
-                <h3>Sacred Symbols</h3>
-                <ul class="symbols-list">
-                    ${symbolsHTML}
-                </ul>
-            </div>
+                ${sistersHTML}
+
+                ${brothersHTML}
+
+                ${god.origin ? `
+                <div class="detail-section">
+                    <h3>Divine Origin</h3>
+                    <p class="divine-origin">${god.origin}</p>
+                </div>
+                ` : ''}
+
+                ${god.history ? `
+                <div class="detail-section">
+                    <h3>History & Role</h3>
+                    <p class="god-history">${god.history}</p>
+                </div>
+                ` : ''}
+
+                ${domainsHTML ? `
+                <div class="detail-section">
+                    <h3>Divine Domains</h3>
+                    <div class="domains-grid">
+                        ${domainsHTML}
+                    </div>
+                </div>
+                ` : ''}
+
+                <div class="detail-section">
+                    <h3>Attributes</h3>
+                    <div class="attributes-container">
+                        ${attributesHTML}
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Sacred Symbols</h3>
+                    <ul class="symbols-list">
+                        ${symbolsHTML}
+                    </ul>
+                </div>
 
             ${god.law ? `
             <div class="detail-section">
@@ -8173,139 +8415,26 @@ function showGodDetail(godKey) {
                 <p class="god-nature">${god.nature}</p>
             </div>
             ` : ''}
-
-            ${god.relationships ? `
-            <div class="detail-section">
-                <h3>${god.relationships.title}</h3>
-                <p style="font-style: italic; color: #daa520; margin-bottom: 0.5rem;">${god.relationships.subtitle}</p>
-                <p style="margin-bottom: 1.5rem;">${god.relationships.description}</p>
-                ${god.relationships.connections.map(connection => `
-                    <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(139, 69, 19, 0.05)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
-                        <h4 style="color: #daa520; margin-bottom: 0.75rem;">${connection.name}</h4>
-                        <p style="color: #f5deb3; line-height: 1.6;">${connection.description}</p>
-                    </div>
-                `).join('')}
-            </div>
-            ` : ''}
-
-            ${god.lawsOfEimes ? `
-            <div class="detail-section">
-                <h3>${god.lawsOfEimes.title}</h3>
-                <p style="font-style: italic; color: #daa520; margin-bottom: 0.5rem;">${god.lawsOfEimes.subtitle}</p>
-                <p style="margin-bottom: 1.5rem;">${god.lawsOfEimes.description}</p>
-
-                ${god.lawsOfEimes.timeline ? `
-                <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
-                    <h4 style="color: #daa520; margin-bottom: 0.75rem;">${god.lawsOfEimes.timeline.title}</h4>
-                    <p style="margin-bottom: 1rem; color: #f5deb3;">${god.lawsOfEimes.timeline.description}</p>
-                    <ul style="padding-left: 1.5rem;">
-                        ${god.lawsOfEimes.timeline.phases.map(phase => `
-                            <li style="margin-bottom: 0.75rem; color: #f5deb3; line-height: 1.6;">${phase}</li>
-                        `).join('')}
-                    </ul>
-                </div>
-                ` : ''}
-
-                ${god.lawsOfEimes.structure ? `
-                <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
-                    <h4 style="color: #daa520; margin-bottom: 0.75rem;">${god.lawsOfEimes.structure.title}</h4>
-                    <ul style="padding-left: 1.5rem;">
-                        ${god.lawsOfEimes.structure.parts.map(part => `
-                            <li style="margin-bottom: 0.5rem; color: #f5deb3;">${part}</li>
-                        `).join('')}
-                    </ul>
-                </div>
-                ` : ''}
-            </div>
-            ` : ''}
-
-            ${god.regrets ? `
-            <div class="detail-section">
-                <h3>${god.regrets.title}</h3>
-                <p style="font-style: italic; color: #daa520; margin-bottom: 1.5rem;">${god.regrets.subtitle}</p>
-                ${god.regrets.list.map((regret, index) => `
-                    <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(218, 165, 32, 0.05)); border-left: 4px solid #8b4513; border-radius: 0.5rem;">
-                        <h4 style="color: #daa520; margin-bottom: 0.75rem;">${index + 1}. ${regret.name}</h4>
-                        <p style="color: #f5deb3; line-height: 1.6;">${regret.description}</p>
-                    </div>
-                `).join('')}
-            </div>
-            ` : ''}
-
-            ${god.fatalFlaw ? `
-            <div class="detail-section">
-                <h3>${god.fatalFlaw.title}</h3>
-                <p style="font-style: italic; color: #daa520; margin-bottom: 0.5rem;">${god.fatalFlaw.subtitle}</p>
-                <p style="margin-bottom: 1.5rem;">${god.fatalFlaw.description}</p>
-
-                ${god.fatalFlaw.examples ? `
-                <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(139, 69, 19, 0.05)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
-                    <h4 style="color: #daa520; margin-bottom: 1rem;">Examples:</h4>
-                    <ul style="padding-left: 1.5rem;">
-                        ${god.fatalFlaw.examples.map(example => `
-                            <li style="margin-bottom: 1rem; color: #f5deb3; line-height: 1.6;">${example}</li>
-                        `).join('')}
-                    </ul>
-                </div>
-                ` : ''}
-
-                ${god.fatalFlaw.pattern ? `
-                <p style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-style: italic; color: #f5deb3;">${god.fatalFlaw.pattern}</p>
-                ` : ''}
-
-                ${god.fatalFlaw.irony ? `
-                <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(218, 165, 32, 0.05)); border-left: 4px solid #8b4513; border-radius: 0.5rem;">
-                    <h4 style="color: #daa520; margin-bottom: 1rem;">${god.fatalFlaw.irony.title}</h4>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1rem;">
-                        <div>
-                            <h5 style="color: #daa520; margin-bottom: 0.5rem;">He Can:</h5>
-                            <ul style="padding-left: 1.5rem;">
-                                ${god.fatalFlaw.irony.canDo.map(item => `
-                                    <li style="margin-bottom: 0.5rem; color: #f5deb3;">${item}</li>
-                                `).join('')}
-                            </ul>
-                        </div>
-                        <div>
-                            <h5 style="color: #daa520; margin-bottom: 0.5rem;">He Cannot:</h5>
-                            <ul style="padding-left: 1.5rem;">
-                                ${god.fatalFlaw.irony.cannotDo.map(item => `
-                                    <li style="margin-bottom: 0.5rem; color: #f5deb3;">${item}</li>
-                                `).join('')}
-                            </ul>
-                        </div>
-                    </div>
-                    <p style="margin-top: 1rem; padding: 1rem; background: rgba(218, 165, 32, 0.1); border-radius: 0.5rem; font-style: italic; font-weight: bold; color: #daa520; text-align: center;">${god.fatalFlaw.irony.conclusion}</p>
-                </div>
-                ` : ''}
-            </div>
-            ` : ''}
-
-            ${god.rumors ? `
-            <div class="detail-section">
-                <h3>${god.rumors.title}</h3>
-                <p style="font-style: italic; color: #daa520; margin-bottom: 1.5rem;">${god.rumors.subtitle}</p>
-                ${god.rumors.items.map(item => `
-                    <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(75, 54, 124, 0.2), rgba(218, 165, 32, 0.1)); border-left: 4px solid #4b367c; border-radius: 0.5rem;">
-                        <h4 style="color: #daa520; margin-bottom: 0.75rem;">${item.name}</h4>
-                        <p style="color: #f5deb3; line-height: 1.6; margin-bottom: 1rem;">${item.description}</p>
-                        ${item.officialExplanation ? `
-                            <p style="padding: 1rem; background: rgba(218, 165, 32, 0.1); border-radius: 0.5rem; margin-top: 1rem; color: #f5deb3; border-left: 3px solid #daa520;">
-                                <strong style="color: #daa520;">Official Explanation:</strong><br>
-                                ${item.officialExplanation}
-                            </p>
-                        ` : ''}
-                        ${item.furtherPressed ? `
-                            <p style="padding: 1rem; background: rgba(139, 69, 19, 0.2); border-radius: 0.5rem; margin-top: 1rem; color: #f5deb3; font-style: italic; border-left: 3px solid #8b4513;">
-                                <strong style="color: #daa520;">When Further Pressed:</strong><br>
-                                ${item.furtherPressed}
-                            </p>
-                        ` : ''}
-                    </div>
-                `).join('')}
-            </div>
-            ` : ''}
         </div>
     `;
+    }
+}
+
+// Tab switching function for god profiles
+function switchGodTab(event, tabId) {
+    // Remove active class from all tabs and panels
+    const tabs = document.querySelectorAll('.god-tab');
+    const panels = document.querySelectorAll('.god-tab-panel');
+
+    tabs.forEach(tab => tab.classList.remove('active'));
+    panels.forEach(panel => panel.classList.remove('active'));
+
+    // Add active class to clicked tab and corresponding panel
+    event.currentTarget.classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+
+    // Scroll to top of content smoothly
+    document.getElementById('contentArea').scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Render Eudoria Overview
