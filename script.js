@@ -2707,7 +2707,128 @@ const eudoriaData = {
                     description: "When Suleiman speaks, the air stills; silence itself listens. His words are not sound, but the realization of the law spoken into being."
                 }
             ],
-            nature: "Suleiman is revered as both creator and keeper of the perfect intellect of the universe, whose wisdom sustains creation but whose isolation defines it. He is the Thinker Between Worlds, bound by knowledge, surrounded by silence, and eternally aware that if his eyes ever close to darkness, the mind of Eudoria itself fall still."
+            nature: "Suleiman is revered as both creator and keeper of the perfect intellect of the universe, whose wisdom sustains creation but whose isolation defines it. He is the Thinker Between Worlds, bound by knowledge, surrounded by silence, and eternally aware that if his eyes ever close to darkness, the mind of Eudoria itself fall still.",
+            relationships: {
+                title: "Relationships & Legacy",
+                subtitle: "The Architect of Connections, The Master of Distance",
+                description: "Suleiman's relationships are marked by profound influence and tragic distance. He is a god who shapes the universe but struggles to connect with those closest to him.",
+                connections: [
+                    {
+                        name: "Al'sekemu - \"The Lion\"",
+                        description: "Al'sekemu, the God of Order, was created by Suleiman as his divine counterpart, his \"brother.\" Using Zane's strength as a foundation, Suleiman forged Al'sekemu to be a perfect balance of power and order. But Al'sekemu is 72% imperfect. And he hates it. For millennia, Suleiman treated Al'sekemu as a living experiment, constantly analyzing, adjusting, and testing. Al'sekemu came to resent being Suleiman's project rather than his equal. Al'sekemu refuses to call Suleiman by his name. Instead, he calls him \"The Lion,\" a title of power, but impersonal, cold, distant. It is both respect and rejection. When Al'sekemu betrayed Suleiman in the War of Gods, it was not just about power; it was about dignity, autonomy, and the exhaustion of being \"almost perfect\" but never enough. They have not spoken in centuries."
+                    },
+                    {
+                        name: "Jodami - The First Great Love",
+                        description: "Jodami, Goddess of Saltwater, Creation, and Prosperity, was one of Suleiman's earliest companions. They had three children together: The Jodath Sisters. When Jodami cried over Suleiman's emotional distance, E'kar comforted her. The two fell in love. When Suleiman discovered the relationship, he sent E'kar on a death mission (but allowed him to stop it). Suleiman and E'kar have not spoken in centuries. No one knows if he truly loved her, but his actions proved he did; he just doesn't know how to express it. Jodami stayed with E'kar and her relationship with The Lion. Suleiman blames himself."
+                    },
+                    {
+                        name: "Tati'anna - The One He Never Got Over",
+                        description: "Tati'anna, Goddess of Beauty, Art, and Music, was Suleiman's last great love. He stayed with her for centuries longer than any other relationship. They had four children together (his final children). But Suleiman could never express his love the way she needed him to. She cheated with Ntombizodwa because Ntombizodwa gave her attention, warmth, and expression that Suleiman could not provide. When Suleiman discovered the affair, he gouged out Ntombizodwa's eye (the only time he ever showed violent emotion). He never got over Tati'anna. Even now, she is the only lover he still thinks about, the only one he regrets losing."
+                    },
+                    {
+                        name: "His 40+ Children - \"Why Do They Call Me Suleiman?\"",
+                        description: "Suleiman has over 40 children with multiple mothers across centuries. But they call him \"Suleiman,\" not \"Father.\" He pushed them away because of his emotional detachment. He believed that providing resources, giving feedback, and creating opportunities was adequate parenting. It wasn't. Only Samuel (one of his sons) turned out caring and emotionally healthy despite Suleiman, not because of him. Suleiman regrets this deeply. He wonders why his children are so distant, not realizing that they're just like him."
+                    },
+                    {
+                        name: "E'kar - The Unsung Partner",
+                        description: "E'kar, God of Creation and Reality Embedder, was Suleiman's closest collaborator. Together with Yusha (God of Time and Space), they spent 3,000 years negotiating and 1,847 years implementing the architecture of existence. Suleiman designed the theoretical framework. E'kar made it function in reality. Yusha ensured stability across time and space. But when Suleiman documented everything, history remembered him, not E'kar. E'kar invented the Reality Threads, the Root Language, and the Dream Weave, but Suleiman gets the credit for writing them down. When E'kar fell in love with Jodami, Suleiman sent him on a death mission out of jealousy. They have not spoken in centuries. E'kar still blames Suleiman for Jodami's imprisonment."
+                    }
+                ]
+            },
+            lawsOfEimes: {
+                title: "The Laws of Eimes",
+                subtitle: "His Greatest Creation, His Eternal Burden",
+                description: "Suleiman created the Laws of Eimes, 100,000 cosmic laws, at the dawn of ordered existence. They are not merely a legal code; they are the fundamental reason for everything in Eudoria, the \"skeleton of reality itself.\"",
+                timeline: {
+                    title: "The Creation Timeline:",
+                    description: "The Laws of Eimes were created over the course of 10,000 years:",
+                    phases: [
+                        "First 2,000 years: Suleiman established Tier 1 (Ilun & Solun), the foundation of existence, governing Origin & Return, birth, death, cycles, and soul creation. This was the hardest pillar to create, as it required defining the basic mathematics of being itself.",
+                        "Next 8,000 years: He completed the remaining 9 Great Pillars and their subordinate Orders, culminating in 100,000 total cosmic laws. Each pillar was built upon the foundation of Tier 1, expanding the structure of reality into biology, weather, magic, divine governance, and mortal law.",
+                        "The Eudran Codex (Pillar 3) was explicitly created after Eudran (the first mortal world) was established, as mortal law requires mortals to govern.",
+                        "After completing the Laws of Eimes, Suleiman then worked with E'kar and Yusha for an additional 4,847 years (3,000 years of negotiation + 1,847 years of implementation) to build the physical architecture of existence that would embody these laws."
+                    ]
+                },
+                structure: {
+                    title: "Structure:",
+                    parts: [
+                        "10 Great Pillars (cosmic themes: Creation, Time, Balance, Death, etc.)",
+                        "100 Orders (specific law categories: Biology, Weather, Magic, Souls, etc.)",
+                        "100,000 Laws (exact rules, individual cosmic commands)"
+                    ]
+                }
+            },
+            regrets: {
+                title: "Greatest Regrets",
+                subtitle: "The God Who Sees Everything Except His Failures",
+                list: [
+                    {
+                        name: "Malai Kanya - \"The Screamless\"",
+                        description: "This is Suleiman's greatest failure and deepest regret. Malai Kanya, Goddess of Hearth, Womanhood, and Family, was sexually assaulted by Tevye and Nasr. She ran to Suleiman, battered and terrified, begging for help. Suleiman did not believe her immediately. He was working closely with Tevye and didn't want to complicate things. He gave her privacy but did not act. When Malai Kanya begged to be freed from her cosmic role (\"I don't want to take care of the world. I want to be free\"), Suleiman granted her wish. It became a curse. Her skin turned dry and scaly. Her nails became black claws. Her eyes became empty and dead. When she saw her reflection, she screamed, blamed Suleiman, attacked him, and fled into the night. She became the Halonas, a being that warns women before killing their husbands (if those husbands have harmed women). He has never forgiven himself."
+                    },
+                    {
+                        name: "He Never Punished Tevye and Nasr",
+                        description: "Suleiman deeply regrets not punishing Tevye and Nasr for what they did to Malai Kanya. He was too focused on cosmic implications, long-term consequences, and the bigger picture, and he missed the woman crying in front of him. By the time he realized what he should have done, it was too late. He tried to convince Eudora to punish Tevye by punishing himself as well."
+                    },
+                    {
+                        name: "Jodami's Imprisonment",
+                        description: "Jodami is imprisoned in Shadeward Hollow (eternal prison, no return) because she betrayed Suleiman in the War of Gods. But Suleiman blames himself. He was emotionally distant. He never told her how he felt. He let E'kar comfort her when he should have been there. E'kar blames him: \"If you hadn't come to her rescue, she wouldn't be sent to Shadeward Hollow.\" Suleiman agrees."
+                    },
+                    {
+                        name: "His 40+ Children Call Him \"Suleiman,\" Not \"Father\"",
+                        description: "Suleiman pushed his children away because of his emotional detachment. He thought providing resources and opportunities was enough. It wasn't. Now they're distant. They call him by his name, not \"Father.\" He regrets it deeply, but he doesn't know how to fix it."
+                    },
+                    {
+                        name: "Zenitha's Assault - He Gave Her Power, Not Justice",
+                        description: "When Zenitha was assaulted by Vorthak, she came to Suleiman for justice. Suleiman gave her the Law of ZAMARA (immense power) instead of punishing Vorthak immediately. He thought power would compensate. It didn't. Zenitha carried that pain for centuries until Al'sekemu killed Vorthak (not Suleiman). Suleiman gave her power, but not justice."
+                    }
+                ]
+            },
+            fatalFlaw: {
+                title: "The Fatal Flaw",
+                subtitle: "The God Who Sees Everything Except What's Right In Front of Him",
+                description: "Suleiman's greatest weakness is not lack of wisdom—it is mistimed wisdom. He sees the bigger picture but misses the present moment.",
+                examples: [
+                    "Malai Kanya: She needed immediate belief and action. Suleiman thought: \"Tevye is important to my project. This complicates things.\" By the time he acted, she was already cursed.",
+                    "Zenitha: She needed justice. Suleiman thought: \"Power will compensate.\" It didn't.",
+                    "Jodami: She needed him to fight for her. Suleiman thought: \"Relationships require time I don't have.\" She moved on. He got jealous after it was too late.",
+                    "Tati'anna: She needed attention and emotional expression. Suleiman thought, \"I've stayed with her for centuries. I've given her four children. The data shows I care.\" She cheated because data isn't love.",
+                    "His children: They needed warmth and presence. Suleiman thought, \"I provide resources. This is adequate parenting.\" Now they call him \"Suleiman,\" not \"Father.\""
+                ],
+                pattern: "Suleiman is always calculating the future and analyzing the past, but he never lives in the present. And by the time he realizes what he should have done in the moment, it's too late.",
+                irony: {
+                    title: "The Tragic Irony:",
+                    canDo: [
+                        "See all timelines",
+                        "Predict consequences",
+                        "Design the blueprint of existence",
+                        "Create 100,000 cosmic laws"
+                    ],
+                    cannotDo: [
+                        "See the person crying in front of him",
+                        "Act in the immediate moment",
+                        "Understand emotional needs in real-time",
+                        "Express feelings before it's too late"
+                    ],
+                    conclusion: "He's so wise about EVERYTHING... that he's foolish about the PRESENT."
+                }
+            },
+            rumors: {
+                title: "Rumors & Mysteries",
+                subtitle: "The 7 Hidden Pillars and the Second World",
+                items: [
+                    {
+                        name: "The 7 Hidden Pillars",
+                        description: "Of the 10 Great Pillars of the Laws of Eimes, only 3 are accessible to mortals and most gods. The remaining 7 pillars are [CLASSIFIED - SULEIMAN'S EYES ONLY].",
+                        officialExplanation: "\"The remaining pillars govern universal laws that are either not currently in use or deemed less important for Eudoria's function. They are classified for the stability of existence.\"",
+                        furtherPressed: "\"They are mine to bear. Not yours to know.\""
+                    },
+                    {
+                        name: "The Rumor: Suleiman Governs 2 Worlds",
+                        description: "The most persistent rumor among divine scholars is: Suleiman is the Supreme God of 2 worlds, not just one."
+                    }
+                ]
+            }
         },
         tahanne: {
             name: "Ta'hanne",
@@ -8050,6 +8171,137 @@ function showGodDetail(godKey) {
             <div class="detail-section">
                 <h3>Divine Nature</h3>
                 <p class="god-nature">${god.nature}</p>
+            </div>
+            ` : ''}
+
+            ${god.relationships ? `
+            <div class="detail-section">
+                <h3>${god.relationships.title}</h3>
+                <p style="font-style: italic; color: #daa520; margin-bottom: 0.5rem;">${god.relationships.subtitle}</p>
+                <p style="margin-bottom: 1.5rem;">${god.relationships.description}</p>
+                ${god.relationships.connections.map(connection => `
+                    <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(139, 69, 19, 0.05)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
+                        <h4 style="color: #daa520; margin-bottom: 0.75rem;">${connection.name}</h4>
+                        <p style="color: #f5deb3; line-height: 1.6;">${connection.description}</p>
+                    </div>
+                `).join('')}
+            </div>
+            ` : ''}
+
+            ${god.lawsOfEimes ? `
+            <div class="detail-section">
+                <h3>${god.lawsOfEimes.title}</h3>
+                <p style="font-style: italic; color: #daa520; margin-bottom: 0.5rem;">${god.lawsOfEimes.subtitle}</p>
+                <p style="margin-bottom: 1.5rem;">${god.lawsOfEimes.description}</p>
+
+                ${god.lawsOfEimes.timeline ? `
+                <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
+                    <h4 style="color: #daa520; margin-bottom: 0.75rem;">${god.lawsOfEimes.timeline.title}</h4>
+                    <p style="margin-bottom: 1rem; color: #f5deb3;">${god.lawsOfEimes.timeline.description}</p>
+                    <ul style="padding-left: 1.5rem;">
+                        ${god.lawsOfEimes.timeline.phases.map(phase => `
+                            <li style="margin-bottom: 0.75rem; color: #f5deb3; line-height: 1.6;">${phase}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${god.lawsOfEimes.structure ? `
+                <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
+                    <h4 style="color: #daa520; margin-bottom: 0.75rem;">${god.lawsOfEimes.structure.title}</h4>
+                    <ul style="padding-left: 1.5rem;">
+                        ${god.lawsOfEimes.structure.parts.map(part => `
+                            <li style="margin-bottom: 0.5rem; color: #f5deb3;">${part}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+            </div>
+            ` : ''}
+
+            ${god.regrets ? `
+            <div class="detail-section">
+                <h3>${god.regrets.title}</h3>
+                <p style="font-style: italic; color: #daa520; margin-bottom: 1.5rem;">${god.regrets.subtitle}</p>
+                ${god.regrets.list.map((regret, index) => `
+                    <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(218, 165, 32, 0.05)); border-left: 4px solid #8b4513; border-radius: 0.5rem;">
+                        <h4 style="color: #daa520; margin-bottom: 0.75rem;">${index + 1}. ${regret.name}</h4>
+                        <p style="color: #f5deb3; line-height: 1.6;">${regret.description}</p>
+                    </div>
+                `).join('')}
+            </div>
+            ` : ''}
+
+            ${god.fatalFlaw ? `
+            <div class="detail-section">
+                <h3>${god.fatalFlaw.title}</h3>
+                <p style="font-style: italic; color: #daa520; margin-bottom: 0.5rem;">${god.fatalFlaw.subtitle}</p>
+                <p style="margin-bottom: 1.5rem;">${god.fatalFlaw.description}</p>
+
+                ${god.fatalFlaw.examples ? `
+                <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(139, 69, 19, 0.05)); border-left: 4px solid #daa520; border-radius: 0.5rem;">
+                    <h4 style="color: #daa520; margin-bottom: 1rem;">Examples:</h4>
+                    <ul style="padding-left: 1.5rem;">
+                        ${god.fatalFlaw.examples.map(example => `
+                            <li style="margin-bottom: 1rem; color: #f5deb3; line-height: 1.6;">${example}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${god.fatalFlaw.pattern ? `
+                <p style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-style: italic; color: #f5deb3;">${god.fatalFlaw.pattern}</p>
+                ` : ''}
+
+                ${god.fatalFlaw.irony ? `
+                <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(218, 165, 32, 0.05)); border-left: 4px solid #8b4513; border-radius: 0.5rem;">
+                    <h4 style="color: #daa520; margin-bottom: 1rem;">${god.fatalFlaw.irony.title}</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1rem;">
+                        <div>
+                            <h5 style="color: #daa520; margin-bottom: 0.5rem;">He Can:</h5>
+                            <ul style="padding-left: 1.5rem;">
+                                ${god.fatalFlaw.irony.canDo.map(item => `
+                                    <li style="margin-bottom: 0.5rem; color: #f5deb3;">${item}</li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 style="color: #daa520; margin-bottom: 0.5rem;">He Cannot:</h5>
+                            <ul style="padding-left: 1.5rem;">
+                                ${god.fatalFlaw.irony.cannotDo.map(item => `
+                                    <li style="margin-bottom: 0.5rem; color: #f5deb3;">${item}</li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem; padding: 1rem; background: rgba(218, 165, 32, 0.1); border-radius: 0.5rem; font-style: italic; font-weight: bold; color: #daa520; text-align: center;">${god.fatalFlaw.irony.conclusion}</p>
+                </div>
+                ` : ''}
+            </div>
+            ` : ''}
+
+            ${god.rumors ? `
+            <div class="detail-section">
+                <h3>${god.rumors.title}</h3>
+                <p style="font-style: italic; color: #daa520; margin-bottom: 1.5rem;">${god.rumors.subtitle}</p>
+                ${god.rumors.items.map(item => `
+                    <div style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(75, 54, 124, 0.2), rgba(218, 165, 32, 0.1)); border-left: 4px solid #4b367c; border-radius: 0.5rem;">
+                        <h4 style="color: #daa520; margin-bottom: 0.75rem;">${item.name}</h4>
+                        <p style="color: #f5deb3; line-height: 1.6; margin-bottom: 1rem;">${item.description}</p>
+                        ${item.officialExplanation ? `
+                            <p style="padding: 1rem; background: rgba(218, 165, 32, 0.1); border-radius: 0.5rem; margin-top: 1rem; color: #f5deb3; border-left: 3px solid #daa520;">
+                                <strong style="color: #daa520;">Official Explanation:</strong><br>
+                                ${item.officialExplanation}
+                            </p>
+                        ` : ''}
+                        ${item.furtherPressed ? `
+                            <p style="padding: 1rem; background: rgba(139, 69, 19, 0.2); border-radius: 0.5rem; margin-top: 1rem; color: #f5deb3; font-style: italic; border-left: 3px solid #8b4513;">
+                                <strong style="color: #daa520;">When Further Pressed:</strong><br>
+                                ${item.furtherPressed}
+                            </p>
+                        ` : ''}
+                    </div>
+                `).join('')}
             </div>
             ` : ''}
         </div>
