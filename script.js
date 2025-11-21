@@ -2830,6 +2830,75 @@ const eudoriaData = {
             }
         }
     },
+    civilizations: {
+        ancientEudran: {
+            name: "Ancient Eudran: The World Before the Flood",
+            icon: "🏛️",
+            subtitle: "The First Civilization of Mortals",
+            overview: {
+                title: "Overview",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            },
+            lostRegions: {
+                title: "The 53 Lost Regions",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            },
+            majorConflicts: {
+                title: "Major Conflicts",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            },
+            genderCrisis: {
+                title: "The Great Gender Crisis",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            },
+            greatFlood: {
+                title: "The Great Flood",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            }
+        },
+        transformation: {
+            name: "The Transformation: From Eudran to Eudoria",
+            icon: "🌊",
+            subtitle: "When Eudora Reshaped the World",
+            overview: {
+                title: "Overview",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            },
+            reshaping: {
+                title: "How Eudora Reshaped the World",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            },
+            newRegions: {
+                title: "The 17 New Regions",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            },
+            newCovenant: {
+                title: "The New Covenant",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            }
+        },
+        modernEudoria: {
+            name: "Modern Eudoria: 2,000 Years of Balance & Harmony",
+            icon: "🌿",
+            subtitle: "A Civilization That Endures",
+            overview: {
+                title: "Overview",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            },
+            whyItLasts: {
+                title: "Why This Civilization Lasts",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            },
+            fourUnions: {
+                title: "The Four Unions",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            },
+            achievements: {
+                title: "Cultural Achievements",
+                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            }
+        }
+    },
     eudoricGods: {
         sulieman: {
             name: "Suleiman",
@@ -7280,6 +7349,14 @@ function navigateTo(view) {
         renderEudoricLetters();
     } else if (view === 'sacred-texts') {
         renderSacredTexts();
+    } else if (view === 'civilizations-overview') {
+        renderCivilizationsOverview();
+    } else if (view === 'ancient-eudran') {
+        showCivilizationDetail('ancientEudran');
+    } else if (view === 'the-transformation') {
+        showCivilizationDetail('transformation');
+    } else if (view === 'modern-eudoria') {
+        showCivilizationDetail('modernEudoria');
     } else if (view === 'eudraneth') {
         renderEudraneth();
     } else if (view === 'laws-of-eimes') {
@@ -8058,6 +8135,86 @@ function showTextDetail(textKey) {
             </div>
         `;
     }
+
+    contentArea.innerHTML = detailHTML;
+}
+
+// Render Civilizations Overview
+function renderCivilizationsOverview() {
+    const contentArea = document.getElementById('contentArea');
+    const civs = eudoriaData.civilizations;
+
+    // Create civilization cards for overview
+    const civCardsHTML = Object.keys(civs).map(civKey => {
+        const civ = civs[civKey];
+
+        return `
+            <div class="god-card" onclick="showCivilizationDetail('${civKey}')">
+                <div class="god-card-icon" style="font-size: 4rem;">${civ.icon}</div>
+                <h3>${civ.name}</h3>
+                <p class="god-card-titles" style="font-style: italic; color: #5a8f5a;">${civ.subtitle}</p>
+            </div>
+        `;
+    }).join('');
+
+    contentArea.innerHTML = `
+        <div class="gods-pantheon">
+            <div class="union-header">
+                <h2>📍 Civilizations of Eudoria</h2>
+                <p>From Ancient Eudran to Modern Eudoria</p>
+                <p style="margin-top: 1rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                    The history of Eudoria spans three great eras: the ancient world of Eudran with its 53 regions, the transformative period when Eudora reshaped existence itself, and the modern age of harmony that has endured for 2,000 years.
+                </p>
+            </div>
+            <div class="gods-grid">
+                ${civCardsHTML}
+            </div>
+        </div>
+    `;
+}
+
+// Show detailed civilization profile
+function showCivilizationDetail(civKey) {
+    const civ = eudoriaData.civilizations[civKey];
+
+    if (!civ) {
+        console.error(`Civilization not found for key: ${civKey}`);
+        return;
+    }
+
+    const contentArea = document.getElementById('contentArea');
+
+    // Build sections HTML based on civilization
+    let sectionsHTML = '';
+
+    // Get all sections except name, icon, subtitle
+    Object.keys(civ).forEach(sectionKey => {
+        if (sectionKey !== 'name' && sectionKey !== 'icon' && sectionKey !== 'subtitle') {
+            const section = civ[sectionKey];
+            sectionsHTML += `
+                <div class="text-section">
+                    <h3>${section.title}</h3>
+                    <p>${section.content}</p>
+                </div>
+            `;
+        }
+    });
+
+    const detailHTML = `
+        <div class="text-profile">
+            <button class="back-button" onclick="renderCivilizationsOverview()">← Back to Civilizations</button>
+
+            <div class="text-header">
+                <div class="text-icon">${civ.icon}</div>
+                <h1>${civ.name}</h1>
+                <p class="text-subtitle">${civ.subtitle}</p>
+            </div>
+
+            <div class="text-body">
+                ${sectionsHTML}
+            </div>
+        </div>
+    `;
 
     contentArea.innerHTML = detailHTML;
 }
