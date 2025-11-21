@@ -3293,6 +3293,15 @@ body.eudoric-mode .search-box input {
     border-color: #333;
 }
 
+/* Sacred Text Styling - Etched Into Stone */
+body.eudoric-mode h1,
+body.eudoric-mode h2,
+body.eudoric-mode h3 {
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #dcd7b5;
+}
+
 .app-container {
     display: flex;
     height: 100vh;
