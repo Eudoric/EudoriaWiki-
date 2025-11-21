@@ -2856,8 +2856,8 @@ const eudoriaData = {
                 content: "**[Content coming soon]**\n\nThis section is currently under development."
             }
         },
-        transformation: {
-            name: "The Transformation: From Eudran to Eudoria",
+        greatFlood: {
+            name: "The Great Flood",
             icon: "🌊",
             subtitle: "When Eudora Reshaped the World",
             overview: {
@@ -2877,8 +2877,8 @@ const eudoriaData = {
                 content: "**[Content coming soon]**\n\nThis section is currently under development."
             }
         },
-        modernEudoria: {
-            name: "Modern Eudoria: 2,000 Years of Balance & Harmony",
+        unifiedEra: {
+            name: "The Unified Era: Balance & Harmony",
             icon: "🌿",
             subtitle: "A Civilization That Endures",
             overview: {
@@ -7353,10 +7353,10 @@ function navigateTo(view) {
         renderCivilizationsOverview();
     } else if (view === 'ancient-eudran') {
         showCivilizationDetail('ancientEudran');
-    } else if (view === 'the-transformation') {
-        showCivilizationDetail('transformation');
-    } else if (view === 'modern-eudoria') {
-        showCivilizationDetail('modernEudoria');
+    } else if (view === 'great-flood') {
+        showCivilizationDetail('greatFlood');
+    } else if (view === 'unified-era') {
+        showCivilizationDetail('unifiedEra');
     } else if (view === 'eudraneth') {
         renderEudraneth();
     } else if (view === 'laws-of-eimes') {
