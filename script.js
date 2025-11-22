@@ -2837,23 +2837,356 @@ const eudoriaData = {
             subtitle: "The First Civilization of Mortals",
             overview: {
                 title: "Overview",
-                content: "**[Content coming soon]**\n\nThis section is currently under development."
+                content: `Eudran was the primordial world that existed for over 3,000 years before the Great Flood destroyed it, and it was subsequently reborn as modern Eudoria.
+
+**Origin:**
+Eudran was born from the sacred union between Suleiman, God of Wisdom and Wealth, and Ta'hanne, the Goddess, Mother Earth. It was designed as a collaborative space where gods would rule over mortals.
+
+Great Freedom characterized Eudran, meaning mortals could make decisions that genuinely affected their environment and future, and divine intervention was available but not automatic.
+
+This freedom led to both remarkable achievements and tragic mistakes.
+
+**The Promise:**
+Eudran was meant to be a world where mortals could flourish with divine guidance, a partnership between heaven and earth.
+
+**The Reality:**
+Eudran became a corrupt, chaotic, and sinful world "drowning in chaos and consumed by greed." The systematic cruelty and toxic spiritual atmosphere eventually necessitated divine cleansing.
+
+**The End:**
+The catastrophic Great Flood destroyed Eudran. The War of Gods, led by Al'sekemu, raged across Eudran itself, tearing the world apart and killing the mortal civilizations caught in the crossfire.
+
+Mountains crumbled. Seas boiled. Entire kingdoms vanished in the divine fury.
+
+And when the waters came, they washed away everything that remained.`
             },
-            lostRegions: {
-                title: "The 53 Lost Regions",
-                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            fiftyThreeKingdoms: {
+                title: "The 53 Kingdoms",
+                content: `Unlike Eudoria's structured 17 regions organized into four unions, Ancient Eudran had 53 scattered kingdoms, domains, cities, and territories, each with its own government, culture, and ambitions.
+
+There was no central authority. No unified structure. No balance.
+
+Eudran's political system allowed for "unrestricted free will combined with competitive governance structures."
+
+This produced a world so corrupt it required divine cleansing.`
+            },
+            geographyOfChaos: {
+                title: "The Geography of Chaos",
+                content: `Ancient Eudran was divided into four loose geographical areas, not organized unions, but regions shaped by conflict, divine intervention, and tragedy:
+
+**THE WEST (THE EMPTY HEART) 🌫️**
+
+**Status:** Essentially uninhabited for most of Eudran's 3,000-year history
+
+**Why:** The West seemed protected or reserved by some force that prevented permanent mortal civilization.
+
+**Mystery:** To this day, no one knows why the West remained empty. Was it divine protection? A curse? Sacred ground reserved for a future purpose?
+
+**Modern Connection:** This empty land would later become part of Eudoria's foundation.
+
+---
+
+**THE EAST (THE CENTER OF CONFLICT) ⚔️**
+
+**Status:** The beating heart of ancient Eudran
+
+**Characteristics:**
+- Most populated
+- Most powerful
+- Most politically influential
+
+**Strategic Importance:** Eastern armies could reach any other region faster than they could reach each other, giving the East de facto capital status.
+
+**Result:** The East became the epicenter of power struggles, wars, and corruption.
+
+**Confirmed Eastern Kingdoms (7 of 25 total confirmed):**
+- **Keth (The Golden Archive)** - Repository of ancient knowledge
+- **Sor (The Council of Voices)** - Democratic governance experiment
+- **Korveth (The Singing Cities)** - Cultural and artistic center
+- **Therion** - Military powerhouse
+- **Madrigal** - Known for music and philosophy
+- **Osh** - Trade hub
+- **Leth** - Agricultural stronghold
+
+---
+
+**THE SOUTH (BORN FROM WAR) 🌊**
+
+**Status:** Created through violent conflict that literally tore land masses apart and scattered them across the ocean
+
+**Characteristics:**
+- Island kingdoms
+- Naval powers
+- Fractured, isolated civilizations
+
+**How It Formed:** Divine battles and mortal wars shattered the southern continent, creating the scattered islands that would define the South for millennia.
+
+**Confirmed Southern Kingdoms (7 of 25 total confirmed):**
+- **Coral (The Island Choirs)** - Singers whose voices could calm storms
+- **Wave (The Sea Riders)** - Master sailors and ocean warriors
+- **Pearl** - Wealthy merchant island
+- **Storm (The Weather Weavers)** - Destroyed by its own corrupted storms
+- **Salt** - Salt mining and preservation
+- **Tide** - Tidal power and coastal defense
+- **Fish** - Fishing industry and marine life
+
+---
+
+**THE NORTH (THE CURSED LANDS) ❄️**
+
+**Status:** Transformed from fertile land to permanent frozen wilderness due to direct divine intervention motivated by jealousy and betrayal
+
+**What Happened:** A god (identity contested) cursed the North, freezing it eternally as punishment or revenge.
+
+**Result:** The North became a harsh, unforgiving land where only the strongest survived.
+
+**Confirmed Northern Kingdoms (5 of 25 total confirmed):**
+- **Icefall (The Frozen Architects)** - Built ice palaces and frozen cities
+- **Snowzon** - Hardy mountain people
+- **StarNorth (The Northern Lights)** - Mystics who read the aurora
+- **West Hayfel** - Border settlement
+- **Mountain Tyrel** - Peak fortress kingdom
+
+---
+
+**Confirmed Central/Desert Kingdoms (6 of 25 total confirmed):**
+- **Khel (The Desert Forge)** - Weapon smiths and metallurgists
+- **Savarun (The Merchant Princes)** - Wealthy trade empire
+- **Jar (The Sand Shapers)** - Earth and stone manipulation
+- **Sovar** - Oasis city-state
+- **Vash** - Desert warriors
+- **Quin** - Scholarly desert kingdom`
+            },
+            incompleteRecord: {
+                title: "The Incomplete Record",
+                content: `The Goldenvault (one of the Four Pillars of Wakan) maintains a sacred commitment to truth and operates under the principle of "Verification First," meaning they refuse to fabricate history or fill gaps with speculation.
+
+**Of the original 53 kingdoms:**
+✅ **25 Confirmed** - Existence and partial history definitively verified
+🔍 **14 Under Investigation** - Tantalizing evidence exists, but insufficient proof
+❌ **14 Lost Forever** - Completely erased from history beyond mathematical inference
+
+**Why so much was lost:**
+- The Great Flood destroyed countless records, entire cities, and whole civilizations
+- The War of Gods - Divine battles tore the world apart, erasing kingdoms in the crossfire
+- Multiple waves of devastation - Eudran suffered centuries of conflict before the final cleansing
+
+**The Goldenvault's Position:**
+"The incomplete record is not a failure of scholarship but a testament to the genuine catastrophes endured by our ancestors. The gaps in our knowledge are sacred spaces—reminders of the real loss that occurred."
+
+The 14 lost kingdoms are mourned as irreversible losses for humanity.
+
+Their names, cultures, achievements, and tragedies are gone forever.`
+            },
+            contemporaryCivilizations: {
+                title: "Contemporary Civilizations",
+                content: `Ancient Eudran was not just the 53 kingdoms; several other powerful civilizations existed among or within the territories of these kingdoms:
+
+**SET (THE FIRST TECHNOLOGICAL CIVILIZATION) 🔬**
+
+**Founded by:** Suleiman, the First Teacher
+
+**Status:** The world's first truly advanced technological civilization
+
+**What Made It Special:**
+Set was Suleiman's prototype, a vision of what mortal civilization could achieve with order, logic, and wisdom instead of chaos and greed.
+
+**The Strategic Retreat:**
+When surface conflicts and natural disasters threatened Set's infrastructure, the civilization strategically retreated underground to protect its advancements.
+
+**Geography:**
+Set's underground civilization spans approximately 89% of Eudoria's total continental landmass, meaning it was integrated with the ancient 53-kingdom landmass.
+
+**Important Distinction:**
+- **Set, Eudran** = Ancient underground technological civilization (pre-Flood)
+- **Set, Chaka** = Modern Eudoria region named after the ancient civilization
+
+**What Happened:**
+While the surface kingdoms destroyed themselves, Set survived underground, advancing technologically as the world above burned.
+
+**Modern Legacy:**
+Set's descendants became the Setanese civilization (still underground, still highly advanced) and the Wakanese civilization (surface technological hub built from Set's knowledge).
+
+---
+
+**THE ABARAH EMPIRE (THE MOST TERRIFYING) 👑⚔️**
+
+**Duration:** Ruled for over 492 years
+
+**Reputation:** The most terrifying empire before Eudoria
+
+**Characteristics:**
+- Ruthless military might
+- Conquest and expansion
+- Systematic oppression
+
+**Territory:** Occupied significant territory within the framework of the 53 kingdoms
+
+**The Fall:**
+The Abarah Empire eventually fell, but its legacy of terror lived on in memory.
+
+**Modern Connection:**
+The Abarah region in Eudoria was named after this ancient empire, a reminder of the past.
+
+---
+
+**OTHER EARLY KINGDOMS & DYNASTIES**
+
+Several shorter-lived civilizations rose and fell during Eudran's 3,000-year history:
+- **Gex Civilization** - 232 years
+- **Yuma Civilization** - 241 years
+- **Sayorzé Civilization** - 290 years
+- **Xsaui Civilization** - 301 years
+- **Taine Civilization** - 310 years
+- **Wartmoon Civilization** - 321 years
+
+**Evidence:**
+Historical records mention the powerful city of Abuya and the Wartmoon Territory during the War of Norvayn vs. Estara, confirming these civilizations were part of Eudran's geography and politics.
+
+**Why They Fell:**
+Each collapsed due to the same patterns: war, corruption, greed, and the failure of governance.`
+            },
+            goldenAge: {
+                title: "The Golden Age (What Was Achieved)",
+                content: `Despite its chaos, Ancient Eudran produced remarkable achievements:
+
+**Technological Marvels:**
+- Set's advanced machinery and engineering
+- Khel's legendary weapon forges
+- Storm's weather manipulation (before corruption)
+
+**Cultural Achievements:**
+- Korveth's singing cities where architecture produced music
+- Coral's choirs that could calm storms
+- Madrigal's philosophical schools
+
+**Governance Experiments:**
+- Sor's Council of Voices (early democracy)
+- Savarun's merchant republic
+- Various forms of monarchy, theocracy, and confederation
+
+**Architectural Wonders:**
+- Icefall's frozen palaces
+- Keth's Golden Archive (repository of all knowledge)
+- Pearl's underwater structures
+
+Great Freedom allowed mortals to push boundaries, innovate, and create beauty.
+
+But Great Freedom also allowed them to destroy.`
             },
             majorConflicts: {
                 title: "Major Conflicts",
-                content: "**[Content coming soon]**\n\nThis section is currently under development."
+                content: `Ancient Eudran was defined by constant warfare:
+
+**THE WAR OF NORVAYN VS. ESTARA (YEAR 839) ⚔️**
+
+**Also known as:** The Great War
+
+**What Started It:** A local dispute between two kingdoms over resources and territory
+
+**What It Became:** A continental catastrophe that eventually involved all of Eudran
+
+**Tactics:**
+- Systematic slavery of conquered populations
+- Genocidal campaigns
+- Total war (civilians were targets)
+
+**Duration:** Decades of conflict
+
+**Result:** Multiple civilizations devastated, entire kingdoms erased
+
+**Legacy:** Proved that traditional governance led inevitably to destruction
+
+---
+
+**THE SUPAY WAR 🔥**
+
+**Duration:** Over 50 years, extending to nearly 100 years of continuous conflict
+
+**Nature:** Cyclical destruction, ceasefires followed by renewed violence
+
+**Impact:** Entire generations grew up knowing nothing but war`
             },
-            genderCrisis: {
-                title: "The Great Gender Crisis",
-                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            theCorruption: {
+                title: "The Corruption (How It All Went Wrong)",
+                content: `What began as Great Freedom became Great Chaos:
+
+**Systematic Cruelty:**
+- Slavery was widespread
+- Genocide was a military tactic
+- Exploitation of the weak was normalized
+
+**Widespread Greed:**
+- Wars fought over resources, not survival
+- Trade became predatory
+- Wealth inequality reached catastrophic levels
+
+**Moral Collapse:**
+- Honor became weakness
+- Mercy became foolishness
+- Power became the only virtue
+
+**Toxic Spiritual Atmosphere:**
+- The accumulated sins of generations poisoned the world
+- Divine-mortal relationships broke down
+- Trust between kingdoms vanished
+
+**Withdrawal of Divine Protection:**
+
+Due to mortal behavior, gods reduced or withdrew their intervention:
+- Ta'hanne refused to maintain agricultural cycles for oppressive communities → famines
+- Sove withheld weather control → natural disasters raged unchecked
+- Other gods stepped back, allowing mortals to face the consequences of their choices
+
+The world Suleiman had gifted became a "diseased, dying Eudran," a "battlefield of warring gods and mortal monsters."`
             },
-            greatFlood: {
-                title: "The Great Flood",
-                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            theFall: {
+                title: "The Fall (Why the Flood Became Necessary)",
+                content: `By the end, Ancient Eudran was:
+
+"Drowning in chaos and consumed by greed."
+
+**The cycle was irreversible:**
+Freedom → Achievement → Greed → War → Corruption → Collapse → Repeat
+
+Every attempt to reform failed. Every peace treaty was broken. Every hope was crushed.
+
+**The gods faced a choice:**
+1. **Let it continue** - Allow the cycle of suffering to perpetuate forever
+2. **Intervene destructively** - End it and start over
+
+They chose the Flood.
+
+But first came the War of Gods (led by Al'sekemu), which raged across Eudran itself:
+- Mountains crumbled
+- Seas boiled
+- Mortal civilizations caught in the crossfire were obliterated
+
+And then came the waters.
+
+The Great Flood erased all 53 kingdoms.
+
+Ancient Eudran, with 3,000 years of history, achievement, and tragedy, was washed away.`
+            },
+            theLegacy: {
+                title: "The Legacy",
+                content: `**What Eudran Taught:**
+
+"The struggles and sacrifices of the mortals in Eudran created the necessary foundation upon which Queen Eudora could build the better world of Eudoria."
+
+Ancient Eudran was not a failure; it was a lesson.
+
+It showed what happens when:
+- Freedom lacks structure
+- Power lacks accountability
+- Achievement lacks ethics
+
+**Modern Eudoria exists because Eudran fell.**
+
+The 2,000+ years of Balance & Harmony were built on the ashes of 3,000 years of chaos.
+
+Eudran is the ancestor. Eudoria is the heir.
+
+And the Goldenvault ensures we never forget what was lost, so we never repeat what was done.`
             }
         },
         greatFlood: {
