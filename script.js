@@ -5241,6 +5241,152 @@ His refusal to bow to Queen Keket, even at the cost of arrest, demonstrates his 
 
 King Bao is not just a ruler; he is a keeper of history, a prophet of dangers to come, and a father to those who have none.`
             }
+        },
+        ceonEudore: {
+            name: "Ceón Eu'dore",
+            icon: "✨",
+            category: "Royalty & Defenders",
+            titlesPosition: {
+                title: "Titles & Position",
+                content: `**Ceón Eu'dore**
+**The Ceón (Spiritual Leader - meaning "Godly," "Voice of Eudora")**
+**E'udore of Abarah**
+**The Best Ceón the Eonks Have Ever Had**
+
+Holy and Sanctified Leader of the Eudoran Faith`
+            },
+            regionLocation: {
+                title: "Region & Location 🏜️",
+                content: `**Region:** Abarah (the red sand desert region)
+**Base:** Temple courtyard near the River of Blessing
+
+Abarah is a land of extreme spiritual intensity where everything must align with beliefs about divine providence and better days. The Ceón leads his people in this sacred desert landscape, guiding them toward harmony and balance.`
+            },
+            role: {
+                title: "Role 📜",
+                content: `**Primary:** Spiritual leader of the Eonks (followers of the Eudoran faith)
+
+**Duties:**
+- Ensure the unity of harmony and balance among the Eonks
+- Work to ensure the lasting good of the temples
+- Keep the Eudoran faith alive across Abarah
+- Lead synchronized meditation rituals
+- Accept prayer requests and offer gentle blessings
+- Hear confessions and forgive sins on behalf of the Creator and Eudora
+- Provide spiritual and financial responsibility for Abarahians/Eonks
+
+**Authority:** The Ceón is the highest spiritual authority in Abarah, working above the bishops (local spiritual leaders in different cities). The title "Ceón" means "Godly," "Spiritual Leader," or "Voice of Eudora."`
+            },
+            appearance: {
+                title: "Appearance 👤",
+                content: `**Clothing:** Simple linen robes with no ornamentation
+**Accessories:** None - completely barefoot, eschewing any symbols of wealth or status
+**Presence:** Does not radiate power or authority, but rather pure compassion
+
+Ceón Eu'dore's appearance reflects his philosophy: simplicity, humility, and devotion. His bare feet touch the sacred red sands of Abarah, grounding him in his connection to the land and his people.`
+            },
+            personality: {
+                title: "Personality & Traits ⭐",
+                content: `**Compassionate** - Radiates pure compassion in every action and word
+**Humble** - Wears simple robes, refuses symbols of status, lives without personal desires
+**Forgiving** - Chosen to lead the Eonks specifically for his capacity for forgiveness
+**Sacrificial** - Practices profound sacrifice, including 20-day fasts, so his people may have food
+**Quietly Wise** - Rarely speaks, but when he does, his words carry immense weight
+**Patient** - Understanding with new followers and those still finding their path
+**Pure** - Remains a virgin and devotes his entire life to his higher calling`
+            },
+            abilities: {
+                title: "Abilities & Spiritual Practices 🔮",
+                content: `**Synchronized Meditation:**
+Ceón Eu'dore leads meditation rituals where his followers synchronize their breathing and movements with his, creating profound spiritual unity.
+
+**Spiritual Perception:**
+He can perceive when someone has already moved beyond their past wrongs in their heart, allowing him to forgive sins without requiring verbal confession.
+
+**Teaching Through Silence:**
+He often teaches through meditation rather than words, embodying the principle that spiritual truth transcends language.
+
+**Sacred Fasting:**
+Undertakes extreme fasts (such as a 20-day fast during an eclipse) as a sacrifice for his people, ensuring their physical and spiritual nourishment.
+
+**Forgiveness Authority:**
+Forgives sins on behalf of the Creator and Eudora, guiding people away from sin and toward redemption.`
+            },
+            philosophy: {
+                title: "Philosophy & Calling 📖",
+                content: `To be a Ceón, Eu'dore had to give up all personal desires and devote his life to a higher calling. He must remain pure (a virgin, unmarried, without personal ambition) to serve as a conduit for communal healing.
+
+His life embodies the Eonks' collective faith: forgiveness and inner transformation are paramount. He is a living mirror reflecting Abarah's desire for order, peace, and harmony under Eudora's saving grace.
+
+The role of the Ceón is deeply tied to the foundational principles of Abarah, where life is oriented around Eudora's saving grace and the pursuit of peace and harmony.`
+            },
+            relationships: {
+                title: "Relationships 💙",
+                content: `**THE EONKS (His Devout Followers)**
+The Eonks greet Ceón Eu'dore with joyful celebration and view him with profound reverence. They synchronize their breathing and movements with his during meditation, creating a sense of spiritual unity. He is patient and understanding with them, even forgiving those who are new to the Eudoran faith. He is their spiritual father, guiding them toward better days.
+
+**QUEEN EUDORA (Mother Nature)**
+Ceón Eu'dore is deeply devoted to Eudora and works tirelessly to ensure his people maintain the Eudoran faith. He was named after her (Eu'dore = inspired by Eudora), demonstrating his spiritual connection to Mother Nature. He serves as her "Voice" in Abarah, interpreting her will and teaching her principles of harmony and balance.
+
+**MAKANI (Recent Redemption Story)**
+Ceón Eu'dore successfully guided Makani toward spiritual redemption and reconciliation with his father, demonstrating his role as a healer of broken relationships and wounded souls.
+
+**THE BISHOPS (Local Spiritual Leaders)**
+The bishops of Abarah's cities work under Ceón Eu'dore's spiritual authority, implementing his guidance at the local level.`
+            },
+            majorPractices: {
+                title: "Major Spiritual Practices ⚡",
+                content: `**The 20-Day Fast:**
+In preparation for an approaching eclipse, Ceón Eu'dore undertook an intense 20-day fast, sacrificing his own nourishment so that all his people would have food. This profound act of selflessness demonstrates the core of his calling: personal sacrifice for the collective good.
+
+**Synchronized Meditation Rituals:**
+Leads his followers in meditation at the temple courtyard near the River of Blessing, where the Eonks synchronize their breath and movements with his, creating waves of spiritual harmony across Abarah.
+
+**Confession and Forgiveness:**
+People come to Ceón Eu'dore to confess their sins. He listens with compassion, forgives them on behalf of the Creator and Eudora, and gently guides them not to sin anymore. Remarkably, he can sometimes forgive without verbal confession if he perceives the person has already transformed their heart.
+
+**Guiding Lost Souls:**
+His recent work with Makani shows his gift for spiritual redemption—helping the lost find their way back to family, faith, and inner peace.`
+            },
+            currentStatus: {
+                title: "Current Status ✨",
+                content: `**Active and Leading**
+
+Ceón Eu'dore is actively leading the Eonks in their faith across Abarah. He continues to lead synchronized meditation and prayer services in the temple courtyard, particularly in preparation for significant celestial events, such as the approaching eclipse.
+
+**Recent Achievement:**
+Successfully guided Makani toward spiritual redemption and reconciliation with his father, demonstrating his ongoing role as a healer of souls and relationships.`
+            },
+            eudoranFaith: {
+                title: "The Eudoran Faith in Abarah 🙏",
+                content: `**Religion Name:** Eudoran (the faith itself)
+**Practitioners:** Eonks (those who follow the Eudoran faith)
+**Spiritual Leader:** The Ceón (currently Eu'dore)
+**Local Leaders:** Bishops (spiritual leaders in different cities under the Ceón)
+
+**Abarah's Unique Position:**
+Abarah is known for its extreme devotion to Eudora. The Eonks worship Eudora exclusively, not the Creator (Yahuah), and their regional laws and practices differ significantly from those of other regions of Eudoria.
+
+**Two Groups in Abarah:**
+- **Eonks** - Devout followers who worship Eudora and practice the Eudoran faith intensely
+- **Normal Abarahians** - Follow Eudora as Queen, but don't worship her; they respect the Ceón but aren't as devout`
+            },
+            legacy: {
+                title: "Legacy 🙏",
+                content: `**"The Best Ceón the Eonks Have Ever Had"**
+
+Ceón Eu'dore is revered as the finest spiritual leader Abarah has ever known. His profound compassion, willingness to sacrifice (including 20-day fasts for his people), and gift for forgiveness have made him beloved across the Red Sand Desert.
+
+He does not lead through power or authority, but through pure compassion and radical selflessness. His barefoot presence in simple linen robes reminds the Eonks that true holiness requires nothing but a devoted heart.
+
+He is the Voice of Eudora in Abarah, a living embodiment of forgiveness, sacrifice, and spiritual unity.
+
+His life mirrors the collective faith of the Eonks: that forgiveness and inner transformation are the paths to better days, and that harmony and balance can be achieved through devotion to Mother Nature's grace.`
+            },
+            notableWisdom: {
+                title: "Notable Wisdom 💬",
+                content: `Though he rarely speaks, when Ceón Eu'dore does, his words are considered profoundly important. He often teaches through meditation and silent presence rather than lengthy sermons.`
+            }
         }
     },
     eudoricGods: {
