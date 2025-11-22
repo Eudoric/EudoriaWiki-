@@ -8546,22 +8546,53 @@ function showCivilizationDetail(civKey) {
         return formatted;
     }
 
-    // Build sections HTML based on civilization
+    // Helper function to create section ID from title
+    function createSectionId(title) {
+        return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    }
+
+    // Build Table of Contents and Sections
+    let tocHTML = '';
     let sectionsHTML = '';
+    let sectionIndex = 0;
 
     // Get all sections except name, icon, subtitle
-    Object.keys(civ).forEach(sectionKey => {
-        if (sectionKey !== 'name' && sectionKey !== 'icon' && sectionKey !== 'subtitle') {
-            const section = civ[sectionKey];
-            sectionsHTML += `
-                <div class="civ-section">
-                    <h2 class="civ-section-title">${section.title}</h2>
-                    <div class="civ-content">
-                        ${formatCivContent(section.content)}
-                    </div>
+    const sections = Object.keys(civ).filter(key =>
+        key !== 'name' && key !== 'icon' && key !== 'subtitle'
+    );
+
+    // Generate Table of Contents
+    tocHTML = `
+        <div class="civ-toc">
+            <h3 class="civ-toc-title">📋 Table of Contents</h3>
+            <ul class="civ-toc-list">
+                ${sections.map(sectionKey => {
+                    const section = civ[sectionKey];
+                    const sectionId = createSectionId(section.title);
+                    return `<li><a href="#${sectionId}" class="civ-toc-link">${section.title}</a></li>`;
+                }).join('')}
+            </ul>
+        </div>
+    `;
+
+    // Generate Collapsible Sections
+    sections.forEach((sectionKey, index) => {
+        const section = civ[sectionKey];
+        const sectionId = createSectionId(section.title);
+        const isOverview = section.title.toLowerCase() === 'overview';
+        const isExpanded = isOverview; // Only Overview is expanded by default
+
+        sectionsHTML += `
+            <div class="civ-section" id="${sectionId}">
+                <h2 class="civ-section-header ${isExpanded ? 'expanded' : 'collapsed'}" onclick="toggleCivSection('${sectionId}')">
+                    <span class="civ-arrow">${isExpanded ? '▼' : '▶'}</span>
+                    <span class="civ-section-title">${section.title}</span>
+                </h2>
+                <div class="civ-content ${isExpanded ? 'expanded' : 'collapsed'}">
+                    ${formatCivContent(section.content)}
                 </div>
-            `;
-        }
+            </div>
+        `;
     });
 
     const detailHTML = `
@@ -8574,6 +8605,8 @@ function showCivilizationDetail(civKey) {
                 <p class="civ-subtitle">${civ.subtitle}</p>
             </div>
 
+            ${tocHTML}
+
             <div class="civ-body">
                 ${sectionsHTML}
             </div>
@@ -8581,6 +8614,35 @@ function showCivilizationDetail(civKey) {
     `;
 
     contentArea.innerHTML = detailHTML;
+}
+
+// Toggle civilization section collapse/expand
+function toggleCivSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+
+    const header = section.querySelector('.civ-section-header');
+    const content = section.querySelector('.civ-content');
+    const arrow = section.querySelector('.civ-arrow');
+
+    // Toggle expanded/collapsed classes
+    const isExpanded = header.classList.contains('expanded');
+
+    if (isExpanded) {
+        // Collapse
+        header.classList.remove('expanded');
+        header.classList.add('collapsed');
+        content.classList.remove('expanded');
+        content.classList.add('collapsed');
+        arrow.textContent = '▶';
+    } else {
+        // Expand
+        header.classList.remove('collapsed');
+        header.classList.add('expanded');
+        content.classList.remove('collapsed');
+        content.classList.add('expanded');
+        arrow.textContent = '▼';
+    }
 }
 
 // Render Eudoric Gods
