@@ -3192,22 +3192,451 @@ And the Goldenvault ensures we never forget what was lost, so we never repeat wh
         greatFlood: {
             name: "The Great Flood",
             icon: "🌊",
-            subtitle: "When Eudora Reshaped the World",
-            overview: {
-                title: "Overview",
-                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            subtitle: "Eudran to Eudoria: The Cleansing",
+            divineDecision: {
+                title: "The Divine Decision",
+                content: `The Great Flood was not an arbitrary divine wrath.
+
+It was a necessary cosmic transformation to cleanse the world of overwhelming corruption.
+
+**Why the Flood Occurred:**
+
+The Creator, Yahuah, initiated the transformation because ancient Eudran was corrupt, chaotic, and sinful, a world broken beyond repair.
+
+The Eudranese (People of Eudran) were warned many times, but they were unwilling to change their sins.
+
+**The World Was Too Broken to Fix:**
+
+The corruption was not limited to individual poor choices. The very systems of Eudran society, its governments, religions, economic structures, and cultural values, were built upon exploitation, violence, and greed.
+
+The rot was so deep that:
+
+There was no reforming such systems; they were evil from foundation to pinnacle.
+
+**Cycles of Destruction:**
+
+Any good that arose was quickly corrupted or destroyed, making the corruption self-perpetuating, inescapable, and total.
+
+The world had become a diseased, dying Eudran of old.
+
+**Spiritual and Environmental Toxicity:**
+
+The accumulated sins of generations had created a miasma that poisoned souls from birth.
+
+The environment itself had been corrupted.
+
+**Protection for Queen Eudora:**
+
+Yahuah declared He would not permit Her [Eudora] to enter a World corrupted by systematic evil.
+
+The cleansing was necessary to prepare the world so that pure love could enter it safely.
+
+**Cosmic Surgery:**
+
+The Flood was described not as punishment alone, but as:
+
+Cosmic surgery, the removal of cancer that had metastasized throughout the entire world.
+
+**The Creator Wanted to Create Something NEW:**
+
+The primary purpose of the Flood was preparation for a new order:
+
+- **World Reborn:** The world needed to be cleansed, reborn, fresh, ready for a new beginning.
+- **The New Civilization:** The transformation prepared the world for Queen Eudora to build something entirely new, and create what had never existed: a world ruled by Balance and Harmony.
+- **Understanding 'EU':** In Eudoric, 'EU' means Gift.
+
+This is what Suleiman wanted it to be.
+
+The Court of Eu (one of Suleiman's courts in Eudraneth) is of this very nature, a place of divine generosity and love.
+
+The Creator would transform Eudran into Eudoria, The Gift, a world worthy of being given to His daughter.`
             },
-            reshaping: {
-                title: "How Eudora Reshaped the World",
-                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            transferOfAuthority: {
+                title: "The Transfer of Authority",
+                content: `The transfer of authority was a voluntary act by Suleiman, motivated by love and wisdom, and occurred before the Great Flood began.
+
+**Why Did the Creator Take It From Suleiman?**
+
+The Creator took Eudran from Suleiman because Suleiman voluntarily surrendered his authority, recognizing that the crisis was beyond the Eudoric gods' power to save.
+
+**Suleiman's Failure vs. Mortals' Failure:**
+
+The primary cause of the failure was mortals' misuse of free will, which led to systematic evil.
+
+However, Suleiman viewed the crisis as a failure of godly governance (the Eudoric pantheon) to prevent catastrophic evil, acknowledging that:
+
+Wisdom was insufficient for managing conscious freedom.
+
+**Suleiman's Wisdom and Mercy:**
+
+Suleiman's decision was an act of profound wisdom and mercy.
+
+He recognized that the mortals of Eudran required the protection and guidance of the Almighty.
+
+**Choice: Love Over Authority:**
+
+Suleiman's choice was motivated by genuine love for mortal souls who faced extinction.
+
+He chose to serve love rather than rule in its name.
+
+He admitted that his authority had become evil if it served his ego rather than mortal welfare.
+
+**The Conditions of Intervention:**
+
+Yahuah's intervention was conditional upon Suleiman surrendering his authority and preparing the world for complete transformation.
+
+Yahuah wanted to ensure the Eudoric gods clean up your affairs before the new order began.
+
+**The Covenant:**
+
+- **Stripping of Eudoric Authority:** Suleiman transferred all authority over the world he had created to Yahuah, agreeing to compel or convince other Eudoric gods to withdraw their claims to mortal governance.
+- **Accepting a New Hierarchy:** Suleiman accepted that he would cooperate with Yahuah's plans and accept whatever role Yahuah assigned him in the new hierarchy. In the Creator's new world, Suleiman had less authority than he previously possessed.
+- **Fulfilling the Covenant:** With Al'sekemu's rebellion defeated and the War of Gods ended, Suleiman formally transferred all authority over Eudran to Yahuah, fulfilling his covenant regardless of personal cost.
+
+**The Pivotal Moment:**
+
+Suleiman's decision to voluntarily step down and hand the world to a higher authority (Yahuah) was the pivotal moment that allowed the Great Flood (the transformation and cleansing) to occur.
+
+It paved the way for the reign of The Good Gift Queen Eudora.`
             },
-            newRegions: {
-                title: "The 17 New Regions",
-                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            samuelsDeath: {
+                title: "The Final Straw: Samuel's Death",
+                content: `(For Samuel's full story, see: Eudran: Before the Flood)
+
+**Who Was Samuel?**
+
+Samuel was the firstborn son of Suleiman, the God of Wisdom and Wealth.
+
+He was created specifically to embody perfect wisdom without arrogance.
+
+He was known as the Keeper of the Laws.
+
+**His Mission:**
+
+Samuel was sent to live among mortals in the ancient world of Eudran for twenty-nine years as a permanent teacher and protector.
+
+His mission was to provide direct education in cosmic law (the Laws of Eimes) to help mortals resist demonic corruption.
+
+He healed the sick, provided assistance, and taught principles to prepare mortals for a coming great cleansing.
+
+**His Final Teaching:**
+
+In his final days, Samuel revealed the existence of The Creator, the ultimate source of all existence.
+
+He warned mortals that human kingdoms would not save them and that a great cleansing was approaching.
+
+**His Death:**
+
+Samuel voluntarily chose to sacrifice his life to prove that love transcends survival and to protect the mortals he had come to serve. King Boitumelo beheaded him after a false accusation.
+
+His death was fully aware that this decision guaranteed his death at the hands of a corrupt mortal king.
+
+**Why His Death Mattered:**
+
+- **His Death Ended Divine Teaching:** His willing sacrifice demonstrated the mortal world's complete rejection of love. This devastated his father, Suleiman, who withdrew all divine intervention, contributing to the accelerating corruption that eventually made the Flood necessary.
+- **He Prophesied It:** He consistently warned mortals of the coming cleansing.
+- **He Introduced the Creator:** In his final teachings, he named Yahuah. It was this same Creator who later made the ultimate offer to Suleiman to surrender the world for the Great Flood and transformation.
+
+The death of Samuel, the god of redemption and faith, was the final straw for the Creator.
+
+The end of the world was next.`
             },
-            newCovenant: {
-                title: "The New Covenant",
-                content: "**[Content coming soon]**\n\nThis section is currently under development."
+            timing: {
+                title: "The Timing: War of Gods to Flood",
+                content: `The timing was immediate and consequential:
+
+The Great Flood began the very moment the War of Gods concluded and Suleiman formally surrendered his authority.
+
+**The War of Gods:**
+
+The War of Gods lasted four complete lunar cycles, approximately 112 days of continuous cosmic combat.
+
+The war concluded with Al'sekemu's rebellion defeated.
+
+The war was won by Suleiman and the faithful (gods on Suleiman's side) and their allies.
+
+**The Creator's Declaration:**
+
+With the War of Gods concluded and Al'sekemu's rebellion crushed, the Creator made His declaration.
+
+The moment Suleiman formally transferred all authority over Eudran to Yahuah, fulfilling his covenant, Yahuah declared:
+
+**IT IS DONE.**
+
+The three words, IT IS DONE, carried such cosmic authority that they immediately began transforming reality itself.
+
+And the Great Flood began.
+
+**Did the War Cause the Flood?**
+
+The War of Gods did not cause the Flood, but the systematic evil and subsequent destruction wrought, along with centuries of mortal sin, necessitated the transformation.
+
+The war's conclusion triggered the timing of the Flood.
+
+**Was the Flood Always Planned?**
+
+Yes.
+
+The Great Flood was not arbitrary divine wrath, but a cosmic transformation that had been long approaching due to the state of Eudran.
+
+The Creator, Yahuah, had explicitly stated that He would not permit His daughter, Eudora, to enter a World corrupted by systematic evil.
+
+The Flood was necessary:
+
+To prepare it for Eudora's arrival.
+
+The Creator wanted to give Eudora a world, but He would not allow her to come to Eudran.
+
+Suleiman had given the world to the Creator because it was beyond the power of the Eudoric gods to save.
+
+This surrender, made before the War of Gods erupted, was based on the recognition that mortal society had collapsed and required divine intervention.`
+            },
+            catastrophe: {
+                title: "The Catastrophe: Two Years of Water",
+                content: `**Duration:** 2 years
+
+**How It Started:**
+
+It started with rain first.
+
+Then heavy rain so heavy that it looked and felt like hail.
+
+After that, the seas began to rise.
+
+Dams broke.
+
+**What It Looked Like:**
+
+- Constant rain.
+- Massive waves.
+- The ocean just... rose.
+
+**Did It Cover the Entire World?**
+
+Yes.
+
+Even though Eudran had many mountains, the waters covered everything.
+
+**What Happened to the Land:**
+
+The Flood reshaped the world.
+
+- Mountains moved
+- Continents broke apart, creating islands
+- Eudran never had any islands before the Flood
+- The South was never an island; The Flood's destruction created it.
+
+The Creator did not only wash away sins.
+
+He also washed away whatever the gods had done in Eudran, meaning how they shaped the world and divided the land.
+
+The Creator changed everything as if He had created Eudran anew.`
+            },
+            whatWasLost: {
+                title: "What Was Lost",
+                content: `All 53 kingdoms were destroyed.
+
+Every city. Every palace. Every temple. Every monument.
+
+Three thousand years of history erased.
+
+The East alone: All 37 regions vanished.
+
+The Goldenvault has been able to confirm the existence and partial history of only 25 of the original 53 kingdoms.
+
+- **14 kingdoms** are currently under investigation. Evidence exists but is insufficient.
+- **14 kingdoms** are believed to be lost forever, their names, cultures, achievements, and tragedies completely erased from history.
+
+**What else was lost:**
+
+- The systems of oppression (governments, religions, economies built on greed)
+- The toxic spiritual atmosphere (the miasma that poisoned souls)
+- The corrupted land (reshaped by the Creator)
+- The divine architecture (whatever the Eudoric gods had built was washed away)
+
+The Flood was not just physical destruction.
+
+It was cosmic reset.`
+            },
+            survivors: {
+                title: "The Survivors: The Seven Families",
+                content: `**Were there survivors?**
+
+Yes.
+
+**How Many Survived?**
+
+Seven families survived the Great Flood.
+
+These families were chosen and saved by the Creator, Yahuah, through His faithful servant, Prophet Kaiah.
+
+**How Were They Saved?**
+
+These families were saved in a specific way ordered by the Creator, in a special place they could not leave, sometimes called the Promised Land.
+
+Prophet Kaiah built a vessel as instructed by the Creator.
+
+The animals survived because the Prophet, the Creator, trusted him the most.
+
+**The Seven Families:**
+
+**1. The Pannak Family (10 members)**
+The first family the Creator chose to save.
+
+**2. The Prophet's Family (led by Prophet Kaiah)**
+Prophet Kaiah was the head of the seven families and also stood by Samuel (the god who was martyred before the Flood).
+
+**3. The Ora Family (7 members)**
+- **Father:** Lake
+- **What Happened:** Three months after the Great Flood, Lake turned against the Creator's order, which caused him to break away from the family and walk alone for the rest of his life.
+
+**4. The Bronor Family (12 members)**
+- **Led by:** Abarah
+- **Legacy:** Abarah was the creator of the Abarah region (in modern Eudoria). He was also the one who created the Eonks (children of Eudora).
+
+**5. The Batochee Family (8 members)**
+- **Tragedy:** Ashem, the son of Dang, killed his brother over a lamb and started a riot within the family. The Creator sent him away.
+
+**6. The Hoke Family (4 members)**
+- **Led by:** Turu
+- **What Happened:** Turu took his family away from the rest to start anew. It is said he settled in the region Dora before it was called Deaven, but this has not been confirmed.
+
+These six families became the ancestors of the post-Flood world.
+
+They were Suleiman's mortal survivors of the old world, carrying memories and traditions of ancient Eudran.`
+            },
+            whatSurvived: {
+                title: "What Survived",
+                content: `**Physical Structures:**
+
+Did any surface structures survive?
+
+No.
+
+Everything was made anew, to the Creator's liking.
+
+The Creator not only washed away sins but also whatever the gods had done in Eudran, meaning how they shaped the world and how they separated the land.
+
+The Creator changed everything as if He had created Eudran anew.
+
+**Set Survived Underground:**
+
+The Set civilization, which had retreated underground centuries before, survived the Flood.
+
+They continued their technological advancement while the surface world drowned.
+
+**Knowledge:**
+
+Did any knowledge survive?
+
+Yes, barely.
+
+The only knowledge that survived was contained in two codices:
+
+- **The Eudoric System** (governance, cosmic law, divine hierarchy)
+- **Lun World, Eudran** (the history of the ancient world before the Flood)
+
+If it weren't for these two codices, the world wouldn't know about their gods and systems.
+
+(These codices were later joined by the third: **Our World, Eudoria**, documenting the modern civilization.)
+
+**Animals/Creatures:**
+
+Yes, animals survived.
+
+They were with the Prophet, whom the Creator trusted the most.`
+            },
+            aftermath: {
+                title: "The Aftermath: A Blank Slate",
+                content: `After 2 years, the Flood stopped.
+
+**How Did It End?**
+
+The waters receded.
+
+They were absorbed into the earth.
+
+**What Was Left?**
+
+A blank slate.
+
+But it depended on where the families were.
+
+The seven families were saved in the far North, where it was mostly cold.
+
+When the waters receded, they saw green grass for the first time.
+
+Norvayn cleared first, and then the rest of the world.
+
+**Where Did the Survivors Emerge?**
+
+Only up North.
+
+The seven families emerged into a world made new, cold, green, and empty.
+
+---
+
+**THE IMMEDIATE AFTERMATH**
+
+**Did the Creator Appear?**
+
+No, not at all.
+
+The Creator did not appear to the survivors.
+
+Instead, He created the first Mankind in Chaka Hyem and Chaka (the first humans of the new world).
+
+**Important Distinction:**
+
+- The seven families = Suleiman's mortals (survivors of ancient Eudran)
+- Hyem and Chaka = The Creator's new humans (freshly created post-Flood)
+
+Though it seemed the same, Suleiman's mortals believed they were different.
+
+**What Did the Survivors Do First?**
+
+The survivors:
+
+- Rebuilt (constructed shelters, planted crops, tried to survive)
+- Mourned (for the world they lost, for everyone who died)
+- Searched for others (hoping to find more survivors)
+- Cried out to Suleiman (calling for their god, who had surrendered the world)
+
+**How Long Before Eudora Arrived?**
+
+Eudora arrived a century later, when the world was already structured.
+
+By the time she came, the survivors had already:
+
+- Rebuilt communities
+- Established new kingdoms
+- Begun to spread across the land
+
+Eudora did not arrive to a blank slate.
+
+She arrived to a world in the process of rebuilding—and she would transform it into something far greater than what came before.`
+            },
+            promise: {
+                title: "The Promise: A World Reborn",
+                content: `The Great Flood was not the end.
+
+It was the beginning.
+
+**What the Flood Accomplished:**
+
+- Cleansed the world of systematic evil
+- Prepared the world for pure love to enter it
+- Reset the land to the Creator's design
+- Preserved the faithful (the seven families, the animals, knowledge in the codices)
+- Made way for Eudora to build something entirely new
+
+The Great Flood destroyed Eudran.
+
+But it created the foundation for Eudoria.
+
+**EU = Gift.**
+
+And the Creator gave the world cleansed, reborn, and ready to His daughter.`
             }
         },
         unifiedEra: {
