@@ -4446,6 +4446,156 @@ The world that once required divine cleansing has become worthy of being called 
 
 **Eudoria endures.**`
             }
+        },
+        faq: {
+            title: "Frequently Asked Questions About the Civilizations of Eudoria",
+            icon: "❓",
+            subtitle: "Questions & Answers About Ancient Eudran, The Great Flood, and The Unified Era",
+            questions: [
+                // ANCIENT EUDRAN
+                {
+                    id: "civfaq1",
+                    category: "Ancient Eudran",
+                    question: "Why did Ancient Eudran fail if it lasted 3,000 years?",
+                    answer: `Ancient Eudran's longevity doesn't indicate success; it reflects slow and systemic corruption. The civilization was built on unrestricted free will combined with competitive governance structures, which led to cycles of achievement followed by destruction. Over 3,000 years, the rot became so profound that reform was impossible. The systems themselves, governments, religions, and economies were evil from foundation to pinnacle. Any good that arose was swiftly corrupted, perpetuating the cycle. The Great Flood wasn't a sudden punishment; it was the necessary end for a world that had been dying for centuries.<br><br><em>Learn more: See [Ancient Eudran: The Corruption] and [The Great Flood: The Divine Decision]</em>`
+                },
+                {
+                    id: "civfaq2",
+                    category: "Ancient Eudran",
+                    question: "What were the 53 kingdoms? Can I see a full list?",
+                    answer: `Ancient Eudran consisted of 53 kingdoms, domains, cities, and territories scattered across the world. However, the Great Flood destroyed all records and structures, making complete documentation impossible. The Goldenvault has confirmed only 25 kingdoms, with 14 under investigation and 14 lost forever. The Goldenvault maintains a commitment to Verification First, refusing to speculate about kingdoms they cannot definitively prove existed.<br><br><em>Learn more: See [Ancient Eudran: The 53 Kingdoms] and [Q34: Why can the Goldenvault only confirm 25 kingdoms?]</em>`
+                },
+                {
+                    id: "civfaq3",
+                    category: "Ancient Eudran",
+                    question: "Why is the West called 'The Empty Heart'? Why was it uninhabited?",
+                    answer: `The West (Wesari) remained essentially uninhabited for most of Eudran's 3,000-year history, seemingly protected or reserved by some force that prevented permanent mortal civilization. To this day, no one knows why the West remained empty. Theories include divine protection, a curse, or sacred ground reserved for a future purpose. What we do know is that this empty land would later become the foundation of Eudoria, specifically, it's where Queen Eudora established her first region (originally called Eudoria, later renamed The Heartland). Some believe the West was always meant to be hers.<br><br><em>Learn more: See [Ancient Eudran: The Geography of Chaos] and [The Unified Era: Eudora's Arrival]</em>`
+                },
+                {
+                    id: "civfaq4",
+                    category: "Ancient Eudran",
+                    question: "Were the Eudoric gods trying to save Eudran, or did they give up?",
+                    answer: `The Eudoric gods tried to guide and protect Ancient Eudran but realized mortal misuse of free will caused evil beyond their power. Suleiman, God of Wisdom and Wealth, said wisdom was insufficient for managing conscious freedom. After mortals rejected divine guidance, including Samuel's murder, many gods withdrew intervention. Ta'hanne stopped controlling agricultural cycles for oppressive communities, causing famines. Sove withheld weather control, leading to unchecked natural disasters. The gods didn't give up carelessly but stepped back to let mortals face their choices, recognizing only Yahuah, the Creator, could cleanse and remake the world.<br><br><em>Learn more: See [Ancient Eudran: The Corruption] and [The Great Flood: The Transfer of Authority]</em>`
+                },
+                {
+                    id: "civfaq5",
+                    category: "Ancient Eudran",
+                    question: "What's the difference between Eudran's geography and Eudoria's geography?",
+                    answer: `Ancient Eudran had 53 fragmented kingdoms with no central authority, divided into four loosely defined regions shaped by conflict and divine intervention, but these weren't organized unions. After the Great Flood, Eudoria was reshaped into 17 regions within four unions: Wesari, Estara, Sundra, and Norvayn that share ancestral names but are completely reorganized. The South was never islands; the flood shattered the continent, creating 92,000+ islands in Sundra. The West, once empty, became Eudoria's core.<br><br><em>Learn more: See [Ancient Eudran: The Geography of Chaos] and [The Unified Era: The Four Unions]</em>`
+                },
+                // THE GREAT FLOOD
+                {
+                    id: "civfaq6",
+                    category: "The Great Flood",
+                    question: "Why did the Creator flood the world instead of just fixing the corruption?",
+                    answer: `Ancient Eudran's corruption was systemic, rooted in exploitation, violence, and greed within its society's foundations, governments, religions, economies, and culture. It was impossible to reform these inherently evil systems, which had caused generations of sins, poisoning souls, and corrupting the environment. The Great Flood was seen as heavenly surgery to remove the world's cancer, and the Creator would not let Eudora, His daughter, enter a world tainted by systemic evil. Cleansing was needed to create a pure space for love.<br><br><em>Learn more: See [The Great Flood: The Divine Decision] and [Ancient Eudran: Why It All Fell]</em>`
+                },
+                {
+                    id: "civfaq7",
+                    category: "The Great Flood",
+                    question: "Why did Suleiman give the world to Yahuah? Did he fail?",
+                    answer: `Suleiman voluntarily surrendered his authority over Eudran to Yahuah (the Creator) because he recognized that the crisis was beyond the Eudoric gods' power to save. While the primary failure was mortals' misuse of free will, Suleiman viewed it as a failure of godly governance to prevent catastrophic evil. His surrender was not weakness but profound wisdom and mercy; he chose to serve love rather than rule in the name of love. Suleiman admitted that his authority had become evil if it served his ego rather than the welfare of mortals. He recognized that the mortals need more than just his wisdom. This voluntary act of humility and love, stepping down and handing the world over to a higher authority, was the pivotal moment that enabled the Great Flood and the transformation to occur, paving the way for the reign of Queen Eudora ("The Good Gift").<br><br><em>Learn more: See [The Great Flood: The Transfer of Authority]</em>`
+                },
+                {
+                    id: "civfaq8",
+                    category: "The Great Flood",
+                    question: "How did the seven families survive? Why were they chosen?",
+                    answer: `Seven families survived the Great Flood through divine protection. They were saved in a specific way, ordered by the Creator, in a special place they could not leave (sometimes called the Promised Land). Prophet Kaiah, who stood by Samuel and was the head of the seven families, built a boat as instructed by the Creator. The families were saved in the far North (ancient Norvayn), where it was mostly cold. They were chosen for their faithfulness and righteousness—the Pannak family (10 members) was the first family the Creator decided to save. These survivors were Suleiman's mortals (pre-Flood humans) who carried the memories and traditions of Ancient Eudran, distinguishing them from the Creator's new humans (Hyem and Chaka), created after the Flood. The animals also survived with the Prophet, as the Creator trusted him most.<br><br><em>Learn more: See [The Great Flood: The Survivors - The Seven Families]</em>`
+                },
+                {
+                    id: "civfaq9",
+                    category: "The Great Flood",
+                    question: "What happened to Lake from the Ora family? Why did he turn against the Creator?",
+                    answer: `Lake was the father of the Ora family (7 members), one of the seven families saved from the Great Flood. Three months after the Flood ended, Lake turned against the Creator's order, which caused him to break away from his family and walk alone for the rest of his life. The specific nature of his transgression, the order he violated, and why he remained part of the tragic early history of the post-Flood world. Lake disobeyed the creator's order; he wanted to rule the world. Be first—that was not something the creator wished to see in his new world. The creator told Lake to walk and never stop. Lake had to leave his family and was warned not to chase after him, or their punishment would be tenfold.<br><br><em>Learn more: See [The Great Flood: The Survivors - The Seven Families]</em>`
+                },
+                {
+                    id: "civfaq10",
+                    category: "The Great Flood",
+                    question: "Did the Flood happen immediately after the War of Gods?",
+                    answer: `Yes. The timing was immediate and consequential. The War of Gods lasted four months and concluded with Al'sekemu's rebellion being defeated. Suleiman and the faithful gods won the war. The very moment the War of Gods ended and Suleiman formally transferred all authority over Eudran to Yahuah (fulfilling his covenant), the Creator's three words carried such cosmic authority that they immediately began transforming reality itself, and the Great Flood started to. The War of Gods did not cause the Flood; The Flood was three days later.<br><br><em>Learn more: See [The Great Flood: The Timing - War of Gods to Flood] and [Eudoric Tab: Divine History - War of Gods]</em>`
+                },
+                {
+                    id: "civfaq12",
+                    category: "The Great Flood",
+                    question: "What does 'IT IS DONE' mean? Why are those three words so powerful?",
+                    answer: `"IT IS DONE" were the three words spoken by Yahuah (the Creator) when Suleiman transferred all authority over Eudran to Him. These words carried cosmic authority, transforming reality. When the Creator speaks with absolute authority, His words reshape reality. "IT IS DONE" signified the end of the old world, the completion of the covenant, and the start of transformation. It marked the end of mercy and patience, and the beginning of cosmic surgery. The phrase symbolizes divine finality. When the Creator declares something done, it is irreversible. The Great Flood began immediately after those words were spoken.<br><br><em>Learn more: See [The Great Flood: The Timing]</em>`
+                },
+                {
+                    id: "civfaq13",
+                    category: "The Great Flood",
+                    question: "If the Flood destroyed everything, how do we know about Ancient Eudran's history?",
+                    answer: `Two ancient codices survived the Great Flood and are the main sources for Eudran's history: The Eudoric System (governance, cosmic law, divine hierarchy), and ILun World, Eudran (the past before the Flood). Created by E'kar.<br><br><em>Learn more: See [The Great Flood: What Survived] and [Eudoric Tab: Sacred Knowledge - The Three Codices]</em>`
+                },
+                // THE UNIFIED ERA
+                {
+                    id: "civfaq14",
+                    category: "The Unified Era",
+                    question: "Why did Eudora arrive 100 years AFTER the Flood instead of immediately?",
+                    answer: `Suleiman asked the creator not to bring Eudora yet. He wanted her to enter a structured world prepared for her. Suleiman wanted the world to get ready for Eudora. It took 100 years to do so. The world had never experienced Mother Nature, and this was an experience for everyone.<br><br><em>Learn more: See [The Unified Era: The Century of Rebuilding] and [The Unified Era: Eudora's Arrival]</em>`
+                },
+                {
+                    id: "civfaq15",
+                    category: "The Unified Era",
+                    question: "What's the difference between Afriyah and Eudora?",
+                    answer: `Afriyah and Eudora are the same being at different spiritual stages. Afriyah was her original, heavenly name, meaning "The One Who Brings Forth Life," given to her when the Creator breathed life into her. The Angel Raphael transformed her from a spirit into a conscious being. As Afriyah, she was passionate, curious, and emotionally turbulent, prone to loneliness and rebellion. During her spiritual growth, she underwent divine judgment and a sacred ceremony at the hands of Suleiman and was renamed Eudora, meaning "Good Gift." This change brought healing and maturity; Afriyah was rebellious, and Eudora is a sovereign queen.<br><br><em>Learn more: See [The Unified Era: Eudora's Arrival]</em>`
+                },
+                {
+                    id: "civfaq16",
+                    category: "The Unified Era",
+                    question: "Is Eudora a goddess or the Creator's daughter? What does that mean?",
+                    answer: `Eudora is the Creator's spiritual daughter, created through divine breath, not biologically. Yahuah is her Father, calling her "My daughter," and "Little Garden." She was made to rule Eudoria as her Father's instrument, embodying the Creator's 10 Commandments and the Law of Ilun. She differs from Eudoric gods, having a strictly heavenly origin, not from Eudraneth or Ta'hanne. She is both divine and a bridge between heaven and mortals.<br><br><em>Learn more: See [The Unified Era: Eudora's Arrival - Her Relationship to the Creator]</em>`
+                },
+                {
+                    id: "civfaq17",
+                    category: "The Unified Era",
+                    question: "What is the 'Concept of Eudoria'? How is it different from just 'Eudoria'?",
+                    answer: `"Eudoria" has three meanings: (1) The world's name after the Great Flood, (2) The original region Eudora ruled before unification (later renamed The Heartland), and (3) Suleiman's Concept of Eudoria, his restructuring of reality that shifts cosmic authority and unifies the world. The Concept includes the world renaming, a unified rule over 17 regions, the Ilun/Dara duality (Eudora as Light, Suleiman as Law), the Laws of Eimes, Eudora's authority, and the principles of Balance & Harmony. Suleiman created it after observing new mortal behaviors, replacing 'Eudran' with 'Eudoria' as "the beginning of all things." It explains why Eudoria endures over 2,000 years, outlasting Eudran's 3,000 before collapsing.<br><br><em>Learn more: See [The Unified Era: The Concept of Eudoria]</em>`
+                },
+                {
+                    id: "civfaq18",
+                    category: "The Unified Era",
+                    question: "Do regional kings and queens still exist, or does Eudora rule everything directly?",
+                    answer: `Regional kings and queens govern their territories based on local cultures but acknowledge Eudora's ultimate authority, meaning 'mortal royalties bow to her.' She is the highest sovereign, with legitimacy flowing from her. Regional rulers report to her, often via Protectors like Maui, but retain local autonomy. Her authority permits royal diversity while ensuring cosmic unity. 'She is first on the heir' signifies that all succession claims derive legitimacy from her cosmic authority. As the embodiment of Ilun (Law 1—Origin, Creation, Light), her will is the ultimate law in Eudoria. The Creator rules through her, and nothing above Mother Nature in Eudoria. Regional governance serves her vision of Balance and Harmony.<br><br><em>Learn more: See [The Unified Era: The Concept of Eudoria - What It Means]</em>`
+                },
+                {
+                    id: "civfaq19",
+                    category: "The Unified Era",
+                    question: "What are the Four Unions? Are they the same as Ancient Eudran's geography?",
+                    answer: `The Four Unions (Wesari, Estara, Sundra, Norvayn) are the political organization of Eudoria, established after the Great Flood by the O.S.K.B. system. Named after children of Ta'hanne and Sove, they represent a reorganized world, not the chaotic geography of Ancient Eudran. They are not the same as Eudran; Eudran never had unions or even regions. The O.S.K.B. created this system to ensure that unions remained separate. Although the concept of Eudoria changed that, the union remained.<br><br><em>Learn more: See [The Unified Era: The Four Unions]</em>`
+                },
+                // CIVILIZATIONS IN GENERAL
+                {
+                    id: "civfaq20",
+                    category: "Civilizations in General",
+                    question: "Were there other civilizations besides the 53 kingdoms of Eudran?",
+                    answer: `Yes. During Ancient Eudran's time, several civilizations existed among the 53 kingdoms: (1) Set—the world's first advanced technological civilization, founded by Suleiman, which retreated underground and survived the Flood; (2) The Abarah Empire the most terrifying empire before Eudoria, ruling for 492 years through military might; (3) Other early dynasties Gex (232 years), Yuma (241), Sayorzé (290), Xsaui (301), Taine (310), and Wartmoon (321). All were destroyed in the Great Flood except Set, who survived underground. The modern Abarah region in Eudoria is named after the empire, a reminder of the past.<br><br><em>Learn more: See [Ancient Eudran: Contemporary Civilizations]</em>`
+                },
+                {
+                    id: "civfaq21",
+                    category: "Civilizations in General",
+                    question: "What happened to the Abarah Empire?",
+                    answer: `The Abarah Empire was a dynasty that fought against other kingdoms to take control. The Abarah was named after Emperor Abarahan. The Abarah Empire completely controls the east and north of the world. They were so powerful that they almost took over the world and fought against the gods. The son of Abarahan, King Boitumelo, beheaded Samuel after a false accusation. The Great Flood destroyed whatever remained of the Abarah Empire's physical presence. In Eudoria, the Abarah region, one of the 17 regions, is named after this ancient empire, a deliberate reminder of the past. Interestingly, Abarah, the leader of the Bronor family, one of the seven families saved from the Flood, was also the creator of the modern Abarah region and the one who created the Eonks (children of Eudora). The region carries the weight of its namesake's history while striving to embody new principles of Balance and Harmony.<br><br><em>Learn more: See [Ancient Eudran: Contemporary Civilizations] and [The Great Flood: The Survivors]</em>`
+                },
+                // META QUESTIONS
+                {
+                    id: "civfaq22",
+                    category: "Meta Questions",
+                    question: "Why can the Goldenvault only confirm 25 of the 53 kingdoms?",
+                    answer: `The Goldenvault upholds truth and Verification First, refusing to fabricate history or fill gaps with speculation. Out of 53 kingdoms of Ancient Eudran, only 25 are confirmed due to the destruction caused by the Great Flood, which wiped out records, cities, and civilizations. The preceding War of Gods, led by Al'sekemu, tore Eudran apart. Mountains collapsed, seas boiled, and civilizations fell. The East lost all 37 of its regions. Eudran also endured other devastations beyond the Flood. Currently, 14 kingdoms are under investigation with some evidence but no proof, and 14 are believed lost forever, their cultures erased. The Goldenvault states that these gaps are not failures of scholarship but true remnants of catastrophe, representing lost histories.<br><br><em>Learn more: See [Ancient Eudran: The Incomplete Record]</em>`
+                },
+                {
+                    id: "civfaq23",
+                    category: "Meta Questions",
+                    question: "What does 'Verification First' mean?",
+                    answer: `"Verification First" is the founding principle of the Goldenvault (one of the Four Pillars of Wakan), which maintains and preserves Eudoria's historical records. It means the Goldenvault refuses to fabricate history, fill gaps with speculation, or claim certainty about things they cannot definitively prove. Suppose evidence for a kingdom's existence is fragmentary, contradictory, or unverifiable by their research standards. In that case, they will not include it in official historical records, even if it means acknowledging massive gaps in knowledge. This commitment to truth over completeness is what makes the Goldenvault's work trustworthy. They would rather say "we don't know" than invent a comfortable lie. The principle honors the ancestors by remembering them truthfully, not completely. It's a radical rejection of propaganda and historical revisionism, both of which contributed to the corruption of Ancient Eudran. "Verification First" ensures that Eudoria's history is built on truth, even when that truth is painful or incomplete.<br><br><em>Learn more: See [Ancient Eudran: The Incomplete Record] and [Modern Eudoria: The Four Pillars]</em>`
+                },
+                {
+                    id: "civfaq24",
+                    category: "Meta Questions",
+                    question: "Why are 14 kingdoms 'lost forever'?",
+                    answer: `The 14 kingdoms classified as "lost forever" by the Goldenvault are those for which absolutely no evidence survived the Great Flood, the War of Gods, and the subsequent reshaping of the world. Their existence can only be inferred mathematically (we know there were 53 kingdoms total; 25 confirmed + 14 under investigation = 39, leaving 14 unaccounted for). These kingdoms' names, cultures, achievements, languages, and tragedies have been completely erased from history. No ruins remain. No oral traditions survived. No documents exist. Even the two codices that survived the Flood (The Eudoric System and ILun World, Eudran) don't mention them either because they were destroyed before the codices were written, or because the sections documenting them were lost. The Goldenvault mourns these 14 kingdoms as irreversible losses for humanity. They represent entire civilizations, possibly thousands or millions of people, whose stories will never be known. The Goldenvault treats these gaps as sacred reminders of the true cost of Ancient Eudran's collapse.<br><br><em>Learn more: See [Ancient Eudran: The Incomplete Record]</em>`
+                }
+            ]
         }
     },
     eudoricGods: {
@@ -8906,6 +9056,8 @@ function navigateTo(view) {
         showCivilizationDetail('greatFlood');
     } else if (view === 'unified-era') {
         showCivilizationDetail('unifiedEra');
+    } else if (view === 'civilizations-faq') {
+        renderCivilizationsFAQ();
     } else if (view === 'eudraneth') {
         renderEudraneth();
     } else if (view === 'laws-of-eimes') {
@@ -9693,18 +9845,20 @@ function renderCivilizationsOverview() {
     const contentArea = document.getElementById('contentArea');
     const civs = eudoriaData.civilizations;
 
-    // Create civilization cards for overview
-    const civCardsHTML = Object.keys(civs).map(civKey => {
-        const civ = civs[civKey];
+    // Create civilization cards for overview (exclude FAQ)
+    const civCardsHTML = Object.keys(civs)
+        .filter(civKey => civKey !== 'faq')
+        .map(civKey => {
+            const civ = civs[civKey];
 
-        return `
-            <div class="god-card" onclick="showCivilizationDetail('${civKey}')">
-                <div class="god-card-icon" style="font-size: 4rem;">${civ.icon}</div>
-                <h3>${civ.name}</h3>
-                <p class="god-card-titles" style="font-style: italic; color: #5a8f5a;">${civ.subtitle}</p>
-            </div>
-        `;
-    }).join('');
+            return `
+                <div class="god-card" onclick="showCivilizationDetail('${civKey}')">
+                    <div class="god-card-icon" style="font-size: 4rem;">${civ.icon}</div>
+                    <h3>${civ.name}</h3>
+                    <p class="god-card-titles" style="font-style: italic; color: #5a8f5a;">${civ.subtitle}</p>
+                </div>
+            `;
+        }).join('');
 
     contentArea.innerHTML = `
         <div class="gods-pantheon">
@@ -9857,6 +10011,92 @@ function toggleCivSection(sectionId) {
         header.classList.add('expanded');
         content.classList.remove('collapsed');
         content.classList.add('expanded');
+        arrow.textContent = '▼';
+    }
+}
+
+// Render Civilizations FAQ
+function renderCivilizationsFAQ() {
+    const contentArea = document.getElementById('contentArea');
+    const faq = eudoriaData.civilizations.faq;
+
+    // Group questions by category
+    const categories = {
+        'Ancient Eudran': [],
+        'The Great Flood': [],
+        'The Unified Era': [],
+        'Civilizations in General': [],
+        'Meta Questions': []
+    };
+
+    faq.questions.forEach(q => {
+        if (categories[q.category]) {
+            categories[q.category].push(q);
+        }
+    });
+
+    // Build FAQ HTML with categories
+    let faqHTML = '';
+    Object.keys(categories).forEach(categoryName => {
+        const questions = categories[categoryName];
+        if (questions.length > 0) {
+            faqHTML += `
+                <div class="civ-faq-category">
+                    <h2 class="civ-faq-category-title">${categoryName}</h2>
+                    <div class="civ-faq-questions">
+                        ${questions.map((q, index) => `
+                            <div class="civ-faq-item">
+                                <button class="civ-faq-question" onclick="toggleCivFAQ('${q.id}')">
+                                    <span class="civ-faq-arrow">▶</span>
+                                    <span class="civ-faq-question-text">${q.question}</span>
+                                </button>
+                                <div class="civ-faq-answer collapsed" id="${q.id}">
+                                    ${q.answer}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+    });
+
+    const detailHTML = `
+        <div class="civ-profile">
+            <button class="back-button" onclick="renderCivilizationsOverview()">← Back to Civilizations</button>
+
+            <div class="civ-header">
+                <div class="civ-icon">${faq.icon}</div>
+                <h1 class="civ-title">${faq.title}</h1>
+                <p class="civ-subtitle">${faq.subtitle}</p>
+            </div>
+
+            <div class="civ-faq-container">
+                ${faqHTML}
+            </div>
+        </div>
+    `;
+
+    contentArea.innerHTML = detailHTML;
+}
+
+// Toggle FAQ answer visibility
+function toggleCivFAQ(faqId) {
+    const answer = document.getElementById(faqId);
+    const button = event.target.closest('.civ-faq-question');
+    const arrow = button.querySelector('.civ-faq-arrow');
+
+    const isExpanded = answer.classList.contains('expanded');
+
+    if (isExpanded) {
+        // Collapse
+        answer.classList.remove('expanded');
+        answer.classList.add('collapsed');
+        arrow.textContent = '▶';
+    } else {
+        // Expand
+        answer.classList.remove('collapsed');
+        answer.classList.add('expanded');
         arrow.textContent = '▼';
     }
 }
@@ -19517,6 +19757,65 @@ function buildSearchIndex() {
             view: 'eudora-profile',
             icon: '🌿'
         });
+    }
+
+    // Index Civilizations
+    if (eudoriaData.civilizations) {
+        const civs = eudoriaData.civilizations;
+
+        // Index Ancient Eudran
+        if (civs.ancientEudran) {
+            index.push({
+                type: 'Civilization',
+                category: 'History',
+                title: civs.ancientEudran.name,
+                content: civs.ancientEudran.subtitle || '',
+                keywords: 'ancient eudran 53 kingdoms flood history',
+                view: 'ancient-eudran',
+                icon: '🏛️'
+            });
+        }
+
+        // Index The Great Flood
+        if (civs.greatFlood) {
+            index.push({
+                type: 'Civilization',
+                category: 'History',
+                title: civs.greatFlood.name,
+                content: civs.greatFlood.subtitle || '',
+                keywords: 'great flood yahuah suleiman cleansing',
+                view: 'great-flood',
+                icon: '🌊'
+            });
+        }
+
+        // Index The Unified Era
+        if (civs.unifiedEra) {
+            index.push({
+                type: 'Civilization',
+                category: 'History',
+                title: civs.unifiedEra.name,
+                content: civs.unifiedEra.subtitle || '',
+                keywords: 'unified era balance harmony eudora modern',
+                view: 'unified-era',
+                icon: '🌿'
+            });
+        }
+
+        // Index Civilizations FAQ
+        if (civs.faq && civs.faq.questions) {
+            civs.faq.questions.forEach(faq => {
+                index.push({
+                    type: 'FAQ',
+                    category: 'Civilizations FAQ',
+                    title: faq.question,
+                    content: faq.answer.replace(/<[^>]*>/g, '').substring(0, 200),
+                    keywords: faq.question + ' ' + faq.answer.replace(/<[^>]*>/g, '') + ' ' + faq.category,
+                    view: 'civilizations-faq',
+                    icon: '❓'
+                });
+            });
+        }
     }
 
     return index;
