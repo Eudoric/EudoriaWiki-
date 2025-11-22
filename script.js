@@ -5100,6 +5100,149 @@ Gods provide vision and protection, mortals make it real.
 Different threats require different defenders—Protectors (global divine), Guardians (regional divine), Sub-Guardians (empowered humans), Landkeepers (mortal warriors).`
         }
     },
+    royaltyDefenders: {
+        kingBao: {
+            name: "King Bao Xingyun",
+            icon: "👑⭐",
+            category: "Royalty & Defenders",
+            titlesPosition: {
+                title: "Titles & Position",
+                content: `**King Bao Xingyun of Xingyun, Xuerai**
+**Leader Among Leaders of Xuerai / The Norvayn Union**
+**Humble Sovereign of Xingyun**
+
+Position granted by Queen Eudora`
+            },
+            regionLocation: {
+                title: "Region & Location 🏛️",
+                content: `**Kingdom:** Xingyun (one of five kingdoms within Xuerai)
+**Union:** Norvayn Union (North)
+**Grand Temple:** Blue and gold structure serving as the heart of Xingyun
+
+King Bao's grand temple in Xingyun is a magnificent structure of blue and gold that serves as the heart of his kingdom, offering guidance, protection, and hope to his people. The ancient building is supported by tall blue pillars decorated with golden writing, associated with the Westasia region (west of Norvayn Union, encompassing parts of Zendonia and Kingsland).
+
+His palace is notably modest, focused on healing rather than warfare. His massive home is open to the Xingyun people and serves as a sanctuary for those without homes anyone can live in his temple.`
+            },
+            role: {
+                title: "Role 📜",
+                content: `**Primary:** King and wise ruler of Xingyun Kingdom
+**Secondary:** Leader of the Norvayn Union (chosen by Queen Eudora)
+**Mentor to:** Li Dian (General of Xingyun)
+**Authority:** Holds absolute authority as the chosen leader of the Norvayn Union while working under Queen Eudora
+
+King Bao is considered an elder figure embraced by Queen Eudora, a devoted follower of Mother Nature who provides guidance, protection, and hope to his people.`
+            },
+            appearance: {
+                title: "Appearance 👤",
+                content: `**Age:** Over 300 years old (was barely 50 when the Sandman was sealed by five gods)
+**Height:** Under five feet tall (member of the Ryu tribe, a clan of smaller people)
+**Distinctive Feature:** Majestic, long white beard that sometimes trails the ground, often woven with silk thread and scented oils
+**Eyes:** Physically blind (eyes closed or sightless)
+**Carried Items:**
+- The Cane of Shi (handle shaped like a troll's clenched fist)
+- Blue jewel-encrusted cane
+
+Despite his small stature, King Bao carries himself with undeniable sovereignty and grace.`
+            },
+            personality: {
+                title: "Personality & Traits ⭐",
+                content: `**Wise** - Renowned across regions for his profound wisdom and counsel
+**Humble** - Praised for his humility despite his immense power and authority
+**Patient** - Believes some fights require the mind of a patient man rather than a brutal mentality
+**Generous** - Has helped neighboring kingdoms: provided food to Yosuke, sent warriors to Ji-Hu during rebellion, opened temples for Meng pilgrims
+**Perceptive** - Despite blindness, possesses profound inner perception that sees far beyond physical sight`
+            },
+            abilities: {
+                title: "Abilities & Powers 🔮",
+                content: `**Inner Sight:**
+Though physically blind, King Bao can sense presence and perceive unspoken truths or secrets that others cannot see, including hidden things like Seraphina's lost Primrose power.
+
+**Extraordinary Hearing:**
+His hearing is far superior to anyone else's, allowing him to perceive the world in ways sight cannot.
+
+**Historical Knowledge:**
+Keeper of history and knowledge, understanding lost relics, vaults, and artifacts of power.
+
+**Prophetic Awareness:**
+Warns of geopolitical dangers based on predictions or dreams, such as foreseeing the impending attack by the Meng Dynasty.`
+            },
+            history: {
+                title: "History & Achievements 📖",
+                content: `King Bao has ruled Xingyun for over 300 years, maintaining a balance between beauty and strength in his kingdom for decades. He is the last of his line, the Ryu tribe, a clan of smaller people. His parents and siblings are all deceased.
+
+**Major Achievements:**
+- Maintained peace and prosperity in Xingyun for centuries
+- Helped neighboring kingdoms through generosity (food, warriors, sanctuary)
+- Established his temple as a healing sanctuary open to all
+- Appointed by Queen Eudora as Leader of the Norvayn Union
+- Preserved ancient knowledge of relics and artifacts
+- Successfully predicted geopolitical threats through prophetic dreams
+
+**Personal Loss:**
+- His wife, Grace Xingyun, died over 100 years ago after 92 years of marriage
+- He misses her dearly and honors her memory
+- Lost his most trusted guardian, Wei Dian (Li Dian's father), a loss he deeply regrets`
+            },
+            relationships: {
+                title: "Relationships 💙",
+                content: `**LI DIAN (General of Xingyun, Frost Guardian)**
+King Bao acts as a surrogate father to Li Dian, calling him son. Li Dian views King Bao as his king and mentor, and owes his life to him. King Bao took Li Dian in after Li Dian stepped into his father's Wei Dian's shoes. King Bao praised Li Dian as a great guardian for freezing the avalanche. Bao believes trauma (the death of Wei Dian) brought them together. He is ready to give everything to Li Dian, whom he considers his heir.
+
+**WEI DIAN (Li Dian's father, deceased)**
+Wei Dian was King Bao's most trusted guardian before his death. Bao deeply regrets his loss and fears he will lose Li Dian too.
+
+**GRACE XINGYUN (Wife, deceased)**
+King Bao's beloved wife, who died over 100 years ago. They were married for 92 years. Li Dian was like a son to both of them. Bao misses her dearly.
+
+**QUEEN EUDORA (Mother Nature)**
+King Bao serves under Eudora and is the highest regional leader she appointed in Xuerai. Eudora views him as an elder figure. He is a devoted follower of Mother Nature.
+
+**SERAPHINA (Primrose)**
+King Bao offers her advice and wise counsel. She was found in his sanctuary after his abduction. He can perceive her lost Primrose power even though others cannot.
+
+**KING DAVIDSON (King of Jamara)**
+Davidson seeks King Bao's counsel and deeply respects his wisdom.`
+            },
+            majorEvents: {
+                title: "Major Story Events ⚡",
+                content: `**The Sandman's Sealing:**
+King Bao was barely 50 years old when five gods sealed the Sandman, over 250 years ago from his current age.
+
+**Abduction:**
+King Bao was abducted at some point (Seraphina was later found in his sanctuary, suggesting this was a significant event).
+
+**Arrest by Sunarians:**
+King Bao was arrested by the Sunarians for refusing to bow to Queen Keket, demonstrating his unwavering principles and loyalty to Queen Eudora.
+
+**Prophetic Warning:**
+Foresaw the impending attack by the Meng Dynasty based on dreams or predictions.`
+            },
+            currentStatus: {
+                title: "Current Status ✨",
+                content: `**Alive and well**
+
+King Bao currently reigns as the active King of Xingyun and the primary leader of the Norvayn Union. He continues to offer counsel and prepare for renewed conflict.
+
+However, he is contemplating retirement, believing that decorating is his new calling. He is ready to pass everything to his surrogate son, Li Dian, recognizing that their bond was forged through shared trauma.`
+            },
+            quotes: {
+                title: "Notable Quotes & Wisdom 💬",
+                content: `"Some fights require the mind of a patient man, rather than a brutal mentality."
+
+[King Bao calling Li Dian "son"]`
+            },
+            legacy: {
+                title: "Legacy 👑",
+                content: `King Bao Xingyun stands as a testament to wisdom, humility, and enduring strength. Despite his small stature and physical blindness, he sees more than anyone, perceiving truth, danger, and the hearts of those around him.
+
+For over 300 years, he has guided Xingyun with patience and generosity, helping neighboring kingdoms and opening his temple to all who need sanctuary. As the last of the Ryu tribe, he carries the weight of his lineage while preparing to pass his kingdom to Li Dian, the son of his heart.
+
+His refusal to bow to Queen Keket, even at the cost of arrest, demonstrates his unwavering loyalty to Queen Eudora and his unshakeable principles.
+
+King Bao is not just a ruler; he is a keeper of history, a prophet of dangers to come, and a father to those who have none.`
+            }
+        }
+    },
     eudoricGods: {
         sulieman: {
             name: "Suleiman",
@@ -9585,7 +9728,7 @@ function navigateTo(view) {
     } else if (view === 'eudoria-saga') {
         renderEudoriaSaga();
     } else if (view === 'royalty-defenders') {
-        renderComingSoon('Royalty & Defenders', 'The royal families, rulers, warriors, and guardians of Eudoria.');
+        renderRoyaltyDefenders();
     } else if (view === 'other-figures') {
         renderComingSoon('Other Important Figures', 'Notable figures who shape the world of Eudoria.');
     } else if (view === 'eudoria-2025') {
@@ -10805,6 +10948,146 @@ function toggleGovSection(sectionId) {
     const header = section.querySelector('.gov-section-header');
     const content = section.querySelector('.gov-content');
     const arrow = section.querySelector('.gov-arrow');
+
+    const isExpanded = header.classList.contains('expanded');
+
+    if (isExpanded) {
+        // Collapse
+        header.classList.remove('expanded');
+        header.classList.add('collapsed');
+        content.classList.remove('expanded');
+        content.classList.add('collapsed');
+        arrow.textContent = '▶';
+    } else {
+        // Expand
+        header.classList.remove('collapsed');
+        header.classList.add('expanded');
+        content.classList.remove('collapsed');
+        content.classList.add('expanded');
+        arrow.textContent = '▼';
+    }
+}
+
+// Render Royalty & Defenders
+function renderRoyaltyDefenders() {
+    const contentArea = document.getElementById('contentArea');
+    const characters = eudoriaData.royaltyDefenders;
+
+    // Create character cards for overview
+    const characterCardsHTML = Object.keys(characters).map(charKey => {
+        const char = characters[charKey];
+
+        return `
+            <div class="character-card" onclick="showCharacterProfile('${charKey}')">
+                <div class="character-card-icon">${char.icon}</div>
+                <h3>${char.name}</h3>
+                <p class="character-card-category">${char.category}</p>
+            </div>
+        `;
+    }).join('');
+
+    contentArea.innerHTML = `
+        <div class="characters-overview">
+            <div class="union-header">
+                <h2>👑 Royalty & Defenders</h2>
+                <p>The Kings, Queens, Warriors, and Guardians of Eudoria</p>
+            </div>
+            <div class="characters-grid">
+                ${characterCardsHTML}
+            </div>
+        </div>
+    `;
+}
+
+// Show detailed character profile
+function showCharacterProfile(charKey) {
+    const char = eudoriaData.royaltyDefenders[charKey];
+
+    if (!char) {
+        console.error(`Character not found for key: ${charKey}`);
+        return;
+    }
+
+    const contentArea = document.getElementById('contentArea');
+
+    // Helper function to format markdown content
+    function formatCharContent(content) {
+        return content
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .split('\n\n')
+            .map(para => {
+                // Check if it's a list item
+                if (para.trim().startsWith('-')) {
+                    const items = para.split('\n')
+                        .filter(line => line.trim())
+                        .map(line => `<li>${line.replace(/^-\s*/, '')}</li>`)
+                        .join('');
+                    return `<ul class="char-list">${items}</ul>`;
+                }
+                // Regular paragraph
+                return para.trim() ? `<p class="char-paragraph">${para}</p>` : '';
+            })
+            .join('');
+    }
+
+    // Helper function to create section ID from title
+    function createSectionId(title) {
+        return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    }
+
+    // Get all profile sections (exclude name, icon, category)
+    const sections = Object.keys(char).filter(key =>
+        key !== 'name' && key !== 'icon' && key !== 'category'
+    );
+
+    // Build profile sections
+    let sectionsHTML = '';
+    sections.forEach((sectionKey) => {
+        const section = char[sectionKey];
+        if (section && section.title) {
+            const sectionId = createSectionId(section.title);
+            const isFirst = sectionKey === sections[0];
+
+            sectionsHTML += `
+                <div class="char-section" id="${sectionId}">
+                    <h2 class="char-section-header ${isFirst ? 'expanded' : 'collapsed'}" onclick="toggleCharSection('${sectionId}')">
+                        <span class="char-arrow">${isFirst ? '▼' : '▶'}</span>
+                        <span class="char-section-title">${section.title}</span>
+                    </h2>
+                    <div class="char-content ${isFirst ? 'expanded' : 'collapsed'}">
+                        ${formatCharContent(section.content)}
+                    </div>
+                </div>
+            `;
+        }
+    });
+
+    const profileHTML = `
+        <div class="char-profile">
+            <button class="back-button" onclick="renderRoyaltyDefenders()">← Back to Royalty & Defenders</button>
+
+            <div class="char-header">
+                <div class="char-icon">${char.icon}</div>
+                <h1 class="char-title">${char.name}</h1>
+            </div>
+
+            <div class="char-body">
+                ${sectionsHTML}
+            </div>
+        </div>
+    `;
+
+    contentArea.innerHTML = profileHTML;
+}
+
+// Toggle character section collapse/expand
+function toggleCharSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+
+    const header = section.querySelector('.char-section-header');
+    const content = section.querySelector('.char-content');
+    const arrow = section.querySelector('.char-arrow');
 
     const isExpanded = header.classList.contains('expanded');
 

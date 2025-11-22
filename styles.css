@@ -10220,3 +10220,254 @@ div .xref-link {
         padding: 0.6rem;
     }
 }
+
+/* CHARACTER PROFILES (Royalty & Defenders) */
+.characters-overview {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.character-card {
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.1), rgba(58, 125, 58, 0.05));
+    border: 2px solid rgba(90, 143, 90, 0.3);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.character-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(109, 184, 109, 0.6);
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.2), rgba(58, 125, 58, 0.1));
+    box-shadow: 0 8px 24px rgba(90, 143, 90, 0.3);
+}
+
+.character-card-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.character-card h3 {
+    color: #6db86d;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.character-card-category {
+    color: #8fd88f;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Character Profile Page */
+.char-profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.char-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.15), rgba(58, 125, 58, 0.1));
+    border-radius: 12px;
+    border: 2px solid rgba(90, 143, 90, 0.3);
+}
+
+.char-icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.char-title {
+    font-size: 3rem;
+    color: #5a8f5a;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+/* Character Sections */
+.char-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.char-section {
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.05), rgba(58, 125, 58, 0.02));
+    border: 2px solid rgba(90, 143, 90, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.char-section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.1), rgba(58, 125, 58, 0.05));
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.char-section-header:hover {
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.2), rgba(58, 125, 58, 0.1));
+    border-bottom-color: rgba(90, 143, 90, 0.3);
+}
+
+.char-section-header.expanded {
+    border-bottom-color: rgba(90, 143, 90, 0.4);
+}
+
+.char-arrow {
+    font-size: 1.2rem;
+    color: #6db86d;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
+.char-section-title {
+    font-size: 1.6rem;
+    color: #5a8f5a;
+    font-weight: 600;
+    flex: 1;
+}
+
+.char-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+}
+
+.char-content.expanded {
+    max-height: 10000px;
+    padding: 2rem;
+    opacity: 1;
+}
+
+.char-content.collapsed {
+    max-height: 0;
+    padding: 0 2rem;
+    opacity: 0;
+}
+
+/* Character Content Styling */
+.char-paragraph {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #d4d4d4;
+    margin-bottom: 1.2rem;
+}
+
+.char-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+.char-paragraph strong {
+    color: #6db86d;
+    font-weight: 600;
+}
+
+.char-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.char-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+    color: #d4d4d4;
+}
+
+.char-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #5a8f5a;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design for Characters */
+@media (max-width: 1024px) {
+    .characters-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .characters-overview {
+        padding: 1rem;
+    }
+
+    .characters-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .char-profile {
+        padding: 1rem;
+    }
+
+    .char-title {
+        font-size: 2rem;
+    }
+
+    .char-section-header {
+        padding: 1rem 1.5rem;
+    }
+
+    .char-section-title {
+        font-size: 1.3rem;
+    }
+
+    .char-content.expanded {
+        padding: 1.5rem;
+    }
+
+    .character-card-icon {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .char-icon {
+        font-size: 3.5rem;
+    }
+
+    .char-title {
+        font-size: 1.6rem;
+    }
+
+    .char-section-header {
+        padding: 0.8rem 1rem;
+    }
+
+    .char-section-title {
+        font-size: 1.1rem;
+    }
+
+    .char-content.expanded {
+        padding: 1rem;
+    }
+
+    .char-paragraph {
+        font-size: 1rem;
+    }
+}
