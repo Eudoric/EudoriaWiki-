@@ -9866,3 +9866,357 @@ div .xref-link {
         font-size: 0.95rem;
     }
 }
+
+/* GOVERNANCE & HIERARCHY SECTION */
+.gov-profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.gov-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.gov-icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.gov-title {
+    font-size: 3rem;
+    color: #5a8f5a;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.gov-subtitle-main {
+    font-size: 1.3rem;
+    color: #8fd88f;
+    font-style: italic;
+}
+
+/* Table of Contents */
+.gov-toc {
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.15), rgba(58, 125, 58, 0.1));
+    border: 2px solid rgba(90, 143, 90, 0.3);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.gov-toc-title {
+    font-size: 1.5rem;
+    color: #5a8f5a;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.gov-toc-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0.5rem;
+}
+
+.gov-toc-list li {
+    padding: 0.3rem 0;
+}
+
+.gov-toc-header {
+    grid-column: 1 / -1;
+    font-weight: 700;
+    color: #6db86d;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    padding-left: 0 !important;
+}
+
+.gov-toc-link {
+    color: #6db86d;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.3rem 0.8rem;
+    display: block;
+    border-radius: 4px;
+}
+
+.gov-toc-link:hover {
+    background: rgba(90, 143, 90, 0.2);
+    color: #8fd88f;
+    transform: translateX(5px);
+}
+
+/* Sections */
+.gov-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.gov-section {
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.05), rgba(58, 125, 58, 0.02));
+    border: 2px solid rgba(90, 143, 90, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.gov-section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.1), rgba(58, 125, 58, 0.05));
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gov-section-header:hover {
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.2), rgba(58, 125, 58, 0.1));
+    border-bottom-color: rgba(90, 143, 90, 0.3);
+}
+
+.gov-section-header.expanded {
+    border-bottom-color: rgba(90, 143, 90, 0.4);
+}
+
+.gov-arrow {
+    font-size: 1.2rem;
+    color: #6db86d;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
+.gov-section-title {
+    font-size: 1.8rem;
+    color: #5a8f5a;
+    font-weight: 600;
+    flex: 1;
+}
+
+.gov-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+}
+
+.gov-content.expanded {
+    max-height: 10000px;
+    padding: 2rem;
+    opacity: 1;
+}
+
+.gov-content.collapsed {
+    max-height: 0;
+    padding: 0 2rem;
+    opacity: 0;
+}
+
+.gov-subtitle {
+    font-size: 1.2rem;
+    color: #8fd88f;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+/* Charts - Monospace Styling */
+.gov-chart {
+    background: linear-gradient(135deg, rgba(58, 125, 58, 0.08), rgba(90, 143, 90, 0.04));
+    border: 1px solid rgba(90, 143, 90, 0.3);
+    border-radius: 6px;
+    padding: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #d4d4d4;
+    overflow-x: auto;
+    white-space: pre;
+    margin: 1.5rem 0;
+}
+
+/* Color-coding for different authority types */
+.gov-chart:has(🌟), .gov-chart:has(YAHUAH) {
+    border-left: 4px solid #FFD700; /* Gold for Divine Authority */
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.02));
+}
+
+.gov-chart:has(👑), .gov-chart:has(REGIONAL RULERS), .gov-chart:has(MORTAL) {
+    border-left: 4px solid #5a8f5a; /* Green for Mortal Governance */
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.08), rgba(58, 125, 58, 0.02));
+}
+
+.gov-chart:has(⚔️), .gov-chart:has(🛡️), .gov-chart:has(PROTECTORS), .gov-chart:has(GUARDIANS) {
+    border-left: 4px solid #4A90E2; /* Blue for Protection Systems */
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.08), rgba(74, 144, 226, 0.02));
+}
+
+.gov-chart:has(🏛️), .gov-chart:has(FOUR PILLARS), .gov-chart:has(WAKAN) {
+    border-left: 4px solid #9B59B6; /* Purple for Infrastructure */
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.08), rgba(155, 89, 182, 0.02));
+}
+
+/* Text Content */
+.gov-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #d4d4d4;
+}
+
+.gov-text p {
+    margin-bottom: 1.2rem;
+}
+
+.gov-text p:last-child {
+    margin-bottom: 0;
+}
+
+.gov-text strong {
+    color: #6db86d;
+    font-weight: 600;
+}
+
+/* Questions in Story of Authority */
+.gov-question {
+    font-size: 1.15rem;
+    color: #8fd88f;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.gov-question:first-child {
+    margin-top: 0;
+}
+
+/* Lists */
+.gov-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.gov-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+}
+
+.gov-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #5a8f5a;
+    font-size: 1.2rem;
+}
+
+/* Key Principles/Distinctions/Roles */
+.gov-key-principle,
+.gov-key-roles {
+    background: linear-gradient(135deg, rgba(109, 184, 109, 0.1), rgba(90, 143, 90, 0.05));
+    border-left: 4px solid #6db86d;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 4px;
+}
+
+.gov-key-principle strong,
+.gov-key-roles strong {
+    color: #8fd88f;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gov-toc-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .gov-chart {
+        font-size: 0.85rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gov-profile {
+        padding: 1rem;
+    }
+
+    .gov-title {
+        font-size: 2rem;
+    }
+
+    .gov-subtitle-main {
+        font-size: 1.1rem;
+    }
+
+    .gov-section-header {
+        padding: 1rem 1.5rem;
+    }
+
+    .gov-section-title {
+        font-size: 1.4rem;
+    }
+
+    .gov-content.expanded {
+        padding: 1.5rem;
+    }
+
+    .gov-toc {
+        padding: 1rem 1.5rem;
+    }
+
+    .gov-toc-list {
+        grid-template-columns: 1fr;
+    }
+
+    .gov-chart {
+        font-size: 0.75rem;
+        padding: 0.8rem;
+        overflow-x: scroll;
+    }
+
+    .gov-text {
+        font-size: 1rem;
+    }
+
+    .gov-question {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gov-icon {
+        font-size: 3.5rem;
+    }
+
+    .gov-title {
+        font-size: 1.6rem;
+    }
+
+    .gov-subtitle-main {
+        font-size: 1rem;
+    }
+
+    .gov-section-header {
+        padding: 0.8rem 1rem;
+    }
+
+    .gov-section-title {
+        font-size: 1.2rem;
+    }
+
+    .gov-content.expanded {
+        padding: 1rem;
+    }
+
+    .gov-chart {
+        font-size: 0.7rem;
+        padding: 0.6rem;
+    }
+}

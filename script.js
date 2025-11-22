@@ -4598,6 +4598,508 @@ The world that once required divine cleansing has become worthy of being called 
             ]
         }
     },
+    governanceHierarchy: {
+        name: "Governance & Hierarchy",
+        icon: "👑",
+        subtitle: "The Structure of Eudoria",
+        overview: {
+            title: "Overview",
+            content: `Eudoria's governance is a complex, multi-layered system where divine authority flows through mortal governance, supported by specialized defense forces and maintained by infrastructure. This page explains how authority, power, and responsibility are distributed throughout the civilization.`
+        },
+        completeHierarchy: {
+            title: "The Complete Hierarchy",
+            subtitle: "Full System Overview",
+            type: "chart",
+            content: `                    🌟 YAHUAH (THE CREATOR)
+                    Ultimate Cosmic Authority
+                              ↓
+                         (rules through)
+                              ↓
+                    👑 QUEEN EUDORA
+              Sovereign of Eudoria, Embodiment of Ilun
+              Her essence woven into the earth itself
+                              ↓
+            ┌─────────────────┼─────────────────┐
+            ↓                 ↓                 ↓
+
+   🔱 THE PROTECTORS      🛡️ GUARDIANS      ⚡ SUB-GUARDIANS
+   (Eudora's Defenders)   (Regional)        (Human Powers)
+   Protect WHOLE WORLD    Divine Warriors    Gifted by Eudora
+            ↓             Under Creator           ↓
+            ↓             Regional Focus          ↓
+            ↓                  ↓                  ↓
+    • Maui (2nd in Cmd)   Fight:            • Primrose Triplets
+    • Naymor (Love)       • Demons          • Li Dian (Frost)
+    • Zendayah (War)      • Supernatural    • Ahmad (Spirits)
+    • Naime (Sea)         • Evil Forces     • HUMAN with
+    • Siddiq (Health)     • By Region         supernatural gifts
+            ↓
+            ↓
+    👑 REGIONAL RULERS                     🏛️ FOUR PILLARS
+     (Mortal Kings/Queens)                    OF WAKAN
+      Govern Locally                       (Wesari Union)
+    Report to Protectors                  Surface Civilization
+            ↓                                    ↓
+            ↓                          ┌─────────┼─────────┐
+    🏘️ LOCAL GOVERNANCE               ↓         ↓         ↓
+    (Cities, Villages)            WakanTech  Star    Goldenvault
+                                           Sanctum      ↓
+                                              ↓    Lion's Court
+
+
+                    ⚔️ LANDKEEPERS
+                   (Mortal Warriors)
+                  Defend Territories
+                   Human Defenders
+
+**SIDE STRUCTURE:**
+
+🔬 **SET CIVILIZATION**
+   **(UNDERGROUND ONLY)**
+        ↓
+   • 89% of landmass
+   • Autonomous
+   • Highly advanced
+   • Setanese people
+   • Direct continuity
+     of ancient Set`
+        },
+        divineAuthority: {
+            title: "1. Divine Authority Chain ⚡",
+            subtitle: "How Divine Power Flows Through the System",
+            type: "chart",
+            content: `                    🌟 YAHUAH
+                 (The Creator)
+            Ultimate Cosmic Authority
+      "I rule Eudoria through my daughter"
+                       ↓
+                       ↓
+                  👑 EUDORA
+           (Queen of Eudoria)
+        Embodiment of Law 1 (Ilun)
+      Origin, Creation, Light
+    Her presence = protective shield
+    Her essence woven into the earth
+                       ↓
+        ┌──────────────┼──────────────┐
+        ↓              ↓              ↓
+
+   🔱 PROTECTORS   🛡️ GUARDIANS   ⚡ SUB-GUARDIANS
+  (World Defense)  (Regional)     (Human Gifted)
+        ↓              ↓              ↓
+
+  • MAUI           Report to      • Primrose Triplets
+    (Second in     CREATOR        • Li Dian (Frost)
+     Command)      Work by        • Ahmad (Spirits)
+  • NAYMOR         REGION
+    (Love, Peace)  Fight:         Humans with
+  • ZENDAYAH       • Demons       supernatural
+    (War)          • Evil         powers GIFTED
+  • NAIME          • Supernatural BY EUDORA
+    (Sea)            threats
+  • SIDDIQ                        NOT divine,
+    (Health,                      but empowered
+     Truth)
+        ↓
+        ↓
+  PROTECT THE
+  ENTIRE WORLD
+  (Not regional,
+   global scope)`,
+            keyPrinciple: `**Key Principle:** Divine authority flows FROM the Creator, THROUGH Eudora, and is PROTECTED by three distinct forces: Protectors (global divine defense), Guardians (regional divine warriors), and Sub-Guardians (empowered humans).`
+        },
+        mortalGovernance: {
+            title: "2. Mortal Governance Chain 👑",
+            subtitle: "How Mortals Are Governed Day-to-Day",
+            type: "chart",
+            content: `                  👑 QUEEN EUDORA
+              Supreme Mortal Authority
+         "All legitimacy flows from her"
+       First on the Heir, Source of Law
+                       ↓
+                       ↓
+              🔱 THE PROTECTORS
+           (Eudora's Inner Circle)
+        Manage Global Defense & Policy
+         Maui handles day-to-day politics
+                       ↓
+                       ↓
+         👑 REGIONAL RULERS
+       (Mortal Kings & Queens)
+      Govern According to Local Culture
+         Report to The Protectors
+         (who report to Eudora)
+                       ↓
+                       ↓
+          🏘️ LOCAL GOVERNANCE
+        (Cities, Villages, Towns)
+         Mayors, Councils, Chiefs
+           Day-to-Day Management
+        Following Regional & Universal Law`,
+            keyPrinciple: `**Key Principle:** Mortal rulers still exist and govern locally, but all authority ultimately derives from Eudora. The Protectors serve as her inner circle and manage global concerns, while regional diversity is preserved within cosmic unity.`
+        },
+        protectionSystems: {
+            title: "3. Protection Systems ⚔️🛡️",
+            subtitle: "Who Protects Eudoria and How",
+            type: "chart",
+            content: `              PROTECTION OF EUDORIA
+                       ↓
+        ┌──────────────┼──────────────┐
+        ↓              ↓              ↓
+
+  🔱 PROTECTORS    🛡️ GUARDIANS    ⚡ SUB-GUARDIANS
+ (World Defense)  (Regional)       (Gifted Humans)
+        ↓              ↓              ↓
+
+Report to         Report to       Report to
+EUDORA           CREATOR         EUDORA
+                 (Yahuah)        (their gift-giver)
+        ↓              ↓              ↓
+
+Scope:            Scope:          Scope:
+GLOBAL            REGIONAL        VARIES
+(Entire World)    (Specific       (Special
+                   Regions)        Missions)
+        ↓              ↓              ↓
+
+- Maui            Fight:          • Primrose
+  (Demigod)       • Demons          Triplets
+- Naymor          • Supernatural    (Prophecy)
+  (God)             threats       • Li Dian
+- Zendayah        • Evil forces     (Frost powers)
+  (God)           • By region     • Ahmad
+- Naime                             (Spirit powers)
+  (Goddess)
+- Siddiq                          HUMAN with
+  (Angel)                         supernatural
+                                  gifts from
+DIVINE/                           EUDORA
+DEMIGOD           DIVINE
+                  WARRIORS
+
+
+        ⚔️ LANDKEEPERS
+       (Mortal Warriors)
+      NO supernatural powers
+        Regular human soldiers
+         Defend territories
+          Prove human worth`,
+            keyDistinction: `**Key Distinction:**
+
+- **Protectors** = Eudora's inner circle of 5, GLOBAL scope, divine/demigod/angelic
+- **Guardians** = Creator's warriors, REGIONAL scope, divine
+- **Sub-Guardians** = Eudora's gifts, HUMAN with powers, special missions
+- **Landkeepers** = Regular mortal warriors, NO powers, territorial defense
+
+**Key Principle:** Four-layered protection system ensures both divine and mortal threats are handled at global and regional levels, while proving that human achievement matters through the Landkeepers.`
+        },
+        theProtectors: {
+            title: "4. The Protectors (Eudora's Inner Circle) 🔱",
+            subtitle: "The Five Defenders of the World",
+            type: "chart",
+            content: `              👑 QUEEN EUDORA
+                     ↓
+           THE PROTECTORS
+      (Her Inner Circle of 5)
+                     ↓
+        ┌────────────┼────────────┐
+        ↓            ↓            ↓
+
+    ⚔️ MAUI      💜 NAYMOR    ⚔️ ZENDAYAH
+   Polynesian      God of        Guardian
+    Demigod        Love,          of War &
+    SECOND IN    Compassion,     Weapons
+    COMMAND        Peace
+        ↓            ↓            ↓
+
+  Handles Day-  Promotes      Manages
+  to-Day        Balance &     Military
+  Politics      Harmony       Strategy
+  Negotiates    Diplomatic    Weapons
+  with Kings    Relations     Mastery
+
+        ↓            ↓            ↓
+
+    🌊 NAIME      ✨ SIDDIQ
+   Goddess of     Angel of
+    the Sea     Health & Truth
+        ↓            ↓
+
+  Controls      Ensures
+  Waters &      Well-being
+  Maritime      Reveals
+  Affairs       Truth`,
+            keyRoles: `**Key Roles:**
+
+**⚔️ MAUI (Second in Command)**
+- Polynesian demigod
+- Handles day-to-day political management
+- Negotiates with regional rulers
+- The "acceptable male face" (strategic compromise)
+- Eudora still makes all final decisions
+
+**💜 NAYMOR (God of Love, Compassion, and Peace)**
+- Promotes Balance and Harmony
+- Manages diplomatic relations
+- Ensures compassionate governance
+- Prevents conflicts through understanding
+
+**⚔️ ZENDAYAH (Guardian of War and Weapons)**
+- Manages global military strategy
+- Master of all weapons and combat
+- Trains defenders
+- Coordinates defense across regions
+
+**🌊 NAIME (Goddess of the Sea)**
+- Controls all waters (oceans, rivers, lakes)
+- Manages maritime affairs
+- Protects sea trade routes
+- Commands aquatic forces
+
+**✨ SIDDIQ (Angel of Health and Truth)**
+- Ensures the well-being of populations
+- Reveals truth and exposes lies
+- Manages health crises
+- Promotes honesty in governance`
+        },
+        infrastructure: {
+            title: "5. Infrastructure & Systems 🏛️",
+            subtitle: "What Maintains Civilization",
+            type: "chart",
+            content: `    🏛️ THE FOUR PILLARS OF WAKAN
+       (SURFACE - Wesari Union)
+      Wakan Region, NOT Underground
+                ↓
+     ┌──────────┼──────────┐
+     ↓          ↓          ↓
+
+🔬 WAKANTECH  ⭐ STAR    📚 GOLDENVAULT
+              SANCTUM
+     ↓          ↓          ↓
+
+Technology   Wisdom &    History &
+Innovation   Research    Truth
+     ↓          ↓          ↓
+ - Infrastructure • Knowledge    • Verification First
+ - Engineering    • Science      • Preserving Records
+ - Advancement    • Education    • Honoring Ancestors
+ - Coordination   • Discovery    • Learning from Past
+
+              ↓
+              ↓
+          ⚖️ LION'S COURT
+             Justice & Law
+                ↓
+         • Legal System
+         • Dispute Resolution
+         • Interpretation of:
+           - Laws of Eimes
+           - Eudora's 12 Rules
+         • Fair Judgment`,
+            keyPrinciple: `**Key Principle:** The Four Pillars maintain the systems that keep Eudoria functioning—technology, knowledge, truth, and justice. Located in the Wakan region of Wesari Union (surface civilization).`
+        },
+        undergroundSurface: {
+            title: "6. Underground vs. Surface 🔬🌿",
+            subtitle: "Two Worlds of Eudoria",
+            type: "chart",
+            content: `          EUDORIA = TWO WORLDS
+                   ↓
+        ┌──────────┴──────────┐
+        ↓                     ↓
+
+  🌿 SURFACE           🔬 UNDERGROUND
+  (17 Regions)         (Set Civilization)
+       ↓                     ↓
+       ↓                     ↓
+       ↓
+Governed by           • AUTONOMOUS
+  EUDORA              • 89% of continental
+       ↓                landmass underground
+       ↓              • Highly advanced
+  Includes:             technology
+  • 4 Unions          • Setanese people
+  • 17 Regions        • Direct continuity
+  • Wakan               of ancient Set
+    (Four Pillars)    • Separate from
+  • Most mortal         surface governance
+    populations       • Independent culture`,
+            keyDistinction: `**Key Distinction:**
+
+**WAKAN (Surface):**
+- Located in Wesari Union
+- Home to the Four Pillars
+- Surface civilization
+- Part of the 17 regions
+- Connected to Eudora's governance
+
+**SET (Underground):**
+- 89% of continental landmass (underground network)
+- Completely autonomous
+- Highly advanced technology
+- Setanese people
+- Direct continuity of ancient Set civilization
+- Independent from surface governance
+- Separate culture and society`
+        },
+        geographicStructure: {
+            title: "7. Geographic Structure 🌍",
+            subtitle: "How the World Is Organized",
+            type: "chart",
+            content: `              🌍 EUDORIA (THE WORLD)
+            17 Regions in 4 Unions
+                     ↓
+        ┌────────────┼────────────┐
+        ↓            ↓            ↓
+
+   WESARI       ESTARA       SUNDRA        NORVAYN
+  (West/Right) (East/Left)  (South/Up)   (North/Down)
+   5 Regions    4 Regions    4 Regions     4 Regions
+        ↓            ↓            ↓            ↓
+
+ - Heartland   • Eastern    • Káne's     • Northern
+   (Eudora's     Regions      Domain       Regions
+    Seat)                   • Polynesian • Cold Climate
+ - WAKAN       • Various      Gods       • Hardy People
+   (Four         regions    • 92,000+    • Mountain
+    Pillars)                  Islands     Fortresses
+   SURFACE!
+ - Other
+   Western
+   Regions`,
+            keyPrinciple: `**Key Principle:** Four Unions act like continents, 17 Regions act like countries—all unified under one Queen. Wakan is located in Wesari Union on the surface.`
+        },
+        storyOfAuthority: {
+            title: "The Story of Authority",
+            subtitle: "How Power Flows (Narrative Explanation)",
+            content: `**Q: Who has ultimate authority?**
+A: 🌟 **YAHUAH (THE CREATOR)**
+He is the source of all cosmic authority and the ultimate ruler of existence.
+
+**Q: How does He rule the mortal world?**
+A: Through 👑 **QUEEN EUDORA**
+She is His daughter, His instrument, His chosen method of governance. The Creator rules Eudoria through her.
+
+**Q: What makes Eudora's authority absolute?**
+A: She is the embodiment of Ilun (Law 1)—Origin, Creation, Light. Her essence is woven into the earth itself. Within Eudoria, nothing exists above Mother Nature. All legitimacy flows from her.
+
+**Q: Who are Eudora's direct defenders and advisors?**
+A: 🔱 **THE PROTECTORS (Her Inner Circle)**
+These five powerful beings protect THE ENTIRE WORLD (not just regions):
+
+- ⚔️ **MAUI** - Polynesian demigod, Second in Command (handles day-to-day politics)
+- 💜 **NAYMOR** - God of Love, Compassion, and Peace
+- ⚔️ **ZENDAYAH** - Guardian of War and Weapons
+- 🌊 **NAIME** - Goddess of the Sea
+- ✨ **SIDDIQ** - Angel of Health and Truth
+
+They are divine/demigod/angelic beings who work directly under Eudora with GLOBAL responsibility.
+
+**Q: What about the Guardians? Are they the same as Protectors?**
+A: NO! 🛡️ **GUARDIANS** are different:
+
+- They are REGIONAL divine warriors
+- They report to THE CREATOR (Yahuah), not Eudora
+- They fight demons, supernatural threats, and evil forces BY REGION
+- They work in SPECIFIC areas, not globally
+
+Think of it like: Protectors = Global Defense, Guardians = Regional Defense
+
+**Q: What are Sub-Guardians?**
+A: ⚡ **SUB-GUARDIANS** are HUMANS with supernatural powers GIFTED BY EUDORA:
+
+- 🌸 **The Primrose Triplets** - Prophesied heroines with special abilities
+- ❄️ **Li Dian** - Frost Guardian (controls ice and frost)
+- 👻 **Ahmad** - Guardian of Spirits (can interact with and see spirits)
+
+They are NOT divine—they are HUMAN, but Eudora gave them supernatural abilities for special purposes.
+
+**Q: What about regular mortal warriors?**
+A: ⚔️ **LANDKEEPERS** - Regular human soldiers with NO supernatural powers
+They defend territories and borders, proving that human achievement matters without divine gifts. They are trained warriors who protect Eudorian lands through skill, courage, and determination alone.
+
+**Q: Who governs the regions day-to-day?**
+A: 👑 **REGIONAL RULERS (Mortal Kings/Queens)**
+They report to The Protectors (who report to Eudora). They govern according to local culture and traditions but are no longer sovereign—all authority flows from Eudora.
+
+**Q: Who handles local governance?**
+A: 🏘️ **LOCAL GOVERNANCE (Mayors, Councils, Chiefs)**
+Cities, villages, and towns are managed by local leaders who follow both regional customs and universal principles (Laws of Eimes + Eudora's 12 Rules).
+
+**Q: What maintains infrastructure?**
+A: 🏛️ **THE FOUR PILLARS OF WAKAN**
+Located in the Wakan region of WESARI Union (SURFACE civilization, NOT underground!):
+
+- 🔬 **WakanTech** - Technology & Innovation
+- ⭐ **Star Sanctum** - Research & Wisdom
+- 📚 **Goldenvault** - History & Truth (Verification First!)
+- ⚖️ **Lion's Court** - Justice & Law
+
+**Q: What about Set? Is it part of Wakan?**
+A: NO! 🔬 **SET is SEPARATE and UNDERGROUND:**
+
+- Set is an autonomous underground civilization
+- Spans 89% of continental landmass (underground network)
+- The Setanese people are highly advanced technologically
+- Direct continuity of ancient Set civilization
+- COMPLETELY SEPARATE from Wakan (which is surface!)
+
+Wakan = Surface, Wesari Union
+Set = Underground, Autonomous
+
+**Q: How is the world organized geographically?**
+A: 🌍 **17 Regions in 4 Unions**
+- **Wesari Union** (5 regions, West) - Includes The Heartland (Eudora's seat) and Wakan (Four Pillars)
+- **Estara Union** (4 regions, East) - Various eastern territories
+- **Sundra Union** (4 regions, South) - Káne's domain, 92,000+ islands, Polynesian gods
+- **Norvayn Union** (4 regions, North) - Cold climate, hardy people, mountain fortresses
+
+**Q: So who REALLY runs Eudoria?**
+A: It's a multi-layered interdependent system:
+
+- **Yahuah** provides ultimate authority
+- **Eudora** channels that authority as sovereign queen
+- **The Protectors** (her inner circle of 5) manage global defense and policy
+- **Maui** (Second in Command) handles day-to-day politics
+- **Regional Rulers** govern locally
+- **Guardians** fight regional supernatural threats (report to Creator)
+- **Sub-Guardians** handle special missions (empowered humans)
+- **Landkeepers** defend mortal borders (regular warriors)
+- **Four Pillars** maintain infrastructure (Wakan, surface)
+- **Set civilization** operates independently underground
+
+Remove any piece, and the system collapses.
+But at the center of it all?
+**👑 EUDORA.**
+The heart that makes it all work.`
+        },
+        keyPrinciples: {
+            title: "Key Principles",
+            subtitle: "What Makes This System Work",
+            content: `**1. BALANCE & HARMONY**
+Divine and mortal, structure and nurture, law and mercy, global and regional—all in equilibrium.
+
+**2. SHARED AUTHORITY**
+Power is distributed across multiple layers, preventing corruption and tyranny.
+
+**3. LOCAL AUTONOMY WITHIN COSMIC UNITY**
+Regions maintain cultural identity while following universal principles.
+
+**4. LOVE, NOT FEAR**
+People follow Eudora because they love her, not because they're forced.
+
+**5. HUMAN ACHIEVEMENT MATTERS**
+Mortals (Landkeepers) prove they can protect and govern themselves without supernatural gifts.
+
+**6. INFRASTRUCTURE SUPPORTS GOVERNANCE**
+The Four Pillars ensure systems function beyond just personality and power.
+
+**7. DIVINE WISDOM + MORTAL EXECUTION**
+Gods provide vision and protection, mortals make it real.
+
+**8. SPECIALIZED FORCES**
+Different threats require different defenders—Protectors (global divine), Guardians (regional divine), Sub-Guardians (empowered humans), Landkeepers (mortal warriors).`
+        }
+    },
     eudoricGods: {
         sulieman: {
             name: "Suleiman",
@@ -9058,6 +9560,8 @@ function navigateTo(view) {
         showCivilizationDetail('unifiedEra');
     } else if (view === 'civilizations-faq') {
         renderCivilizationsFAQ();
+    } else if (view === 'governance-hierarchy') {
+        renderGovernanceHierarchy();
     } else if (view === 'eudraneth') {
         renderEudraneth();
     } else if (view === 'laws-of-eimes') {
@@ -10097,6 +10601,228 @@ function toggleCivFAQ(faqId) {
         // Expand
         answer.classList.remove('collapsed');
         answer.classList.add('expanded');
+        arrow.textContent = '▼';
+    }
+}
+
+// Render Governance & Hierarchy
+function renderGovernanceHierarchy() {
+    const contentArea = document.getElementById('contentArea');
+    const gov = eudoriaData.governanceHierarchy;
+
+    // Helper function to format governance content
+    function formatGovContent(section) {
+        let html = '';
+
+        // Handle chart-type content with monospace formatting
+        if (section.type === 'chart' && section.content) {
+            html += `<pre class="gov-chart">${section.content}</pre>`;
+        } else if (section.content) {
+            // Regular content with markdown support
+            html += `<div class="gov-text">${formatMarkdown(section.content)}</div>`;
+        }
+
+        // Add key principle or key distinction if exists
+        if (section.keyPrinciple) {
+            html += `<div class="gov-key-principle">${formatMarkdown(section.keyPrinciple)}</div>`;
+        }
+
+        if (section.keyDistinction) {
+            html += `<div class="gov-key-principle">${formatMarkdown(section.keyDistinction)}</div>`;
+        }
+
+        if (section.keyRoles) {
+            html += `<div class="gov-key-roles">${formatMarkdown(section.keyRoles)}</div>`;
+        }
+
+        return html;
+    }
+
+    // Helper function for basic markdown formatting
+    function formatMarkdown(text) {
+        return text
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/^- (.*$)/gim, '<li>$1</li>')
+            .replace(/(<li>.*<\/li>)/s, '<ul class="gov-list">$1</ul>')
+            .split('\n\n')
+            .map(para => {
+                if (para.includes('<li>') || para.includes('<ul>')) return para;
+                if (para.trim().startsWith('**Q:')) {
+                    return `<p class="gov-question">${para}</p>`;
+                }
+                return para.trim() ? `<p>${para}</p>` : '';
+            })
+            .join('');
+    }
+
+    // Helper function to create section ID from title
+    function createSectionId(title) {
+        return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    }
+
+    // Build Table of Contents
+    const tocSections = [
+        { key: 'overview', title: gov.overview.title },
+        { key: 'completeHierarchy', title: gov.completeHierarchy.title },
+        { title: 'Detailed Breakdowns', isHeader: true },
+        { key: 'divineAuthority', title: gov.divineAuthority.title },
+        { key: 'mortalGovernance', title: gov.mortalGovernance.title },
+        { key: 'protectionSystems', title: gov.protectionSystems.title },
+        { key: 'theProtectors', title: gov.theProtectors.title },
+        { key: 'infrastructure', title: gov.infrastructure.title },
+        { key: 'undergroundSurface', title: gov.undergroundSurface.title },
+        { key: 'geographicStructure', title: gov.geographicStructure.title },
+        { key: 'storyOfAuthority', title: gov.storyOfAuthority.title },
+        { key: 'keyPrinciples', title: gov.keyPrinciples.title }
+    ];
+
+    const tocHTML = `
+        <div class="gov-toc">
+            <h3 class="gov-toc-title">📋 Table of Contents</h3>
+            <ul class="gov-toc-list">
+                ${tocSections.map(section => {
+                    if (section.isHeader) {
+                        return `<li class="gov-toc-header">${section.title}</li>`;
+                    }
+                    const sectionId = createSectionId(section.title);
+                    return `<li><a href="#${sectionId}" class="gov-toc-link">${section.title}</a></li>`;
+                }).join('')}
+            </ul>
+        </div>
+    `;
+
+    // Build sections with collapsible functionality
+    let sectionsHTML = '';
+
+    // Overview (always expanded)
+    const overviewId = createSectionId(gov.overview.title);
+    sectionsHTML += `
+        <div class="gov-section" id="${overviewId}">
+            <h2 class="gov-section-header expanded" onclick="toggleGovSection('${overviewId}')">
+                <span class="gov-arrow">▼</span>
+                <span class="gov-section-title">${gov.overview.title}</span>
+            </h2>
+            <div class="gov-content expanded">
+                <div class="gov-text">${formatMarkdown(gov.overview.content)}</div>
+            </div>
+        </div>
+    `;
+
+    // Complete Hierarchy (collapsed by default)
+    const hierarchyId = createSectionId(gov.completeHierarchy.title);
+    sectionsHTML += `
+        <div class="gov-section" id="${hierarchyId}">
+            <h2 class="gov-section-header collapsed" onclick="toggleGovSection('${hierarchyId}')">
+                <span class="gov-arrow">▶</span>
+                <span class="gov-section-title">${gov.completeHierarchy.title}</span>
+            </h2>
+            <div class="gov-content collapsed">
+                ${gov.completeHierarchy.subtitle ? `<p class="gov-subtitle">${gov.completeHierarchy.subtitle}</p>` : ''}
+                ${formatGovContent(gov.completeHierarchy)}
+            </div>
+        </div>
+    `;
+
+    // Detailed Breakdowns sections
+    const detailedSections = [
+        gov.divineAuthority,
+        gov.mortalGovernance,
+        gov.protectionSystems,
+        gov.theProtectors,
+        gov.infrastructure,
+        gov.undergroundSurface,
+        gov.geographicStructure
+    ];
+
+    detailedSections.forEach(section => {
+        const sectionId = createSectionId(section.title);
+        sectionsHTML += `
+            <div class="gov-section" id="${sectionId}">
+                <h2 class="gov-section-header collapsed" onclick="toggleGovSection('${sectionId}')">
+                    <span class="gov-arrow">▶</span>
+                    <span class="gov-section-title">${section.title}</span>
+                </h2>
+                <div class="gov-content collapsed">
+                    ${section.subtitle ? `<p class="gov-subtitle">${section.subtitle}</p>` : ''}
+                    ${formatGovContent(section)}
+                </div>
+            </div>
+        `;
+    });
+
+    // Story of Authority (collapsed)
+    const storyId = createSectionId(gov.storyOfAuthority.title);
+    sectionsHTML += `
+        <div class="gov-section" id="${storyId}">
+            <h2 class="gov-section-header collapsed" onclick="toggleGovSection('${storyId}')">
+                <span class="gov-arrow">▶</span>
+                <span class="gov-section-title">${gov.storyOfAuthority.title}</span>
+            </h2>
+            <div class="gov-content collapsed">
+                ${gov.storyOfAuthority.subtitle ? `<p class="gov-subtitle">${gov.storyOfAuthority.subtitle}</p>` : ''}
+                <div class="gov-text">${formatMarkdown(gov.storyOfAuthority.content)}</div>
+            </div>
+        </div>
+    `;
+
+    // Key Principles (collapsed)
+    const principlesId = createSectionId(gov.keyPrinciples.title);
+    sectionsHTML += `
+        <div class="gov-section" id="${principlesId}">
+            <h2 class="gov-section-header collapsed" onclick="toggleGovSection('${principlesId}')">
+                <span class="gov-arrow">▶</span>
+                <span class="gov-section-title">${gov.keyPrinciples.title}</span>
+            </h2>
+            <div class="gov-content collapsed">
+                ${gov.keyPrinciples.subtitle ? `<p class="gov-subtitle">${gov.keyPrinciples.subtitle}</p>` : ''}
+                <div class="gov-text">${formatMarkdown(gov.keyPrinciples.content)}</div>
+            </div>
+        </div>
+    `;
+
+    const detailHTML = `
+        <div class="gov-profile">
+            <div class="gov-header">
+                <div class="gov-icon">${gov.icon}</div>
+                <h1 class="gov-title">${gov.name}</h1>
+                <p class="gov-subtitle-main">${gov.subtitle}</p>
+            </div>
+
+            ${tocHTML}
+
+            <div class="gov-body">
+                ${sectionsHTML}
+            </div>
+        </div>
+    `;
+
+    contentArea.innerHTML = detailHTML;
+}
+
+// Toggle governance section collapse/expand
+function toggleGovSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+
+    const header = section.querySelector('.gov-section-header');
+    const content = section.querySelector('.gov-content');
+    const arrow = section.querySelector('.gov-arrow');
+
+    const isExpanded = header.classList.contains('expanded');
+
+    if (isExpanded) {
+        // Collapse
+        header.classList.remove('expanded');
+        header.classList.add('collapsed');
+        content.classList.remove('expanded');
+        content.classList.add('collapsed');
+        arrow.textContent = '▶';
+    } else {
+        // Expand
+        header.classList.remove('collapsed');
+        header.classList.add('expanded');
+        content.classList.remove('collapsed');
+        content.classList.add('expanded');
         arrow.textContent = '▼';
     }
 }
@@ -19816,6 +20542,48 @@ function buildSearchIndex() {
                 });
             });
         }
+    }
+
+    // Index Governance & Hierarchy
+    if (eudoriaData.governanceHierarchy) {
+        const gov = eudoriaData.governanceHierarchy;
+
+        // Main Governance page
+        index.push({
+            type: 'Governance',
+            category: 'Structure of Eudoria',
+            title: gov.name,
+            content: gov.subtitle + ' ' + gov.overview.content,
+            keywords: 'governance hierarchy authority eudora protectors guardians structure',
+            view: 'governance-hierarchy',
+            icon: '👑'
+        });
+
+        // Index individual sections
+        const sections = [
+            { key: 'divineAuthority', keywords: 'divine authority yahuah creator eudora protectors guardians' },
+            { key: 'mortalGovernance', keywords: 'mortal governance regional rulers kings queens local' },
+            { key: 'protectionSystems', keywords: 'protection defense protectors guardians sub-guardians landkeepers' },
+            { key: 'theProtectors', keywords: 'protectors maui naymor zendayah naime siddiq inner circle' },
+            { key: 'infrastructure', keywords: 'infrastructure four pillars wakan wakantech star sanctum goldenvault lion court' },
+            { key: 'undergroundSurface', keywords: 'underground surface set civilization setanese autonomous' },
+            { key: 'geographicStructure', keywords: 'geographic structure unions regions wesari estara sundra norvayn' }
+        ];
+
+        sections.forEach(section => {
+            const sectionData = gov[section.key];
+            if (sectionData) {
+                index.push({
+                    type: 'Governance Section',
+                    category: 'Governance & Hierarchy',
+                    title: sectionData.title,
+                    content: sectionData.subtitle || '',
+                    keywords: section.keywords,
+                    view: 'governance-hierarchy',
+                    icon: '⚡'
+                });
+            }
+        });
     }
 
     return index;
