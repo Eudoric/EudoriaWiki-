@@ -8517,6 +8517,35 @@ function showCivilizationDetail(civKey) {
 
     const contentArea = document.getElementById('contentArea');
 
+    // Helper function to format civilization content
+    function formatCivContent(content) {
+        // Convert markdown-style formatting to HTML
+        let formatted = content
+            // Convert **text** to <strong>
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            // Convert line breaks to paragraphs
+            .split('\n\n')
+            .map(para => {
+                // Check if it's a list item
+                if (para.trim().startsWith('-')) {
+                    const items = para.split('\n')
+                        .filter(line => line.trim())
+                        .map(line => `<li>${line.replace(/^-\s*/, '')}</li>`)
+                        .join('');
+                    return `<ul class="civ-list">${items}</ul>`;
+                }
+                // Check if it's a horizontal rule
+                if (para.trim() === '---') {
+                    return '<hr class="civ-divider">';
+                }
+                // Regular paragraph
+                return para.trim() ? `<p class="civ-paragraph">${para}</p>` : '';
+            })
+            .join('');
+
+        return formatted;
+    }
+
     // Build sections HTML based on civilization
     let sectionsHTML = '';
 
@@ -8525,25 +8554,27 @@ function showCivilizationDetail(civKey) {
         if (sectionKey !== 'name' && sectionKey !== 'icon' && sectionKey !== 'subtitle') {
             const section = civ[sectionKey];
             sectionsHTML += `
-                <div class="text-section">
-                    <h3>${section.title}</h3>
-                    <p>${section.content}</p>
+                <div class="civ-section">
+                    <h2 class="civ-section-title">${section.title}</h2>
+                    <div class="civ-content">
+                        ${formatCivContent(section.content)}
+                    </div>
                 </div>
             `;
         }
     });
 
     const detailHTML = `
-        <div class="text-profile">
+        <div class="civ-profile">
             <button class="back-button" onclick="renderCivilizationsOverview()">← Back to Civilizations</button>
 
-            <div class="text-header">
-                <div class="text-icon">${civ.icon}</div>
-                <h1>${civ.name}</h1>
-                <p class="text-subtitle">${civ.subtitle}</p>
+            <div class="civ-header">
+                <div class="civ-icon">${civ.icon}</div>
+                <h1 class="civ-title">${civ.name}</h1>
+                <p class="civ-subtitle">${civ.subtitle}</p>
             </div>
 
-            <div class="text-body">
+            <div class="civ-body">
                 ${sectionsHTML}
             </div>
         </div>

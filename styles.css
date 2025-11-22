@@ -9447,3 +9447,169 @@ div .xref-link {
         padding-right: 16px;
     }
 }
+
+/* ========================================
+   CIVILIZATION SECTION STYLES (Eudoria Theme)
+   ======================================== */
+
+.civ-profile {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.civ-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(90, 143, 90, 0.3);
+}
+
+.civ-icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.civ-title {
+    font-size: 2.5rem;
+    color: #3a7d3a;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.civ-subtitle {
+    font-size: 1.2rem;
+    color: #5a8f5a;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.civ-body {
+    line-height: 1.8;
+}
+
+.civ-section {
+    margin-bottom: 3.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(90, 143, 90, 0.05), rgba(58, 125, 58, 0.03));
+    border-left: 4px solid #5a8f5a;
+    border-radius: 8px;
+}
+
+.civ-section:last-child {
+    margin-bottom: 0;
+}
+
+.civ-section-title {
+    font-size: 1.8rem;
+    color: #3a7d3a;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(90, 143, 90, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.civ-content {
+    color: #e0e0e0;
+}
+
+.civ-paragraph {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.civ-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+/* Strong text in civilization sections */
+.civ-content strong {
+    color: #6db86d;
+    font-weight: 600;
+}
+
+/* Lists in civilization sections */
+.civ-list {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+    list-style: none;
+}
+
+.civ-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.civ-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #5a8f5a;
+    font-size: 1.2rem;
+}
+
+/* Nested lists */
+.civ-list .civ-list {
+    margin: 0.8rem 0 0.8rem 1rem;
+}
+
+/* Horizontal dividers */
+.civ-divider {
+    margin: 2.5rem 0;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(90, 143, 90, 0.4), transparent);
+}
+
+/* Subsection headers (emojis + text like "THE WEST 🌫️") */
+.civ-content strong {
+    display: inline-block;
+}
+
+/* Special styling for subsection headers with emojis */
+.civ-paragraph:has(strong) {
+    margin-top: 2rem;
+}
+
+.civ-paragraph strong:first-child {
+    font-size: 1.15rem;
+    color: #6db86d;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .civ-profile {
+        padding: 1rem;
+    }
+
+    .civ-title {
+        font-size: 2rem;
+    }
+
+    .civ-subtitle {
+        font-size: 1rem;
+    }
+
+    .civ-section {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .civ-section-title {
+        font-size: 1.5rem;
+    }
+
+    .civ-paragraph {
+        font-size: 1rem;
+    }
+
+    .civ-list li {
+        font-size: 1rem;
+    }
+}
