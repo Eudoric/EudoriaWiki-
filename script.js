@@ -9584,12 +9584,10 @@ function navigateTo(view) {
         renderTheSilence();
     } else if (view === 'eudoria-saga') {
         renderEudoriaSaga();
-    } else if (view === 'royalty') {
-        renderComingSoon('Royalty', 'The royal families and rulers of Eudoria.');
-    } else if (view === 'companions-allies') {
-        renderComingSoon('Companions & Allies', 'Those who stand beside the heroes of Eudoria.');
-    } else if (view === 'other-characters') {
-        renderComingSoon('Other Important Characters', 'Notable figures who shape the world of Eudoria.');
+    } else if (view === 'royalty-defenders') {
+        renderComingSoon('Royalty & Defenders', 'The royal families, rulers, warriors, and guardians of Eudoria.');
+    } else if (view === 'other-figures') {
+        renderComingSoon('Other Important Figures', 'Notable figures who shape the world of Eudoria.');
     } else if (view === 'eudoria-2025') {
         renderComingSoon('Eudoria 2025', 'The future of Eudoria awaits...');
     } else {
