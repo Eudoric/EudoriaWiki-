@@ -9242,6 +9242,330 @@ She may look **small and delicate**, but she holds the **essential power to conf
 
 Ami Zula Chaka — **The Princess Who Chose Love Over Birthright and Holds the Key to Eudoria's Healing.** 👸🌟🐅`
             }
+        },
+        makani: {
+            name: "Makani-tikitiki-a-Taranga",
+            icon: "🌊⚔️💔",
+            category: "Other Important Figures",
+            nickname: "Son of the Demigod",
+            titlesPosition: {
+                title: "Name & Titles",
+                content: `**Makani-tikitiki-a-Taranga**
+**Son of Maui-tikitiki-a-Taranga**
+**Son of a Demigod**`
+            },
+            regionLocation: {
+                title: "Region & Location",
+                content: `**Polynesia (Sundra Union - South):**
+- His **familial homeland**, although he held deep **resentment** toward the islands due to his complicated relationship with his father, Maui
+
+**Nawaili:**
+- He was **born in Nawaili**, which is a distinct region but part of the Polynesian whole
+
+**Abarah (Estara Union - East):**
+- Where he sought **spiritual redemption** and stayed with the **Eonks** under Ceón Eu'dore's guidance 🙏✨`
+            },
+            roles: {
+                title: "Roles",
+                content: `Makani is defined by his oscillation between the roles of **Rebel**, **Enforcer**, and **Repentant Devotee.**
+
+**Royal/Heir (Reluctant):**
+- As **Maui's son**, he holds a high place in the Polynesian lineage, though he **rejected this heritage for years** out of resentment toward his father 👑
+
+**Cultist/Trainee:**
+- He was a member of the **Order of Hannas** (Al'sekemu's cult), reaching **Level 3** before being imprisoned by them for refusing to perform a sacrifice ⚡
+
+**Military Leader/Enforcer:**
+- He became a **key figure in King Malachai's military campaign** against the North Nation during the Siege of the Norvick
+- He was tasked with **leading the conquest of Qunite** and aided in the destruction of North Nation cities like Nigel ⚔️
+
+**Spiritual Seeker:**
+- After profound loss and trauma, he devoted himself to **repentance and self-improvement** with the Eonks under Ceón Eu'dore in Abarah 🙏
+
+**Guardian's Son:**
+- He inherited his father's **legendary warrior appearance** and some **demigod powers**, though his abilities were **suppressed/"on hold"** due to his past evil actions ⚡🔒`
+            },
+            appearance: {
+                title: "Brief Description",
+                content: `Makani is a **handsome, muscular figure** with **long, curly hair** and **Polynesian tattoos.**
+
+Though chronologically older than Kabina, his **emotional journey** makes him feel more mature.
+
+**Defining Characteristic:**
+His **emotional turmoil** and **deep-seated resentment** toward his father, Maui, whom he felt consistently prioritized his duty to Queen Eudora over his family. 💔
+
+**Personality:**
+- Noted for his **quick wit, flirtatiousness**, and tendency to **joke even in serious situations** - a trait he shares with his father, Maui
+- He is **vain and charming**, and he often comments on his own appearance
+- He dated **"nothing but demons"** when he was evil, seeking validation in all the wrong places
+
+**Current Path:**
+He is now pursuing a relationship with **Kabina** (one of the Primrose Triplets) and is focused on becoming a **"better man"** worthy of her love. 💜`
+            },
+            background: {
+                title: "Background 💔",
+                content: `Makani **hated his father** because Maui *"put his brothers and mother last."* Everyone was **second to Eudora.**
+
+While Maui was helping Eudora with her children (the Protectors, the rulers, the world), **his own children were waiting for their father.**
+
+That longing became **hatred.** 💔
+
+**Maui's Other Children:**
+Though Maui's other children eventually forgave him (even if they didn't speak to him), his youngest son, Makani, **started a hate campaign against Maui.**
+
+**Maui's Response:**
+Maui **loves his sons** and does not get angry with Makani. Sometimes he tries to help him, but **Makani rejects his father every time.**
+
+**Makani's Spiral:**
+This emotional void made Makani **vulnerable to manipulation** by power-hungry figures like King Malachai.
+
+Makani used to **deal with evil, mean-spirited people** just to **get his father's attention.** He hated Eudora for taking his father away from his mother and sometimes **felt broken.**
+
+**Redemption:**
+After his wife's murder and a profound spiritual journey with Ceón Eu'dore, Makani embarked on a **path of redemption and reconciliation with Maui.**
+
+Ceón showed Makani that **hatred can become deadly** and helped him find **forgiveness.** 🙏✨`
+            },
+            relationshipMaui: {
+                title: "Relationship: Maui (Father - Reconciled) 🌊⚡",
+                content: `The relationship was marked by **profound hatred** and accusations that Maui was a **"slave to Eudora."**
+
+**The Resentment:**
+Makani felt Maui's duty to Queen Eudora made him a **neglectful father** who prioritized the world over his own family.
+
+Makani **started a hate campaign** against his father, rejecting him repeatedly, even when Maui tried to help. 💔
+
+**Reconciliation:**
+They achieved **emotional reconciliation** when Makani **asked for forgiveness**, acknowledging that Maui had **secured his future** and had **loved him all along.**
+
+Their relationship is now **healing**, though the scars of neglect remain. 🌊💙`
+            },
+            relationshipKabina: {
+                title: "Relationship: Kabina (Partner - Primrose Triplet) 🌸💜",
+                content: `His **girlfriend/lover** is one of the Primrose Triplets.
+
+**Their Journey:**
+- She initially **rejected his advances and commitment**, unsure of her feelings
+- He **loves her deeply** and views her as his **future wife**
+- She later realized she **loved him**, particularly after he was nearly killed by Al'sekemu (Malachai's true form)
+- **Seeing him in danger** made her confess her feelings 💜
+
+**Their Separation:**
+Makani **voluntarily ended their relationship** to prevent relapsing into old ways amid the chaotic environment around the triplets.
+
+He **promised to return** when he is a **"better man"** for her. 💪
+
+They maintain a **close, loving friendship** while he focuses on self-improvement. 🌸`
+            },
+            relationshipMalachai: {
+                title: "Relationship: King Malachai (Mentor/Manipulator) 👑⚔️",
+                content: `Recognized Makani's potential and **used him to break Maui's heart**, manipulating him with promises of recognition and power.
+
+**Manipulation:**
+- Malachai used Makani as a **key figure in his military campaigns** against the North Nation
+- When Makani's pregnant wife was murdered, Malachai **intervened to prevent Makani from succumbing to vengeance**, challenging him to **choose survival over killing**
+
+Malachai was both a **manipulator** and an **unexpected source of harsh wisdom** in Makani's life. 💔⚔️`
+            },
+            relationshipElikapeka: {
+                title: "Relationship: Elikapeka (Wife/Lover - Deceased) 💔",
+                content: `His **wife**, whom he **dearly loved** because she loved him as **Makani**, not as Maui's son, not as a demigod's heir, **just as himself.**
+
+**The Tragedy:**
+She was **pregnant** when she was **brutally murdered** by **Xochitl, the Sultan of Qunite**, as a message to Malachai. 💔⚔️
+
+Her death unleashed a **powerful, vengeful rage** in Makani that nearly consumed him.
+
+She was his **true love**, the one person who saw him for who he truly was. 💔`
+            },
+            relationshipCeon: {
+                title: "Relationship: Ceón Eu'dore (Spiritual Mentor) 🙏✨",
+                content: `The **spiritual leader in Abarah** who helped Makani find **forgiveness and self-acceptance.**
+
+**The Gift:**
+Ceón **granted Makani forgiveness without needing a confession**, stating he had **already moved beyond his sins.**
+
+Ceón showed Makani that **hatred can become deadly** and guided him toward **redemption.** 🙏💙`
+            },
+            relationshipXochitl: {
+                title: "Relationship: Xochitl (Enemy) ⚔️💔",
+                content: `The **Sultan of Qunite** brutally murdered Makani's pregnant wife, **Elikapeka**, as a message to King Malachai.
+
+**The Rage:**
+Makani **nearly killed him** in a fit of rage and grief, but was **stopped by Malachai**, who challenged him to **walk away from vengeance.**
+
+This moment became a **turning point** in Makani's redemption. 💔⚔️`
+            },
+            relationshipHannas: {
+                title: "Relationship: The Order of Hannas (Former Cult) ⚡",
+                content: `Makani **joined Al'sekemu's cult** and reached **Level 3** before being **imprisoned by them** for refusing to perform a sacrifice.
+
+**The Betrayal:**
+The cult **rejected him** when he tried to retain some humanity, throwing him in prison when he wouldn't complete the sacrifice. ⚡🔒`
+            },
+            personality: {
+                title: "Personality & Traits",
+                content: `**Emotional Trauma:**
+- His actions were largely driven by the **pain of paternal neglect** and the **desire for recognition** from his father
+- He felt **"lost"** and used evil alliances to get attention 💔
+
+**Vain and Flirtatious:**
+- He often comments on his **own appearance** and flirts openly, even using charm as a strategy
+- He is **handsome and knows it**
+- When he was "evil," he dated **"nothing but demons"** - seeking validation in toxic relationships 💋
+
+**Loyalty/Betrayal:**
+- He shows loyalty to those who acknowledge him (like Malachai), but readily betrays them when they reject him (the Hannas cult threw him in prison)
+- His highest loyalty is now to his **wife's memory**, his **path of redemption**, and **Kabina** 💜
+
+**Lack of Control:**
+- He struggles with **emotional control**, often letting his resentment spill over into shouting and rash decisions
+- His **demigod powers were suppressed** due to his past evil actions - they are **"on hold"** until he proves himself worthy ⚡🔒
+
+**Humorous:**
+- Despite his deep struggles, he possesses **sharp sarcasm and humor**, often providing comic relief even in serious situations - a trait he shares with his father, Maui 😄
+
+**Quick Wit:**
+- Intelligent and clever, able to **think on his feet** and joke his way through tense moments 🧠`
+            },
+            majorConflicts: {
+                title: "Major Conflicts & Story Events",
+                content: `**Childhood Neglect:**
+Makani grew up feeling abandoned by his father, Maui, who was always serving Queen Eudora instead of his own family.
+
+While Maui's other children eventually forgave him, Makani started a hate campaign against his father.
+
+**Joining the Order of Hannas:**
+Vulnerable and seeking validation, Makani joined Al'sekemu's cult and reached Level 3 as a cultist/trainee.
+
+**Betrayal and Imprisonment:**
+The Hannas cult imprisoned Makani when he refused to perform a sacrifice, rejecting him when he tried to retain some humanity.
+
+**Serving King Malachai:**
+After being rescued, Makani was manipulated by King Malachai, who promised him recognition and power.
+
+Malachai used Makani to break Maui's heart and was a key military leader in the Siege of the Norvick against the North Nation.
+
+Makani aided in the destruction of North Nation cities, such as Nigel, and was tasked with leading the conquest of Qunite.
+
+**The Murder of Elikapeka:**
+While leading Malachai's forces, Makani found his pregnant wife, Elikapeka, brutally murdered by Xochitl, the Sultan of Qunite, as a message to Malachai.
+
+This unleashed a powerful, vengeful rage that nearly consumed Makani.
+
+**Rejection of Vengeance:**
+Makani nearly killed Xochitl in a fit of grief and rage.
+
+King Malachai intervened, preventing him from succumbing to vengeance and challenging him to choose survival over killing.
+
+Makani walked away from the battlefield and the path of war, rejecting vengeance and beginning his redemption.
+
+**The Spiritual Turning Point:**
+Makani sought redemption in Abarah, where Ceón Eu'dore granted him forgiveness without needing a confession, stating he had already moved beyond his sins.
+
+Ceón showed Makani that hatred can become deadly and helped him find peace.
+
+**Reconciliation with Maui:**
+Makani returned to his father and asked for forgiveness, acknowledging that Maui secured his future and loved him all along.
+
+They successfully achieved reconciliation, restoring their relationship.
+
+**Relationship with Kabina:**
+Makani pursued a relationship with Kabina (one of the Primrose Triplets).
+
+She initially rejected his advances, but later realized she loved him.
+
+**Attempted Kidnapping by Al'sekemu:**
+Makani was nearly strangled by Al'sekemu (Malachai's true form) when the god attempted to seize the Book of Quireth.
+
+This event terrified Kabina into confessing her love for him - seeing him in mortal danger made her realize how much she cared.
+
+**Voluntary Separation from Kabina:**
+Makani voluntarily ended his relationship with Kabina to prevent relapsing into his old ways due to the chaotic environment around the Primrose Triplets.
+
+He promised to return when he is a "better man" for her, focusing on self-improvement with the Eonks in Abarah.`
+            },
+            currentStatus: {
+                title: "Current Status",
+                content: `**Active and Redeemed (Self-Improvement Focus)** 🙏✨
+
+Makani is currently on a **path of self-improvement and peace.**
+
+**Current Focus:**
+- He has **reconciled with his father, Maui**, and is focused on living a life dedicated to his values
+- Staying with the **Eonks in Abarah** under Ceón Eu'dore's guidance 🙏
+- He maintains a **close, loving friendship with Kabina**, promising to return when he is a **"better man"** for her 💜
+- His **demigod powers remain suppressed** but may return as he continues his redemption ⚡🔒
+- He is working to **heal from the trauma** of his wife's murder and his years serving evil forces 💔`
+            },
+            analogy: {
+                title: "Analogy to Solidify Understanding",
+                content: `Makani is like a **compass needle** that was desperately trying to find its true north (Maui's genuine affection and recognition). 🧭
+
+Still, because the **compass casing (his childhood) was cracked by neglect**, he was easily pulled and manipulated by the **strongest local magnetic force** (Malachai's promises of power). 🔴
+
+His service to Malachai was an attempt to **prove his worth through false strength**, leading him down a destructive path that culminated in the **destruction of cities** and his **own family** (the murder of his pregnant wife). 💔⚔️
+
+It wasn't until the **magnetic field he relied on (Malachai) completely failed him** - culminating in the **devastating loss of his true love and unborn child** - that he realized the importance of **aligning himself with a celestial guide** (Ceón Eu'dore). 🙏✨
+
+Now, he must **discard the false magnetism of chaos and power** to slowly, painstakingly find his **internal alignment**, ensuring that his **own integrity**, rather than resentment, guides his future actions. 🧭💙`
+            },
+            legacy: {
+                title: "Legacy",
+                content: `**What Makani-tikitiki-a-Taranga Will Be Remembered For:**
+
+**The Son Who Hated:**
+- **Hated his father Maui** for being a "slave to Eudora"
+- Started a **hate campaign** against Maui
+- Felt his father prioritized the world over his own family 💔
+
+**The Cultist Who Refused:**
+- Joined the **Order of Hannas** (Al'sekemu's cult), reached **Level 3**
+- **Imprisoned by the cult** for refusing to perform a sacrifice
+- Retained some humanity even in darkness ⚡
+
+**The Military Leader:**
+- **Key figure in King Malachai's campaign** against the North Nation
+- Led the **Siege of Norvick** and the **conquest of Qunite**
+- Aided in the **destruction of North Nation cities** like Nigel ⚔️
+
+**The Widower:**
+- His wife **Elikapeka** was **brutally murdered while pregnant** by Xochitl, the Sultan of Qunite
+- *"She loved me as Makani, not as Maui's son, just as myself"* 💔
+- Her death unleashed a vengeful rage that nearly consumed him
+
+**The Rejection of Vengeance:**
+- **Nearly killed Xochitl** in grief and rage
+- **Malachai intervened**, challenging him to choose survival over killing
+- **Walked away from vengeance**, beginning his redemption 💪
+
+**The Redeemed:**
+- Found **spiritual redemption** with Ceón Eu'dore in Abarah
+- **Ceón granted forgiveness** without needing confession
+- *"Hatred can become deadly"* - learned to let go 🙏✨
+
+**The Reconciled Son:**
+- **Asked his father Maui for forgiveness**
+- Acknowledged Maui **secured his future and loved him all along**
+- Relationship now **healing** 🌊💙
+
+**The Better Man:**
+- In love with **Kabina** (Primrose Triplet)
+- **Voluntarily ended relationship** to focus on self-improvement
+- *"I'll return when I'm a better man for you"* 💜
+- Nearly killed by **Al'sekemu** - Kabina confessed her love seeing him in danger
+
+**The Suppressed Demigod:**
+- Demigod powers **"on hold"** due to past evil actions
+- May return as he continues redemption ⚡🔒
+
+**The Compass Realigned:**
+- Broken compass needle pulled by false magnetism (Malachai)
+- Lost his pregnant wife and unborn child
+- Found celestial guide (Ceón) to realign his **internal integrity** 🧭
+
+Makani-tikitiki-a-Taranga — **The Son of a Demigod Who Found Redemption Through Loss and Chose Integrity Over Resentment.** 🌊⚔️💔🙏`
+            }
         }
     },
     eudoricGods: {
