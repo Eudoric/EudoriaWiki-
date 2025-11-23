@@ -5105,7 +5105,7 @@ Different threats require different defenders—Protectors (global divine), Guar
             name: "King Bao Xingyun",
             icon: "👑⭐",
             category: "Royalty & Defenders",
-            image: "Images/kingbao.png",
+            image: "Images/Kingbao.png",
             titlesPosition: {
                 title: "Titles & Position",
                 content: `**King Bao Xingyun of Xingyun, Xuerai**
@@ -15738,8 +15738,14 @@ function showCharacterProfile(charKey, section = 'royaltyDefenders') {
 
     // Generate infobox with character image mapping
     const characterImageMap = {
-        'King Bao Xingyun': 'kingbao.png',
-        'Ceón Eu\'dore': 'Ceon.png',
+        'King Bao Xingyun': 'Kingbao.png',
+        'Ceón Eu\'dore': 'CeónEu\'dore.png',
+        'Chief Nalongo O\'waikiki': 'Nalongo.png',
+        'King Deaven Liosh': 'Deaven.png',
+        'King Isaiah Chaka': 'Isaiah.png',
+        'King David Davidson': 'Davidson.png',
+        'Kwan Pokas of Zalika': 'Kwan.png',
+        'Timbe Ronaldo of Zalika': 'Timbe.png',
         'Queen Azariah Maruli': 'Azariah.png',
         'Sanaa & Simba Jarrah': 'Twins.png',
         'King Ahmad Zulo Chaka': 'Ahmad.png',
