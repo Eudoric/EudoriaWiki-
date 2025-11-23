@@ -8236,6 +8236,338 @@ He uses the power of the divine **not for conquest, but for healing and defense*
 
 King Ahmad Zulo Chaka — **The Resurrected Phoenix Who Replaced Scorched Earth with a Thriving Garden.** 🔥🌱👑`
             }
+        },
+        rosaThornburns: {
+            name: "Rosa Thronburns",
+            icon: "🌹👑💔",
+            category: "Royalty & Defenders",
+            nickname: "The Escaped Queen",
+            titlesPosition: {
+                title: "Name & Titles",
+                content: `**Rosa Thronburns**
+**Queen Rosa of Deaven** (former title, rejected)
+**Leader Rosa**
+**Wife of King Malachai** (Ex-wife, later widow)
+**Mrs. Malachai** (A title Malachai wished her to embrace - she refused)`
+            },
+            regionLocation: {
+                title: "Region & Location",
+                content: `**Former Region:** Deaven
+The region where she was Queen and where King Malachai's palace stood. She spent a **decade trapped here** as Malachai's wife.
+
+**Current Region:** Alexandria (Norvayn Union - North)
+The village she founded and nurtured for over **nine years** after her escape. It was intentionally established **far from kings and gods** to be a sanctuary.
+
+**About Alexandria:**
+- Rosa settled her people in a **harsh, cold, snowy region** in the Northern Hemisphere after their first escape
+- **Queen Eudora granted them protection** via a force field
+- When Eudora was forced back to the heavens, the force field faded, leaving Alexandria vulnerable
+- **King Malachai found them**, shattered the protection, and **systematically destroyed the sanctuary**, leaving only **blackened fields and ashes** 💔
+- Rosa has since **rebuilt Alexandria** and continues to lead her people there, raising her son in the refuge she created in honor of her mother`
+            },
+            roles: {
+                title: "Roles",
+                content: `**Queen Consort (Former):**
+Served as King Malachai's wife and Queen of Deaven for a decade, though this role was characterized by **control and abuse**. She later **rejected this title entirely.**
+
+**Founder and Leader:**
+Led **50 Deavenites** to freedom and successfully established Alexandria, striving for equality and self-sufficiency. She governs without claiming royal titles, simply as **"Leader Rosa."**
+
+**Mother:**
+Mother of a small boy named **Alex Al'sekemu**, whom she raised in secret in Alexandria. The father is King Malachai, though she kept the child **hidden from him for nine years.**
+
+**Infiltrator/Spy (During Second Capture):**
+After Alexandria's destruction, she accepted the role of queen during her second capture to gain influence and find a way to save her people, though she was **"faking it all."**
+
+**Researcher (Former):**
+Before her marriage, Rosa worked as a **researcher of ancient gods**. Her study focused on **Al'sekemu**, which led her back home to Dora (now Deaven), where she reconnected with King Malachai.`
+            },
+            appearance: {
+                title: "Brief Description",
+                content: `Rosa is characterized by her **deep resilience**, **maternal instinct**, and **profound emotional trauma.**
+
+**Physical Appearance:**
+- **Soft mocha skin**
+- **Amber curls**
+- **Amber eyes**
+- **Curvaceous figure**
+
+**Background:**
+Rosa was a **friend of King Malachai** before their marriage. She worked as a researcher studying ancient gods, specifically **Al'sekemu**. This research brought her back to Dora (now Deaven), where she reconnected with Malachai.
+
+Rosa was **engaged to Fausto**, a historian and archaeologist she deeply loved. **King Malachai secretly had him murdered by a sea monster** to remove him as a rival. After Fausto's death, Rosa married King Malachai.
+
+**Their Relationship:**
+Malachai saw Rosa as **soft, reasonable, and kind** - the love of his life. Their love **blossomed at first**, but King Malachai became **obsessed and abusive.**
+
+Despite once loving him deeply, Rosa grew to **fear his cruelty and manipulation**. She describes their relationship as one where she was **possessed, trapped in a gilded cage for a decade.**`
+            },
+            theEscape: {
+                title: "The Escape 🌙",
+                content: `Rosa left King Malachai at **midnight** - the exact time when he had a strict rule to sleep.
+
+She fled with **100 Deavenites**, but only **50 reached Alexandria** with her.
+
+**Her mother, Alexandria, sacrificed herself** to Malachai's forces so Rosa and her people could escape.
+
+With the help of **Soha** (the goddess of Eudora's star), Rosa and her people lived free in a land she named **Alexandria** in honor of her mother.
+
+**The Final Straw:**
+Despite their deep, complicated love, discovering that **Lady Oriana was pregnant with Valiyah** was Rosa's last straw.
+
+She left Malachai **once and for good**, remaining free for **nine years** until he found her again.`
+            },
+            trauma: {
+                title: "Her Trauma 💔",
+                content: `Her life is defined by her tumultuous, **decade-long marriage to Malachai.**
+
+After her escape, she devoted her life to securing freedom and safety for her people in Alexandria, embodying **survival and rejecting crowns.**
+
+However, her experiences left her **profoundly scarred:**
+- Prone to **hearing haunting screams**
+- Overwhelmed by **grief**
+- Constantly **seeing danger where there is none**
+- Wears her **mother's death as a heavy emotional burden**`
+            },
+            relationshipMalachai: {
+                title: "Relationship: King Malachai (Husband - Ex-wife, later widow) 💔",
+                content: `Her former husband, who **loved her obsessively** but was **abusive and manipulative**. He is the father of her son, Alex.
+
+**Their Love:**
+They were **deeply in love** at the beginning of their marriage, but King Malachai's true self gradually emerged.
+
+**The Abuse:**
+Rosa eventually fled from him, attempted to kill him, and rejected him entirely, declaring she had been **"faking it all"** and never truly loved him.
+
+**Malachai's Control:**
+Malachai drove her to desperation through a decade of control and abuse.
+
+**Final Words:**
+When facing his own death, he released her from his vow of protection, stating:
+
+*"Our amorous relationship is concluded; I shall become your enemy."*`
+            },
+            relationshipAlexandria: {
+                title: "Relationship: Alexandria (Mother - Deceased) 🌹",
+                content: `Rosa's mother, who fostered her strong sense of faith.
+
+**The Sacrifice:**
+Alexandria **sacrificed herself** to Malachai's forces so Rosa and her people could escape during the first capture.
+
+**The Execution:**
+Malachai later brutally **executed her by dropping her into a flaming pit**, telling Rosa it was her fault for running.
+
+**The Legacy:**
+Rosa wears her mother's death as a heavy emotional burden and **named her sanctuary after her** - Alexandria, a refuge built in honor of her mother's sacrifice. 🏰`
+            },
+            relationshipAlex: {
+                title: "Relationship: Alex Al'sekemu (Son) 👶✨",
+                content: `Rosa secretly gave birth to Malachai's son **nine years after her escape**, successfully hiding him in Alexandria.
+
+**Divine Eyes:**
+The boy has **divine golden eyes** (a sign of his father's true nature as Al'sekemu).
+
+**Fierce Protection:**
+She is **fiercely protective** of him and raises him in Alexandria, away from Malachai's influence.
+
+Rosa keeps him safe from his father's legacy, determined to give him a life of freedom.`
+            },
+            relationshipFausto: {
+                title: "Relationship: Fausto (Fiancé - Deceased) 💔",
+                content: `A **historian and archaeologist** whom Rosa loved deeply.
+
+**The Engagement:**
+She was engaged to marry him, hoping to build a future together.
+
+**The Murder:**
+**King Malachai secretly had him murdered by a sea monster** to remove him as a rival, clearing the way for him to marry Rosa himself.
+
+This betrayal was kept hidden from Rosa until much later.`
+            },
+            relationshipOriana: {
+                title: "Relationship: Lady Oriana (Rival) 🔥",
+                content: `Malachai's lover, whom Rosa **loathed** for her lack of morals and for having the child (Valiyah) that Rosa desperately wanted.
+
+**The Final Straw:**
+Learning that **Oriana was pregnant with Malachai's child** was Rosa's final straw - the moment she decided to leave him for good.
+
+**The Secret:**
+Oriana knew Rosa was escaping but **chose to let her go.**`
+            },
+            relationshipPrimroses: {
+                title: "Relationship: The Primrose Triplets (Allies) 🌸",
+                content: `Rosa was briefly an ally of the triplets.
+
+**Kabina** rescued her from the destruction of Alexandria when Malachai found and destroyed her sanctuary.`
+            },
+            relationshipSoha: {
+                title: "Relationship: Soha (Goddess - Benefactor) ✨",
+                content: `The **goddess of Eudora's star**, who helped Rosa and her people escape to safety and establish Alexandria.`
+            },
+            relationshipEudora: {
+                title: "Relationship: Queen Eudora (Protector) 🌿",
+                content: `**Initially dismissive** of Eudora's power and faith, Rosa eventually accepted Eudora's protection when the goddess created a **force field around Alexandria.**
+
+**The Turning Point:**
+After her mother's death and witnessing Eudora's power, Rosa declared:
+
+*"I believe now, Mama."* 🙏`
+            },
+            personality: {
+                title: "Personality & Traits",
+                content: `**Love and Emotion:**
+- Malachai sought her because she was **soft and kind**
+- She had a deep capacity for love, admitting she chose Malachai because she loved him (at first)
+
+**Fierce Defiance:**
+- She consistently rebels against Malachai, using deception (claiming a lover named Wales) and physical force (throwing a pillow at him) to challenge his control
+- She **attempted to assassinate him** with a short blade, declaring he was not her husband
+
+**Trauma and Paranoia:**
+- Constantly haunted by the screams and violence of the past
+- Often seeing danger when there is none
+- Wears her mother's death as a heavy emotional burden
+
+**Redemption and Faith:**
+- Initially dismissive of Eudora's power and faith
+- Eventually accepted Eudora's protection and declared, *"I believe now, Mama,"* after witnessing divine intervention and suffering profound loss
+
+**Maternal Instinct:**
+- **Fiercely protective** of her son and her people
+- Built Alexandria as a sanctuary for the 50 Deavenites who followed her
+- Created a community based on **equality and self-sufficiency**
+
+**Rejection of Royalty:**
+- Though she was Queen of Deaven, she actively **rejects crowns and royal titles**
+- Leads Alexandria simply as **"Leader Rosa,"** not as a queen
+
+**Symbolism - The Rose:**
+- She associates the rose with her identity and past
+- It was a symbol of Malachai's ownership, but also a representation of the kindness shown by a little girl in Alexandria
+- The rose represents both her **trauma and her resilience** 🌹`
+            },
+            majorConflicts: {
+                title: "Major Conflicts & Story Events",
+                content: `**Research and Reconnection:**
+Rosa worked as a researcher studying ancient gods, specifically Al'sekemu. This brought her back to Dora (now Deaven), where she reconnected with her friend, King Malachai.
+
+**Fausto's Murder:**
+Rosa was engaged to Fausto, a historian she loved deeply. King Malachai secretly had him murdered by a sea monster to eliminate his rival.
+
+**Marriage to Malachai:**
+After Fausto's death, Rosa married King Malachai. Their love blossomed at first, but Malachai became obsessed and abusive over their decade-long marriage.
+
+**The Midnight Escape:**
+Rosa fled Malachai exactly at midnight - the time when he always fell into a deep, controlled sleep due to a strict rule. She sacrificed everything, including her wedding ring, to gain freedom. She left with 100 Deavenites, but only 50 made it to Alexandria.
+
+**Mother's Sacrifice:**
+During the escape, Rosa's mother, Alexandria, took the bait for her daughter, telling Rosa and the others to leave and never look back. Malachai's forces captured her.
+
+**Establishing Alexandria:**
+With the help of Soha (goddess of Eudora's star), Rosa and her 50 followers settled in a harsh, snowy region in the Northern Hemisphere. She named the sanctuary Alexandria in honor of her mother. Queen Eudora granted them protection via a force field.
+
+**The Final Straw - Oriana's Pregnancy:**
+Learning that Lady Oriana was pregnant with Malachai's child (Valiyah) was Rosa's breaking point. She left Malachai once and for good, remaining free for nine years.
+
+**Secret Birth:**
+During her nine years of freedom, Rosa secretly gave birth to Malachai's son, Alex Al'sekemu, successfully hiding him in Alexandria.
+
+**The Destruction of Alexandria:**
+After nine years of freedom, Malachai found her. When Eudora was forced back to the heavens, the protective force field faded. Malachai shattered what remained, systematically destroyed Alexandria, and murdered Rosa's allies as she watched. The sanctuary was reduced to blackened fields and ashes.
+
+**Mother's Execution:**
+Malachai brutally executed Rosa's mother, Alexandria, by dropping her into a flaming pit. He told Rosa it was her fault for running.
+
+**Torture and Second Imprisonment:**
+During her second capture, Malachai physically abused Rosa, repeatedly slamming her with his boot to break her spirit. He confined her to his palace, forcing her to rule as his queen while playing psychological mind games.
+
+**Attempted Assassination:**
+Rosa drew a short blade and attempted to kill Malachai on his balcony, declaring that he was not her husband.
+
+**Rejection of Malachai:**
+She found enough strength to push him away, stating:
+
+*"I was faking it all: the love, the sex, the kisses. I don't love you. And now I realize... I never did."*
+
+**Final Release:**
+Malachai, facing his own impending death, released her from his vow of protection, stating:
+
+*"Our amorous relationship is concluded; I shall become your enemy."*
+
+**Rescue:**
+Kabina of the Primrose Triplets rescued Rosa from the wreckage of Alexandria.`
+            },
+            currentStatus: {
+                title: "Current Status",
+                content: `**Active, Free, and Committed to Vengeance**
+
+Rosa is actively moving through Eudoria, having left the wreckage of Alexandria and rejected the title of Queen.
+
+**Current Focus:**
+- Determined to **find her people** and fulfill her promise to return to Alexandria
+- Has **rebuilt the sanctuary** and continues to lead her community
+- **Raising her son, Alex Al'sekemu**, in Alexandria, keeping him safe from his father's legacy
+- Focused on the certainty that Malachai has to die - though by the time of her freedom, **Malachai may already be dead or dying**
+
+**Leadership:**
+Rosa leads her people simply as **"Leader Rosa,"** not as a queen.
+
+She embodies **survival, defiance, and the rejection of crowns.** 🌹`
+            },
+            analogy: {
+                title: "Analogy to Solidify Understanding",
+                content: `Rosa is like a **beautiful, rare timepiece** meticulously crafted for luxury, but tragically built with a **flawed, ticking time bomb** (Malachai's love) inside. ⏰💣
+
+She spent **ten years trapped in a gilded cage**, suffering the damage that came with being possessed.
+
+When she escaped, she built a **clock of her own** (Alexandria), based on **freedom and self-sufficiency.**
+
+However, because the original timepiece was her husband, he could **track her down**, violently dismantle her new life, and force her back into his chamber.
+
+Even after he set her free, the damage was **irreversible.**
+
+She is now a clock that **still runs**, but one piece - her **heart** - is fundamentally **shattered by betrayal and grief**, ensuring that every tick is a reminder of loss. 💔
+
+The timepiece continues to function, but it will **never be whole again.**`
+            },
+            legacy: {
+                title: "Legacy",
+                content: `**What Rosa Thronburns Will Be Remembered For:**
+
+**The Escaped Queen:**
+- Fled Malachai at midnight with 100 Deavenites, only 50 survived
+- **Free for nine years** before Malachai found her again 🌙
+
+**The Founder of Alexandria:**
+- Built a sanctuary in honor of her mother's sacrifice
+- Led her people with equality and self-sufficiency
+- **"Leader Rosa,"** not Queen - rejecting crowns and titles 🏰
+
+**The Survivor:**
+- Endured a **decade of abuse** as Malachai's wife
+- Lost her mother (executed by Malachai), her fiancé (murdered by Malachai), and her sanctuary (destroyed by Malachai)
+- **"I was faking it all"** - found strength to reject him entirely 💪
+
+**The Mother:**
+- Kept her son **Alex Al'sekemu** (with divine golden eyes) hidden for nine years
+- Fiercely protective, raising him away from his father's darkness 👶✨
+
+**The Rose:**
+- Symbol of both trauma and resilience
+- Represents Malachai's ownership and her own strength
+- The rose that survived the fire 🌹
+
+**The Believer:**
+- Initially dismissive of Eudora's power
+- *"I believe now, Mama"* - found faith through tragedy 🙏
+
+**The Shattered Timepiece:**
+- Still runs, but one piece - her heart - is fundamentally broken
+- Every tick is a reminder of loss
+- **Will never be whole again, but continues to function** ⏰💔
+
+Rosa Thronburns — **The Escaped Queen Who Built Freedom from the Ashes of a Gilded Cage.** 🌹👑💔`
+            }
         }
     },
     eudoricGods: {
