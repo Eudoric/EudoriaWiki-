@@ -6603,6 +6603,337 @@ True order doesn't come from control - it comes from trust, love, and respecting
 
 He is the "Chocolate Soup King" - the father who makes ice cream for his daughter and eats it melted, the ruler who learned to let his people be free, the man who chose love over control.`
             }
+        },
+        kwanPokas: {
+            name: "Kwan Pokas of Zalika",
+            icon: "⚖️👑",
+            category: "Royalty & Defenders",
+            nickname: "The Bonsai in the Jungle",
+            titlesPosition: {
+                title: "Titles & Position",
+                content: `**Kwan Pokas of Zalika**
+**Leader of Kwan Valley, Zalika**
+**Leader of the Kwanese Faction**
+**Co-Leader of Zalika (appointed by Queen Eudora alongside his twin brother, Timbe)**
+**The Disciplined Brother, The Bonsai in the Jungle**`
+            },
+            regionLocation: {
+                title: "Region & Location 🌳",
+                content: `**Region:** Zalika
+**Location:** Western Union (West), bordering the Tri-Wood Forest (which separates Zalika from the Heartland and Aurinia)
+**His Territory:** Kwan Valley (within Zalika)
+
+**About Zalika:**
+Zalika is characterized by lush greenery and high rainforests, featuring rolling hills, golden sands, and deep, secretive caves.
+
+**Regional Colors:** Green and brown 🌿
+
+**Unique Feature:** The home of the treetop kingdoms - some Zalikans live in treehouses among the canopy!
+
+**Division:**
+Zalika is divided into two distinct territories due to the brothers' inability to work together:
+
+**KWAN VALLEY (Kwan's territory) ⚖️**
+- Governed by rules and discipline
+- Structured, serious, orderly
+- Kwan considers it SUPERIOR to TimbeLand
+
+**TIMBELAND (Timbe's territory) 🔥**
+- Chaotic, wild, party-focused
+- Kwan views it as "discomposure" and lawlessness
+
+**Geography:**
+Zalika borders the Tri-Wood Forest, creating a natural boundary between it and the Heartland/Aurinia regions.`
+            },
+            role: {
+                title: "Role 📜",
+                content: `**Co-Leader of Zalika:**
+One of two leaders (alongside his twin brother Timbe) appointed by Queen Eudora to unite the people, guide them, and help them grow together.
+
+**Eudora's Vision:**
+She appointed the brothers specifically so they could use the region to get to know each other better and learn to work together as a family.
+
+**Kwan's Mission:**
+Advocates self-sufficiency for their people, proclaiming they will handle their own affairs and grow their own food rather than rely on the Queen's power.
+
+**Leader of the Kwanese:**
+His faction mirrors his qualities - serious, structured, disciplined, and rule-abiding.`
+            },
+            appearance: {
+                title: "Appearance 👤",
+                content: `**Age:** 27 years old (appointed at 18, has been co-leading for 9 years)
+**Build:** Fit/strong from warrior training
+**Demeanor:** Stoic, unyielding, strong
+
+**Presence:**
+Commands authority through discipline and structure. His physical presence reflects his rigid upbringing and military training.`
+            },
+            personality: {
+                title: "Personality & Traits ⭐",
+                content: `**Stoic** - Rarely shows emotion, maintains composure
+**Disciplined** - Adheres strictly to rules and structure
+**Sharp-Witted** - Possesses cutting sarcasm and quick retorts
+**Contemptuous** - Shows emotional disdain toward chaos and unintelligence
+**Self-Reliant** - Believes in handling problems without divine intervention
+**Suspicious** - Questions authority, even Eudora's divine power
+**Family-Oriented** - Married to Jassica for 8 years, father of three children
+**Judgmental** - Views his way (structure/rules) as superior to Timbe's chaos`
+            },
+            upbringing: {
+                title: "The Upbringing That Shaped Him 📖",
+                content: `**Raised by:** Korva (father, warrior in the Eudorian army) ⚔️
+
+**His Childhood:**
+Kwan never truly had fun - his father was strict and uncompromising.
+
+**Daily Routine:**
+- Military drills
+- Weapons practice
+- Endurance tests (often solitary)
+- Taught self-reliance and stamina
+
+**Philosophy Instilled:**
+- "Strength is measured by restraint"
+- "Protect the land by mastering yourself first"
+- Failure met with correction, not comfort
+- Taught to observe rather than speak
+
+**The Result:**
+Kwan was molded into order - a living embodiment of discipline, structure, and restraint.
+
+He never met his mother (Tanya) - she died 2 years before his father.
+
+He never knew he had a twin brother until his father's death.`
+            },
+            separationReunion: {
+                title: "The Separation & Reunion 👥",
+                content: `Kwan and Timbe are TWINS - separated at birth when their parents divorced.
+
+**THEIR PARENTS:**
+
+**TANYA (Mother):**
+- Gardener in Eudora's gardens 🌸
+- Raised Timbe (the wild one!)
+- Died 2 years before Korva
+
+**KORVA (Father):**
+- Warrior in the Eudorian army ⚔️
+- Raised Kwan (the disciplined one!)
+- Recently deceased
+
+**Born:** In the Heartland (different cities within it)
+
+**The Funeral - First Meeting:**
+Kwan found out he had a brother when his father died. At Korva's funeral, Kwan met Timbe for the first time.
+
+**Kwan's Reaction:**
+He was APPALLED that someone like Timbe could be his brother.
+- Timbe was SO DIFFERENT from Kwan - chaotic, wild, undisciplined
+- Worse: Timbe showed up to the funeral DRUNK 🍺💀
+- This made Kwan furious and disgusted
+
+**Eudora's Decision:**
+Queen Eudora saw this as an opportunity:
+"These brothers have only each other left! They should get to know each other and bond! I'll put them in charge of Zalika together!" 👑✨
+
+**Kwan's Response:**
+Reluctant acceptance (he respects Eudora's authority as Queen, even if he questions her motives).`
+            },
+            failedPartnership: {
+                title: "The Failed Partnership 💔",
+                content: `The brothers TRIED to work together.
+
+It failed spectacularly.
+
+**Why:**
+- Kwan was disgusted by Timbe, who constantly wanted to party
+- Timbe found Kwan boring and uptight
+- Their leadership styles were completely incompatible
+
+**The Solution:**
+The brothers created separate cities within Zalika:
+- **KWAN VALLEY** (Kwan's structured, disciplined territory) ⚖️
+- **TIMBELAND** (Timbe's chaotic, party-focused territory) 🔥
+
+**The Result:**
+Instead of uniting Zalika, they divided it into two competing factions.`
+            },
+            relationships: {
+                title: "Relationships 💙💔",
+                content: `**TIMBE (Twin Brother / Co-Leader) 🔥💀**
+The relationship is HIGHLY CONTENTIOUS.
+
+**Public Brawls:**
+- They constantly fight publicly
+- Maui has to physically lift them both to break up their brawls
+- The people of Zalika treat it as entertainment 🍿
+
+**Accusations:**
+- TIMBE accuses Kwan of poisoning his vegetables 🥕
+- KWAN accuses Timbe of "sodomizing his peaches" 🍑💀
+
+**Insults:**
+- Kwan regularly calls Timbe a "silly rabbit" and "imbecile"
+- Mocks his chaotic lifestyle and lack of discipline
+- Judges him harshly for not believing in commitment
+
+**The Awkward Progress:**
+Despite their deep hostility, they reluctantly agreed to:
+- An awkward hug 😂
+- Vow to stop sabotaging each other's crops
+- Move toward self-sufficiency (no more crop warfare!)
+
+**Deep Down:**
+They're brothers and all they have left of their family, but they're too stubborn and different to admit they might care for each other.
+
+**QUEEN EUDORA (Sovereign / "Mother Figure") 👑**
+"The only mother figure they have."
+
+Kwan and Timbe were 18 years old when Eudora appointed them leaders of Zalika. Now 27, they still run to Eudora with their problems like children. 😂
+
+**Kwan's Relationship with Eudora:**
+- **RESPECT:** He acknowledges her authority as Queen
+- **SUSPICION:** He openly questions her divine nature and motives:
+  - "How can Mother Nature be 'tired' when she rarely sleeps?!" 🤔
+  - Doesn't fully trust her decisions
+  - Questions why she paired him with Timbe
+- **DEPENDENCE:** Despite wanting self-sufficiency, he still seeks her intervention when conflicts with Timbe escalate
+
+**Eudora's Role:**
+She has to step in and stop the brothers from fighting, reminding them to "think of their people" (even though the people enjoy watching them brawl! 💀).
+
+**MAUI (Eudora's Protector - Second in Command) ⚔️**
+- Maui regularly intervenes in fights between Kwan and Timbe
+- He physically lifts both brothers to break up their brawls (like picking up fighting children! 😂)
+- Kwan eventually agreed with Maui's sentiment that Eudora should step back and let the brothers handle Zalika themselves
+
+**THE KWANESE (His Followers) ⚖️**
+The Kwanese are dedicated to Kwan and reflect his disciplined, structured approach.
+
+They are:
+- Serious and rule-abiding
+- Loyal to Kwan Valley's way of life
+- Factionally devoted (they celebrate when Eudora implies TimbeLand might be "on the chopping block"! 💀)
+
+**Kwan's Leadership Style:**
+His people have found new purpose and triumph through hard work under his guidance. He teaches them self-reliance and independence from the Queen's power.
+
+**JASSICA (Wife) 💍**
+Kwan's wife is the mother of his three children.
+
+**Married:** 8 years ✅
+
+**Family Life:**
+Kwan has a stable, structured family - wife, three children, disciplined household. This is another point of contention with Timbe, who doesn't believe in commitment. Kwan judges Timbe harshly for his lack of family values.
+
+**HIS THREE CHILDREN 👨‍👧‍👦**
+Kwan is a father of three, raising them with the same discipline and structure that his father instilled in him.`
+            },
+            majorConflicts: {
+                title: "Major Conflicts & Story Events ⚡",
+                content: `**Discovery of His Twin (Age 18):**
+Found out he had a brother when his father, Korva, died. Met Timbe for the first time at the funeral - Timbe was drunk, Kwan was appalled.
+
+**Appointed Co-Leader of Zalika (Age 18):**
+Queen Eudora made him and Timbe co-leaders, hoping they'd bond and unite the region.
+
+**Failed Partnership:**
+Attempted to work with Timbe but couldn't reconcile their opposing styles. Created separate territories (Kwan Valley vs. TimbeLand).
+
+**The Crop Wars:**
+Engaged in sabotage with Timbe:
+- Timbe accused Kwan of poisoning his vegetables
+- Kwan accused Timbe of "sodomizing his peaches" 💀
+
+**Public Brawls:**
+Constantly fights with Timbe in public, requiring Maui to intervene physically.
+
+**The Awkward Hug:**
+Eventually, they agreed to an awkward hug with Timbe and vowed to stop sabotaging crops, moving toward self-sufficiency.
+
+**Questioning Eudora:**
+Openly expressed suspicion of her divine authority and motives, wanting Zalika to be independent.`
+            },
+            governancePhilosophy: {
+                title: "Governance Philosophy ⚖️",
+                content: `**CORE BELIEF:**
+Order and rules are essential for survival.
+
+**Key Principles:**
+✅ **Structure over Chaos** - Kwan Valley is superior because it lives by rules
+✅ **Self-Sufficiency** - Zalika should grow its own food and handle its own affairs without relying on Eudora's power
+✅ **Discipline Creates Strength** - His people thrive through hard work and order
+✅ **Restraint is Power** - Strength is measured by self-control, not wild expression
+✅ **Observation over Speech** - Think before acting, plan before moving
+
+**His View of TimbeLand:**
+Kwan sees TimbeLand's lack of structure as "discomposure" - dangerous, unsustainable chaos that will eventually collapse.
+
+He believes only disciplined, rule-based governance (like Kwan Valley) can truly survive.`
+            },
+            notableQuotes: {
+                title: "Notable Quotes & Moments 💬",
+                content: `**On Timbe:**
+"Silly rabbit." / "Imbecile." (regular insults)
+
+**The Peach Accusation:**
+"You SODOMIZED my peaches!" 🍑💀
+
+**On Self-Sufficiency:**
+"The Zalikans have learned from the Queen. We can grow our own food now. We don't need to rely on her power."
+
+**Questioning Eudora:**
+"How can Mother Nature be 'tired' when she rarely sleeps?!"
+
+**Threatening Timbe:**
+"I'll pound some knowledge into you if you don't show some urgency!" ⚔️`
+            },
+            currentStatus: {
+                title: "Current Status ✨",
+                content: `**Active and Leading**
+
+Kwan (age 27) is actively leading the Kwanese faction and co-leading Zalika alongside Timbe.
+
+**Current Focus:**
+- Developing self-sufficiency for Zalika
+- Growing their own food without relying on Eudora
+- Maintaining disciplined governance in Kwan Valley
+- Reluctantly cooperating with Timbe (they vowed to stop sabotaging crops!)
+
+**Political Climate:**
+Despite ongoing conflicts with Timbe, Kwan maintains his posture of disciplined vigilance as Zalika navigates political and spiritual chaos.`
+            },
+            analogy: {
+                title: "The Analogy - Understanding Kwan 🌳",
+                content: `Kwan's nature and role in Zalika are like a carefully maintained Bonsai tree within a vast, untamed jungle.
+
+The jungle (Zalika) is inherently chaotic, unpredictable, and explosive, but Kwan and his Kwan Valley embody the disciplined pruning, careful shaping, and stoic structure imposed on that wildness.
+
+He constantly struggles against the unchecked growth represented by his brother Timbe.
+
+While the Queen wanted the entire jungle to flourish in its beauty, Kwan believes only the structured, controlled form (the Bonsai) can truly endure, making him a necessary, though often tense, symbol of order amid chaos.`
+            },
+            legacy: {
+                title: "Legacy ⚖️",
+                content: `**"The Bonsai Brother of Zalika"**
+
+Kwan Pokas represents the struggle between order and chaos, structure and freedom, discipline and wildness.
+
+Raised by a warrior father with no room for fun, he was molded into a living embodiment of restraint and rules.
+
+Discovering his twin brother Timbe - his complete opposite - challenged everything he believed about how the world should work.
+
+Appointed co-leader of Zalika by Queen Eudora, he attempted a partnership but ultimately founded Kwan Valley as a bastion of discipline in a chaotic land.
+
+His conflicts with Timbe - from crop sabotage ("you sodomized my peaches!") to public brawls - reflect the deeper struggle within Zalika itself:
+- Can order and chaos coexist?
+- Can structure and freedom both thrive?
+- Can two brothers who are complete opposites learn to work together?
+
+Kwan believes the answer is structure, rules, and self-reliance.
+
+Time will tell if the Bonsai can survive - or if the jungle will reclaim it all.`
+            }
         }
     },
     eudoricGods: {
