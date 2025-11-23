@@ -5617,6 +5617,289 @@ His tatau tattoos tell the history of his people, and his body tells the story o
 
 Chief Nalongo is the embodiment of Nawaili: a tropical paradise built on a foundation of volcanic strength.`
             }
+        },
+        kingDeaven: {
+            name: "King Deaven Liosh",
+            icon: "⚓👑💔",
+            category: "Royalty & Defenders",
+            status: "DECEASED - R.I.P.",
+            titlesPosition: {
+                title: "Titles & Position",
+                content: `**King Deaven Liosh**
+**The Old Sea Dog**
+**Pirate-Turned-Lord**
+**Captain (still wore his captain's armbands from the War of First Flame)**
+**"Old Man" (affectionately used by Malachai)**
+**King of Dora (later renamed Deaven in his honor)**
+**First King to Kneel to Queen Eudora**
+
+**STATUS: DECEASED - R.I.P.**`
+            },
+            regionLocation: {
+                title: "Region & Location 🏜️",
+                content: `**Kingdom:** Dora (later renamed Deaven by Malachai in his honor)
+**Known As:** The Infant of the Desert East
+**Capital City:** Velair (later renamed Malakruz by Malachai)
+**Palace:** Desert palace (under construction at time of death, scaffolding still clinging to walls)
+
+**About Dora:**
+Deaven was once described as a city of secrets and salt, a desert region with a rich maritime history, founded by a pirate king who settled the land by Queen Eudora's order.`
+            },
+            role: {
+                title: "Role 📜",
+                content: `**Former:** Pirate, Warrior, Captain (fought in the War of First Flame)
+**Later:** King of Dora, First Regional Ruler to pledge allegiance to Queen Eudora
+
+**Captain of Dora's Crew:**
+His pirate ship was literally named "Dora," - showing his deep connection to the land he would eventually rule.
+
+**Historical Significance:**
+King Deaven was responsible for establishing Dora as the first region to kneel to Queen Eudora, setting the precedent for other regions to follow her rule.`
+            },
+            appearance: {
+                title: "Appearance 👤",
+                content: `**Age at Death:** 192 years old
+**Build:** Broad-shouldered, larger than life, full of vitality
+**Beard:** Thick and grey, flecked with sand
+**Eyes:** Dark eyes like flint
+**Distinctive:** Still wore his captain's armbands from the War of First Flame (never forgot his warrior past)
+
+**Demeanor:**
+Often depicted as drunk or drinking, embodying the boisterous pirate spirit. However, he could be sober and reflective when alone, revealing depth beneath his carefree exterior.`
+            },
+            personality: {
+                title: "Personality & Traits ⭐",
+                content: `**Boisterous** - Known for exaggerated pirate lingo and carefree attitude
+**Celebratory** - Ruled Dora with emphasis on celebration and life
+**Loving Father** - Openly loving and proud of Malachai, called him "the love of my life"
+**Unconditionally Forgiving** - His most excellent trait: relentless, unconditional love for his son
+**Emotional & Sentimental** - Wept over his deceased wife, Vusha, and the loss of his son to madness
+**Reformed** - Transformed from ruthless pirate to devoted follower of Eudora's Balance & Harmony
+**Family-Oriented** - Constantly reminded Malachai of the importance of family`
+            },
+            famousSaying: {
+                title: "Famous Saying 💬",
+                content: `**"If you give Dora water, food, and a throne, she'll dance for ya!"**
+
+This encapsulated his philosophy: provide for your people, and they will thrive joyfully.`
+            },
+            history: {
+                title: "History & Transformation 📖",
+                content: `**The Pirate Years:**
+King Deaven was a notorious pirate and captain of the ship Dora, commanding a fearsome crew that sailed the seas for over a century.
+
+**The War of First Flame:**
+He fought as a warrior and captain, earning his captain's armbands, which he wore until his death.
+
+**The Noka Trinity Theft:**
+King Deaven stole Naymor's artifacts (the Noka Trinity - mystical items that change mood and grant power). He didn't even know what he'd stolen - he just wanted to sell them for coins!
+
+This theft sparked a 100-year war with Chief Nalongo and the Namous warriors:
+- Dora's crew vs. Namous
+- Clashed in epic sea battles
+- King Deaven and Chief Nalongo became archenemies
+
+**The Conversion:**
+After over a century of piracy and warfare, Ceón Eu'dore (spiritual leader of the Eonks) visited King Deaven.
+
+Following this spiritual encounter, King Deaven became a new man.
+
+Their last battle was a conversation: Chief Nalongo and King Deaven spoke rather than fought, and peace was achieved through Balance and Harmony.
+
+**Following Eudora:**
+- King Deaven was transformed by Eudora's principles of Balance and Harmony
+- By Eudora's order, he retired from piracy and headed east, settling in a small land that became Dora (later Deaven)
+- He became the FIRST KING to bend the knee to Queen Eudora, pledging his allegiance and establishing Dora as the first region to join her unified system officially
+
+**From enemies to allies:**
+King Deaven and Chief Nalongo went from 100 years of warfare to friendship, united under Eudora's vision.`
+            },
+            relationships: {
+                title: "Relationships 💙💔",
+                content: `**KING MALACHAI (Adopted Son) 💔**
+**The Greatest Love and Greatest Tragedy:**
+
+King Deaven believed he and Vusha found baby Malachai on the coast of the Ha'keem River (River of Blossom).
+
+**THE TRUTH:** This was a LIE created by Lady Oriana (a witch advisor to Malachai), who cast a spell on King Deaven and Vusha, making them believe they found the baby naturally.
+
+**Deaven's Love:**
+- Called Malachai "the love of my life" and "his finest catch"
+- Loved him fiercely and unconditionally
+- Wrote letters expressing his devotion
+- Was openly proud of him
+- Constantly reminded him of the importance of family
+- Planned to step down and retire, letting Malachai take the throne
+
+**The Heartbreak:**
+King Deaven's heart broke over Malachai's madness (recognizing his son's darkness).
+
+**THE MOST DEVASTATING TRUTH:**
+"Even if you cannot forgive yourself, I forgive you."
+
+King Deaven KNEW Malachai was dark/evil - and this surprised Malachai. Despite knowing his son's true nature, Deaven forgave him anyway with unconditional love.
+
+**The Murder:**
+King Deaven ultimately died by Malachai's hand at age 192 - his adopted son plunged a golden blade into his chest.
+
+**Malachai's Twisted Love:**
+Despite his cruel actions, Malachai felt deep down that he loved Deaven. After killing him, Malachai:
+- Renamed the entire region "DEAVEN" in his honor
+- Hoped his father would look down and say, "My son, the king of Deaven has achieved"
+- Still wanted his father's approval even after murdering him
+
+**QUEEN VUSHA (Wife) 💔**
+**The Love Story:**
+- King Deaven met Vusha when she was 17 years old (he was much older)
+- Vusha used to be a gardener in Eudora's gardens before becoming Queen of Dora
+- They fell in love and got married, building a life together
+
+**The Spell:**
+Like Deaven, Vusha was under Lady Oriana's spell - she believed Malachai was their biological son found at the River of Blossom.
+
+**The Tragedy:**
+- Vusha died suddenly of a supposed "heart issue"
+- **THE TRUTH:** Malachai later confessed to killing her, too
+- Malachai murdered BOTH his adoptive parents
+- King Deaven expressed deep grief for his deceased wife, mourning her loss profoundly
+
+**QUEEN EUDORA (Mother Nature)**
+- King Deaven pledged allegiance to Eudora, becoming the first king to bend the knee to her authority
+- He was transformed by her principles of Balance and Harmony, retiring from piracy to become a legitimate king by her order
+- He established Dora as the first region to officially join Eudora's unified system, paving the way for other regions to follow
+
+**CHIEF NALONGO O'WAIKIKI (Former Archenemy, Later Friend) ⚔️🤝**
+**100 Years of War:**
+- King Deaven and Chief Nalongo were archenemies for over a century
+- Their conflict began when Deaven stole the Noka Trinity (Naymor's artifacts), sparking legendary battles:
+  - Dora's crew vs. Namous warriors
+  - Epic sea clashes
+  - Decades of rivalry
+
+**The Transformation:**
+- After Ceón Eu'dore's spiritual intervention, King Deaven became a new man
+- Their last battle was a conversation - they talked instead of fighting, finding peace through Balance and Harmony
+- They became friends and allies, united under Queen Eudora's system
+
+**The Hidden Tragedy:**
+Chief Nalongo (and Eudora, Maui, and other royalties) believed King Deaven was alive but distant for years. They didn't know he was dead until Malachai's defeat - meaning Nalongo lost his friend without even knowing it.
+
+**ROSA (Malachai's Human Wife)**
+King Deaven introduced Rosa to Malachai, hoping to give his son love and stability.
+
+**KING DAVIDSON OF JAMARA**
+King Deaven introduced King Davidson to Malachai, fostering diplomatic relationships.
+
+**LADY ORIANA (The Witch)**
+The sorceress who cast the spell, making Deaven and Vusha believe Malachai was their biological son. She orchestrated the deception that gave Malachai a family - and ultimately led to their deaths.`
+            },
+            majorEvents: {
+                title: "Major Life Events ⚡",
+                content: `**The War of First Flame:**
+Fought as a warrior and captain, earning his legendary status.
+
+**100-Year War with Chief Nalongo:**
+Stole the Noka Trinity, sparked a century of conflict with the Namous.
+
+**Spiritual Transformation (Ceón Eu'dore's Visit):**
+Became "a new man" after encountering the spiritual leader, embracing Balance and Harmony.
+
+**First King to Kneel:**
+Became the first regional ruler to pledge allegiance to Queen Eudora, establishing Dora.
+
+**"Finding" Baby Malachai:**
+He and Vusha found a baby at the River of Blossom (actually a spell by Lady Oriana).
+
+**Loss of Vusha:**
+His wife died (murdered by Malachai, though he believed it was a heart issue).
+
+**Planned Retirement:**
+Was preparing to step down and let Malachai take the throne, expressing emotional readiness to pass the crown.
+
+**The Murder (Age 192):**
+Malachai plunged a golden blade into his chest, killing him to "fulfill a prophecy and solidify his own power."
+
+**The Secret Death:**
+No one knew he was dead - the world thought he was distant until Malachai's eventual defeat revealed the truth.
+
+**The Renaming:**
+Malachai renamed Dora to "Deaven" in his honor, and the capital Velair became "Malakruz."`
+            },
+            studyLegacy: {
+                title: "His Study & Legacy 📚",
+                content: `**King Deaven's Study:**
+Cluttered with maps, nautical charts, and books - relics of his years at sea. This space showed he never fully left his pirate past behind, even as king.`
+            },
+            currentStatus: {
+                title: "Current Status 💀",
+                content: `**Deceased**
+
+King Deaven Liosh was murdered at age 192 by his adopted son, Malachai, who plunged a golden blade into his chest.
+
+**The Tragedy:**
+The world - including Chief Nalongo, Queen Eudora, Maui, and other royals - did not know about King Deaven's death until the eventual defeat of King Malachai.
+
+Even some Deavenites (people of Deaven) didn't know their king was dead.
+
+Everyone believed he was alive but distant, when in reality, he had been murdered and hidden away.
+
+**The Honor:**
+Malachai orchestrated his death to fulfill a prophecy and solidify his power, but afterward:
+- Renamed the region "DEAVEN" in his father's honor
+- Reorganized the region
+- Hoped his father would look down and be proud: "My son, the king of Deaven has achieved"
+
+The cruel irony: Malachai killed the father who loved him unconditionally, then named a kingdom after him, still seeking his approval even in death.`
+            },
+            analogy: {
+                title: "The Analogy - Understanding King Deaven 🚢",
+                content: `King Deaven was like an old, beloved ship:
+
+Once a proud pirate vessel, it retired to anchor in a busy port.
+
+**His nature:** Loud, boisterous, and full of carefree life (the pirate days).
+
+**As a king:** He offered unconditional shelter and warmth (the port).
+
+However, his inability to embrace the new, disciplined world (Malachai's order) left him too slow and disorganized to navigate the coming storms.
+
+Tragically, the one he loved and sheltered the most—his adopted son—saw him not as a comforting harbor but as an obstacle to progress, eventually sinking the ship to claim the port for his new, more formidable fleet.`
+            },
+            notableQuotes: {
+                title: "Notable Quotes & Wisdom 💬",
+                content: `**"If you give Dora water, food, and a throne, she'll dance for ya!"**
+His philosophy of joyful prosperity
+
+**"Even if you cannot forgive yourself, I forgive you."**
+To Malachai - knowing his son's darkness, forgiving him anyway
+
+**"The love of my life" / "My finest catch"**
+Referring to Malachai`
+            },
+            legacy: {
+                title: "Legacy ⚓👑",
+                content: `**"The First to Kneel, The Last to Know"**
+
+King Deaven Liosh transformed from a notorious pirate and warrior to the first king to pledge allegiance to Queen Eudora, setting the foundation for her unified Eudoria.
+
+His 100-year war with Chief Nalongo became a legendary tale of enemies turned allies through Balance and Harmony.
+
+His unconditional love for Malachai - even knowing his son's darkness - represents the purest form of paternal devotion, making his murder by that same son one of the greatest tragedies in Eudorian history.
+
+**He never knew:**
+- His son wasn't truly his
+- It was all a spell
+- His wife was murdered
+- His death would be hidden for years
+
+**But the world remembers:**
+- The pirate who became a king
+- The warrior who chose peace
+- The father who loved unconditionally
+- The man whose name became a kingdom
+
+"Deaven" - a region renamed in honor of a murdered king by the son who still sought his approval even after plunging a blade into his heart.`
+            }
         }
     },
     eudoricGods: {
@@ -11352,12 +11635,14 @@ function renderRoyaltyDefenders() {
     // Create character cards for overview
     const characterCardsHTML = Object.keys(characters).map(charKey => {
         const char = characters[charKey];
+        const statusBadge = char.status ? `<p class="character-status-badge">${char.status}</p>` : '';
 
         return `
-            <div class="character-card" onclick="showCharacterProfile('${charKey}')">
+            <div class="character-card ${char.status ? 'deceased' : ''}" onclick="showCharacterProfile('${charKey}')">
                 <div class="character-card-icon">${char.icon}</div>
                 <h3>${char.name}</h3>
                 <p class="character-card-category">${char.category}</p>
+                ${statusBadge}
             </div>
         `;
     }).join('');
@@ -11411,9 +11696,9 @@ function showCharacterProfile(charKey) {
         return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     }
 
-    // Get all profile sections (exclude name, icon, category)
+    // Get all profile sections (exclude name, icon, category, status)
     const sections = Object.keys(char).filter(key =>
-        key !== 'name' && key !== 'icon' && key !== 'category'
+        key !== 'name' && key !== 'icon' && key !== 'category' && key !== 'status'
     );
 
     // Build profile sections
@@ -11438,13 +11723,16 @@ function showCharacterProfile(charKey) {
         }
     });
 
+    const statusBadge = char.status ? `<p class="char-status-badge">${char.status}</p>` : '';
+
     const profileHTML = `
-        <div class="char-profile">
+        <div class="char-profile ${char.status ? 'deceased' : ''}">
             <button class="back-button" onclick="renderRoyaltyDefenders()">← Back to Royalty & Defenders</button>
 
             <div class="char-header">
                 <div class="char-icon">${char.icon}</div>
                 <h1 class="char-title">${char.name}</h1>
+                ${statusBadge}
             </div>
 
             <div class="char-body">
