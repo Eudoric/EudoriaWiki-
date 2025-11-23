@@ -10358,6 +10358,19 @@ div .xref-link {
     border: 2px solid rgba(90, 143, 90, 0.3);
 }
 
+.char-profile-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    border: 3px solid rgba(90, 143, 90, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .char-icon {
     font-size: 5rem;
     margin-bottom: 1rem;
@@ -10496,6 +10509,10 @@ div .xref-link {
 
     .char-profile {
         padding: 1rem;
+    }
+
+    .char-profile-image {
+        max-width: 300px;
     }
 
     .char-title {

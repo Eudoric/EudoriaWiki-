@@ -15699,9 +15699,9 @@ function showCharacterProfile(charKey, section = 'royaltyDefenders') {
         return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     }
 
-    // Get all profile sections (exclude name, icon, category, status, nickname)
+    // Get all profile sections (exclude name, icon, category, status, nickname, image)
     const sections = Object.keys(char).filter(key =>
-        key !== 'name' && key !== 'icon' && key !== 'category' && key !== 'status' && key !== 'nickname'
+        key !== 'name' && key !== 'icon' && key !== 'category' && key !== 'status' && key !== 'nickname' && key !== 'image'
     );
 
     // Build profile sections
@@ -15728,6 +15728,7 @@ function showCharacterProfile(charKey, section = 'royaltyDefenders') {
 
     const statusBadge = char.status ? `<p class="char-status-badge">${char.status}</p>` : '';
     const nicknameBadge = char.nickname ? `<p class="char-nickname-badge">${char.nickname}</p>` : '';
+    const profileImage = char.image ? `<img src="${char.image}" alt="${char.name}" class="char-profile-image">` : '';
 
     const backButtonText = section === 'otherFigures' ? '← Back to Other Important Figures' : '← Back to Royalty & Defenders';
     const backButtonFunction = section === 'otherFigures' ? 'renderOtherFigures()' : 'renderRoyaltyDefenders()';
@@ -15737,6 +15738,7 @@ function showCharacterProfile(charKey, section = 'royaltyDefenders') {
             <button class="back-button" onclick="${backButtonFunction}">${backButtonText}</button>
 
             <div class="char-header">
+                ${profileImage}
                 <div class="char-icon">${char.icon}</div>
                 <h1 class="char-title">${char.name}</h1>
                 ${nicknameBadge}
