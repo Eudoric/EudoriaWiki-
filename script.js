@@ -6934,6 +6934,388 @@ Kwan believes the answer is structure, rules, and self-reliance.
 
 Time will tell if the Bonsai can survive - or if the jungle will reclaim it all.`
             }
+        },
+        timbeRonaldo: {
+            name: "Timbe Ronaldo of Zalika",
+            icon: "🔥🎉",
+            category: "Royalty & Defenders",
+            nickname: "The Party in the Jungle",
+            titlesPosition: {
+                title: "Titles & Position",
+                content: `**Timbe Ronaldo of Zalika**
+**Leader of TimbeLand, Zalika**
+**Leader of the Timbens Faction**
+**Co-Leader of Zalika (appointed by Queen Eudora alongside his twin brother, Kwan)**
+
+**Derogatory Titles (used by Kwan):**
+"Silly Rabbit" 🐰 | "Imbecile" 💀
+
+**The Chaotic Brother, The Party in the Jungle**`
+            },
+            regionLocation: {
+                title: "Region & Location 🌿",
+                content: `**Region:** Zalika
+**Location:** Western Union (West), bordering the Tri-Wood Forest
+**His Territory:** TimbeLand (within Zalika)
+
+**About TimbeLand:**
+Described by Kwan as:
+- "Chaotic and carefree" 🎉
+- A "wild forest" 🌿
+- An "ungovernable place" 💀
+
+TimbeLand is characterized by:
+- Rowdy parties and celebrations 🍺
+- Drunken men swinging on vines 🌳
+- Constant chaos and fighting ⚔️
+- Three-story interconnected tree huts 🏚️
+- Lack of structure or discipline ❌
+
+**The Contrast:**
+While Kwan Valley is orderly, disciplined, and rule-bound...
+TimbeLand is wild, free, and utterly chaotic - exactly how Timbe likes it! 🔥`
+            },
+            role: {
+                title: "Role 📜",
+                content: `**Co-Leader of Zalika:**
+One of two leaders (alongside his twin brother Kwan) appointed by Queen Eudora to unite the people, guide them, and help them grow together.
+
+**Perpetual Host:**
+Serves as the host of rowdy parties and celebrations in TimbeLand - his leadership style prioritizes indulgence and fun.
+
+**Reliant on Divine Intervention:**
+Often takes the position of someone who expects Eudora to fix problems, demanding she "heal us" when crops fail.
+
+**Leader of the Timbens:**
+His faction mirrors his lack of structure and constant need for celebration - devoted followers who party as hard as he does.`
+            },
+            appearance: {
+                title: "Appearance 👤",
+                content: `**Age:** 27 years old (appointed at 18, has been co-leading for 9 years)
+
+**Physical Description:**
+- **Spike hair** (wild, untamed!) ⚡
+- **Always shirtless** 🌿
+- **Grass skirt-like outfit** 🍃
+- **Skinny and slender** (in contrast to Kwan's muscular build)
+- **Rabbit's foot necklace** 🐰 (signature accessory!)
+
+**Energy:**
+Wild, chaotic, free-spirited - he LOOKS like a jungle party embodied! 🔥`
+            },
+            personality: {
+                title: "Personality & Traits ⭐",
+                content: `**Chaotic & Carefree** - Lives for fun, celebration, and freedom
+**Playful** - Childlike in his frustrations (stomps his foot when mocked!)
+**Lacks Discipline** - Easily provoked, throws tantrums, prefers chaos to structure
+**Party-Focused** - Governance style prioritizes indulgence over responsibility
+**Reliant on Others** - Expects Eudora to solve problems with divine power
+**Conflict-Loving** - Views fighting with Kwan as a "grand spectacle" 🍿
+**Self-Preserving** - Backs down when Kwan threatens him ("he's too strong and boring!") 😂
+**Doesn't Understand Death** - Parties away grief instead of processing it traditionally
+**Fiercely Loyal to TimbeLand** - Argues enthusiastically that Eudora should visit his territory`
+            },
+            upbringing: {
+                title: "The Upbringing That Shaped Him 📖",
+                content: `**Raised by:** Tanya (mother, gardener in Eudora's palace) 🌸
+
+**His Childhood:**
+Timbe grew up in Eudora's palace - around her MORE than any other helper's child!
+
+**Daily Life:**
+- Dancing in Eudora's gardens 💃🌺
+- Lying with flowers 🌸
+- Sleeping in Eudora's bed when he was little 🛏️
+- Had his own room in the palace 🏰
+- Learned from his mother: "Live life as you want it" ✨
+
+**No Structure:**
+Timbe had:
+- No father figure ❌
+- No discipline ❌
+- No rules ❌
+- Just his mother teaching him to live freely and joyfully ✅
+
+**The Result:**
+Timbe lived more life than Kwan did - experiencing freedom, joy, celebration, and self-expression while Kwan endured military drills.
+
+**Eudora as Mother Figure:**
+Eudora helped Tanya raise Timbe - he saw her as a mother figure alongside his biological mother. She was present throughout his childhood, providing love and guidance (and trying to get him to calm down! 😂).
+
+**Maui as Mentor:**
+Maui taught Timbe:
+- How to fight ⚔️
+- How to hunt 🏹
+
+Though Maui didn't raise him (Eudora and Tanya mostly did), he served as a mentor figure in Timbe's life. When Timbe started fighting Kwan: Maui would just watch until Eudora told him to break it up! 😂`
+            },
+            mothersDeath: {
+                title: "His Mother's Death & Understanding of Death 💔",
+                content: `**When Tanya died:**
+Timbe did not cry. He just PARTIED AWAY. 🍺🎉
+
+**Why?**
+- He was living under Eudora (surrounded by divinity and immortality)
+- He believed "it was just her time" (natural cycle, not a tragedy)
+- He doesn't quite understand death the way mortals typically do
+- Partying is his coping mechanism - how he processes grief
+
+**Eudora's Response:**
+She would tell him to calm down, and though he listened to her, he still would party.`
+            },
+            fatherDiscovery: {
+                title: "Discovering His Father & The Funeral ⚰️",
+                content: `**The Letter:**
+After Tanya died, Timbe found a letter she had left him revealing he had a father (Korva, a warrior).
+
+**The Funeral:**
+Timbe went to the funeral to find his father... only to discover from Kwan that Korva had already died.
+
+**Meeting Kwan:**
+The two couldn't believe they were related:
+- **TIMBE:** "You're a SOURPUSS SQUARE!" 😂
+- **KWAN:** "You're APPALLING!" 😤
+
+**Why Timbe Was Drunk:**
+He came to the funeral drunk because he "didn't quite understand death" - it's not disrespect, it's his way of processing an unfamiliar concept.`
+            },
+            becomingCoLeader: {
+                title: "Becoming Co-Leader 👑",
+                content: `**The Appointment:**
+When Eudora told Timbe he would lead a subregion, he was SO HAPPY that he celebrated immediately! 🎉
+
+**The Catch:**
+Then Eudora said he'd be co-leading WITH KWAN...
+
+**Timbe's Reaction:**
+He got DRUNK to force himself to accept someone as BORING as Kwan! 🍺💀
+
+He couldn't believe he had to share leadership with his uptight, disciplined, sourpuss square of a brother!
+
+**Before Leadership:**
+Timbe worked as a gardener (like his mother, Tanya!) before being appointed co-leader.`
+            },
+            relationships: {
+                title: "Relationships 💙💔",
+                content: `**KWAN (Twin Brother / Co-Leader) ⚖️💀**
+The relationship is INTENSELY HOSTILE.
+
+**Public Brawls:**
+- They constantly fight publicly (on the ground, rolling around! 😂)
+- The Timbens cheer Timbe on during fights 🎉
+- Maui has to physically lift them both to break it up ⚔️
+
+**Accusations:**
+- TIMBE accuses Kwan of poisoning his vegetables 🥕
+- TIMBE accuses Kwan of taking some of his people away
+- KWAN accuses Timbe of "sleeping with his fruits" 🍑
+- **TIMBE ADMITTED IT WAS TRUE!!** 💀💀💀
+
+**Insults:**
+- Kwan calls Timbe a "silly rabbit" 🐰 and "imbecile" 💀
+- Timbe calls Kwan a "sourpuss square" and "boring" 😂
+
+**Timbe's Fear:**
+Sometimes Timbe is scared to fight Kwan:
+- "He's too strong! And boring! I'll lose!" 😂
+- When threatened, Timbe:
+  - Yelps and backs down 💀
+  - Throws tantrums instead of fighting ⚡
+  - Stomps his foot when mocked 👣
+
+**The Reluctant Progress:**
+After Maui and Eudora intervened, they:
+- Reluctantly agreed to stop sabotaging crops ✅
+- Shared an AWKWARD HUG 😂💀
+- Vowed to work toward self-sufficiency ✅
+
+**Deep Down:**
+They're twins and all they have left of their family, but they're too different and stubborn to admit they might care for each other.
+
+**QUEEN EUDORA (Mother Figure / Sovereign) 👑💚**
+"She was like a mother to him."
+
+Eudora helped Tanya raise Timbe - he grew up in her palace, slept in her bed as a child, and had his own room there.
+
+Timbe knew Eudora LONGER than any other king - she was present throughout his entire childhood!
+
+**Current Relationship:**
+**Reliance on Divine Power:**
+Timbe expects Eudora to solve problems with her divine abilities:
+- "Eudora, heal us!" 🙏 (when crops fail)
+- He tries to garner her approval by arguing for the supremacy of TimbeLand
+
+**Still Runs to Her:**
+At 27, Timbe still runs to Eudora with problems (alongside Kwan! 😂). She serves as the only mother figure they have.
+
+**Eudora's Role:**
+She has to mediate their fights, telling them to "think of their people" when they brawl publicly.
+
+**Timbe's Philosophy:**
+Even after embracing self-sufficiency, he still believes: "Eudora's power would have grown it FASTER though!" 🌾✨ He trusts their ability to be independent, BUT still thinks divine intervention is superior! 😂
+
+**MAUI (Mentor Figure) ⚔️**
+Maui was in Timbe's life when he was younger.
+
+**What Maui Taught:**
+- How to fight ⚔️
+- How to hunt 🏹
+
+**Current Dynamic:**
+When Timbe started fighting Kwan, Maui would just watch (probably entertained! 😂) until Eudora told him to break it up. Then Maui would physically lift BOTH brothers apart! 💀
+
+**Maui's Role:**
+Though Maui didn't raise Timbe (that mainly was Eudora and Tanya), he served as a mentor, teaching him combat skills and survival.
+
+**THE TIMBENS (His Followers) 🎉**
+The Timbens are devoutly loyal to Timbe and mirror his chaotic, party-focused lifestyle.
+
+They:
+- Cheer him on during brawls with Kwan 🎉
+- Participate enthusiastically in rowdy parties 🍺
+- Swing on vines while drunk 🌿
+- Fight each other at celebrations ⚔️
+- Embrace the wild, ungovernable nature of TimbeLand 🔥
+
+**Their Loyalty:**
+The Timbens follow Timbe because he represents freedom, fun, and chaos - everything they value!
+
+**TANYA (Mother - Deceased) 🌸💔**
+Tanya was a gardener in Eudora's palace.
+
+She raised Timbe with the philosophy: "Live life as you want it." ✨
+
+She taught him:
+- Freedom over structure ✅
+- Joy over discipline ✅
+- Self-expression over restraint ✅
+
+**When She Died:**
+Timbe didn't cry - he partied away his grief because:
+- He was living under Eudora (divinity surrounds him)
+- He believed "it was just her time" (natural cycle)
+- He doesn't understand death traditionally
+
+**Her Legacy:**
+Timbe became a gardener (like her!) before being appointed co-leader. He carries her philosophy of living freely into his leadership of TimbeLand.
+
+**KORVA (Father - Never Met) ⚔️**
+Timbe never met his father (warrior in the Eudorian army). He only learned of Korva's existence through a letter Tanya left after her death. By the time Timbe went to find him, Korva had already died.
+
+**The Funeral:**
+Timbe showed up drunk (his way of processing death) and met Kwan for the first time - discovering he had a twin brother!`
+            },
+            majorConflicts: {
+                title: "Major Conflicts & Story Events ⚡",
+                content: `**Growing Up in Eudora's Palace:**
+Spent his childhood surrounded by divinity, dancing in gardens, sleeping in Eudora's bed, and learning freedom from his mother.
+
+**Mother's Death:**
+Tanya died - Timbe partied away his grief instead of crying.
+
+**Discovery of His Father:**
+Found a letter revealing Korva's existence. Went to see him, discovered he'd died.
+
+**Meeting Kwan (Age 18):**
+Met his twin brother for the first time at Korva's funeral - showed up drunk, called Kwan a "sourpuss square."
+
+**Appointed Co-Leader (Age 18):**
+Celebrated becoming a leader... then got drunk when he learned he'd be co-leading WITH KWAN.
+
+**Failed Partnership:**
+Couldn't work with Kwan because of opposing styles. Created separate territories (TimbeLand vs. Kwan Valley).
+
+**The Crop Wars:**
+Engaged in sabotage with Kwan:
+- Kwan accused Timbe of poisoning vegetables
+- Kwan accused Timbe of "sleeping with his fruits"
+- **TIMBE ADMITTED THE FRUIT THING WAS TRUE!!** 🍑💀
+
+**Public Brawls:**
+Constantly fights with Kwan publicly - Maui has to intervene.
+
+**The Awkward Hug:**
+After Maui and Eudora's intervention, he reluctantly hugged Kwan and vowed to stop sabotaging crops.`
+            },
+            governancePhilosophy: {
+                title: "Governance Philosophy 🎉",
+                content: `**CORE BELIEF:**
+Life should be FUN, FREE, and CHAOTIC!
+
+**Key Principles:**
+✅ **Celebration over Structure** - Parties are essential, rules are boring
+✅ **Freedom over Discipline** - Let people live as they want
+✅ **Divine Intervention is Best** - Eudora's power would solve problems faster 🙏
+✅ **Instant Gratification** - Why wait when you can party NOW?
+✅ **Chaos is Natural** - The wild, ungovernable state is what TimbeLand prefers 🌿
+
+**His View of Kwan Valley:**
+Timbe sees Kwan Valley as boring, uptight, and lifeless - all rules and no joy.
+
+He believes TimbeLand is SUPERIOR because it's free, fun, and alive! 🔥`
+            },
+            notableQuotes: {
+                title: "Notable Quotes & Moments 💬",
+                content: `**On Kwan:**
+"Sourpuss square!" / "He's too strong and boring!" 😂
+
+**The Fruit Confession:**
+"Okay, yeah, I slept with your fruits." 🍑💀
+
+**On Divine Power:**
+"Eudora, HEAL US!" 🙏
+"Eudora's power would have grown it faster, though!" 🌾
+
+**Throwing a Tantrum:**
+Stomps foot when Kwan mocks him 👣💀
+
+**At the Funeral:**
+"You're a sourpuss square!" (to Kwan upon first meeting) 😂`
+            },
+            currentStatus: {
+                title: "Current Status ✨",
+                content: `**Active and Leading**
+
+Timbe (age 27) is actively leading the Timbens faction and co-leading Zalika alongside Kwan.
+
+**Current Focus:**
+- Maintaining rowdy celebrations in TimbeLand 🎉
+- Working toward self-sufficiency (reluctantly!)
+- Stopped sabotaging Kwan's crops (after the awkward hug!)
+- Still expects Eudora to solve big problems with divine power 🙏
+
+**Political Climate:**
+Despite agreeing to work toward independence, Timbe maintains his chaotic, party-focused leadership style in TimbeLand.`
+            },
+            analogy: {
+                title: "The Analogy - Understanding Timbe 🎉",
+                content: `Suppose Kwan is the meticulous, rule-bound architect who insists that every brick be perfect and every blueprint be followed. In that case, Timbe is the chaotic, perpetual house party that the architect tried (and failed) to build a structure around.
+
+Timbe doesn't care about the foundation, order, or long-term plan; he cares that the music is loud, the drinks are flowing (even if they are spoiled fruit), and the environment is chaotic and carefree.
+
+He throws the best parties (in the three-story, interconnected tree huts). Still, his reliance on instant gratification and external power (asking Eudora to "heal us") means his structures (crops, political stability) are always on the verge of collapsing back into the wild, ungovernable state that he, and his followers, secretly prefer.`
+            },
+            legacy: {
+                title: "Legacy 🔥",
+                content: `**"The Wild Brother of Zalika"**
+
+Timbe Ronaldo represents freedom, chaos, celebration, and the untamed spirit of the jungle.
+
+Raised by his mother, Tanya, in Eudora's palace with no structure or discipline, he learned to live life on his own terms - dancing in gardens, lying with flowers, and embracing joy.
+
+Discovering his twin brother Kwan - his complete opposite - challenged nothing because Timbe simply doesn't care about structure or rules.
+
+Appointed co-leader of Zalika, he created TimbeLand as a wild, party-focused territory where chaos reigns and fun is law.
+
+His conflicts with Kwan - from crop sabotage ("I slept with your fruits!") to public brawls - reflect the deeper question:
+- Can structure and chaos coexist?
+- Can rules and freedom both thrive?
+- Can two brothers who are complete opposites learn to work together?
+
+Timbe believes the answer is freedom, parties, and Eudora's divine intervention.
+
+Time will tell if the jungle can sustain itself - or if it needs the Bonsai's structure after all.`
+            }
         }
     },
     eudoricGods: {
