@@ -7316,6 +7316,305 @@ Timbe believes the answer is freedom, parties, and Eudora's divine intervention.
 
 Time will tell if the jungle can sustain itself - or if it needs the Bonsai's structure after all.`
             }
+        },
+        queenAzariah: {
+            name: "Queen Azariah Maruli",
+            icon: "💜👑🌸",
+            category: "Royalty & Defenders",
+            nickname: "Primsy",
+            titlesPosition: {
+                title: "Titles & Position",
+                content: `**Queen Azariah Maruli**
+**Queen of Aurinia (The Pastry Kingdom)**
+**"Primsy" (nickname from the Primrose Triplets)**
+**"My Little Aurirose" (Eudora's term of endearment)**
+
+**Age:** 18 years old
+**Became Queen:** At age 16, after the death of her parents`
+            },
+            regionLocation: {
+                title: "Region & Location",
+                content: `**Region:** Aurinia — Land of endless gardens, blooming orchards, and pastel-colored meadows.
+
+**Color Palette:** Pastry pinks, lilac, soft burgundy, and floral gold.
+
+**Landscape:**
+- Rolling hills covered in rose gardens and lavender fields
+- Crystal-clear rivers lined with cherry blossom trees
+- Villages built around community gardens and flower markets
+- The Royal Palace sits on a hill overlooking a valley of pink and white flowers
+
+Aurinia is known for its beauty, peace, and agricultural abundance — a reflection of the love and care the land was given for generations.`
+            },
+            role: {
+                title: "Role",
+                content: `**Queen Azariah's Role:**
+- **Sovereign of Aurinia** — Manages the kingdom's governance, agriculture, and cultural traditions
+- **Protector of the Land** — Ensures peace and safety for her people, though this has required difficult decisions
+- **Symbol of Resilience** — Her survival and recovery from tragedy have made her a figure of hope for Aurinia
+- **Defender Against External Threats** — Faced with violence and chaos after her parents' deaths, she was forced to make harsh decisions to protect the kingdom
+
+Azariah did not choose to become queen at 16. She was thrust into the role by tragedy.
+
+Her journey is one of survival, grief, and eventual redemption.`
+            },
+            appearance: {
+                title: "Appearance",
+                content: `**Physical Features:**
+- **Height:** 5'6" (petite but carries herself with quiet strength)
+- **Hair:** Long, wavy burgundy hair with soft pink highlights
+- **Eyes:** Lilac-colored eyes, gentle but shadowed with sadness
+- **Skin:** Fair with a soft glow, like the petals of a rose
+- **Build:** Slender and graceful, though years of grief have left her looking fragile at times
+
+**Clothing:**
+- Wears flowing pastel dresses in shades of pink, lavender, and cream
+- Often adorned with floral embroidery and delicate lace
+- Her crown is made of woven silver vines with small amethyst flowers
+
+**The Straw Hat:**
+For two years after her parents' death, she wore a wide-brimmed straw hat everywhere she went — even to royal meetings.
+
+It became her shield, her way of hiding her grief from the world.
+
+When she finally took it off, it symbolized her decision to face the world again.`
+            },
+            personality: {
+                title: "Personality",
+                content: `**Before the Tragedy:**
+- Joyful, carefree, and playful
+- Loved spending time in the gardens with her parents
+- Had a bright, infectious laugh
+- Trusted easily and saw the good in everyone
+
+**After the Tragedy (Ages 16-18):**
+- Emotionally numb, withdrawn, and burdened by guilt
+- Struggled to make decisions, yet had to make the hardest ones
+- Haunted by the 500 murders committed in the first two years of her reign
+- Wore the straw hat as a way to hide from the world
+
+**Now (Age 18, Healing):**
+- Still quiet and gentle, but learning to smile again
+- Fiercely protective of her kingdom and people
+- Deeply loyal to those who helped her heal (the Primrose Triplets, King Ahmad, Eudora)
+- Seeks peace and redemption, trying to make up for the violence of her early reign
+- Finding strength in her vulnerability — no longer hiding under the hat
+
+**Core Traits:**
+- **Resilient** — Survived unimaginable loss and guilt
+- **Compassionate** — Despite everything, she still believes in kindness
+- **Haunted** — The weight of 500 deaths will never fully leave her
+- **Hopeful** — Slowly learning to live again`
+            },
+            tragedy: {
+                title: "The Tragedy (Parents' Death)",
+                content: `**The Day Everything Changed:**
+
+On Azariah's 16th birthday, her parents — King Elias and Queen Lira Maruli — set sail on a diplomatic voyage to strengthen alliances with neighboring regions.
+
+They promised to return in time for her birthday celebration.
+
+They never came back.
+
+**What Happened:**
+- The ship was caught in a violent storm near the coast
+- Both the king and queen drowned in the shipwreck
+- Their bodies were never recovered
+
+**Azariah's Reaction:**
+- She was celebrating her birthday when the news arrived
+- She collapsed and didn't speak for three days
+- On the fourth day, she was crowned queen
+- She wore a straw hat to her own coronation — and didn't take it off for two years
+
+**The Guilt:**
+Azariah blamed herself.
+
+She thought:
+- "If I hadn't been born, they wouldn't have been sailing."
+- "If I hadn't had a birthday, they would still be alive."
+
+She carried this guilt every day — even when the Primrose Triplets and King Ahmad tried to tell her otherwise.`
+            },
+            relationships: {
+                title: "Relationships",
+                content: `**Eshan (Primrose Triplet #1 — The Eldest):**
+- Eshan is serious, structured, and protective
+- He was the first to notice Azariah's grief was consuming her
+- He gently challenged her to take off the hat, saying: *"You cannot hide from the world forever, Azariah. Your people need to see your face."*
+- She resisted for months, but his steady presence helped her feel safe enough to try
+
+**Aneira (Primrose Triplet #2 — The Middle Child):**
+- Aneira is calm, nurturing, and wise
+- She sat with Azariah in silence for hours, never forcing her to speak
+- She taught Azariah how to tend the royal gardens again, helping her reconnect with the land
+- Aneira was the one who said: *"Grief does not make you weak. It makes you human."*
+
+**Ezrah (Primrose Triplet #3 — The Youngest):**
+- Ezrah is playful, spontaneous, and mischievous
+- He tried to make Azariah laugh again with silly jokes and pranks
+- He was the one who gave her the nickname "Primsy" — and it stuck
+- He once said: *"You're not just our queen. You're our little Aurirose. And roses grow through concrete."*
+
+**Ello, Aavi, and Ambrin (Eudora's Children — The Helpers):**
+- These three children visited Aurinia frequently during Azariah's darkest years
+- They brought her flowers, sang songs, and told her stories
+- Aavi once told her: *"Mama Eudora says you're not broken. You're just tired."*
+- Their innocence and kindness reminded her that the world still had light
+
+**Eudora (Mother Nature — The Guide):**
+- Eudora visited Azariah personally after the first year of violence
+- She did not scold her for the 500 murders — instead, she held her while she cried
+- Eudora said: *"You are not a monster, Azariah. You are a child who was forced to become a queen. Let me help you carry this weight."*
+- Eudora gave her the title "My Little Aurirose" and promised her she would heal
+
+**The Primrose Triplets (Collective):**
+- The three brothers became her closest friends and advisors
+- They never judged her for the violence of her early reign
+- They helped her rebuild Aurinia's peace and reputation
+- They are the reason she finally took off the straw hat
+
+**King Ahmad (Ally and Mentor):**
+- King Ahmad of a neighboring region reached out to Azariah after hearing of her struggles
+- He shared his own story of loss and redemption
+- He taught her that *"A good ruler is not one who never makes mistakes. It's one who learns from them."*
+- He became a mentor and friend, helping her find strength in her vulnerability`
+            },
+            majorConflicts: {
+                title: "Major Conflicts",
+                content: `**The 500 Murders (First Two Years of Her Reign):**
+
+Under her parents' rule, Aurinia had **zero murders** — it was a peaceful, harmonious kingdom.
+
+Under Azariah's first two years, there were **500 murders.**
+
+**What Happened:**
+- After the king and queen's deaths, rival factions and opportunistic criminals saw Aurinia as vulnerable
+- Bandits raided villages, warlords attempted coups, and violence erupted across the kingdom
+- Azariah, overwhelmed and grief-stricken, issued harsh decrees:
+  - Death penalties for theft
+  - Executions for treason (real or perceived)
+  - Military crackdowns that resulted in civilian casualties
+
+**Why It Happened:**
+- She was 16, terrified, and unprepared to rule
+- She trusted the wrong advisors who manipulated her fear
+- She believed that showing strength meant being ruthless
+- She thought if she wasn't harsh, the kingdom would fall apart
+
+**The Turning Point:**
+- Eudora visited her after the first year and showed her the weight of what she had done
+- The Primrose Triplets helped her remove the corrupt advisors and rebuild her council
+- King Ahmad taught her that strength can be gentle
+
+**Current Status:**
+- Murders in Aurinia have dropped to near-zero again
+- Azariah has issued pardons for those wrongly accused
+- She publicly apologized to the families of those who were executed unjustly
+- She wears her guilt like a scar — but she is healing`
+            },
+            governance: {
+                title: "Governance Philosophy",
+                content: `**Azariah's Philosophy (Now):**
+
+*"I was cruel when I should have been kind. I was silent when I should have spoken. But I am still here — and I will spend the rest of my reign making things right."*
+
+**Her Approach to Rule:**
+- **Restorative Justice** — Focuses on healing rather than punishment
+- **Community Gardens** — Encourages her people to grow food and flowers together
+- **Open Court** — Any citizen can bring their grievances directly to her
+- **Transparency** — She does not hide her mistakes; she owns them
+
+**Key Policies:**
+- Abolished the death penalty (except in the most extreme cases)
+- Established mental health support for victims of violence
+- Created the "Aurirose Fund" — financial aid for families affected by the violence of her early reign
+
+She is not the queen her parents were.
+
+But she is trying to be the queen her people deserve.`
+            },
+            notableQuotes: {
+                title: "Notable Quotes",
+                content: `**"I wore a hat for two years because I was ashamed to face my people. But hiding did not bring my parents back. It only made me smaller."**
+
+**"The Primrose Triplets taught me that grief is not weakness. Eudora taught me that mistakes do not define me. And my people taught me that redemption is possible."**
+
+**"500 murders. Zero under my parents. I will carry that number for the rest of my life — not as an excuse, but as a reminder."**
+
+**"I am not my parents. I never will be. But I can honor them by being the best version of myself."**
+
+**"The straw hat is gone. I don't need it anymore. I'm ready to be seen."**
+
+**To the Primrose Triplets:**
+*"You called me Primsy when I felt like a failure. You made me feel like I was still someone worth saving."*
+
+**To Eudora:**
+*"You held me when I thought I was a monster. You told me I was still your Little Aurirose. I believed you."*`
+            },
+            currentStatus: {
+                title: "Current Status",
+                content: `**Age:** 18 years old
+**Status:** ACTIVE — Reigning Queen of Aurinia
+**Mental State:** Healing, but still carries guilt
+**The Straw Hat:** Removed (finally)
+**Relationship with the Primrose Triplets:** Close friends and advisors
+**Relationship with Eudora:** Beloved daughter figure
+**Relationship with Her People:** Rebuilding trust
+
+**Recent Developments:**
+- Took off the straw hat during a public ceremony (age 18)
+- Issued a formal apology for the violence of her early reign
+- Began hosting weekly "Garden Gatherings" where citizens can speak with her directly
+- Laughed for the first time in two years (thanks to Ezrah's ridiculous joke about a dancing potato)
+
+She is not the same girl who wore the straw hat.
+
+She is not the same queen who signed 500 death warrants.
+
+She is Azariah — scarred, but standing.`
+            },
+            analogy: {
+                title: "Analogy",
+                content: `**Queen Azariah is a rose garden after a wildfire.**
+
+The flames burned everything — the flowers, the soil, the joy.
+
+For a long time, it was just ash and silence.
+
+But slowly, carefully, new shoots began to emerge.
+
+The garden will never be what it was.
+
+But it is growing again.
+
+And that is enough.`
+            },
+            legacy: {
+                title: "Legacy",
+                content: `**What Azariah Will Be Remembered For:**
+
+**The Tragedy:**
+- The young queen who lost her parents on her 16th birthday
+- The straw hat she wore for two years to hide her grief
+
+**The Violence:**
+- The 500 murders that haunt her reign
+- The harsh decrees born from fear and manipulation
+
+**The Redemption:**
+- The queen who took off the hat and faced her people
+- The ruler who apologized and sought to make things right
+
+**The Hope:**
+- A symbol that even after the darkest nights, the sun can rise again
+- Proof that mistakes do not have to be the end of the story
+
+**Eudora's Words:**
+*"Azariah is not defined by her worst moments. She is defined by her willingness to rise after them."*
+
+Queen Azariah Maruli — The Rose Who Bloomed After the Fire.`
+            }
         }
     },
     eudoricGods: {
