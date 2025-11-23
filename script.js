@@ -9566,6 +9566,306 @@ Now, he must **discard the false magnetism of chaos and power** to slowly, pains
 
 Makani-tikitiki-a-Taranga — **The Son of a Demigod Who Found Redemption Through Loss and Chose Integrity Over Resentment.** 🌊⚔️💔🙏`
             }
+        },
+        dubaku: {
+            name: "Dubaku",
+            icon: "📜👑⚖️",
+            category: "Other Important Figures",
+            nickname: "Vaka of Chaka",
+            titlesPosition: {
+                title: "Name & Titles",
+                content: `**Dubaku**
+**Vaka (Advisor and Right Hand) of Chaka**
+**Former Right Hand of King Isaiah**
+
+**Nicknames/Mispronunciations (which he constantly corrects):**
+- **Du-BA-ku** (his correct pronunciation - he insists on this) ✅
+- Dubobo ❌
+- Dubakon ❌
+- Dubor ❌
+- Dubao ❌
+- Dubous ❌
+- Dookie ❌
+- Duhaoka ❌
+- "Little man" ❌
+
+He often refers to himself as the one who **"practically raised the king"** (King Ahmad). 👑`
+            },
+            regionLocation: {
+                title: "Region & Location",
+                content: `**Region:** Chaka (Estara Union - East)
+
+Dubaku is the **primary Vaka (advisor)** for the kingdom of Chaka.
+
+**His Role in Chaka:**
+- He was instrumental in overseeing the **rebuilding and restoration of Chaka** after the damage caused by Malachai's rule and Eudora's grief
+- He frequently mentions the importance of the **Ha'keem River**, which is Chaka's crucial source of commerce and life 🌊
+- He knows the **hidden and forbidden places of Chaka**, including **Jelani's Hollow**, where he sought out the poison spirit
+- He is the **keeper and cataloger of the royal vault**, spending years organizing and protecting Chaka's treasures and history 📜✨`
+            },
+            roles: {
+                title: "Roles",
+                content: `Dubaku's roles center on **governance, tradition, and guardianship.**
+
+**Vaka of Chaka:**
+- His primary duty is to **counsel the King**, act as the palace's right hand, and assert Chaka's authority
+- He constantly pushed Ahmad to adopt the **cold, disciplined authority** that King Isaiah employed 👑⚖️
+
+**Guardian of Chaka's History:**
+- He views himself as the **ultimate protector of Chaka's legacy and order**, intensely focused on preventing the kingdom from returning to chaos or falling under foreign influence 🛡️
+
+**Historian/Archivist:**
+- He spent years **cataloging and ordering the royal vault**, preserving Chaka's treasures and historical records 📜
+
+**Father Figure:**
+- He helped **raise both King Ahmad and Princess Ami** after their parents' deaths 👨‍👧‍👦`
+            },
+            appearance: {
+                title: "Brief Description",
+                content: `Dubaku is a **highly traditional and intensely loyal figure**, often described as **rigid and still.**
+
+**Physical Appearance:**
+- He wears a **long, dark-brown robe** stitched with **ancestral Chakan patterns**
+- A **structured, orange turban** 🧡
+- His face bears the **weight of many stories** and rarely shows compassion or emotion unless it is in defense of Chaka
+
+**Background - Childhood Trauma:**
+Dubaku's life is **scarred by the horror** of watching the **Sandman kill his father** when he was **ten years old.** 💔
+
+This trauma fuels his **obsession with order and stability** - he cannot bear chaos because he witnessed what true terror looks like.`
+            },
+            betrayal: {
+                title: "The Betrayal 💔",
+                content: `Dubaku became so desperate to restore Chaka to the glory of King Isaiah's reign that he **tragically betrayed King Ahmad.**
+
+He used a **memory-erasing tonic** to try and remove **Seraphina**, whom he viewed as a **distraction** preventing Ahmad from ruling properly.
+
+**Redemption:**
+After realizing the full extent of his mistake and being **saved by Ahmad** (the king he betrayed), Dubaku finally understood that **Ahmad's rule of mercy and renewal** was the **new Chaka** that the kingdom needed - not the cold, disciplined approach of Isaiah. 🙏💙`
+            },
+            relationshipAhmad: {
+                title: "Relationship: King Ahmad (King/Adopted Son) 👑💙",
+                content: `His **king** and the **child he helped raise** alongside Isaiah.
+
+**The Belief:**
+Dubaku initially believed Ahmad was **too soft** and **distracted by Seraphina** to rule properly. He thought Ahmad needed to be **more like King Isaiah** - cold, disciplined, authoritative.
+
+**The Betrayal:**
+This belief led Dubaku to **betray Ahmad** by giving him a **memory-erasing tonic** to remove Seraphina from his mind.
+
+**The Forgiveness:**
+After being imprisoned and witnessing Ahmad's mercy, Dubaku **confessed his betrayal** and was **immediately forgiven** by Ahmad. 🙏
+
+This profound act of forgiveness taught Dubaku that **Ahmad's way - mercy and renewal - was the right path for Chaka.**
+
+**Now:**
+Dubaku serves Ahmad with **profound respect and loyalty**, having learned from his mistakes. 💙`
+            },
+            relationshipIsaiah: {
+                title: "Relationship: King Isaiah (Former King - Deceased) 👑💔",
+                content: `Dubaku served as **Isaiah's trusted right hand and Vaka.**
+
+He **grieves profoundly** for Isaiah's legacy, mourning when his statue was shattered.
+
+**The Obsession:**
+He used **Isaiah's memory to justify** attempting to restore **"old Chaka"** - the cold, disciplined, authoritative kingdom Isaiah ruled.
+
+Dubaku believed Ahmad needed to **rule exactly like his father** to save Chaka. 👑`
+            },
+            relationshipSeraphina: {
+                title: "Relationship: Seraphina Primrose (Ahmad's Wife - Former Rival) 🌸",
+                content: `Dubaku viewed Seraphina as an **"unstable Heartlander"** and a **distraction** from Ahmad's duty.
+
+**The Rivalry:**
+- He frequently **clashed with her** and **mocked her influence** over the king
+- Their rivalry was constant - Dubaku saw her as the reason Ahmad wasn't ruling with enough strength
+- His betrayal (the memory-erasing tonic) was **specifically designed to remove Seraphina** from Ahmad's life 💔
+
+**The Realization:**
+However, after his betrayal and Ahmad's forgiveness, Dubaku learned that Seraphina was Ahmad's **necessary foundation** - not a distraction, but his **strength.** 💙🌸`
+            },
+            relationshipJelani: {
+                title: "Relationship: Jelani/Apple (Poison Spirit - Enemy) 🍎⚡",
+                content: `The **poison spirit** who manipulated Dubaku into giving Ahmad the tonic to erase Seraphina's memory.
+
+**The Seeking:**
+Dubaku **sought her out in Jelani's Hollow**, believing he was doing what was best for Chaka.
+
+**The Discovery:**
+When he discovered her plan to **murder Ahmad**, Dubaku **fiercely regretted his actions**, calling her a **"harlot"** and **"Jezebel."** 🔥
+
+**The Warning:**
+He **risked his life to warn Ahmad** about her true nature, proving his **loyalty to the king** over his own freedom. 🛡️`
+            },
+            relationshipPrimroses: {
+                title: "Relationship: The Primrose Triplets (Jacthina & Kabina - Adversaries) 🌸",
+                content: `Dubaku considers Jacthina and Kabina to be **"stupid kids"** and the **"grand evil" of Chaka** due to their recklessness and chaotic nature.
+
+**The Horror:**
+He **screamed in horror** when he realized Jacthina had **unleashed the Sandman by mistake.** 😱
+
+He sees them as **dangerous, irresponsible foreigners** who bring **chaos to Chaka.** ⚡`
+            },
+            relationshipSandman: {
+                title: "Relationship: The Sandman (Ancient Assassin - Terror) 👁️🔴",
+                content: `The **ancient assassin** whose red-eyed appearance **terrified Dubaku** and caused him to be **physically incapacitated by fear.**
+
+**The Childhood Trauma:**
+The Sandman **killed Dubaku's father** when Dubaku was **ten years old** - this trauma **shaped his entire life.** 💔
+
+**The Return:**
+When Jacthina accidentally unleashed the Sandman, it **targeted Dubaku** (perhaps drawn to him by past trauma).
+
+**The Rescue:**
+Despite his terror, Dubaku risked his life to chase after the creature to protect his city and king.
+
+**Ahmad saved Dubaku** by using a shield of spiritual light - the king he betrayed **protected him from his childhood nightmare.** 🛡️✨`
+            },
+            relationshipAmi: {
+                title: "Relationship: Princess Ami (Adopted Daughter) 👸",
+                content: `Dubaku helped **raise Ami** after her father King Isaiah's death.
+
+He served as one of her **guardians and father figures.** 👨‍👧💙`
+            },
+            personality: {
+                title: "Personality & Traits",
+                content: `**Obsession with Order:**
+- He believes Chaka must adhere to **discipline and strong leadership** to avoid the chaos of the past
+- He is constantly irritated by **disorder** - criticizing bad cooking, low wages, damaged temples, and anything that disrupts Chaka's stability ⚖️
+
+**Trauma Response:**
+- His desperation for stability stems from **witnessing the Sandman kill his father** at age ten
+- He suffers from a **"trauma reaction"** when the Ha'keem River glows or shakes - signs that the Sandman may be near 💔
+
+**Remorse and Integrity:**
+- He was **consumed by guilt** over poisoning Ahmad, apologizing repeatedly and even accepting imprisonment
+- He **risked his life to warn Ahmad** about Jelani, proving his **loyalty to the king** over his own freedom 🙏
+
+**Blunt and Prickly:**
+- He is **easily provoked**, often yelling, throwing tantrums (throwing his turban on the ground), and speaking his mind regardless of who he offends 😤
+- He is **highly sensitive** about the mispronunciation of his name - constantly correcting people who say "Dubobo" or "Dookie" instead of **"Du-BA-ku"** ✅
+
+**Surprising Courage:**
+- Despite being the **"only one without power"** and being terrified of the Sandman, he forced himself to **dive into the glowing, violent Ha'keem River** to retrieve ancient artifacts for Chaka
+- He may lack supernatural abilities, but he has **fierce courage** when Chaka is at stake 💪🌊`
+            },
+            majorConflicts: {
+                title: "Major Conflicts & Story Events",
+                content: `**Childhood Trauma:**
+At age ten, Dubaku watched the Sandman kill his father. This horrific event shaped his entire worldview, making him obsessed with order and stability to prevent chaos.
+
+**Raising Ahmad and Ami:**
+After King Isaiah's death, Dubaku helped raise both Ahmad and Ami, serving as a father figure and guardian.
+
+**The Betrayal - The Memory-Erasing Tonic:**
+Desperate to restore Chaka to King Isaiah's glory, Dubaku sought out Jelani/Apple (a poison spirit) in Jelani's Hollow.
+
+He gave Ahmad a tonic intended to erase Seraphina from his memory, believing she was a distraction preventing Ahmad from ruling properly.
+
+The tonic caused Ahmad to forget both Seraphina and the name of King Isaiah - far more damage than Dubaku intended.
+
+**Discovery of Jelani's True Plan:**
+Dubaku discovered that Jelani/Apple planned to murder Ahmad, not just remove Seraphina from his memory.
+
+Horrified and filled with regret, Dubaku called her a "harlot" and "Jezebel" and risked everything to warn Ahmad.
+
+**Imprisonment:**
+Dubaku was stripped of his Vaka pendant and imprisoned by Ahmad for threatening Jelani, whom Ahmad (under the tonic's influence) planned to marry.
+
+He was released when Jelani ironically insisted he serve as Ahmad's best man at the wedding.
+
+**The Sandman's Return:**
+When Jacthina accidentally unleashed the Sandman, the creature targeted Dubaku (perhaps drawn to him by the trauma of his father's murder).
+
+Ahmad saved Dubaku by using a shield of spiritual light - the king he betrayed protected him from his childhood nightmare.
+
+**Retrieving the Orbs:**
+During a battle at the Ha'keem River, Dubaku dove into the magically glowing water (despite his fear) and found a falcon-carved wooden container holding dangerous artifacts: The Soul Orb and the Necrocore.
+
+He risked his life to recover these powerful items for Chaka.
+
+**Reconciliation and Forgiveness:**
+While in jail, Dubaku confessed his betrayal to Ahmad, expecting punishment or execution.
+
+Ahmad surprised him by granting immediate and genuine forgiveness, teaching Dubaku the power of mercy and renewal.
+
+This act transformed Dubaku's understanding of what Chaka needed - not Isaiah's cold discipline, but Ahmad's compassionate strength.`
+            },
+            currentStatus: {
+                title: "Current Status",
+                content: `**Active and Fully Redeemed** 🙏✨
+
+Dubaku is actively serving **King Ahmad** as the **Vaka of Chaka.**
+
+**Current Focus:**
+- He has accepted Ahmad's choice to **rule with compassion** and prioritize family (especially Seraphina), recognizing that Ahmad's new way is the **necessary path** for the kingdom's recovery 💙
+- He **no longer tries to force Ahmad to be like King Isaiah.** Instead, he supports **Ahmad's rule of mercy and renewal** as the **new Chaka** that the kingdom needs 👑
+- He continues to serve as **keeper of the royal vault**, **historian**, and **advisor** - but now with **humility and understanding** 📜✨`
+            },
+            analogy: {
+                title: "Analogy to Solidify Understanding",
+                content: `Dubaku is like the **ancient stone foundation** of a massive historical cathedral (Chaka). 🏛️
+
+He is **intensely focused on tradition, structure, and order**, believing that the cathedral must always be preserved **exactly as the original architect (King Isaiah) built it.**
+
+When the new, kindhearted priest (King Ahmad) decides to decorate the altar with **modern, warm art** (Seraphina's influence), Dubaku, fearing the **loss of the original sacred purity**, attempts to **secretly remove the art** and trick the priest into only caring about the stone structure. 💔
+
+However, when an **ancient, terrifying ghost** (The Sandman - his past trauma) attacks the church, the priest - **whom Dubaku betrayed** - **saves him**, using the new, divine light he possesses. 🛡️✨
+
+This act teaches Dubaku that the **foundation can support both the old structure and the new warmth** - that tradition and mercy can coexist. 🏛️💙`
+            },
+            legacy: {
+                title: "Legacy",
+                content: `**What Dubaku Will Be Remembered For:**
+
+**The Childhood Horror:**
+- Watched the **Sandman kill his father** at age 10
+- This trauma **shaped his entire life** - obsession with order and stability 💔
+
+**The Father Figure:**
+- **Raised King Ahmad and Princess Ami** after their parents' deaths
+- *"I practically raised the king"* 👨‍👧‍👦
+
+**The Guardian of Chaka's History:**
+- **Keeper and cataloger of the royal vault**
+- Spent years organizing and protecting Chaka's treasures and historical records 📜✨
+- Knows the **hidden and forbidden places** of Chaka, including Jelani's Hollow
+
+**The Betrayer:**
+- Gave Ahmad a **memory-erasing tonic** to remove Seraphina
+- Believed Ahmad needed to be **more like King Isaiah** - cold, disciplined, authoritative
+- The tonic erased both **Seraphina and Isaiah's name** - far more damage than intended 💔
+
+**The Redeemed:**
+- Discovered Jelani planned to **murder Ahmad**
+- **Risked his life to warn Ahmad**, calling Jelani a "harlot" and "Jezebel" 🔥
+- **Imprisoned**, then **confessed his betrayal**
+- Ahmad **immediately and genuinely forgave him** 🙏💙
+
+**The Rescued:**
+- When Jacthina unleashed the **Sandman**, it **targeted Dubaku**
+- **Ahmad saved him** with a shield of spiritual light - the king he betrayed **protected him from his childhood nightmare** 🛡️✨
+
+**The Hero:**
+- **Dove into the glowing Ha'keem River** to retrieve ancient artifacts
+- Found the **Soul Orb and Necrocore** in a falcon-carved container
+- **"Only one without power"** but has **fierce courage** when Chaka is at stake 💪🌊
+
+**The Transformed:**
+- Learned that **Ahmad's way - mercy and renewal - is the right path for Chaka**
+- No longer tries to force Ahmad to be like Isaiah
+- Supports **Ahmad's rule of compassion** with **profound respect and loyalty** 👑💙
+
+**The Stone Foundation:**
+- Ancient cathedral foundation (Chaka)
+- Feared loss of sacred purity
+- Learned that **tradition and mercy can coexist** - foundation can support both old structure and new warmth 🏛️✨
+
+**The Name:**
+- **Du-BA-ku** ✅ (constantly corrects mispronunciations like "Dubobo", "Dookie", "Little man") 😤
+
+Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Build the Same Cathedral.** 📜👑⚖️🙏`
+            }
         }
     },
     eudoricGods: {
