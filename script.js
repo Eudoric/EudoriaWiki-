@@ -5105,6 +5105,7 @@ Different threats require different defenders—Protectors (global divine), Guar
             name: "King Bao Xingyun",
             icon: "👑⭐",
             category: "Royalty & Defenders",
+            image: "Images/kingbao.png",
             titlesPosition: {
                 title: "Titles & Position",
                 content: `**King Bao Xingyun of Xingyun, Xuerai**
