@@ -7946,6 +7946,296 @@ The **first free Kinlight Festival** in a decade - Kingslanders celebrating with
 
 Sanaa & Simba Jarrah — **The Twin Cornerstones Who Rebuilt Freedom from Tyranny's Ruins.** 🏛️⚔️`
             }
+        },
+        kingAhmad: {
+            name: "King Ahmad Zulo Chaka",
+            icon: "👑✨🛡️",
+            category: "Royalty & Defenders",
+            nickname: "Guardian of Spirits",
+            titlesPosition: {
+                title: "Name & Titles",
+                content: `**Ahmad Zulo Chaka**
+**King of Chaka**
+**The Guardian of Spirits**
+**Son of Isaiah and Grandson of David**
+**Heir to a bloodline that has never bowed to the Hannas**
+**Husband of Seraphina Afriyah Primrose**`
+            },
+            regionLocation: {
+                title: "Region & Location",
+                content: `**Region:** Chaka
+**Location:** Estara Union (East)
+
+**About Chaka:**
+Chaka is recognized as the **first human civilization in Eudoria** - the birthplace of mankind, the Creator's chosen land.
+
+**Capital City:** Set (rebuilt from ruins after Malachai's reign)
+
+**History:**
+- Chaka endured immense suffering under King Malachai's brutal reign, becoming a target of conquest because of the **secrets beneath its desert**
+- Ahmad was officially crowned in Chaka after spending **ten years dead**, during which time the region fell under Malachai's control, and Ami was taken away by King Davidson
+- Ahmad now presides over the **rebuilt capital of Set**, working to restore order and stability to his ancestral homeland`
+            },
+            roles: {
+                title: "Roles",
+                content: `**Political/Royal:**
+- **King of Chaka by birthright.** He worked for moons to rebuild Chaka after the Still Halo was shattered, restoring order and stability to ascend the throne
+- His governance aims to **protect his people fiercely** and assert Chaka's independence from foreign intervention
+
+**Spiritual/Divine:**
+- As the **Guardian of Spirits**, his purpose is to archive, translate, and guide through the complexities of the Eudoric system
+- He believes the Creator returned him to the world to **help souls grieve and find peace**
+- His spiritual power manifests as a **warm, healing light** used for protection, not battle
+
+**Familial:**
+- He took on the role of the adult and helped raise his sister, **Ami**, after their mother's death
+- He is deeply devoted to his wife, **Seraphina**, whom he considers his foundation and Queen of Chaka`
+            },
+            appearance: {
+                title: "Brief Description",
+                content: `Ahmad is a **kind, gentle, and deeply protective king.** He is noted for his loving nature and his ability to say exactly the right thing to make his loved ones feel cherished.
+
+**Physical Appearance:**
+- Regal, slender build
+- **Orange hair** (a famous hair color in Chaka) 🔥
+- **Brown skin**
+- **Beautiful brown eyes**
+- In his divine form, he appears as an **ethereal figure made by humans**
+
+**Background:**
+As a youth, Ahmad was embarrassed by his father's flamboyant public displays and often had to act like an adult in the palace.
+
+**The Tragedy:**
+King Ahmad was **killed during a bomb attack** at Chaka's palace, the day after his father King Isaiah's death.
+
+For **ten years, he was dead.** 💀
+
+During this time, King Malachai took over Chaka, and Ami was taken away by King Davidson.
+
+**The Resurrection:**
+Ahmad came back in **spirit form** to help Seraphina during her torture by King Malachai.
+
+After Seraphina ascended to godhood, the **Creator resurrected Ahmad**, saying that **Ahmad was needed.**
+
+Ahmad was a **reborn king.** He first went to Chaka to retake his crown and become the king of the broken region.`
+            },
+            coreStruggle: {
+                title: "His Core Struggle",
+                content: `Balancing the demands of his kingdom, which require **cold, unwavering discipline** (the Chaka of order), with his **immense heart and devotion to his family** (the Chaka of mercy and love).
+
+**Additional Skills:**
+- **Surprisingly strategic**, noticing celestial anomalies connected to Al'sekemu
+- A capable combatant with knowledge of **fencing** and **camel riding** 🐫
+- **Highly intelligent**, knowing over five languages:
+  - Nawailians
+  - Hannite (Deaven's language)
+  - Chakan
+  - Eudran (the main language)
+  - Ancient Eudran
+  - Xurenese`
+            },
+            relationshipSeraphina: {
+                title: "Relationship: Seraphina Primrose (Wife) 💜",
+                content: `His **true love and foundation.** He considers her **Queen of Chaka.**
+
+**Their Love:**
+- He proposed to her, and they were officially married after he was resurrected
+- Their love is described as **everlasting**
+- He once yelled at her under external stress and immediately regretted it
+- He **refused to accept his crown without her**
+- He **promised to keep her from dying**
+
+*"She is my foundation."* ✨`
+            },
+            relationshipIsaiah: {
+                title: "Relationship: King Isaiah (Father, Deceased) 👑💔",
+                content: `**The best king Chaka ever had.**
+
+Ahmad carries the burden of his father's legacy and rules with **respect and fire.**
+
+**His Father's Teaching:**
+*"Chaka does not reside in the desert, but in the soul of our people."*
+
+Ahmad inherited this philosophy and governs with it at the core of his rule.`
+            },
+            relationshipAmi: {
+                title: "Relationship: Princess Ami (Sister) 👧💕",
+                content: `His **"little love".**
+
+Ahmad missed her terribly during his **ten years of absence.**
+
+**The Struggle:**
+After his resurrection, he chose to **prioritize her over his duties as king** after she declared she **"can't cross region"** from Jamara.
+
+Now he must find a way to **balance his kingdom** and his relationship with his little sister.
+
+He finally accepts that Ami can't return to Chaka and chooses to focus on being her **supportive brother** rather than forcing her return.`
+            },
+            relationshipDubaku: {
+                title: "Relationship: Dubaku (Vaka/Advisor) 🗣️",
+                content: `Ahmad views him as a **close friend and Vaka (advisor).**
+
+**Their Contentious Relationship:**
+Dubaku constantly nags Ahmad about **putting the kingdom first.**
+
+**The Betrayal:**
+Dubaku briefly **poisoned Ahmad with a tonic** to erase Seraphina from his memory, an action Ahmad later **forgave.**
+
+This incident led Ahmad to propose marriage to **Jelani** (Apple in disguise) while under the spell.
+
+The spell was broken when Seraphina confronted him.`
+            },
+            relationshipDavidson: {
+                title: "Relationship: King Davidson (Friend) 💜",
+                content: `Davidson is **Ami's father figure.**
+
+**Initial Conflict:**
+Ahmad initially **yelled at Davidson** for losing Ami.
+
+**Acceptance:**
+Eventually Ahmad recognized that Davidson provided the **stable life Ami needed** during his ten-year absence.
+
+They have reconciled, and Ahmad now respects Davidson's role in Ami's life.`
+            },
+            personality: {
+                title: "Personality & Traits",
+                content: `**Unwavering Devotion:**
+- His love for Seraphina is constant
+- He refuses to accept his crown without her
+- He promised to keep her from dying
+
+**Integrity:**
+- He refused to lie to his people about the threats they faced
+- Speaks with honesty and strength
+- Rules with **mercy and renewal**, unlike the Hannas or Malachai
+
+**Vulnerability:**
+- Confesses his feelings of inadequacy
+- Doubts if he can be a great king like his father
+- Struggles openly with the failure of his memory during the tonic episode
+
+**Kind and Gentle:**
+- Noted for his loving nature
+- Has the ability to make loved ones feel cherished
+- Says exactly the right thing to comfort those he cares about
+
+**Strategic Mind:**
+- Surprisingly strategic
+- Capable of noticing celestial anomalies
+- Plans effectively despite his gentle nature`
+            },
+            guardianPower: {
+                title: "Guardian Power 🛡️✨",
+                content: `As the **Guardian of Spirits**, Ahmad possesses unique spiritual abilities:
+
+**Powers:**
+- Can conjure a **bronze shield of light** for protection 🛡️
+- Has the ability to **sense ritualistic dissonance** in others, hinting that a spirit is at war within a body
+- His spiritual senses were affected when King Onangwatgo was near
+- His power manifests as **warm, healing light** used for protection, not battle
+
+**Purpose:**
+The Creator returned him to the world to **help souls grieve and find peace.**
+
+He uses his divine power for **healing and defense**, not conquest.`
+            },
+            majorConflicts: {
+                title: "Major Conflicts & Story Events",
+                content: `**Death and Resurrection:**
+- Ahmad died in the same bombing that killed Danai, the day after his father, King Isaiah's, death
+- He spent **ten years in the spiritual realm** before being returned by the Creator, who said **Ahmad was needed** 💀➡️✨
+
+**The Vaka's Tonic:**
+- Dubaku poisoned Ahmad with a tonic, causing him to forget Seraphina and his father, King Isaiah
+- This led Ahmad to propose marriage to **Jelani** (Apple in disguise)
+- The spell was broken when Seraphina confronted him
+- Ahmad later forgave Dubaku
+
+**War with Hannas Dynasty:**
+- He confronted King Onangwatgo, who revealed himself as **Shahar Ephraim the Victor**, a key figure in the Hannas Dynasty
+- Ahmad fought him brutally at the **Ha'keem River**, where Onangwatgo attempted to access the Book of Quireth
+- He bravely **saved Dubaku from the Sandman** 🛡️
+
+**Guardian Duty:**
+- He served as a protector to **Queen Azariah**, helping her find spiritual closure over her parents' death
+- He used his spiritual power to contain the Sandman
+
+**The Loss of Ami:**
+- He struggled to connect with Ami upon his return, realizing that Davidson had become her true father figure
+- He finally accepts that Ami **"can't cross region"** back to Chaka
+- Chooses to focus on being her supportive brother rather than forcing her return
+
+**Rebuilding Chaka:**
+- After his resurrection, he worked for **months** to rebuild Chaka from the ruins left by Malachai's reign
+- Restored order and stability before ascending the throne
+- Successfully fought off initial threats from the Order of the Hannas
+- Recovered stolen magical orbs`
+            },
+            currentStatus: {
+                title: "Current Status",
+                content: `**Active and Married** 💍
+
+King Ahmad is actively ruling Chaka, focusing on **rebuilding trust and establishing order.**
+
+**Recent Achievements:**
+- Successfully fought off initial threats from the Order of the Hannas ⚔️
+- Recovered stolen magical orbs 🔮
+- Celebrated his official coronation 👑
+- **Married to Seraphina Primrose** 💜
+
+**Current Focus:**
+He is currently prioritizing his relationship with his sister, **Ami**, over his royal duties, choosing to be a supportive brother rather than demanding her return to Chaka.
+
+He continues to balance the demands of kingship with his natural desire to protect and heal those he loves.`
+            },
+            analogy: {
+                title: "Analogy to Solidify Understanding",
+                content: `King Ahmad is like a **resurrected phoenix** (Chaka), determined to replace scorched earth with a thriving garden. 🔥🌱
+
+The immense fire of his past (his father's death, his own death, Malachai's reign) has given him **divine, protective power** (Guardian of Spirits), but he is naturally drawn to the **gentle, protective elements** (Seraphina, Ami).
+
+**His Constant Struggle:**
+The demands of kingship (ordering the construction, waging war, dealing with hostile advisors like Dubaku) require him to act like a **cold, impenetrable marble statue**, but his soul longs to be the **warmth and light of the garden itself.** 🌿✨
+
+He uses the power of the divine **not for conquest, but for healing and defense**, constantly fighting the temptation to revert to the brutal, chaotic ways of the past to maintain order.`
+            },
+            legacy: {
+                title: "Legacy",
+                content: `**What King Ahmad Will Be Remembered For:**
+
+**The Resurrected King:**
+- **Dead for ten years**, returned by the Creator because he was needed
+- The phoenix who rose from the ashes of Malachai's destruction 🔥
+
+**The Guardian of Spirits:**
+- Used his divine power for **healing and protection**, not conquest
+- Helped souls grieve and find peace 🛡️✨
+- Protected Queen Azariah and contained the Sandman
+
+**The Devoted Husband:**
+- **Refused to accept his crown without Seraphina**
+- *"She is my foundation."* 💜
+- Their love is everlasting
+
+**The Gentle King:**
+- Rules with **mercy and renewal**, not brutality
+- Speaks with honesty and integrity
+- Balances the demands of kingship with his immense heart
+
+**The Brother Who Chose Love:**
+- Prioritized his relationship with Ami over his royal duties
+- Accepted that she "can't cross region" and chose to be her supportive brother
+
+**Rebuilding Chaka:**
+- Restored order to the first human civilization in Eudoria
+- Rebuilt the capital of Set from Malachai's ruins
+- Fought off the Order of the Hannas
+
+**His Father's Legacy:**
+*"Chaka does not reside in the desert, but in the soul of our people."*
+
+King Ahmad Zulo Chaka — **The Resurrected Phoenix Who Replaced Scorched Earth with a Thriving Garden.** 🔥🌱👑`
+            }
         }
     },
     eudoricGods: {
