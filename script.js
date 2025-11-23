@@ -7615,6 +7615,337 @@ And that is enough.`
 
 Queen Azariah Maruli — The Rose Who Bloomed After the Fire.`
             }
+        },
+        twinWarriors: {
+            name: "Sanaa & Simba Jarrah",
+            icon: "👑⚔️❄️",
+            category: "Royalty & Defenders",
+            nickname: "The Inseparable Twin Warriors",
+            titlesPosition: {
+                title: "Full Name & Titles",
+                content: `**Sanaa and Simba Jarrah**
+**The Royal Twins of Kingsland**
+**Heirs to the Fallen Throne of Kingsland**
+**Grandchildren of King Jarrah**
+**Rightful Leaders of the Hundred Kingdoms**
+
+*"We don't want the crown - we just want our people to live freely, without fear and without chains."*`
+            },
+            regionLocation: {
+                title: "Region & Location 🏰",
+                content: `**Region:** Kingsland (also known as "The Hundred Kingdoms")
+**Location:** Norvayn (North)
+
+**About Kingsland:**
+Kingsland is the **first region founded after the Great Flood**, making it **second only to Eudran** in age and importance. 🌊
+
+It is one of the **oldest and most essential mortal kingdoms.**
+
+**The Still Halo - The Circular Prison:**
+For years, Kingsland was held captive within the **Still Halo** - a terrible circular prison that King Malachai had built around the entire region, trapping its people *"like birds in a cage."* 🔒🐦
+
+The Still Halo barrier was **shattered** when Malachai fell, finally freeing Kingsland after a decade of captivity. ⚡
+
+**Current Status:**
+Kingsland is now **RECLAIMED and FREE** - ruled by Sanaa and Simba, celebrating its first **Kinlight Festival** (Starlight Festival) without fear or chains! ✨🎉`
+            },
+            role: {
+                title: "Role 📜",
+                content: `**Royalty & Heirs:**
+- The legitimate, rightful heirs to the throne of Kingsland as the grandchildren of King Jarrah
+
+**Warriors & Fighters:**
+- For the last ten years (ages 10-20), their primary mission was fighting to free their people from Malachai's rule and the Still Halo prison
+
+**Reluctant Leaders:**
+Despite being the rightful royalty, they explicitly stated they **do not want the crown** - they just want Kingslanders to live freely, without fear and without chains. 👑❌✊
+
+**Their Mission:**
+Fighting to reclaim what their grandfather built and restore freedom to the Hundred Kingdoms.`
+            },
+            appearance: {
+                title: "Appearance 👤",
+                content: `**Age:** 20 years old (was 10 when their grandparents died, fought for 10 years)
+
+**Distinctive Feature:**
+- **Silver hair** ✨ (both twins!)
+
+**Presence:**
+- They move with a **shared stride** and **matching curiosity** - perfectly in sync, inseparable in movement and purpose
+
+**Combat Style:**
+
+**SANAA:**
+- Fast and fluid in battle ⚡
+- Quick with her blade and dagger 🗡️
+- Takes the lead over her brother
+- More resilient, decisive
+
+**SIMBA:**
+- Can lock blades in fury ⚔️
+- Strong and fierce in combat
+- Follows Sanaa's lead
+- Shows more emotions 💙`
+            },
+            personality: {
+                title: "Personality & Traits ⭐",
+                content: `**Shared Traits:**
+- **Unwavering Loyalty** - Determined to save their people above all else
+- **Resilient in War** - Have been in combat since age 10, battle-hardened warriors
+- **Rejection of Power** - "We don't want the crown," despite being rightful heirs
+- **Fierce Bond** - "Our hearts are one. No one can break us." 💜
+- **Shared Purpose** - Move with matching curiosity and shared stride
+- **Strategic** - Created secret escape passages, survived 10 years on their own
+
+**SANAA (The Leader):**
+- More resilient than her brother
+- Takes the lead in battle and decisions
+- Suggested they don't return to Kingsland after their grandparents died (knowing they needed to survive outside to save it later)
+- Encourages Simba to prioritize loyalty over crowns
+
+**SIMBA (The Heart):**
+- Shows more emotions than Sanaa
+- Usually follows Sanaa's lead
+- Acknowledged their need for help: "We must go to them [the Primroses]"
+- Equally fierce in battle, protective of his sister`
+            },
+            tragedy: {
+                title: "The Tragedy That Forged Them 💔",
+                content: `**Age 10 - The Fall of Kingsland:**
+
+Their grandfather, **King Jarrah, SOLD Kingsland to MALACHAI** for wealth. 💰
+
+The "Kingsland Celebration" was a **SCHEME** orchestrated by the **Braveheart Siblings** (Malachai's enforcers) to take over Kingsland. 🎭
+
+**That terrible day:**
+- **King Jarrah was killed** by Yantay Braveheart (cold-blooded murder!) ⚔️
+- **Queen Darya was killed** by Yania Braveheart - **the twins WATCHED their grandmother die** 💔
+- **King Isaiah of Chaka ALSO died** (same day - two major kings fell!) 👑
+- **The twins ESCAPED** through a secret passage they had created in the tower 🚪
+
+**Aftermath:**
+The twins were **10 years old** and suddenly orphaned, hunted, and alone.
+
+Sanaa made the decision: **They could not return home** because of their grandfather's death and Malachai's takeover.
+
+For the next **TEN YEARS**, they would be on their own - fighting, surviving, and working to free their people from the Still Halo prison. ⚔️`
+            },
+            tenYearsOfWar: {
+                title: "Ten Years of War ⚔️",
+                content: `**Ages 10-20:**
+
+Sanaa and Simba fought a relentless **guerrilla war** against Malachai's forces:
+
+- Constantly **hunted** by the Braveheart Siblings (Malachai's enforcers)
+- Fighting to **free Kingslanders** from the Still Halo prison
+- **Saving their people** from Malachai's tyranny 🛡️
+- **Living as outcasts** but never giving up
+- Becoming **legendary warriors** through a decade of combat ⚡
+
+**Their Reputation:**
+They became known as **villainous freedom fighters** - fierce, unstoppable, and utterly devoted to liberating Kingsland.`
+            },
+            relationshipEachOther: {
+                title: "Relationship: Each Other (Twin Siblings) 💜",
+                content: `*"Our hearts are one. No one can break us."*
+
+Sanaa and Simba are **completely inseparable** - the core of their strength lies in their **perfect unity.**
+
+Unlike other sibling co-rulers (like Timbe and Kwan, who constantly fight), Sanaa and Simba:
+- Move with a **shared stride**
+- Show **matching curiosity**
+- Fight as **ONE** in battle ⚔️
+- Make **decisions together**
+- **Never waver** in their loyalty to each other
+
+**Their Dynamic:**
+- **SANAA** takes the lead - more resilient, decisive, strategic
+- **SIMBA** follows her lead - more emotional, equally fierce, protective
+
+**Their philosophy:**
+*"Loyalty will lead us to paradise."* ✨
+
+They prioritize **loyalty over crowns**, **freedom over power**, **unity over glory.**`
+            },
+            relationshipGrandparents: {
+                title: "Relationship: King Jarrah & Queen Darya (Grandparents - Deceased) 👑💔",
+                content: `Former rulers of Kingsland.
+
+**King Jarrah:**
+- **Sold Kingsland to Malachai** for wealth - a betrayal that led to the region's captivity. 💰
+- **Killed by Yantay Braveheart** (cold-blooded) on the same day as King Isaiah's death.
+
+**Queen Darya:**
+- **Killed by Yania Braveheart** - **the twins WATCHED their grandmother die.** 💔
+
+**Despite Their Grandfather's Betrayal:**
+Sanaa and Simba seek to reclaim their people's freedom **in their grandfather's name** - not for the crown, but to **undo the damage he caused** and restore what he built before his fall.`
+            },
+            relationshipBravehearts: {
+                title: "Relationship: The Braveheart Siblings (Malachai's Enforcers - Enemies) ⚔️",
+                content: `Malachai's most feared enforcers - they orchestrated the takeover of Kingsland.
+
+**What They Did:**
+- **Yantay Braveheart killed King Jarrah** (cold-blooded!) ⚔️
+- **Yania Braveheart killed Queen Darya** (the twins watched!) 💔
+- **Hunted Sanaa & Simba for TEN YEARS** 🎯
+- **Enforced Malachai's rule** over Kingsland 🔒
+
+**Their Defeat:**
+The Braveheart Siblings were finally **DEFEATED** by Sanaa, Simba, Jacthina, and Kabina in the battle to free Kingsland! ✅⚡`
+            },
+            relationshipSeraphina: {
+                title: "Relationship: Seraphina Primrose (Savior - Friend) 🌸",
+                content: `One of the Primrose Triplets - the prophesied heroine.
+
+**What She Did:**
+Seraphina **SAVED** Sanaa and Simba when they were cornered by the Braveheart Siblings.
+
+But she **traded her OWN FREEDOM for theirs** - giving herself up to the Braveheart Siblings so the twins (and Princess Ami!) could **ESCAPE.** 💔
+
+**Simba's Response:**
+After Seraphina's sacrifice, Simba acknowledged:
+
+*"We must go to them [the Primroses]."* 🙏
+
+They knew they needed the Primrose Triplets' help to defeat the Bravehearts and free Kingsland.`
+            },
+            relationshipJacthilaKabina: {
+                title: "Relationship: Jacthina & Kabina Primrose (Allies - Warriors) ⚡",
+                content: `The other two Primrose Triplets.
+
+**After Seraphina's Capture:**
+- Sanaa and Simba **found Jacthina** (who was searching for her sister Seraphina!) ⚡
+- They then **met up with Kabina** ⚡
+
+**Together:**
+The twins fought alongside Jacthina and Kabina (and with help from the Protectors) to:
+- **Defeat the Braveheart Siblings** ⚔️
+- **Free Kingsland** from the Still Halo 🔓
+- **Rescue Seraphina** 🌸`
+            },
+            relationshipAmi: {
+                title: "Relationship: Princess Ami (Companion) 👸",
+                content: `Daughter of King Isaiah, adopted by King Davidson.
+
+Princess Ami **traveled with Sanaa and Simba**, clutching the **Zikamunzi Vault** (the artifact that protects against the Mentalith Orb). 🗝️
+
+She was with them when Seraphina sacrificed herself to save the group.`
+            },
+            relationshipCasanova: {
+                title: "Relationship: Casanova (White Tiger - Guardian) 🐅",
+                content: `A white tiger who acted as a guardian for Sanaa, Simba, Ami, and the others.
+
+Casanova **defended the group** during their battles and escape from the Braveheart Siblings. 🛡️`
+            },
+            majorConflicts: {
+                title: "Major Conflicts & Story Events 📖",
+                content: `**Age 10 - The Fall of Kingsland:**
+- King Jarrah sold Kingsland to Malachai
+- The Braveheart Siblings killed their grandparents
+- The twins watched Queen Darya die
+- They escaped through a secret tower passage
+
+**Ages 10-20 - Ten Years of War:**
+- Fought constantly against Malachai's forces
+- Hunted by the Braveheart Siblings
+- Worked to free Kingslanders from the Still Halo prison
+- Survived alone, on the run, becoming legendary warriors
+
+**Seraphina's Sacrifice:**
+- Seraphina Primrose saved them from the Bravehearts but traded her freedom for theirs, giving herself up so they (and Ami) could escape
+
+**"We Must Go to Them":**
+- Simba acknowledged their need for help
+- They sought out the Primrose Triplets
+
+**Meeting Jacthina & Kabina:**
+- Found Jacthina (searching for Seraphina), then met Kabina
+- Formed an alliance with the Primrose sisters
+
+**The Battle for Kingsland:**
+- Fought alongside Jacthina, Kabina, and the Protectors to defeat the Braveheart Siblings and free Kingsland
+
+**Shattering the Still Halo:**
+- When Malachai fell, the Still Halo prison was finally shattered - **Kingsland was FREE!** ✅⚡
+
+**First Free Kinlight Festival:**
+- Celebrated their first Kinlight (Starlight Festival) with the Kingslanders - the first celebration **without fear or chains** in a decade! 🎉✨`
+            },
+            notableQuotes: {
+                title: "Notable Quotes & Moments 💬",
+                content: `**Their Bond:**
+*"Our hearts are one. No one can break us."* 💜
+
+**Rejecting the Crown:**
+*"We don't want the crown - we just want our people to live freely, without fear and without chains."*
+
+**Their Philosophy:**
+*"Loyalty will lead us to paradise."* ✨
+
+**Sanaa to Simba:**
+*"Loyalty over crowns."* (when Valiyah threatened her life)
+
+**Simba Acknowledging Their Need:**
+*"We must go to them [the Primroses]."* 🌸`
+            },
+            currentStatus: {
+                title: "Current Status ✨",
+                content: `**Active as the Rightful Leaders of Freed Kingsland**
+
+Sanaa and Simba (now **20 years old**) are currently ruling a **newly freed Kingsland** after a decade of war.
+
+Though they **don't want the crown**, they serve as the **rightful leaders of Kingsland** - guiding their people toward true freedom, healing, and peace after years of tyranny.
+
+They rule **together, inseparably**, with shared purpose and unwavering loyalty to each other and their people. 👑⚔️
+
+**Recent Developments:**
+- **Defeated the Braveheart Siblings** ✅
+- **Shattered the Still Halo prison** ⚡
+- **Freed Kingsland** from Malachai's tyranny 🔓
+- **Celebrated the first free Kinlight Festival** in a decade 🎉
+- **Leading their people** toward healing and rebuilding 🏰`
+            },
+            analogy: {
+                title: "The Analogy - Understanding Sanaa & Simba 🏰",
+                content: `Sanaa and Simba are like **the twin cornerstones of a shattered temple** (Kingsland).
+
+**Ancient, essential**, bearing the weight of history and fierce inherited duty (reclaiming their people's freedom).
+
+Though they were **scattered and hunted** for years, their strength lies not in their individual power or desire for glory, but in their **perfect symmetry** and **unwavering commitment** to one another and their foundation.
+
+*"Loyalty will lead us to paradise."* ✨
+
+They refuse the golden statues and titles (the crown), choosing instead the **raw, dangerous work of rebuilding freedom** from the ruins of tyranny.
+
+**They are the twin cornerstones - and Kingsland stands because they stand together.** 🏛️`
+            },
+            legacy: {
+                title: "Legacy 🌟",
+                content: `**What Sanaa & Simba Will Be Remembered For:**
+
+**The Twin Warriors Who Freed Kingsland:**
+- Fought for **ten years** (ages 10-20) to liberate their people
+- **Defeated the Braveheart Siblings** and **shattered the Still Halo**
+- Restored freedom to the **Hundred Kingdoms** ⚔️
+
+**The Reluctant Rulers:**
+- *"We don't want the crown"* - they rule not for power, but for their people's freedom
+- Chose **loyalty over crowns**, **freedom over glory** 👑❌
+
+**The Inseparable Bond:**
+- *"Our hearts are one. No one can break us."*
+- A symbol of **perfect unity**, **unbreakable loyalty**, and **shared purpose** 💜
+
+**The Cornerstones of Kingsland:**
+- Ancient, essential, bearing history's weight
+- **Kingsland stands because they stand together** 🏰
+
+**Their Greatest Achievement:**
+The **first free Kinlight Festival** in a decade - Kingslanders celebrating without fear or chains, thanks to the twin warriors who never gave up. 🎉✨
+
+Sanaa & Simba Jarrah — **The Twin Cornerstones Who Rebuilt Freedom from Tyranny's Ruins.** 🏛️⚔️`
+            }
         }
     },
     eudoricGods: {
