@@ -8917,6 +8917,333 @@ Wei 'Li' Dian — **The Frost Warrior Whose Own Power Shattered His Heart.** ❄
             }
         }
     },
+    otherFigures: {
+        amiChaka: {
+            name: "Ami Zula Chaka",
+            icon: "👸🌟🐅",
+            category: "Other Important Figures",
+            nickname: "Princess of Two Kingdoms",
+            titlesPosition: {
+                title: "Name & Titles",
+                content: `**Ami Zula Chaka**
+**Princess Ami of Chaka** (by birth)
+**Princess of Jamara** (by choice)
+**Little One**
+**"Daddy's Little Love"** (term used by her father, King Isaiah)
+**"Little Star"** (term used by her brother, King Ahmad)
+**Daughter of King Isaiah**
+**Princess of Two Kingdoms** (Chaka by birth, Jamara by choice)`
+            },
+            regionLocation: {
+                title: "Region & Location",
+                content: `Ami's life is defined by **two primary kingdoms** and her journey between them.
+
+**Chaka (Birthplace):**
+- Her **birthright and homeland** are in the Estara Union (East)
+- She was the princess who **loved gowns**, and her father provided her with a new one almost daily
+- However, she **struggles to remember life there** due to leaving at age five when her father died
+
+**Jamara (Chosen Home):**
+- Her **true home** is in the Wesari Union (West)
+- She was **raised in Jamara** under King Davidson's loving care since her father's death
+- Jamara is where she grew up, where she belongs, and where she declares, **"I can't cross region"** - she cannot leave 🏰💜`
+            },
+            roles: {
+                title: "Roles",
+                content: `**Royalty/Heir:**
+- **Princess of Chaka by birth**, heir to a bloodline that has never bowed to the Hannas
+- Later **declared herself a Jamaran Princess by choice**, choosing Davidson and Jamara over her birthright 👑
+
+**Guardian of the Zikamunzi Vault:**
+- She protects the powerful **bronze and gold artifact** created by Suleiman and Obatala
+- The Vault is key to **safeguarding against the Mentalith Orb's influence** and holds world-changing power 🗝️✨
+
+**Survivor:**
+- She was **alone for two weeks** after her father's death, fleeing danger
+- She endured **ten years without her father and brother**, navigating the trauma of Eudoria's silent period (The Silence)
+- She survived being **hunted, kidnapped, and manipulated** 💪`
+            },
+            appearance: {
+                title: "Brief Description",
+                content: `Ami is a **small girl** who is **physically ten years old** but possesses the wisdom of someone older.
+
+**Physical Appearance:**
+- **Long brown hair**, often worn in ponytails
+- **Amber eyes**
+- **Small stature**
+
+**The Vault's Effect:**
+The **Zikamunzi Vault caused her to stop aging for five years**, stealing half a decade of her childhood.
+
+She **should be older**, but remains **physically ten.** ⏰💔
+
+**Her Personality:**
+Ami is marked by the trauma of her parents' loss and the chaotic world around her.
+
+She often **treats serious past events casually** as a protective mechanism - using **humor and sass** to shield herself from pain.
+
+She carries her **royal heritage**, wearing a **Chaka royal bracelet and a Chaka tiara**, but her heart belongs entirely to the life Davidson built for her in Jamara.
+
+**Her Childhood:**
+- She loved playing **Princess and the Dragon** with her brother Ahmad
+- She once loved **ponies and butterflies**
+- She adored receiving **new gowns** from her father 👗🦋`
+            },
+            background: {
+                title: "Background 💔",
+                content: `Ami is a little girl who **once lost her whole family.**
+
+**After King Isaiah's Death:**
+After her father, King Isaiah, died, she was **hunted by the Yalo tribe**, which sought to force her to marry the Yalo prince to claim the throne of Chaka.
+
+After Ahmad's death (he had been dead for ten years), Ami was **sent to Eudora's palace for safety**. But she **left Eudora's palace**, trying to run back home to Chaka.
+
+**Casanova's Creation:**
+While Ami was fleeing alone, **Queen Eudora created a white tiger with blue stripes** to watch over her.
+
+Ami found this tiger who wouldn't stop following her. She **named him Casanova**, and the two became friends and inseparable companions. 🐅💙
+
+**Meeting King Davidson:**
+While wandering in the woods with Casanova, Ami **met King Davidson**, who was hiking. He was **shocked** to find the princess of Chaka and his goddaughter **alone in the woods.**
+
+When Davidson learned that King Isaiah had died, he was heartbroken. Remembering Isaiah's words - **"If something were to happen to me, please take care of my little girl"** - Davidson **moved Ami into Jamara.**
+
+**Acceptance:**
+Though Ami did not initially accept King Davidson as her father figure, she later did when she realized he **wanted nothing more than to protect her.** 💜`
+            },
+            relationshipDavidson: {
+                title: "Relationship: King Davidson ('Davy') - Godfather/Father Figure 💜",
+                content: `Her **godfather** and the man she considers her **father figure.**
+
+She loves him fiercely, calling him the **best godfather ever** and her **anchor.**
+
+**Their Bond:**
+Their bond became so strong that she **chose him over her birth brother** when she declared, **"I can't cross region,"** choosing Jamara and Davidson as her permanent home.
+
+**The Crisis:**
+Their relationship faced a major crisis when she realized Davidson was **lying and controlling the Jamarans with the Mentalith Orb.**
+
+She asserted: **"You are not my father."** 💔
+
+**The Healing:**
+But after his **redemption and transformation**, their bond healed.
+
+She now sees him as her **true father figure.** 💙`
+            },
+            relationshipIsaiah: {
+                title: "Relationship: King Isaiah (Father - Deceased) 👑💔",
+                content: `Her **deceased father and best friend.**
+
+He was her **protector**, the one who **spun her around** and called her **"My little love."**
+
+**Memories:**
+Memories of him - his laughter, his theatrical energy, his love for her - helped her **heal and reconnect with her brother Ahmad.**
+
+She carries his legacy in her **Chaka royal bracelet and tiara**, even though she's chosen to live in Jamara. 👑✨`
+            },
+            relationshipAhmad: {
+                title: "Relationship: King Ahmad (Brother) 👑⭐",
+                content: `Her **older brother**, who calls her his **little star.** ⭐
+
+**The Absence:**
+Ahmad had been **dead for ten years**, absent from Ami's life from age five to fifteen.
+
+When he returned, Ami initially **struggled to accept him back**, given his long absence and the fact that Davidson had become her father figure.
+
+**The Healing:**
+She found peace when they settled into **playing Princess and Dragons together**, fulfilling their father's desire for them to coexist as siblings.
+
+**"I Can't Cross Region":**
+When Ahmad asked her to come back to Chaka, Ami told him, **She cannot leave Jamara - it's her home now.**
+
+**Ahmad's Choice:**
+Ahmad **accepted this** and chose to **prioritize their relationship over his duties to Chaka**, visiting her in Jamara instead. 💙⭐`
+            },
+            relationshipCasanova: {
+                title: "Relationship: Casanova (White Tiger with Blue Stripes) - Guardian 🐅",
+                content: `Her **loyal guardian** was created by Queen Eudora.
+
+Casanova is a **white tiger with blue stripes** who has protected Ami since she was fleeing alone through the woods.
+
+**Ami's Belief:**
+Ami believes Casanova is **her father, King Isaiah, reborn to protect her.**
+
+Whether this is literally true or a comforting belief is unclear, but Casanova's devotion to her supports this idea. 👑🐅
+
+**Casanova's Nature:**
+- **Incredibly protective** of Ami
+- **Highly intelligent** (showing human-like amusement and sorrow)
+- **Always by her side**
+- The one who **found the Zikamunzi Vault** buried in the Lifebloom Field 🗝️
+
+**Notable Actions:**
+- Found the Zikamunzi Vault in the Lifebloom Field
+- Defended Ami during kidnapping attempts
+- Traveled with Ami, Sanaa, and Simba as their guardian
+- Rescued Ami from King Onangwatgo 🛡️`
+            },
+            relationshipSeraphina: {
+                title: "Relationship: Seraphina Primrose (Friend/Future Sister-in-Law) 🌸",
+                content: `Her **long-lost friend** and **future sister-in-law** (Seraphina married Ahmad).
+
+Ami **ran to Seraphina for comfort** after Seraphina saved her on Mount Eetheria.
+
+Seraphina became a **woman role model Ami desperately needed** in her life - a source of **strength, protection, and guidance.** 💜🌸`
+            },
+            relationshipEudora: {
+                title: "Relationship: Queen Eudora (Protector) 🌿",
+                content: `The Queen, who **created Casanova to protect Ami** when she was fleeing alone.
+
+Ami was briefly at **Eudora's palace for safety** but left, trying to return home. 🌿✨`
+            },
+            personality: {
+                title: "Personality & Traits",
+                content: `**Determined and Protective:**
+- She **fiercely protects the Zikamunzi Vault**
+- When Davidson was threatened by the red orb's portal, she **used the Vault to save him** 🗝️💪
+
+**Sass and Wit:**
+She exhibits remarkable **sass and confidence** for a ten-year-old:
+- Joked that she would tell Ahmad "eww" about something
+- Speaks with **regal precision** when challenging Davidson
+- **Punched a mean girl in the face** 👊
+- The Jamarans don't see her as one of them - she would **fight Jamaran kids to prove her worth**
+- She **kissed a boy**, which shocked King Davidson, but quickly said "Never mind" and backed away 💋
+
+**Emotional Depth:**
+- Haunted by the **eerie silence of Eudoria** (The Silence)
+- Struggles with feelings of being alone
+- Shows **fierce loyalty** to those she loves but also **deep trauma** from losing her family 💔
+
+**Perceptive:**
+- She easily recognized that Jamara's people were **moving unnaturally** and suspected Davidson was hiding something (the Mentalith Orb)
+- She correctly deduced that a figure wearing her father's face was an **impostor** by testing him with a question only the real Isaiah would know the answer to 🧠
+
+**Strong Appetite:**
+Due to stress or constant running/traveling, she **ate plates of food with no hesitation** - her appetite is notable and often mentioned 🍽️
+
+**Casual About Trauma:**
+She treats serious past events casually as a **protective mechanism** - joking about dangerous situations or brushing off scary memories to shield herself from pain 🛡️`
+            },
+            majorConflicts: {
+                title: "Major Conflicts & Story Events",
+                content: `**King Isaiah's Death (Age 5):**
+Ami's father was murdered when she was five years old. Her entire life changed in an instant - she lost her home, her father, and soon after, her brother (who died the next day).
+
+**Hunted by the Yalo Tribe:**
+After Isaiah's death, Ami was hunted by the Yalo tribe, which sought to force her to marry the Yalo prince to claim Chaka's throne through her bloodline.
+
+**Fleeing Eudora's Palace:**
+Sent to Eudora's palace for safety, Ami left and tried to run back home to Chaka. She was alone and frightened.
+
+**Casanova's Arrival:**
+Queen Eudora created a white tiger with blue stripes to protect Ami. She named him Casanova, and he became her loyal guardian.
+
+**Meeting King Davidson:**
+While wandering the woods with Casanova, Ami met her godfather, King Davidson, who took her to Jamara to fulfill his promise to Isaiah.
+
+**The Silence:**
+Ami fled the Noctakari during Eudoria's silent period (The Silence - five years when Malachai enforced absolute silence across the world). She found the Heartland's force field for refuge.
+
+She believes the silence will not break until the Primrose Triplets return.
+
+**Discovery of the Zikamunzi Vault:**
+Casanova found the gold and bronze vault buried in the Lifebloom Field in Jamara. The Vault's energy surged, reminding Ami of the Primrose Triplets and their prophecy.
+
+She became the guardian of the Vault, protecting its power.
+
+**The Vault's Curse:**
+The Zikamunzi Vault caused Ami to stop aging for five years, robbing her of half a decade of her childhood. She remains physically ten years old, even though she should be older.
+
+**The Davidson Confrontation:**
+Ami discovered that Davidson was using the Mentalith Orb to control Jamara's people. She accused him of lying and manipulating, leading her to assert: "You are not my father."
+
+She tried to leave Jamara but ultimately stayed when Davidson redeemed himself.
+
+**The Impostor Attack:**
+A figure wearing King Isaiah's face tried to trick Ami into using the Vault to reach him.
+
+Ami identified the impostor by asking her favorite color (a question only the real Isaiah would know). The figure turned into a red monster and attacked.
+
+**Kidnapping by the Hannas:**
+Ami was kidnapped by King Onangwatgo (Shahar Ephraim the Victor) as bait to draw out her brother, King Ahmad.
+
+She was rescued by Davidson, Ahmad, and Casanova, leading to a profound reunion with her brother.
+
+**Reconciliation with Ahmad:**
+After her declaration, Ahmad chose to prioritize their relationship over his duties to Chaka. He visits Ami in Jamara instead of demanding she return, and they've found peace playing Princess and Dragons together as their father wished.`
+            },
+            currentStatus: {
+                title: "Current Status",
+                content: `**Active and Safe** 🏰💜
+
+Ami is currently active and **safely residing in Jamara** with King Davidson, having chosen the region as her **true home.**
+
+**Recent Developments:**
+- She has recently **reconciled with her brother, King Ahmad**, who is prioritizing their relationship over his royal duties to Chaka
+- She remains the **devoted guardian of the Zikamunzi Vault**, protecting its world-changing power 🗝️✨
+- **Physically ten years old** due to the Vault's effect, but **emotionally and mentally older** due to her traumatic experiences
+- Living peacefully in Jamara with **Davidson, Casanova** (her white tiger), and occasionally visited by **Ahmad and Seraphina** 💙🐅`
+            },
+            analogy: {
+                title: "Analogy to Solidify Understanding",
+                content: `Ami is like a **rare, young orchid** (royalty and beauty) whose original greenhouse (Chaka) was **shattered by a brutal frost** (Malachai's war and her father's death). 🌺❄️
+
+Though the trauma left her **emotionally stunted** (physically stuck at age 10 due to the Vault) and **scarred by silence** (The Silence period), she was **replanted in a new, protected garden** (Jamara) by a **devoted new gardener** (Davidson). 🌿💜
+
+She carries the **key to the entire garden's healing** (the Zikamunzi Vault), proving that **immense strength and world-changing purpose** can be found in the most **fragile and resilient** places. 🗝️✨
+
+She may look **small and delicate**, but she holds the **essential power to confront the giants** of her world. 👸⚡`
+            },
+            legacy: {
+                title: "Legacy",
+                content: `**What Ami Zula Chaka Will Be Remembered For:**
+
+**The Princess of Two Kingdoms:**
+- **Princess of Chaka by birth**, heir to a bloodline that never bowed to the Hannas
+- **Princess of Jamara by choice** - chose Davidson and Jamara over her birthright
+- **"I can't cross region"** - the moment she declared her true home 👑💜
+
+**The Guardian of the Vault:**
+- Protects the **Zikamunzi Vault**, a powerful artifact created by Suleiman and Obatala
+- The Vault safeguards against the **Mentalith Orb's influence**
+- Holds **world-changing power** in her small hands 🗝️✨
+
+**The Survivor:**
+- Lost her **entire family** at age 5 (father murdered, brother died the next day)
+- **Hunted by the Yalo tribe**, fled Eudora's palace alone
+- Survived **The Silence** (5 years of enforced silence across Eudoria)
+- **Kidnapped by the Hannas**, rescued by Davidson, Ahmad, and Casanova 💪
+
+**The Stolen Childhood:**
+- The Vault **stopped her aging for 5 years**, robbing her of half a decade
+- **Physically 10**, but should be older
+- Carries trauma far beyond her years 💔⏰
+
+**The Daughter Who Chose:**
+- **"You are not my father"** - confronted Davidson about the Mentalith Orb
+- Forgave him after his redemption
+- Now sees him as her **true father figure** 💙
+
+**The Sister Who Healed:**
+- Reconciled with brother **Ahmad** after his 10-year absence
+- Found peace **playing Princess and Dragons** together
+- Ahmad visits her in Jamara, **prioritizing their relationship over duty** ⭐
+
+**Casanova's Companion:**
+- Protected by a **white tiger with blue stripes** created by Eudora
+- Believes Casanova is **her father, King Isaiah, reborn**
+- Their bond is unbreakable 🐅👑
+
+**The Orchid Replanted:**
+- Shattered by frost (her father's death), but **replanted in a new garden** (Jamara)
+- **Small and delicate**, but holds **essential power to confront giants**
+- The rare orchid who carries **the key to healing** 🌺🗝️
+
+Ami Zula Chaka — **The Princess Who Chose Love Over Birthright and Holds the Key to Eudoria's Healing.** 👸🌟🐅`
+            }
+        }
+    },
     eudoricGods: {
         sulieman: {
             name: "Suleiman",
@@ -13404,7 +13731,7 @@ function navigateTo(view) {
     } else if (view === 'royalty-defenders') {
         renderRoyaltyDefenders();
     } else if (view === 'other-figures') {
-        renderComingSoon('Other Important Figures', 'Notable figures who shape the world of Eudoria.');
+        renderOtherFigures();
     } else if (view === 'eudoria-2025') {
         renderComingSoon('Eudoria 2025', 'The future of Eudoria awaits...');
     } else {
@@ -14677,12 +15004,47 @@ function renderRoyaltyDefenders() {
     `;
 }
 
+// Render Other Important Figures
+function renderOtherFigures() {
+    const contentArea = document.getElementById('contentArea');
+    const characters = eudoriaData.otherFigures;
+
+    // Create character cards for overview
+    const characterCardsHTML = Object.keys(characters).map(charKey => {
+        const char = characters[charKey];
+        const statusBadge = char.status ? `<p class="character-status-badge">${char.status}</p>` : '';
+        const nicknameBadge = char.nickname ? `<p class="character-nickname-badge">${char.nickname}</p>` : '';
+
+        return `
+            <div class="character-card ${char.status ? 'deceased' : ''}" onclick="showCharacterProfile('${charKey}', 'otherFigures')">
+                <div class="character-card-icon">${char.icon}</div>
+                <h3>${char.name}</h3>
+                <p class="character-card-category">${char.category}</p>
+                ${nicknameBadge}
+                ${statusBadge}
+            </div>
+        `;
+    }).join('');
+
+    contentArea.innerHTML = `
+        <div class="characters-overview">
+            <div class="union-header">
+                <h2>🌟 Other Important Figures</h2>
+                <p>Notable figures who shape the world of Eudoria</p>
+            </div>
+            <div class="characters-grid">
+                ${characterCardsHTML}
+            </div>
+        </div>
+    `;
+}
+
 // Show detailed character profile
-function showCharacterProfile(charKey) {
-    const char = eudoriaData.royaltyDefenders[charKey];
+function showCharacterProfile(charKey, section = 'royaltyDefenders') {
+    const char = eudoriaData[section][charKey];
 
     if (!char) {
-        console.error(`Character not found for key: ${charKey}`);
+        console.error(`Character not found for key: ${charKey} in section: ${section}`);
         return;
     }
 
@@ -14743,9 +15105,12 @@ function showCharacterProfile(charKey) {
     const statusBadge = char.status ? `<p class="char-status-badge">${char.status}</p>` : '';
     const nicknameBadge = char.nickname ? `<p class="char-nickname-badge">${char.nickname}</p>` : '';
 
+    const backButtonText = section === 'otherFigures' ? '← Back to Other Important Figures' : '← Back to Royalty & Defenders';
+    const backButtonFunction = section === 'otherFigures' ? 'renderOtherFigures()' : 'renderRoyaltyDefenders()';
+
     const profileHTML = `
         <div class="char-profile ${char.status ? 'deceased' : ''}">
-            <button class="back-button" onclick="renderRoyaltyDefenders()">← Back to Royalty & Defenders</button>
+            <button class="back-button" onclick="${backButtonFunction}">${backButtonText}</button>
 
             <div class="char-header">
                 <div class="char-icon">${char.icon}</div>
