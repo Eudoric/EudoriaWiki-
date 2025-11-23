@@ -5387,6 +5387,236 @@ His life mirrors the collective faith of the Eonks: that forgiveness and inner t
                 title: "Notable Wisdom 💬",
                 content: `Though he rarely speaks, when Ceón Eu'dore does, his words are considered profoundly important. He often teaches through meditation and silent presence rather than lengthy sermons.`
             }
+        },
+        chiefNalongo: {
+            name: "Chief Nalongo O'waikiki",
+            icon: "⚔️🌺",
+            category: "Royalty & Defenders",
+            titlesPosition: {
+                title: "Titles & Position",
+                content: `**Nalongo O'waikiki**
+**Chief of Namous**
+**Chief of Surveillance (implied function - Nawaili resolves conflict through understanding)**
+**Leader of the Namous Warriors**
+**Primary Governing Authority of Nawaili**`
+            },
+            regionLocation: {
+                title: "Region & Location 🏝️",
+                content: `**Region:** Nawaili - The Island of Compassion
+**Union:** Sundra Union (South)
+**Base:** Namous encampment along the volcanic coastline
+
+**About Nawaili:**
+Nawaili is an island chain known as a tropical paradise. Though Nawaili is part of Polynesia, it is a distinct region with Káne's influence (one of the Polynesian gods who governs the South under Queen Eudora's system).
+
+"Nawaili" literally means "Naymor" in Hawai'i - the island is named after Naymor, God of Love, Compassion, and Peace, one of Eudora's Protectors.
+
+**The Namous Encampment:**
+Chief Nalongo's base is a structure disguised as paradise but serving as a military fortress along the volcanic coastline, beauty concealing strength, perfectly embodying Nawaili's philosophy of compassion backed by fierce protection.`
+            },
+            role: {
+                title: "Role 📜",
+                content: `**Primary:** Chief and Leader of the Namous Warriors
+**Authority:** Primary governing authority in Nawaili, appointed by Naymor (who rarely tends to his region)
+
+**Duties:**
+- Lead the legendary Namous warrior class (capable of holding their own against divine beings!)
+- Protect civilians and resolve conflicts with understanding
+- Defend Nawaili from pirates and external threats
+- Command Nawaili's military forces
+- Govern the island chain with wisdom and aloha
+
+**Philosophy:**
+Chief Nalongo leads his people in resolving conflict with understanding, preferring embraces over battles. However, when protection is needed, he is a fierce and legendary fighter. He understands that true strength comes from kū paʻa (standing firm) rather than merely fighting.`
+            },
+            appearance: {
+                title: "Appearance 👤",
+                content: `**Age:** 200 years old (ancient and formidable)
+**Build:** Large, massive figure - his build speaks of a life dedicated to both labor and battle.
+**Skin:** Rich, sun-kissed, serving as a canvas for symbolic tatau tattoos that detail the history of his people
+**Presence:** The unshakeable weight of a mountain and the calm power of the ocean
+
+**Regalia:**
+- **Crown:** Finely woven pandanus leaves and shells (marking his chiefly status)
+- **Lei Niho Palaoa:** Curved pendant of polished bone (symbol of chiefly authority)
+- **Garment:** Kilt-like malo made from pounded tree bark (traditional warrior attire)
+
+**Demeanor:**
+Commands absolute authority with a serene expression. He possesses the wisdom of a leader who has seen much but remains unbroken.`
+            },
+            personality: {
+                title: "Personality & Traits ⭐",
+                content: `**Wise** - 200 years of experience, fighting since age 7
+**Compassionate** - Leads with aloha, prefers understanding over violence
+**Fierce When Needed** - Legendary warrior, held off three Sunarian assassins alone
+**Protective** - Dedicated to defending civilians and his warriors
+**Battle-Minded** - "All he knows is war" - instantly understands combat concepts
+**Patient** - Embodies kū paʻa (standing firm, unwavering strength)
+**Respected** - Highly respected for skill, courage, and moral authority
+**Fatherly** - Has 12 children, sees potential in young warriors like Kabina`
+            },
+            abilities: {
+                title: "Abilities & Combat Prowess 🔮",
+                content: `**Legendary Warrior:**
+- Fighting since he was 7 years old (193 years of combat experience!)
+- First battle: Killed his mother's murderer as a child
+- Can single-handedly hold off multiple divine-level threats (held off 3 Sunarian assassins while protecting a village)
+- Leads the Namous warriors - a legendary warrior class capable of fighting divine beings
+
+**Combat Philosophy:**
+- Understands kū paʻa (standing firm) and Hō'ike (to show, to reveal)
+- Instantly comprehends all combat-related concepts
+- "All he knows is war" - battle is his native language
+
+**Immense Physical Strength:**
+- Described as having the presence of a mountain
+- Massive build from a lifetime of labor and battle
+- Commands through physical authority and warrior prowess
+
+**The Hearing Delay (Critical Character Detail):**
+Chief Nalongo possesses a profound hearing delay that acts like a slow-turning Fresnel lens on a lighthouse:
+- Information takes an unusually long time to pass through his consciousness before his great power can be brought to bear
+- **In battle (his language):** The lens spins quickly - he reacts INSTANTLY to combat threats
+- **In conversation/unfamiliar contexts:** The light struggles to reach the surface, leading to noticeable—and sometimes life-threatening delays
+
+Think of him as a massive, ancient lighthouse:
+He possesses immense strength, wisdom (the light), and unwavering moral authority (aloha) that stabilize his entire region. However, his hearing delay means it takes time for information to process unless it's combat-related.`
+            },
+            history: {
+                title: "History & Achievements 📖",
+                content: `**Age 7 - First Battle:**
+Nalongo's mother was murdered. In his first battle, he killed her murderer and has been fighting ever since. This trauma forged him into the warrior he became.
+
+**193 Years of Combat:**
+Has been at war continuously since childhood, defending Nawaili from pirates, threats, and invasions.
+
+**Battles with King Deaven:**
+Chief Nalongo and King Deaven of Dora (now Deaven) - who was a pirate king - battled many times before King Deaven followed Eudora. They put aside their differences and became allies after Deaven's conversion, showing Nalongo's capacity for forgiveness and understanding.
+
+**Appointed by Naymor:**
+Was chosen by Naymor (God of Love, Compassion, and Peace - one of Eudora's Protectors) to lead Nawaili, as Naymor rarely tends to his region personally.
+
+**Defense of Civilians:**
+Once single-handedly held off three Sunarian assassins while protecting a village, cementing his reputation as a legendary protector.
+
+**Building the Namous:**
+Created and leads Nawaili's legendary warrior class - fighters capable of standing against divine beings.`
+            },
+            relationships: {
+                title: "Relationships 💙",
+                content: `**NAYMOR (God of Love, Compassion, and Peace - Protector)**
+Naymor appointed Nalongo as leader of Nawaili. Nalongo views him highly and worries about Naymor's reaction if the Primrose Triplets are harmed while under his protection.
+
+**QUEEN EUDORA (Mother Nature)**
+"Friends of the Queen are friends of Nalongo." Chief Nalongo serves Queen Eudora with absolute loyalty and extends protection to anyone she considers an ally or friend.
+
+**SIDDIQ (Angel of Health and Truth - Protector)**
+Nalongo has worked with Siddiq, who gave him a sponge bath after battle - showing their camaraderie and trust. Nalongo deeply respects Eudora's inner circle.
+
+**THE NAMOUS WARRIORS (His Forces)**
+Fierce and disciplined warriors who follow his commands without question. They prepare war canoes for departure and move into formation at his cry. He leads them with wisdom and aloha while demanding absolute excellence in combat.
+
+**PAPAHĀNAUMOKU (The Sea/Mother Nature's Domain)**
+Nalongo worries that "his sea has no hunger like the Gateway," showing his devotion to protecting Mother Nature's domain and the natural order of Nawaili.
+
+**KABINA (Young Warrior)**
+Nalongo sees "warriorness" in Kabina and encourages her to embrace her strength, recognizing her fire and thermal energy abilities. He acts as a mentor, seeing potential in the next generation.
+
+**KING DEAVEN (Former Pirate King of Deaven)**
+Former enemies who battled many times when Deaven was a pirate king raiding Nawaili's waters. They put aside their differences after King Deaven followed Eudora, becoming allies in service to the Queen.
+
+**KIKIO (His Wife)**
+Chief Nalongo's wife.
+
+**HIS 12 CHILDREN**
+Nalongo is the father of 12 children, demonstrating his role as both warrior and family man.`
+            },
+            namousWarriors: {
+                title: "The Namous Warriors ⚔️",
+                content: `The Namous are Nawaili's legendary warrior class, led by Chief Nalongo:
+
+- Capable of fighting divine beings (holding their own against gods!)
+- Defend Nawaili from pirates and external threats
+- Highly disciplined and fierce
+- Follow Nalongo's commands instantly
+- Prepare war canoes and move into battle formations at his cry
+- Embody the balance of compassion and strength that defines Nawaili`
+            },
+            majorEvents: {
+                title: "Major Story Events ⚡",
+                content: `**Childhood Trauma & First Battle (Age 7):**
+Nalongo's mother was murdered. He killed her murderer in his first battle and has been fighting ever since.
+
+**Wars with King Deaven:**
+Fought multiple battles against King Deaven (then a pirate king), who raided Nawaili. Later became allies after Deaven followed Eudora.
+
+**Single-Handedly Held Off Three Sunarian Assassins:**
+Protected an entire village by holding off three elite Sunarian assassins alone, cementing his legendary status.
+
+**Helping the Primrose Triplets:**
+Most recently, he helped the Primrose Triplets escape the chaos at Pearl Beds, demonstrating his protective role for Eudora's allies.
+
+**The Gateway Threat:**
+Currently addressing threats posed by cultists and the mysterious Gateway emanating from the Pearl Beds - worrying that "his sea has no hunger like the Gateway."`
+            },
+            currentStatus: {
+                title: "Current Status ✨",
+                content: `**Active and Leading**
+
+Chief Nalongo is actively commanding the Namous warriors and governing Nawaili as the primary authority. He continues to lead his forces in addressing threats, particularly:
+- The mysterious Gateway at Pearl Beds
+- Cultist activities
+- Protection of the Primrose Triplets
+- Defense of Nawaili's waters and people
+
+**Recent Action:**
+Helped the Primrose Triplets escape chaos at Pearl Beds, showing his continued role as protector of Eudora's allies.`
+            },
+            philosophy: {
+                title: "Philosophy & Wisdom 💬",
+                content: `**Kū Paʻa (Stand Firm):**
+True strength comes from standing firm rather than merely fighting. This is the foundation of Nalongo's warrior philosophy.
+
+**Aloha (Compassion & Understanding):**
+"Nawaili resolves conflict through understanding" - preferring embraces over battles, but remaining fierce when protection is needed.
+
+**"Friends of the Queen are friends of Nalongo":**
+Absolute loyalty to Queen Eudora extends to all her allies and companions.
+
+**"All he knows is war":**
+Despite his compassionate leadership, Nalongo's fundamental language is combat - he instantly understands all warrior concepts and battle strategies.`
+            },
+            lighthouseMetaphor: {
+                title: "The Lighthouse Metaphor 🗼",
+                content: `Chief Nalongo can be understood as a massive, ancient lighthouse on the Island of Compassion:
+
+**THE LIGHT (His Power):**
+- Immense strength
+- 193 years of combat wisdom
+- Unwavering moral authority (aloha)
+- Stabilizes and protects his entire region
+
+**THE FRESNEL LENS (His Hearing Delay):**
+- Information takes an unusually long time to pass through his consciousness
+- When danger speaks the language of battle: The lens spins quickly - instant reaction
+- When it uses unfamiliar language or requires a swift conversational response: The light struggles to reach the surface - noticeable delays
+
+This creates a fascinating dynamic: a legendary warrior whose power is undeniable but whose processing of non-combat information can be dangerously slow.`
+            },
+            legacy: {
+                title: "Legacy ⚔️",
+                content: `**"The Unshakeable Mountain of Nawaili"**
+
+For 200 years, Chief Nalongo O'waikiki has stood as the protector, warrior, and father of the Island of Compassion. From his first battle at age 7 (killing his mother's murderer) to his current role defending against the Gateway threat, he embodies the paradox of Nawaili itself:
+
+**Fierce strength wrapped in profound compassion.**
+
+He leads warriors capable of fighting gods while preferring to resolve conflicts with understanding. He commands absolute authority while practicing patience and aloha. He is a mountain that cannot be moved and an ocean that embraces all who seek shelter.
+
+His tatau tattoos tell the history of his people, and his body tells the story of 193 years of battle - yet he remains unbroken, still standing firm (kū paʻa), still protecting, still teaching the next generation that true strength comes not from fighting, but from standing firm in what is right.
+
+Chief Nalongo is the embodiment of Nawaili: a tropical paradise built on a foundation of volcanic strength.`
+            }
         }
     },
     eudoricGods: {
