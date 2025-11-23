@@ -8568,6 +8568,353 @@ The timepiece continues to function, but it will **never be whole again.**`
 
 Rosa Thronburns — **The Escaped Queen Who Built Freedom from the Ashes of a Gilded Cage.** 🌹👑💔`
             }
+        },
+        liDian: {
+            name: "Wei 'Li' Dian",
+            icon: "❄️⚔️🛡️",
+            category: "Royalty & Defenders",
+            nickname: "Guardian of Frost",
+            titlesPosition: {
+                title: "Name & Titles",
+                content: `**Wei 'Li' Dian** (from the Wei Family)
+**Guardian of Frost**
+**Frost Warrior**
+**General (War General) of the Xingyun Army**
+**Subguardian** (promoted to full Guardian after proving his bravery against Valiyah)
+**Son of Wei Dian** (legendary Frost Warrior)`
+            },
+            regionLocation: {
+                title: "Region & Location",
+                content: `**Region:** Xuerai (Norvayn Union - North)
+**Kingdom:** Xingyun Kingdom (within Xuerai)
+
+**About Xuerai:**
+Xuerai is characterized by **eternal winter** and is sometimes considered part of Westasia due to its location.
+
+The region has been **at war for centuries.** The conflict between Xingyun and the **Meng Dynasty (Red Dragons)** predates Li Dian's birth by generations.
+
+**Li Dian's Base:**
+He travels frequently and has a **penthouse.** His ship, the **Frost Ship**, is used for long voyages across Eudoria. 🚢❄️`
+            },
+            roles: {
+                title: "Roles",
+                content: `**Military Leader:**
+- **General of the Xingyun army.** He directs military strategy, develops defense plans, and leads the fight against the Meng Dynasty (Red Dragons)
+- He trained his soldiers **day and night with unwavering discipline**
+
+**Divine Guardian:**
+- **Guardian of Frost** (Subguardian promoted to full Guardian)
+- He **manipulates cold and frost**, using his ability both offensively and defensively
+- He was promoted after proving his bravery against Valiyah and protecting Eudoria
+
+**Protector:**
+- He vows to **protect the Primrose Triplets**
+- Defends Chaka against the Sandman
+- Helps rescue Princess Ami
+
+**Legacy-Bearer:**
+- He inherited his father's legacy, **Wei Dian**, the former legendary Frost Warrior of Xingyun
+
+**Impossible Mission:**
+Like the Primrose Triplets, Li Dian has an **impossible task:** end the ancient Xuerai war that has raged for centuries.
+
+Queen Eudora gave him **frost powers at age eight**, specifically for this purpose - to **stop the war and prevent more deaths.**
+
+**The Xuerai war is tied to the Primrose prophecy**, meaning Li Dian and the Primrose Triplets **must work together.** ❄️🌸`
+            },
+            appearance: {
+                title: "Brief Description",
+                content: `Li Dian is a **tall, muscular, and imposing figure**, often described as **emotionally cold** and **deeply disciplined.**
+
+**Physical Appearance:**
+In his **Frost Form** (visible during battle), his appearance undergoes a stunning transformation:
+- His hair turns **silver or white** ❄️
+- **Frost tattoos spiral up his bare arms and across his chest**, glowing **blue and white** ✨
+- He wields the legendary **Frosty Troll spear** 🔱
+
+**Combat Style:**
+A master of combat and close-quarters fighting, Li Dian moves with **liquid grace and deadly skill.**
+
+He uses his frost powers to **freeze weapons midair** and **shatter enemies like glass.**
+
+His **strategic mind** constantly calculates **three moves ahead** of his enemies.
+
+**Li Dian is a warrior who impresses even the gods and protectors with his skill.** ⚔️`
+            },
+            background: {
+                title: "Background 💔",
+                content: `Li Dian was an **orphan.**
+
+**Age 8 - The Ambush:**
+The **Meng Dynasty ambushed** his mother and father while Li Dian was with them.
+
+His father told him to **run**, promising he would **catch up.**
+
+**He never did.**
+
+Li Dian's parents **died in that ambush**, sacrificing themselves to save their son.
+
+Li Dian ran far away - not even to Xingyun. He was **broken and sad**, waiting for his father, who **never came.** 💔
+
+**Eudora's Gift:**
+Queen Eudora bestowed **frost power on Li Dian at age 8.**
+
+She gave him power because she wanted him to **grow up and end the Xuerai war** that had been going on for centuries, to **prevent more people from dying** like his parents.
+
+**Training:**
+**Zendayah** and her warriors in Zendonia **trained Li Dian.**
+
+During this training, he met **Jacthina** (one of the Primrose Triplets). Their relationship bloomed due to their **shared warrior mindset**, though the two have an **up-and-down, on-and-off** dynamic.
+
+Both are **too stuck in their pride** to show how much they care for each other.
+
+**Power Activation:**
+Li Dian can only activate his frost power by **transforming** - he must enter his **Frost Form** to use his abilities.
+
+**Current Age:** 20 years old, still working to fulfill the impossible mission of ending a war that started **centuries before he was born.** ❄️`
+            },
+            relationshipPhoebe: {
+                title: "Relationship: Phoebe (Wife - Deceased) 💔❄️",
+                content: `His **pregnant wife**, whom he found refuge and warmth with after his breakup with Jacthina.
+
+The couple had been together for **ten years** and planned to leave the torn Eudoria together.
+
+**The Tragedy:**
+She tragically **died due to his frost power** - while carrying their **frost child**, his power **spread inside her during pregnancy**, turning her **glacial.** ❄️💔
+
+**Li Dian is consumed by grief and guilt** over her loss.
+
+**Before Phoebe died, she said:**
+*"Only one of us leaving, Eudora."*
+
+**After her death, Li Dian gave up the baby that survived**, too devastated to raise a child without his wife.
+
+This is the **central tragedy** that defines Li Dian's current emotional state - his own power killed the woman he loved. 💔`
+            },
+            relationshipJacthina: {
+                title: "Relationship: Jacthina (Ex-Lover) ⚔️💔",
+                content: `His **long-term, turbulent girlfriend for five years** (one of the Primrose Triplets).
+
+He **loved her deeply**, but the relationship was ruined by her **cruelty, impulsiveness, and constant focus on war over him.**
+
+**She broke up with him/pushed him away first.**
+
+He still finds her presence **distracting and highly frustrating.**
+
+**Their History:**
+Their relationship bloomed during his training with Zendayah in Zendonia, thanks to their **shared warrior mindset**, but both are **too caught up in their pride** to show how much they care for each other.
+
+Despite their breakup, there are still **unresolved feelings** between them. 💔⚔️`
+            },
+            relationshipKingBao: {
+                title: "Relationship: King Bao (King/Mentor) 👑",
+                content: `The **blind, ancient ruler of Xingyun.**
+
+King Bao **took Li Dian in after his father's death** and saw him as a son.
+
+Li Dian has **deep reverence** for him, calling him **"my king."**
+
+**Recognition:**
+King Bao credited Li Dian with **saving Xingyun** by jumping from the temple and **freezing an avalanche** created by the Heru'met. ❄️🏔️`
+            },
+            relationshipLuMeng: {
+                title: "Relationship: Lu Meng (Archnemesis) 🐉🔥",
+                content: `The **King of the Meng Dynasty** and **General of the Red Dragons.**
+
+He and Li Dian share a **decades-long rivalry** and **hate each other intensely.**
+
+**The Insult:**
+Lu Meng **celebrates the death of Li Dian's father**, gloating about the murder.
+
+Li Dian fights against the Meng Dynasty **in his father's name.** ⚔️🔥`
+            },
+            relationshipAhmad: {
+                title: "Relationship: King Ahmad (Ally/Friend) 👑✨",
+                content: `King of Chaka and Guardian of Spirits.
+
+Ahmad **sought Li Dian's help** against the Sandman and the Hannas.
+
+Li Dian **saved Ahmad's life** and challenged his authority and despair.
+
+They are **good friends** who respect each other's dedication to protecting their people. 🛡️`
+            },
+            relationshipWeiDian: {
+                title: "Relationship: Wei Dian (Father - Deceased) ⚔️💔",
+                content: `Former **legendary Frost Warrior of Xingyun.**
+
+He was **murdered by Meng's assassins** when Li Dian was 8 years old, leaving Li Dian an orphan.
+
+**His Last Words:**
+Wei Dian told his son to **run** during the ambush, promising he would **catch up.**
+
+**He never did** - he died saving his son. 💔
+
+Li Dian carries his father's legacy and fights to **avenge his death.** ⚔️`
+            },
+            relationshipZendayah: {
+                title: "Relationship: Zendayah (Trainer) ⚔️",
+                content: `**Guardian of War and Weapons.**
+
+She **trained Li Dian and his warriors** in Zendonia, forging him into the **formidable warrior** he would become. 🗡️`
+            },
+            relationshipPrimroses: {
+                title: "Relationship: The Primrose Triplets (Allies) 🌸",
+                content: `Li Dian **vows to protect the Primrose Triplets.**
+
+The **Xuerai war is tied to the Primrose prophecy**, meaning he must work alongside them to fulfill both their missions.
+
+His connection to **Jacthina** (one of the triplets) adds emotional complexity to this alliance. ❄️🌸`
+            },
+            personality: {
+                title: "Personality & Traits",
+                content: `**Grief and Guilt:**
+- Li Dian is **intensely burdened by guilt**, believing his frost power killed his wife and unborn child
+- He struggles to cope with the loss, sometimes acting out of despair
+- This grief led him to **give away his surviving son**, unable to raise the child without Phoebe 💔
+
+**Warrior's Discipline:**
+- He maintains a **stoic, unyielding exterior**
+- He prioritizes military strategy and order, frequently clashing with Jacthina's impulsiveness
+- Trained his soldiers **day and night with unwavering discipline** ⚔️
+
+**Compassion and Protection:**
+- Despite his cold reputation, he is **deeply protective** of his people, his family, and his loved ones
+- He **refused to harm innocent people** 🛡️
+
+**Loyalty and Affection:**
+- **Deeply loyal to King Bao**
+- Shows affection through physical touch and desperate apologies when he feels he's failed those he cares about 💙
+
+**Strategic Mind:**
+- Constantly calculating **three moves ahead** of his enemies
+- His **military brilliance** impresses gods and protectors alike 🧠
+
+**Expert in Xueranese Lore:**
+- Possesses vast knowledge of Xuerai's history, including the gods Eckio, the four chaotic spirits (Dragon, Troll, Bear, Kanata), the Four Pillars, and the legends of the Ha'keem River 📚
+
+**Emotionally Cold Exterior:**
+- Often described as **emotionally cold and distant**, though this masks deep feelings of grief, guilt, and love that he struggles to express ❄️`
+            },
+            majorConflicts: {
+                title: "Major Conflicts & Story Events",
+                content: `**Family Loss and Orphanhood (Age 8):**
+The Meng Dynasty slaughtered Li Dian's parents in an ambush. His father told him to run, promising to catch up. He never did. Li Dian became an orphan, waiting for a father who would never return.
+
+**Eudora's Gift (Age 8):**
+Queen Eudora bestowed frost power on the orphaned Li Dian, tasking him with ending the centuries-old Xuerai war to prevent more deaths like his parents'.
+
+**Training with Zendayah:**
+Trained by Zendayah and her warriors in Zendonia, where he met Jacthina. Their warrior bond led to a turbulent five-year relationship.
+
+**Relationship with Jacthina:**
+After five years together, their relationship ended when Jacthina's focus on war and their continuous fighting became unbearable. She pushed him away first.
+
+**Marriage to Phoebe:**
+Li Dian found solace and warmth with Phoebe after his breakup with Jacthina. They were together for ten years and planned to leave Eudoria together.
+
+**Tragic Loss of Phoebe:**
+Phoebe died when Li Dian's frost power spread inside her during pregnancy, turning her glacial while carrying their frost child. Before dying, she said, "Only one of us leaving, Eudora."
+
+**Giving Away His Son:**
+Consumed by grief and guilt, Li Dian gave away the baby that survived, unable to raise the child without Phoebe.
+
+**Inherited Legacy:**
+Li Dian inherited his father's title as Frost Warrior and fights against the Meng Dynasty, which gloats over his father's death.
+
+**The Traitor Sun Chi:**
+Li Dian discovered his trusted protégé, Sun Chi, was a traitor who joined the Meng Dynasty. He killed Sun Chi with his spear near the temple.
+
+**The Sandman Crisis:**
+Li Dian was instrumental in defending King Ahmad and Seraphina from the Sandman, temporarily freezing the creature and creating ice barriers. He realized the Sandman needs a divine urn to be contained.
+
+**Confrontation with Valiyah:**
+He confronted Valiyah multiple times - first as a personal threat, later as the daughter of Malachai. He refused to surrender Xingyun to his Queen, Keket.
+
+**Avalanche Savior:**
+King Bao credited him with saving Xingyun by jumping from the temple and freezing an avalanche created by the Heru'met.
+
+**Promotion to Full Guardian:**
+After proving his bravery against Valiyah and protecting Eudoria, Li Dian was promoted from Subguardian to full Guardian of Frost.`
+            },
+            currentStatus: {
+                title: "Current Status",
+                content: `**Active and Grieving** ❄️💔
+
+Li Dian is currently active as the **Guardian of Frost** and the **military leader of Xingyun.**
+
+**Emotional State:**
+He is dealing with the **immense grief** of Phoebe's death and the chaos resulting from Sun Chi's betrayal.
+
+**Current Mission:**
+- Assisting the **Primrose Triplets** and **King Ahmad** against the forces of Valiyah and Malachai
+- Focused on finding the **Sandman's urn** and protecting Xuerai
+- At age **20**, he continues to work toward his **impossible mission:** ending the ancient Xuerai war that Eudora tasked him with when she gave him frost powers at age 8
+
+**The Prophecy:**
+The **Xuerai war is tied to the Primrose prophecy**, meaning Li Dian must work alongside the triplets to fulfill both their destinies. ❄️🌸`
+            },
+            analogy: {
+                title: "Analogy to Solidify Understanding",
+                content: `Li Dian is like a **formidable war fortress** (Xingyun) built entirely of **crystalline ice**, designed to be **unbreakable and enduring** in the face of brutal, fiery enemies (Lu Meng/Red Dragons). 🏰❄️
+
+His power is **vast and absolute** - he can stop armies and avalanches.
+
+However, the fortress was constructed around a **central, vital chamber built of fragile glass** (his heart/Phoebe).
+
+When his own **freezing power shattered that chamber**, the entire structure developed a **deep, internal fissure of guilt and despair.** 💔
+
+He maintains the structure for **duty**, but the slightest emotional pressure (Jacthina's presence, mentioning his father's death) threatens to **shatter the entire frozen edifice**, turning his immense strength into **self-destructive chaos.** 🧊💥
+
+The fortress stands, but it is **fundamentally fractured from within.**`
+            },
+            legacy: {
+                title: "Legacy",
+                content: `**What Wei 'Li' Dian Will Be Remembered For:**
+
+**The Orphaned Warrior:**
+- Lost his parents at age 8 to the Meng Dynasty
+- His father's last words: "Run. I'll catch up." He never did 💔
+- Waited for a father who would never return
+
+**Eudora's Chosen:**
+- Given **frost powers at age 8** by Queen Eudora
+- Tasked with the **impossible mission:** end the centuries-old Xuerai war
+- The war is tied to the **Primrose prophecy** - must work with the triplets ❄️🌸
+
+**The Frost Warrior:**
+- **Guardian of Frost** (promoted from Subguardian)
+- **General of the Xingyun Army**
+- Inherited his father Wei Dian's legendary legacy
+- Master of combat, impresses even gods and protectors ⚔️
+
+**The Tragic Husband:**
+- Married to Phoebe for **10 years**
+- **His own frost power killed her** - spread inside her during pregnancy, turning her glacial
+- *"Only one of us leaving, Eudora"* - Phoebe's last words 💔❄️
+- Gave away the surviving frost child, too devastated to raise him alone
+
+**The Heartbroken Lover:**
+- **5-year turbulent relationship with Jacthina** (Primrose Triplet)
+- She pushed him away first, focused on war over him
+- Too proud to show how much they care for each other 💔⚔️
+
+**The Savior of Xingyun:**
+- Froze an avalanche by jumping from the temple
+- Saved King Bao's kingdom from destruction
+- Defended against the Sandman, Valiyah, and the Meng Dynasty 🏔️❄️
+
+**The Grieving Guardian:**
+- **Consumed by guilt** - believes his power killed his wife and child
+- **Emotionally cold exterior** masking profound grief
+- Struggling to fulfill his mission while carrying unbearable loss
+
+**The War Fortress:**
+- Crystalline ice fortress, unbreakable against enemies
+- But with a **fragile glass chamber** (his heart) shattered by his own power
+- **Fundamentally fractured from within** 🏰💔
+
+Wei 'Li' Dian — **The Frost Warrior Whose Own Power Shattered His Heart.** ❄️⚔️💔`
+            }
         }
     },
     eudoricGods: {
