@@ -6225,6 +6225,384 @@ He was a keeper of history, proudly declaring that his bloodline - the Hyem, the
 
 King Isaiah was the beautiful tragedy - a man who loved too much, trusted too easily, and left too soon.`
             }
+        },
+        kingDavidson: {
+            name: "King David Davidson",
+            icon: "💜👑",
+            category: "Royalty & Defenders",
+            nickname: "The Chocolate Soup King",
+            titlesPosition: {
+                title: "Titles & Position",
+                content: `**King David Davidson**
+**King of Jamara (The Purple Kingdom)**
+**"Forfeit King" (title used by Eudora's tattletale birds/heralds)**
+**"Chocolate Soup King" (nickname given by Ami 🍫)**
+**Son of Lolly**
+**Descendant of Saint Martin Davidson (poet and scholar)**
+**Redeemed Ruler, Chosen Father of Princess Ami**`
+            },
+            regionLocation: {
+                title: "Region & Location 💜",
+                content: `**Kingdom:** Jamara
+**Location:** Western Hemisphere
+**Colors:** Purple and green (purple-tipped fields!)
+
+**About Jamara:**
+Jamara is a kingdom of distinctions - lively, bright, colorful fields alongside dark edges that whisper secrets. The land features brown dirt, shiny lakes, and distinctive purple-tipped green fields.
+
+**JAMARA IS UNIQUE:**
+- Jamara did not exist before the Grand Flood - it was not one of the original 53 regions
+- It emerged from NOTHINGNESS after the flood, leading some gods to theorize that its existence is due to Queen Eudora trying to heal flood damage
+- Jamara is believed to be a being born from the flood's remnants, suggesting the kingdom itself may be ALIVE in some way
+
+**THE LIFEBLOOM FIELD:**
+Jamara's crown jewel - a field covered with lavender and purple blooms. The ONLY place in Jamara untouched by Davidson's mental control - a sanctuary of free will in a controlled kingdom.`
+            },
+            role: {
+                title: "Role 📜",
+                content: `**King of Jamara:**
+Rules the purple kingdom with (now) patience and genuine care after a dark period of control.
+
+**Guardian/Godfather of Princess Ami:**
+Adopted daughter of his best friend, King Isaiah. Views himself as her chosen father.
+
+**Former Ally of King Malachai:**
+Malachai was the reason Davidson became king, replacing the former ruler. Their friendship lasted decades before dissolving in betrayal and violence.
+
+**Legacy Keeper:**
+Holds the legacy of his grandfather, Saint Martin Davidson (poet and scholar), and seeks to clear his name and complete his work.`
+            },
+            appearance: {
+                title: "Appearance 👤",
+                content: `**Current Age:** 41 years old (as of 3 years after the Great Silence ended)
+**At Age 31:** Began showing rapid aging - gray hairs and wrinkles due to strain from the Mentalith Orb
+
+**Description:**
+A handsome man with dark skin and a powerful presence (when healthy).
+
+**Physical Toll:**
+The Mentalith Orb caused:
+- Premature aging (gray hair, wrinkles in his 30s!)
+- Physical frailty
+- Immense headaches
+- Back pain
+- Noticeable weakness
+
+After redemption and neutralizing the Orb, his health improved, though the experiences left their mark.`
+            },
+            personality: {
+                title: "Personality & Traits ⭐",
+                content: `**Deeply Loving & Paternal** - His central motivation is protecting Ami
+**Guilt-Ridden but Determined** - Consumed by guilt over controlling his people, but resolute in seeking redemption
+**Skillful Cook** - Makes rich chocolate ice cream for Ami (eats it melted like "chocolate soup" 🍫)
+**Obsessed with Truth** - Desperately seeking answers about his grandfather's disappearance
+**Problematic & Tortured** - Made terrible choices, believing they were right
+**Redeemed** - Earned back his people's trust through genuine care and patience`
+            },
+            tragicPromise: {
+                title: "The Tragic Promise 💔",
+                content: `**"I Promise That Jamara Will Be the Least of Your Concern"**
+
+King Davidson made this promise to Queen Eudora, knowing she was under stress from ruling 17 regions.
+
+**His Intention:**
+Create such perfect order and stillness in Jamara that Eudora would never have to worry about it.
+
+**What He Believed:**
+Under King Malachai's influence, Davidson came to believe that free will was the source of the world's problems. He thought enforcing stillness and order would protect his people and reduce Eudora's burden.
+
+**What He Did:**
+Used the Mentalith Orb to control the Jamaran people - controlling their movements and everyday life, stripping them of free will.
+
+**The Result:**
+- This pursuit led him to betray his kingdom and his principles, leaving him with deep guilt and regret
+- His people turned against him
+- His health deteriorated rapidly
+- His kingdom fell into chaos
+
+**The Irony:**
+Jamara became Eudora's BIGGEST concern instead of the least.`
+            },
+            powersArtifacts: {
+                title: "Powers & Artifacts ⚡",
+                content: `**THE MENTALITH ORB (Former Possession) 🔮**
+A dangerous, conflicted godly artifact Davidson used to control Jamara.
+
+**Abilities:**
+- Bends reality
+- Corrupts the mind
+- Causes terrifying, vivid hallucinations
+- Controls people's free will and movements
+- Karma-embedded (punishes its user!)
+
+**Effects on Davidson:**
+- Rapid aging (gray hair, wrinkles at 31!)
+- Physical frailty and pain
+- Immense headaches and back pain
+- Mental torment
+- Hallucinations
+
+**The Truth:**
+Davidson eventually recognized the Orb as a VICTIM of misuse - not just a tool, but something alive that had been corrupted over time. The Orb turned against him, creating the very chaos he sought to prevent.
+
+**THE ZIKAMUNZI VAULT (Current Possession) 🗝️**
+A bronze and gold artifact created by Suleiman and Obatala (gods of the O.S.K.B. transitional system).
+
+**Purpose:**
+- Safeguard Jamara
+- Protect against the Mentalith Orb's influence
+- Hold the key to ending the chaos
+
+**Who Hid It:**
+Saint Martin Davidson (Davidson's grandfather, poet and scholar)
+
+**Davidson's Quest:**
+He is obsessed with uncovering the true purpose of the Zikamunzi Vault and using it to neutralize the Mentalith Orb's remaining influence. He believes this is the key to complete redemption and understanding what happened to his grandfather.
+
+**EUDRAN LANGUAGE 📜**
+Davidson understands and speaks Eudran (the ancient divine language). This knowledge connects him to the deeper mysteries of Jamara and the artifacts.`
+            },
+            historyAndFall: {
+                title: "History & The Fall 📖",
+                content: `**Becoming King:**
+King Malachai was the reason Davidson became king, replacing the former ruler of Jamara. Their friendship lasted decades - Malachai was Davidson's best friend for much of his life.
+
+**The Manipulation:**
+Malachai convinced Davidson that:
+- Free will was the source of the world's problems
+- Stillness and order were the solutions
+- The Mentalith Orb would help achieve this vision
+- He was HELPING Eudora by removing Jamara from her concerns
+
+Davidson believed him and seized control of Jamara using the Mentalith Orb.
+
+**The Control:**
+Davidson used the Orb to:
+- Control his people's movements
+- Dictate their everyday lives
+- Enforce stillness and order
+- Strip away free will
+
+**The ONLY exception:**
+The Lifebloom Field remained untouched - a sanctuary of freedom in his controlled kingdom.
+
+**The Deterioration:**
+As Davidson continued using the Orb:
+- He aged rapidly (gray hair, wrinkles at 31!)
+- His health failed (headaches, back pain, frailty)
+- Hallucinations tormented him
+- His people grew to hate him
+- The Orb turned against him
+
+**The Betrayals:**
+**Lady Oriana (his lover):**
+- Helped King Malachai orchestrate King Isaiah's death (Davidson's best friend!)
+- Revealed the location of the Mentalith Orb to Malachai
+- Betrayed Davidson's trust completely
+- Davidson broke up with her after learning the truth
+
+**King Malachai:**
+- Orchestrated King Isaiah's murder (Davidson's "brother"!)
+- Brutally beat and tortured Davidson when he discovered Davidson's relationship with Oriana
+- Destroyed their decades-long friendship
+- Conquered Jamara with Al'sekemu's forces
+
+**The Fall:**
+- Davidson's castle was burned 🔥
+- Al'sekemu's forces conquered his kingdom 💔
+- Malachai brutally beat him ⚔️
+- He was expelled from Jamara by his own people 😭
+- He became a broken, guilt-ridden king`
+            },
+            relationships: {
+                title: "Relationships 💙💔",
+                content: `**PRINCESS AMI (Adopted Daughter / Godchild) 💜**
+The center of Davidson's world.
+
+King Isaiah (Ami's father, Davidson's best friend) entrusted Ami to Davidson before his death.
+
+**Davidson's Love:**
+- Calls her "my baby girl" and "my everything"
+- Thanks King Isaiah every day for giving him Ami 😭
+- Loves her unconditionally and sees himself as her father
+- Makes her rich chocolate ice cream 🍫 (though he only eats it melted like "chocolate soup"!)
+
+**The Complication:**
+Ami refused to call him "father" for a long time, asserting her loyalty to King Isaiah. She was grieving and angry about losing her real father. Davidson accepted this - devastated but respecting her pain, he remained her godfather and anchor.
+
+**The Resolution:**
+Eventually, Ami recognized Davidson as a father figure 💜. After his redemption (3 years after the Great Silence ended), their relationship healed. He became a kind, loving, and supportive father to her, and she accepted him fully.
+
+**Their Bond:**
+He is Ami's anchor in a tumultuous world - the one constant who stayed through everything.
+
+**KING ISAIAH (Best Friend - "Brother") 💔**
+Davidson loved Isaiah like a brother and swore to protect his daughter, Ami, after Isaiah's death. He deeply admired Isaiah's dedication as both a king and a father.
+
+After Isaiah's Murder: Davidson fulfilled his promise by becoming Ami's legal father and protector. He thanks King Isaiah every day for giving him Ami - the one pure thing in his life. Isaiah's death (orchestrated by Malachai and Oriana) was one of the greatest betrayals Davidson experienced.
+
+**KING MALACHAI / AL'SEKEMU (Former Best Friend - Decades) 💀**
+Malachai was Davidson's best friend for DECADES.
+
+**What Malachai Did FOR Davidson:**
+- Helped him become king (replacing the former ruler of Jamara)
+- Provided friendship and guidance (or so it seemed)
+
+**What Malachai Did TO Davidson:**
+- Manipulated him into believing free will was the problem
+- Encouraged the use of the Mentalith Orb (which destroyed Davidson's health)
+- Orchestrated King Isaiah's death (Davidson's other best friend!)
+- Used Lady Oriana to betray Davidson
+- Brutally beat and tortured Davidson when he discovered the relationship with Oriana
+- Conquered Jamara with Al'sekemu's forces
+
+Their decades-long friendship ended in blood, betrayal, and destruction.
+
+**LADY ORIANA (Former Lover) 💔**
+Davidson was deeply in love with Lady Oriana and wanted to settle down with her.
+
+**The Problem:** She was King Malachai's mistress, and Malachai wasn't going to let Davidson have her.
+
+**The Betrayal:**
+- Helped Malachai orchestrate King Isaiah's death (Davidson's best friend!)
+- Revealed the location of the Mentalith Orb to Malachai
+- Betrayed Davidson's trust on every level
+
+Davidson broke up with Oriana after learning the truth. Malachai brutally beat/tortured Davidson when he found out about their relationship.
+
+**Current Status:** Davidson is "seeing someone" now, but the only person he truly cares for is Ami.
+
+**QUEEN EUDORA (Sovereign, Forgiver) 💚**
+Davidson was the FIRST KING to kneel to Queen Eudora when she established her reign.
+
+**The Promise:** "I promise that Jamara will be the least of your worries." Davidson made this promise knowing Eudora was stressed, ruling 17 regions. He wanted to HELP her.
+
+**The Betrayal of Intent:** His attempt to fulfill this promise led him to use the Mentalith Orb and control his people, making Jamara one of Eudora's BIGGEST concerns.
+
+**The Forgiveness:** After Davidson's fall and suffering, Eudora forgave him. She affirmed he was still the rightful King of Jamara, recognizing his good intentions despite his terrible choices. Her forgiveness was crucial to Davidson's redemption arc.
+
+**SAINT MARTIN DAVIDSON (Grandfather - Poet & Scholar) 📚**
+The outcast of the family, poet and scholar who was resented by Davidson's relatives.
+
+**What He Did:**
+- Hid the Zikamunzi Vault
+- Disappeared mysteriously
+- It was believed to be "taken by the Mentalith Orb"
+
+**Davidson's Quest:** Davidson is OBSESSED with finding out what happened to his grandfather. He moved back to Jamara (despite being born in the Heartland!) specifically to uncover the truth. He seeks to clear Saint Martin's name, discover what really happened to him, and complete Saint Martin's work with the Zikamunzi Vault.
+
+**LOLLY (Mother) 💔**
+Davidson's mother, who deeply resented Saint Martin (her father-in-law). She was critical of Davidson's choice to return to Jamara, called Jamara a "hellhole," and SLAPPED DAVIDSON for defending his grandfather 💔. Their relationship is strained due to family history.
+
+**SAFARINE (Grandmother) 💙**
+Davidson's grandmother, who initially hated Saint Martin, later changed her mind. She admitted Saint Martin was "a good man" after years of believing otherwise. Davidson sought her comfort during his grief, and she provided maternal support when his mother couldn't.`
+            },
+            redemptionJourney: {
+                title: "The Redemption Journey ✨",
+                content: `**The Breaking Point:**
+After:
+- His castle burning 🔥
+- His kingdom being conquered 💔
+- Being brutally beaten by Malachai ⚔️
+- Being expelled by his own people 😭
+- Seeing Ami's pain from all the chaos he'd caused 💔
+
+Davidson chose a path of redemption.
+
+**The Survival:**
+He survived the attacks and pursued Ami, eventually finding refuge in the Heartland with her.
+
+**The Work:**
+Davidson is:
+- Desperately trying to undo the chaos he unleashed
+- Protecting Ami from the forces he helped create
+- Uncovering the mystery of his grandfather's disappearance
+- Understanding the true purpose of the Mentalith Orb and Zikamunzi Vault
+- Earning back his people's trust
+
+**The Success:**
+Three years after the Great Silence ended:
+✅ Davidson is 41 years old
+✅ Achieved redemption in his people's eyes
+✅ Ruling Jamara with patience and genuine care
+✅ No longer uses control - rules with heart and wisdom
+✅ Considered a kind, loving, and supportive father to Ami
+✅ His relationship with Ami is healed and strong 💜
+
+**HE EARNED IT ALL BACK. 👑✨**`
+            },
+            currentStatus: {
+                title: "Current Status ✨",
+                content: `**Active and Redeemed**
+
+King Davidson (age 41) is currently ruling Jamara with patience, genuine care, and wisdom. He has achieved redemption in his people's eyes after years of suffering and atonement.
+
+**His Kingdom:**
+Jamara is now ruled without the Mentalith Orb's control - the people have their free will restored. The Lifebloom Field (Jamara's crown jewel) remains a symbol of the freedom Davidson now protects rather than suppresses.
+
+**His Family:**
+He is a kind, loving, and supportive father figure to Princess Ami, who now fully accepts him. He thanks King Isaiah every day for giving him Ami - the light in his darkest times.
+
+**His Quest:**
+He continues working to:
+- Understand the full mysteries of the Zikamunzi Vault
+- Clear his grandfather Saint Martin's name
+- Protect Jamara from any remaining chaos
+
+**His Redemption:**
+Davidson transformed from a controlling, manipulated king to a genuinely caring, patient ruler who learned that true order comes from trust and freedom, not control.`
+            },
+            analogy: {
+                title: "The Analogy - Understanding King Davidson 🚢",
+                content: `King Davidson is like a ship captain who secretly installed a dangerous, supernatural autopilot (the Mentalith Orb) to enforce calmness on a naturally wild sea (Jamara).
+
+**Initially:**
+He believed this control would save his ship (his kingdom) from the inherent chaos of the sea, seeking to create stillness and order.
+
+**The Corruption:**
+The autopilot was corrupted and designed to drain the captain's strength, causing him to age rapidly and suffer mentally.
+
+**The Realization:**
+When he finally realized the autopilot was killing him and his crew, he had to destroy it.
+
+**The Solution:**
+To do so, he desperately needed the original map or key (the Zikamunzi Vault) left by the original shipbuilder (Saint Martin).
+
+**The Redemption:**
+His current struggle is to face the storms he created, earn back the trust of his crew who had been brainwashed into hating him, and become a wise captain guided by genuine care for his passengers (Ami) rather than artificial control.`
+            },
+            legacy: {
+                title: "Legacy 👑",
+                content: `**"The Forfeit King Who Found His Way Home"**
+
+King Davidson's story is one of the most tragic and redemptive in Eudorian history:
+
+**The Fall:**
+- Manipulated by his best friend (Malachai) for decades
+- Controlled his people with the Mentalith Orb, believing it would help Eudora
+- Aged rapidly and suffered immensely under the Orb's influence
+- Lost everything - his castle burned, kingdom conquered, beaten, and expelled
+
+**The Betrayals:**
+- His lover (Oriana) orchestrated his best friend's (Isaiah's) death
+- His best friend (Malachai) tortured him and destroyed his kingdom
+- His own people expelled him in hatred
+
+**The Anchor:**
+- Princess Ami - the daughter he chose - kept him grounded through it all
+- His love for her and his promise to King Isaiah gave him purpose
+
+**The Redemption:**
+- Survived and found refuge with Ami in the Heartland
+- Worked tirelessly to undo the chaos he'd created
+- Earned back his people's trust through genuine care and patience
+- Three years later: ruling Jamara with wisdom, love, and freedom
+
+**The Lesson:**
+True order doesn't come from control - it comes from trust, love, and respecting free will. Davidson learned this the hardest way possible, but he earned his redemption and became the king Jamara truly needed.
+
+He is the "Chocolate Soup King" - the father who makes ice cream for his daughter and eats it melted, the ruler who learned to let his people be free, the man who chose love over control.`
+            }
         }
     },
     eudoricGods: {
@@ -11961,12 +12339,14 @@ function renderRoyaltyDefenders() {
     const characterCardsHTML = Object.keys(characters).map(charKey => {
         const char = characters[charKey];
         const statusBadge = char.status ? `<p class="character-status-badge">${char.status}</p>` : '';
+        const nicknameBadge = char.nickname ? `<p class="character-nickname-badge">${char.nickname}</p>` : '';
 
         return `
             <div class="character-card ${char.status ? 'deceased' : ''}" onclick="showCharacterProfile('${charKey}')">
                 <div class="character-card-icon">${char.icon}</div>
                 <h3>${char.name}</h3>
                 <p class="character-card-category">${char.category}</p>
+                ${nicknameBadge}
                 ${statusBadge}
             </div>
         `;
@@ -12021,9 +12401,9 @@ function showCharacterProfile(charKey) {
         return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     }
 
-    // Get all profile sections (exclude name, icon, category, status)
+    // Get all profile sections (exclude name, icon, category, status, nickname)
     const sections = Object.keys(char).filter(key =>
-        key !== 'name' && key !== 'icon' && key !== 'category' && key !== 'status'
+        key !== 'name' && key !== 'icon' && key !== 'category' && key !== 'status' && key !== 'nickname'
     );
 
     // Build profile sections
@@ -12049,6 +12429,7 @@ function showCharacterProfile(charKey) {
     });
 
     const statusBadge = char.status ? `<p class="char-status-badge">${char.status}</p>` : '';
+    const nicknameBadge = char.nickname ? `<p class="char-nickname-badge">${char.nickname}</p>` : '';
 
     const profileHTML = `
         <div class="char-profile ${char.status ? 'deceased' : ''}">
@@ -12057,6 +12438,7 @@ function showCharacterProfile(charKey) {
             <div class="char-header">
                 <div class="char-icon">${char.icon}</div>
                 <h1 class="char-title">${char.name}</h1>
+                ${nicknameBadge}
                 ${statusBadge}
             </div>
 
