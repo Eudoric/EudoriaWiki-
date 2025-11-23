@@ -15727,28 +15727,144 @@ function showCharacterProfile(charKey, section = 'royaltyDefenders') {
         }
     });
 
-    const statusBadge = char.status ? `<p class="char-status-badge">${char.status}</p>` : '';
-    const nicknameBadge = char.nickname ? `<p class="char-nickname-badge">${char.nickname}</p>` : '';
-    const profileImage = char.image ? `<img src="${char.image}" alt="${char.name}" class="char-profile-image">` : '';
+    // Generate breadcrumbs
+    const backText = section === 'otherFigures' ? 'Other Important Figures' : 'Royalty & Defenders';
+    const backFunction = section === 'otherFigures' ? 'renderOtherFigures()' : 'renderRoyaltyDefenders()';
+    const breadcrumbs = generateBreadcrumbs([
+        { name: 'Home', onclick: 'showWelcomeScreen()' },
+        { name: backText, onclick: backFunction },
+        { name: char.name, onclick: '' }
+    ]);
 
-    const backButtonText = section === 'otherFigures' ? '← Back to Other Important Figures' : '← Back to Royalty & Defenders';
-    const backButtonFunction = section === 'otherFigures' ? 'renderOtherFigures()' : 'renderRoyaltyDefenders()';
+    // Generate infobox with character image mapping
+    const characterImageMap = {
+        'King Bao Xingyun': 'kingbao.png',
+        'Ceón Eu\'dore': 'Ceon.png',
+        'Queen Azariah Maruli': 'Azariah.png',
+        'Sanaa & Simba Jarrah': 'Twins.png',
+        'King Ahmad Zulo Chaka': 'Ahmad.png',
+        'Rosa Thronburns': 'Rosa.png',
+        'Wei \'Li\' Dian': 'LiDian.png',
+        'Ami Zula Chaka': 'Ami.png',
+        'Makani-tikitiki-a-Taranga': 'Makani.png',
+        'Dubaku': 'Dubaku.png'
+    };
+
+    const imagePath = characterImageMap[char.name];
+    const placeholder = '👑';
+    const imageHTML = imagePath ?
+        `<img src="Images/${imagePath}" alt="${char.name}" onerror="this.parentElement.innerHTML='<div class=\\'wiki-infobox-placeholder\\'>${placeholder}</div>'">` :
+        (char.image ? `<img src="${char.image}" alt="${char.name}" onerror="this.parentElement.innerHTML='<div class=\\'wiki-infobox-placeholder\\'>${placeholder}</div>'">` :
+        `<div class="wiki-infobox-placeholder">${placeholder}</div>`);
+
+    let infoRows = '';
+    if (char.nickname) {
+        infoRows += `
+            <div class="wiki-infobox-row">
+                <div class="wiki-infobox-label">Title</div>
+                <div class="wiki-infobox-value">${char.nickname}</div>
+            </div>`;
+    }
+    infoRows += `
+        <div class="wiki-infobox-row">
+            <div class="wiki-infobox-label">Name</div>
+            <div class="wiki-infobox-value">${char.name}</div>
+        </div>`;
+    if (char.status) {
+        infoRows += `
+            <div class="wiki-infobox-row">
+                <div class="wiki-infobox-label">Status</div>
+                <div class="wiki-infobox-value">${char.status}</div>
+            </div>`;
+    }
+    infoRows += `
+        <div class="wiki-infobox-row">
+            <div class="wiki-infobox-label">Category</div>
+            <div class="wiki-infobox-value">${section === 'otherFigures' ? 'Other Important Figures' : 'Royalty & Defenders'}</div>
+        </div>`;
+
+    const infobox = `
+        <aside class="wiki-infobox">
+            <div class="wiki-infobox-header">${char.name}</div>
+            <div class="wiki-infobox-image">${imageHTML}</div>
+            <div class="wiki-infobox-body">
+                ${infoRows}
+            </div>
+        </aside>
+    `;
+
+    // Build TOC sections array
+    const tocSections = ['Overview'];
+    sections.forEach(key => {
+        const sec = char[key];
+        if (sec && sec.title) {
+            tocSections.push(sec.title);
+        }
+    });
+    tocSections.push('See Also');
+    const toc = generateTOC(tocSections);
+
+    // Get first section as overview
+    const firstSection = sections[0] ? char[sections[0]] : null;
+    const overviewContent = firstSection && firstSection.content ? formatCharContent(firstSection.content) : '<p>Character overview coming soon.</p>  ';
+
+    // Build collapsible sections (skip first section as it's used for overview)
+    let wikiSectionsHTML = '';
+    sections.slice(1).forEach((sectionKey, index) => {
+        const sec = char[sectionKey];
+        if (sec && sec.title) {
+            wikiSectionsHTML += `
+                <h2 class="wiki-section-header" id="wiki-section-${index + 1}">${sec.title}</h2>
+                <div class="collapsible-section">
+                    <button class="section-toggle" onclick="toggleSection(this)">
+                        <span class="toggle-icon">+</span>
+                        <span class="section-title">Expand Section</span>
+                    </button>
+                    <div class="section-content">
+                        <div class="formatted-content">${formatCharContent(sec.content)}</div>
+                    </div>
+                </div>
+            `;
+        }
+    });
+
+    // Generate See Also links
+    const seeAlsoLinks = [
+        { name: 'Eudora, Mother Nature', onclick: 'showEudoraProfile()' },
+        { name: backText, onclick: backFunction }
+    ];
+    const seeAlso = generateSeeAlso(seeAlsoLinks);
+
+    // Generate categories
+    const categories = ['Characters', section === 'otherFigures' ? 'Other Important Figures' : 'Royalty & Defenders'];
+    if (char.status === 'DECEASED') categories.push('Deceased');
+    const categoriesHTML = generateCategories(categories);
+
+    const statusBadge = char.status ? ` <span class="status-badge-inline">[${char.status}]</span>` : '';
+    const nicknameBadge = char.nickname ? ` <span class="alt-name">"${char.nickname}"</span>` : '';
 
     const profileHTML = `
-        <div class="char-profile ${char.status ? 'deceased' : ''}">
-            <button class="back-button" onclick="${backButtonFunction}">${backButtonText}</button>
+        <div class="child-profile">
+            <button class="back-button" onclick="${backFunction}">← Back to ${backText}</button>
 
-            <div class="char-header">
-                ${profileImage}
-                <div class="char-icon">${char.icon}</div>
-                <h1 class="char-title">${char.name}</h1>
-                ${nicknameBadge}
-                ${statusBadge}
+            ${breadcrumbs}
+
+            ${infobox}
+
+            <h1 class="child-name" style="margin-top: 0;">${char.name}${nicknameBadge}${statusBadge}</h1>
+
+            ${toc}
+
+            <h2 class="wiki-section-header" id="wiki-section-0">Overview</h2>
+            ${overviewContent}
+
+            <div class="collapsible-sections">
+                ${wikiSectionsHTML}
             </div>
 
-            <div class="char-body">
-                ${sectionsHTML}
-            </div>
+            ${seeAlso}
+
+            ${categoriesHTML}
         </div>
     `;
 
