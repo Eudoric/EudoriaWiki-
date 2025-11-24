@@ -25853,3 +25853,169 @@ function processContentWithXRefs(html) {
     processTextNodes(temp);
     return temp.innerHTML;
 }
+
+// ====================================================================================
+// FOOTER NAVIGATION FUNCTIONS
+// ====================================================================================
+
+function showAbout() {
+    const contentArea = document.getElementById('contentArea');
+
+    const breadcrumbs = generateBreadcrumbs([
+        { name: 'Home', onclick: 'showWelcomeScreen()' },
+        { name: 'About', onclick: '' }
+    ]);
+
+    contentArea.innerHTML = `
+        <div class="region-detail">
+            ${breadcrumbs}
+
+            <h1 class="wiki-title">About Eudoria Wiki</h1>
+
+            <div class="wiki-intro">
+                <p>Welcome to the <strong>Eudoria Wiki</strong>, your comprehensive guide to the world of Eudoria—a fictional universe created by Sasha.</p>
+
+                <p>This wiki serves as a reference guide for the characters, regions, history, mythology, and stories that make up the Eudoria Saga. Whether you're exploring the lush forests of the Heartland, learning about the Eudoric pantheon, or following the journey of the Primrose Triplets, this wiki is your gateway to everything Eudoria.</p>
+
+                <h2 class="wiki-section-header">What You'll Find Here</h2>
+                <ul>
+                    <li><strong>Regions of Eudoria:</strong> Detailed information about each region, its culture, and its people</li>
+                    <li><strong>Characters:</strong> Profiles of key figures including royalty, defenders, and important figures</li>
+                    <li><strong>Eudoric Mythology:</strong> The pantheon of gods, sacred texts, and divine history</li>
+                    <li><strong>History & Lore:</strong> Major events that shaped the world, including the War of Gods and the Falcon King's reign</li>
+                    <li><strong>The Eudoria Saga:</strong> Information about the book series chronicling these epic tales</li>
+                </ul>
+
+                <p style="margin-top: 2rem; font-style: italic; color: var(--text-secondary);">This wiki is a work in progress and will continue to grow as the world of Eudoria expands.</p>
+            </div>
+        </div>
+    `;
+
+    triggerPageTransition();
+}
+
+function showStartHere() {
+    const contentArea = document.getElementById('contentArea');
+
+    const breadcrumbs = generateBreadcrumbs([
+        { name: 'Home', onclick: 'showWelcomeScreen()' },
+        { name: 'Start Here', onclick: '' }
+    ]);
+
+    contentArea.innerHTML = `
+        <div class="region-detail">
+            ${breadcrumbs}
+
+            <h1 class="wiki-title">Start Here</h1>
+            <p class="wiki-subtitle">Your Guide to Exploring Eudoria</p>
+
+            <div class="wiki-intro">
+                <p>New to Eudoria? Start your journey here! This guide will help you navigate the wiki and understand the world of Eudoria.</p>
+
+                <h2 class="wiki-section-header">Recommended Reading Order</h2>
+
+                <div style="margin: 1.5rem 0;">
+                    <h3 style="color: var(--accent-primary); margin-top: 1.5rem;">1. Begin with the Basics</h3>
+                    <ul>
+                        <li><a href="#" onclick="renderEudoriaOverview(); return false;" class="wiki-link">Eudoria Overview</a> - Understand the world and its structure</li>
+                        <li><a href="#" onclick="renderEudoraProfile(); return false;" class="wiki-link">Queen Eudora</a> - Meet the Mother Nature who rules this world</li>
+                        <li><a href="#" onclick="renderEudoriaSaga(); return false;" class="wiki-link">The Eudoria Saga</a> - Learn about the story that ties everything together</li>
+                    </ul>
+
+                    <h3 style="color: var(--accent-primary); margin-top: 1.5rem;">2. Explore the World</h3>
+                    <ul>
+                        <li><a href="#" onclick="renderAllRegionsNested(); return false;" class="wiki-link">Regions of Eudoria</a> - Discover the diverse lands and cultures</li>
+                        <li><a href="#" onclick="renderInnerCircle(); return false;" class="wiki-link">Eudora's Inner Circle</a> - Meet the Protectors who guard the world</li>
+                    </ul>
+
+                    <h3 style="color: var(--accent-primary); margin-top: 1.5rem;">3. Dive Deeper</h3>
+                    <ul>
+                        <li><a href="#" onclick="renderRoyaltyDefenders(); return false;" class="wiki-link">Royalty & Defenders</a> - Learn about key figures shaping Eudoria's fate</li>
+                        <li><a href="#" onclick="renderFalconKing(); return false;" class="wiki-link">300 Years of the Falcon King</a> - Understand the dark period that shaped history</li>
+                        <li><a href="#" onclick="renderEudoricGods(); return false;" class="wiki-link">Eudoric Gods</a> - Explore the divine pantheon (switch to Eudoric mode)</li>
+                    </ul>
+                </div>
+
+                <h2 class="wiki-section-header">Two Modes of Exploration</h2>
+                <p>The wiki has two modes you can switch between using the tabs at the top:</p>
+                <ul>
+                    <li><strong>Eudoria Mode:</strong> Focus on the mortal world, regions, characters, and history</li>
+                    <li><strong>Eudoric Mode:</strong> Explore the divine realm, gods, sacred knowledge, and mythology</li>
+                </ul>
+            </div>
+        </div>
+    `;
+
+    triggerPageTransition();
+}
+
+function showContact() {
+    const contentArea = document.getElementById('contentArea');
+
+    const breadcrumbs = generateBreadcrumbs([
+        { name: 'Home', onclick: 'showWelcomeScreen()' },
+        { name: 'Contact', onclick: '' }
+    ]);
+
+    contentArea.innerHTML = `
+        <div class="region-detail">
+            ${breadcrumbs}
+
+            <h1 class="wiki-title">Contact</h1>
+
+            <div class="wiki-intro">
+                <p>Thank you for your interest in Eudoria! This wiki is maintained by Sasha, the creator of the Eudoria universe.</p>
+
+                <h2 class="wiki-section-header">Get in Touch</h2>
+                <p style="color: var(--text-secondary); font-style: italic;">Contact information coming soon.</p>
+
+                <h2 class="wiki-section-header">Found an Error?</h2>
+                <p>If you notice any inconsistencies or errors in the wiki, please let us know so we can keep the information accurate and up to date.</p>
+
+                <h2 class="wiki-section-header">Feedback & Suggestions</h2>
+                <p>We welcome feedback about the wiki's content, organization, and user experience. Your input helps make this resource better for everyone exploring the world of Eudoria.</p>
+            </div>
+        </div>
+    `;
+
+    triggerPageTransition();
+}
+
+function showChangeLog() {
+    const contentArea = document.getElementById('contentArea');
+
+    const breadcrumbs = generateBreadcrumbs([
+        { name: 'Home', onclick: 'showWelcomeScreen()' },
+        { name: 'Change Log', onclick: '' }
+    ]);
+
+    contentArea.innerHTML = `
+        <div class="region-detail">
+            ${breadcrumbs}
+
+            <h1 class="wiki-title">Change Log</h1>
+            <p class="wiki-subtitle">Recent Updates to Eudoria Wiki</p>
+
+            <div class="wiki-intro">
+                <p>This page tracks major updates and additions to the Eudoria Wiki.</p>
+
+                <h2 class="wiki-section-header">2025</h2>
+
+                <div style="margin: 1.5rem 0;">
+                    <h3 style="color: var(--accent-primary);">January 2025</h3>
+                    <ul>
+                        <li><strong>The Eudoria Saga page updated</strong> - Added comprehensive synopsis and list of 11 main series books</li>
+                        <li><strong>Character profiles enhanced</strong> - Consolidated relationship sections for better organization</li>
+                        <li><strong>Visual improvements</strong> - Added character portrait images to wiki-style profiles</li>
+                        <li><strong>Readability improvements</strong> - Updated section styling with deep green backgrounds and burgundy text</li>
+                        <li><strong>Footer added</strong> - Added site footer with copyright, navigation links, and disclaimer</li>
+                    </ul>
+                </div>
+
+                <p style="margin-top: 2rem; font-style: italic; color: var(--text-secondary);">More updates coming soon as the world of Eudoria continues to grow!</p>
+            </div>
+        </div>
+    `;
+
+    triggerPageTransition();
+}
