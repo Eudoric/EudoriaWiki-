@@ -3252,7 +3252,8 @@ body {
     background-color: rgba(0, 0, 0, 0.75);
     background-blend-mode: darken;
     color: var(--text-primary);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     transition: background 0.5s ease;
 }
 
@@ -3316,6 +3317,10 @@ body.eudoric-mode h3 {
     flex-direction: column;
     overflow-y: auto;
     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
 }
 
 .app-header {
@@ -3486,6 +3491,7 @@ body.eudoric-mode h3 {
     flex: 1;
     overflow-y: auto;
     background: var(--bg-primary);
+    margin-left: 280px;
 }
 
 .content-area {
@@ -10572,6 +10578,7 @@ div .xref-link {
     border-top: 2px solid var(--accent-primary);
     padding: 2rem 1rem;
     margin-top: 3rem;
+    margin-left: 280px;
     text-align: center;
 }
 
@@ -10625,6 +10632,7 @@ div .xref-link {
 @media (max-width: 768px) {
     .site-footer {
         padding: 1.5rem 1rem;
+        margin-left: 0;
     }
 
     .footer-content {
