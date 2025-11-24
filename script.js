@@ -26019,3 +26019,39 @@ function showChangeLog() {
 
     triggerPageTransition();
 }
+
+// ====================================================================================
+// CURRENT MOON WIDGET
+// ====================================================================================
+
+function updateCurrentMoonWidget() {
+    const moons = eudoriaData.nogaCalendar.moons;
+
+    // Get current date
+    const now = new Date();
+    const startOfYear = new Date(now.getFullYear(), 0, 1);
+    const dayOfYear = Math.floor((now - startOfYear) / (1000 * 60 * 60 * 24)) + 1;
+
+    // Calculate which moon (13 moons, 28 days each = 364 days)
+    // If day is beyond 364, wrap to first moon
+    const adjustedDay = dayOfYear > 364 ? dayOfYear - 364 : dayOfYear;
+    const moonIndex = Math.min(Math.floor((adjustedDay - 1) / 28), 12);
+
+    const currentMoon = moons[moonIndex];
+
+    // Update widget
+    const iconElement = document.getElementById('moonWidgetIcon');
+    const nameElement = document.getElementById('moonWidgetName');
+    const meaningElement = document.getElementById('moonWidgetMeaning');
+
+    if (iconElement && nameElement && meaningElement && currentMoon) {
+        iconElement.textContent = currentMoon.icon;
+        nameElement.textContent = currentMoon.name;
+        meaningElement.textContent = currentMoon.meaning;
+    }
+}
+
+// Call on page load
+document.addEventListener('DOMContentLoaded', function() {
+    updateCurrentMoonWidget();
+});
