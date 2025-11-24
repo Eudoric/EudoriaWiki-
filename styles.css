@@ -7216,11 +7216,11 @@ body.eudoric-mode h3 {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
-    background: linear-gradient(135deg, rgba(245, 245, 220, 0.4), rgba(255, 255, 255, 0.6));
+    background: linear-gradient(135deg, rgba(26, 58, 46, 0.9), rgba(45, 80, 62, 0.85));
 }
 
 .section-content p {
-    color: #654321;
+    color: #800020;
     line-height: 1.8;
     margin: 0;
     padding: 1.2rem;
