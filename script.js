@@ -26029,13 +26029,57 @@ function updateCurrentMoonWidget() {
 
     // Get current date
     const now = new Date();
-    const startOfYear = new Date(now.getFullYear(), 0, 1);
-    const dayOfYear = Math.floor((now - startOfYear) / (1000 * 60 * 60 * 24)) + 1;
+    const month = now.getMonth(); // 0-11 (January = 0, December = 11)
+    const day = now.getDate(); // 1-31
 
-    // Calculate which moon (13 moons, 28 days each = 364 days)
-    // If day is beyond 364, wrap to first moon
-    const adjustedDay = dayOfYear > 364 ? dayOfYear - 364 : dayOfYear;
-    const moonIndex = Math.min(Math.floor((adjustedDay - 1) / 28), 12);
+    // Map real-world months to Eudorian moons
+    // Eudorian new year starts in March
+    let moonIndex;
+
+    switch(month) {
+        case 2: // March
+            moonIndex = 0; // Eudorasis (New Year)
+            break;
+        case 3: // April
+            moonIndex = 1; // Primoria
+            break;
+        case 4: // May
+            moonIndex = 2; // Sera
+            break;
+        case 5: // June
+            moonIndex = 3; // Maunox
+            break;
+        case 6: // July
+            moonIndex = 4; // Naimara
+            break;
+        case 7: // August
+            moonIndex = 5; // Afronox
+            break;
+        case 8: // September
+            moonIndex = 6; // Eudorine
+            break;
+        case 9: // October
+            moonIndex = 7; // Suliamun
+            break;
+        case 10: // November
+            moonIndex = 8; // Naaviemun
+            break;
+        case 11: // December
+            moonIndex = 9; // Kanythos
+            break;
+        case 0: // January
+            moonIndex = 10; // Zendariyah
+            break;
+        case 1: // February
+            if (day <= 19) {
+                moonIndex = 11; // Afrialuna (Feb 1-19)
+            } else {
+                moonIndex = 12; // Yahuahor (Feb 20-28/29)
+            }
+            break;
+        default:
+            moonIndex = 0; // Fallback to first moon
+    }
 
     const currentMoon = moons[moonIndex];
 
