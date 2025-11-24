@@ -2706,7 +2706,66 @@ const eudoriaData = {
                 personality: "Unbothered, peaceful, perpetually relaxed",
                 features: "90%+ ocean coverage, eternal autumn weather, no drama whatsoever"
             }
-        ]
+        ],
+        familyTree: {
+            title: "Divine Family Tree of the Cosmos",
+            subtitle: "The planets of Star Sanctum are named after the divine family and companions of Eudoria's pantheon",
+            sections: [
+                {
+                    title: "The Great Ancestors",
+                    icon: "👑",
+                    members: [
+                        {
+                            planet: "Earth / Ta'hanne",
+                            description: "Named after the First Goddess, Mother Earth"
+                        },
+                        {
+                            planet: "Sovi",
+                            description: "Named after Sove, the Skyfather (Ta'hanne's husband)"
+                        }
+                    ]
+                },
+                {
+                    title: "The Mother of Cosmos",
+                    icon: "✨",
+                    members: [
+                        {
+                            planet: "Vurias",
+                            description: "Named after their daughter Vivatasia, Mother of the Cosmos, Goddess of Stars & Moon"
+                        }
+                    ]
+                },
+                {
+                    title: "Neia's Children (Vivatasia's Grandchildren)",
+                    icon: "⚖️",
+                    subtitle: "Neia, Goddess of the Balanced Scales and one of Vivatasia's 13 zodiac children, created three divine beings who have planets named in their honor:",
+                    members: [
+                        {
+                            planet: "Take",
+                            description: "Named after Tavek, Father Nature"
+                        },
+                        {
+                            planet: "Nathora",
+                            description: "Named after Nath, the shapeshifting god/goddess"
+                        },
+                        {
+                            planet: "Gora",
+                            description: "Named after Gloria, Goddess of Animals"
+                        }
+                    ]
+                },
+                {
+                    title: "The Companion",
+                    icon: "🐉",
+                    members: [
+                        {
+                            planet: "Demper",
+                            description: "Named after Ta'hanne's mythic beast companion, a chill blue creature known for doing absolutely nothing and telling Ta'hanne to handle things herself. Not part of the divine bloodline – just vibes."
+                        }
+                    ]
+                }
+            ]
+        }
     },
     sacredTexts: {
         bookOfSuleiman: {
@@ -18707,6 +18766,25 @@ function renderSevenPlanets() {
         </div>
     `).join('');
 
+    // Generate family tree HTML
+    const familyTreeHTML = planets.familyTree.sections.map(section => `
+        <div class="family-tree-section">
+            <div class="family-tree-header">
+                <span class="family-tree-icon">${section.icon}</span>
+                <h3 class="family-tree-title">${section.title}</h3>
+            </div>
+            ${section.subtitle ? `<p class="family-tree-subtitle">${section.subtitle}</p>` : ''}
+            <div class="family-tree-members">
+                ${section.members.map(member => `
+                    <div class="family-tree-member">
+                        <div class="family-tree-planet-name">${member.planet}</div>
+                        <div class="family-tree-description">${member.description}</div>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `).join('');
+
     // Generate See Also links
     const seeAlsoLinks = [
         { name: 'Eudoric Gods', onclick: 'renderEudoricGods()' },
@@ -18732,6 +18810,14 @@ function renderSevenPlanets() {
 
             <div class="planets-grid">
                 ${planetsHTML}
+            </div>
+
+            <div class="family-tree-container">
+                <h2 class="wiki-section-header">${planets.familyTree.title}</h2>
+                <p class="family-tree-intro">${planets.familyTree.subtitle}</p>
+                <div class="family-tree-grid">
+                    ${familyTreeHTML}
+                </div>
             </div>
 
             ${seeAlso}
