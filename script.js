@@ -19149,23 +19149,34 @@ function renderEudoriaSaga() {
             <p class="wiki-subtitle">Epic Tales from the World of Eudoria</p>
 
             <div class="wiki-intro">
-                <p>The <strong>Eudoria Saga</strong> is an epic collection of stories chronicling the rich history, diverse characters, and dramatic events that shape the world of Eudoria. From the main saga's sweeping narrative to the focused tales of Airam and the legacy that follows, these books bring the world of Eudoria to life.</p>
+                <p>The <strong>Eudoria Saga</strong> is an epic story centered on Queen Eudora, the Mother Nature of Earth and Gardens, who was chosen by her father, the Creator, to bring balance and life to the world she was forced to rule—Eudoria.</p>
+
+                <p>The saga follows the journey of the <strong>Primrose Triplets</strong>—Jacthina, Kabina, and Seraphina—Eudora's three daughters destined to fulfill the ancient Primrose Prophecy and defeat the great evil threatening to destroy all creation: <strong>Al'sekemu</strong>, the Falcon God King, God of Order, Power, and Silence. Al'sekemu seeks to impose a perfect Silence (Sah'stillness) on Eudoria, dismantling the free will that Eudora represents and remaking the world under his absolute rule.</p>
+
+                <p>The conflict originates in the ancient <strong>War of Gods</strong>, ignited when Suleiman, the Lion and God of Wisdom, betrayed his brother, sparking centuries of chaos and divine strife. Now, as Al'sekemu seeks to seize the ultimate source of Eudoric law, the Primrose Triplets must rise to fulfill their destiny—or watch every continent on Earth fall into eternal silence.</p>
             </div>
 
             <!-- THE MAIN SAGA -->
             <details open style="margin: 1.5rem 0; border: 3px solid var(--accent-primary); border-radius: 0.5rem; padding: 1rem; background: var(--bg-tertiary);">
                 <summary style="cursor: pointer; font-weight: 700; color: var(--accent-primary); font-size: 1.2rem;">▶ The Main Saga (11-Book Series)</summary>
                 <div style="margin-top: 1rem;">
-                    <div class="coming-soon-status" style="margin: 2rem 0;">
-                        <div class="status-badge">
-                            <span class="status-icon">📜</span>
-                            <span class="status-text">Work in Progress</span>
-                        </div>
-                    </div>
-                    <p style="text-align: center; color: var(--text-secondary); font-style: italic;">
-                        This epic 11-book series is currently being crafted with love and attention to detail.
-                        Check back soon to explore this part of Eudoria's books!
+                    <p style="color: var(--text-secondary); font-style: italic; margin-bottom: 1.5rem;">
+                        This epic 11-book series is currently being crafted with love and attention to detail. Detailed descriptions for each book will be added during the editing process.
                     </p>
+
+                    <ol style="color: var(--text-primary); line-height: 2; font-size: 1.05rem;">
+                        <li><strong>Queen of Prophecy</strong></li>
+                        <li><strong>Primrose & The Purple Man</strong></li>
+                        <li><strong>Bloodlines</strong></li>
+                        <li><strong>Winter</strong></li>
+                        <li><strong>The Dark Gospel</strong></li>
+                        <li><strong>King of Eudoria</strong></li>
+                        <li><strong>Roots & Thy Phoenix</strong></li>
+                        <li><strong>The Order of Hannas</strong></li>
+                        <li><strong>Winter: Kinlight</strong></li>
+                        <li><strong>War of Gods</strong></li>
+                        <li><strong>Power of Primrose</strong></li>
+                    </ol>
                 </div>
             </details>
 
