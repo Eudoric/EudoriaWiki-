@@ -7439,47 +7439,38 @@ She carried this guilt every day — even when the Primrose Triplets and King Ah
             },
             relationships: {
                 title: "Relationships",
-                content: `**Eshan (Primrose Triplet #1 — The Eldest):**
-- Eshan is serious, structured, and protective
-- He was the first to notice Azariah's grief was consuming her
-- He gently challenged her to take off the hat, saying: *"You cannot hide from the world forever, Azariah. Your people need to see your face."*
-- She resisted for months, but his steady presence helped her feel safe enough to try
+                content: `**PARENTS**
 
-**Aneira (Primrose Triplet #2 — The Middle Child):**
-- Aneira is calm, nurturing, and wise
-- She sat with Azariah in silence for hours, never forcing her to speak
-- She taught Azariah how to tend the royal gardens again, helping her reconnect with the land
-- Aneira was the one who said: *"Grief does not make you weak. It makes you human."*
+**King Eshan Maruli (Father):**
+Guardian of the Garden Gates. He was murdered after seeing Tevye. Her parents died on her sixteenth birthday.
 
-**Ezrah (Primrose Triplet #3 — The Youngest):**
-- Ezrah is playful, spontaneous, and mischievous
-- He tried to make Azariah laugh again with silly jokes and pranks
-- He was the one who gave her the nickname "Primsy" — and it stuck
-- He once said: *"You're not just our queen. You're our little Aurirose. And roses grow through concrete."*
+**Queen Aneira Suriya (Mother):**
+Queen of the Blooming Court. She was murdered after seeing Tevye. Her parents died on her sixteenth birthday.
 
-**Ello, Aavi, and Ambrin (Eudora's Children — The Helpers):**
-- These three children visited Aurinia frequently during Azariah's darkest years
-- They brought her flowers, sang songs, and told her stories
-- Aavi once told her: *"Mama Eudora says you're not broken. You're just tired."*
-- Their innocence and kindness reminded her that the world still had light
+**LOVERS AND INNER CIRCLE (COMPLICATED)**
 
-**Eudora (Mother Nature — The Guide):**
-- Eudora visited Azariah personally after the first year of violence
-- She did not scold her for the 500 murders — instead, she held her while she cried
-- Eudora said: *"You are not a monster, Azariah. You are a child who was forced to become a queen. Let me help you carry this weight."*
-- Eudora gave her the title "My Little Aurirose" and promised her she would heal
+**Ezrah (True Love/Right Hand):**
+Ezrah has loved Azariah since childhood and serves as her confidante, comforting her through her grief. They shared a passionate kiss, and Azariah finally confessed her love for him. Ezrah's father was involved in changing the ship schedule that allowed her parents to be killed, a secret Ezrah kept from her.
 
-**The Primrose Triplets (Collective):**
-- The three brothers became her closest friends and advisors
-- They never judged her for the violence of her early reign
-- They helped her rebuild Aurinia's peace and reputation
-- They are the reason she finally took off the straw hat
+**Ello (Ex-Lover/Advisor):**
+Azariah was once in love with Ello. Ello views her as weak and believes he deserves the crown. He wanted to marry her for the title. He was having an affair with Ambrin. Azariah ultimately rejected his marriage proposal, stating she chose to rule alone and loves Ezrah.
 
-**King Ahmad (Ally and Mentor):**
-- King Ahmad of a neighboring region reached out to Azariah after hearing of her struggles
-- He shared his own story of loss and redemption
-- He taught her that *"A good ruler is not one who never makes mistakes. It's one who learns from them."*
-- He became a mentor and friend, helping her find strength in her vulnerability`
+**Aavi (Former Friend/Inner Circle):**
+Aavi served as her inner circle warrior. Aavi betrayed Azariah, unleashing water demons on Aurinia and admitting she gave Azariah's parents a faulty ship because they saw Tevye, the sea god, who kills anyone who sees him. Aavi was killed by the triplets.
+
+**Ambrin (Inner Circle):**
+She remains Azariah's friend but had a secret affair with Ello. She left Aurinia due to guilt over the betrayal.
+
+**ALLIES**
+
+**Eudora (Queen):**
+Azariah trusts Eudora's guidance and sends Eudora a letter seeking help, signed, "Humbly and faithfully, Azariah of Aurinia".
+
+**The Primrose Triplets (Jacthina, Kabina, Seraphina):**
+They came to Aurinia as Eudora's chosen protectors after Azariah requested help. Seraphina's presence helped Azariah's garden bloom again and helped her find peace.
+
+**King Ahmad (of Chaka):**
+Ahmad, the Guardian of Spirits, helped Azariah find spiritual closure regarding her parents' death by taking her to the spirit realm.`
             },
             majorConflicts: {
                 title: "Major Conflicts",
