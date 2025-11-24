@@ -8665,97 +8665,51 @@ Li Dian can only activate his frost power by **transforming** - he must enter hi
 
 **Current Age:** 20 years old, still working to fulfill the impossible mission of ending a war that started **centuries before he was born.** ❄️`
             },
-            relationshipPhoebe: {
-                title: "Relationship: Phoebe (Wife - Deceased) 💔❄️",
-                content: `His **pregnant wife**, whom he found refuge and warmth with after his breakup with Jacthina.
+            relationships: {
+                title: "Relationships",
+                content: `**Phoebe (Wife - Deceased) 💔❄️**
+His **pregnant wife**, whom he found refuge and warmth with after his breakup with Jacthina. The couple had been together for **ten years** and planned to leave the torn Eudoria together.
 
-The couple had been together for **ten years** and planned to leave the torn Eudoria together.
-
-**The Tragedy:**
-She tragically **died due to his frost power** - while carrying their **frost child**, his power **spread inside her during pregnancy**, turning her **glacial.** ❄️💔
+**The Tragedy:** She tragically **died due to his frost power** - while carrying their **frost child**, his power **spread inside her during pregnancy**, turning her **glacial.** ❄️💔
 
 **Li Dian is consumed by grief and guilt** over her loss.
 
-**Before Phoebe died, she said:**
-*"Only one of us leaving, Eudora."*
+**Before Phoebe died, she said:** *"Only one of us leaving, Eudora."*
 
-**After her death, Li Dian gave up the baby that survived**, too devastated to raise a child without his wife.
+**After her death, Li Dian gave up the baby that survived**, too devastated to raise a child without his wife. This is the **central tragedy** that defines Li Dian's current emotional state - his own power killed the woman he loved. 💔
 
-This is the **central tragedy** that defines Li Dian's current emotional state - his own power killed the woman he loved. 💔`
-            },
-            relationshipJacthina: {
-                title: "Relationship: Jacthina (Ex-Lover) ⚔️💔",
-                content: `His **long-term, turbulent girlfriend for five years** (one of the Primrose Triplets).
+**Jacthina (Ex-Lover) ⚔️💔**
+His **long-term, turbulent girlfriend for five years** (one of the Primrose Triplets). He **loved her deeply**, but the relationship was ruined by her **cruelty, impulsiveness, and constant focus on war over him.**
 
-He **loved her deeply**, but the relationship was ruined by her **cruelty, impulsiveness, and constant focus on war over him.**
+**She broke up with him/pushed him away first.** He still finds her presence **distracting and highly frustrating.**
 
-**She broke up with him/pushed him away first.**
+**Their History:** Their relationship bloomed during his training with Zendayah in Zendonia, thanks to their **shared warrior mindset**, but both are **too caught up in their pride** to show how much they care for each other. Despite their breakup, there are still **unresolved feelings** between them. 💔⚔️
 
-He still finds her presence **distracting and highly frustrating.**
+**King Bao (King/Mentor) 👑**
+The **blind, ancient ruler of Xingyun.** King Bao **took Li Dian in after his father's death** and saw him as a son. Li Dian has **deep reverence** for him, calling him **"my king."**
 
-**Their History:**
-Their relationship bloomed during his training with Zendayah in Zendonia, thanks to their **shared warrior mindset**, but both are **too caught up in their pride** to show how much they care for each other.
+**Recognition:** King Bao credited Li Dian with **saving Xingyun** by jumping from the temple and **freezing an avalanche** created by the Heru'met. ❄️🏔️
 
-Despite their breakup, there are still **unresolved feelings** between them. 💔⚔️`
-            },
-            relationshipKingBao: {
-                title: "Relationship: King Bao (King/Mentor) 👑",
-                content: `The **blind, ancient ruler of Xingyun.**
+**Lu Meng (Archnemesis) 🐉🔥**
+The **King of the Meng Dynasty** and **General of the Red Dragons.** He and Li Dian share a **decades-long rivalry** and **hate each other intensely.**
 
-King Bao **took Li Dian in after his father's death** and saw him as a son.
+**The Insult:** Lu Meng **celebrates the death of Li Dian's father**, gloating about the murder. Li Dian fights against the Meng Dynasty **in his father's name.** ⚔️🔥
 
-Li Dian has **deep reverence** for him, calling him **"my king."**
+**King Ahmad (Ally/Friend) 👑✨**
+King of Chaka and Guardian of Spirits. Ahmad **sought Li Dian's help** against the Sandman and the Hannas. Li Dian **saved Ahmad's life** and challenged his authority and despair. They are **good friends** who respect each other's dedication to protecting their people. 🛡️
 
-**Recognition:**
-King Bao credited Li Dian with **saving Xingyun** by jumping from the temple and **freezing an avalanche** created by the Heru'met. ❄️🏔️`
-            },
-            relationshipLuMeng: {
-                title: "Relationship: Lu Meng (Archnemesis) 🐉🔥",
-                content: `The **King of the Meng Dynasty** and **General of the Red Dragons.**
+**Wei Dian (Father - Deceased) ⚔️💔**
+Former **legendary Frost Warrior of Xingyun.** He was **murdered by Meng's assassins** when Li Dian was 8 years old, leaving Li Dian an orphan.
 
-He and Li Dian share a **decades-long rivalry** and **hate each other intensely.**
+**His Last Words:** Wei Dian told his son to **run** during the ambush, promising he would **catch up.** **He never did** - he died saving his son. 💔
 
-**The Insult:**
-Lu Meng **celebrates the death of Li Dian's father**, gloating about the murder.
+Li Dian carries his father's legacy and fights to **avenge his death.** ⚔️
 
-Li Dian fights against the Meng Dynasty **in his father's name.** ⚔️🔥`
-            },
-            relationshipAhmad: {
-                title: "Relationship: King Ahmad (Ally/Friend) 👑✨",
-                content: `King of Chaka and Guardian of Spirits.
+**Zendayah (Trainer) ⚔️**
+**Guardian of War and Weapons.** She **trained Li Dian and his warriors** in Zendonia, forging him into the **formidable warrior** he would become. 🗡️
 
-Ahmad **sought Li Dian's help** against the Sandman and the Hannas.
-
-Li Dian **saved Ahmad's life** and challenged his authority and despair.
-
-They are **good friends** who respect each other's dedication to protecting their people. 🛡️`
-            },
-            relationshipWeiDian: {
-                title: "Relationship: Wei Dian (Father - Deceased) ⚔️💔",
-                content: `Former **legendary Frost Warrior of Xingyun.**
-
-He was **murdered by Meng's assassins** when Li Dian was 8 years old, leaving Li Dian an orphan.
-
-**His Last Words:**
-Wei Dian told his son to **run** during the ambush, promising he would **catch up.**
-
-**He never did** - he died saving his son. 💔
-
-Li Dian carries his father's legacy and fights to **avenge his death.** ⚔️`
-            },
-            relationshipZendayah: {
-                title: "Relationship: Zendayah (Trainer) ⚔️",
-                content: `**Guardian of War and Weapons.**
-
-She **trained Li Dian and his warriors** in Zendonia, forging him into the **formidable warrior** he would become. 🗡️`
-            },
-            relationshipPrimroses: {
-                title: "Relationship: The Primrose Triplets (Allies) 🌸",
-                content: `Li Dian **vows to protect the Primrose Triplets.**
-
-The **Xuerai war is tied to the Primrose prophecy**, meaning he must work alongside them to fulfill both their missions.
-
-His connection to **Jacthina** (one of the triplets) adds emotional complexity to this alliance. ❄️🌸`
+**The Primrose Triplets (Allies) 🌸**
+Li Dian **vows to protect the Primrose Triplets.** The **Xuerai war is tied to the Primrose prophecy**, meaning he must work alongside them to fulfill both their missions. His connection to **Jacthina** (one of the triplets) adds emotional complexity to this alliance. ❄️🌸`
             },
             personality: {
                 title: "Personality & Traits",
