@@ -7737,98 +7737,48 @@ Sanaa and Simba fought a relentless **guerrilla war** against Malachai's forces:
 **Their Reputation:**
 They became known as **villainous freedom fighters** - fierce, unstoppable, and utterly devoted to liberating Kingsland.`
             },
-            relationshipEachOther: {
-                title: "Relationship: Each Other (Twin Siblings) 💜",
-                content: `*"Our hearts are one. No one can break us."*
+            relationships: {
+                title: "Relationships",
+                content: `**Each Other (Twin Siblings) 💜**
+*"Our hearts are one. No one can break us."*
 
-Sanaa and Simba are **completely inseparable** - the core of their strength lies in their **perfect unity.**
+Sanaa and Simba are **completely inseparable** - the core of their strength lies in their **perfect unity.** Unlike other sibling co-rulers (like Timbe and Kwan, who constantly fight), Sanaa and Simba move with a **shared stride**, show **matching curiosity**, fight as **ONE** in battle ⚔️, make **decisions together**, and **never waver** in their loyalty to each other.
 
-Unlike other sibling co-rulers (like Timbe and Kwan, who constantly fight), Sanaa and Simba:
-- Move with a **shared stride**
-- Show **matching curiosity**
-- Fight as **ONE** in battle ⚔️
-- Make **decisions together**
-- **Never waver** in their loyalty to each other
+**Their Dynamic:** **SANAA** takes the lead - more resilient, decisive, strategic. **SIMBA** follows her lead - more emotional, equally fierce, protective.
 
-**Their Dynamic:**
-- **SANAA** takes the lead - more resilient, decisive, strategic
-- **SIMBA** follows her lead - more emotional, equally fierce, protective
+**Their philosophy:** *"Loyalty will lead us to paradise."* ✨ They prioritize **loyalty over crowns**, **freedom over power**, **unity over glory.**
 
-**Their philosophy:**
-*"Loyalty will lead us to paradise."* ✨
+**King Jarrah & Queen Darya (Grandparents - Deceased) 👑💔**
+Former rulers of Kingsland.
 
-They prioritize **loyalty over crowns**, **freedom over power**, **unity over glory.**`
-            },
-            relationshipGrandparents: {
-                title: "Relationship: King Jarrah & Queen Darya (Grandparents - Deceased) 👑💔",
-                content: `Former rulers of Kingsland.
+**King Jarrah:** **Sold Kingsland to Malachai** for wealth - a betrayal that led to the region's captivity. 💰 **Killed by Yantay Braveheart** (cold-blooded) on the same day as King Isaiah's death.
 
-**King Jarrah:**
-- **Sold Kingsland to Malachai** for wealth - a betrayal that led to the region's captivity. 💰
-- **Killed by Yantay Braveheart** (cold-blooded) on the same day as King Isaiah's death.
+**Queen Darya:** **Killed by Yania Braveheart** - **the twins WATCHED their grandmother die.** 💔
 
-**Queen Darya:**
-- **Killed by Yania Braveheart** - **the twins WATCHED their grandmother die.** 💔
+**Despite Their Grandfather's Betrayal:** Sanaa and Simba seek to reclaim their people's freedom **in their grandfather's name** - not for the crown, but to **undo the damage he caused** and restore what he built before his fall.
 
-**Despite Their Grandfather's Betrayal:**
-Sanaa and Simba seek to reclaim their people's freedom **in their grandfather's name** - not for the crown, but to **undo the damage he caused** and restore what he built before his fall.`
-            },
-            relationshipBravehearts: {
-                title: "Relationship: The Braveheart Siblings (Malachai's Enforcers - Enemies) ⚔️",
-                content: `Malachai's most feared enforcers - they orchestrated the takeover of Kingsland.
+**The Braveheart Siblings (Malachai's Enforcers - Enemies) ⚔️**
+Malachai's most feared enforcers - they orchestrated the takeover of Kingsland.
 
-**What They Did:**
-- **Yantay Braveheart killed King Jarrah** (cold-blooded!) ⚔️
-- **Yania Braveheart killed Queen Darya** (the twins watched!) 💔
-- **Hunted Sanaa & Simba for TEN YEARS** 🎯
-- **Enforced Malachai's rule** over Kingsland 🔒
+**What They Did:** **Yantay Braveheart killed King Jarrah** (cold-blooded!) ⚔️ **Yania Braveheart killed Queen Darya** (the twins watched!) 💔 **Hunted Sanaa & Simba for TEN YEARS** 🎯 **Enforced Malachai's rule** over Kingsland 🔒
 
-**Their Defeat:**
-The Braveheart Siblings were finally **DEFEATED** by Sanaa, Simba, Jacthina, and Kabina in the battle to free Kingsland! ✅⚡`
-            },
-            relationshipSeraphina: {
-                title: "Relationship: Seraphina Primrose (Savior - Friend) 🌸",
-                content: `One of the Primrose Triplets - the prophesied heroine.
+**Their Defeat:** The Braveheart Siblings were finally **DEFEATED** by Sanaa, Simba, Jacthina, and Kabina in the battle to free Kingsland! ✅⚡
 
-**What She Did:**
-Seraphina **SAVED** Sanaa and Simba when they were cornered by the Braveheart Siblings.
+**Seraphina Primrose (Savior - Friend) 🌸**
+One of the Primrose Triplets - the prophesied heroine. Seraphina **SAVED** Sanaa and Simba when they were cornered by the Braveheart Siblings. But she **traded her OWN FREEDOM for theirs** - giving herself up to the Braveheart Siblings so the twins (and Princess Ami!) could **ESCAPE.** 💔
 
-But she **traded her OWN FREEDOM for theirs** - giving herself up to the Braveheart Siblings so the twins (and Princess Ami!) could **ESCAPE.** 💔
+**Simba's Response:** After Seraphina's sacrifice, Simba acknowledged: *"We must go to them [the Primroses]."* 🙏 They knew they needed the Primrose Triplets' help to defeat the Bravehearts and free Kingsland.
 
-**Simba's Response:**
-After Seraphina's sacrifice, Simba acknowledged:
+**Jacthina & Kabina Primrose (Allies - Warriors) ⚡**
+The other two Primrose Triplets. After Seraphina's Capture, Sanaa and Simba **found Jacthina** (who was searching for her sister Seraphina!) ⚡ and then **met up with Kabina** ⚡
 
-*"We must go to them [the Primroses]."* 🙏
+**Together:** The twins fought alongside Jacthina and Kabina (and with help from the Protectors) to **defeat the Braveheart Siblings** ⚔️, **free Kingsland** from the Still Halo 🔓, and **rescue Seraphina** 🌸
 
-They knew they needed the Primrose Triplets' help to defeat the Bravehearts and free Kingsland.`
-            },
-            relationshipJacthilaKabina: {
-                title: "Relationship: Jacthina & Kabina Primrose (Allies - Warriors) ⚡",
-                content: `The other two Primrose Triplets.
+**Princess Ami (Companion) 👸**
+Daughter of King Isaiah, adopted by King Davidson. Princess Ami **traveled with Sanaa and Simba**, clutching the **Zikamunzi Vault** (the artifact that protects against the Mentalith Orb). 🗝️ She was with them when Seraphina sacrificed herself to save the group.
 
-**After Seraphina's Capture:**
-- Sanaa and Simba **found Jacthina** (who was searching for her sister Seraphina!) ⚡
-- They then **met up with Kabina** ⚡
-
-**Together:**
-The twins fought alongside Jacthina and Kabina (and with help from the Protectors) to:
-- **Defeat the Braveheart Siblings** ⚔️
-- **Free Kingsland** from the Still Halo 🔓
-- **Rescue Seraphina** 🌸`
-            },
-            relationshipAmi: {
-                title: "Relationship: Princess Ami (Companion) 👸",
-                content: `Daughter of King Isaiah, adopted by King Davidson.
-
-Princess Ami **traveled with Sanaa and Simba**, clutching the **Zikamunzi Vault** (the artifact that protects against the Mentalith Orb). 🗝️
-
-She was with them when Seraphina sacrificed herself to save the group.`
-            },
-            relationshipCasanova: {
-                title: "Relationship: Casanova (White Tiger - Guardian) 🐅",
-                content: `A white tiger who acted as a guardian for Sanaa, Simba, Ami, and the others.
-
-Casanova **defended the group** during their battles and escape from the Braveheart Siblings. 🛡️`
+**Casanova (White Tiger - Guardian) 🐅**
+A white tiger who acted as a guardian for Sanaa, Simba, Ami, and the others. Casanova **defended the group** during their battles and escape from the Braveheart Siblings. 🛡️`
             },
             majorConflicts: {
                 title: "Major Conflicts & Story Events 📖",
@@ -8026,68 +7976,38 @@ Ahmad was a **reborn king.** He first went to Chaka to retake his crown and beco
   - Ancient Eudran
   - Xurenese`
             },
-            relationshipSeraphina: {
-                title: "Relationship: Seraphina Primrose (Wife) 💜",
-                content: `His **true love and foundation.** He considers her **Queen of Chaka.**
+            relationships: {
+                title: "Relationships",
+                content: `**Seraphina Primrose (Wife) 💜**
+His **true love and foundation.** He considers her **Queen of Chaka.**
 
-**Their Love:**
-- He proposed to her, and they were officially married after he was resurrected
-- Their love is described as **everlasting**
-- He once yelled at her under external stress and immediately regretted it
-- He **refused to accept his crown without her**
-- He **promised to keep her from dying**
+**Their Love:** He proposed to her, and they were officially married after he was resurrected. Their love is described as **everlasting**. He once yelled at her under external stress and immediately regretted it. He **refused to accept his crown without her**. He **promised to keep her from dying**.
 
-*"She is my foundation."* ✨`
-            },
-            relationshipIsaiah: {
-                title: "Relationship: King Isaiah (Father, Deceased) 👑💔",
-                content: `**The best king Chaka ever had.**
+*"She is my foundation."* ✨
 
-Ahmad carries the burden of his father's legacy and rules with **respect and fire.**
+**King Isaiah (Father, Deceased) 👑💔**
+**The best king Chaka ever had.** Ahmad carries the burden of his father's legacy and rules with **respect and fire.**
 
-**His Father's Teaching:**
-*"Chaka does not reside in the desert, but in the soul of our people."*
+**His Father's Teaching:** *"Chaka does not reside in the desert, but in the soul of our people."* Ahmad inherited this philosophy and governs with it at the core of his rule.
 
-Ahmad inherited this philosophy and governs with it at the core of his rule.`
-            },
-            relationshipAmi: {
-                title: "Relationship: Princess Ami (Sister) 👧💕",
-                content: `His **"little love".**
+**Princess Ami (Sister) 👧💕**
+His **"little love".** Ahmad missed her terribly during his **ten years of absence.**
 
-Ahmad missed her terribly during his **ten years of absence.**
+**The Struggle:** After his resurrection, he chose to **prioritize her over his duties as king** after she declared she **"can't cross region"** from Jamara. Now he must find a way to **balance his kingdom** and his relationship with his little sister. He finally accepts that Ami can't return to Chaka and chooses to focus on being her **supportive brother** rather than forcing her return.
 
-**The Struggle:**
-After his resurrection, he chose to **prioritize her over his duties as king** after she declared she **"can't cross region"** from Jamara.
+**Dubaku (Vaka/Advisor) 🗣️**
+Ahmad views him as a **close friend and Vaka (advisor).**
 
-Now he must find a way to **balance his kingdom** and his relationship with his little sister.
+**Their Contentious Relationship:** Dubaku constantly nags Ahmad about **putting the kingdom first.**
 
-He finally accepts that Ami can't return to Chaka and chooses to focus on being her **supportive brother** rather than forcing her return.`
-            },
-            relationshipDubaku: {
-                title: "Relationship: Dubaku (Vaka/Advisor) 🗣️",
-                content: `Ahmad views him as a **close friend and Vaka (advisor).**
+**The Betrayal:** Dubaku briefly **poisoned Ahmad with a tonic** to erase Seraphina from his memory, an action Ahmad later **forgave.** This incident led Ahmad to propose marriage to **Jelani** (Apple in disguise) while under the spell. The spell was broken when Seraphina confronted him.
 
-**Their Contentious Relationship:**
-Dubaku constantly nags Ahmad about **putting the kingdom first.**
+**King Davidson (Friend) 💜**
+Davidson is **Ami's father figure.**
 
-**The Betrayal:**
-Dubaku briefly **poisoned Ahmad with a tonic** to erase Seraphina from his memory, an action Ahmad later **forgave.**
+**Initial Conflict:** Ahmad initially **yelled at Davidson** for losing Ami.
 
-This incident led Ahmad to propose marriage to **Jelani** (Apple in disguise) while under the spell.
-
-The spell was broken when Seraphina confronted him.`
-            },
-            relationshipDavidson: {
-                title: "Relationship: King Davidson (Friend) 💜",
-                content: `Davidson is **Ami's father figure.**
-
-**Initial Conflict:**
-Ahmad initially **yelled at Davidson** for losing Ami.
-
-**Acceptance:**
-Eventually Ahmad recognized that Davidson provided the **stable life Ami needed** during his ten-year absence.
-
-They have reconciled, and Ahmad now respects Davidson's role in Ami's life.`
+**Acceptance:** Eventually Ahmad recognized that Davidson provided the **stable life Ami needed** during his ten-year absence. They have reconciled, and Ahmad now respects Davidson's role in Ami's life.`
             },
             personality: {
                 title: "Personality & Traits",
@@ -8321,89 +8241,57 @@ However, her experiences left her **profoundly scarred:**
 - Constantly **seeing danger where there is none**
 - Wears her **mother's death as a heavy emotional burden**`
             },
-            relationshipMalachai: {
-                title: "Relationship: King Malachai (Husband - Ex-wife, later widow) 💔",
-                content: `Her former husband, who **loved her obsessively** but was **abusive and manipulative**. He is the father of her son, Alex.
+            relationships: {
+                title: "Relationships",
+                content: `**King Malachai (Husband - Ex-wife, later widow) 💔**
+Her former husband, who **loved her obsessively** but was **abusive and manipulative**. He is the father of her son, Alex.
 
-**Their Love:**
-They were **deeply in love** at the beginning of their marriage, but King Malachai's true self gradually emerged.
+**Their Love:** They were **deeply in love** at the beginning of their marriage, but King Malachai's true self gradually emerged.
 
-**The Abuse:**
-Rosa eventually fled from him, attempted to kill him, and rejected him entirely, declaring she had been **"faking it all"** and never truly loved him.
+**The Abuse:** Rosa eventually fled from him, attempted to kill him, and rejected him entirely, declaring she had been **"faking it all"** and never truly loved him. Malachai drove her to desperation through a decade of control and abuse.
 
-**Malachai's Control:**
-Malachai drove her to desperation through a decade of control and abuse.
+**Final Words:** When facing his own death, he released her from his vow of protection, stating: *"Our amorous relationship is concluded; I shall become your enemy."*
 
-**Final Words:**
-When facing his own death, he released her from his vow of protection, stating:
+**Alexandria (Mother - Deceased) 🌹**
+Rosa's mother, who fostered her strong sense of faith.
 
-*"Our amorous relationship is concluded; I shall become your enemy."*`
-            },
-            relationshipAlexandria: {
-                title: "Relationship: Alexandria (Mother - Deceased) 🌹",
-                content: `Rosa's mother, who fostered her strong sense of faith.
+**The Sacrifice:** Alexandria **sacrificed herself** to Malachai's forces so Rosa and her people could escape during the first capture.
 
-**The Sacrifice:**
-Alexandria **sacrificed herself** to Malachai's forces so Rosa and her people could escape during the first capture.
+**The Execution:** Malachai later brutally **executed her by dropping her into a flaming pit**, telling Rosa it was her fault for running.
 
-**The Execution:**
-Malachai later brutally **executed her by dropping her into a flaming pit**, telling Rosa it was her fault for running.
+**The Legacy:** Rosa wears her mother's death as a heavy emotional burden and **named her sanctuary after her** - Alexandria, a refuge built in honor of her mother's sacrifice. 🏰
 
-**The Legacy:**
-Rosa wears her mother's death as a heavy emotional burden and **named her sanctuary after her** - Alexandria, a refuge built in honor of her mother's sacrifice. 🏰`
-            },
-            relationshipAlex: {
-                title: "Relationship: Alex Al'sekemu (Son) 👶✨",
-                content: `Rosa secretly gave birth to Malachai's son **nine years after her escape**, successfully hiding him in Alexandria.
+**Alex Al'sekemu (Son) 👶✨**
+Rosa secretly gave birth to Malachai's son **nine years after her escape**, successfully hiding him in Alexandria.
 
-**Divine Eyes:**
-The boy has **divine golden eyes** (a sign of his father's true nature as Al'sekemu).
+**Divine Eyes:** The boy has **divine golden eyes** (a sign of his father's true nature as Al'sekemu).
 
-**Fierce Protection:**
-She is **fiercely protective** of him and raises him in Alexandria, away from Malachai's influence.
+**Fierce Protection:** She is **fiercely protective** of him and raises him in Alexandria, away from Malachai's influence. Rosa keeps him safe from his father's legacy, determined to give him a life of freedom.
 
-Rosa keeps him safe from his father's legacy, determined to give him a life of freedom.`
-            },
-            relationshipFausto: {
-                title: "Relationship: Fausto (Fiancé - Deceased) 💔",
-                content: `A **historian and archaeologist** whom Rosa loved deeply.
+**Fausto (Fiancé - Deceased) 💔**
+A **historian and archaeologist** whom Rosa loved deeply.
 
-**The Engagement:**
-She was engaged to marry him, hoping to build a future together.
+**The Engagement:** She was engaged to marry him, hoping to build a future together.
 
-**The Murder:**
-**King Malachai secretly had him murdered by a sea monster** to remove him as a rival, clearing the way for him to marry Rosa himself.
+**The Murder:** **King Malachai secretly had him murdered by a sea monster** to remove him as a rival, clearing the way for him to marry Rosa himself. This betrayal was kept hidden from Rosa until much later.
 
-This betrayal was kept hidden from Rosa until much later.`
-            },
-            relationshipOriana: {
-                title: "Relationship: Lady Oriana (Rival) 🔥",
-                content: `Malachai's lover, whom Rosa **loathed** for her lack of morals and for having the child (Valiyah) that Rosa desperately wanted.
+**Lady Oriana (Rival) 🔥**
+Malachai's lover, whom Rosa **loathed** for her lack of morals and for having the child (Valiyah) that Rosa desperately wanted.
 
-**The Final Straw:**
-Learning that **Oriana was pregnant with Malachai's child** was Rosa's final straw - the moment she decided to leave him for good.
+**The Final Straw:** Learning that **Oriana was pregnant with Malachai's child** was Rosa's final straw - the moment she decided to leave him for good.
 
-**The Secret:**
-Oriana knew Rosa was escaping but **chose to let her go.**`
-            },
-            relationshipPrimroses: {
-                title: "Relationship: The Primrose Triplets (Allies) 🌸",
-                content: `Rosa was briefly an ally of the triplets.
+**The Secret:** Oriana knew Rosa was escaping but **chose to let her go.**
 
-**Kabina** rescued her from the destruction of Alexandria when Malachai found and destroyed her sanctuary.`
-            },
-            relationshipSoha: {
-                title: "Relationship: Soha (Goddess - Benefactor) ✨",
-                content: `The **goddess of Eudora's star**, who helped Rosa and her people escape to safety and establish Alexandria.`
-            },
-            relationshipEudora: {
-                title: "Relationship: Queen Eudora (Protector) 🌿",
-                content: `**Initially dismissive** of Eudora's power and faith, Rosa eventually accepted Eudora's protection when the goddess created a **force field around Alexandria.**
+**The Primrose Triplets (Allies) 🌸**
+Rosa was briefly an ally of the triplets. **Kabina** rescued her from the destruction of Alexandria when Malachai found and destroyed her sanctuary.
 
-**The Turning Point:**
-After her mother's death and witnessing Eudora's power, Rosa declared:
+**Soha (Goddess - Benefactor) ✨**
+The **goddess of Eudora's star**, who helped Rosa and her people escape to safety and establish Alexandria.
 
-*"I believe now, Mama."* 🙏`
+**Queen Eudora (Protector) 🌿**
+**Initially dismissive** of Eudora's power and faith, Rosa eventually accepted Eudora's protection when the goddess created a **force field around Alexandria.**
+
+**The Turning Point:** After her mother's death and witnessing Eudora's power, Rosa declared: *"I believe now, Mama."* 🙏`
             },
             personality: {
                 title: "Personality & Traits",
@@ -8976,20 +8864,20 @@ But after his **redemption and transformation**, their bond healed.
 
 She now sees him as her **true father figure.** 💙`
             },
-            relationshipIsaiah: {
-                title: "Relationship: King Isaiah (Father - Deceased) 👑💔",
-                content: `Her **deceased father and best friend.**
+            relationships: {
+                title: "Relationships",
+                content: `**King Isaiah (Father - Deceased) 👑💔**
+Her **deceased father and best friend.**
 
 He was her **protector**, the one who **spun her around** and called her **"My little love."**
 
 **Memories:**
 Memories of him - his laughter, his theatrical energy, his love for her - helped her **heal and reconnect with her brother Ahmad.**
 
-She carries his legacy in her **Chaka royal bracelet and tiara**, even though she's chosen to live in Jamara. 👑✨`
-            },
-            relationshipAhmad: {
-                title: "Relationship: King Ahmad (Brother) 👑⭐",
-                content: `Her **older brother**, who calls her his **little star.** ⭐
+She carries his legacy in her **Chaka royal bracelet and tiara**, even though she's chosen to live in Jamara. 👑✨
+
+**King Ahmad (Brother) 👑⭐**
+Her **older brother**, who calls her his **little star.** ⭐
 
 **The Absence:**
 Ahmad had been **dead for ten years**, absent from Ami's life from age five to fifteen.
@@ -9003,11 +8891,10 @@ She found peace when they settled into **playing Princess and Dragons together**
 When Ahmad asked her to come back to Chaka, Ami told him, **She cannot leave Jamara - it's her home now.**
 
 **Ahmad's Choice:**
-Ahmad **accepted this** and chose to **prioritize their relationship over his duties to Chaka**, visiting her in Jamara instead. 💙⭐`
-            },
-            relationshipCasanova: {
-                title: "Relationship: Casanova (White Tiger with Blue Stripes) - Guardian 🐅",
-                content: `Her **loyal guardian** was created by Queen Eudora.
+Ahmad **accepted this** and chose to **prioritize their relationship over his duties to Chaka**, visiting her in Jamara instead. 💙⭐
+
+**Casanova (White Tiger with Blue Stripes) - Guardian 🐅**
+Her **loyal guardian** was created by Queen Eudora.
 
 Casanova is a **white tiger with blue stripes** who has protected Ami since she was fleeing alone through the woods.
 
@@ -9026,19 +8913,17 @@ Whether this is literally true or a comforting belief is unclear, but Casanova's
 - Found the Zikamunzi Vault in the Lifebloom Field
 - Defended Ami during kidnapping attempts
 - Traveled with Ami, Sanaa, and Simba as their guardian
-- Rescued Ami from King Onangwatgo 🛡️`
-            },
-            relationshipSeraphina: {
-                title: "Relationship: Seraphina Primrose (Friend/Future Sister-in-Law) 🌸",
-                content: `Her **long-lost friend** and **future sister-in-law** (Seraphina married Ahmad).
+- Rescued Ami from King Onangwatgo 🛡️
+
+**Seraphina Primrose (Friend/Future Sister-in-Law) 🌸**
+Her **long-lost friend** and **future sister-in-law** (Seraphina married Ahmad).
 
 Ami **ran to Seraphina for comfort** after Seraphina saved her on Mount Eetheria.
 
-Seraphina became a **woman role model Ami desperately needed** in her life - a source of **strength, protection, and guidance.** 💜🌸`
-            },
-            relationshipEudora: {
-                title: "Relationship: Queen Eudora (Protector) 🌿",
-                content: `The Queen, who **created Casanova to protect Ami** when she was fleeing alone.
+Seraphina became a **woman role model Ami desperately needed** in her life - a source of **strength, protection, and guidance.** 💜🌸
+
+**Queen Eudora (Protector) 🌿**
+The Queen, who **created Casanova to protect Ami** when she was fleeing alone.
 
 Ami was briefly at **Eudora's palace for safety** but left, trying to return home. 🌿✨`
             },
@@ -9272,9 +9157,10 @@ After his wife's murder and a profound spiritual journey with Ceón Eu'dore, Mak
 
 Ceón showed Makani that **hatred can become deadly** and helped him find **forgiveness.** 🙏✨`
             },
-            relationshipMaui: {
-                title: "Relationship: Maui (Father - Reconciled) 🌊⚡",
-                content: `The relationship was marked by **profound hatred** and accusations that Maui was a **"slave to Eudora."**
+            relationships: {
+                title: "Relationships",
+                content: `**Maui (Father - Reconciled) 🌊⚡**
+The relationship was marked by **profound hatred** and accusations that Maui was a **"slave to Eudora."**
 
 **The Resentment:**
 Makani felt Maui's duty to Queen Eudora made him a **neglectful father** who prioritized the world over his own family.
@@ -9284,11 +9170,10 @@ Makani **started a hate campaign** against his father, rejecting him repeatedly,
 **Reconciliation:**
 They achieved **emotional reconciliation** when Makani **asked for forgiveness**, acknowledging that Maui had **secured his future** and had **loved him all along.**
 
-Their relationship is now **healing**, though the scars of neglect remain. 🌊💙`
-            },
-            relationshipKabina: {
-                title: "Relationship: Kabina (Partner - Primrose Triplet) 🌸💜",
-                content: `His **girlfriend/lover** is one of the Primrose Triplets.
+Their relationship is now **healing**, though the scars of neglect remain. 🌊💙
+
+**Kabina (Partner - Primrose Triplet) 🌸💜**
+His **girlfriend/lover** is one of the Primrose Triplets.
 
 **Their Journey:**
 - She initially **rejected his advances and commitment**, unsure of her feelings
@@ -9301,50 +9186,45 @@ Makani **voluntarily ended their relationship** to prevent relapsing into old wa
 
 He **promised to return** when he is a **"better man"** for her. 💪
 
-They maintain a **close, loving friendship** while he focuses on self-improvement. 🌸`
-            },
-            relationshipMalachai: {
-                title: "Relationship: King Malachai (Mentor/Manipulator) 👑⚔️",
-                content: `Recognized Makani's potential and **used him to break Maui's heart**, manipulating him with promises of recognition and power.
+They maintain a **close, loving friendship** while he focuses on self-improvement. 🌸
+
+**King Malachai (Mentor/Manipulator) 👑⚔️**
+Recognized Makani's potential and **used him to break Maui's heart**, manipulating him with promises of recognition and power.
 
 **Manipulation:**
 - Malachai used Makani as a **key figure in his military campaigns** against the North Nation
 - When Makani's pregnant wife was murdered, Malachai **intervened to prevent Makani from succumbing to vengeance**, challenging him to **choose survival over killing**
 
-Malachai was both a **manipulator** and an **unexpected source of harsh wisdom** in Makani's life. 💔⚔️`
-            },
-            relationshipElikapeka: {
-                title: "Relationship: Elikapeka (Wife/Lover - Deceased) 💔",
-                content: `His **wife**, whom he **dearly loved** because she loved him as **Makani**, not as Maui's son, not as a demigod's heir, **just as himself.**
+Malachai was both a **manipulator** and an **unexpected source of harsh wisdom** in Makani's life. 💔⚔️
+
+**Elikapeka (Wife/Lover - Deceased) 💔**
+His **wife**, whom he **dearly loved** because she loved him as **Makani**, not as Maui's son, not as a demigod's heir, **just as himself.**
 
 **The Tragedy:**
 She was **pregnant** when she was **brutally murdered** by **Xochitl, the Sultan of Qunite**, as a message to Malachai. 💔⚔️
 
 Her death unleashed a **powerful, vengeful rage** in Makani that nearly consumed him.
 
-She was his **true love**, the one person who saw him for who he truly was. 💔`
-            },
-            relationshipCeon: {
-                title: "Relationship: Ceón Eu'dore (Spiritual Mentor) 🙏✨",
-                content: `The **spiritual leader in Abarah** who helped Makani find **forgiveness and self-acceptance.**
+She was his **true love**, the one person who saw him for who he truly was. 💔
+
+**Ceón Eu'dore (Spiritual Mentor) 🙏✨**
+The **spiritual leader in Abarah** who helped Makani find **forgiveness and self-acceptance.**
 
 **The Gift:**
 Ceón **granted Makani forgiveness without needing a confession**, stating he had **already moved beyond his sins.**
 
-Ceón showed Makani that **hatred can become deadly** and guided him toward **redemption.** 🙏💙`
-            },
-            relationshipXochitl: {
-                title: "Relationship: Xochitl (Enemy) ⚔️💔",
-                content: `The **Sultan of Qunite** brutally murdered Makani's pregnant wife, **Elikapeka**, as a message to King Malachai.
+Ceón showed Makani that **hatred can become deadly** and guided him toward **redemption.** 🙏💙
+
+**Xochitl (Enemy) ⚔️💔**
+The **Sultan of Qunite** brutally murdered Makani's pregnant wife, **Elikapeka**, as a message to King Malachai.
 
 **The Rage:**
 Makani **nearly killed him** in a fit of rage and grief, but was **stopped by Malachai**, who challenged him to **walk away from vengeance.**
 
-This moment became a **turning point** in Makani's redemption. 💔⚔️`
-            },
-            relationshipHannas: {
-                title: "Relationship: The Order of Hannas (Former Cult) ⚡",
-                content: `Makani **joined Al'sekemu's cult** and reached **Level 3** before being **imprisoned by them** for refusing to perform a sacrifice.
+This moment became a **turning point** in Makani's redemption. 💔⚔️
+
+**The Order of Hannas (Former Cult) ⚡**
+Makani **joined Al'sekemu's cult** and reached **Level 3** before being **imprisoned by them** for refusing to perform a sacrifice.
 
 **The Betrayal:**
 The cult **rejected him** when he tried to retain some humanity, throwing him in prison when he wouldn't complete the sacrifice. ⚡🔒`
@@ -9589,9 +9469,10 @@ He used a **memory-erasing tonic** to try and remove **Seraphina**, whom he view
 **Redemption:**
 After realizing the full extent of his mistake and being **saved by Ahmad** (the king he betrayed), Dubaku finally understood that **Ahmad's rule of mercy and renewal** was the **new Chaka** that the kingdom needed - not the cold, disciplined approach of Isaiah. 🙏💙`
             },
-            relationshipAhmad: {
-                title: "Relationship: King Ahmad (King/Adopted Son) 👑💙",
-                content: `His **king** and the **child he helped raise** alongside Isaiah.
+            relationships: {
+                title: "Relationships",
+                content: `**King Ahmad (King/Adopted Son) 👑💙**
+His **king** and the **child he helped raise** alongside Isaiah.
 
 **The Belief:**
 Dubaku initially believed Ahmad was **too soft** and **distracted by Seraphina** to rule properly. He thought Ahmad needed to be **more like King Isaiah** - cold, disciplined, authoritative.
@@ -9605,22 +9486,20 @@ After being imprisoned and witnessing Ahmad's mercy, Dubaku **confessed his betr
 This profound act of forgiveness taught Dubaku that **Ahmad's way - mercy and renewal - was the right path for Chaka.**
 
 **Now:**
-Dubaku serves Ahmad with **profound respect and loyalty**, having learned from his mistakes. 💙`
-            },
-            relationshipIsaiah: {
-                title: "Relationship: King Isaiah (Former King - Deceased) 👑💔",
-                content: `Dubaku served as **Isaiah's trusted right hand and Vaka.**
+Dubaku serves Ahmad with **profound respect and loyalty**, having learned from his mistakes. 💙
+
+**King Isaiah (Former King - Deceased) 👑💔**
+Dubaku served as **Isaiah's trusted right hand and Vaka.**
 
 He **grieves profoundly** for Isaiah's legacy, mourning when his statue was shattered.
 
 **The Obsession:**
 He used **Isaiah's memory to justify** attempting to restore **"old Chaka"** - the cold, disciplined, authoritative kingdom Isaiah ruled.
 
-Dubaku believed Ahmad needed to **rule exactly like his father** to save Chaka. 👑`
-            },
-            relationshipSeraphina: {
-                title: "Relationship: Seraphina Primrose (Ahmad's Wife - Former Rival) 🌸",
-                content: `Dubaku viewed Seraphina as an **"unstable Heartlander"** and a **distraction** from Ahmad's duty.
+Dubaku believed Ahmad needed to **rule exactly like his father** to save Chaka. 👑
+
+**Seraphina Primrose (Ahmad's Wife - Former Rival) 🌸**
+Dubaku viewed Seraphina as an **"unstable Heartlander"** and a **distraction** from Ahmad's duty.
 
 **The Rivalry:**
 - He frequently **clashed with her** and **mocked her influence** over the king
@@ -9628,11 +9507,10 @@ Dubaku believed Ahmad needed to **rule exactly like his father** to save Chaka. 
 - His betrayal (the memory-erasing tonic) was **specifically designed to remove Seraphina** from Ahmad's life 💔
 
 **The Realization:**
-However, after his betrayal and Ahmad's forgiveness, Dubaku learned that Seraphina was Ahmad's **necessary foundation** - not a distraction, but his **strength.** 💙🌸`
-            },
-            relationshipJelani: {
-                title: "Relationship: Jelani/Apple (Poison Spirit - Enemy) 🍎⚡",
-                content: `The **poison spirit** who manipulated Dubaku into giving Ahmad the tonic to erase Seraphina's memory.
+However, after his betrayal and Ahmad's forgiveness, Dubaku learned that Seraphina was Ahmad's **necessary foundation** - not a distraction, but his **strength.** 💙🌸
+
+**Jelani/Apple (Poison Spirit - Enemy) 🍎⚡**
+The **poison spirit** who manipulated Dubaku into giving Ahmad the tonic to erase Seraphina's memory.
 
 **The Seeking:**
 Dubaku **sought her out in Jelani's Hollow**, believing he was doing what was best for Chaka.
@@ -9641,20 +9519,18 @@ Dubaku **sought her out in Jelani's Hollow**, believing he was doing what was be
 When he discovered her plan to **murder Ahmad**, Dubaku **fiercely regretted his actions**, calling her a **"harlot"** and **"Jezebel."** 🔥
 
 **The Warning:**
-He **risked his life to warn Ahmad** about her true nature, proving his **loyalty to the king** over his own freedom. 🛡️`
-            },
-            relationshipPrimroses: {
-                title: "Relationship: The Primrose Triplets (Jacthina & Kabina - Adversaries) 🌸",
-                content: `Dubaku considers Jacthina and Kabina to be **"stupid kids"** and the **"grand evil" of Chaka** due to their recklessness and chaotic nature.
+He **risked his life to warn Ahmad** about her true nature, proving his **loyalty to the king** over his own freedom. 🛡️
+
+**The Primrose Triplets (Jacthina & Kabina - Adversaries) 🌸**
+Dubaku considers Jacthina and Kabina to be **"stupid kids"** and the **"grand evil" of Chaka** due to their recklessness and chaotic nature.
 
 **The Horror:**
 He **screamed in horror** when he realized Jacthina had **unleashed the Sandman by mistake.** 😱
 
-He sees them as **dangerous, irresponsible foreigners** who bring **chaos to Chaka.** ⚡`
-            },
-            relationshipSandman: {
-                title: "Relationship: The Sandman (Ancient Assassin - Terror) 👁️🔴",
-                content: `The **ancient assassin** whose red-eyed appearance **terrified Dubaku** and caused him to be **physically incapacitated by fear.**
+He sees them as **dangerous, irresponsible foreigners** who bring **chaos to Chaka.** ⚡
+
+**The Sandman (Ancient Assassin - Terror) 👁️🔴**
+The **ancient assassin** whose red-eyed appearance **terrified Dubaku** and caused him to be **physically incapacitated by fear.**
 
 **The Childhood Trauma:**
 The Sandman **killed Dubaku's father** when Dubaku was **ten years old** - this trauma **shaped his entire life.** 💔
@@ -9665,11 +9541,10 @@ When Jacthina accidentally unleashed the Sandman, it **targeted Dubaku** (perhap
 **The Rescue:**
 Despite his terror, Dubaku risked his life to chase after the creature to protect his city and king.
 
-**Ahmad saved Dubaku** by using a shield of spiritual light - the king he betrayed **protected him from his childhood nightmare.** 🛡️✨`
-            },
-            relationshipAmi: {
-                title: "Relationship: Princess Ami (Adopted Daughter) 👸",
-                content: `Dubaku helped **raise Ami** after her father King Isaiah's death.
+**Ahmad saved Dubaku** by using a shield of spiritual light - the king he betrayed **protected him from his childhood nightmare.** 🛡️✨
+
+**Princess Ami (Adopted Daughter) 👸**
+Dubaku helped **raise Ami** after her father King Isaiah's death.
 
 He served as one of her **guardians and father figures.** 👨‍👧💙`
             },
