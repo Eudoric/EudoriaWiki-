@@ -11171,3 +11171,297 @@ div .xref-link {
         font-size: 0.85rem;
     }
 }
+
+/* ============================================
+   Solar System Diagram
+   ============================================ */
+
+.solar-system-container {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(10, 10, 20, 0.95), rgba(20, 15, 30, 0.9));
+    border: 2px solid var(--accent-primary);
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.solar-system-container .wiki-section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--accent-primary);
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(218, 165, 32, 0.5);
+}
+
+.solar-system {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+/* Sun Styling */
+.sun {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.sun-core {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #fff9e6, #ffd700, #ff8c00);
+    box-shadow:
+        0 0 20px rgba(255, 215, 0, 0.8),
+        0 0 40px rgba(255, 140, 0, 0.6),
+        0 0 60px rgba(255, 215, 0, 0.4),
+        inset 0 -10px 20px rgba(255, 140, 0, 0.3);
+    animation: sunPulse 4s ease-in-out infinite;
+}
+
+@keyframes sunPulse {
+    0%, 100% {
+        box-shadow:
+            0 0 20px rgba(255, 215, 0, 0.8),
+            0 0 40px rgba(255, 140, 0, 0.6),
+            0 0 60px rgba(255, 215, 0, 0.4);
+    }
+    50% {
+        box-shadow:
+            0 0 30px rgba(255, 215, 0, 1),
+            0 0 60px rgba(255, 140, 0, 0.8),
+            0 0 90px rgba(255, 215, 0, 0.6);
+    }
+}
+
+.sun-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 0.7rem;
+    color: #1a0f0a;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Orbital Rings */
+.orbit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(218, 165, 32, 0.15);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.orbit-1 { width: 160px; height: 160px; }
+.orbit-2 { width: 240px; height: 240px; }
+.orbit-3 { width: 320px; height: 320px; }
+.orbit-4 { width: 400px; height: 400px; }
+.orbit-5 { width: 480px; height: 480px; }
+.orbit-6 { width: 560px; height: 560px; }
+.orbit-7 { width: 640px; height: 640px; }
+
+/* Planet Containers */
+.planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    pointer-events: all;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.planet:hover {
+    transform: scale(1.2);
+}
+
+/* Position planets on their orbits */
+.orbit-1 .planet { transform: translate(-50%, -50%) translateY(-80px); }
+.orbit-2 .planet { transform: translate(-50%, -50%) translateX(120px); }
+.orbit-3 .planet { transform: translate(-50%, -50%) translateY(160px); }
+.orbit-4 .planet { transform: translate(-50%, -50%) translateX(-200px); }
+.orbit-5 .planet { transform: translate(-50%, -50%) translateY(-240px) translateX(80px); }
+.orbit-6 .planet { transform: translate(-50%, -50%) translateX(280px) translateY(-20px); }
+.orbit-7 .planet { transform: translate(-50%, -50%) translateY(320px) translateX(-100px); }
+
+/* Planet Spheres - Base Styling */
+.planet-sphere {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.planet:hover .planet-sphere {
+    box-shadow: 0 6px 20px rgba(218, 165, 32, 0.4);
+}
+
+/* Earth/Ta'hanne - Blue and Green */
+.earth-sphere {
+    background: radial-gradient(circle at 35% 35%, #6fb3d2, #4a9d5f, #2c5f3f);
+    box-shadow:
+        0 0 15px rgba(74, 157, 95, 0.6),
+        inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sovi - White/Gray with Swirls */
+.sovi-sphere {
+    background: radial-gradient(circle at 30% 30%, #ffffff, #e8e8e8, #b0b0b0);
+    box-shadow:
+        0 0 15px rgba(255, 255, 255, 0.5),
+        inset -5px -5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.sovi-sphere::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background:
+        linear-gradient(45deg, transparent 30%, rgba(200, 200, 200, 0.3) 50%, transparent 70%),
+        linear-gradient(-45deg, transparent 40%, rgba(180, 180, 180, 0.2) 60%, transparent 80%);
+}
+
+/* Take - Green and Purple Gradient, Tilted */
+.take-sphere {
+    background: linear-gradient(135deg, #4a9d5f 0%, #7b5f9d 50%, #9d4a7b 100%);
+    box-shadow:
+        0 0 15px rgba(123, 95, 157, 0.6),
+        inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+    transform: rotate(15deg);
+}
+
+/* Vurias - Pink/Purple Sparkly */
+.vurias-sphere {
+    background: radial-gradient(circle at 35% 35%, #ff69b4, #da70d6, #8b4789);
+    box-shadow:
+        0 0 20px rgba(218, 112, 214, 0.8),
+        inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+    animation: sparkle 3s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        box-shadow:
+            0 0 20px rgba(218, 112, 214, 0.8),
+            inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow:
+            0 0 30px rgba(255, 105, 180, 1),
+            0 0 40px rgba(218, 112, 214, 0.6),
+            inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Nathora - Very Dark, Shadowy */
+.nathora-sphere {
+    width: 35px;
+    height: 35px;
+    background: radial-gradient(circle at 30% 30%, #2a2a2a, #1a1a1a, #0a0a0a);
+    box-shadow:
+        0 0 20px rgba(0, 0, 0, 0.9),
+        inset -3px -3px 8px rgba(0, 0, 0, 0.8);
+    opacity: 0.85;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+/* Gora - Large with Rings */
+.gora-sphere {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle at 30% 30%, #d4a76a, #c19a6b, #8b7355);
+    box-shadow:
+        0 0 20px rgba(196, 154, 107, 0.6),
+        inset -8px -8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gora-ring {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(75deg);
+    border: 8px solid rgba(218, 165, 32, 0.4);
+    border-radius: 50%;
+    box-shadow:
+        0 0 10px rgba(218, 165, 32, 0.3),
+        inset 0 0 10px rgba(218, 165, 32, 0.2);
+}
+
+/* Demper - Deep Blue */
+.demper-sphere {
+    background: radial-gradient(circle at 30% 30%, #4169e1, #1e3a8a, #0a1929);
+    box-shadow:
+        0 0 15px rgba(65, 105, 225, 0.6),
+        inset -5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.demper-sphere::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background:
+        linear-gradient(180deg, transparent 0%, rgba(30, 58, 138, 0.3) 50%, transparent 100%);
+}
+
+/* Planet Labels */
+.planet-label {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    white-space: nowrap;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .solar-system {
+        height: 400px;
+        transform: scale(0.6);
+    }
+
+    .solar-system-container {
+        padding: 1rem;
+    }
+
+    .solar-system-container .wiki-section-header {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .planet-label {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .solar-system {
+        height: 350px;
+        transform: scale(0.5);
+    }
+}
