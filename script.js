@@ -26027,71 +26027,152 @@ function showChangeLog() {
 function updateCurrentMoonWidget() {
     const moons = eudoriaData.nogaCalendar.moons;
 
+    // Holiday data for each moon
+    const holidays = {
+        0: [ // Eudorasis (March)
+            { day: 1, name: "Bloomday", isNewYear: true },
+            { day: 4, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        1: [ // Primoria (April)
+            { day: 3, name: "Primrose Triplets' Birthday" },
+            { day: 17, name: "Nature's Day" },
+            { day: 21, name: "Aymor's Day - Day of Love" },
+            { day: 27, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        2: [ // Sera (May)
+            { day: 10, name: "Passover (begins)", isMultiDay: true },
+            { day: 17, name: "Passover (ends)" },
+            { day: 23, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        3: [ // Maunox (June)
+            { day: 21, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        4: [ // Naimara (July)
+            { day: 11, name: "Nubi Independence Day" },
+            { day: 13, name: "Jouvert de Naime" },
+            { day: 15, name: "Eudora's Day", isEudoraDay: true },
+            { day: 22, name: "Wine & Watah Festival (begins)", isMultiDay: true },
+            { day: 24, name: "Wine & Watah Festival (ends)" }
+        ],
+        5: [ // Afronox (August)
+            { day: 10, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        6: [ // Eudorine (September)
+            { day: 7, name: "Noga's Day" },
+            { day: 18, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        7: [ // Suliamun (October)
+            { day: 9, name: "Eudora's Day", isEudoraDay: true },
+            { day: 26, name: "Wakan Founding Day" }
+        ],
+        8: [ // Naaviemun (November)
+            { day: 3, name: "Barak Festival Fasting (begins)", isMultiDay: true },
+            { day: 14, name: "Barak Festival Fasting (ends) / Eudora's Day", isEudoraDay: true },
+            { day: 27, name: "Grazeora - Day of Feast (begins)", isMultiDay: true },
+            { day: 28, name: "Grazeora - Day of Feast (ends)" }
+        ],
+        9: [ // Kanythos (December)
+            { day: 15, name: "Eudora's Day", isEudoraDay: true },
+            { day: 28, name: "Soulfall" }
+        ],
+        10: [ // Zendariyah (January)
+            { day: 10, name: "Winter's Day" },
+            { day: 12, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        11: [ // Afrialuna (Feb 1-19)
+            { day: 14, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        12: [ // Yahuahor (Feb 20-28)
+            { day: 20, name: "Yaum Al-Tahrir (begins)", isAllMonth: true },
+            { day: 27, name: "Eudora's Day", isEudoraDay: true }
+        ]
+    };
+
     // Get current date
     const now = new Date();
     const month = now.getMonth(); // 0-11 (January = 0, December = 11)
     const day = now.getDate(); // 1-31
 
     // Map real-world months to Eudorian moons
-    // Eudorian new year starts in March
     let moonIndex;
 
     switch(month) {
-        case 2: // March
-            moonIndex = 0; // Eudorasis (New Year)
-            break;
-        case 3: // April
-            moonIndex = 1; // Primoria
-            break;
-        case 4: // May
-            moonIndex = 2; // Sera
-            break;
-        case 5: // June
-            moonIndex = 3; // Maunox
-            break;
-        case 6: // July
-            moonIndex = 4; // Naimara
-            break;
-        case 7: // August
-            moonIndex = 5; // Afronox
-            break;
-        case 8: // September
-            moonIndex = 6; // Eudorine
-            break;
-        case 9: // October
-            moonIndex = 7; // Suliamun
-            break;
-        case 10: // November
-            moonIndex = 8; // Naaviemun
-            break;
-        case 11: // December
-            moonIndex = 9; // Kanythos
-            break;
-        case 0: // January
-            moonIndex = 10; // Zendariyah
-            break;
-        case 1: // February
-            if (day <= 19) {
-                moonIndex = 11; // Afrialuna (Feb 1-19)
-            } else {
-                moonIndex = 12; // Yahuahor (Feb 20-28/29)
-            }
-            break;
-        default:
-            moonIndex = 0; // Fallback to first moon
+        case 2: moonIndex = 0; break; // March - Eudorasis
+        case 3: moonIndex = 1; break; // April - Primoria
+        case 4: moonIndex = 2; break; // May - Sera
+        case 5: moonIndex = 3; break; // June - Maunox
+        case 6: moonIndex = 4; break; // July - Naimara
+        case 7: moonIndex = 5; break; // August - Afronox
+        case 8: moonIndex = 6; break; // September - Eudorine
+        case 9: moonIndex = 7; break; // October - Suliamun
+        case 10: moonIndex = 8; break; // November - Naaviemun
+        case 11: moonIndex = 9; break; // December - Kanythos
+        case 0: moonIndex = 10; break; // January - Zendariyah
+        case 1: moonIndex = day <= 19 ? 11 : 12; break; // February
+        default: moonIndex = 0;
     }
 
     const currentMoon = moons[moonIndex];
+    const currentHolidays = holidays[moonIndex] || [];
+
+    // Find upcoming holidays and check if today is a holiday
+    const upcomingHolidays = currentHolidays
+        .filter(h => h.day >= day)
+        .slice(0, 2);
+
+    const todayHoliday = currentHolidays.find(h => h.day === day);
 
     // Update widget
     const iconElement = document.getElementById('moonWidgetIcon');
     const nameElement = document.getElementById('moonWidgetName');
-    const meaningElement = document.getElementById('moonWidgetMeaning');
+    const zodiacElement = document.getElementById('moonWidgetZodiac');
+    const holidaysElement = document.getElementById('moonWidgetHolidays');
 
-    if (iconElement && nameElement && meaningElement && currentMoon) {
+    if (iconElement && nameElement && zodiacElement && holidaysElement && currentMoon) {
         iconElement.textContent = currentMoon.icon;
         nameElement.textContent = currentMoon.name;
-        meaningElement.textContent = currentMoon.meaning;
+
+        // Display zodiac
+        zodiacElement.innerHTML = `
+            <span class="zodiac-symbol">${currentMoon.zodiac.symbol}</span>
+            <span class="zodiac-sign">${currentMoon.zodiac.sign}</span>
+        `;
+
+        // Display holidays
+        let holidaysHTML = '';
+
+        if (todayHoliday) {
+            const leafIcon = todayHoliday.isEudoraDay ? '🍃' : '🎉';
+            holidaysHTML += `<div class="holiday-today ${todayHoliday.isEudoraDay ? 'eudora-day' : ''}">
+                <span class="holiday-icon">${leafIcon}</span>
+                <strong>Today:</strong> ${todayHoliday.name}
+            </div>`;
+        }
+
+        if (upcomingHolidays.length > 0) {
+            holidaysHTML += '<div class="holiday-upcoming-label">Upcoming:</div>';
+            upcomingHolidays.forEach(holiday => {
+                const leafIcon = holiday.isEudoraDay ? '🍃' : '';
+                holidaysHTML += `<div class="holiday-item ${holiday.isEudoraDay ? 'eudora-day' : ''}">
+                    ${leafIcon} ${holiday.name} (${holiday.day}${getDaySuffix(holiday.day)})
+                </div>`;
+            });
+        } else if (!todayHoliday) {
+            holidaysHTML += '<div class="holiday-none">No upcoming holidays this moon</div>';
+        }
+
+        holidaysElement.innerHTML = holidaysHTML;
+    }
+}
+
+// Helper function to get day suffix (1st, 2nd, 3rd, etc.)
+function getDaySuffix(day) {
+    if (day >= 11 && day <= 13) return 'th';
+    switch (day % 10) {
+        case 1: return 'st';
+        case 2: return 'nd';
+        case 3: return 'rd';
+        default: return 'th';
     }
 }
 
