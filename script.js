@@ -2631,6 +2631,83 @@ const eudoriaData = {
             }
         ]
     },
+    sevenPlanets: {
+        name: "The Seven Planets of Star Sanctum",
+        tagline: "Each planet bears the name of a divine being, carrying their essence across the cosmos.",
+        description: "In the cosmic dance of Star Sanctum, seven celestial bodies orbit the sun, each named after a divine being whose essence they carry across the void. From Ta'hanne's verdant Earth to the unbothered depths of Demper, these planets reflect the personalities and powers of their divine namesakes.",
+        planets: [
+            {
+                name: "Earth / Ta'hanne",
+                icon: "🌍",
+                color: "#4a9d5f",
+                namedAfter: "Ta'hanne – The First Goddess, Mother Earth",
+                vibe: "🏡 Home World",
+                description: "The home world. Ta'hanne is so revered that Eudorians sometimes call Earth by her name. \"Ta'hanne is round\" and \"Earth is round\" mean the same thing. Without her, nothing would exist.",
+                personality: "Nurturing, foundational, the mother of all life"
+            },
+            {
+                name: "Sovi",
+                icon: "🌪️",
+                color: "#87ceeb",
+                namedAfter: "Sove – Skyfather, God of Sky & Winds (Ta'hanne's husband)",
+                vibe: "💨 The Windy One",
+                description: "A planet of endless winds. Storms sweep across Sovi's surface constantly, honoring the Skyfather's domain.",
+                personality: "Restless, powerful, constantly in motion"
+            },
+            {
+                name: "Take",
+                icon: "⭐",
+                color: "#9b59b6",
+                namedAfter: "Tavek – Father Nature",
+                vibe: "💚💜 Everyone's Favorite",
+                description: "Bright green and royal purple, Take is the closest planet to Earth and visible during special celestial events. It's tilted dramatically – some say from an ancient collision, though never confirmed. Rumored to be livable, with a strange vibe and mysterious plants. The Eudorians have... opinions about this one.",
+                personality: "Mysterious, beloved, full of potential",
+                colors: "Green and royal purple",
+                features: "Dramatically tilted axis, possibly livable, mysterious flora"
+            },
+            {
+                name: "Vurias",
+                icon: "💜",
+                color: "#ff69b4",
+                namedAfter: "Vivatasia – Mother of the Cosmos",
+                vibe: "✨ The Pretty One",
+                description: "Pink and purple with a constantly starlit sky. Stunning to look at, but absolutely not livable. Vurias is a mood-changer – the sky shifts based on the planet's whims. Much like her namesake, she does what she wants. Approach with caution (or don't approach at all).",
+                personality: "Beautiful, unpredictable, independent",
+                colors: "Pink and purple with starlit sky",
+                features: "Sky changes with the planet's mood, not livable"
+            },
+            {
+                name: "Nathora",
+                icon: "🌑",
+                color: "#2c3e50",
+                namedAfter: "Nath – Mixed-gender god who can shapeshift between god and goddess",
+                vibe: "🔮 The Mysterious One",
+                description: "Constant nighttime. Nathora doesn't want to be seen – telescopes report the planet \"closing up\" or literally turning away. An introvert of cosmic proportions. Respects boundaries by enforcing its own.",
+                personality: "Elusive, private, shapeshifting",
+                features: "Permanent darkness, actively avoids observation"
+            },
+            {
+                name: "Gora",
+                icon: "🪐",
+                color: "#d4af37",
+                namedAfter: "Gloria – Goddess of Animals",
+                vibe: "☀️ The Stingy One",
+                description: "Massive planet behind Earth with 4+ moons and a ring that shifts between day and night. Gora needs a LOT of sunlight and isn't shy about taking it – she blocks Earth's light when she needs to, sometimes causing extended darkness. Vurias sits behind Gora and gets no sunlight either. Gora doesn't share.",
+                personality: "Dominant, selfish with resources, territorial",
+                features: "4+ moons, shifting ring system, blocks light from other planets"
+            },
+            {
+                name: "Demper",
+                icon: "💙",
+                color: "#1e90ff",
+                namedAfter: "Ta'hanne's mythic beast companion – a creature who doesn't do much",
+                vibe: "😌 The Chill One",
+                description: "Deep blue water planet, over 90% ocean. Constant chilly, fall-like weather year-round. Demper doesn't cause drama, doesn't have updates, doesn't do anything. Scientists check in: \"Any news from Demper?\" \"No. Just chilling.\" The most unbothered planet in the system, named after a beast who tells Ta'hanne to handle things herself.",
+                personality: "Unbothered, peaceful, perpetually relaxed",
+                features: "90%+ ocean coverage, eternal autumn weather, no drama whatsoever"
+            }
+        ]
+    },
     sacredTexts: {
         bookOfSuleiman: {
             name: "The Book of Suleiman",
@@ -14163,6 +14240,8 @@ function navigateTo(view) {
         renderSevenHeads();
     } else if (view === 'eudoric-zodiac') {
         renderEudoricZodiac();
+    } else if (view === 'seven-planets') {
+        renderSevenPlanets();
     } else if (view === 'god-quiz') {
         renderGodQuiz();
     } else if (view === 'zodiac-quiz') {
@@ -18572,6 +18651,91 @@ function renderEudoricZodiac() {
                     ${housesHTML}
                 </div>
             </div>
+        </div>
+    `;
+}
+
+// Render Seven Planets
+function renderSevenPlanets() {
+    const planets = eudoriaData.sevenPlanets;
+    const contentArea = document.getElementById('contentArea');
+
+    // Generate breadcrumbs
+    const breadcrumbs = generateBreadcrumbs([
+        { name: 'Home', onclick: 'showWelcomeScreen()' },
+        { name: 'Sacred Knowledge', onclick: '' },
+        { name: 'The Seven Planets', onclick: '' }
+    ]);
+
+    // Generate planet cards
+    const planetsHTML = planets.planets.map((planet, index) => `
+        <div class="planet-card" style="border-color: ${planet.color};">
+            <div class="planet-header">
+                <div class="planet-icon" style="color: ${planet.color}; text-shadow: 0 0 20px ${planet.color};">
+                    ${planet.icon}
+                </div>
+                <div class="planet-title-section">
+                    <h3 class="planet-name">${planet.name}</h3>
+                    <div class="planet-vibe">${planet.vibe}</div>
+                </div>
+            </div>
+
+            <div class="planet-named-after">
+                <strong>Named after:</strong> ${planet.namedAfter}
+            </div>
+
+            <p class="planet-description">${planet.description}</p>
+
+            <div class="planet-details">
+                <div class="planet-detail-row">
+                    <span class="planet-detail-label">Personality:</span>
+                    <span class="planet-detail-value">${planet.personality}</span>
+                </div>
+                ${planet.colors ? `
+                    <div class="planet-detail-row">
+                        <span class="planet-detail-label">Colors:</span>
+                        <span class="planet-detail-value">${planet.colors}</span>
+                    </div>
+                ` : ''}
+                ${planet.features ? `
+                    <div class="planet-detail-row">
+                        <span class="planet-detail-label">Features:</span>
+                        <span class="planet-detail-value">${planet.features}</span>
+                    </div>
+                ` : ''}
+            </div>
+        </div>
+    `).join('');
+
+    // Generate See Also links
+    const seeAlsoLinks = [
+        { name: 'Eudoric Gods', onclick: 'renderEudoricGods()' },
+        { name: 'Eudoric Zodiac', onclick: 'renderEudoricZodiac()' },
+        { name: 'Sacred Texts & Tomes', onclick: 'renderSacredTexts()' }
+    ];
+    const seeAlso = generateSeeAlso(seeAlsoLinks);
+
+    // Generate categories
+    const categories = ['Celestial Bodies', 'Sacred Knowledge', 'Eudoric Mythology', 'Astronomy'];
+    const categoriesHTML = generateCategories(categories);
+
+    contentArea.innerHTML = `
+        <div class="region-detail">
+            ${breadcrumbs}
+
+            <h1 class="wiki-title">${planets.name}</h1>
+            <p class="wiki-subtitle">${planets.tagline}</p>
+
+            <div class="wiki-intro">
+                <p>${planets.description}</p>
+            </div>
+
+            <div class="planets-grid">
+                ${planetsHTML}
+            </div>
+
+            ${seeAlso}
+            ${categoriesHTML}
         </div>
     `;
 }
