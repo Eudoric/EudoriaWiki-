@@ -16965,109 +16965,220 @@ function renderEudoraProfile() {
 }
 
 // Render Noga Calendar
+// State for Noga Calendar
+let currentNogaMoonIndex = null;
+
 function renderNogaCalendar() {
+    // Get current real-world date to determine default moon
+    const now = new Date();
+    const month = now.getMonth();
+    const day = now.getDate();
+
+    // Map real-world months to Eudorian moons
+    let defaultMoonIndex;
+    switch(month) {
+        case 2: defaultMoonIndex = 0; break; // March - Eudorasis
+        case 3: defaultMoonIndex = 1; break; // April - Primoria
+        case 4: defaultMoonIndex = 2; break; // May - Sera
+        case 5: defaultMoonIndex = 3; break; // June - Maunox
+        case 6: defaultMoonIndex = 4; break; // July - Naimara
+        case 7: defaultMoonIndex = 5; break; // August - Afronox
+        case 8: defaultMoonIndex = 6; break; // September - Eudorine
+        case 9: defaultMoonIndex = 7; break; // October - Suliamun
+        case 10: defaultMoonIndex = 8; break; // November - Naaviemun
+        case 11: defaultMoonIndex = 9; break; // December - Kanythos
+        case 0: defaultMoonIndex = 10; break; // January - Zendariyah
+        case 1: defaultMoonIndex = day <= 19 ? 11 : 12; break; // February
+        default: defaultMoonIndex = 0;
+    }
+
+    // Initialize current moon index if not set
+    if (currentNogaMoonIndex === null) {
+        currentNogaMoonIndex = defaultMoonIndex;
+    }
+
+    showNogaMoonCalendar(currentNogaMoonIndex);
+}
+
+function showNogaMoonCalendar(moonIndex) {
     const calendar = eudoriaData.nogaCalendar;
     const contentArea = document.getElementById('contentArea');
+    const moon = calendar.moons[moonIndex];
 
-    // Generate breadcrumbs
-    const breadcrumbs = generateBreadcrumbs([
-        { name: 'Home', onclick: 'showWelcomeScreen()' },
-        { name: 'Noga Calendar', onclick: '' }
-    ]);
+    // Holidays data
+    const holidays = {
+        0: [ // Eudorasis (March)
+            { day: 1, name: "Bloomday", isNewYear: true },
+            { day: 4, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        1: [ // Primoria (April)
+            { day: 3, name: "Primrose Triplets' Birthday" },
+            { day: 17, name: "Nature's Day" },
+            { day: 21, name: "Aymor's Day - Day of Love" },
+            { day: 27, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        2: [ // Sera (May)
+            { day: 10, name: "Passover (begins)", isMultiDay: true },
+            { day: 17, name: "Passover (ends)" },
+            { day: 23, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        3: [ // Maunox (June)
+            { day: 21, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        4: [ // Naimara (July)
+            { day: 11, name: "Nubi Independence Day" },
+            { day: 13, name: "Jouvert de Naime" },
+            { day: 15, name: "Eudora's Day", isEudoraDay: true },
+            { day: 22, name: "Wine & Watah Festival (begins)", isMultiDay: true },
+            { day: 24, name: "Wine & Watah Festival (ends)" }
+        ],
+        5: [ // Afronox (August)
+            { day: 10, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        6: [ // Eudorine (September)
+            { day: 7, name: "Noga's Day" },
+            { day: 18, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        7: [ // Suliamun (October)
+            { day: 9, name: "Eudora's Day", isEudoraDay: true },
+            { day: 26, name: "Wakan Founding Day" }
+        ],
+        8: [ // Naaviemun (November)
+            { day: 3, name: "Barak Festival Fasting (begins)", isMultiDay: true },
+            { day: 14, name: "Barak Festival Fasting (ends) / Eudora's Day", isEudoraDay: true },
+            { day: 27, name: "Grazeora - Day of Feast (begins)", isMultiDay: true },
+            { day: 28, name: "Grazeora - Day of Feast (ends)" }
+        ],
+        9: [ // Kanythos (December)
+            { day: 15, name: "Eudora's Day", isEudoraDay: true },
+            { day: 28, name: "Soulfall" }
+        ],
+        10: [ // Zendariyah (January)
+            { day: 10, name: "Winter's Day" },
+            { day: 12, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        11: [ // Afrialuna (Feb 1-19)
+            { day: 14, name: "Eudora's Day", isEudoraDay: true }
+        ],
+        12: [ // Yahuahor (Feb 20-28)
+            { day: 20, name: "Yaum Al-Tahrir (begins)", isAllMonth: true },
+            { day: 27, name: "Eudora's Day", isEudoraDay: true }
+        ]
+    };
 
-    // Generate infobox for Noga Calendar
-    const infoboxHTML = `
-        <div class="wiki-infobox">
-            <div class="wiki-infobox-title">Noga Calendar</div>
-            <div class="wiki-infobox-content">
-                <div class="wiki-infobox-row">
-                    <span class="wiki-infobox-label">Total Moons:</span>
-                    <span class="wiki-infobox-value">${calendar.structure.totalMoons}</span>
-                </div>
-                <div class="wiki-infobox-row">
-                    <span class="wiki-infobox-label">Days per Moon:</span>
-                    <span class="wiki-infobox-value">${calendar.structure.daysPerMoon}</span>
-                </div>
-                <div class="wiki-infobox-row">
-                    <span class="wiki-infobox-label">Days per Year:</span>
-                    <span class="wiki-infobox-value">${calendar.structure.totalDays}</span>
-                </div>
+    const currentHolidays = holidays[moonIndex] || [];
+
+    // Generate 28-day calendar grid
+    const calendarDays = [];
+    for (let day = 1; day <= 28; day++) {
+        const dayHolidays = currentHolidays.filter(h => h.day === day);
+        const hasHoliday = dayHolidays.length > 0;
+        const isEudoraDay = dayHolidays.some(h => h.isEudoraDay);
+
+        const holidayNames = dayHolidays.map(h => h.name).join(', ');
+        const holidayIcon = isEudoraDay ? '🍂' : (hasHoliday ? '🎉' : '');
+
+        calendarDays.push(`
+            <div class="noga-calendar-day ${hasHoliday ? 'has-holiday' : ''} ${isEudoraDay ? 'eudora-day' : ''}"
+                 title="${hasHoliday ? holidayNames : ''}">
+                <div class="day-number">${day}</div>
+                ${holidayIcon ? `<div class="day-holiday-icon">${holidayIcon}</div>` : ''}
+                ${hasHoliday ? `<div class="day-holiday-name">${holidayNames}</div>` : ''}
             </div>
-        </div>
-    `;
+        `);
+    }
 
-    // Generate TOC
-    const sections = ['About the Noga Calendar', 'Calendar Structure', 'The 13 Moons', 'Key Facts'];
-    const toc = generateTOC(sections);
-
-    // Generate See Also links
-    const seeAlsoLinks = [
-        { name: 'Eudoria Overview', onclick: 'renderEudoriaOverview()' },
-        { name: 'Eudora, Mother Nature', onclick: 'renderEudoraProfile()' }
-    ];
-    const seeAlso = generateSeeAlso(seeAlsoLinks);
-
-    // Generate categories
-    const categories = ['Calendar', 'Time', 'Eudoria', 'Culture'];
-    const categoriesHTML = generateCategories(categories);
-
-    const moonsHTML = calendar.moons.map((moon, index) => `
-        <div class="moon-card" onclick="showZodiacModal(${index})">
-            <div class="moon-number">${index + 1}</div>
-            <div class="moon-icon">${moon.icon}</div>
-            <h3>${moon.name}</h3>
-            <p class="moon-meaning">${moon.meaning}</p>
-            <span class="moon-season">${moon.season}</span>
-        </div>
-    `).join('');
-
-    const factsHTML = calendar.keyFacts.map(fact => `
-        <li>${addCrossReferences(fact)}</li>
-    `).join('');
+    const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const weekDaysHTML = weekDays.map(day => `<div class="noga-calendar-weekday">${day}</div>`).join('');
 
     contentArea.innerHTML = `
-        <div class="region-detail">
-            ${breadcrumbs}
-            ${infoboxHTML}
-
-            <h1>${calendar.name}</h1>
-            <p class="overview-tagline">${calendar.tagline}</p>
-
-            ${toc}
-
-            <h2 class="wiki-section-header" id="wiki-section-0">About the Noga Calendar</h2>
-            <p>${addCrossReferences(calendar.description)}</p>
-
-            <h2 class="wiki-section-header" id="wiki-section-1">Calendar Structure</h2>
-            <div class="stats" style="margin-top: 1rem;">
-                <div class="stat-card">
-                    <h3>${calendar.structure.totalMoons}</h3>
-                    <p>Moons</p>
+        <div class="noga-calendar-container">
+            <!-- Calendar Header -->
+            <div class="noga-calendar-header">
+                <div class="noga-calendar-nav">
+                    <button class="noga-nav-btn" onclick="navigateNogaMoon(-1)" title="Previous Moon">
+                        <span class="noga-nav-arrow">‹</span>
+                    </button>
+                    <div class="noga-calendar-title">
+                        <div class="noga-moon-icon">${moon.icon}</div>
+                        <div class="noga-moon-info">
+                            <h1 class="noga-moon-name">${moon.name.toUpperCase()}</h1>
+                            <p class="noga-moon-season">${moon.season}</p>
+                        </div>
+                    </div>
+                    <button class="noga-nav-btn" onclick="navigateNogaMoon(1)" title="Next Moon">
+                        <span class="noga-nav-arrow">›</span>
+                    </button>
                 </div>
-                <div class="stat-card">
-                    <h3>${calendar.structure.daysPerMoon}</h3>
-                    <p>Days per Moon</p>
+                <p class="noga-moon-meaning">${moon.meaning}</p>
+            </div>
+
+            <!-- Zodiac Section -->
+            <div class="noga-zodiac-section">
+                <div class="noga-zodiac-header">
+                    <span class="noga-zodiac-symbol">${moon.zodiac.symbol}</span>
+                    <div class="noga-zodiac-info">
+                        <h3 class="noga-zodiac-sign">${moon.zodiac.sign}</h3>
+                        <p class="noga-zodiac-essence">${moon.zodiac.essence}</p>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <h3>${calendar.structure.totalDays}</h3>
-                    <p>Days per Year</p>
+                <div class="noga-zodiac-caption">"${moon.zodiac.caption}"</div>
+            </div>
+
+            <!-- Calendar Grid -->
+            <div class="noga-calendar-grid-container">
+                <div class="noga-calendar-weekdays">
+                    ${weekDaysHTML}
+                </div>
+                <div class="noga-calendar-grid">
+                    ${calendarDays.join('')}
                 </div>
             </div>
 
-            <h2 class="wiki-section-header" id="wiki-section-2">The 13 Moons</h2>
-            <div class="moons-grid">
-                ${moonsHTML}
+            <!-- Legend -->
+            <div class="noga-calendar-legend">
+                <div class="legend-item">
+                    <span class="legend-icon">🎉</span>
+                    <span class="legend-text">Holiday</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-icon">🍂</span>
+                    <span class="legend-text">Eudora's Day</span>
+                </div>
             </div>
 
-            <h2 class="wiki-section-header" id="wiki-section-3">Key Facts</h2>
-            <ul class="key-facts-list">
-                ${factsHTML}
-            </ul>
-
-            ${seeAlso}
-            ${categoriesHTML}
+            <!-- Moon Info Footer -->
+            <div class="noga-calendar-footer">
+                <div class="noga-footer-info">
+                    <h4>About the Noga Calendar</h4>
+                    <p>${calendar.description}</p>
+                </div>
+                <div class="noga-footer-stats">
+                    <div class="noga-stat">
+                        <span class="stat-number">${calendar.structure.totalMoons}</span>
+                        <span class="stat-label">Moons</span>
+                    </div>
+                    <div class="noga-stat">
+                        <span class="stat-number">${calendar.structure.daysPerMoon}</span>
+                        <span class="stat-label">Days per Moon</span>
+                    </div>
+                    <div class="noga-stat">
+                        <span class="stat-number">${calendar.structure.totalDays}</span>
+                        <span class="stat-label">Days per Year</span>
+                    </div>
+                </div>
+            </div>
         </div>
     `;
+
+    // Store current moon index
+    currentNogaMoonIndex = moonIndex;
+}
+
+function navigateNogaMoon(direction) {
+    const totalMoons = eudoriaData.nogaCalendar.structure.totalMoons;
+    currentNogaMoonIndex = (currentNogaMoonIndex + direction + totalMoons) % totalMoons;
+    showNogaMoonCalendar(currentNogaMoonIndex);
 }
 
 // Render Eudoric Numerals
