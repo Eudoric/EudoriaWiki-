@@ -14836,43 +14836,73 @@ function showTextDetail(textKey) {
                     <p class="god-realm" style="font-style: italic; color: #cd7f32; font-size: 1.3rem; margin-top: 0.5rem;">${text.subtitle}</p>
                 </div>
 
-                <div class="detail-section">
-                    <h3>Divine Essence</h3>
-                    <p>${text.description}</p>
-                    <p style="margin-top: 1rem;"><strong>Author:</strong> ${text.author}</p>
-                    <p><strong>Pages:</strong> ${text.pages}</p>
-                    <p><strong>Language:</strong> ${text.language}</p>
-                    <p><strong>Status:</strong> ${text.status}</p>
-                </div>
+                <details class="wiki-accordion" open>
+                    <summary class="wiki-accordion-header">
+                        <span class="accordion-icon">▶</span>
+                        <h3>Divine Essence</h3>
+                    </summary>
+                    <div class="wiki-accordion-content">
+                        <p>${text.description}</p>
+                        <p style="margin-top: 1rem;"><strong>Author:</strong> ${text.author}</p>
+                        <p><strong>Pages:</strong> ${text.pages}</p>
+                        <p><strong>Language:</strong> ${text.language}</p>
+                        <p><strong>Status:</strong> ${text.status}</p>
+                    </div>
+                </details>
 
-                <div class="detail-section">
-                    <h3>${text.whatItIs.title}</h3>
-                    <p>${text.whatItIs.content}</p>
-                    <ul class="symbols-list" style="margin-top: 1rem;">
-                        ${text.whatItIs.items.map(item => `<li>${item}</li>`).join('')}
-                    </ul>
-                </div>
+                <details class="wiki-accordion">
+                    <summary class="wiki-accordion-header">
+                        <span class="accordion-icon">▶</span>
+                        <h3>${text.whatItIs.title}</h3>
+                    </summary>
+                    <div class="wiki-accordion-content">
+                        <p>${text.whatItIs.content}</p>
+                        <ul class="symbols-list" style="margin-top: 1rem;">
+                            ${text.whatItIs.items.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                </details>
 
-                <div class="detail-section">
-                    <h3>${text.whyCreated.title}</h3>
-                    <p>${text.whyCreated.content}</p>
-                    <p style="margin-top: 1rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-style: italic;">${text.whyCreated.story}</p>
-                </div>
+                <details class="wiki-accordion">
+                    <summary class="wiki-accordion-header">
+                        <span class="accordion-icon">▶</span>
+                        <h3>${text.whyCreated.title}</h3>
+                    </summary>
+                    <div class="wiki-accordion-content">
+                        <p>${text.whyCreated.content}</p>
+                        <p style="margin-top: 1rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-style: italic;">${text.whyCreated.story}</p>
+                    </div>
+                </details>
 
-                <div class="detail-section">
-                    <h3>${text.whatItCanDo.title}</h3>
-                    <p style="padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(218, 165, 32, 0.05)); border-left: 4px solid #8b4513; border-radius: 0.5rem;">${text.whatItCanDo.content}</p>
-                </div>
+                <details class="wiki-accordion">
+                    <summary class="wiki-accordion-header">
+                        <span class="accordion-icon">▶</span>
+                        <h3>${text.whatItCanDo.title}</h3>
+                    </summary>
+                    <div class="wiki-accordion-content">
+                        <p style="padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(218, 165, 32, 0.05)); border-left: 4px solid #8b4513; border-radius: 0.5rem;">${text.whatItCanDo.content}</p>
+                    </div>
+                </details>
 
-                <div class="detail-section">
-                    <h3>${text.whereItIs.title}</h3>
-                    <p>${text.whereItIs.content}</p>
-                </div>
+                <details class="wiki-accordion">
+                    <summary class="wiki-accordion-header">
+                        <span class="accordion-icon">▶</span>
+                        <h3>${text.whereItIs.title}</h3>
+                    </summary>
+                    <div class="wiki-accordion-content">
+                        <p>${text.whereItIs.content}</p>
+                    </div>
+                </details>
 
-                <div class="detail-section">
-                    <h3>${text.significance.title}</h3>
-                    <p style="padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-weight: 600;">${text.significance.content}</p>
-                </div>
+                <details class="wiki-accordion">
+                    <summary class="wiki-accordion-header">
+                        <span class="accordion-icon">▶</span>
+                        <h3>${text.significance.title}</h3>
+                    </summary>
+                    <div class="wiki-accordion-content">
+                        <p style="padding: 1.5rem; background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(75, 54, 124, 0.1)); border-left: 4px solid #daa520; border-radius: 0.5rem; font-weight: 600;">${text.significance.content}</p>
+                    </div>
+                </details>
             </div>
         `;
     } else if (textKey === 'bookOfQuireth') {
