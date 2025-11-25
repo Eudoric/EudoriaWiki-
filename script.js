@@ -18808,6 +18808,75 @@ function renderSevenPlanets() {
                 <p>${planets.description}</p>
             </div>
 
+            <!-- Solar System Diagram -->
+            <div class="solar-system-container">
+                <h2 class="wiki-section-header">The Star Sanctum System</h2>
+                <div class="solar-system">
+                    <div class="sun">
+                        <div class="sun-core"></div>
+                        <div class="sun-label">Sun</div>
+                    </div>
+
+                    <!-- Orbit 1: Earth/Ta'hanne - Closest to sun, home world -->
+                    <div class="orbit orbit-1">
+                        <div class="planet planet-earth">
+                            <div class="planet-sphere earth-sphere"></div>
+                            <div class="planet-label">Earth/Ta'hanne</div>
+                        </div>
+                    </div>
+
+                    <!-- Orbit 2: Take - Second closest, near Earth -->
+                    <div class="orbit orbit-2">
+                        <div class="planet planet-take">
+                            <div class="planet-sphere take-sphere"></div>
+                            <div class="planet-label">Take ⭐</div>
+                        </div>
+                    </div>
+
+                    <!-- Orbit 3: Sovi - Middle position, the windy planet -->
+                    <div class="orbit orbit-3">
+                        <div class="planet planet-sovi">
+                            <div class="planet-sphere sovi-sphere"></div>
+                            <div class="planet-label">Sovi</div>
+                        </div>
+                    </div>
+
+                    <!-- Orbit 4: Gora - Behind Earth, large with rings -->
+                    <div class="orbit orbit-4">
+                        <div class="planet planet-gora">
+                            <div class="planet-sphere gora-sphere">
+                                <div class="gora-ring"></div>
+                            </div>
+                            <div class="planet-label">Gora 🪐</div>
+                        </div>
+                    </div>
+
+                    <!-- Orbit 5: Vurias - Right behind Gora, gets no sunlight -->
+                    <div class="orbit orbit-5">
+                        <div class="planet planet-vurias">
+                            <div class="planet-sphere vurias-sphere"></div>
+                            <div class="planet-label">Vurias 💜</div>
+                        </div>
+                    </div>
+
+                    <!-- Orbit 6: Nathora - Far out, mysterious, constant nighttime -->
+                    <div class="orbit orbit-6">
+                        <div class="planet planet-nathora">
+                            <div class="planet-sphere nathora-sphere"></div>
+                            <div class="planet-label">Nathora 🌑</div>
+                        </div>
+                    </div>
+
+                    <!-- Orbit 7: Demper - Furthest from sun, cold outer reaches -->
+                    <div class="orbit orbit-7">
+                        <div class="planet planet-demper">
+                            <div class="planet-sphere demper-sphere"></div>
+                            <div class="planet-label">Demper 💙</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="planets-grid">
                 ${planetsHTML}
             </div>
