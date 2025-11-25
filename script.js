@@ -17822,113 +17822,163 @@ function renderLawsOfEimes() {
                 </div>
             ` : ''}
 
-            <div class="detail-section">
-                <h3>${laws.definition.title}</h3>
-                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">${laws.definition.description}</p>
-                <div class="concepts-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
-                    ${conceptsHTML}
+            <details class="wiki-accordion" open>
+                <summary class="wiki-accordion-header">
+                    <span class="accordion-icon">▶</span>
+                    <h3>${laws.definition.title}</h3>
+                </summary>
+                <div class="wiki-accordion-content">
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">${laws.definition.description}</p>
+                    <div class="concepts-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
+                        ${conceptsHTML}
+                    </div>
+                    <p class="note-text" style="font-style: italic; color: var(--text-secondary); margin-top: 1rem;">${laws.definition.note}</p>
                 </div>
-                <p class="note-text" style="font-style: italic; color: var(--text-secondary); margin-top: 1rem;">${laws.definition.note}</p>
-            </div>
+            </details>
 
-            <div class="detail-section">
-                <h3>${laws.nature.title}</h3>
-                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">${laws.nature.description}</p>
-                <div class="characteristics-list" style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem;">
-                    ${characteristicsHTML}
+            <details class="wiki-accordion">
+                <summary class="wiki-accordion-header">
+                    <span class="accordion-icon">▶</span>
+                    <h3>${laws.nature.title}</h3>
+                </summary>
+                <div class="wiki-accordion-content">
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">${laws.nature.description}</p>
+                    <div class="characteristics-list" style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem;">
+                        ${characteristicsHTML}
+                    </div>
+                    <p class="note-text" style="font-style: italic; color: var(--text-secondary); margin-top: 1rem;">${laws.nature.note}</p>
                 </div>
-                <p class="note-text" style="font-style: italic; color: var(--text-secondary); margin-top: 1rem;">${laws.nature.note}</p>
-            </div>
+            </details>
 
-            <div class="detail-section">
-                <h3>${laws.whatTheyGovern.title}</h3>
-                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.whatTheyGovern.description}</p>
-                <ul class="key-facts-list" style="margin-bottom: 1rem;">
-                    ${domainsHTML}
-                </ul>
-                <p class="note-text" style="font-style: italic; color: var(--text-secondary);">${laws.whatTheyGovern.note}</p>
-            </div>
-
-            <div class="detail-section">
-                <h3>${laws.creator.title}</h3>
-                <div class="creator-card" style="background: var(--background-elevated); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-primary);">
-                    <h4 style="margin-bottom: 0.5rem; color: var(--accent-primary);">${laws.creator.name}</h4>
-                    <p>${laws.creator.description}</p>
+            <details class="wiki-accordion">
+                <summary class="wiki-accordion-header">
+                    <span class="accordion-icon">▶</span>
+                    <h3>${laws.whatTheyGovern.title}</h3>
+                </summary>
+                <div class="wiki-accordion-content">
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.whatTheyGovern.description}</p>
+                    <ul class="key-facts-list" style="margin-bottom: 1rem;">
+                        ${domainsHTML}
+                    </ul>
+                    <p class="note-text" style="font-style: italic; color: var(--text-secondary);">${laws.whatTheyGovern.note}</p>
                 </div>
-            </div>
+            </details>
 
-            <div class="detail-section">
-                <h3>${laws.structure.title}</h3>
-                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.structure.description}</p>
-                <p style="font-size: 1.1rem; font-weight: 600; color: var(--accent-primary); margin-bottom: 1.5rem; text-align: center;">${laws.structure.summary}</p>
-                <div style="overflow-x: auto;">
-                    <table class="structure-table" style="width: 100%; border-collapse: collapse; background: var(--background-elevated); border-radius: 8px; overflow: hidden;">
-                        <thead>
-                            <tr style="background: var(--accent-primary); color: white;">
-                                <th style="padding: 1rem; text-align: left;">Level</th>
-                                <th style="padding: 1rem; text-align: left;">Name</th>
-                                <th style="padding: 1rem; text-align: left;">Purpose</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${levelsHTML}
-                        </tbody>
-                    </table>
+            <details class="wiki-accordion">
+                <summary class="wiki-accordion-header">
+                    <span class="accordion-icon">▶</span>
+                    <h3>${laws.creator.title}</h3>
+                </summary>
+                <div class="wiki-accordion-content">
+                    <div class="creator-card" style="background: var(--background-elevated); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-primary);">
+                        <h4 style="margin-bottom: 0.5rem; color: var(--accent-primary);">${laws.creator.name}</h4>
+                        <p>${laws.creator.description}</p>
+                    </div>
                 </div>
-            </div>
+            </details>
 
-            <div class="detail-section">
-                <h3>${laws.pillars.title}</h3>
-                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">${laws.pillars.description}</p>
-                <div class="pillars-grid" style="display: grid; gap: 1rem; margin-bottom: 1rem;">
-                    ${pillarsHTML}
+            <details class="wiki-accordion">
+                <summary class="wiki-accordion-header">
+                    <span class="accordion-icon">▶</span>
+                    <h3>${laws.structure.title}</h3>
+                </summary>
+                <div class="wiki-accordion-content">
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.structure.description}</p>
+                    <p style="font-size: 1.1rem; font-weight: 600; color: var(--accent-primary); margin-bottom: 1.5rem; text-align: center;">${laws.structure.summary}</p>
+                    <div style="overflow-x: auto;">
+                        <table class="structure-table" style="width: 100%; border-collapse: collapse; background: var(--background-elevated); border-radius: 8px; overflow: hidden;">
+                            <thead>
+                                <tr style="background: var(--accent-primary); color: white;">
+                                    <th style="padding: 1rem; text-align: left;">Level</th>
+                                    <th style="padding: 1rem; text-align: left;">Name</th>
+                                    <th style="padding: 1rem; text-align: left;">Purpose</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${levelsHTML}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <p class="note-text" style="font-style: italic; color: var(--text-secondary); margin-top: 1rem;">${laws.pillars.note}</p>
-            </div>
+            </details>
 
-            <div class="detail-section">
-                <h3>${laws.impactOnEudoria.title}</h3>
-                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.impactOnEudoria.description}</p>
-                <ul class="key-facts-list">
-                    ${achievementsHTML}
-                </ul>
-            </div>
+            <details class="wiki-accordion">
+                <summary class="wiki-accordion-header">
+                    <span class="accordion-icon">▶</span>
+                    <h3>${laws.pillars.title}</h3>
+                </summary>
+                <div class="wiki-accordion-content">
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">${laws.pillars.description}</p>
+                    <div class="pillars-grid" style="display: grid; gap: 1rem; margin-bottom: 1rem;">
+                        ${pillarsHTML}
+                    </div>
+                    <p class="note-text" style="font-style: italic; color: var(--text-secondary); margin-top: 1rem;">${laws.pillars.note}</p>
+                </div>
+            </details>
 
-            <div class="detail-section">
-                <h3>${laws.foundationOfReality.title}</h3>
-                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.foundationOfReality.description}</p>
-                <div class="consequences-box" style="background: var(--background-elevated); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #d32f2f; margin-top: 1rem;">
-                    <h4 style="margin-bottom: 1rem; color: #d32f2f;">${laws.foundationOfReality.withoutThem.title}</h4>
-                    <ul style="list-style: none; padding: 0;">
-                        ${consequencesHTML}
+            <details class="wiki-accordion">
+                <summary class="wiki-accordion-header">
+                    <span class="accordion-icon">▶</span>
+                    <h3>${laws.impactOnEudoria.title}</h3>
+                </summary>
+                <div class="wiki-accordion-content">
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.impactOnEudoria.description}</p>
+                    <ul class="key-facts-list">
+                        ${achievementsHTML}
                     </ul>
                 </div>
-            </div>
+            </details>
 
-            <div class="detail-section">
-                <h3>${laws.skeletonOfReality.title}</h3>
-                <div class="skeleton-card" style="background: var(--background-elevated); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--accent-primary);">
-                    <p style="font-size: 1.1rem; line-height: 1.8; font-style: italic;">${laws.skeletonOfReality.description}</p>
+            <details class="wiki-accordion">
+                <summary class="wiki-accordion-header">
+                    <span class="accordion-icon">▶</span>
+                    <h3>${laws.foundationOfReality.title}</h3>
+                </summary>
+                <div class="wiki-accordion-content">
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">${laws.foundationOfReality.description}</p>
+                    <div class="consequences-box" style="background: var(--background-elevated); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #d32f2f; margin-top: 1rem;">
+                        <h4 style="margin-bottom: 1rem; color: #d32f2f;">${laws.foundationOfReality.withoutThem.title}</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            ${consequencesHTML}
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </details>
 
-            <div class="detail-section faq-section">
-                <h3>${laws.faq.title}</h3>
-                <div class="faq-container">
-                    ${laws.faq.questions.map((faq, index) => `
-                        <div class="faq-item">
-                            <button class="faq-question" onclick="toggleFAQ('${faq.id}')">
-                                <span class="faq-number">Q${index + 1}</span>
-                                <span class="faq-question-text">${faq.question}</span>
-                                <span class="faq-icon">▼</span>
-                            </button>
-                            <div class="faq-answer" id="${faq.id}" style="display: none;">
-                                ${faq.answer}
+            <details class="wiki-accordion">
+                <summary class="wiki-accordion-header">
+                    <span class="accordion-icon">▶</span>
+                    <h3>${laws.skeletonOfReality.title}</h3>
+                </summary>
+                <div class="wiki-accordion-content">
+                    <div class="skeleton-card" style="background: var(--background-elevated); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--accent-primary);">
+                        <p style="font-size: 1.1rem; line-height: 1.8; font-style: italic;">${laws.skeletonOfReality.description}</p>
+                    </div>
+                </div>
+            </details>
+
+            <details class="wiki-accordion" open>
+                <summary class="wiki-accordion-header">
+                    <span class="accordion-icon">▶</span>
+                    <h3>${laws.faq.title}</h3>
+                </summary>
+                <div class="wiki-accordion-content">
+                    <div class="faq-container">
+                        ${laws.faq.questions.map((faq, index) => `
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFAQ('${faq.id}')">
+                                    <span class="faq-number">Q${index + 1}</span>
+                                    <span class="faq-question-text">${faq.question}</span>
+                                    <span class="faq-icon">▼</span>
+                                </button>
+                                <div class="faq-answer" id="${faq.id}" style="display: none;">
+                                    ${faq.answer}
+                                </div>
                             </div>
-                        </div>
-                    `).join('')}
+                        `).join('')}
+                    </div>
                 </div>
-            </div>
+            </details>
         </div>
     `;
 }
