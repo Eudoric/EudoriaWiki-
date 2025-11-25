@@ -14253,6 +14253,8 @@ function navigateTo(view) {
         renderPillarView(view);
     } else if (view === 'all-regions') {
         renderAllRegions();
+    } else if (view === 'interactive-map') {
+        renderInteractiveMap();
     } else if (view === 'all-regions-nested') {
         renderAllRegionsNested();
     } else if (view === 'region-quiz') {
@@ -19260,6 +19262,101 @@ let quizState = {
 
 // ====================================================================================
 // ALL REGIONS - GRID CARD VIEW
+// ====================================================================================
+// Interactive Map of Eudoria
+// ====================================================================================
+
+function renderInteractiveMap() {
+    const contentArea = document.getElementById('contentArea');
+    const unions = eudoriaData.unions;
+
+    // Union metadata with colors and positions
+    const unionMeta = {
+        norvayn: {
+            displayName: "Norvayn Union",
+            subtitle: "The Northern Reaches",
+            color: "#6fb3d2",
+            icon: "❄️",
+            position: "north"
+        },
+        wesari: {
+            displayName: "Wesari Union",
+            subtitle: "The Western Territories",
+            color: "#90c695",
+            icon: "🌿",
+            position: "west"
+        },
+        estara: {
+            displayName: "Estara Union",
+            subtitle: "The Eastern Lands",
+            color: "#daa520",
+            icon: "☀️",
+            position: "east"
+        },
+        sundra: {
+            displayName: "Sundra Union",
+            subtitle: "The Southern Expanse",
+            color: "#c19a6b",
+            icon: "🏜️",
+            position: "south"
+        }
+    };
+
+    // Generate union sections for the map
+    const unionSectionsHTML = Object.keys(unionMeta).map(unionKey => {
+        const union = unions[unionKey];
+        const meta = unionMeta[unionKey];
+
+        if (!union) return '';
+
+        const regionsHTML = union.regions.map(region => `
+            <div class="map-region-card" onclick="navigateToRegion('${region.id}')" style="border-left: 4px solid ${meta.color};">
+                <div class="map-region-name">${region.name}</div>
+                <div class="map-region-desc">${region.description.substring(0, 80)}...</div>
+            </div>
+        `).join('');
+
+        return `
+            <div class="map-union-section ${meta.position}" style="--union-color: ${meta.color};">
+                <div class="map-union-header">
+                    <span class="map-union-icon">${meta.icon}</span>
+                    <div>
+                        <h2 class="map-union-title">${meta.displayName}</h2>
+                        <p class="map-union-subtitle">${meta.subtitle}</p>
+                    </div>
+                </div>
+                <div class="map-regions-grid">
+                    ${regionsHTML}
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    contentArea.innerHTML = `
+        <div class="interactive-map-container">
+            <div class="map-header">
+                <h1 class="wiki-title">Interactive Map of Eudoria</h1>
+                <p class="wiki-subtitle">Explore the Four Unions and their Regions</p>
+            </div>
+
+            <div class="map-legend">
+                <div class="legend-item">
+                    <span class="legend-icon">🗺️</span>
+                    <span>Click any region to view details</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-icon">🏛️</span>
+                    <span>${Object.values(unions).reduce((total, union) => total + union.regions.length, 0)} Total Regions</span>
+                </div>
+            </div>
+
+            <div class="map-grid">
+                ${unionSectionsHTML}
+            </div>
+        </div>
+    `;
+}
+
 // ====================================================================================
 
 function renderAllRegionsNested() {
