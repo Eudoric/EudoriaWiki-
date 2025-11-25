@@ -25991,10 +25991,131 @@ function buildSearchIndex() {
         });
     }
 
+    // Index Noga Calendar Moons
+    if (eudoriaData.nogaCalendar && eudoriaData.nogaCalendar.moons) {
+        eudoriaData.nogaCalendar.moons.forEach((moon, idx) => {
+            index.push({
+                type: 'Moon',
+                category: 'Noga Calendar',
+                title: moon.name,
+                content: moon.meaning,
+                keywords: `${moon.name} ${moon.meaning} ${moon.zodiac.sign} moon calendar`,
+                view: 'noga-calendar',
+                icon: moon.icon || '🌙'
+            });
+        });
+    }
+
+    // Index Sacred Texts
+    if (eudoriaData.sacredTexts) {
+        Object.entries(eudoriaData.sacredTexts).forEach(([key, text]) => {
+            index.push({
+                type: 'Sacred Text',
+                category: 'Sacred Knowledge',
+                title: text.name,
+                content: text.description || text.subtitle,
+                keywords: `${text.name} ${text.author || ''} ${text.subtitle || ''} book tome sacred`,
+                view: 'sacred-texts',
+                icon: text.icon || '📚',
+                textKey: key
+            });
+        });
+    }
+
+    // Index Seven Planets
+    if (eudoriaData.sevenPlanets && eudoriaData.sevenPlanets.planets) {
+        eudoriaData.sevenPlanets.planets.forEach(planet => {
+            index.push({
+                type: 'Planet',
+                category: 'Star Sanctum',
+                title: planet.name,
+                content: planet.description,
+                keywords: `${planet.name} ${planet.namedAfter} ${planet.vibe} planet astronomy`,
+                view: 'seven-planets',
+                icon: planet.icon || '🪐'
+            });
+        });
+    }
+
+    // Index Eudora's Children
+    if (eudoriaData.eudoraChildren) {
+        eudoriaData.eudoraChildren.forEach(child => {
+            index.push({
+                type: 'Character',
+                category: "Eudora's Children",
+                title: child.name,
+                content: child.tagline || child.description,
+                keywords: `${child.name} ${child.element || ''} ${child.tagline || ''} children eudora`,
+                view: 'eudora-children',
+                icon: child.icon || '👤',
+                childKey: child.name.toLowerCase().replace(/[^a-z0-9]/g, '')
+            });
+        });
+    }
+
+    // Index Inner Circle Members
+    if (eudoriaData.innerCircle) {
+        eudoriaData.innerCircle.forEach(member => {
+            index.push({
+                type: 'Protector',
+                category: "Eudora's Inner Circle",
+                title: member.name,
+                content: member.role || member.description,
+                keywords: `${member.name} ${member.role || ''} protector inner circle guardian`,
+                view: 'inner-circle',
+                icon: '🛡️'
+            });
+        });
+    }
+
+    // Index The Silence
+    index.push({
+        type: 'Historical Event',
+        category: 'Major Events',
+        title: 'The Silence',
+        content: 'Five years when the world held its breath under King Malachai',
+        keywords: 'silence five years malachai alsekemu king deaven oppression stillness',
+        view: 'the-silence',
+        icon: '🔇'
+    });
+
+    // Index Falcon King
+    index.push({
+        type: 'Historical Figure',
+        category: 'History & Lore',
+        title: '300 Years of the Falcon King',
+        content: 'King Malachai, the Silent King, Al\'sekemu\'s 300-year reign over Deaven',
+        keywords: 'falcon king malachai alsekemu 300 years silent king deaven hannas dynasty',
+        view: 'falcon-king',
+        icon: '👑'
+    });
+
+    // Index Interactive Map
+    index.push({
+        type: 'Navigation',
+        category: 'Explore Eudoria',
+        title: 'Interactive Map',
+        content: 'Explore the four unions and all regions of Eudoria',
+        keywords: 'map interactive regions unions wesari estara sundra norvayn geography',
+        view: 'interactive-map',
+        icon: '🗺️'
+    });
+
+    // Index Eudoria Saga
+    index.push({
+        type: 'Literature',
+        category: 'The Eudoria Saga',
+        title: 'The Eudoria Saga',
+        content: 'The epic story series of Eudoria across 11 books',
+        keywords: 'eudoria saga series books story novels epic fantasy',
+        view: 'eudoria-saga',
+        icon: '📖'
+    });
+
     return index;
 }
 
-// Search function
+// Enhanced search function with fuzzy matching and better scoring
 function performSearch(query) {
     if (!query || query.length < 2) return [];
 
@@ -26002,46 +26123,147 @@ function performSearch(query) {
     const lowerQuery = query.toLowerCase();
     const terms = lowerQuery.split(' ').filter(t => t.length > 1);
 
-    const results = searchIndex.filter(item => {
-        const searchText = (item.title + ' ' + item.content + ' ' + item.keywords).toLowerCase();
+    // Calculate relevance score for each item
+    const scoredResults = searchIndex.map(item => {
+        const titleLower = item.title.toLowerCase();
+        const contentLower = (item.content || '').toLowerCase();
+        const keywordsLower = (item.keywords || '').toLowerCase();
+        const allText = `${titleLower} ${contentLower} ${keywordsLower}`;
 
-        // Check if all terms are present
-        return terms.every(term => searchText.includes(term));
+        let score = 0;
+
+        // Exact title match (highest priority)
+        if (titleLower === lowerQuery) {
+            score += 1000;
+        }
+
+        // Title starts with query
+        if (titleLower.startsWith(lowerQuery)) {
+            score += 500;
+        }
+
+        // Title contains full query
+        if (titleLower.includes(lowerQuery)) {
+            score += 250;
+        }
+
+        // Each term matching
+        terms.forEach(term => {
+            // Title contains term
+            if (titleLower.includes(term)) {
+                score += 100;
+            }
+            // Content contains term
+            if (contentLower.includes(term)) {
+                score += 30;
+            }
+            // Keywords contain term
+            if (keywordsLower.includes(term)) {
+                score += 50;
+            }
+        });
+
+        // Fuzzy matching - allow 1-2 character differences
+        if (terms.length === 1 && terms[0].length >= 4) {
+            const term = terms[0];
+            const fuzzyMatches = searchIndex.filter(idx => {
+                const words = idx.title.toLowerCase().split(' ');
+                return words.some(word => {
+                    if (Math.abs(word.length - term.length) > 2) return false;
+                    let diff = 0;
+                    for (let i = 0; i < Math.max(word.length, term.length); i++) {
+                        if (word[i] !== term[i]) diff++;
+                        if (diff > 2) return false;
+                    }
+                    return diff <= 2;
+                });
+            });
+            if (fuzzyMatches.some(m => m.title === item.title)) {
+                score += 20;
+            }
+        }
+
+        // Check if all terms are present (required)
+        const hasAllTerms = terms.every(term => allText.includes(term));
+
+        return {
+            ...item,
+            score: score,
+            hasAllTerms: hasAllTerms
+        };
     });
 
-    // Sort by relevance (title matches first)
-    results.sort((a, b) => {
-        const aTitle = a.title.toLowerCase();
-        const bTitle = b.title.toLowerCase();
-        const aScore = aTitle.includes(lowerQuery) ? 1 : 0;
-        const bScore = bTitle.includes(lowerQuery) ? 1 : 0;
-        return bScore - aScore;
-    });
+    // Filter out items that don't have all terms
+    const validResults = scoredResults.filter(r => r.hasAllTerms && r.score > 0);
 
-    return results.slice(0, 10); // Limit to 10 results
+    // Sort by score (descending)
+    validResults.sort((a, b) => b.score - a.score);
+
+    return validResults.slice(0, 12); // Limit to 12 results
 }
 
-// Display search results
+// Display search results with highlighting and grouping
 function displaySearchResults(results) {
     const searchResults = document.getElementById('searchResults');
+    const searchInput = document.getElementById('searchInput');
+    const query = searchInput.value.trim();
 
     if (results.length === 0) {
-        searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
+        searchResults.innerHTML = `
+            <div class="search-no-results">
+                <div class="search-no-results-icon">🔍</div>
+                <div>No results found for "${query}"</div>
+                <div class="search-no-results-hint">Try different keywords or check spelling</div>
+            </div>`;
         searchResults.style.display = 'block';
         return;
     }
 
-    const resultsHTML = results.map(result => {
-        const resultData = JSON.stringify(result).replace(/"/g, '&quot;');
-        return `<div class="search-result-item" onclick='navigateToResult("${result.view}", ${resultData})'>
-            <div class="search-result-icon">${result.icon}</div>
-            <div class="search-result-content">
-                <div class="search-result-category">${result.category}</div>
-                <div class="search-result-title">${result.title}</div>
-                ${result.content ? `<div class="search-result-snippet">${result.content.substring(0, 100)}...</div>` : ''}
+    // Helper function to highlight search terms
+    function highlightText(text, query) {
+        if (!text || !query) return text;
+        const regex = new RegExp(`(${query})`, 'gi');
+        return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+    }
+
+    // Group results by category
+    const groupedResults = {};
+    results.forEach(result => {
+        if (!groupedResults[result.category]) {
+            groupedResults[result.category] = [];
+        }
+        groupedResults[result.category].push(result);
+    });
+
+    // Build HTML with grouped results
+    let resultsHTML = `
+        <div class="search-results-header">
+            <span class="search-results-count">${results.length} result${results.length !== 1 ? 's' : ''}</span>
+        </div>
+    `;
+
+    Object.entries(groupedResults).forEach(([category, items]) => {
+        resultsHTML += `
+            <div class="search-category-group">
+                <div class="search-category-label">${category}</div>
+                ${items.map(result => {
+                    const resultData = JSON.stringify(result).replace(/"/g, '&quot;');
+                    const highlightedTitle = highlightText(result.title, query);
+                    const highlightedContent = result.content ? highlightText(result.content.substring(0, 120), query) : '';
+
+                    return `
+                        <div class="search-result-item" onclick='navigateToResult("${result.view}", ${resultData})'>
+                            <div class="search-result-icon">${result.icon}</div>
+                            <div class="search-result-content">
+                                <div class="search-result-title">${highlightedTitle}</div>
+                                ${highlightedContent ? `<div class="search-result-snippet">${highlightedContent}...</div>` : ''}
+                            </div>
+                        </div>
+                    `;
+                }).join('')}
             </div>
-        </div>`;
-    }).join('');
+        `;
+    });
 
     searchResults.innerHTML = resultsHTML;
     searchResults.style.display = 'block';
