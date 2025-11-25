@@ -11860,3 +11860,98 @@ div .xref-link {
         font-size: 0.8rem;
     }
 }
+
+/* ============================================
+   Back to Top Button
+   ============================================ */
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-primary), #b8860b);
+    border: 2px solid rgba(218, 165, 32, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.back-to-top:hover {
+    background: linear-gradient(135deg, #f0c040, var(--accent-primary));
+    transform: scale(1.1) translateY(-4px);
+    box-shadow: 0 8px 20px rgba(218, 165, 32, 0.4);
+    border-color: var(--accent-primary);
+}
+
+.back-to-top:active {
+    transform: scale(0.95);
+}
+
+.back-to-top-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a0f0a;
+    line-height: 1;
+}
+
+.back-to-top-text {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #1a0f0a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 50px;
+        height: 50px;
+    }
+
+    .back-to-top-icon {
+        font-size: 1.2rem;
+    }
+
+    .back-to-top-text {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
+    }
+
+    .back-to-top-icon {
+        font-size: 1.1rem;
+    }
+
+    .back-to-top-text {
+        font-size: 0.55rem;
+    }
+}

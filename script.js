@@ -26897,4 +26897,37 @@ function getDaySuffix(day) {
 // Call on page load
 document.addEventListener('DOMContentLoaded', function() {
     updateCurrentMoonWidget();
+    initBackToTopButton();
 });
+
+// =====================================================
+// BACK TO TOP BUTTON
+// =====================================================
+
+// Initialize Back to Top button
+function initBackToTopButton() {
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    const mainContent = document.querySelector('.main-content');
+
+    if (!backToTopBtn || !mainContent) return;
+
+    // Show/hide button based on scroll position
+    mainContent.addEventListener('scroll', function() {
+        if (mainContent.scrollTop > 300) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+}
+
+// Scroll to top smoothly
+function scrollToTop() {
+    const mainContent = document.querySelector('.main-content');
+    if (!mainContent) return;
+
+    mainContent.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
