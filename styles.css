@@ -11279,21 +11279,29 @@ div .xref-link {
     left: 50%;
     pointer-events: all;
     cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
-.planet:hover {
-    transform: scale(1.2);
-}
-
-/* Position planets on their orbits */
+/* Position planets on their orbits - each planet sits ON its orbital ring */
+/* Ring 1 (r=80px): Earth at top (0°) */
 .orbit-1 .planet { transform: translate(-50%, -50%) translateY(-80px); }
-.orbit-2 .planet { transform: translate(-50%, -50%) translateX(120px); }
-.orbit-3 .planet { transform: translate(-50%, -50%) translateY(160px); }
-.orbit-4 .planet { transform: translate(-50%, -50%) translateX(-200px); }
-.orbit-5 .planet { transform: translate(-50%, -50%) translateY(-240px) translateX(80px); }
-.orbit-6 .planet { transform: translate(-50%, -50%) translateX(280px) translateY(-20px); }
-.orbit-7 .planet { transform: translate(-50%, -50%) translateY(320px) translateX(-100px); }
+
+/* Ring 2 (r=120px): Take at top-right (45°) */
+.orbit-2 .planet { transform: translate(-50%, -50%) translateX(85px) translateY(-85px); }
+
+/* Ring 3 (r=160px): Sovi at right (90°) */
+.orbit-3 .planet { transform: translate(-50%, -50%) translateX(160px); }
+
+/* Ring 4 (r=200px): Gora at bottom-right (135°) */
+.orbit-4 .planet { transform: translate(-50%, -50%) translateX(141px) translateY(141px); }
+
+/* Ring 5 (r=240px): Vurias at bottom (180°) */
+.orbit-5 .planet { transform: translate(-50%, -50%) translateY(240px); }
+
+/* Ring 6 (r=280px): Nathora at bottom-left (225°) */
+.orbit-6 .planet { transform: translate(-50%, -50%) translateX(-198px) translateY(198px); }
+
+/* Ring 7 (r=320px): Demper at left (270°) - outermost planet */
+.orbit-7 .planet { transform: translate(-50%, -50%) translateX(-320px); }
 
 /* Planet Spheres - Base Styling */
 .planet-sphere {
@@ -11306,7 +11314,8 @@ div .xref-link {
 }
 
 .planet:hover .planet-sphere {
-    box-shadow: 0 6px 20px rgba(218, 165, 32, 0.4);
+    transform: scale(1.3);
+    box-shadow: 0 8px 24px rgba(218, 165, 32, 0.6);
 }
 
 /* Earth/Ta'hanne - Blue and Green */
