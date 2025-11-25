@@ -14305,6 +14305,8 @@ function navigateTo(view) {
         renderSevenPlanets();
     } else if (view === 'god-quiz') {
         renderGodQuiz();
+    } else if (view === 'god-comparison') {
+        renderGodComparison();
     } else if (view === 'zodiac-quiz') {
         renderZodiacQuiz();
     } else if (view === 'falcon-king') {
@@ -24967,6 +24969,276 @@ function showZodiacQuizResults() {
                 <button class="quiz-restart-btn divine-restart-btn" onclick="startZodiacQuiz()">Discover Another Sign</button>
                 <button class="quiz-explore-btn divine-explore-btn" onclick="navigateTo('eudoric-zodiac')">Explore All Zodiac Signs</button>
             </div>
+        </div>
+    `;
+}
+
+// God Comparison Tool
+let selectedGodsForComparison = [];
+
+function renderGodComparison() {
+    const contentArea = document.getElementById('contentArea');
+    const gods = eudoriaData.eudoricGods;
+
+    // Organize gods by tier
+    const godsByTier = {
+        'Supreme': [],
+        'Major': [],
+        'Minor': [],
+        'Other': []
+    };
+
+    for (const godId in gods) {
+        const god = gods[godId];
+        const tier = god.tier || 'Other';
+        if (godsByTier[tier]) {
+            godsByTier[tier].push({ id: godId, ...god });
+        } else {
+            godsByTier['Other'].push({ id: godId, ...god });
+        }
+    }
+
+    // Sort gods alphabetically within each tier
+    for (const tier in godsByTier) {
+        godsByTier[tier].sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    const tierSections = Object.entries(godsByTier)
+        .filter(([tier, gods]) => gods.length > 0)
+        .map(([tier, gods]) => {
+            const godCheckboxes = gods.map(god => `
+                <label class="god-checkbox-label">
+                    <input type="checkbox"
+                           class="god-checkbox"
+                           value="${god.id}"
+                           onchange="toggleGodSelection('${god.id}')">
+                    <span class="god-checkbox-name">${god.name}</span>
+                </label>
+            `).join('');
+
+            return `
+                <div class="god-tier-section">
+                    <h3 class="god-tier-title">${tier} Gods</h3>
+                    <div class="god-checkbox-grid">
+                        ${godCheckboxes}
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+    contentArea.innerHTML = `
+        <div class="god-comparison-container">
+            <div class="god-comparison-header">
+                <div class="divine-symbol-small">✦</div>
+                <h2>God Comparison Tool</h2>
+                <p class="god-comparison-subtitle">Select multiple gods to compare their domains, powers, and attributes side-by-side</p>
+            </div>
+
+            <div class="god-selection-section">
+                <div class="selection-instructions">
+                    <p><strong>Instructions:</strong> Select 2-6 gods to compare. The comparison table will show their key attributes and differences.</p>
+                    <div class="selection-status">
+                        <span id="selectionCount">0 gods selected</span>
+                        <button class="compare-btn" id="compareBtn" onclick="showGodComparison()" disabled>
+                            Compare Gods
+                        </button>
+                        <button class="clear-selection-btn" onclick="clearGodSelection()">Clear Selection</button>
+                    </div>
+                </div>
+
+                ${tierSections}
+            </div>
+
+            <div id="comparisonResults" class="comparison-results-section" style="display: none;">
+                <!-- Comparison table will be inserted here -->
+            </div>
+        </div>
+    `;
+
+    // Reset selection
+    selectedGodsForComparison = [];
+}
+
+function toggleGodSelection(godId) {
+    const index = selectedGodsForComparison.indexOf(godId);
+
+    if (index > -1) {
+        selectedGodsForComparison.splice(index, 1);
+    } else {
+        // Limit to 6 gods
+        if (selectedGodsForComparison.length >= 6) {
+            alert('You can compare up to 6 gods at a time. Please deselect a god before adding another.');
+            // Uncheck the checkbox
+            const checkbox = document.querySelector(`input[value="${godId}"]`);
+            if (checkbox) checkbox.checked = false;
+            return;
+        }
+        selectedGodsForComparison.push(godId);
+    }
+
+    updateSelectionStatus();
+}
+
+function updateSelectionStatus() {
+    const countSpan = document.getElementById('selectionCount');
+    const compareBtn = document.getElementById('compareBtn');
+    const count = selectedGodsForComparison.length;
+
+    if (countSpan) {
+        countSpan.textContent = `${count} god${count !== 1 ? 's' : ''} selected`;
+    }
+
+    if (compareBtn) {
+        compareBtn.disabled = count < 2;
+    }
+}
+
+function clearGodSelection() {
+    selectedGodsForComparison = [];
+
+    // Uncheck all checkboxes
+    const checkboxes = document.querySelectorAll('.god-checkbox');
+    checkboxes.forEach(cb => cb.checked = false);
+
+    // Update status
+    updateSelectionStatus();
+
+    // Hide comparison results
+    const resultsSection = document.getElementById('comparisonResults');
+    if (resultsSection) {
+        resultsSection.style.display = 'none';
+    }
+}
+
+function showGodComparison() {
+    if (selectedGodsForComparison.length < 2) {
+        alert('Please select at least 2 gods to compare.');
+        return;
+    }
+
+    const gods = eudoriaData.eudoricGods;
+    const selectedGods = selectedGodsForComparison.map(id => ({
+        id: id,
+        ...gods[id]
+    }));
+
+    // Create comparison table
+    const comparisonTable = generateComparisonTable(selectedGods);
+
+    const resultsSection = document.getElementById('comparisonResults');
+    if (resultsSection) {
+        resultsSection.innerHTML = `
+            <div class="comparison-table-header">
+                <h3>Comparison Results</h3>
+                <p>Comparing ${selectedGods.length} gods</p>
+            </div>
+            ${comparisonTable}
+        `;
+        resultsSection.style.display = 'block';
+
+        // Scroll to results
+        resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+function generateComparisonTable(selectedGods) {
+    // Header row with god names
+    const headerRow = `
+        <tr>
+            <th class="comparison-attribute-col">Attribute</th>
+            ${selectedGods.map(god => `
+                <th class="comparison-god-col">
+                    <div class="comparison-god-header">
+                        <div class="god-name">${god.name}</div>
+                        <button class="view-god-btn" onclick="showGodDetail('${god.id}')">View Full Profile</button>
+                    </div>
+                </th>
+            `).join('')}
+        </tr>
+    `;
+
+    // Helper function to get value or display dash
+    const getValue = (god, key) => {
+        const value = god[key];
+        if (Array.isArray(value)) {
+            return value.length > 0 ? value.join(', ') : '—';
+        }
+        return value || '—';
+    };
+
+    // Comparison rows
+    const rows = [
+        {
+            label: 'Tier',
+            key: 'tier',
+            format: (god) => god.tier || '—'
+        },
+        {
+            label: 'Titles',
+            key: 'titles',
+            format: (god) => god.titles ? god.titles.join(', ') : '—'
+        },
+        {
+            label: 'Domains',
+            key: 'domains',
+            format: (god) => god.domains ? god.domains.join(', ') : '—'
+        },
+        {
+            label: 'Symbols',
+            key: 'symbols',
+            format: (god) => god.symbols ? god.symbols.join(', ') : '—'
+        },
+        {
+            label: 'Attributes',
+            key: 'attributes',
+            format: (god) => god.attributes ? god.attributes.join(', ') : '—'
+        },
+        {
+            label: 'Sacred Animal',
+            key: 'sacredAnimal',
+            format: (god) => god.sacredAnimal || '—'
+        },
+        {
+            label: 'Sacred Plant',
+            key: 'sacredPlant',
+            format: (god) => god.sacredPlant || '—'
+        },
+        {
+            label: 'Element',
+            key: 'element',
+            format: (god) => god.element || '—'
+        },
+        {
+            label: 'Alignment',
+            key: 'alignment',
+            format: (god) => god.alignment || '—'
+        },
+        {
+            label: 'Gender',
+            key: 'gender',
+            format: (god) => god.gender || '—'
+        }
+    ];
+
+    const comparisonRows = rows.map(row => `
+        <tr>
+            <td class="comparison-attribute-col"><strong>${row.label}</strong></td>
+            ${selectedGods.map(god => `
+                <td class="comparison-value-col">${row.format(god)}</td>
+            `).join('')}
+        </tr>
+    `).join('');
+
+    return `
+        <div class="comparison-table-wrapper">
+            <table class="god-comparison-table">
+                <thead>
+                    ${headerRow}
+                </thead>
+                <tbody>
+                    ${comparisonRows}
+                </tbody>
+            </table>
         </div>
     `;
 }

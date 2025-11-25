@@ -11955,3 +11955,406 @@ div .xref-link {
         font-size: 0.55rem;
     }
 }
+
+/* ========================================
+   God Comparison Tool Styles
+   ======================================== */
+
+.god-comparison-container {
+    max-width: 100%;
+    padding: 2rem;
+}
+
+.god-comparison-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(45, 122, 79, 0.1), rgba(26, 58, 46, 0.05));
+    border-radius: 1rem;
+    border: 1px solid rgba(111, 179, 210, 0.2);
+}
+
+.god-comparison-header .divine-symbol-small {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent-primary);
+}
+
+.god-comparison-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-primary);
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.god-comparison-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Selection Section */
+.god-selection-section {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(111, 179, 210, 0.3);
+    margin-bottom: 2rem;
+}
+
+.selection-instructions {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(111, 179, 210, 0.2);
+}
+
+.selection-instructions p {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
+
+.selection-status {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.selection-status #selectionCount {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--accent-primary);
+    padding: 0.5rem 1rem;
+    background: rgba(218, 165, 32, 0.1);
+    border-radius: 0.5rem;
+}
+
+.compare-btn {
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, var(--accent-primary), #b8860b);
+    color: #fff;
+    border: 2px solid rgba(218, 165, 32, 0.6);
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.compare-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(218, 165, 32, 0.4);
+    background: linear-gradient(135deg, #b8860b, var(--accent-primary));
+}
+
+.compare-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background: rgba(100, 100, 100, 0.3);
+    border-color: rgba(100, 100, 100, 0.4);
+}
+
+.clear-selection-btn {
+    padding: 0.75rem 1.5rem;
+    background: rgba(200, 50, 50, 0.2);
+    color: #ff6b6b;
+    border: 1px solid rgba(200, 50, 50, 0.4);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clear-selection-btn:hover {
+    background: rgba(200, 50, 50, 0.3);
+    border-color: rgba(200, 50, 50, 0.6);
+    transform: translateY(-2px);
+}
+
+/* God Tier Sections */
+.god-tier-section {
+    margin-bottom: 2rem;
+}
+
+.god-tier-title {
+    font-size: 1.4rem;
+    color: var(--accent-secondary);
+    font-family: 'Cinzel Decorative', serif;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, rgba(45, 122, 79, 0.15), rgba(26, 58, 46, 0.1));
+    border-left: 3px solid var(--accent-secondary);
+    border-radius: 0.25rem;
+}
+
+.god-checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0.75rem;
+}
+
+.god-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(26, 20, 16, 0.6));
+    border: 1px solid rgba(111, 179, 210, 0.2);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.god-checkbox-label:hover {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(26, 20, 16, 0.7));
+    border-color: var(--accent-primary);
+    transform: translateX(4px);
+}
+
+.god-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--accent-primary);
+}
+
+.god-checkbox-name {
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.god-checkbox-label:has(.god-checkbox:checked) {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.2), rgba(184, 134, 11, 0.15));
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 15px rgba(218, 165, 32, 0.3);
+}
+
+/* Comparison Results Section */
+.comparison-results-section {
+    margin-top: 2rem;
+    animation: fadeInUp 0.5s ease;
+}
+
+.comparison-table-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(45, 122, 79, 0.1), rgba(26, 58, 46, 0.05));
+    border-radius: 0.75rem;
+    border: 1px solid rgba(111, 179, 210, 0.2);
+}
+
+.comparison-table-header h3 {
+    font-size: 2rem;
+    color: var(--accent-primary);
+    font-family: 'Cinzel Decorative', serif;
+    margin-bottom: 0.5rem;
+}
+
+.comparison-table-header p {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.god-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(111, 179, 210, 0.3);
+}
+
+.god-comparison-table thead {
+    background: linear-gradient(135deg, rgba(45, 122, 79, 0.2), rgba(26, 58, 46, 0.15));
+    border-bottom: 2px solid var(--accent-primary);
+}
+
+.god-comparison-table th {
+    padding: 1.5rem 1rem;
+    text-align: left;
+    font-family: 'Cinzel Decorative', serif;
+    color: var(--accent-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-right: 1px solid rgba(111, 179, 210, 0.2);
+}
+
+.god-comparison-table th:last-child {
+    border-right: none;
+}
+
+.comparison-attribute-col {
+    width: 180px;
+    min-width: 180px;
+    background: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    left: 0;
+    z-index: 10;
+}
+
+.comparison-god-col {
+    min-width: 250px;
+    text-align: center;
+}
+
+.comparison-god-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.comparison-god-header .god-name {
+    font-size: 1.3rem;
+    color: var(--accent-primary);
+}
+
+.view-god-btn {
+    padding: 0.4rem 0.8rem;
+    background: rgba(218, 165, 32, 0.2);
+    color: var(--accent-primary);
+    border: 1px solid rgba(218, 165, 32, 0.4);
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.view-god-btn:hover {
+    background: rgba(218, 165, 32, 0.3);
+    transform: scale(1.05);
+}
+
+.god-comparison-table tbody tr {
+    border-bottom: 1px solid rgba(111, 179, 210, 0.15);
+    transition: background 0.3s ease;
+}
+
+.god-comparison-table tbody tr:hover {
+    background: rgba(111, 179, 210, 0.05);
+}
+
+.god-comparison-table td {
+    padding: 1rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    border-right: 1px solid rgba(111, 179, 210, 0.1);
+    vertical-align: top;
+}
+
+.god-comparison-table td:last-child {
+    border-right: none;
+}
+
+.comparison-value-col {
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .god-comparison-container {
+        padding: 1rem;
+    }
+
+    .god-comparison-header {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .god-comparison-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .god-comparison-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .god-checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .selection-status {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .selection-status #selectionCount {
+        text-align: center;
+    }
+
+    .compare-btn,
+    .clear-selection-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .comparison-attribute-col {
+        width: 120px;
+        min-width: 120px;
+        font-size: 0.9rem;
+    }
+
+    .comparison-god-col {
+        min-width: 200px;
+    }
+
+    .comparison-god-header .god-name {
+        font-size: 1.1rem;
+    }
+
+    .god-comparison-table th,
+    .god-comparison-table td {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .god-comparison-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .god-tier-title {
+        font-size: 1.2rem;
+    }
+
+    .comparison-table-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .comparison-attribute-col {
+        width: 100px;
+        min-width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .comparison-god-col {
+        min-width: 180px;
+    }
+
+    .view-god-btn {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
