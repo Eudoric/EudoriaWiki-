@@ -1612,6 +1612,61 @@ html {
     border: 1px solid rgba(205, 127, 50, 0.3);
 }
 
+/* Sacred Attributes Section */
+.sacred-attributes-section {
+    background: linear-gradient(135deg, rgba(184, 134, 11, 0.05), rgba(205, 127, 50, 0.03));
+    border: 1px solid rgba(218, 165, 32, 0.2);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.sacred-attributes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.sacred-attribute-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(218, 165, 32, 0.15);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.sacred-attribute-item:hover {
+    background: rgba(218, 165, 32, 0.05);
+    border-color: rgba(218, 165, 32, 0.3);
+    transform: translateY(-2px);
+}
+
+.sacred-attribute-item .attribute-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(218, 165, 32, 0.7);
+    font-family: 'Cinzel', serif;
+}
+
+.sacred-attribute-item .attribute-value {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #cd7f32;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments for Sacred Attributes */
+@media (max-width: 768px) {
+    .sacred-attributes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* God Profile Tabs */
 .god-tabs {
     display: flex;

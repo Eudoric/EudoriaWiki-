@@ -2292,6 +2292,12 @@ const eudoriaData = {
         },
         vivatasia: {
             name: "Vivatasia",
+            tier: "Major",
+            gender: "Female",
+            element: "Cosmic/Celestial (Light + Space)",
+            alignment: "Chaotic Neutral",
+            sacredAnimal: "Moths, Fireflies",
+            sacredPlant: "Moonflowers",
             titles: ["Goddess of the Moon and Stars", "The Unyielding Light", "Keeper of the Thirteen Children"],
             domain: "The Celestial Veil",
             symbols: ["Crescent Mirror", "Falling Star", "Unbound Chain"],
@@ -9828,6 +9834,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
     eudoricGods: {
         sulieman: {
             name: "Suleiman",
+            tier: "Supreme",
+            gender: "Male",
+            element: "Space (ether/void), Metal, Psychic, Necrotic, Radiant",
+            alignment: "Neutral",
+            sacredAnimal: "Bronze-tipped Owls, Lions",
+            sacredPlant: "None",
             titles: ["The First Divine", "God of Wisdom and Wealth", "Creator of Eudoric"],
             domains: [
                 {
@@ -10026,6 +10038,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         tahanne: {
             name: "Ta'hanne",
+            tier: "Foundational",
+            gender: "Female",
+            element: "Earth",
+            alignment: "Neutral Good",
+            sacredAnimal: "Demper, Elephants",
+            sacredPlant: "Cacti, Vours (endangered)",
             titles: ["The Sacred Feminine", "Mother of Form", "She Who Birthed the World"],
             domains: [
                 {
@@ -10090,6 +10108,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         sove: {
             name: "Sove",
+            tier: "Foundational",
+            gender: "Male",
+            element: "Air",
+            alignment: "Lawful Neutral",
+            sacredAnimal: "Birds",
+            sacredPlant: "Dandelion",
             titles: ["God of the Sky and Winds", "Namer of the Cosmos", "Bringer of the Horizon"],
             domains: [
                 {
@@ -10148,6 +10172,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         aghah: {
             name: "Aghah",
+            tier: "Major",
+            gender: "Male",
+            element: "Fire",
+            alignment: "True Neutral",
+            sacredAnimal: "Scorpion, Fox",
+            sacredPlant: "Dragon's Blood Tree",
             titles: ["The Retribution God", "The Victorious One", "He Who Burns Injustice"],
             domains: [
                 {
@@ -10199,6 +10229,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         eckio: {
             name: "Eckio",
+            tier: "Major",
+            gender: "Male",
+            element: "Shadow, Life, Death",
+            alignment: "Neutral Good",
+            sacredAnimal: "Horses",
+            sacredPlant: "Cherry Blossom Tree",
             titles: ["God of Spirits and Xuerai", "The Silent Sentinel", "The Pillar-Builder"],
             domains: [
                 {
@@ -10254,6 +10290,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         naavie: {
             name: "Naavie",
+            tier: "Major",
+            gender: "Female",
+            element: "Earth, Wind",
+            alignment: "Neutral Good",
+            sacredAnimal: "Deer, Squirrels",
+            sacredPlant: "Pumpkin",
             titles: ["The Autumn Goddess", "Naavie of the Harvest", "Keeper of Gratitude", "She Who Ends and Begins"],
             domains: [
                 {
@@ -10316,6 +10358,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         bawksin: {
             name: "Bawksin",
             alternativeName: "Pyrelith",
+            tier: "Foundational",
+            gender: "Male",
+            element: "Fire",
+            alignment: "Chaotic Neutral",
+            sacredAnimal: "Phoenix",
+            sacredPlant: "Phoenix Flame",
             titles: ["The Phoenix God", "Keeper of Ember", "Warden of the Underworld", "The Burning Sentinel"],
             domains: [
                 {
@@ -10381,6 +10429,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         noqvessar: {
             name: "Noq'vessar",
+            tier: "Supreme",
+            gender: "None",
+            element: "Death, Life",
+            alignment: "True Neutral",
+            sacredAnimal: "Savra (three-headed panther)",
+            sacredPlant: "Ashes Cloak",
             titles: ["God of the Afterlife", "Warden of the Banished", "Lord of Lost Souls"],
             domains: [
                 {
@@ -10454,6 +10508,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         tevye: {
             name: "Tevye",
+            tier: "Major",
+            gender: "Male",
+            element: "Water",
+            alignment: "Neutral Evil",
+            sacredAnimal: "Octopus",
+            sacredPlant: "O'sunka Plant",
             titles: ["God of the Deep", "Breaker of Tides", "The Forgotten Surge"],
             domains: [
                 {
@@ -10516,6 +10576,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         kilth: {
             name: "Kilth",
+            tier: "Minor",
+            gender: "Male",
+            element: "Mind, Spirits",
+            alignment: "True Neutral",
+            sacredAnimal: "Chameleon",
+            sacredPlant: "Bilberry",
             titles: ["God of Vision and Prophecy", "The Watcher of Stars", "The Mirror of Time"],
             domains: [
                 {
@@ -10587,6 +10653,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         tatianna: {
             name: "Tati'anna",
+            tier: "Minor",
+            gender: "Female",
+            element: "Air, Mind",
+            alignment: "Chaotic Neutral",
+            sacredAnimal: "Songbirds, Club-winged Manakins",
+            sacredPlant: "Peony, Lily, Tulip, Orchid, Hibiscus",
             titles: ["The Goddess of Music, Beauty, and Art", "The Melodic Tempest", "She Who Commands the Stage"],
             domains: [
                 {
@@ -10649,6 +10721,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         forest: {
             name: "Forest",
+            tier: "Major",
+            gender: "Non-binary",
+            element: "Darkness, Blood, Chaos",
+            alignment: "Chaotic Evil",
+            sacredAnimal: "Wolves, any beast",
+            sacredPlant: "Dirtblower",
             titles: ["The Trickster God", "The Shapeshifter", "He Who Wears Many Faces", "The Beast Below"],
             domains: [
                 {
@@ -10712,6 +10790,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         cris: {
             name: "Cris",
+            tier: "Major",
+            gender: "Non-binary",
+            element: "Darkness, Shadow",
+            alignment: "Chaotic Evil",
+            sacredAnimal: "Snakes, Crocodiles",
+            sacredPlant: "Buria, Mint, Narcissus",
             titles: ["God of the Dead and Chaos", "Creator of the Underworld", "Lord of Dathremar", "The Scaled Betrayer", "He Who Burns Through What He Touches"],
             domains: [
                 {
@@ -10793,6 +10877,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         alsekemu: {
             name: "Al'sekemu",
+            tier: "Foundational",
+            gender: "Male",
+            element: "Space, Metal, Psychic, Necrotic, Radiant, Light",
+            alignment: "Chaotic Neutral",
+            sacredAnimal: "Falcon",
+            sacredPlant: "None",
             titles: ["The Falcon Lord", "Author of Order", "God of Silence and Power"],
             domains: [
                 {
@@ -10874,6 +10964,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         erah: {
             name: "Erah",
+            tier: "Minor",
+            gender: "Male",
+            element: "Metal, Force",
+            alignment: "Chaotic Good",
+            sacredAnimal: "Rhinos",
+            sacredPlant: "Euroa Plant",
             titles: ["God of Strength and War", "The Unyielding Arm"],
             attributes: ["Raw Might", "Courage", "Refusal to Fall"],
             symbols: ["The Hammer of Dawn", "Divine Bronze", "War Drums"],
@@ -10906,6 +11002,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         jesang: {
             name: "Jesang",
+            tier: "Minor",
+            gender: "Jesang",
+            element: "Air, Joy",
+            alignment: "Lawful Neutral",
+            sacredAnimal: "Peacock",
+            sacredPlant: "Laurel",
             titles: ["God of Art and Form", "The Divine Painter", "The Divine Sculptor", "The Divine Dreamer"],
             attributes: ["Beauty", "Creation", "Artistic Expression", "Hope"],
             symbols: ["Palette of Light", "Feather Brushes from Fallen Stars"],
@@ -10940,6 +11042,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         kraft: {
             name: "Kraft",
+            tier: "Minor",
+            gender: "Male",
+            element: "Fire, Metal",
+            alignment: "Lawful Neutral",
+            sacredAnimal: "Beaver, Spiders",
+            sacredPlant: "Oak, Ironwood",
             titles: ["God of Craftsmanship", "Forge-Master of the Heavens", "Patron of Builders"],
             attributes: ["Mastery", "Creation", "Precision", "Dedication"],
             symbols: ["Blackened Hands", "Silver Dust", "Hammer and Anvil"],
@@ -10974,6 +11082,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         bubbly: {
             name: "Bubbly",
+            tier: "Minor",
+            gender: "Female",
+            element: "Water, Joy",
+            alignment: "Neutral Good",
+            sacredAnimal: "Dolphins, Sea Otters",
+            sacredPlant: "Sea Foam Flowers, Bubblecap",
             titles: ["Sea Goddess of Joy and Flow", "The Ocean's Joy", "Goddess of Play"],
             attributes: ["Laughter", "Music", "Spontaneous Love", "Joy", "Flow"],
             symbols: ["Bubbles of Light", "Foam", "Shimmering Waves"],
@@ -11015,6 +11129,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         tonia: {
             name: "Tonia",
+            tier: "Minor",
+            gender: "Non-binary",
+            element: "Air, Joy",
+            alignment: "Chaotic Good",
+            sacredAnimal: "Mockingbirds, Peacocks, Dancing Cranes",
+            sacredPlant: "Jasmine, Bellflowers",
             titles: ["God of Expression and Song", "The Divine Performer", "God of Voice and Movement"],
             attributes: ["Expression", "Truth", "Emotion", "Courage", "Performance"],
             symbols: ["Four Mouths", "One Heart", "The Voice That Wakes"],
@@ -11048,6 +11168,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         swai: {
             name: "Swai",
+            tier: "Minor",
+            gender: "Female",
+            element: "Air, Wind",
+            alignment: "Chaotic Good",
+            sacredAnimal: "Swallows, Hummingbirds",
+            sacredPlant: "Dandelion, Windflowers/Anemones",
             titles: ["Goddess of Winds", "The Restless Sister", "The Sky's Messenger"],
             attributes: ["Freedom", "Movement", "Communication", "Playfulness", "Change"],
             symbols: ["Open Sky", "Spring Breeze", "Dancing Leaves"],
@@ -11086,6 +11212,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         miraleth: {
             name: "Miraleth",
+            tier: "Minor",
+            gender: "Female",
+            element: "Shadow, Mind",
+            alignment: "True Neutral",
+            sacredAnimal: "Sphinx, Owl",
+            sacredPlant: "Mistletoe, Night-blooming Cereus",
             titles: ["Goddess of Hidden Truths", "The Veiled One", "Keeper of Riddles"],
             attributes: ["Mystery", "Revelation", "Discovery", "Secrets", "Wisdom"],
             symbols: ["Veils of Ink and Starlight", "Backward Mirrors", "The Unseen Path"],
@@ -11117,6 +11249,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         vorthak: {
             name: "Vorthak",
+            tier: "Minor",
+            gender: "None/Unknown",
+            element: "Shadow, Mind, Void",
+            alignment: "True Neutral",
+            sacredAnimal: "Moths, Ghosts of extinct creatures",
+            sacredPlant: "Forget-Me-Nots, Dried flowers, Pressed leaves",
             titles: ["Invisible God of Forgotten Memories", "The Absence in Remembrance", "Keeper of What Was Lost"],
             attributes: ["Nostalgia", "Déjà Vu", "Preservation", "Compassion", "Hidden Presence"],
             symbols: ["Empty Frames", "Fading Echoes", "The Space Between Memories"],
@@ -11161,6 +11299,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         jodath: {
             name: "The Jodath Sisters",
             alternativeName: "Joth, Johannth, and Joath",
+            tier: "Minor",
+            gender: "Female (all three)",
+            element: "Water, Light",
+            alignment: "Lawful Neutral",
+            sacredAnimal: "Seahorses, Pearled Jellyfish, Sea Turtles",
+            sacredPlant: "Coral, Sea Pearls, Ocean Jasmine",
             titles: ["The Three Sea Sisters", "Goddesses of the Tides of Emotion", "The Triple Waters"],
             attributes: ["Emotion", "Tides", "Peace", "Passion", "Memory", "Balance"],
             symbols: ["Three Waves", "Floating Temples", "The Moon's Reflection on Water"],
@@ -11230,6 +11374,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         zenbrothers: {
             name: "The Zen Brothers",
             alternativeName: "Zendon, Zan, Zevon, and Zavi",
+            tier: "Major",
+            gender: "Male (all four)",
+            element: "Zendon: Lightning/Force, Zan: Metal/Force, Zevon: Ice/Water/Mind, Zavi: Fire/Light",
+            alignment: "Lawful Good",
+            sacredAnimal: "Zendon: Thunderbirds/Rams, Zan: Wolf/Hawk, Zevon: Snow Leopards/Arctic Foxes, Zavi: Phoenix/Lions",
+            sacredPlant: "Zendon: Oak, Zan: Red Poppy, Zevon: Frost Lily/Winter Sage, Zavi: Red Roses/Fire Lily",
             titles: ["The Four Divine Warriors", "Sons of Lightning and Ice", "Guardians of the Four Strengths"],
             attributes: ["Strength", "War", "Protection", "Endurance", "Clarity", "Passion"],
             symbols: ["Lightning Strike on Glacier", "Four Elements United", "The Four States of Strength"],
@@ -11320,6 +11470,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         tia: {
             name: "Tia",
+            tier: "Major",
+            gender: "Female",
+            element: "Space, Time",
+            alignment: "Chaotic Neutral",
+            sacredAnimal: "Falcon, Sheep",
+            sacredPlant: "Rosemary, Tia Plant",
             titles: ["Goddess of Dreams and Healing", "The Dream Weaver", "Al'sekemu's Beautiful Wife", "The Woman Who Died for Love", "The Salt Pillar", "Mistress of the Court of Order (1%)"],
             attributes: ["Obsessive devotion", "Manipulative cunning", "Desperate need for validation", "Unwavering loyalty to Al'sekemu", "Willingness to betray even her creator", "Theatrical and dramatic", "Deeply insecure beneath her beauty"],
             symbols: ["The Watching Falcon - Al'sekemu's symbol", "A pillar of salt - her final form", "Golden-streaked hair - beauty touched by divinity", "Shifting eyes - deception, adaptation, the fluidity of dreams", "A dragon's severed head - the danger she created to be saved from"],
@@ -11410,6 +11566,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         nasr: {
             name: "Nasr",
+            tier: "Minor",
+            gender: "Male",
+            element: "Chaos, Force",
+            alignment: "Neutral Evil",
+            sacredAnimal: "Leopards, Bears",
+            sacredPlant: "Apple Trees",
             titles: ["God of Hunting and Strategy", "The Swift Hunter", "Al'sekemu's Disappointing Son", "The Compulsive One", "The Weak Man", "The Tracker", "Bad Boy of the Gods"],
             attributes: ["Compulsive and impulsive", "Desperate for approval (especially from Al'sekemu)", "Swift and efficient", "Skilled tracker and hunter", "Strategic thinker undermined by poor self-control", "Neither wholly good nor wholly evil (Complex)", "Resentful of being rejected", "Capable of terrible acts when unchecked", "Loyal to those who accept him (Forest, Tevye)"],
             symbols: ["Brown hooded cloak - his signature garment", "Hunting weapons (bow, spear, knife)", "Swift footprints that vanish quickly", "The rejected son - symbol of unworthiness", "Compulsion - representing lack of control"],
@@ -11503,6 +11665,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         sadi: {
             name: "Sa'di",
+            tier: "Minor",
+            gender: "Male",
+            element: "Nature, Order",
+            alignment: "Neutral Good",
+            sacredAnimal: "Bees",
+            sacredPlant: "Wheat",
             titles: ["God of Bees and Agriculture", "The Little Strong Boy", "Malak's Donkey Boy", "The Brother-Killer", "Tia's Favorite", "The Weak Son", "The One Who Hides"],
             attributes: ["Timid and fearful", "Deeply attached to his mother (Tia)", "Smaller and skinnier than his siblings", "Avoids confrontation at all costs", "Desperately wants his father's approval", "Carries unbearable guilt over Malak's death", "Lives in constant fear of Al'sekemu discovering the truth", "Gentle and kind-hearted", "Prefers solitude with his bees over divine politics"],
             symbols: ["Bees (creation, agriculture, but also deadly swarms)", "Golden hair covering his face (hiding, shame)", "Three layers of heavy clothing (false strength, burden)", "A sand dune in the Court of Order (his isolated sanctuary)", "Malak's absence (the brother he killed)"],
@@ -11596,6 +11764,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         jodami: {
             name: "Jodami",
+            tier: "Major",
+            gender: "Female",
+            element: "Water, Air",
+            alignment: "Lawful Neutral",
+            sacredAnimal: "Seal, Dolphin",
+            sacredPlant: "Mangroves",
             titles: ["Goddess of Saltwater, Creation, and Prosperity", "The Salt Lady", "The First to Salt the Sea", "Forger of the Coral Thrones", "Creator of the Great Trade Current", "Savior of Ta'hanne", "The Banished Goddess", "Mother of the Jodath Sisters", "Sister of Tia"],
             attributes: ["Powerful and abundant (built like a goddess who created abundance)", "Creative and practical", "Kind-hearted but capable of deep resentment", "Loved deeply but was never loved back", "Brave enough to confront gods and save worlds", "Betrayed those she once served (War of Gods)", "Now imprisoned beyond salvation"],
             symbols: ["Saltwater (her first creation, her signature)", "Coral Thrones of the Deep (her gift to underwater kingdoms)", "The Great Trade Current (the artery of the mortal world)", "A dipped toe (the gesture that salted the seas)", "Pearl crown (sea-queen regalia)", "Shadeward Hollow (her eternal prison)"],
@@ -11696,6 +11870,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         zenitha: {
             name: "Zenitha",
+            tier: "Major",
+            gender: "Female",
+            element: "Metal, Force",
+            alignment: "True Neutral",
+            sacredAnimal: "Wolf, Hawk",
+            sacredPlant: "Red Poppy",
             titles: ["Mother of War", "Bearer of the Law of ZAMARA (𖣙)", "Ta'hanne's Right Hand", "Builder of the Seven Refuge-Havens", "The Undefeated Goddess", "Creator of the Zendols", "Queen of the Court of Zamazara", "Sister of Eudora and Oceania"],
             attributes: ["Otherworldly and imposing", "Undefeatable in battle (300+ battles, never lost)", "Traumatized, but weaponized her pain into strength", "Loyal to Ta'hanne (her right hand)", "Best friends with Al'sekemu (before he killed her)", "Fiercely protective of those under her care", "Ruthless in discipline and training", "Loved deeply (Zane) and lost tragically"],
             symbols: ["The Law of ZAMARA (𖣙) - Tier 1 law controlling war itself", "Burnt orange skin and bright orange hair - her otherworldly appearance", "Seven Refuge-Havens - sanctuaries she built during the Demon Wars", "The Court of Zamazara - her empire (both in Eudraneth and the hidden realm in Eudoria)", "The Zendols - her warrior creations", "A stolen volcano - the one she took from Papahānaumoku for Zane"],
@@ -11795,6 +11975,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         oceania: {
             name: "Oceania",
+            tier: "Foundational",
+            gender: "Female",
+            element: "Water",
+            alignment: "Chaotic Good",
+            sacredAnimal: "All sea creatures",
+            sacredPlant: "Kelp, Seaweed, Seagrasses, Water Lily, Mangroves, Marsh Grasses",
             titles: [
                 "Mother Nature of Water",
                 "Ocean Goddess",
@@ -11980,6 +12166,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         zane: {
             name: "Zane",
+            tier: "Foundational",
+            gender: "Male",
+            element: "Metal, Force",
+            alignment: "True Neutral",
+            sacredAnimal: "Wolf, Hawk",
+            sacredPlant: "Red Poppy",
             titles: [
                 "God of War",
                 "The Foundational War God",
@@ -12124,6 +12316,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         malaikanya: {
             name: "Malai Kanya / The Halonas",
+            tier: "Minor",
+            gender: "Female",
+            element: "Nature, Earth",
+            alignment: "Chaotic Good",
+            sacredAnimal: "Cats, Butterflies, Donkeys",
+            sacredPlant: "Mimosa Flower",
             titles: [
                 "Goddess of the Hearth, Womanhood, and Family (formerly)",
                 "The Young Goddess Under Godevea",
@@ -12454,6 +12652,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         ekar: {
             name: "E'kar",
+            tier: "Major",
+            gender: "Male",
+            element: "Mind/Spirit, Gravity",
+            alignment: "Neutral",
+            sacredAnimal: "Eudoric Beetle",
+            sacredPlant: "Tobacco",
             titles: [
                 "God of Creation",
                 "The Reality Embedder",
@@ -12614,6 +12818,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         godevea: {
             name: "Godevea",
+            tier: "Minor",
+            gender: "Female (sometimes non-binary)",
+            element: "Nature, Air",
+            alignment: "Chaotic Neutral",
+            sacredAnimal: "Cat, Lioness",
+            sacredPlant: "Orchids",
             titles: ["Goddess of Femininity and Childbirth", "Protector of Female Reproductive Rights", "Teacher of Womanhood (Ancient Eudran Era)", "The Revolutionary Goddess", "Creator of the Menstrual Cycle", "Mother of the Feminine Movement", "The Naked Protestor", "Victim of Divine Execution", "The Martyr Who Changed the Laws", "Bearer of the Male Birth Epidemic Curse"],
             attributes: ["Revolutionary and defiant", "Emotional and expressive (unashamed of feelings)", "Willing to self-harm to prove a point", "Provocative and confrontational", "Fiercely protective of women's autonomy", "Unable to tolerate injustice", "Walked naked to provoke and protest", "Started the Feminine Movement among goddesses", "Enacted devastating revenge (the Male Birth Epidemic)", "Executed by Aghah (beheaded in full view of the court)", "Mourned by Suleiman and Al'sekemu"],
             symbols: ["The ripped-out uterus (menstruation, autonomy, refusal to be controlled)", "Nakedness (protest, vulnerability weaponized, rejection of expectations)", "Blood (both from childbirth and from self-harm/protest)", "Stripped animal skins (truth laid bare, no pretense)", "Letters and poems (the revolution she started, preserved by Al'sekemu)", "The Male Birth Epidemic (her curse that could not be undone)", "The beheading (her execution by Aghah)"],
@@ -12715,6 +12925,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         yusha: {
             name: "Yusha",
+            tier: "Foundational",
+            gender: "Male",
+            element: "Time, Light",
+            alignment: "True Neutral",
+            sacredAnimal: "Tortoise, Hurum",
+            sacredPlant: "Portulaca, Arabidopsis",
             titles: [
                 "God of Time and Space",
                 "The Dimensional Weaver",
@@ -12850,6 +13066,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         cheary: {
             name: "Cheary",
+            tier: "Minor",
+            gender: "Non-binary",
+            element: "Light, Cure/Healing",
+            alignment: "Lawful Good",
+            sacredAnimal: "Dove",
+            sacredPlant: "Marigold",
             titles: [
                 "God of Light and Harmony",
                 "Universal Peace Authority",
@@ -12994,6 +13216,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         umar: {
             name: "Umar",
+            tier: "Major",
+            gender: "Male",
+            element: "Fire, Light, Force",
+            alignment: "Chaotic Neutral",
+            sacredAnimal: "Eagle",
+            sacredPlant: "Sunflower, Coreopsis",
             titles: [
                 "God of Creation, Sun, and Power",
                 "The Overachiever God",
@@ -13188,6 +13416,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         euora: {
             name: "Euora",
+            tier: "Major",
+            gender: "Female",
+            element: "Earth, Air",
+            alignment: "Chaotic Good",
+            sacredAnimal: "Rabbits, Snake",
+            sacredPlant: "Red Rose, Jasmine",
             titles: ["Goddess of Spring, Nurturing, and Desire", "Creator of the Rainbow", "The Apple Bearer", "Reviver of the Valley of Nagrin", "The Betrayed Sister", "The Darkened Goddess", "Mother of the War Against Ta'hanne", "The One Who Fell for 100 Days"],
             attributes: ["Beautiful beyond measure (considered the most beautiful)", "Creative and generous (before the fall)", "Vengeful and manipulative (after the fall)", "Unable to trust anyone", "Uses seduction as a weapon", "Brilliant strategist (turns councils, curses subtly, humiliates publicly)", "Protective of her children (who all fight Ta'hanne)", "Never came back the same after falling for 100 days"],
             symbols: ["The Apple (renewal, but also temptation, manipulation)", "Butterflies (hope, transformation, but also fragility)", "The Rainbow (her creation, now attributed to Eudora)", "The Valley of Nagrin (The First Spring)", "The Falling Bonnia (where she fell for 100 days)", "The River of Tears (created from her crying during the fight with Ta'hanne)"],
@@ -13301,6 +13535,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
         },
         samuel: {
             name: "Samuel",
+            tier: "Major",
+            gender: "Male",
+            element: "Light, Air",
+            alignment: "Lawful Good",
+            sacredAnimal: "Lamb",
+            sacredPlant: "Lotus, Olive Tree",
             titles: ["God of Truth and Redemption", "The Eternal Confessor", "Bearer of the Black Feather"],
             attributes: ["Truth", "Redemption", "Forgiveness", "Guidance", "Light and Shadow"],
             symbols: ["White Wings with One Black Feather", "Golden Light", "Open Hands"],
@@ -14156,6 +14396,11 @@ function triggerModeSwitch(toMode) {
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
+    // Force scroll to top on page load/refresh
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
     setupNavigation();
     setupSearch();
     setupModeTabs();
@@ -14167,6 +14412,11 @@ document.addEventListener('DOMContentLoaded', () => {
         contentArea.classList.add('loaded');
     }, 100);
 });
+
+// Disable automatic scroll restoration
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
 
 // Setup mode tabs
 function setupModeTabs() {
@@ -16223,6 +16473,44 @@ function showGodDetail(godKey) {
                     <h3>Divine Essence</h3>
                     <p>${addCrossReferences(god.description, 5)}</p>
                 </div>
+
+                ${god.tier || god.gender || god.element || god.alignment || god.sacredAnimal || god.sacredPlant ? `
+                <div class="detail-section sacred-attributes-section">
+                    <h3>Sacred Attributes</h3>
+                    <div class="sacred-attributes-grid">
+                        ${god.tier ? `
+                        <div class="sacred-attribute-item">
+                            <span class="attribute-label">Tier</span>
+                            <span class="attribute-value">${god.tier}</span>
+                        </div>` : ''}
+                        ${god.gender ? `
+                        <div class="sacred-attribute-item">
+                            <span class="attribute-label">Gender</span>
+                            <span class="attribute-value">${god.gender}</span>
+                        </div>` : ''}
+                        ${god.element ? `
+                        <div class="sacred-attribute-item">
+                            <span class="attribute-label">Element</span>
+                            <span class="attribute-value">${god.element}</span>
+                        </div>` : ''}
+                        ${god.alignment ? `
+                        <div class="sacred-attribute-item">
+                            <span class="attribute-label">Alignment</span>
+                            <span class="attribute-value">${god.alignment}</span>
+                        </div>` : ''}
+                        ${god.sacredAnimal ? `
+                        <div class="sacred-attribute-item">
+                            <span class="attribute-label">Sacred Animal</span>
+                            <span class="attribute-value">${god.sacredAnimal}</span>
+                        </div>` : ''}
+                        ${god.sacredPlant ? `
+                        <div class="sacred-attribute-item">
+                            <span class="attribute-label">Sacred Plant</span>
+                            <span class="attribute-value">${god.sacredPlant}</span>
+                        </div>` : ''}
+                    </div>
+                </div>
+                ` : ''}
 
                 ${sistersHTML}
                 ${brothersHTML}
@@ -24788,15 +25076,6 @@ function generateCategories(categories) {
     `;
 }
 
-// Add cross-reference links to text
-function addCrossReferences(text) {
-    if (!text) return '';
-
-    // For now, return text as-is to avoid regex issues
-    // We can add simple cross-referencing later
-    return text;
-}
-
 // God Quiz Functions
 let godQuizState = {
     currentQuestion: 0,
@@ -25094,6 +25373,7 @@ function renderGodComparison() {
     // Organize gods by tier
     const godsByTier = {
         'Supreme': [],
+        'Foundational': [],
         'Major': [],
         'Minor': [],
         'Other': []
@@ -25292,7 +25572,7 @@ function generateComparisonTable(selectedGods) {
         {
             label: 'Domains',
             key: 'domains',
-            format: (god) => god.domains ? god.domains.join(', ') : '—'
+            format: (god) => god.domains ? god.domains.map(d => d.name).join(', ') : '—'
         },
         {
             label: 'Symbols',
