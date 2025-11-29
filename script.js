@@ -25969,9 +25969,25 @@ function showChildrenQuizResults() {
 // Search functionality
 function setupSearch() {
     const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
     searchInput.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase();
-        performSearch(query);
+        const query = e.target.value.trim();
+
+        if (!query || query.length < 2) {
+            searchResults.style.display = 'none';
+            return;
+        }
+
+        const results = performSearch(query);
+        displaySearchResults(results);
+    });
+
+    // Hide search results when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.style.display = 'none';
+        }
     });
 }
 
@@ -25998,138 +26014,6 @@ function calculateSimilarity(str1, str2) {
 
     // Return ratio of matched characters
     return matches / str2.length;
-}
-
-function performSearch(query) {
-    if (!query) {
-        renderWelcomeScreen();
-        return;
-    }
-    
-    const results = [];
-    
-    // Search through unions
-    Object.keys(eudoriaData.unions).forEach(unionKey => {
-        const union = eudoriaData.unions[unionKey];
-        
-        if (union.name.toLowerCase().includes(query)) {
-            results.push({
-                type: 'union',
-                key: unionKey,
-                name: union.name,
-                description: union.description
-            });
-        }
-        
-        // Search through regions in this union
-        union.regions.forEach(region => {
-            if (region.name.toLowerCase().includes(query) || 
-                (region.description && region.description.toLowerCase().includes(query))) {
-                results.push({
-                    type: 'region',
-                    key: unionKey,
-                    regionId: region.id,
-                    name: region.name,
-                    description: region.description
-                });
-            }
-        });
-    });
-    
-    // Search through pillars
-    Object.keys(eudoriaData.pillars).forEach(pillarKey => {
-        const pillar = eudoriaData.pillars[pillarKey];
-        if (pillar.name.toLowerCase().includes(query)) {
-            results.push({
-                type: 'pillar',
-                key: pillarKey,
-                name: pillar.name,
-                description: pillar.description
-            });
-        }
-    });
-
-    // Search through gods
-    Object.keys(eudoriaData.eudoricGods).forEach(godKey => {
-        const god = eudoriaData.eudoricGods[godKey];
-
-        // Check name matches
-        const nameMatch = god.name.toLowerCase().includes(query);
-        const altNameMatch = god.alternativeName && god.alternativeName.toLowerCase().includes(query);
-        const titleMatch = god.titles && god.titles.some(title => title.toLowerCase().includes(query));
-
-        // Fuzzy match for common typos (check if 80% of characters match)
-        const fuzzyNameMatch = calculateSimilarity(god.name.toLowerCase(), query) > 0.7;
-
-        // Search in description and domains for more comprehensive results
-        const descMatch = god.description && god.description.toLowerCase().includes(query);
-        const domainMatch = god.domains && god.domains.some(d => d.name.toLowerCase().includes(query));
-
-        if (nameMatch || altNameMatch || titleMatch || fuzzyNameMatch || descMatch || domainMatch) {
-            results.push({
-                type: 'god',
-                key: godKey,
-                name: god.name,
-                description: god.description,
-                titles: god.titles ? god.titles.slice(0, 2).join(', ') : ''
-            });
-        }
-    });
-
-    displaySearchResults(results, query);
-}
-
-function displaySearchResults(results, query) {
-    const contentArea = document.getElementById('contentArea');
-    
-    if (results.length === 0) {
-        contentArea.innerHTML = `
-            <div class="welcome-screen">
-                <h2>No Results Found</h2>
-                <p>No matches for "${query}"</p>
-            </div>
-        `;
-        return;
-    }
-    
-    const resultsHTML = results.map(result => {
-        let onclick = '';
-        let displayInfo = '';
-
-        if (result.type === 'region') {
-            onclick = `onclick="showRegionDetail('${result.regionId}', '${result.key}')"`;
-            displayInfo = result.description || 'No description';
-        } else if (result.type === 'union') {
-            onclick = `onclick="navigateTo('${result.key}')"`;
-            displayInfo = result.description || 'No description';
-        } else if (result.type === 'pillar') {
-            onclick = `onclick="navigateTo('${result.key}')"`;
-            displayInfo = result.description || 'No description';
-        } else if (result.type === 'god') {
-            onclick = `onclick="showGodDetail('${result.key}')"`;
-            displayInfo = result.titles ? `<strong>${result.titles}</strong><br>${result.description}` : result.description;
-        }
-
-        return `
-            <div class="region-card" ${onclick}>
-                <h3>${result.name}</h3>
-                <div class="region-info">${displayInfo}</div>
-                <span class="region-tag">${result.type}</span>
-            </div>
-        `;
-    }).join('');
-    
-    contentArea.innerHTML = `
-        <div class="union-view">
-            <div class="union-header">
-                <h2>Search Results</h2>
-                <p>Found ${results.length} result(s) for "${query}"</p>
-            </div>
-            <div class="regions-grid">
-                ${resultsHTML}
-            </div>
-        </div>
-    `;
 }
 
 // Helper function to add a new region (for easy data entry)
