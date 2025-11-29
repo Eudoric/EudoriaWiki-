@@ -25975,6 +25975,31 @@ function setupSearch() {
     });
 }
 
+// Helper function to calculate string similarity (for fuzzy search)
+function calculateSimilarity(str1, str2) {
+    if (!str1 || !str2) return 0;
+
+    // If one string is much shorter, return low similarity
+    if (str2.length < 3) {
+        return str1.includes(str2) ? 1 : 0;
+    }
+
+    // Calculate how many characters from str2 appear in str1 in order
+    let matches = 0;
+    let lastIndex = -1;
+
+    for (let char of str2) {
+        const index = str1.indexOf(char, lastIndex + 1);
+        if (index > lastIndex) {
+            matches++;
+            lastIndex = index;
+        }
+    }
+
+    // Return ratio of matched characters
+    return matches / str2.length;
+}
+
 function performSearch(query) {
     if (!query) {
         renderWelcomeScreen();
@@ -26027,9 +26052,20 @@ function performSearch(query) {
     // Search through gods
     Object.keys(eudoriaData.eudoricGods).forEach(godKey => {
         const god = eudoriaData.eudoricGods[godKey];
-        if (god.name.toLowerCase().includes(query) ||
-            (god.alternativeName && god.alternativeName.toLowerCase().includes(query)) ||
-            (god.titles && god.titles.some(title => title.toLowerCase().includes(query)))) {
+
+        // Check name matches
+        const nameMatch = god.name.toLowerCase().includes(query);
+        const altNameMatch = god.alternativeName && god.alternativeName.toLowerCase().includes(query);
+        const titleMatch = god.titles && god.titles.some(title => title.toLowerCase().includes(query));
+
+        // Fuzzy match for common typos (check if 80% of characters match)
+        const fuzzyNameMatch = calculateSimilarity(god.name.toLowerCase(), query) > 0.7;
+
+        // Search in description and domains for more comprehensive results
+        const descMatch = god.description && god.description.toLowerCase().includes(query);
+        const domainMatch = god.domains && god.domains.some(d => d.name.toLowerCase().includes(query));
+
+        if (nameMatch || altNameMatch || titleMatch || fuzzyNameMatch || descMatch || domainMatch) {
             results.push({
                 type: 'god',
                 key: godKey,
