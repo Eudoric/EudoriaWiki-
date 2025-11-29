@@ -27171,9 +27171,12 @@ function addCrossReferences(text, maxLinks = 3) {
 
         // Only link if the keyword exists in the text and isn't already linked
         if (regex.test(processedText) && !processedText.includes(`data-xref="${keyword}"`)) {
-            // Create cross-reference link
-            const refData = JSON.stringify(data).replace(/"/g, '&quot;');
-            const replacement = `<span class="xref-link" data-xref="${keyword}" data-ref='${refData}' onclick="navigateFromXRef(this)">$&<span class="xref-icon">${data.icon}</span></span>`;
+            // Create cross-reference link - properly escape for HTML attributes
+            const refData = JSON.stringify(data)
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+            const escapedKeyword = keyword.replace(/'/g, '&#39;');
+            const replacement = `<span class="xref-link" data-xref="${escapedKeyword}" data-ref="${refData}" onclick="navigateFromXRef(this)">$&<span class="xref-icon">${data.icon}</span></span>`;
 
             // Replace only the first occurrence
             processedText = processedText.replace(regex, replacement);
@@ -27191,7 +27194,7 @@ function navigateFromXRef(element) {
     if (!refData) return;
 
     try {
-        const data = JSON.parse(refData.replace(/&quot;/g, '"'));
+        const data = JSON.parse(refData.replace(/&quot;/g, '"').replace(/&#39;/g, "'"));
 
         // Navigate based on type
         if (data.type === 'god' && data.godKey) {
