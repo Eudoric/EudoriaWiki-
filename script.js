@@ -16471,7 +16471,7 @@ function showGodDetail(godKey) {
             <div id="profile-tab" class="god-tab-panel active">
                 <div class="detail-section">
                     <h3>Divine Essence</h3>
-                    <p>${addCrossReferences(god.description, 5)}</p>
+                    <p>${god.description}</p>
                 </div>
 
                 ${god.tier || god.gender || god.element || god.alignment || god.sacredAnimal || god.sacredPlant ? `
@@ -27034,42 +27034,8 @@ function buildCrossReferenceDict() {
 
 // Process text to add cross-references
 function addCrossReferences(text, maxLinks = 3) {
-    if (!text || typeof text !== 'string') return text;
-
-    const dict = buildCrossReferenceDict();
-    let processedText = text;
-    let linksAdded = 0;
-
-    // Sort keywords by length (longest first) to avoid partial matches
-    const sortedKeywords = Object.keys(dict).sort((a, b) => b.length - a.length);
-
-    // Track which keywords we've already linked to avoid over-linking
-    const linkedKeywords = new Set();
-
-    sortedKeywords.forEach(keyword => {
-        if (linksAdded >= maxLinks) return;
-        if (linkedKeywords.has(keyword)) return;
-
-        const data = dict[keyword];
-        const regex = new RegExp(`\\b${keyword}\\b`, 'i');
-
-        // Only link if the keyword exists in the text and isn't already linked
-        if (regex.test(processedText) && !processedText.includes(`data-xref="${keyword}"`)) {
-            // Create cross-reference link - properly escape for HTML attributes
-            const refData = JSON.stringify(data)
-                .replace(/"/g, '&quot;')
-                .replace(/'/g, '&#39;');
-            const escapedKeyword = keyword.replace(/'/g, '&#39;');
-            const replacement = `<span class="xref-link" data-xref="${escapedKeyword}" data-ref="${refData}" onclick="navigateFromXRef(this)">$&<span class="xref-icon">${data.icon}</span></span>`;
-
-            // Replace only the first occurrence
-            processedText = processedText.replace(regex, replacement);
-            linkedKeywords.add(keyword);
-            linksAdded++;
-        }
-    });
-
-    return processedText;
+    // Cross-reference feature disabled - return text unchanged
+    return text;
 }
 
 // Navigate from cross-reference link
@@ -27078,7 +27044,8 @@ function navigateFromXRef(element) {
     if (!refData) return;
 
     try {
-        const data = JSON.parse(refData.replace(/&quot;/g, '"').replace(/&#39;/g, "'"));
+        // Decode base64 data with Unicode support
+        const data = JSON.parse(decodeURIComponent(atob(refData)));
 
         // Navigate based on type
         if (data.type === 'god' && data.godKey) {
