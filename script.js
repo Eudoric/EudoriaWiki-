@@ -25735,49 +25735,25 @@ function renderBattleOfGods() {
             <div class="battle-header">
                 <div class="divine-symbol-large">⚔️</div>
                 <h2>Battle of the Gods</h2>
-                <p class="battle-subtitle">Select two gods to witness an epic divine confrontation</p>
+                <p class="battle-subtitle">Choose your battle mode and select your divine warriors</p>
             </div>
 
-            <div class="battle-selection-area">
-                <div class="god-selector-box">
-                    <h3>⚡ First Challenger</h3>
-                    <select id="god1Select" class="god-select-dropdown">
-                        <option value="">Select a god...</option>
-                        ${Object.keys(godsByTier).map(tier => {
-                            if (godsByTier[tier].length === 0) return '';
-                            return `
-                                <optgroup label="${tier} Gods">
-                                    ${godsByTier[tier].map(god =>
-                                        `<option value="${god.id}">${god.name}</option>`
-                                    ).join('')}
-                                </optgroup>
-                            `;
-                        }).join('')}
-                    </select>
-                    <div id="god1Preview" class="god-preview-card"></div>
+            <div class="battle-mode-selector">
+                <h3>Battle Mode</h3>
+                <div class="mode-buttons">
+                    <button class="mode-btn active" onclick="setBattleMode('1v1')" data-mode="1v1">1 vs 1</button>
+                    <button class="mode-btn" onclick="setBattleMode('2v2')" data-mode="2v2">2 vs 2</button>
+                    <button class="mode-btn" onclick="setBattleMode('3v3')" data-mode="3v3">3 vs 3</button>
+                    <button class="mode-btn" onclick="setBattleMode('custom')" data-mode="custom">Custom</button>
                 </div>
+                <div id="customModeSettings" style="display: none;" class="custom-mode-settings">
+                    <label>Team 1: <input type="number" id="team1Count" min="1" max="10" value="2" onchange="updateTeamMode()"> gods</label>
+                    <label>Team 2: <input type="number" id="team2Count" min="1" max="10" value="1" onchange="updateTeamMode()"> gods</label>
+                </div>
+            </div>
 
-                <div class="battle-vs-divider">
-                    <div class="vs-symbol">VS</div>
-                </div>
-
-                <div class="god-selector-box">
-                    <h3>⚡ Second Challenger</h3>
-                    <select id="god2Select" class="god-select-dropdown">
-                        <option value="">Select a god...</option>
-                        ${Object.keys(godsByTier).map(tier => {
-                            if (godsByTier[tier].length === 0) return '';
-                            return `
-                                <optgroup label="${tier} Gods">
-                                    ${godsByTier[tier].map(god =>
-                                        `<option value="${god.id}">${god.name}</option>`
-                                    ).join('')}
-                                </optgroup>
-                            `;
-                        }).join('')}
-                    </select>
-                    <div id="god2Preview" class="god-preview-card"></div>
-                </div>
+            <div class="battle-selection-area" id="teamSelectionArea">
+                <!-- Dynamic team selection will be inserted here -->
             </div>
 
             <div class="battle-action-section">
@@ -25792,16 +25768,11 @@ function renderBattleOfGods() {
         </div>
     `;
 
-    // Add event listeners for god selection
-    document.getElementById('god1Select').addEventListener('change', (e) => {
-        updateGodPreview('god1Preview', e.target.value);
-        checkBattleReady();
-    });
+    // Store gods data globally for team selection
+    window.battleGodsData = godsByTier;
 
-    document.getElementById('god2Select').addEventListener('change', (e) => {
-        updateGodPreview('god2Preview', e.target.value);
-        checkBattleReady();
-    });
+    // Initialize with 1v1 mode
+    setBattleMode('1v1');
 }
 
 function updateGodPreview(previewId, godId) {
@@ -25832,12 +25803,159 @@ function updateGodPreview(previewId, godId) {
     `;
 }
 
-function checkBattleReady() {
-    const god1 = document.getElementById('god1Select').value;
-    const god2 = document.getElementById('god2Select').value;
+// Global battle state
+let currentBattleMode = '1v1';
+let team1Gods = [];
+let team2Gods = [];
+
+function setBattleMode(mode) {
+    currentBattleMode = mode;
+
+    // Update button states
+    document.querySelectorAll('.mode-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    document.querySelector(`[data-mode="${mode}"]`).classList.add('active');
+
+    // Show/hide custom settings
+    const customSettings = document.getElementById('customModeSettings');
+    if (mode === 'custom') {
+        customSettings.style.display = 'flex';
+    } else {
+        customSettings.style.display = 'none';
+    }
+
+    // Render team selection based on mode
+    updateTeamMode();
+}
+
+function updateTeamMode() {
+    let team1Size, team2Size;
+
+    if (currentBattleMode === 'custom') {
+        team1Size = parseInt(document.getElementById('team1Count').value) || 1;
+        team2Size = parseInt(document.getElementById('team2Count').value) || 1;
+    } else {
+        const sizes = { '1v1': [1,1], '2v2': [2,2], '3v3': [3,3] };
+        [team1Size, team2Size] = sizes[currentBattleMode] || [1,1];
+    }
+
+    renderTeamSelection(team1Size, team2Size);
+}
+
+function renderTeamSelection(team1Size, team2Size) {
+    const selectionArea = document.getElementById('teamSelectionArea');
+    const godsByTier = window.battleGodsData;
+
+    const godOptions = Object.keys(godsByTier).map(tier => {
+        if (godsByTier[tier].length === 0) return '';
+        return `
+            <optgroup label="${tier} Gods">
+                ${godsByTier[tier].map(god =>
+                    `<option value="${god.id}">${god.name}</option>`
+                ).join('')}
+            </optgroup>
+        `;
+    }).join('');
+
+    // Reset teams
+    team1Gods = [];
+    team2Gods = [];
+
+    selectionArea.innerHTML = `
+        <div class="team-selector-box">
+            <h3>⚔️ Team 1 ${team1Size > 1 ? `(${team1Size} gods)` : ''}</h3>
+            <div class="team-members">
+                ${Array.from({length: team1Size}, (_, i) => `
+                    <div class="team-member-slot">
+                        <select class="god-select-dropdown team1-select" data-slot="${i}">
+                            <option value="">Select god ${i + 1}...</option>
+                            ${godOptions}
+                        </select>
+                        <div class="team-preview" id="team1Preview${i}"></div>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+
+        <div class="battle-vs-divider">
+            <div class="vs-symbol">VS</div>
+        </div>
+
+        <div class="team-selector-box">
+            <h3>⚔️ Team 2 ${team2Size > 1 ? `(${team2Size} gods)` : ''}</h3>
+            <div class="team-members">
+                ${Array.from({length: team2Size}, (_, i) => `
+                    <div class="team-member-slot">
+                        <select class="god-select-dropdown team2-select" data-slot="${i}">
+                            <option value="">Select god ${i + 1}...</option>
+                            ${godOptions}
+                        </select>
+                        <div class="team-preview" id="team2Preview${i}"></div>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `;
+
+    // Add event listeners for team selections
+    document.querySelectorAll('.team1-select').forEach((select, index) => {
+        select.addEventListener('change', (e) => {
+            team1Gods[index] = e.target.value;
+            if (e.target.value) {
+                updateTeamPreview(`team1Preview${index}`, e.target.value);
+            } else {
+                document.getElementById(`team1Preview${index}`).innerHTML = '';
+            }
+            checkTeamBattleReady();
+        });
+    });
+
+    document.querySelectorAll('.team2-select').forEach((select, index) => {
+        select.addEventListener('change', (e) => {
+            team2Gods[index] = e.target.value;
+            if (e.target.value) {
+                updateTeamPreview(`team2Preview${index}`, e.target.value);
+            } else {
+                document.getElementById(`team2Preview${index}`).innerHTML = '';
+            }
+            checkTeamBattleReady();
+        });
+    });
+
+    checkTeamBattleReady();
+}
+
+function updateTeamPreview(previewId, godId) {
+    const previewDiv = document.getElementById(previewId);
+    if (!godId) {
+        previewDiv.innerHTML = '';
+        return;
+    }
+
+    const god = eudoriaData.eudoricGods[godId];
+    const imagePath = `Images/${god.name}.png`;
+
+    previewDiv.innerHTML = `
+        <div class="team-preview-compact">
+            <img src="${imagePath}" alt="${god.name}" class="team-preview-image" onerror="this.style.display='none'">
+            <div class="team-preview-name">${god.name}</div>
+        </div>
+    `;
+}
+
+function checkTeamBattleReady() {
     const battleBtn = document.getElementById('battleBtn');
 
-    if (god1 && god2 && god1 !== god2) {
+    // Check if all slots are filled and no duplicates
+    const allGods = [...team1Gods, ...team2Gods].filter(id => id);
+    const uniqueGods = new Set(allGods);
+
+    const team1Filled = team1Gods.every(id => id);
+    const team2Filled = team2Gods.every(id => id);
+    const noDuplicates = allGods.length === uniqueGods.size;
+
+    if (team1Filled && team2Filled && noDuplicates) {
         battleBtn.disabled = false;
         battleBtn.style.opacity = '1';
     } else {
@@ -25846,46 +25964,51 @@ function checkBattleReady() {
     }
 }
 
-function simulateBattle() {
-    const god1Id = document.getElementById('god1Select').value;
-    const god2Id = document.getElementById('god2Select').value;
+function checkBattleReady() {
+    checkTeamBattleReady();
+}
 
-    if (!god1Id || !god2Id || god1Id === god2Id) {
-        alert('Please select two different gods!');
+function simulateBattle() {
+    // Get team gods
+    const team1GodObjects = team1Gods.map(id => eudoriaData.eudoricGods[id]);
+    const team2GodObjects = team2Gods.map(id => eudoriaData.eudoricGods[id]);
+
+    if (team1GodObjects.length === 0 || team2GodObjects.length === 0) {
+        alert('Please select all gods for both teams!');
         return;
     }
 
-    const god1 = eudoriaData.eudoricGods[god1Id];
-    const god2 = eudoriaData.eudoricGods[god2Id];
-
-    // Calculate battle scores based on god attributes
-    const score1 = calculateGodBattleScore(god1);
-    const score2 = calculateGodBattleScore(god2);
+    // Calculate team scores (sum of individual god scores)
+    const team1Score = team1GodObjects.reduce((sum, god) => sum + calculateGodBattleScore(god), 0);
+    const team2Score = team2GodObjects.reduce((sum, god) => sum + calculateGodBattleScore(god), 0);
 
     // Add randomness factor (100% variance) - PURE CHAOS MODE
-    // Strategy, luck, and circumstances matter more than raw power
-    // Even Supreme gods can lose to Minor gods - anything can happen!
-    // Qlackic approves of this randomness 😈
-    const random1 = score1 * (0.5 + Math.random() * 1.0);
-    const random2 = score2 * (0.5 + Math.random() * 1.0);
+    const team1Random = team1Score * (0.5 + Math.random() * 1.0);
+    const team2Random = team2Score * (0.5 + Math.random() * 1.0);
 
-    const winner = random1 > random2 ? god1 : god2;
-    const loser = random1 > random2 ? god2 : god1;
-    const winnerScore = random1 > random2 ? random1 : random2;
-    const loserScore = random1 > random2 ? random2 : random1;
+    const winningTeam = team1Random > team2Random ? 1 : 2;
+    const winningGods = winningTeam === 1 ? team1GodObjects : team2GodObjects;
+    const losingGods = winningTeam === 1 ? team2GodObjects : team1GodObjects;
+    const winnerScore = Math.max(team1Random, team2Random);
+    const loserScore = Math.min(team1Random, team2Random);
 
     const scoreDifference = ((winnerScore - loserScore) / loserScore * 100).toFixed(0);
 
     // Generate battle narrative
-    const battleNarrative = generateBattleNarrative(winner, loser, scoreDifference);
-
-    // Construct image paths
-    const winnerImage = `Images/${winner.name}.png`;
-    const loserImage = `Images/${loser.name}.png`;
+    const battleNarrative = generateTeamBattleNarrative(winningGods, losingGods, scoreDifference);
 
     // Display results
     const resultDiv = document.getElementById('battleResult');
     resultDiv.style.display = 'block';
+
+    // Create team portraits HTML
+    const winningTeamPortraits = winningGods.map(god =>
+        `<img src="Images/${god.name}.png" alt="${god.name}" class="team-winner-portrait" title="${god.name}" onerror="this.style.display='none'">`
+    ).join('');
+
+    const winningTeamNames = winningGods.map(g => g.name).join(', ');
+    const losingTeamNames = losingGods.map(g => g.name).join(', ');
+
     resultDiv.innerHTML = `
         <div class="battle-result-header">
             <h2>⚔️ Battle Complete ⚔️</h2>
@@ -25893,11 +26016,11 @@ function simulateBattle() {
 
         <div class="battle-winner-announcement">
             <div class="winner-crown">👑</div>
-            <div class="winner-portrait-container">
-                <img src="${winnerImage}" alt="${winner.name}" class="winner-portrait" onerror="this.style.display='none'">
+            <div class="team-winner-portraits">
+                ${winningTeamPortraits}
             </div>
-            <h3 class="winner-name">${winner.name}</h3>
-            <p class="winner-title">${winner.tier} God - ${winner.titles ? winner.titles[0] : 'Divine Warrior'}</p>
+            <h3 class="winner-name">Team ${winningTeam} Victorious!</h3>
+            <p class="winner-title">${winningTeamNames}</p>
             <p class="victory-margin">Victory Margin: ${scoreDifference}%</p>
         </div>
 
@@ -25908,23 +26031,23 @@ function simulateBattle() {
 
         <div class="battle-stats-comparison">
             <div class="combatant-stats">
-                <div class="combatant-portrait-small">
-                    <img src="${winnerImage}" alt="${winner.name}" onerror="this.style.display='none'">
+                <h4>Team ${winningTeam} (Winners)</h4>
+                <div class="team-roster">
+                    ${winningGods.map(god => `<div class="roster-god">${god.name}</div>`).join('')}
                 </div>
-                <h4>${winner.name}</h4>
                 <div class="stat-bar-container">
-                    <div class="stat-label">Power Level</div>
+                    <div class="stat-label">Combined Power</div>
                     <div class="stat-bar winner-bar" style="width: 100%"></div>
                     <div class="stat-value">${winnerScore.toFixed(0)}</div>
                 </div>
             </div>
             <div class="combatant-stats">
-                <div class="combatant-portrait-small">
-                    <img src="${loserImage}" alt="${loser.name}" onerror="this.style.display='none'">
+                <h4>Team ${winningTeam === 1 ? 2 : 1} (Defeated)</h4>
+                <div class="team-roster">
+                    ${losingGods.map(god => `<div class="roster-god">${god.name}</div>`).join('')}
                 </div>
-                <h4>${loser.name}</h4>
                 <div class="stat-bar-container">
-                    <div class="stat-label">Power Level</div>
+                    <div class="stat-label">Combined Power</div>
                     <div class="stat-bar loser-bar" style="width: ${(loserScore/winnerScore*100).toFixed(0)}%"></div>
                     <div class="stat-value">${loserScore.toFixed(0)}</div>
                 </div>
@@ -25998,6 +26121,45 @@ function generateBattleNarrative(winner, loser, margin) {
 
     // Conclusion
     narratives.push(`<p class="narrative-conclusion">Victory belongs to <strong>${winner.name}</strong>, ${winner.tier} God, whose power echoes across Eudraneth!</p>`);
+
+    return narratives.join('\n');
+}
+
+function generateTeamBattleNarrative(winningGods, losingGods, margin) {
+    const narratives = [];
+    const winnerNames = winningGods.map(g => g.name).join(' and ');
+    const loserNames = losingGods.map(g => g.name).join(' and ');
+
+    // Opening
+    if (winningGods.length > 1 && losingGods.length > 1) {
+        narratives.push(`<p>The divine realms shook as <strong>${winnerNames}</strong> joined forces against <strong>${loserNames}</strong>. The clash of ${winningGods.length + losingGods.length} gods sent shockwaves across Eudraneth!</p>`);
+    } else if (winningGods.length > losingGods.length) {
+        narratives.push(`<p>A team of gods—<strong>${winnerNames}</strong>—united against <strong>${loserNames}</strong>. The ${losingGods.length === 1 ? 'lone warrior' : 'outnumbered team'} fought bravely against overwhelming odds.</p>`);
+    } else if (losingGods.length > winningGods.length) {
+        narratives.push(`<p>Against all odds, <strong>${winnerNames}</strong> stood against a coalition of <strong>${loserNames}</strong>. What seemed like an impossible battle became legendary!</p>`);
+    } else {
+        narratives.push(`<p>The heavens erupted as <strong>${winnerNames}</strong> and <strong>${loserNames}</strong> clashed in an epic confrontation!</p>`);
+    }
+
+    // Mid-battle
+    if (margin > 50) {
+        narratives.push(`<p>From the opening move, the winning team dominated. ${loserNames} fought with everything they had, but the combined might of ${winnerNames} proved unstoppable.</p>`);
+    } else if (margin > 25) {
+        narratives.push(`<p>The battle raged across divine territories. Both teams unleashed devastating combinations, but ${winnerNames} coordinated their powers perfectly, slowly overwhelming their opponents.</p>`);
+    } else {
+        narratives.push(`<p>An incredible display of divine combat! The battle could have gone either way. Both teams fought with breathtaking coordination, but in the final moments, ${winnerNames} seized victory!</p>`);
+    }
+
+    // Highlight a decisive god or power
+    const decisiveGod = winningGods[Math.floor(Math.random() * winningGods.length)];
+    if (decisiveGod.powers && decisiveGod.powers.length > 0) {
+        const decisivePower = decisiveGod.powers[Math.floor(Math.random() * decisiveGod.powers.length)];
+        narratives.push(`<p>The turning point came when <strong>${decisiveGod.name}</strong> unleashed <em>${decisivePower.name}</em>, creating an opening for their team to claim victory!</p>`);
+    }
+
+    // Conclusion
+    const teamDescr = winningGods.length === 1 ? 'the solo victor' : 'the victorious team';
+    narratives.push(`<p class="narrative-conclusion">Victory belongs to ${winnerNames}, ${teamDescr} whose combined power echoes across all of Eudraneth!</p>`);
 
     return narratives.join('\n');
 }
