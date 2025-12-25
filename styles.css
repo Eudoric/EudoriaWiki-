@@ -13026,11 +13026,27 @@ div .xref-link {
     min-height: 150px;
 }
 
+.preview-god-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.preview-god-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 .preview-god-name {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--accent-color);
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .preview-god-tier {
@@ -13152,6 +13168,31 @@ div .xref-link {
     margin-bottom: 1rem;
 }
 
+.winner-portrait-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.winner-portrait {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.5);
+    animation: victoryGlow 2s ease-in-out infinite;
+}
+
+@keyframes victoryGlow {
+    0%, 100% {
+        box-shadow: 0 8px 24px rgba(212, 175, 55, 0.5);
+    }
+    50% {
+        box-shadow: 0 8px 32px rgba(212, 175, 55, 0.8);
+    }
+}
+
 .winner-name {
     font-size: 2.5rem;
     color: var(--accent-color);
@@ -13208,6 +13249,21 @@ div .xref-link {
     padding: 1.5rem;
     background: var(--background-color);
     border-radius: 8px;
+}
+
+.combatant-portrait-small {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.combatant-portrait-small img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .combatant-stats h4 {

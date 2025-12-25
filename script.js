@@ -25812,7 +25812,13 @@ function updateGodPreview(previewId, godId) {
     const powerCount = god.powers ? god.powers.length : 0;
     const domainCount = god.domains ? god.domains.length : 0;
 
+    // Construct image path from god name
+    const imagePath = `Images/${god.name}.png`;
+
     previewDiv.innerHTML = `
+        <div class="preview-god-image-container">
+            <img src="${imagePath}" alt="${god.name}" class="preview-god-image" onerror="this.style.display='none'">
+        </div>
         <div class="preview-god-name">${god.name}</div>
         <div class="preview-god-tier">${god.tier} God</div>
         <div class="preview-god-element">${god.element || 'Unknown Element'}</div>
@@ -25868,6 +25874,10 @@ function simulateBattle() {
     // Generate battle narrative
     const battleNarrative = generateBattleNarrative(winner, loser, scoreDifference);
 
+    // Construct image paths
+    const winnerImage = `Images/${winner.name}.png`;
+    const loserImage = `Images/${loser.name}.png`;
+
     // Display results
     const resultDiv = document.getElementById('battleResult');
     resultDiv.style.display = 'block';
@@ -25878,6 +25888,9 @@ function simulateBattle() {
 
         <div class="battle-winner-announcement">
             <div class="winner-crown">👑</div>
+            <div class="winner-portrait-container">
+                <img src="${winnerImage}" alt="${winner.name}" class="winner-portrait" onerror="this.style.display='none'">
+            </div>
             <h3 class="winner-name">${winner.name}</h3>
             <p class="winner-title">${winner.tier} God - ${winner.titles ? winner.titles[0] : 'Divine Warrior'}</p>
             <p class="victory-margin">Victory Margin: ${scoreDifference}%</p>
@@ -25890,6 +25903,9 @@ function simulateBattle() {
 
         <div class="battle-stats-comparison">
             <div class="combatant-stats">
+                <div class="combatant-portrait-small">
+                    <img src="${winnerImage}" alt="${winner.name}" onerror="this.style.display='none'">
+                </div>
                 <h4>${winner.name}</h4>
                 <div class="stat-bar-container">
                     <div class="stat-label">Power Level</div>
@@ -25898,6 +25914,9 @@ function simulateBattle() {
                 </div>
             </div>
             <div class="combatant-stats">
+                <div class="combatant-portrait-small">
+                    <img src="${loserImage}" alt="${loser.name}" onerror="this.style.display='none'">
+                </div>
                 <h4>${loser.name}</h4>
                 <div class="stat-bar-container">
                     <div class="stat-label">Power Level</div>
