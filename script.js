@@ -25711,7 +25711,8 @@ function renderBattleOfGods() {
         'Supreme': [],
         'Foundational': [],
         'Major': [],
-        'Minor': []
+        'Minor': [],
+        'Other': []
     };
 
     for (const godId in gods) {
@@ -25719,6 +25720,8 @@ function renderBattleOfGods() {
         const tier = god.tier || 'Other';
         if (godsByTier[tier]) {
             godsByTier[tier].push({ id: godId, ...god });
+        } else {
+            godsByTier['Other'].push({ id: godId, ...god });
         }
     }
 
