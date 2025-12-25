@@ -26016,14 +26016,14 @@ function simulateBattle() {
             <div class="team-winner-portraits">
                 ${winningTeamPortraits}
             </div>
-            <h3 class="winner-name">Team ${winningTeam} Victorious!</h3>
-            <p class="winner-title">${winningTeamNames}</p>
+            <h3 class="winner-name">${winningTeamNames} Victorious!</h3>
+            <p class="winner-title">${winningGods.map(g => g.tier || 'Divine').join(' & ')} ${winningGods.length > 1 ? 'Gods' : 'God'}</p>
             <p class="victory-margin">Victory Margin: ${scoreDifference}%</p>
         </div>
 
         <div class="battle-stats-comparison">
             <div class="combatant-stats">
-                <h4>Team ${winningTeam} (Winners)</h4>
+                <h4>${winningTeamNames} (Winners)</h4>
                 <div class="team-roster">
                     ${winningGods.map(god => `<div class="roster-god">${god.name}</div>`).join('')}
                 </div>
@@ -26034,7 +26034,7 @@ function simulateBattle() {
                 </div>
             </div>
             <div class="combatant-stats">
-                <h4>Team ${winningTeam === 1 ? 2 : 1} (Defeated)</h4>
+                <h4>${losingTeamNames} (Defeated)</h4>
                 <div class="team-roster">
                     ${losingGods.map(god => `<div class="roster-god">${god.name}</div>`).join('')}
                 </div>
