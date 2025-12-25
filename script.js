@@ -14557,6 +14557,8 @@ function navigateTo(view) {
         renderGodQuiz();
     } else if (view === 'god-comparison') {
         renderGodComparison();
+    } else if (view === 'battle-of-gods') {
+        renderBattleOfGods();
     } else if (view === 'zodiac-quiz') {
         renderZodiacQuiz();
     } else if (view === 'falcon-king') {
@@ -25694,6 +25696,286 @@ function showRegionDetail(regionId, unionKey) {
             ` : ''}
         </div>
     `;
+}
+
+// ====================================================================================
+// BATTLE OF THE GODS - Interactive God Battle Simulator
+// ====================================================================================
+
+function renderBattleOfGods() {
+    const contentArea = document.getElementById('contentArea');
+    const gods = eudoriaData.eudoricGods;
+
+    // Organize gods by tier for selection
+    const godsByTier = {
+        'Supreme': [],
+        'Foundational': [],
+        'Major': [],
+        'Minor': []
+    };
+
+    for (const godId in gods) {
+        const god = gods[godId];
+        const tier = god.tier || 'Other';
+        if (godsByTier[tier]) {
+            godsByTier[tier].push({ id: godId, ...god });
+        }
+    }
+
+    // Sort gods alphabetically within each tier
+    for (const tier in godsByTier) {
+        godsByTier[tier].sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    contentArea.innerHTML = `
+        <div class="battle-of-gods-container">
+            <div class="battle-header">
+                <div class="divine-symbol-large">⚔️</div>
+                <h2>Battle of the Gods</h2>
+                <p class="battle-subtitle">Select two gods to witness an epic divine confrontation</p>
+            </div>
+
+            <div class="battle-selection-area">
+                <div class="god-selector-box">
+                    <h3>⚡ First Challenger</h3>
+                    <select id="god1Select" class="god-select-dropdown">
+                        <option value="">Select a god...</option>
+                        ${Object.keys(godsByTier).map(tier => {
+                            if (godsByTier[tier].length === 0) return '';
+                            return `
+                                <optgroup label="${tier} Gods">
+                                    ${godsByTier[tier].map(god =>
+                                        `<option value="${god.id}">${god.name}</option>`
+                                    ).join('')}
+                                </optgroup>
+                            `;
+                        }).join('')}
+                    </select>
+                    <div id="god1Preview" class="god-preview-card"></div>
+                </div>
+
+                <div class="battle-vs-divider">
+                    <div class="vs-symbol">VS</div>
+                </div>
+
+                <div class="god-selector-box">
+                    <h3>⚡ Second Challenger</h3>
+                    <select id="god2Select" class="god-select-dropdown">
+                        <option value="">Select a god...</option>
+                        ${Object.keys(godsByTier).map(tier => {
+                            if (godsByTier[tier].length === 0) return '';
+                            return `
+                                <optgroup label="${tier} Gods">
+                                    ${godsByTier[tier].map(god =>
+                                        `<option value="${god.id}">${god.name}</option>`
+                                    ).join('')}
+                                </optgroup>
+                            `;
+                        }).join('')}
+                    </select>
+                    <div id="god2Preview" class="god-preview-card"></div>
+                </div>
+            </div>
+
+            <div class="battle-action-section">
+                <button id="battleBtn" class="battle-start-btn" onclick="simulateBattle()" disabled>
+                    ⚔️ Begin Battle ⚔️
+                </button>
+            </div>
+
+            <div id="battleResult" class="battle-result-section" style="display: none;">
+                <!-- Battle results will appear here -->
+            </div>
+        </div>
+    `;
+
+    // Add event listeners for god selection
+    document.getElementById('god1Select').addEventListener('change', (e) => {
+        updateGodPreview('god1Preview', e.target.value);
+        checkBattleReady();
+    });
+
+    document.getElementById('god2Select').addEventListener('change', (e) => {
+        updateGodPreview('god2Preview', e.target.value);
+        checkBattleReady();
+    });
+}
+
+function updateGodPreview(previewId, godId) {
+    const previewDiv = document.getElementById(previewId);
+    if (!godId) {
+        previewDiv.innerHTML = '';
+        return;
+    }
+
+    const god = eudoriaData.eudoricGods[godId];
+    const powerCount = god.powers ? god.powers.length : 0;
+    const domainCount = god.domains ? god.domains.length : 0;
+
+    previewDiv.innerHTML = `
+        <div class="preview-god-name">${god.name}</div>
+        <div class="preview-god-tier">${god.tier} God</div>
+        <div class="preview-god-element">${god.element || 'Unknown Element'}</div>
+        <div class="preview-god-stats">
+            <div class="stat-item">⚡ ${powerCount} Powers</div>
+            <div class="stat-item">🏛️ ${domainCount} Domains</div>
+        </div>
+    `;
+}
+
+function checkBattleReady() {
+    const god1 = document.getElementById('god1Select').value;
+    const god2 = document.getElementById('god2Select').value;
+    const battleBtn = document.getElementById('battleBtn');
+
+    if (god1 && god2 && god1 !== god2) {
+        battleBtn.disabled = false;
+        battleBtn.style.opacity = '1';
+    } else {
+        battleBtn.disabled = true;
+        battleBtn.style.opacity = '0.5';
+    }
+}
+
+function simulateBattle() {
+    const god1Id = document.getElementById('god1Select').value;
+    const god2Id = document.getElementById('god2Select').value;
+
+    if (!god1Id || !god2Id || god1Id === god2Id) {
+        alert('Please select two different gods!');
+        return;
+    }
+
+    const god1 = eudoriaData.eudoricGods[god1Id];
+    const god2 = eudoriaData.eudoricGods[god2Id];
+
+    // Calculate battle scores based on god attributes
+    const score1 = calculateGodBattleScore(god1);
+    const score2 = calculateGodBattleScore(god2);
+
+    // Add randomness factor (60% variance) - strategy and circumstances matter more than raw power
+    // Even Supreme gods can lose to lesser gods (like Al'sekemu defeating Suleiman in the War of Gods)
+    const random1 = score1 * (0.7 + Math.random() * 0.6);
+    const random2 = score2 * (0.7 + Math.random() * 0.6);
+
+    const winner = random1 > random2 ? god1 : god2;
+    const loser = random1 > random2 ? god2 : god1;
+    const winnerScore = random1 > random2 ? random1 : random2;
+    const loserScore = random1 > random2 ? random2 : random1;
+
+    const scoreDifference = ((winnerScore - loserScore) / loserScore * 100).toFixed(0);
+
+    // Generate battle narrative
+    const battleNarrative = generateBattleNarrative(winner, loser, scoreDifference);
+
+    // Display results
+    const resultDiv = document.getElementById('battleResult');
+    resultDiv.style.display = 'block';
+    resultDiv.innerHTML = `
+        <div class="battle-result-header">
+            <h2>⚔️ Battle Complete ⚔️</h2>
+        </div>
+
+        <div class="battle-winner-announcement">
+            <div class="winner-crown">👑</div>
+            <h3 class="winner-name">${winner.name}</h3>
+            <p class="winner-title">${winner.tier} God - ${winner.titles ? winner.titles[0] : 'Divine Warrior'}</p>
+            <p class="victory-margin">Victory Margin: ${scoreDifference}%</p>
+        </div>
+
+        <div class="battle-narrative">
+            <h4>📜 Battle Chronicle</h4>
+            ${battleNarrative}
+        </div>
+
+        <div class="battle-stats-comparison">
+            <div class="combatant-stats">
+                <h4>${winner.name}</h4>
+                <div class="stat-bar-container">
+                    <div class="stat-label">Power Level</div>
+                    <div class="stat-bar winner-bar" style="width: 100%"></div>
+                    <div class="stat-value">${winnerScore.toFixed(0)}</div>
+                </div>
+            </div>
+            <div class="combatant-stats">
+                <h4>${loser.name}</h4>
+                <div class="stat-bar-container">
+                    <div class="stat-label">Power Level</div>
+                    <div class="stat-bar loser-bar" style="width: ${(loserScore/winnerScore*100).toFixed(0)}%"></div>
+                    <div class="stat-value">${loserScore.toFixed(0)}</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="battle-again-btn" onclick="renderBattleOfGods()">
+            🔄 Battle Again
+        </button>
+    `;
+
+    // Scroll to results
+    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function calculateGodBattleScore(god) {
+    let score = 0;
+
+    // Tier scoring (most important factor)
+    const tierScores = {
+        'Supreme': 1000,
+        'Foundational': 750,
+        'Major': 500,
+        'Minor': 250
+    };
+    score += tierScores[god.tier] || 200;
+
+    // Power count
+    if (god.powers) {
+        score += god.powers.length * 50;
+    }
+
+    // Domain count
+    if (god.domains) {
+        score += god.domains.length * 30;
+    }
+
+    // Element diversity (more elements = more versatility)
+    if (god.element) {
+        const elementCount = god.element.split(',').length;
+        score += elementCount * 40;
+    }
+
+    // Special bonuses based on specific attributes
+    if (god.alignment === 'Chaotic') score += 100; // Unpredictable fighters
+    if (god.gender === 'Female') score += 50; // Fierce female power
+
+    return score;
+}
+
+function generateBattleNarrative(winner, loser, margin) {
+    const narratives = [];
+
+    // Opening
+    narratives.push(`<p>The heavens trembled as <strong>${winner.name}</strong> and <strong>${loser.name}</strong> faced each other across the divine battleground.</p>`);
+
+    // Mid-battle based on margin
+    if (margin > 50) {
+        narratives.push(`<p>From the first clash, it was clear that <strong>${winner.name}</strong> held overwhelming dominance. ${loser.name} fought valiantly, but could not withstand the superior might of ${winner.tier === 'Supreme' ? 'the Supreme Divine' : 'their opponent'}.</p>`);
+    } else if (margin > 25) {
+        narratives.push(`<p>The battle raged fierce and brutal. <strong>${loser.name}</strong> unleashed devastating attacks, but <strong>${winner.name}</strong> countered with superior strategy and power, gradually gaining the upper hand.</p>`);
+    } else {
+        narratives.push(`<p>An epic clash of titans! The battle could have gone either way. Both gods traded devastating blows, but in a critical moment, <strong>${winner.name}</strong> seized the opportunity and claimed victory.</p>`);
+    }
+
+    // Winner's decisive ability
+    if (winner.powers && winner.powers.length > 0) {
+        const decisivePower = winner.powers[Math.floor(Math.random() * winner.powers.length)];
+        narratives.push(`<p>The deciding moment came when <strong>${winner.name}</strong> unleashed <em>${decisivePower.name}</em>, overwhelming their opponent with divine might.</p>`);
+    }
+
+    // Conclusion
+    narratives.push(`<p class="narrative-conclusion">Victory belongs to <strong>${winner.name}</strong>, ${winner.tier} God, whose power echoes across Eudraneth!</p>`);
+
+    return narratives.join('\n');
 }
 
 // ====================================================================================
