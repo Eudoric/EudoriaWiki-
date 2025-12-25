@@ -25859,10 +25859,12 @@ function simulateBattle() {
     const score1 = calculateGodBattleScore(god1);
     const score2 = calculateGodBattleScore(god2);
 
-    // Add randomness factor (60% variance) - strategy and circumstances matter more than raw power
-    // Even Supreme gods can lose to lesser gods (like Al'sekemu defeating Suleiman in the War of Gods)
-    const random1 = score1 * (0.7 + Math.random() * 0.6);
-    const random2 = score2 * (0.7 + Math.random() * 0.6);
+    // Add randomness factor (100% variance) - PURE CHAOS MODE
+    // Strategy, luck, and circumstances matter more than raw power
+    // Even Supreme gods can lose to Minor gods - anything can happen!
+    // Qlackic approves of this randomness 😈
+    const random1 = score1 * (0.5 + Math.random() * 1.0);
+    const random2 = score2 * (0.5 + Math.random() * 1.0);
 
     const winner = random1 > random2 ? god1 : god2;
     const loser = random1 > random2 ? god2 : god1;
