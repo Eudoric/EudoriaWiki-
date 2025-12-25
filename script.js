@@ -759,7 +759,7 @@ const eudoriaData = {
     lawsOfEimes: {
         name: "The Laws of Eimes",
         tagline: "The Skeleton of Reality Itself",
-        workInProgress: true,
+        workInProgress: false,
         wipMessage: "This section contains the overview. Detailed information about the 10 Great Pillars and specific laws is being developed. Check back soon!",
 
         definition: {
