@@ -25994,9 +25994,6 @@ function simulateBattle() {
 
     const scoreDifference = ((winnerScore - loserScore) / loserScore * 100).toFixed(0);
 
-    // Generate battle narrative
-    const battleNarrative = generateTeamBattleNarrative(winningGods, losingGods, scoreDifference);
-
     // Display results
     const resultDiv = document.getElementById('battleResult');
     resultDiv.style.display = 'block';
@@ -26022,11 +26019,6 @@ function simulateBattle() {
             <h3 class="winner-name">Team ${winningTeam} Victorious!</h3>
             <p class="winner-title">${winningTeamNames}</p>
             <p class="victory-margin">Victory Margin: ${scoreDifference}%</p>
-        </div>
-
-        <div class="battle-narrative">
-            <h4>📜 Battle Chronicle</h4>
-            ${battleNarrative}
         </div>
 
         <div class="battle-stats-comparison">
