@@ -11614,70 +11614,123 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                 },
                 zevon: {
                     title: "Zevon - God of Frost, Ice, and Clarity",
-                    fullTitle: "The Frost-Seer, The Clearer of Illusions, Third of the Zen",
-                    attributes: "Clarity, Focus, Cold Truth, Perception, Discipline, Precision, Mental Sharpness",
-                    symbols: "Ice Crystal (perfect clarity), Clear Winter Sky (unobstructed truth), Frozen Moment (the stillness before action), Shattered Mirror (illusions broken)",
-                    description: "Zevon is the god of frost, ice, and clarity. He brings focus through hardship, clarity through cold. In the frozen stillness, all distractions fall away, leaving only truth. He is the brother who sees what others miss, who cuts through deception with the precision of winter's edge.",
+                    fullTitle: "The Frozen Strategist, The Mind That Does Not Cloud, Third of the Zen",
+                    tier: "Major God",
+                    gender: "Male",
+                    element: "Frost, Ice",
+                    space: "Eudraneth and Zamazara",
+                    alignment: "Lawful Good",
+                    sacredAnimal: "Polar Bears, Penguins, Muskoxen",
+                    sacredPlant: "None",
+                    attributes: "Frost, Ice, Clarity, Strategy, Intelligence, Precision, Control, Inevitability, Foresight, Logic, Containment",
+                    symbols: "The Clarion Spear (translucent divine ice weapon), Frozen Chains (binding control), Glacial Patterns (strategic formations), Still Water (clarity of mind), The First Snowfall (silent inevitability)",
+                    description: "Zevon is the Zen Brotherhood\\'s strategist, the god who analyzes and plans to win battles. His immense intelligence, honed under Suleiman and E\\'kar, is strictly focused on warfare. He expertly positions his brothers for maximum effect. He is the creator of snow, ice, and frost; his power literally froze the Norvayn Union in Eudoria into existence. Despite this fearsome power, Zevon is stoic and blunt. Though calm and understanding, he prioritizes truth over feelings, saying what he thinks regardless of offense.",
 
                     appearance: {
-                        description: "Zevon appears perpetually touched by frost, as if winter itself clings to him. He is the most lean and precise of the four brothers, built not for raw power but for calculated perfection.",
-                        skin: "Pale as fresh snow, with a faint shimmer like ice catching sunlight—cold to the touch but never frozen",
-                        height: "7'6\", the second tallest, but appears taller due to his perfect posture and sharp, angular build",
-                        hair: "White as winter, falling straight and orderly, occasionally crystallizing with actual frost at the tips",
-                        build: "Lean and precise, every muscle defined with surgical clarity—not bulky but perfectly efficient",
-                        eyes: "Ice-blue and piercing, seeing through all deception, all pretense, all self-delusion. When Zevon looks at you, you feel exposed, as if all your hidden truths are laid bare",
-                        voice: "Clear and cold, with perfect enunciation. Every word is chosen with precision. There is no warmth in his tone, but there is absolute truth",
-                        presence: "Where Zevon walks, the air becomes crisp and clear. Thoughts sharpen like icicles. Confusion fades, replaced by uncomfortable clarity. His breath is visible even on the hottest days, and the ground beneath his feet frosts over. Being near him is like standing in winter—uncomfortable, but clarifying",
-                        distinctiveFeatures: "Frost forms naturally on his armor, creating intricate patterns that shift like thoughts crystallizing. His weapons are made of enchanted ice that never melts, sharper than any steel"
+                        description: "Zevon presents a striking contrast to his domain, where one might expect coldness and harshness; his facial features carry an almost serene quality that belies his frozen nature. His bronze skin, inherited from his parents, is marked with subtle patterns that resemble frost crystals when light catches them at certain angles. His orange hair flows like his brothers\\', though it often appears to have ice crystals forming and melting within it when his power is active. His beard is neat and carefully maintained, braided with small ice ornaments that never melt.",
+                        skin: "Bronze skin marked with subtle frost crystal patterns",
+                        height: "Similar to his brothers in stature",
+                        hair: "Orange hair that flows like his brothers\\', with ice crystals forming and melting within it when his power is active",
+                        beard: "Neat and carefully maintained, braided with small ice ornaments that never melt",
+                        build: "Built for precision and strategy rather than raw power",
+                        eyes: "His most distinctive feature - they appear frozen in perfect clarity, reflecting everything he sees with photographic precision. When he enters the Frostmind state, his eyes take on an even more crystalline quality, as if looking through clear ice",
+                        voice: "Clear and precise, prioritizing truth over comfort",
+                        presence: "Commands strategic respect through clarity of thought and inevitability of planning",
+                        distinctiveFeatures: "His armor is elegantly crafted, favoring precision and form over intimidation. Frost patterns naturally form across the metal, creating ever-shifting strategic diagrams that reflect his constantly analyzing mind. He carries the Clarion Spear with an almost casual grace, the weapon appearing as natural in his hands as a scholar\\'s pen"
                     },
 
                     domains: [
                         {
-                            name: "Frost and Ice",
-                            description: "Zevon commands the cold with absolute precision. His ice is not chaotic or wild—it is calculated, surgical, perfect. He can freeze a single drop of water mid-air or encase an entire battlefield in frost. His cold is not the cold of death—it is the cold of preservation, of clarity, of truth frozen in place so it cannot be denied."
+                            name: "Frost & Ice",
+                            description: "Zevon is the creator of cold itself. He controls ice in all its states - snow for concealment and silence, ice for containment and structure, frost for weakening and inevitability. The entire Norvayn Union exists as a frozen realm because of his breath. His ice does not break under pressure - it cracks slowly, revealing weak points instead of collapsing, mirroring his preference for control over spectacle."
                         },
                         {
                             name: "Clarity",
-                            description: "Zevon's greatest domain is clarity itself—the ability to see things as they truly are, stripped of emotion, bias, and illusion. He represents the moment when confusion falls away and truth becomes undeniable. He teaches that clarity often comes through discomfort, that the harsh light of truth is more valuable than the warm comfort of delusion."
+                            description: "Zevon\\'s mind cannot be clouded. He is immune to illusion, mind control, and emotional manipulation. He sees through fear, rage, and deception with perfect clarity. He retains perfect memory of every battle he has witnessed or participated in. This mental clarity extends to his strategic genius - he can slow his perception of time during combat to analyze trajectories, predict enemy actions, and adjust outcomes before they occur. This is why Suleiman trusted him above most others."
                         },
                         {
-                            name: "Perception",
-                            description: "Zevon sees what others cannot. He perceives the hidden, the obscured, the deliberately concealed. His eyes cut through disguises, through lies, through self-deception. He is the god of those who seek truth no matter how uncomfortable, who refuse to look away from reality, who value clarity over comfort."
+                            name: "Strategy",
+                            description: "Zevon understands warfare not as a series of battles, but as a single, flowing equation where every action creates ripples. He has reversed the outcome of entire wars without striking a single blow - by freezing supply routes, locking armies in place, immobilizing terrain, and forcing surrender through inevitability. Battles end not when Zevon attacks, but when movement becomes impossible."
                         }
                     ],
 
                     powers: [
                         {
-                            name: "Frozen Clarity",
-                            description: "Zevon's signature power—he brings mental clarity through hardship, freezing away distractions and leaving only essential truth. When he touches someone's mind, all confusion, all doubt, all comforting lies fall away like frost melting in sunlight. What remains is uncomfortable, sharp truth."
+                            name: "Absolute Zero of Thought",
+                            description: "Zevon can still not just temperature, but motion and intention itself. He slows enemies\\' movements, freezes spell formations mid-cast, and halts chaotic surges of power. This does not erase free will - it enforces pause, giving clarity where there was chaos."
                         },
                         {
-                            name: "Ice-Sight",
-                            description: "Zevon can see through all deception, illusion, and self-delusion. His eyes perceive the truth beneath the surface—hidden motives, concealed emotions, buried secrets. He can grant this sight to his followers, allowing them to see clearly in moments of crisis."
+                            name: "Clarity of the Frozen Mind",
+                            description: "Zevon\\'s consciousness is perfectly clear at all times. He cannot be deceived by illusions, manipulated through emotion, or controlled by external forces. This mental fortress makes him the perfect strategist and the most reliable advisor."
                         },
                         {
-                            name: "The Frozen Moment",
-                            description: "Zevon can freeze time for a single heartbeat, creating a moment of perfect stillness before action. In this frozen instant, everything becomes clear—the right move, the hidden trap, the true path. Warriors blessed with this power gain supernatural perception in combat, seeing their enemy's next move before it happens."
+                            name: "The Frostmind",
+                            description: "Zevon can slow his perception of time during combat, allowing him to analyze every variable with supernatural precision. This does NOT make him omniscient - only precise. He sees what is there, not what is hidden, but he sees it with perfect clarity."
                         },
                         {
-                            name: "Winter's Discipline",
-                            description: "Zevon grants absolute mental discipline to those who worship him. Distractions fall away. Focus becomes laser-sharp. The mind becomes as clear and ordered as a winter sky. This is not easy or comfortable—it requires the same discipline as enduring bitter cold—but it is transformative."
+                            name: "Glacial Dominion",
+                            description: "Complete control over ice in all its forms. Zevon shapes winter itself, from gentle snowfall to continent-freezing storms. His ice constructs never shatter under pressure - they crack slowly, revealing structural weaknesses instead of breaking catastrophically."
+                        },
+                        {
+                            name: "The Silent Turn",
+                            description: "Zevon\\'s most significant strategic ability - the power to reverse the outcome of wars without direct combat. By controlling terrain, supply lines, and movement itself, he makes victory or defeat inevitable before the first sword is drawn."
+                        },
+                        {
+                            name: "The Ice That Does Not Break",
+                            description: "Zevon\\'s constructs favor control over spectacle. They do not explode or shatter dramatically - they hold, contain, and slowly transform the battlefield to his advantage."
                         }
                     ],
 
-                    personality: "Zevon is the coldest of the four brothers—not cruel, but absolutely honest, precise, and disciplined. He does not soften truth to make it more palatable. He does not comfort or reassure. He shows you reality exactly as it is, and expects you to be strong enough to face it. Where Zendon protects, Zan endures, and Zavi burns with passion, Zevon clarifies. He is the brother who tells you what you need to hear, not what you want to hear. He values discipline, precision, and truth above all else. He has no patience for self-deception, excuses, or comfortable lies. He is not warm, but he is never deceptive. His coldness is not cruelty—it is clarity.",
+                    legendaryFeats: [
+                        {
+                            name: "The Breath That Froze Norvayn",
+                            description: "Zevon\\'s power is so immense that the entire Norvayn Union exists in perpetual winter because he breathes. His presence on Eudoria fundamentally altered the climate of a whole continental region."
+                        },
+                        {
+                            name: "The War Games Victory",
+                            description: "When the Zen Brothers were younger, they would play war games against each other. Every brother would fight to have Zevon on their team - his strategic mind was so valuable that having him meant almost certain victory."
+                        },
+                        {
+                            name: "The Silent Campaigns",
+                            description: "Zevon has ended multiple wars without ever entering combat, using strategic positioning of ice, terrain manipulation, and control of supply routes to force surrender through sheer inevitability."
+                        },
+                        {
+                            name: "Suleiman\\'s Trust",
+                            description: "When Suleiman needed to assign tactical missions to the Zen Brothers, he would give them to Zevon first. Zevon would formulate the plan that would ensure victory, though he learned to tell Zan about the plan only after it was complete - otherwise Zan would argue for charging in immediately."
+                        },
+                        {
+                            name: "The Frostmind in Battle",
+                            description: "During critical moments of the War of Gods, Zevon would enter the Frostmind state, slowing his perception to analyze the battlefield with perfect clarity and adjust the brothers\\' strategy in real-time."
+                        },
+                        {
+                            name: "Dynamic with Zan",
+                            description: "The relationship between Zevon and Zan is a constant source of both strength and tension. Zevon wants to plan every detail; Zan wants to charge into battle immediately. Zevon learned to develop his strategies completely before telling Zan, because once Zan hears there\\'s a battle, he can think of nothing else. Despite this friction, they are devastatingly effective together - Zevon\\'s strategy channeling Zan\\'s endless endurance into precise, overwhelming force."
+                        }
+                    ],
+
+                    personality: "Zevon is stoic, blunt, and ruthlessly honest, saying what he thinks without filtering for social comfort. His directness stems from a desire for clarity, not cruelty, and he values truth over temporary hurt. Despite this bluntness, Zevon is calmer and more understanding than most brothers. He observes, analyzes, and acts precisely, with a patience that is inevitable like winter. While Zavi is warm and kind, Zevon is fair and clear, both good but in different ways. His intelligence is focused on tactical and strategic thinking, able to analyze battlefields with perfect clarity but less interested in emotion or social nuance. Zevon\\'s role is as the planner and strategist, translating commands into tactics, channeling aggression into assaults, and creating frameworks for Zavi to excel. He is not the leader but the architect of their victories.",
 
                     relationships: {
-                        withHisBrothers: "Zevon loves his brothers, though he shows it differently than they do. Zendon's protective warmth balances Zevon's cold truth. Zan's relentless endurance proves that facing harsh reality makes you stronger. Zavi's passionate fire reminds Zevon that not all truth is cold—some truths burn. Together, they are complete: protection, endurance, clarity, and passion.",
-                        withZenitha: "Zevon honors his mother by seeing the world with perfect clarity, never looking away from difficult truths. She taught him that strength means facing reality without flinching, and he has made that lesson the core of his being.",
-                        withZane: "Trained by his father in the art of perception, Zevon learned that battles are won by seeing the truth of the situation before your enemy does. Zane taught him that clarity is a weapon, that seeing through deception is as valuable as any sword. Zevon embodies this perfectly."
+                        withHisBrothers: "Zevon respects Zendon\\'s leadership and serves as his tactical mind. Where Zendon commands, Zevon plans. Their relationship is one of mutual respect - Zendon trusts Zevon\\'s strategies implicitly. Zevon\\'s relationship with Zan is the most complicated - Zevon is the strategist; Zan is headstrong and impatient for battle. Despite this friction, Zevon understands how to channel Zan\\'s endless endurance into devastating tactical strikes.",
+                        withZenitha: "Son of Zenitha, Mother Nature of War. He inherited her clarity and strategic mind.",
+                        withZane: "Son and student of Zane, God of War. Also trained under Suleiman and E\\'kar, honing his strategic abilities.",
+                        withGodevea: "Zevon\\'s marriage to Godevea (Goddess of Femininity and Childbirth) was transactional rather than romantic. Zevon married her because he did not want to remain unmarried (likely for political or social reasons). Godevea married Zevon for his protection. They had no children together, though Zevon has over 80 children with other goddesses. After Zevon\\'s death, Godevea rebelled and protested - a rebellion that Al\\'sekemu helped facilitate.",
+                        withAlsekemu: "A deeply tragic irony defines this relationship. Al\\'sekemu orchestrated Zevon\\'s death, yet afterward helped Godevea with her rebellion against the existing order. Godevea knows nothing of Al\\'sekemu\\'s role in her husband\\'s murder. The question remains unanswered: if she discovered the truth, would she still take Al\\'sekemu\\'s advice?",
+                        withSuleiman: "Zevon worked directly under Suleiman and earned his complete trust through his clarity of mind and strategic brilliance. Suleiman would give tactical missions to Zevon first, knowing he would formulate plans that ensured victory.",
+                        withEkar: "Zevon also served under E\\'kar, further honing his strategic abilities and understanding of large-scale warfare."
                     },
 
-                    teaching: "Hardship clarifies. Cold strips away comfort and illusion, leaving only what is real. In the frozen moment before action, you see truth. Do not fear discomfort—it is the price of clarity.",
+                    teaching: "Clarity cuts through chaos. The battle is won before the first blow is struck. Control the field, and you control the outcome. Ice does not rage - it simply becomes inevitable. Truth matters more than comfort.",
 
-                    essence: "Perception sharpened by difficulty. Zevon is truth crystallized, clarity frozen in perfect form, the moment when all illusions shatter.",
+                    essence: "The patience of winter and the clarity of frozen water",
 
-                    nature: "Zevon represents perception sharpened by difficulty. He is the god of those who find clarity in crisis, focus in hardship, and truth in discomfort. His cold is not cruel—it is clarifying. He teaches that the most valuable truths are often the most uncomfortable, and that clarity is worth any discomfort it requires."
+                    nature: "Zevon embodies the patience of winter and the clarity of frozen water. He does not act impulsively, does not let emotion cloud judgment, and does not waste movement. Every action serves a purpose within a larger strategic framework.",
+
+                    legacy: "The entire Norvayn Union exists because Zevon breathes. His death was orchestrated by Al\\'sekemu, leaving behind a widow who unknowingly receives counsel from her husband\\'s murderer, over 80 children scattered across the divine realms, and a frozen legacy that continues to shape Eudoria\\'s climate.",
+
+                    primaryWeapon: "The Clarion Spear - A long, elegant spear forged of translucent divine ice that seems to contain frozen starlight. The spear pierces through both armor and illusions alike, revealing truth with each strike. Wounds inflicted by the Clarion Spear freeze instead of bleeding, causing no immediate pain but slowly spreading cold that cannot be ignored. The weapon cannot be swung wildly - it requires precision, focus, and intent. The spear represents reach and foresight, while its ice construction symbolizes control over rage.",
+
+                    tertiaryWeapon: "Frozen Chains - Chains of living ice summoned from the ground or air. These chains can bind gods as well as mortals. They tighten slowly and inexorably, and break only when Zevon chooses to release them. The chains represent inevitability - once bound by Zevon\\'s judgment, escape requires his permission."
                 },
                 zavi: {
                     title: "Zavi - God of Fire and Love",
