@@ -11383,8 +11383,7 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
             titles: ["The Four Divine Warriors", "Sons of Lightning and Ice", "Guardians of the Four Strengths"],
             attributes: ["Strength", "War", "Protection", "Endurance", "Clarity", "Passion"],
             symbols: ["Lightning Strike on Glacier", "Four Elements United", "The Four States of Strength"],
-            description: "The Zen Brothers are four divine warriors born from lightning striking a glacier. Together, they embody the Four States of Strength: Protection (Zendon), Persistence (Zan), Perception (Zevon), and Passion (Zavi). They were among the strongest gods in Eudoric until they were killed in a devastating Sunarian ambush.",
-            origin: "Born from lightning striking a glacier, the four Zen Brothers emerged as divine sons of war and weather, each embodying a different aspect of strength.",
+            description: "The Zen Brothers are four divine warriors born to Zane (God of War) and Zenitha (Mother Nature of War). Together, they embody the four states of strength: Protection (Zendon), Persistence (Zan), Perception (Zevon), and Passion (Zavi). They were among the strongest gods in Eudoric until they were killed in a devastating Sunarian ambush. Born to Zane and Zenitha, the Zen Brothers inherited an unmatched legacy of martial prowess and divine power. They fought as a unified force under Zendon\\'s command. When he raised his shield, Zan stopped advancing, Zevon ceased judgment, and Zavi restrained his fire. This absolute unity made them nearly unstoppable. The brothers were already engaged in their own war in a faraway kingdom, fighting for human rights, when they heard their mother Zenitha\\'s call during the War of Gods. They entered the conflict at Bonnia with a sharp, massive lightning strike that killed 30 gods instantly, announcing their arrival and turning the tide of battle. Their combined might became legendary across Eudraneth and beyond. Each brother left an indelible mark on Eudoria: Zendon\\'s name graces the region of Zendonia, his strength forever memorialized in its geography. Zevon\\'s breath created the frozen Norvayn Union, an entire continental region shaped by his power. Their legacy lives on through their children, their teachings, and the countless lives they touched before their tragic deaths in the Sunarian ambush that claimed four of the mightiest gods in existence.",
 
             brothers: {
                 zendon: {
@@ -16690,16 +16689,9 @@ function renderZenBrothersProfile(god) {
 
             <!-- Group Overview Section -->
             <div class="detail-section">
-                <h3>The Four Divine Warriors</h3>
+                <h3>Sons of Zane and Zenitha</h3>
                 <p>${god.description}</p>
             </div>
-
-            ${god.origin ? `
-            <div class="detail-section">
-                <h3>Divine Origin</h3>
-                <p class="divine-origin">${god.origin}</p>
-            </div>
-            ` : ''}
 
             <!-- Brother Tabs - Each brother gets their own main tab -->
             <div class="god-tabs">
