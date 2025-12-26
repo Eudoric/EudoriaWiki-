@@ -13516,3 +13516,111 @@ div .xref-link {
         height: 80px;
     }
 }
+
+/* Arena Selection Styling */
+.arena-selector {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: var(--surface-color);
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+}
+
+.arena-selector h3 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.arena-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.arena-card {
+    padding: 1rem;
+    background: var(--background-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.arena-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.arena-card.selected {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+    border-color: var(--accent-color);
+    border-width: 3px;
+    box-shadow: 0 4px 16px rgba(212, 175, 55, 0.4);
+}
+
+.arena-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.arena-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.arena-bonus {
+    font-size: 0.85rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.arena-description-panel {
+    padding: 1rem;
+    background: var(--background-color);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.arena-description-label {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.arena-description-text {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .arena-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.75rem;
+    }
+
+    .arena-card {
+        padding: 0.75rem;
+    }
+
+    .arena-icon {
+        font-size: 2rem;
+    }
+
+    .arena-name {
+        font-size: 0.9rem;
+    }
+
+    .arena-bonus {
+        font-size: 0.75rem;
+    }
+}

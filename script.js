@@ -25752,6 +25752,25 @@ function renderBattleOfGods() {
                 </div>
             </div>
 
+            <div class="arena-selector">
+                <h3>🏛️ Choose Your Arena</h3>
+                <div class="arena-grid">
+                    ${Object.keys(battleArenas).map(arenaId => {
+                        const arena = battleArenas[arenaId];
+                        return `
+                            <div class="arena-card ${arenaId === 'bonnia' ? 'selected' : ''}" onclick="selectArena('${arenaId}')" data-arena="${arenaId}">
+                                <div class="arena-icon">${arena.image || '🏛️'}</div>
+                                <div class="arena-name">${arena.name}</div>
+                                <div class="arena-bonus">${arena.bonus}</div>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+                <div class="arena-description" id="arenaDescription">
+                    ${battleArenas.bonnia.description}
+                </div>
+            </div>
+
             <div class="battle-selection-area" id="teamSelectionArea">
                 <!-- Dynamic team selection will be inserted here -->
             </div>
@@ -25807,6 +25826,52 @@ function updateGodPreview(previewId, godId) {
 let currentBattleMode = '1v1';
 let team1Gods = [];
 let team2Gods = [];
+let selectedArena = 'bonnia';
+
+// Battle Arenas
+const battleArenas = {
+    bonnia: {
+        name: "The Bonnia",
+        description: "The multi-realm battlefield where gods test their power and settle disputes",
+        bonus: "Balanced arena - no special bonuses",
+        image: "⚔️"
+    },
+    zamazara: {
+        name: "Zamazara",
+        description: "Al'sekemu's Court of Order and War, a realm of absolute discipline",
+        bonus: "+10% power to Foundational gods",
+        bonusType: "tier",
+        bonusValue: { "Foundational": 1.1 }
+    },
+    lionCourt: {
+        name: "The Lion Court",
+        description: "Suleiman's seat of authority, where divine intellect bows in silence",
+        bonus: "+15% power to Supreme gods",
+        bonusType: "tier",
+        bonusValue: { "Supreme": 1.15 }
+    },
+    eudran: {
+        name: "Eudran",
+        description: "The first mortal world, where gods once walked among mortals",
+        bonus: "+5% power to all gods with mortal connections",
+        bonusType: "general",
+        bonusValue: 1.05
+    },
+    tiaAscending: {
+        name: "Tia Ascending",
+        description: "The paradise between worlds, a mythic landscape of glowing meadows",
+        bonus: "+8% power to Minor gods",
+        bonusType: "tier",
+        bonusValue: { "Minor": 1.08 }
+    },
+    afterhall: {
+        name: "The Afterhall",
+        description: "The Corridor of Becoming, where mortal souls transform to divine",
+        bonus: "+10% to gods with resurrection/death powers",
+        bonusType: "general",
+        bonusValue: 1.1
+    }
+};
 
 function setBattleMode(mode) {
     currentBattleMode = mode;
@@ -25827,6 +25892,20 @@ function setBattleMode(mode) {
 
     // Render team selection based on mode
     updateTeamMode();
+}
+
+function selectArena(arenaId) {
+    selectedArena = arenaId;
+
+    // Update visual selection
+    document.querySelectorAll('.arena-card').forEach(card => {
+        card.classList.remove('selected');
+    });
+    document.querySelector(`[data-arena="${arenaId}"]`).classList.add('selected');
+
+    // Update description
+    const arena = battleArenas[arenaId];
+    document.getElementById('arenaDescription').textContent = arena.description;
 }
 
 function updateTeamMode() {
@@ -26086,6 +26165,17 @@ function calculateGodBattleScore(god) {
     // Special bonuses based on specific attributes
     if (god.alignment === 'Chaotic') score += 100; // Unpredictable fighters
     if (god.gender === 'Female') score += 50; // Fierce female power
+
+    // Apply arena bonuses
+    const arena = battleArenas[selectedArena];
+    if (arena && arena.bonusValue) {
+        if (arena.bonusType === 'tier' && god.tier) {
+            const tierMultiplier = arena.bonusValue[god.tier] || 1.0;
+            score *= tierMultiplier;
+        } else if (arena.bonusType === 'general') {
+            score *= arena.bonusValue;
+        }
+    }
 
     return score;
 }
