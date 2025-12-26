@@ -13127,10 +13127,21 @@ div .xref-link {
 
 .battle-result-section {
     margin-top: 4rem;
-    padding: 3rem;
-    background: var(--surface-color);
-    border: 2px solid var(--accent-color);
+}
+
+.battle-result-wrapper {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid var(--accent-color);
+}
+
+.battle-result-overlay {
+    padding: 3rem;
+    background: rgba(13, 40, 24, 0.85);
+    backdrop-filter: blur(4px);
     animation: fadeInBattle 0.6s ease;
 }
 

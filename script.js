@@ -26032,42 +26032,48 @@ const battleArenas = {
         name: "The Bonnia",
         description: "The multi-realm battlefield where gods test their power and settle disputes",
         bonus: "Balanced arena - no special bonuses",
-        image: "⚔️"
+        image: "⚔️",
+        backgroundImage: "assets:images:/Bonnia.png"
     },
     zamazara: {
         name: "Zamazara",
         description: "Al'sekemu's Court of Order and War, a realm of absolute discipline",
         bonus: "+10% power to Foundational gods",
         bonusType: "tier",
-        bonusValue: { "Foundational": 1.1 }
+        bonusValue: { "Foundational": 1.1 },
+        backgroundImage: "assets:images:/Zamzara.png"
     },
     courtOfEu: {
         name: "The Court of Eu",
         description: "Suleiman's domain, more accessible to other gods than the inner sanctum",
         bonus: "+15% power to Supreme gods",
         bonusType: "tier",
-        bonusValue: { "Supreme": 1.15 }
+        bonusValue: { "Supreme": 1.15 },
+        backgroundImage: "assets:images:/Bonnia.png"
     },
     fallingBonnia: {
         name: "The Falling Bonnia",
         description: "A fractured realm between dimensions where reality bends and breaks",
         bonus: "+12% power to Major gods",
         bonusType: "tier",
-        bonusValue: { "Major": 1.12 }
+        bonusValue: { "Major": 1.12 },
+        backgroundImage: "assets:images:/The fallen rift of Bonnia.png"
     },
     ascendingHall: {
         name: "The Ascending Hall",
         description: "The sacred path of divine ascension where mortals become gods",
         bonus: "+8% power to Minor gods",
         bonusType: "tier",
-        bonusValue: { "Minor": 1.08 }
+        bonusValue: { "Minor": 1.08 },
+        backgroundImage: "assets:images:/The Ascending .png"
     },
     oristhar: {
         name: "The Oristhar: The Hall of the Four",
         description: "The meeting place of the four cardinal powers, where balance reigns",
         bonusType: "general",
         bonus: "+5% power to all gods",
-        bonusValue: 1.05
+        bonusValue: 1.05,
+        backgroundImage: "assets:images:/Bonnia.png"
     }
 };
 
@@ -26317,6 +26323,9 @@ function simulateBattle() {
     const winningTeamNames = winningGods.map(g => g.name).join(', ');
     const losingTeamNames = losingGods.map(g => g.name).join(', ');
 
+    // Get arena background image
+    const arenaBackground = battleArenas[selectedArena].backgroundImage || '';
+
     // Check if prediction was correct
     const predictionCorrect = userPrediction === winningTeam;
     const predictionHTML = predictionMade ? `
@@ -26328,13 +26337,15 @@ function simulateBattle() {
     ` : '';
 
     resultDiv.innerHTML = `
-        <div class="battle-result-header">
-            <h2>⚔️ Battle Complete ⚔️</h2>
-        </div>
+        <div class="battle-result-wrapper" style="background-image: url('${arenaBackground}');">
+            <div class="battle-result-overlay">
+                <div class="battle-result-header">
+                    <h2>⚔️ Battle Complete ⚔️</h2>
+                </div>
 
-        ${predictionHTML}
+                ${predictionHTML}
 
-        <div class="battle-winner-announcement">
+                <div class="battle-winner-announcement">
             <div class="winner-crown">👑</div>
             <div class="team-winner-portraits">
                 ${winningTeamPortraits}
@@ -26372,6 +26383,8 @@ function simulateBattle() {
         <button class="battle-again-btn" onclick="renderBattleOfGods()">
             🔄 Battle Again
         </button>
+            </div>
+        </div>
     `;
 
     // Record battle in history
