@@ -11388,44 +11388,272 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
 
             brothers: {
                 zendon: {
-                    title: "First Brother - God of Thunder and Shield",
-                    attributes: "Protection, Thunder, Defense, Courage, Strength",
-                    symbols: "Shield, Thunder, Battle Drum",
-                    description: "Zendon is the god of thunder and shield, protector of warriors. His voice is the battle's drumbeat, steady and unyielding. He represents protection — the strength to defend what you love.",
-                    appearance: "A towering figure with storm clouds gathering around his shoulders. He carries a shield that has never been broken, and his voice rumbles like distant thunder. His eyes crackle with protective lightning.",
+                    title: "First Brother - God of Thunder, Protection, and Shield",
+                    fullTitle: "The Unbreakable Shield, The Thunder Guardian, First of the Zen",
+                    attributes: "Protection, Thunder, Defense, Courage, Strength, Loyalty, Duty",
+                    symbols: "The Eternal Shield (never broken in battle), Thunder (his battle cry), Battle Drum (the heartbeat of war), Storm Clouds (his presence on the battlefield)",
+                    description: "Zendon is the eldest of the Zen Brothers, the God of Thunder and Shield. He is the protector, the defender, the wall that does not break. His voice is thunder itself—when he speaks, battlefields fall silent. His shield has never been broken in over 400 battles. He represents protection in its purest form: the strength to stand between danger and those you love, no matter the cost.",
+
+                    appearance: {
+                        description: "A towering, imposing figure — 8 feet tall, built like a fortress. Storm clouds literally gather around his shoulders when he enters battle. His presence is commanding and reassuring at once.",
+                        skin: "Deep bronze, like metal forged in lightning",
+                        height: "8 feet tall, the tallest of the four brothers",
+                        hair: "Dark as storm clouds, crackling with ambient electricity",
+                        build: "Massively muscular, broader than his brothers, built for defense",
+                        eyes: "Silver-white like lightning itself, crackling with protective energy. When angry, his eyes flash with thunderbolts",
+                        voice: "Deep, rumbling like distant thunder. When he shouts, it sounds like the sky breaking open",
+                        presence: "Commanding and protective. When Zendon enters a room, people feel safer. When he enters a battlefield, enemies feel doomed",
+                        distinctiveFeatures: "His shield — an enormous, circular shield of divine metal that has never been scratched, dented, or broken. It's said to be forged from the first lightning bolt that struck the glacier"
+                    },
+
+                    domains: [
+                        {
+                            name: "Protection",
+                            description: "Zendon is the ultimate defender. His domain covers all forms of protection: shields, armor, defensive magic, guardianship, and the act of putting yourself between danger and others. Warriors pray to him before battle not for victory, but for the strength to protect their comrades."
+                        },
+                        {
+                            name: "Thunder",
+                            description: "His voice IS thunder. When Zendon speaks on the battlefield, his words boom like storm clouds breaking. His battle cry can rally entire armies or shatter enemy morale. Thunder follows him wherever he goes."
+                        },
+                        {
+                            name: "Courage",
+                            description: "True courage, Zendon teaches, is not fearlessness — it's standing your ground when you're terrified. He grants courage to defenders, to those who protect the vulnerable, to guards who hold the line."
+                        }
+                    ],
+
+                    powers: [
+                        {
+                            name: "The Unbreakable Shield",
+                            description: "Zendon's signature power. He can extend his shield's invulnerability to others. Armies blessed by Zendon become nearly impossible to break through defensive lines."
+                        },
+                        {
+                            name: "Thunder's Voice",
+                            description: "When Zendon shouts, his voice becomes literal thunder. It can shatter weapons, knock enemies off their feet, or rally allies with supernatural courage."
+                        },
+                        {
+                            name: "Guardian's Stance",
+                            description: "When Zendon plants his shield and takes his stance, he becomes immovable. Mountains could crash into him and he would not budge. This is the stance that has never been broken."
+                        },
+                        {
+                            name: "Storm Summon",
+                            description: "Can call down lightning strikes on enemies who threaten those under his protection."
+                        }
+                    ],
+
+                    personality: "Zendon is the steadiest of his brothers—calm, patient, protective. He's the big brother who shields the others. Loyal to a fault. Duty-bound. He believes protection is the highest calling. He rarely smiles, but when he does, it's like the sun breaking through storm clouds.",
+
+                    relationships: {
+                        withHisBrothers: "Protective of all three younger brothers. Zan challenges him constantly (Zendon lets him). Zevon seeks his counsel. Zavi makes him laugh. He would die for any of them—and eventually, he did.",
+                        withZenitha: "Deeply respectful of his mother, the Mother of War. He inherited her unbreakable nature.",
+                        withZane: "Trained by his father to be the perfect defender. Zane taught him that the strongest warriors protect, not destroy."
+                    },
+
+                    teaching: "Strength is not found in attack, but in the willingness to stand between danger and those you protect. The shield that does not break is stronger than any sword. True courage is not fearlessness—it is standing your ground even when you are terrified.",
+
                     essence: "Protection in its purest form",
-                    teaching: "Strength is not found in attack, but in the willingness to stand between danger and those you protect. The shield that does not break is stronger than any sword.",
-                    nature: "Zendon embodies protection in its purest form. He is the god of those who put themselves in harm's way for others, the patron of guards, defenders, and all who shield the vulnerable."
+
+                    nature: "Zendon embodies protection in its purest form. He is the god of those who put themselves in harm's way for others, the patron of guards, defenders, and all who shield the vulnerable. He teaches that the greatest strength is not in what you can destroy, but in what you can protect."
                 },
                 zan: {
                     title: "Second Brother - God of War and Endurance",
-                    attributes: "Endurance, Persistence, War, Determination, Resilience",
-                    symbols: "Eternal Flame, Unsheathed Sword, Mountain That Won't Crumble",
-                    description: "Zan is the god of war and endurance, never defeated. He bleeds courage into those who keep fighting, teaching that victory belongs to those who refuse to surrender.",
-                    appearance: "Battle-scarred but unbowed, Zan stands as a testament to endurance. His armor is dented but never broken, his blade notched but still sharp. He has fought for eons and has never fallen.",
-                    essence: "Persistence made divine",
-                    teaching: "Victory is not about strength or skill — it's about refusing to stop. The warrior who gets up one more time than they're knocked down cannot be defeated.",
-                    nature: "Zan is persistence made divine. He is the god of those who keep going when reason says to quit, who rise one more time after being beaten down, who turn 'impossible' into 'inevitable' through sheer refusal to surrender."
+                    fullTitle: "The Undefeated, The Eternal Warrior, Second of the Zen",
+                    attributes: "War, Endurance, Persistence, Determination, Resilience, Stamina, Unyielding Will",
+                    symbols: "The Eternal Flame (never extinguished in battle), Unsheathed Sword (always ready), Mountain That Won't Crumble (immovable endurance), Bloodied but Unbowed Banner",
+                    description: "Zan is the god of war and endurance, never defeated in battle. He bleeds courage into those who keep fighting, teaching that victory belongs not to the strongest or fastest, but to those who refuse to surrender. He is the warrior who gets back up one more time.",
+
+                    appearance: {
+                        description: "Battle-scarred but unbowed, Zan stands as a living testament to endurance. Every inch of him tells the story of countless battles fought and never lost—not because he never falls, but because he always rises.",
+                        skin: "Scarred bronze, covered in the marks of ten thousand battles—each scar a testament to survival",
+                        height: "7'8\", slightly shorter than Zendon but built broader through the shoulders",
+                        hair: "Dark and wild, tied back for battle, with streaks of silver from the fires he's walked through",
+                        build: "Heavily muscled and broad, built for sustained combat rather than speed—every muscle hardened by endless warfare",
+                        eyes: "Deep amber, burning with determination that never fades, even when exhausted",
+                        voice: "Rough and gravelly, worn from battle cries, but carrying unshakable conviction",
+                        presence: "When Zan enters a battlefield, the very air seems to thicken with resolve. Warriors near him feel their exhaustion fade, replaced by the unshakable will to continue. His presence says: 'We do not stop. We do not fall. We endure.'",
+                        distinctiveFeatures: "His armor is dented, scorched, and battered—but never broken. His sword is notched and worn—but never dulled. He wears his scars like medals, proof that he has survived everything thrown at him"
+                    },
+
+                    domains: [
+                        {
+                            name: "War",
+                            description: "Zan is the god of sustained warfare, not of quick victories or tactical genius, but of the long, brutal grind of battle. He represents the warrior who fights through exhaustion, pain, and despair. He teaches that war is not won in moments of glory—it is won by those who refuse to stop when everyone else has given up."
+                        },
+                        {
+                            name: "Endurance",
+                            description: "Zan's greatest domain is endurance itself—the ability to continue when your body screams to stop, when reason says you've lost, when every part of you wants to quit. He is the god of the second wind, the third wind, the hundredth wind. He teaches that endurance is not about feeling no pain—it's about moving forward despite it."
+                        },
+                        {
+                            name: "Persistence",
+                            description: "Where others see defeat, Zan sees another opportunity to rise. He is the god of 'not yet,' the refusal to accept that failure is final. He teaches that persistence transforms impossible odds into inevitable victory, because the warrior who refuses to stay down cannot truly be defeated."
+                        }
+                    ],
+
+                    powers: [
+                        {
+                            name: "Endless Endurance",
+                            description: "Zan's signature power—he grants warriors the ability to continue fighting long past when their bodies should fail. Mortals blessed by Zan can fight for days without rest, can march through deserts without water, can endure wounds that would fell others. As long as their will holds, their body will follow."
+                        },
+                        {
+                            name: "Courage's Blood",
+                            description: "Those who worship Zan find courage flowing into them like blood, sustaining them through impossible odds. When fear would paralyze, when despair would break them, Zan's blessing fills them with the determination to continue. It is not fearlessness—it is the courage to act despite fear."
+                        },
+                        {
+                            name: "The Undefeated Will",
+                            description: "Zan cannot be broken. No matter how many times he is struck down, he rises. This power extends to his devoted followers—they gain an unbreakable will that refuses to accept defeat. Even when victory seems impossible, they continue, because surrender is not in their nature."
+                        },
+                        {
+                            name: "War's Eternal Flame",
+                            description: "Zan carries an eternal flame that never goes out, no matter the storm, the flood, or the darkness. This flame represents the fire within every warrior who refuses to quit. He can ignite this flame in the hearts of his followers, giving them the strength to continue when all hope seems lost."
+                        }
+                    ],
+
+                    personality: "Zan is relentless, grim, and utterly unbreakable. He does not boast of his victories or seek glory—he simply continues. Where Zendon is the patient protector, Zan is the stubborn fighter who will not yield. He is not the most skilled warrior, not the strongest, not the fastest—but he is the one who outlasts everyone else. He has a deep, quiet respect for those who endure hardship without complaint, and absolute disdain for those who give up when things get difficult. He teaches through example, not words—he shows you what endurance looks like by never, ever stopping.",
+
+                    relationships: {
+                        withHisBrothers: "Zan is fiercely loyal to his brothers, though he shows it through action rather than words. He fights beside them without hesitation and would endure any torment to protect them. Zendon's protection gives Zan the freedom to focus entirely on offense. Zevon's clarity keeps Zan from charging blindly into traps. Zavi's passion reminds Zan that there is something worth fighting for beyond the battle itself.",
+                        withZenitha: "Zan honors his mother with every battle he survives. She taught him that true strength is not in never falling—it is in always rising. He carries her lessons into every fight, knowing that endurance is the greatest tribute he can offer her.",
+                        withZane: "Trained by his father in the art of war, Zan learned that victory is not about brilliance or power—it is about outlasting your enemy. Zane taught him that the warrior who endures one second longer than their opponent wins. Zan embodies this lesson completely."
+                    },
+
+                    teaching: "Victory is not about strength or skill—it's about refusing to stop. The warrior who gets up one more time than they're knocked down cannot be defeated. The battle is not lost until you surrender.",
+
+                    essence: "Persistence made divine. Zan is the embodiment of the warrior who will not quit, the flame that cannot be extinguished, the mountain that will not crumble.",
+
+                    nature: "Zan is persistence made divine. He is the god of those who keep going when reason says to quit, who rise one more time after being beaten down, who turn 'impossible' into 'inevitable' through sheer refusal to surrender. He teaches that endurance is the ultimate weapon, because the fighter who will not stay down cannot be defeated."
                 },
                 zevon: {
                     title: "Third Brother - God of Frost, Ice, and Clarity",
-                    attributes: "Clarity, Focus, Cold Truth, Perception, Discipline",
-                    symbols: "Ice Crystal, Clear Winter Sky, Frozen Moment",
-                    description: "Zevon is the god of frost, ice, and clarity. He brings focus through hardship, clarity through cold. In the frozen stillness, all distractions fall away, leaving only truth.",
-                    appearance: "Zevon appears frost-covered, his breath visible in the air around him. His eyes are ice-blue and see through all deception. Where he walks, the air becomes crisp and clear, and thoughts sharpen like icicles.",
-                    essence: "Perception sharpened by difficulty",
-                    teaching: "Hardship clarifies. Cold strips away comfort and illusion, leaving only what is real. In the frozen moment before action, you see truth.",
-                    nature: "Zevon represents perception sharpened by difficulty. He is the god of those who find clarity in crisis, focus in hardship, and truth in discomfort. His cold is not cruel — it is clarifying."
+                    fullTitle: "The Frost-Seer, The Clearer of Illusions, Third of the Zen",
+                    attributes: "Clarity, Focus, Cold Truth, Perception, Discipline, Precision, Mental Sharpness",
+                    symbols: "Ice Crystal (perfect clarity), Clear Winter Sky (unobstructed truth), Frozen Moment (the stillness before action), Shattered Mirror (illusions broken)",
+                    description: "Zevon is the god of frost, ice, and clarity. He brings focus through hardship, clarity through cold. In the frozen stillness, all distractions fall away, leaving only truth. He is the brother who sees what others miss, who cuts through deception with the precision of winter's edge.",
+
+                    appearance: {
+                        description: "Zevon appears perpetually touched by frost, as if winter itself clings to him. He is the most lean and precise of the four brothers, built not for raw power but for calculated perfection.",
+                        skin: "Pale as fresh snow, with a faint shimmer like ice catching sunlight—cold to the touch but never frozen",
+                        height: "7'6\", the second tallest, but appears taller due to his perfect posture and sharp, angular build",
+                        hair: "White as winter, falling straight and orderly, occasionally crystallizing with actual frost at the tips",
+                        build: "Lean and precise, every muscle defined with surgical clarity—not bulky but perfectly efficient",
+                        eyes: "Ice-blue and piercing, seeing through all deception, all pretense, all self-delusion. When Zevon looks at you, you feel exposed, as if all your hidden truths are laid bare",
+                        voice: "Clear and cold, with perfect enunciation. Every word is chosen with precision. There is no warmth in his tone, but there is absolute truth",
+                        presence: "Where Zevon walks, the air becomes crisp and clear. Thoughts sharpen like icicles. Confusion fades, replaced by uncomfortable clarity. His breath is visible even on the hottest days, and the ground beneath his feet frosts over. Being near him is like standing in winter—uncomfortable, but clarifying",
+                        distinctiveFeatures: "Frost forms naturally on his armor, creating intricate patterns that shift like thoughts crystallizing. His weapons are made of enchanted ice that never melts, sharper than any steel"
+                    },
+
+                    domains: [
+                        {
+                            name: "Frost and Ice",
+                            description: "Zevon commands the cold with absolute precision. His ice is not chaotic or wild—it is calculated, surgical, perfect. He can freeze a single drop of water mid-air or encase an entire battlefield in frost. His cold is not the cold of death—it is the cold of preservation, of clarity, of truth frozen in place so it cannot be denied."
+                        },
+                        {
+                            name: "Clarity",
+                            description: "Zevon's greatest domain is clarity itself—the ability to see things as they truly are, stripped of emotion, bias, and illusion. He represents the moment when confusion falls away and truth becomes undeniable. He teaches that clarity often comes through discomfort, that the harsh light of truth is more valuable than the warm comfort of delusion."
+                        },
+                        {
+                            name: "Perception",
+                            description: "Zevon sees what others cannot. He perceives the hidden, the obscured, the deliberately concealed. His eyes cut through disguises, through lies, through self-deception. He is the god of those who seek truth no matter how uncomfortable, who refuse to look away from reality, who value clarity over comfort."
+                        }
+                    ],
+
+                    powers: [
+                        {
+                            name: "Frozen Clarity",
+                            description: "Zevon's signature power—he brings mental clarity through hardship, freezing away distractions and leaving only essential truth. When he touches someone's mind, all confusion, all doubt, all comforting lies fall away like frost melting in sunlight. What remains is uncomfortable, sharp truth."
+                        },
+                        {
+                            name: "Ice-Sight",
+                            description: "Zevon can see through all deception, illusion, and self-delusion. His eyes perceive the truth beneath the surface—hidden motives, concealed emotions, buried secrets. He can grant this sight to his followers, allowing them to see clearly in moments of crisis."
+                        },
+                        {
+                            name: "The Frozen Moment",
+                            description: "Zevon can freeze time for a single heartbeat, creating a moment of perfect stillness before action. In this frozen instant, everything becomes clear—the right move, the hidden trap, the true path. Warriors blessed with this power gain supernatural perception in combat, seeing their enemy's next move before it happens."
+                        },
+                        {
+                            name: "Winter's Discipline",
+                            description: "Zevon grants absolute mental discipline to those who worship him. Distractions fall away. Focus becomes laser-sharp. The mind becomes as clear and ordered as a winter sky. This is not easy or comfortable—it requires the same discipline as enduring bitter cold—but it is transformative."
+                        }
+                    ],
+
+                    personality: "Zevon is the coldest of the four brothers—not cruel, but absolutely honest, precise, and disciplined. He does not soften truth to make it more palatable. He does not comfort or reassure. He shows you reality exactly as it is, and expects you to be strong enough to face it. Where Zendon protects, Zan endures, and Zavi burns with passion, Zevon clarifies. He is the brother who tells you what you need to hear, not what you want to hear. He values discipline, precision, and truth above all else. He has no patience for self-deception, excuses, or comfortable lies. He is not warm, but he is never deceptive. His coldness is not cruelty—it is clarity.",
+
+                    relationships: {
+                        withHisBrothers: "Zevon loves his brothers, though he shows it differently than they do. Zendon's protective warmth balances Zevon's cold truth. Zan's relentless endurance proves that facing harsh reality makes you stronger. Zavi's passionate fire reminds Zevon that not all truth is cold—some truths burn. Together, they are complete: protection, endurance, clarity, and passion.",
+                        withZenitha: "Zevon honors his mother by seeing the world with perfect clarity, never looking away from difficult truths. She taught him that strength means facing reality without flinching, and he has made that lesson the core of his being.",
+                        withZane: "Trained by his father in the art of perception, Zevon learned that battles are won by seeing the truth of the situation before your enemy does. Zane taught him that clarity is a weapon, that seeing through deception is as valuable as any sword. Zevon embodies this perfectly."
+                    },
+
+                    teaching: "Hardship clarifies. Cold strips away comfort and illusion, leaving only what is real. In the frozen moment before action, you see truth. Do not fear discomfort—it is the price of clarity.",
+
+                    essence: "Perception sharpened by difficulty. Zevon is truth crystallized, clarity frozen in perfect form, the moment when all illusions shatter.",
+
+                    nature: "Zevon represents perception sharpened by difficulty. He is the god of those who find clarity in crisis, focus in hardship, and truth in discomfort. His cold is not cruel—it is clarifying. He teaches that the most valuable truths are often the most uncomfortable, and that clarity is worth any discomfort it requires."
                 },
                 zavi: {
                     title: "Fourth Brother - God of Fire and Love",
-                    attributes: "Passion, Love, Fire, Intensity, Healing, Destruction",
-                    symbols: "Eternal Flame, Burning Heart, Phoenix Rising",
-                    description: "Zavi is the god of fire and love, the most passionate of the four brothers. His flames heal as much as they burn, teaching that true passion transforms everything it touches.",
-                    appearance: "Wreathed in flames that never consume him, Zavi burns with the intensity of pure emotion. His eyes are molten gold, his touch either searing or soothing depending on what is needed. He radiates heat and life.",
-                    essence: "Passion embodied",
-                    teaching: "Passion is not weakness — it is the fire that lights the way. Love fiercely, fight fiercely, live fiercely. Let your heart burn bright, for flames that heal and flames that destroy are the same fire, wielded with different purpose.",
-                    nature: "Zavi is passion embodied — the god of those who love intensely, fight for what they believe in, and refuse to live halfheartedly. He teaches that the same fire that destroys can also heal, that passion is strength when wielded with purpose."
+                    fullTitle: "The Burning Heart, The Healer and Destroyer, Fourth of the Zen",
+                    attributes: "Passion, Love, Fire, Intensity, Healing, Destruction, Devotion, Transformation",
+                    symbols: "Eternal Flame (passion that never dies), Burning Heart (love as fierce as fire), Phoenix Rising (transformation through flame), Twin Flames (healing and destruction unified)",
+                    description: "Zavi is the god of fire and love, the most passionate of the four brothers. His flames heal as much as they burn, teaching that true passion transforms everything it touches. He is fire personified—simultaneously the warmth that nurtures and the blaze that consumes.",
+
+                    appearance: {
+                        description: "Wreathed in flames that never consume him, Zavi burns with the intensity of pure emotion. He is the most vibrant and alive of the four brothers, radiating warmth, intensity, and undeniable presence.",
+                        skin: "Warm bronze with an inner glow, as if firelight shines from beneath his skin—warm to the touch, never burning unless he wills it",
+                        height: "7'4\", the shortest of the four brothers, but his presence makes him seem larger than life",
+                        hair: "Red-gold like flames at sunset, constantly moving as if blown by an unseen wind, with embers dancing through the strands",
+                        build: "Athletic and graceful, built for movement rather than raw strength—every motion fluid and passionate",
+                        eyes: "Molten gold that shifts between warm amber (when healing) and blazing orange (when fighting). His gaze is intense, overwhelming, impossible to look away from",
+                        voice: "Warm and resonant, crackling with emotion like a hearth fire. When he speaks, you feel it in your chest—comforting or terrifying depending on his intent",
+                        presence: "When Zavi enters a room, the temperature rises. Not uncomfortably—just enough to make you aware of warmth, of life, of intensity. Hearts beat faster near him. Emotions intensify. Passion awakens. Being near Zavi is like standing close to a bonfire—exhilarating, warming, slightly dangerous",
+                        distinctiveFeatures: "Flames dance across his armor, never consuming it. His weapons burn with eternal fire. When he loves, flowers bloom in his footsteps. When he fights, ash falls like snow. The same fire—different purpose"
+                    },
+
+                    domains: [
+                        {
+                            name: "Fire",
+                            description: "Zavi commands flame in all its forms—from the gentle warmth of a candle to the consuming fury of a wildfire. His fire is not mindless destruction; it is purposeful, passionate, alive. He can burn away disease, cauterize wounds, purify corruption—or reduce enemies to ash. The same flame serves both purposes, because fire is transformation, and transformation can heal or destroy."
+                        },
+                        {
+                            name: "Love",
+                            description: "Zavi is the god of passionate, fierce, all-consuming love. Not the quiet contentment of long companionship, but the burning intensity of devotion that would cross oceans, face armies, defy gods. He teaches that love is not gentle—it is fire. It transforms you. It demands everything. And when wielded with purpose, it is the most powerful force in existence."
+                        },
+                        {
+                            name: "Transformation",
+                            description: "Fire transforms everything it touches. Wood becomes ash and heat. Metal becomes liquid. Pain becomes strength. Sickness becomes health. Zavi is the god of transformation through intensity—the forge that makes you stronger, the flame that burns away what you were to reveal what you can become."
+                        }
+                    ],
+
+                    powers: [
+                        {
+                            name: "Healing Flames",
+                            description: "Zavi's signature power—his fire can burn away sickness, pain, and corruption, or consume enemies. The same passion, different intentions. When he touches the wounded with healing intent, his flames cauterize wounds instantly, burn away disease, purify poison. It is painful, but transformative—you emerge changed, stronger, reborn."
+                        },
+                        {
+                            name: "Passionate Heart",
+                            description: "Zavi inspires deep love and fierce devotion in those around him. Not magical compulsion—true passion awakened. He shows people what they love, what they would fight for, what makes their heart burn. He teaches that passion is the fuel for all great deeds, that a heart on fire cannot be stopped."
+                        },
+                        {
+                            name: "Phoenix's Rebirth",
+                            description: "Those blessed by Zavi can rise from defeat transformed. Like the phoenix, they burn away what they were and emerge reborn—stronger, clearer, renewed. This is not easy resurrection; it is painful transformation. You must burn to be reborn."
+                        },
+                        {
+                            name: "The Twin Flames",
+                            description: "Zavi can summon twin flames—one that heals, one that destroys. He can hold both simultaneously, choosing which to unleash moment by moment. This represents his core teaching: the same passion that creates can destroy. The same fire that warms can burn. Intent is everything."
+                        }
+                    ],
+
+                    personality: "Zavi is the warmest and most emotional of the four brothers—passionate, intense, deeply feeling. Where Zendon is patient, Zan is grim, and Zevon is cold, Zavi burns bright with emotion. He loves fiercely, fights fiercely, lives fiercely. He is not reckless—his passion is purposeful—but he refuses to live halfheartedly. He believes that life is meant to be felt fully, that love is worth any risk, that passion is strength rather than weakness. He is the brother who will embrace you when you need warmth and burn your enemies to ash when you need protection. He values devotion, intensity, and transformation. He has no patience for apathy, emotional coldness, or half-measures. When Zavi cares about something, he cares completely.",
+
+                    relationships: {
+                        withHisBrothers: "Zavi loves his brothers with fierce, unconditional devotion. Zendon's protection allows Zavi to love without fear. Zan's endurance teaches Zavi that passion must be sustained, not just felt in bursts. Zevon's clarity keeps Zavi's passion focused and purposeful rather than chaotic. Together, they balance each other—protection, endurance, clarity, and passion creating the complete warrior.",
+                        withZenitha: "Zavi honors his mother through the intensity of his love for his family and his people. She taught him that passion is not weakness, that love can be as fierce as any weapon. He embodies her lesson that the heart is the strongest part of any warrior.",
+                        withZane: "Trained by his father in the art of passionate warfare, Zavi learned that the warrior who fights for love is unstoppable. Zane taught him that passion must be controlled, focused, weaponized—and Zavi mastered this completely, becoming fire with purpose."
+                    },
+
+                    teaching: "Passion is not weakness—it is the fire that lights the way. Love fiercely, fight fiercely, live fiercely. Let your heart burn bright, for flames that heal and flames that destroy are the same fire, wielded with different purpose.",
+
+                    essence: "Passion embodied. Zavi is fire given form, love made divine, transformation through intensity.",
+
+                    nature: "Zavi is passion embodied—the god of those who love intensely, fight for what they believe in, and refuse to live halfheartedly. He teaches that the same fire that destroys can also heal, that passion is strength when wielded with purpose. He is the reminder that life is meant to be felt fully, that the heart on fire cannot be extinguished."
                 }
             },
 
