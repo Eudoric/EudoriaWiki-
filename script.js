@@ -25843,33 +25843,33 @@ const battleArenas = {
         bonusType: "tier",
         bonusValue: { "Foundational": 1.1 }
     },
-    lionCourt: {
-        name: "The Lion Court",
-        description: "Suleiman's seat of authority, where divine intellect bows in silence",
+    courtOfEu: {
+        name: "The Court of Eu",
+        description: "Suleiman's domain, more accessible to other gods than the inner sanctum",
         bonus: "+15% power to Supreme gods",
         bonusType: "tier",
         bonusValue: { "Supreme": 1.15 }
     },
-    eudran: {
-        name: "Eudran",
-        description: "The first mortal world, where gods once walked among mortals",
-        bonus: "+5% power to all gods with mortal connections",
-        bonusType: "general",
-        bonusValue: 1.05
+    fallingBonnia: {
+        name: "The Falling Bonnia",
+        description: "A fractured realm between dimensions where reality bends and breaks",
+        bonus: "+12% power to Major gods",
+        bonusType: "tier",
+        bonusValue: { "Major": 1.12 }
     },
-    tiaAscending: {
-        name: "Tia Ascending",
-        description: "The paradise between worlds, a mythic landscape of glowing meadows",
+    ascendingHall: {
+        name: "The Ascending Hall",
+        description: "The sacred path of divine ascension where mortals become gods",
         bonus: "+8% power to Minor gods",
         bonusType: "tier",
         bonusValue: { "Minor": 1.08 }
     },
-    afterhall: {
-        name: "The Afterhall",
-        description: "The Corridor of Becoming, where mortal souls transform to divine",
-        bonus: "+10% to gods with resurrection/death powers",
+    oristhar: {
+        name: "The Oristhar: The Hall of the Four",
+        description: "The meeting place of the four cardinal powers, where balance reigns",
         bonusType: "general",
-        bonusValue: 1.1
+        bonus: "+5% power to all gods",
+        bonusValue: 1.05
     }
 };
 
