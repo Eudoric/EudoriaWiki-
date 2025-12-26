@@ -26494,6 +26494,357 @@ function generateTeamBattleNarrative(winningGods, losingGods, margin) {
 }
 
 // ====================================================================================
+// TOURNAMENT MODE - Bracket-Style God Tournament
+// ====================================================================================
+
+let tournamentState = {
+    size: 8,
+    gods: [],
+    bracket: [],
+    currentRound: 0,
+    currentMatch: 0,
+    roundNames: ['Finals', 'Semi-Finals', 'Quarter-Finals', 'Round of 16']
+};
+
+function renderTournamentMode() {
+    const contentArea = document.getElementById('contentArea');
+    const gods = eudoriaData.eudoricGods;
+
+    contentArea.innerHTML = `
+        <div class="tournament-container">
+            <div class="section-header">
+                <h1>🏆 Tournament Mode</h1>
+                <p class="section-subtitle">Battle royale of the gods! Who will reign supreme?</p>
+            </div>
+
+            <div id="tournamentSetup" class="tournament-setup">
+                <h2>Tournament Setup</h2>
+
+                <div class="tournament-size-selector">
+                    <h3>Select Tournament Size</h3>
+                    <div class="size-buttons">
+                        <button class="size-btn active" onclick="setTournamentSize(4)">4 Gods</button>
+                        <button class="size-btn" onclick="setTournamentSize(8)">8 Gods</button>
+                        <button class="size-btn" onclick="setTournamentSize(16)">16 Gods</button>
+                    </div>
+                </div>
+
+                <div class="tournament-selection-method">
+                    <h3>How to Select Participants?</h3>
+                    <div class="method-buttons">
+                        <button class="method-btn" onclick="randomTournament()">🎲 Random Selection</button>
+                        <button class="method-btn" onclick="manualTournament()">✋ Manual Selection</button>
+                    </div>
+                </div>
+
+                <div id="manualSelection" class="manual-selection" style="display: none;">
+                    <h3>Select Your Fighters (<span id="selectedCount">0</span>/<span id="requiredCount">8</span>)</h3>
+                    <div class="god-selection-grid" id="godSelectionGrid"></div>
+                    <button id="startTournamentBtn" class="start-tournament-btn" onclick="startTournament()" disabled>
+                        Start Tournament
+                    </button>
+                </div>
+            </div>
+
+            <div id="tournamentBracket" class="tournament-bracket" style="display: none;">
+                <!-- Bracket will be rendered here -->
+            </div>
+
+            <div id="tournamentBattle" class="tournament-battle-area" style="display: none;">
+                <!-- Battle interface will appear here -->
+            </div>
+        </div>
+    `;
+
+    // Reset tournament state
+    tournamentState = {
+        size: 4,
+        gods: [],
+        bracket: [],
+        currentRound: 0,
+        currentMatch: 0,
+        roundNames: ['Finals', 'Semi-Finals', 'Quarter-Finals', 'Round of 16']
+    };
+}
+
+function setTournamentSize(size) {
+    tournamentState.size = size;
+
+    // Update button states
+    document.querySelectorAll('.size-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+
+    // Update manual selection if visible
+    if (document.getElementById('manualSelection').style.display === 'block') {
+        document.getElementById('requiredCount').textContent = size;
+        tournamentState.gods = [];
+        renderGodSelectionGrid();
+    }
+}
+
+function randomTournament() {
+    const gods = Object.values(eudoriaData.eudoricGods);
+    const shuffled = gods.sort(() => 0.5 - Math.random());
+    tournamentState.gods = shuffled.slice(0, tournamentState.size);
+
+    initializeBracket();
+    showBracket();
+}
+
+function manualTournament() {
+    document.getElementById('manualSelection').style.display = 'block';
+    document.getElementById('requiredCount').textContent = tournamentState.size;
+    tournamentState.gods = [];
+    renderGodSelectionGrid();
+}
+
+function renderGodSelectionGrid() {
+    const gods = eudoriaData.eudoricGods;
+    const grid = document.getElementById('godSelectionGrid');
+
+    grid.innerHTML = Object.entries(gods).map(([id, god]) => {
+        const isSelected = tournamentState.gods.some(g => g.name === god.name);
+        return `
+            <div class="god-card ${isSelected ? 'selected' : ''}" onclick="toggleGodSelection('${god.name}')">
+                <img src="Images/${god.name}.png" alt="${god.name}" class="god-card-image" onerror="this.style.display='none'">
+                <div class="god-card-name">${god.name}</div>
+                <div class="god-card-tier">${god.tier || 'Divine'}</div>
+                ${isSelected ? '<div class="selected-badge">✓</div>' : ''}
+            </div>
+        `;
+    }).join('');
+
+    updateSelectionCount();
+}
+
+function toggleGodSelection(godName) {
+    const god = Object.values(eudoriaData.eudoricGods).find(g => g.name === godName);
+    const index = tournamentState.gods.findIndex(g => g.name === godName);
+
+    if (index > -1) {
+        // Deselect
+        tournamentState.gods.splice(index, 1);
+    } else {
+        // Select if not at limit
+        if (tournamentState.gods.length < tournamentState.size) {
+            tournamentState.gods.push(god);
+        } else {
+            return; // Already at limit
+        }
+    }
+
+    renderGodSelectionGrid();
+}
+
+function updateSelectionCount() {
+    document.getElementById('selectedCount').textContent = tournamentState.gods.length;
+    const startBtn = document.getElementById('startTournamentBtn');
+
+    if (tournamentState.gods.length === tournamentState.size) {
+        startBtn.disabled = false;
+        startBtn.style.opacity = '1';
+    } else {
+        startBtn.disabled = true;
+        startBtn.style.opacity = '0.5';
+    }
+}
+
+function startTournament() {
+    initializeBracket();
+    showBracket();
+}
+
+function initializeBracket() {
+    // Create initial bracket
+    const shuffled = [...tournamentState.gods].sort(() => 0.5 - Math.random());
+    tournamentState.bracket = [];
+    tournamentState.currentRound = 0;
+    tournamentState.currentMatch = 0;
+
+    // Create first round matches
+    const firstRound = [];
+    for (let i = 0; i < shuffled.length; i += 2) {
+        firstRound.push({
+            god1: shuffled[i],
+            god2: shuffled[i + 1],
+            winner: null
+        });
+    }
+
+    tournamentState.bracket.push(firstRound);
+}
+
+function showBracket() {
+    document.getElementById('tournamentSetup').style.display = 'none';
+    document.getElementById('tournamentBracket').style.display = 'block';
+    renderBracket();
+}
+
+function renderBracket() {
+    const bracketDiv = document.getElementById('tournamentBracket');
+    const totalRounds = Math.log2(tournamentState.size);
+    const currentRoundIndex = tournamentState.bracket.length - 1;
+
+    let bracketHTML = `
+        <h2>🏆 Tournament Bracket</h2>
+        <div class="bracket-rounds">
+    `;
+
+    // Render each round
+    for (let roundIndex = 0; roundIndex < tournamentState.bracket.length; roundIndex++) {
+        const round = tournamentState.bracket[roundIndex];
+        const roundName = tournamentState.size === 4 && roundIndex === 0 ? 'Semi-Finals' :
+                         tournamentState.size === 8 && roundIndex === 0 ? 'Quarter-Finals' :
+                         tournamentState.size === 16 && roundIndex === 0 ? 'Round of 16' :
+                         roundIndex === tournamentState.bracket.length - 1 ? 'Finals' : 'Semi-Finals';
+
+        bracketHTML += `
+            <div class="bracket-round">
+                <h3>${roundName}</h3>
+                <div class="bracket-matches">
+        `;
+
+        round.forEach((match, matchIndex) => {
+            const isCurrentMatch = roundIndex === currentRoundIndex && matchIndex === tournamentState.currentMatch;
+            bracketHTML += `
+                <div class="bracket-match ${match.winner ? 'completed' : ''} ${isCurrentMatch ? 'current' : ''}">
+                    <div class="bracket-fighter ${match.winner === match.god1 ? 'winner' : ''}">
+                        ${match.god1.name}
+                    </div>
+                    <div class="bracket-vs">VS</div>
+                    <div class="bracket-fighter ${match.winner === match.god2 ? 'winner' : ''}">
+                        ${match.god2.name}
+                    </div>
+                </div>
+            `;
+        });
+
+        bracketHTML += `
+                </div>
+            </div>
+        `;
+    }
+
+    bracketHTML += `</div>`;
+
+    // Add battle button if tournament not complete
+    if (!isTournamentComplete()) {
+        const currentMatch = tournamentState.bracket[currentRoundIndex][tournamentState.currentMatch];
+        bracketHTML += `
+            <div class="tournament-action">
+                <button class="battle-next-btn" onclick="battleNextMatch()">
+                    ⚔️ Battle: ${currentMatch.god1.name} vs ${currentMatch.god2.name}
+                </button>
+            </div>
+        `;
+    } else {
+        // Show champion
+        const champion = tournamentState.bracket[tournamentState.bracket.length - 1][0].winner;
+        bracketHTML += `
+            <div class="tournament-champion">
+                <h2>🏆 TOURNAMENT CHAMPION 🏆</h2>
+                <img src="Images/${champion.name}.png" alt="${champion.name}" class="champion-portrait" onerror="this.style.display='none'">
+                <h3>${champion.name}</h3>
+                <p class="champion-tier">${champion.tier || 'Divine'} God</p>
+                <button class="new-tournament-btn" onclick="renderTournamentMode()">
+                    Start New Tournament
+                </button>
+            </div>
+        `;
+    }
+
+    bracketDiv.innerHTML = bracketHTML;
+}
+
+function battleNextMatch() {
+    const currentRoundIndex = tournamentState.bracket.length - 1;
+    const match = tournamentState.bracket[currentRoundIndex][tournamentState.currentMatch];
+
+    // Simulate battle
+    const score1 = calculateGodBattleScore(match.god1) * (0.5 + Math.random() * 1.0);
+    const score2 = calculateGodBattleScore(match.god2) * (0.5 + Math.random() * 1.0);
+
+    const winner = score1 > score2 ? match.god1 : match.god2;
+    const loser = score1 > score2 ? match.god2 : match.god1;
+
+    match.winner = winner;
+
+    // Show battle result
+    showTournamentBattleResult(winner, loser, match.god1, match.god2, score1, score2);
+}
+
+function showTournamentBattleResult(winner, loser, god1, god2, score1, score2) {
+    const battleDiv = document.getElementById('tournamentBattle');
+    const scoreDiff = Math.abs(((Math.max(score1, score2) - Math.min(score1, score2)) / Math.min(score1, score2) * 100)).toFixed(0);
+
+    battleDiv.style.display = 'block';
+    battleDiv.innerHTML = `
+        <div class="tournament-battle-result">
+            <h2>⚔️ Battle Result ⚔️</h2>
+            <div class="battle-matchup">
+                <div class="battle-fighter">
+                    <img src="Images/${god1.name}.png" alt="${god1.name}" class="battle-portrait" onerror="this.style.display='none'">
+                    <div class="fighter-name ${winner === god1 ? 'winner-name' : ''}">${god1.name}</div>
+                </div>
+                <div class="battle-vs-large">VS</div>
+                <div class="battle-fighter">
+                    <img src="Images/${god2.name}.png" alt="${god2.name}" class="battle-portrait" onerror="this.style.display='none'">
+                    <div class="fighter-name ${winner === god2 ? 'winner-name' : ''}">${god2.name}</div>
+                </div>
+            </div>
+            <div class="tournament-winner-announcement">
+                <h3>👑 ${winner.name} Advances! 👑</h3>
+                <p>Victory Margin: ${scoreDiff}%</p>
+            </div>
+            <button class="continue-btn" onclick="continueTourn()">Continue Tournament →</button>
+        </div>
+    `;
+
+    battleDiv.scrollIntoView({ behavior: 'smooth' });
+}
+
+function continueTourn() {
+    document.getElementById('tournamentBattle').style.display = 'none';
+
+    const currentRoundIndex = tournamentState.bracket.length - 1;
+    tournamentState.currentMatch++;
+
+    // Check if round is complete
+    if (tournamentState.currentMatch >= tournamentState.bracket[currentRoundIndex].length) {
+        // Advance to next round
+        advanceToNextRound();
+    }
+
+    renderBracket();
+}
+
+function advanceToNextRound() {
+    const currentRound = tournamentState.bracket[tournamentState.bracket.length - 1];
+    const winners = currentRound.map(match => match.winner);
+
+    if (winners.length > 1) {
+        // Create next round
+        const nextRound = [];
+        for (let i = 0; i < winners.length; i += 2) {
+            nextRound.push({
+                god1: winners[i],
+                god2: winners[i + 1],
+                winner: null
+            });
+        }
+        tournamentState.bracket.push(nextRound);
+        tournamentState.currentMatch = 0;
+    }
+}
+
+function isTournamentComplete() {
+    const lastRound = tournamentState.bracket[tournamentState.bracket.length - 1];
+    return lastRound.length === 1 && lastRound[0].winner !== null;
+}
+
+// ====================================================================================
 // EUDORA'S CHILDREN QUIZ - Which of Eudora's Children Is Your Best Friend?
 // ====================================================================================
 
