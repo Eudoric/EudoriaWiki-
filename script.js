@@ -14559,6 +14559,8 @@ function navigateTo(view) {
         renderGodComparison();
     } else if (view === 'battle-of-gods') {
         renderBattleOfGods();
+    } else if (view === 'tournament-mode') {
+        renderTournamentMode();
     } else if (view === 'zodiac-quiz') {
         renderZodiacQuiz();
     } else if (view === 'falcon-king') {
