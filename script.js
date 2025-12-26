@@ -11388,7 +11388,7 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
 
             brothers: {
                 zendon: {
-                    title: "First Brother - God of Thunder, Protection, and Shield",
+                    title: "Zendon - God of Thunder, Protection, and Shield",
                     fullTitle: "The Unbreakable Shield, The Thunder Guardian, First of the Zen",
                     attributes: "Protection, Thunder, Defense, Courage, Strength, Loyalty, Duty",
                     symbols: "The Eternal Shield (never broken in battle), Thunder (his battle cry), Battle Drum (the heartbeat of war), Storm Clouds (his presence on the battlefield)",
@@ -11455,7 +11455,7 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                     nature: "Zendon embodies protection in its purest form. He is the god of those who put themselves in harm's way for others, the patron of guards, defenders, and all who shield the vulnerable. He teaches that the greatest strength is not in what you can destroy, but in what you can protect."
                 },
                 zan: {
-                    title: "Second Brother - God of War and Endurance",
+                    title: "Zan - God of War and Endurance",
                     fullTitle: "The Undefeated, The Eternal Warrior, Second of the Zen",
                     attributes: "War, Endurance, Persistence, Determination, Resilience, Stamina, Unyielding Will",
                     symbols: "The Eternal Flame (never extinguished in battle), Unsheathed Sword (always ready), Mountain That Won't Crumble (immovable endurance), Bloodied but Unbowed Banner",
@@ -11522,7 +11522,7 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                     nature: "Zan is persistence made divine. He is the god of those who keep going when reason says to quit, who rise one more time after being beaten down, who turn 'impossible' into 'inevitable' through sheer refusal to surrender. He teaches that endurance is the ultimate weapon, because the fighter who will not stay down cannot be defeated."
                 },
                 zevon: {
-                    title: "Third Brother - God of Frost, Ice, and Clarity",
+                    title: "Zevon - God of Frost, Ice, and Clarity",
                     fullTitle: "The Frost-Seer, The Clearer of Illusions, Third of the Zen",
                     attributes: "Clarity, Focus, Cold Truth, Perception, Discipline, Precision, Mental Sharpness",
                     symbols: "Ice Crystal (perfect clarity), Clear Winter Sky (unobstructed truth), Frozen Moment (the stillness before action), Shattered Mirror (illusions broken)",
@@ -11589,7 +11589,7 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                     nature: "Zevon represents perception sharpened by difficulty. He is the god of those who find clarity in crisis, focus in hardship, and truth in discomfort. His cold is not cruel—it is clarifying. He teaches that the most valuable truths are often the most uncomfortable, and that clarity is worth any discomfort it requires."
                 },
                 zavi: {
-                    title: "Fourth Brother - God of Fire and Love",
+                    title: "Zavi - God of Fire and Love",
                     fullTitle: "The Burning Heart, The Healer and Destroyer, Fourth of the Zen",
                     attributes: "Passion, Love, Fire, Intensity, Healing, Destruction, Devotion, Transformation",
                     symbols: "Eternal Flame (passion that never dies), Burning Heart (love as fierce as fire), Phoenix Rising (transformation through flame), Twin Flames (healing and destruction unified)",
