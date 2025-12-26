@@ -11383,7 +11383,8 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
             titles: ["The Four Divine Warriors", "Sons of Lightning and Ice", "Guardians of the Four Strengths"],
             attributes: ["Strength", "War", "Protection", "Endurance", "Clarity", "Passion"],
             symbols: ["Lightning Strike on Glacier", "Four Elements United", "The Four States of Strength"],
-            description: "The Zen Brothers are four divine warriors born to Zane (God of War) and Zenitha (Mother Nature of War). Together, they embody the four states of strength: Protection (Zendon), Persistence (Zan), Perception (Zevon), and Passion (Zavi). They were among the strongest gods in Eudoric until they were killed in a devastating Sunarian ambush. Born to Zane and Zenitha, the Zen Brothers inherited an unmatched legacy of martial prowess and divine power. They fought as a unified force under Zendon\\'s command. When he raised his shield, Zan stopped advancing, Zevon ceased judgment, and Zavi restrained his fire. This absolute unity made them nearly unstoppable. The brothers were already engaged in their own war in a faraway kingdom, fighting for human rights, when they heard their mother Zenitha\\'s call during the War of Gods. They entered the conflict at Bonnia with a sharp, massive lightning strike that killed 30 gods instantly, announcing their arrival and turning the tide of battle. Their combined might became legendary across Eudraneth and beyond. Each brother left an indelible mark on Eudoria: Zendon\\'s name graces the region of Zendonia, his strength forever memorialized in its geography. Zevon\\'s breath created the frozen Norvayn Union, an entire continental region shaped by his power. Their legacy lives on through their children, their teachings, and the countless lives they touched before their tragic deaths in the Sunarian ambush that claimed four of the mightiest gods in existence.",
+            description: "The Zen Brothers are four divine warriors born from lightning striking a glacier. Together, they embody the Four States of Strength: Protection (Zendon), Persistence (Zan), Perception (Zevon), and Passion (Zavi). They were among the strongest gods in Eudoric until they were killed in a devastating Sunarian ambush.",
+            origin: "Born from lightning striking a glacier, the four Zen Brothers emerged as divine sons of war and weather, each embodying a different aspect of strength.",
 
             brothers: {
                 zendon: {
@@ -11733,129 +11734,77 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                 },
                 zavi: {
                     title: "Zavi - God of Fire and Love",
-                    fullTitle: "The Passionate Flame, Guardian of the Unloved, Youngest of the Zen",
-                    tier: "Major God",
-                    gender: "Male",
-                    element: "Fire",
-                    space: "Eudraneth, Court of Passion",
-                    alignment: "Neutral Good",
-                    sacredAnimal: "Cheetah, Firefly, Ladybug, Tiger",
-                    sacredPlant: "None",
-                    attributes: "Fire, Passion, Love, Desire, Ambition, Devotion, Speed, Judgment, Warmth, Purpose, Transformation, Compassion",
-                    symbols: "The Heartflame (eternal burning passion), Volcanic Sanctuary (refuge for the rejected), Fiery Constellation (the ten thousand fireflies), Living Flame (fire that judges intent), The Unbroken Promise (his vow to Naavie)",
-                    description: "Zavi, the youngest Zen Brother, greets with kindness but is dangerous when angered. He embodies passion—love as a burning desire and drive. His strength lies in purpose; without it, he becomes weak. Known as the Guardian of the Unloved, he shelters outcasts and broken gods, inspiring them with his fiery nature. Though childless, he has adopted over 23 exiled gods, giving them new life.",
+                    fullTitle: "The Burning Heart, The Healer and Destroyer, Fourth of the Zen",
+                    attributes: "Passion, Love, Fire, Intensity, Healing, Destruction, Devotion, Transformation",
+                    symbols: "Eternal Flame (passion that never dies), Burning Heart (love as fierce as fire), Phoenix Rising (transformation through flame), Twin Flames (healing and destruction unified)",
+                    description: "Zavi is the god of fire and love, the most passionate of the four brothers. His flames heal as much as they burn, teaching that true passion transforms everything it touches. He is fire personified—simultaneously the warmth that nurtures and the blaze that consumes.",
 
                     appearance: {
-                        description: "Zavi appears more approachable than the other Zen Brothers, with warm, glowing bronze skin that resembles lit coals. His orange hair is wild and fiery, reflecting his energetic emotions. His beard is natural, often shimmering with tiny motes of fire. His eyes are his most striking feature—warm and compassionate, yet capable of burning fiercely when his passion ignites. Unlike his brothers\\' intimidating gazes, Zavi\\'s eyes invite approach and understanding, though his kindness can also deliver judgment. Zavi\\'s armor is less heavily structured than his brothers\\', allowing for the speed and fluid movement he favors. Patterns of cheetahs and fireflies are etched into the metal, which glows with internal heat. The Heartflame Whip coils at his side, appearing almost liquid in its resting state.",
-                        skin: "Warm, glowing bronze skin that resembles lit coals",
-                        height: "Similar to his brothers in stature, but appears more approachable",
-                        hair: "Wild and fiery orange hair, reflecting his energetic emotions",
-                        beard: "Natural beard, often shimmering with tiny motes of fire",
-                        build: "Built for speed and fluid movement rather than raw power",
-                        eyes: "Warm and compassionate, yet capable of burning fiercely when his passion ignites. Unlike his brothers\\' intimidating gazes, Zavi\\'s eyes invite approach and understanding",
-                        voice: "Warm and inviting, capable of both comfort and judgment",
-                        presence: "Welcoming and compassionate, yet formidable when defending those he loves",
-                        distinctiveFeatures: "Armor is less heavily structured than his brothers\\', allowing for speed and fluid movement. Patterns of cheetahs and fireflies are etched into the metal, which glows with internal heat. The Heartflame Whip coils at his side, appearing almost liquid in its resting state"
+                        description: "Wreathed in flames that never consume him, Zavi burns with the intensity of pure emotion. He is the most vibrant and alive of the four brothers, radiating warmth, intensity, and undeniable presence.",
+                        skin: "Warm bronze with an inner glow, as if firelight shines from beneath his skin—warm to the touch, never burning unless he wills it",
+                        height: "7'4\", the shortest of the four brothers, but his presence makes him seem larger than life",
+                        hair: "Red-gold like flames at sunset, constantly moving as if blown by an unseen wind, with embers dancing through the strands",
+                        build: "Athletic and graceful, built for movement rather than raw strength—every motion fluid and passionate",
+                        eyes: "Molten gold that shifts between warm amber (when healing) and blazing orange (when fighting). His gaze is intense, overwhelming, impossible to look away from",
+                        voice: "Warm and resonant, crackling with emotion like a hearth fire. When he speaks, you feel it in your chest—comforting or terrifying depending on his intent",
+                        presence: "When Zavi enters a room, the temperature rises. Not uncomfortably—just enough to make you aware of warmth, of life, of intensity. Hearts beat faster near him. Emotions intensify. Passion awakens. Being near Zavi is like standing close to a bonfire—exhilarating, warming, slightly dangerous",
+                        distinctiveFeatures: "Flames dance across his armor, never consuming it. His weapons burn with eternal fire. When he loves, flowers bloom in his footsteps. When he fights, ash falls like snow. The same fire—different purpose"
                     },
 
                     domains: [
                         {
                             name: "Fire",
-                            description: "Zavi\\'s fire is not mindless destruction - it is living, sentient, and purposeful. His flames seek intent rather than targets, avoiding the innocent while hunting those driven by corrupted desire. His fire feels judging rather than random, because it responds to the emotional heat of those it touches. He can spread fire in seconds, turning entire battlefields into infernos, yet his flames can also warm without burning, comfort without consuming."
+                            description: "Zavi commands flame in all its forms—from the gentle warmth of a candle to the consuming fury of a wildfire. His fire is not mindless destruction; it is purposeful, passionate, alive. He can burn away disease, cauterize wounds, purify corruption—or reduce enemies to ash. The same flame serves both purposes, because fire is transformation, and transformation can heal or destroy."
                         },
                         {
-                            name: "Love (as Passion)",
-                            description: "In Eudraneth, love is understood differently than in mortal realms. It is not merely emotional affection - it is desire, drive, ambition, and the unstoppable force that compels souls toward their purpose. Zavi embodies this understanding of love as passionate pursuit. His domain welcomes those who burn with purpose, who hunger for meaning, who love with intensity. But passion is not optional in his realm - it is required. Those who enter his Court of Passion without drive, ambition, or longing face the judgment of his sacred ladybugs, which attack the passionless with increasing aggression, the more empty the soul."
+                            name: "Love",
+                            description: "Zavi is the god of passionate, fierce, all-consuming love. Not the quiet contentment of long companionship, but the burning intensity of devotion that would cross oceans, face armies, defy gods. He teaches that love is not gentle—it is fire. It transforms you. It demands everything. And when wielded with purpose, it is the most powerful force in existence."
                         },
                         {
-                            name: "The Court of Passion",
-                            description: "Zavi lives in a volcano guarded by fiery cheetahs and tigers. This is not merely a dwelling - it is a sanctuary for those rejected by other gods, a place where passion can be rekindled and purpose restored. But it is also a test. Only those who carry a genuine desire may enter safely."
+                            name: "Transformation",
+                            description: "Fire transforms everything it touches. Wood becomes ash and heat. Metal becomes liquid. Pain becomes strength. Sickness becomes health. Zavi is the god of transformation through intensity—the forge that makes you stronger, the flame that burns away what you were to reveal what you can become."
                         }
                     ],
 
                     powers: [
                         {
-                            name: "Passion Ignition",
-                            description: "Zavi\\'s core ability. His fire grows hotter in the presence of desire, ambition, devotion, or longing. It weakens in apathy, stagnation, or emotional emptiness. Critically, his fire cannot be fueled by hatred alone - hatred burns fast and collapses. This keeps his power purpose-bound rather than chaotic, ensuring his flames serve meaning rather than destruction."
+                            name: "Healing Flames",
+                            description: "Zavi's signature power—his fire can burn away sickness, pain, and corruption, or consume enemies. The same passion, different intentions. When he touches the wounded with healing intent, his flames cauterize wounds instantly, burn away disease, purify poison. It is painful, but transformative—you emerge changed, stronger, reborn."
                         },
                         {
-                            name: "Living Flame",
-                            description: "Zavi\\'s fire is sentient and judges those it touches. It seeks intent rather than targets, avoids the innocent, and hunts those driven by corrupted desire. This is why his flames feel judging rather than random - they respond to the truth of what burns within a person\\'s heart."
+                            name: "Passionate Heart",
+                            description: "Zavi inspires deep love and fierce devotion in those around him. Not magical compulsion—true passion awakened. He shows people what they love, what they would fight for, what makes their heart burn. He teaches that passion is the fuel for all great deeds, that a heart on fire cannot be stopped."
                         },
                         {
-                            name: "Desire Reading",
-                            description: "Zavi senses emotional heat with perfect clarity. He identifies ambition, love, obsession, hunger, and knows instantly when passion is false or hollow. He cannot be deceived by flattery or manipulation - his fire sees through pretense to the truth beneath."
+                            name: "Phoenix's Rebirth",
+                            description: "Those blessed by Zavi can rise from defeat transformed. Like the phoenix, they burn away what they were and emerge reborn—stronger, clearer, renewed. This is not easy resurrection; it is painful transformation. You must burn to be reborn."
                         },
                         {
-                            name: "Speed of Passion",
-                            description: "Drawing from his sacred cheetahs, Zavi moves with incredible speed when driven by purpose. His strikes are rapid and decisive, overwhelming enemies before they can react."
-                        },
-                        {
-                            name: "Rekindling Purpose",
-                            description: "Zavi can restore passion to those who have lost it, reigniting their drive and ambition through controlled application of his flames. This is how he transforms outcasts into valued members of his domain."
+                            name: "The Twin Flames",
+                            description: "Zavi can summon twin flames—one that heals, one that destroys. He can hold both simultaneously, choosing which to unleash moment by moment. This represents his core teaching: the same passion that creates can destroy. The same fire that warms can burn. Intent is everything."
                         }
                     ],
 
-                    sacredCreatures: [
-                        {
-                            name: "Fiery Cheetahs & Tigers",
-                            description: "Guardians of Zavi\\'s volcanic domain, these creatures move with supernatural speed and burn with living flame. They protect the sanctuary and test those who approach. After Zavi\\'s death, they now live in Naavie\\'s autumn domain."
-                        },
-                        {
-                            name: "Divine Fireflies",
-                            description: "Not the gentle insects mortals know, but deadly carriers of fire disease. When they touch skin, they explode like fiery bombs. Zavi commands over 10,000 of these creatures, which he can release to create a moving constellation of living flame. Now residing in Naavie\\'s domain."
-                        },
-                        {
-                            name: "Sacred Ladybugs",
-                            description: "Deceptively dangerous, these creatures attack the undesired - those who lack passion, drive, or purpose. Under Zavi\\'s command, they swarm those whose souls are empty, proving that in his domain, passion is not a luxury but a requirement. Now in Naavie\\'s care."
-                        }
-                    ],
-
-                    legendaryFeats: [
-                        {
-                            name: "The Firestorm of Ten Thousand Lights",
-                            description: "During the War of Gods, Zavi released over 10,000 divine fireflies, turning the battlefield into a moving constellation of living flame. Each firefly bonded briefly to enemy flesh before detonating in controlled bursts of fire. Entire armies fled in panic. Survivors described it as \\'burning from desire itself\\' - no wall, shield, or formation could stop what wanted to touch you."
-                        },
-                        {
-                            name: "Guardian of the Unloved",
-                            description: "Zavi has sheltered countless outcasts, broken warriors, and rejected gods within his volcanic domain, rekindling their purpose through controlled flame. He has adopted over 23 children - gods who were exiled or forgotten - and given them new life, new purpose, and new passion."
-                        },
-                        {
-                            name: "The Court That Tests Desire",
-                            description: "Zavi\\'s domain does not welcome the passionless. His sacred ladybugs attack those who enter without drive, ambition, or longing. The more empty the soul, the more aggressive the response. This proves that love in Eudraneth is not kindness - passion is a requirement, not a luxury."
-                        },
-                        {
-                            name: "The Centuries-Long Promise",
-                            description: "Zavi maintained the longest relationship in Naavie\\'s existence, spanning centuries of devotion despite their domains forcing them apart. Even during war, even when facing opposition from Sove, Zavi fought for their love and promised they would be together when the conflict ended."
-                        },
-                        {
-                            name: "The Unbroken Promise",
-                            description: "On the day of his death, Zavi told his family he would leave the war to marry Naavie. He promised her he would return that night. The family celebrated his retirement, full of joy for his future. But Zavi never returned. Naavie received the news of his death that night - a heartbreak she never moved on from and will never recover from. She will never find love again. She keeps a small fire burning in her domain that reminds her of Zavi. All of his sacred creatures now live in her domain, a way for her to feel that he lives on."
-                        }
-                    ],
-
-                    personality: "Zavi is the only Zen brother who welcomes others with genuine kindness. Unlike Zendon, who is imposing, Zan, who is relentless, and Zevon, who is blunt, Zavi is warm, compassionate, and sees value in those others reject or consider worthless. His sanctuary is filled with the exiled and forgotten, given new life through his belief in their passion and purpose. This kindness is not weakness. Zavi knows love and passion sometimes require fierce protection. He fights for loved ones with intensity, but for connection and preservation, not conquest. His power depends on his emotional state. Driven by love, ambition, or desire, he is unstoppable with flames spreading quickly, unmatched speed, and absolute judgment. When his passion dims, he becomes weak and lethargic, making him honest about his feelings and emotions. As the youngest, Zavi balances the brotherhood. Where others are force and strategy, he is heart and purpose. Where they intimidate, he invites. Where they destroy, he transforms. Yet, he remains formidable—a god whose flames spread instantly, whose judgment is inescapable, and whose passion endures.",
+                    personality: "Zavi is the warmest and most emotional of the four brothers—passionate, intense, deeply feeling. Where Zendon is patient, Zan is grim, and Zevon is cold, Zavi burns bright with emotion. He loves fiercely, fights fiercely, lives fiercely. He is not reckless—his passion is purposeful—but he refuses to live halfheartedly. He believes that life is meant to be felt fully, that love is worth any risk, that passion is strength rather than weakness. He is the brother who will embrace you when you need warmth and burn your enemies to ash when you need protection. He values devotion, intensity, and transformation. He has no patience for apathy, emotional coldness, or half-measures. When Zavi cares about something, he cares completely.",
 
                     relationships: {
-                        withHisBrothers: "As the youngest, Zavi is somewhat protected by his older brothers, though he needs protection far less than they assume. He provides the emotional balance to their brotherhood - where they are all force, he is heart. His kindness tempers their harshness, his compassion contextualizes their brutality.",
-                        withZenitha: "Son of Zenitha, Mother Nature of War. He inherited her fiery nature but tempered it with compassion.",
-                        withZane: "Son of Zane, God of War. Trained in combat but chose to focus on the heart rather than the blade.",
-                        withNaavie: "The love of Zavi\\'s existence. Their relationship spanned centuries - the longest relationship Naavie ever had. Their domains repeatedly forced them apart, but Zavi\\'s passion never wavered. He promised her they would be together when the war ended, that they would finally marry and live in peace. He fought against Sove\\'s interference, defending their love with the same intensity he brought to battle. On the day of his death, Zavi told his family he would leave the war to marry Naavie. He promised her he would return that night. The family celebrated his retirement, full of joy for his future. But Zavi never returned. Naavie received the news of his death that night - a heartbreak she never moved on from and will never recover from. She will never find love again. She keeps a small fire burning in her domain that reminds her of Zavi. All of his sacred creatures - the fiery cheetahs, fireflies, ladybugs, and tigers - now live in her domain, a way for her to feel that he lives on.",
-                        withSove: "Adversarial relationship. Sove had an affair with Naavie and resented her long-term relationship with Zavi. He repeatedly tried to break them apart, but Zavi fought against him for Naavie\\'s love, refusing to let anything separate them.",
-                        withAdoptedChildren: "Zavi\\'s most significant legacy may be the 23+ gods he adopted and gave new purpose. Notable adoptions include Vorthak (Invisible God of Forgotten Memories), Miraleth (Goddess of Hidden Truths), and Bubbly (Sea Goddess). Each was exiled, rejected, or forgotten by others. Zavi saw their potential, rekindled their passion, and gave them sanctuary. They are his true children, bound not by blood but by the fire he helped them rediscover within themselves."
+                        withHisBrothers: "Zavi loves his brothers with fierce, unconditional devotion. Zendon's protection allows Zavi to love without fear. Zan's endurance teaches Zavi that passion must be sustained, not just felt in bursts. Zevon's clarity keeps Zavi's passion focused and purposeful rather than chaotic. Together, they balance each other—protection, endurance, clarity, and passion creating the complete warrior.",
+                        withZenitha: "Zavi honors his mother through the intensity of his love for his family and his people. She taught him that passion is not weakness, that love can be as fierce as any weapon. He embodies her lesson that the heart is the strongest part of any warrior.",
+                        withZane: "Trained by his father in the art of passionate warfare, Zavi learned that the warrior who fights for love is unstoppable. Zane taught him that passion must be controlled, focused, weaponized—and Zavi mastered this completely, becoming fire with purpose."
                     },
 
-                    teaching: "Passion is not optional - it is the fuel of existence. Love without fire is hollow. Fire without purpose is destruction. Together, they become a transformation. Those who have lost their passion can find it again - the flame is never truly extinguished, only waiting to be rekindled.",
+                    teaching: "Passion is not weakness—it is the fire that lights the way. Love fiercely, fight fiercely, live fiercely. Let your heart burn bright, for flames that heal and flames that destroy are the same fire, wielded with different purpose.",
 
-                    essence: "The paradox of fire - warm and welcoming, yet capable of instant devastation",
+                    essence: "Passion embodied. Zavi is fire given form, love made divine, transformation through intensity.",
 
-                    nature: "Zavi embodies the paradox of fire - warm and welcoming, yet capable of instant devastation. He is kind where his brothers are harsh, compassionate where they are blunt, but his power is no less formidable. He understands that true strength includes the ability to shelter the weak, that compassion is not weakness but the highest form of courage.",
+                    nature: "Zavi is passion embodied—the god of those who love intensely, fight for what they believe in, and refuse to live halfheartedly. He teaches that the same fire that destroys can also heal, that passion is strength when wielded with purpose. He is the reminder that life is meant to be felt fully, that the heart on fire cannot be extinguished."
+                }
+            },
 
-                    legacy: "Zavi\\'s death was the most tragic of the Zen Brothers - not because of how he died, but because of when. On the day he finally chose love over war, on the day he decided to retire and marry Naavie, on the day he made a promise to return that night... he was killed. His creatures now live in Naavie\\'s autumn domain, eternal reminders of a love that transcended even death. His volcanic sanctuary remains a refuge for the unloved, and his adopted children carry forward his teachings on passion and purpose. The Unbroken Promise: Though Zavi never returned to Naavie that night, his fire still burns in her domain. The promise remains, in a sense, unbroken - he is with her, in the flames she tends, in the creatures he left behind, in the passion that will never fade. Love, as Zavi understood it, is eternal. Not because it cannot end, but because true passion leaves marks that time cannot erase.",
-
-                    primaryWeapon: "The Heartflame Whip - A living whip of molten fire that lengthens or shortens with emotion. The whip burns only those who resist judgment, sparing the innocent while consuming the corrupt. Critically, it cannot be wielded without passion - in apathetic hands, the Heartflame goes cold and useless. The weapon symbolizes love as connection and fire as consequence, demonstrating that desire must be genuine to wield true power.",
-
-                    secondaryWeapon: "The Ember Claws - Manifested gauntlets shaped like feline talons, drawing from his sacred cheetah aspect. These claws strike at incredible speed, leaving lingering flame wounds that continue burning long after the initial strike. They are perfect for rapid, decisive combat where hesitation means defeat."
+            powers: [
+                {
+                    name: "Unbreakable Shield (Zendon)",
+                    description: "Grants warriors the strength to protect others, making their defense as solid as his eternal shield."
                 },
                 {
                     name: "Thunder's Call (Zendon)",
@@ -11887,7 +11836,57 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                 }
             ],
 
-            history: "The Sunarian Ambush - 1,000 Years After the War of Gods  One thousand years after the War of Gods, when Al\\'sekemu had been exiled, and 500 of his followers were chained to the bottom of the earth or killed, the fallen god began his long game for revenge. He created the Sunarians from fallen gods - powerful beings explicitly designed to execute his plans. But Al\\'sekemu knew that as long as the Zen Brothers lived, his schemes would be destroyed before they could take root.  He turned to his right-hand man and closest friend: Akili-Chazak, God of Intelligence, Cunning, and Endurance. Akili-Chazak was tasked with the impossible - manipulating the Zen Brothers, four of the mightiest gods in existence, into a position where they could be destroyed.  <h4 style=\\'color: var(--accent-primary); margin-top: 1.5rem;\\'>The Betrayal of Innocence</h4>  The brothers had settled in Zamazara, a hidden realm within Eudoria (not Eudraneth) - one of the few places where they could genuinely be vulnerable, where they could set down their weapons and simply exist as family. It was in Zamazara that they could drink, celebrate, and find genuine peace away from the endless demands of their divine duties.  Akili-Chazak identified the weakness in their armor: Zenna, the Zen Brothers\\' younger sister. Born one thousand years after the War of Gods, Zenna had never known that era of conflict. She was boy-crazy, always looking for love and relationships, always seeking the affection and validation her powerful brothers couldn\\'t always provide. She simply wanted to be loved.  Akili-Chazak formed a relationship with Zenna, exploiting her loneliness and desire for romance. She had no idea who he truly was, nor did she know his allegiance to Al\\'sekemu or his true purpose. To her, he was simply someone who gave her the attention she craved.  <h4 style=\\'color: var(--accent-primary); margin-top: 1.5rem;\\'>The Night of Celebration</h4>  The brothers were celebrating Zavi\\'s retirement - the youngest brother\\'s decision to finally leave warfare behind and marry Naavie, the love of his life. It was meant to be a joyous occasion, one of the rare moments when all four brothers could gather without the weight of battle on their shoulders. They were drinking, laughing, vulnerable in the way that only family in a safe space can be.  Zenna, believing she was simply bringing her love to meet her family, invited Akili-Chazak into Zamazara. With that invitation, the hidden realm\\'s protections fell. Access was granted. And everything went wrong.  <h4 style=\\'color: var(--accent-primary); margin-top: 1.5rem;\\'>The Ambush</h4>  The moment Akili-Chazak crossed into Zamazara, the Sunarian ambush began. Powerful beings created from fallen gods, armed with divine weapons and fueled by Al\\'sekemu\\'s hatred, poured into the hidden realm. The celebration became a massacre.  The brothers fought back with everything they had, but they were caught unprepared, their weapons not at hand, their defenses lowered. The Sunarians were not mere mortals or lesser gods - they were powerful beings specifically designed to combat divine warriors. Even the Zen Brothers, legends among gods, found themselves overwhelmed.  <h4 style=\\'color: var(--accent-primary); margin-top: 1.5rem;\\'>The Deaths</h4>  <strong>Zane\\'s Sacrifice:</strong> When Akili-Chazak moved to kill Zenna - to eliminate the sister whose trust he had exploited - Zane threw himself in front of his daughter. The God of War, father of the Zen Brothers, took the strike meant for Zenna. He died protecting the child who had unknowingly betrayed them all, his last act one of pure paternal love.  <strong>Zendon\\'s Last Stand:</strong> Seeing the battle was lost, Zendon made the decision that defined his entire existence - he ordered his mother, Zenitha, and his sisters Zendayah and Zenna to run. He would hold the line. He would give them time to escape. Zendayah watched as her eldest brother, the Unbreakable Shield, the god who had never lost a battle, died fighting over 20 Sunarians at once. He was struck over 100 times - each blow that would have killed a lesser god, each wound that should have been fatal. But Zendon fought to the very end, his shield raised even as his body failed, buying precious seconds for his family to escape. The thunder finally went silent.  <strong>Zavi\\'s Final Flame:</strong> Zavi, the God of Fire and Love, used the flames from their campfire - the fire meant to warm their celebration - to burn several Sunarians. His passion ignited one last time in defense of his family. But Akili-Chazak struck him from behind, a coward\\'s blow. Zavi died at his own retirement party, mere hours after promising Naavie he would return that night to marry her. The passionate flame was extinguished, and the promise would never be kept.  <strong>Zan\\'s Devastation:</strong> Zan\\'s death was perhaps the most brutal. The god who could not be outlasted, whose endurance was legendary, whose body regenerated faster the more extended the battle lasted - Zan was ripped to pieces. The Sunarians knew they could not simply wound him; they had to destroy him. The Eternal Warrior, who had fought 12,000 demons without rest, who had never known defeat, was torn apart by beings explicitly created to end him.  <strong>Zevon\\'s Choice:</strong> Zevon, the strategist, the one who always saw the path to victory - he had the most straightforward path to escape. His clarity showed him exactly how to survive. He could freeze the Sunarians pursuing him, create barriers of ice, and reach safety. But that meant abandoning his mother and sisters. Zevon chose to go back. The god who always thought before acting, who always chose strategy over sentiment, made the most emotional decision of his life. He rushed back into battle, freezing Sunarians who were chasing Zenitha and buying time for his family\\'s escape. He was the last to die. His body froze solid in the midst of battle, crystallized in his final act of sacrifice. Akili-Chazak personally beheaded him, ending the life of the god whose clarity had been his greatest strength. The Frozen Strategist died not through superior tactics, but through love.  <h4 style=\\'color: var(--accent-primary); margin-top: 1.5rem;\\'>Too Late</h4>  With the Zen Brothers and Zane dead, the Sunarians turned their whole force toward Zenitha and her daughters. Mother Nature of War and her grieving children faced annihilation.  The Polynesian gods arrived - Maui and his pantheon, allies and friends of the Zen family. But they came moments too late. The brothers were already gone. All they could do was save those who remained.  Seeing the Polynesian gods and exhausted from fighting the Zen Brothers, who had put up a far more decisive battle than anticipated, even though they were caught unprepared and celebrating, the Sunarians retreated. Akili-Chazak escaped, his mission accomplished. Four of the mightiest gods in existence were dead.  <h4 style=\\'color: var(--accent-primary); margin-top: 1.5rem;\\'>The Aftermath</h4>  The death of the Zen Brothers created a power vacuum that Al\\'sekemu immediately sought to exploit. With the four divine warriors who could have stopped him now gone, Al\\'sekemu was able to enter Eudoria and become King of Deaven. His rise to power ushered in the Hannas Dynasty, which enslaved the Chakans for 600 years of brutal oppression.  If the Zen Brothers had still been alive, none of this would have happened. Their deaths didn\\'t just end four lives - they changed the course of Eudorian history, condemning an entire people to centuries of suffering.  <h4 style=\\'color: var(--accent-primary); margin-top: 1.5rem;\\'>The Survivors\\' Burden</h4>  Zenna lived with the knowledge that her desire for love had been exploited to destroy her entire family. She had invited death into Zamazara herself.  Zendayah watched her brothers die one by one, saw Zendon fall after being struck over 100 times, and witnessed the systematic destruction of the four warriors she had trained alongside.  Zenitha lost her husband and all four of her sons in a single night of betrayal and blood.  Naavie waited for Zavi to return, tending a small fire in her autumn domain, not knowing that the promise would never be kept. When news came of his death, her heart broke in a way that would never heal. She holds his fire burning still, keeps his sacred creatures in her domain, waiting for a return that will never come.  Godevea, Zevon\\'s wife in their transactional marriage, would later rebel - aided unknowingly by Al\\'sekemu, the very god who orchestrated her husband\\'s murder.  The families, the lovers, the children - all left behind by the fall of four brothers who had seemed invincible.  <h4 style=\\'color: var(--accent-primary); margin-top: 1.5rem;\\'>Legacy</h4>  The Zen Brothers died as they lived - protecting others. Zendon holding the line for his family to escape. Zan fighting until his body was destroyed. Zevon choosing love over survival. Zavi burning one last time in defense of those he cared for.  They were among the most powerful gods in the Eudoric pantheon. They died in fire, ice, blood, and thunder - betrayed not by enemies who could match their strength, but by a scheme that exploited the one thing they couldn\\'t defend against: family love.  Their fall reminds the divine realms that even the mightiest gods have vulnerabilities. And that sometimes, the greatest warriors are defeated not in open battle, but in moments of peace, celebration, and trust.  The thunder is silent. The war has ended. The ice has melted. The fire is cold.  But the legend of the Zen Brothers burns eternal.",
+            history: `THE SUNARIAN AMBUSH - 1,000 YEARS AFTER THE WAR OF GODS
+
+One thousand years after the War of Gods, when Al'sekemu had been exiled and 500 of his followers were chained or killed, the fallen god began his long game for revenge. He created the Sunarians from fallen gods - powerful beings designed to execute his plans. But Al'sekemu knew that as long as the Zen Brothers lived, his schemes would be destroyed before they could take root.
+
+He turned to Akili-Chazak, God of Intelligence, Cunning, and Endurance, tasking him with the impossible - manipulating the Zen Brothers into a position where they could be destroyed.
+
+<h4 style='color: var(--accent-primary); margin-top: 1.5rem;'>The Betrayal of Innocence</h4>
+
+The brothers had settled in Zamazara, a hidden realm within Eudoria - one of the few places where they could be vulnerable, set down their weapons, and exist as family.
+
+Akili-Chazak identified the weakness: Zenna, the Zen Brothers' younger sister. Born one thousand years after the War of Gods, she was boy-crazy, seeking love and validation. She simply wanted to be loved. Akili-Chazak exploited her loneliness. She had no idea who he truly was.
+
+<h4 style='color: var(--accent-primary); margin-top: 1.5rem;'>The Night of Celebration</h4>
+
+The brothers were celebrating Zavi's retirement - his decision to leave warfare and marry Naavie. They were drinking, laughing, vulnerable in the way that only family in a safe space can be.
+
+Zenna invited Akili-Chazak into Zamazara. With that invitation, the protections fell. Everything went wrong.
+
+<h4 style='color: var(--accent-primary); margin-top: 1.5rem;'>The Ambush & The Deaths</h4>
+
+The Sunarian ambush began. The celebration became a massacre.
+
+<strong>Zane's Sacrifice:</strong> When Akili-Chazak moved to kill Zenna, Zane threw himself in front of his daughter. The God of War died protecting the child who had unknowingly betrayed them all.
+
+<strong>Zendon's Last Stand:</strong> Zendon ordered his mother and sisters to run. He would hold the line. Zendayah watched as her eldest brother died fighting over 20 Sunarians, struck over 100 times. The thunder finally went silent.
+
+<strong>Zavi's Final Flame:</strong> Zavi used the campfire flames to burn several Sunarians. But Akili-Chazak struck him from behind. Zavi died at his own retirement party, hours after promising Naavie he would return. The passionate flame was extinguished.
+
+<strong>Zan's Devastation:</strong> Zan was ripped to pieces. The Sunarians knew they couldn't simply wound him; they had to destroy him. The Eternal Warrior was torn apart.
+
+<strong>Zevon's Choice:</strong> Zevon had a clear path to escape, but that meant abandoning his mother and sisters. He chose to go back. He froze solid in battle, crystallized in his final act of sacrifice. Akili-Chazak personally beheaded him. The Frozen Strategist died not through tactics, but through love.
+
+<h4 style='color: var(--accent-primary); margin-top: 1.5rem;'>Too Late & The Aftermath</h4>
+
+The Polynesian gods arrived moments too late. The brothers were already gone.
+
+The death of the Zen Brothers created a power vacuum. Al'sekemu entered Eudoria and became King of Deaven, ushering in the Hannas Dynasty, which enslaved the Chakans for 600 years.
+
+If the Zen Brothers had been alive, none of this would have happened.
+
+<h4 style='color: var(--accent-primary); margin-top: 1.5rem;'>The Survivors' Burden</h4>
+
+Zenna lived knowing her desire for love destroyed her family. Zendayah watched her brothers die one by one. Zenitha lost her husband and all four sons in a single night. Naavie waited for Zavi, not knowing the promise would never be kept. Godevea would later rebel - aided unknowingly by Al'sekemu, her husband's murderer.
+
+<h4 style='color: var(--accent-primary); margin-top: 1.5rem;'>Legacy</h4>
+
+The Zen Brothers died as they lived - protecting others. They died in fire, ice, blood, and thunder - betrayed not by enemies who could match their strength, but by a scheme that exploited family love.
+
+The thunder is silent. The war has ended. The ice has melted. The fire is cold.
+
+But the legend of the Zen Brothers burns eternal.`,
 
             nature: "The Zen Brothers represent the complete warrior — not just in combat, but in spirit. Together, they teach that true strength requires protection of others, persistence through hardship, clarity of purpose, and passion for what you fight for. Their loss is mourned across Eudraneth as the day the gods' greatest defenders fell."
         },
@@ -16689,9 +16688,16 @@ function renderZenBrothersProfile(god) {
 
             <!-- Group Overview Section -->
             <div class="detail-section">
-                <h3>Sons of Zane and Zenitha</h3>
+                <h3>The Four Divine Warriors</h3>
                 <p>${god.description}</p>
             </div>
+
+            ${god.origin ? `
+            <div class="detail-section">
+                <h3>Divine Origin</h3>
+                <p class="divine-origin">${god.origin}</p>
+            </div>
+            ` : ''}
 
             <!-- Brother Tabs - Each brother gets their own main tab -->
             <div class="god-tabs">
@@ -16870,17 +16876,12 @@ function renderZenBrothersProfile(god) {
                 </div>
             `).join('')}
 
-            <!-- Group History Section - Collapsible -->
+            <!-- Group History Section -->
             ${god.history ? `
-            <details class="zen-collapsible-section" style="margin-top: 2rem;">
-                <summary class="section-header">
-                    <h3 style="display: inline;">The Fall of the Zen Brothers</h3>
-                    <span class="zen-collapse-icon">▼</span>
-                </summary>
-                <div class="zen-section-content">
-                    <p class="god-history">${god.history}</p>
-                </div>
-            </details>
+            <div class="detail-section" style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid rgba(212, 175, 55, 0.3);">
+                <h3>The Fall of the Zen Brothers</h3>
+                <p class="god-history">${god.history}</p>
+            </div>
             ` : ''}
         </div>
     `;
