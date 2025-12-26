@@ -11403,8 +11403,8 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                     description: "Zendon is the eldest and leader of the Zen Brothers, son of Zane (God of War) and Zenitha (Mother Nature of War). He is an unstoppable force whose very arrival on the battlefield signals its end. When Zendon enters combat, enemies know their defeat is inevitable. He can shake and move mountains with his power.",
 
                     appearance: {
-                        description: "Zendon is the most imposing Zen Brother, commanding attention even among gods. His bronze skin, a gleam of Zenitha's divine fire, reflects his heritage. His long, orange, wavy hair flows past his shoulders, a fiery mane from his mother, complemented by a braided beard with thunder and protection symbols. His battle-worn eyes have never known defeat. When his power surges, lightning dances through his hair and beard, resembling a living storm. His armor bears ancient protection symbols, and his legendary shield is always ready.",
-                        skin: "Bronze skin, a gleam of Zenitha's divine fire",
+                        description: "Zendon is the most imposing Zen Brother, commanding attention even among gods. His bronze skin, a gleam of Zenitha\'s divine fire, reflects his heritage. His long, orange, wavy hair flows past his shoulders, a fiery mane from his mother, complemented by a braided beard with thunder and protection symbols. His battle-worn eyes have never known defeat. When his power surges, lightning dances through his hair and beard, resembling a living storm. His armor bears ancient protection symbols, and his legendary shield is always ready.",
+                        skin: "Bronze skin, a gleam of Zenitha\'s divine fire",
                         height: "Towering and imposing, commanding attention even among gods",
                         hair: "Long, orange, wavy hair flowing past his shoulders—a fiery mane from his mother",
                         beard: "Braided beard woven with thunder and protection symbols",
@@ -11422,7 +11422,7 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                         },
                         {
                             name: "Thunder",
-                            description: "His voice IS thunder. When Zendon speaks on the battlefield, his words boom like storm clouds breaking. His battle cry can rally entire armies or shatter enemy morale. Thunder represents protection in its purest form—he is the god of those who put themselves in harm's way for others. Warriors pray to him before battle not for victory, but for the strength to stand between danger and those they love, no matter the cost."
+                            description: "His voice IS thunder. When Zendon speaks on the battlefield, his words boom like storm clouds breaking. His battle cry can rally entire armies or shatter enemy morale. Thunder represents protection in its purest form—he is the god of those who put themselves in harm\'s way for others. Warriors pray to him before battle not for victory, but for the strength to stand between danger and those they love, no matter the cost."
                         },
                         {
                             name: "The Shield Domain",
@@ -11433,18 +11433,18 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                     powers: [
                         {
                             name: "The Unbreakable Shield",
-                            description: "Zendon's signature power. He can extend his shield's invulnerability to others. Armies blessed by Zendon become nearly impossible to break through defensive lines."
+                            description: "Zendon\'s signature power. He can extend his shield\'s invulnerability to others. Armies blessed by Zendon become nearly impossible to break through defensive lines."
                         },
                         {
-                            name: "Thunder's Voice",
+                            name: "Thunder\'s Voice",
                             description: "When Zendon shouts, his voice becomes literal thunder. It can shatter weapons, knock enemies off their feet, or rally allies with supernatural courage."
                         },
                         {
-                            name: "Guardian's Stance",
+                            name: "Guardian\'s Stance",
                             description: "When Zendon plants his shield and takes his stance, he becomes immovable. Mountains could crash into him and he would not budge. This is the stance that has never been broken."
                         },
                         {
-                            name: "The Betrayer's Shield",
+                            name: "The Betrayer\'s Shield",
                             description: "When Zendon throws his shield, it transforms into an imitating weapon, wielding the power of whoever it strikes and forcing their own powers to betray them. This ability makes even the mightiest gods fear facing him in combat."
                         },
                         {
@@ -11471,12 +11471,12 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                             description: "When Zendon and the Zen Brothers entered the War of Gods, they arrived at Bonnia in a sharp, massive lightning strike that killed 30 gods instantly, announcing their presence and turning the tide of battle."
                         },
                         {
-                            name: "The Shield's Command",
-                            description: "During the War of Gods, the Zen Brothers fought under a single command—Zendon's. When he raised his shield, Zan stopped advancing, Zevon ceased judgment, and Zavi restrained his fire. Unity under his leadership made them an unstoppable force."
+                            name: "The Shield\'s Command",
+                            description: "During the War of Gods, the Zen Brothers fought under a single command—Zendon\'s. When he raised his shield, Zan stopped advancing, Zevon ceased judgment, and Zavi restrained his fire. Unity under his leadership made them an unstoppable force."
                         },
                         {
-                            name: "The Al'sekemu Defeat",
-                            description: "During the War of Gods, Zendon fought Al'sekemu in a fist fight. When Zendon defeated him, Al'sekemu had to unleash a massive wave of power that nearly drained him completely just to get Zendon off him. This humiliation is one of the reasons Al'sekemu orchestrated the Zen Brothers' deaths."
+                            name: "The Al\'sekemu Defeat",
+                            description: "During the War of Gods, Zendon fought Al\'sekemu in a fist fight. When Zendon defeated him, Al\'sekemu had to unleash a massive wave of power that nearly drained him completely just to get Zendon off him. This humiliation is one of the reasons Al\'sekemu orchestrated the Zen Brothers\' deaths."
                         }
                     ],
 
@@ -11488,15 +11488,15 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                         withZane: "Son and student of Zane, God of War. Zane trained him to be the perfect defender, teaching him that the strongest warriors protect, not destroy.",
                         withDishaniki: "Devoted husband to Dishaniki, Goddess of Passion and Love.",
                         withChildren: "Father to Emen (God of Power and Justice), Dosi (God of Storms), Sayie (God of Balance and Health), and Nore (God of Truth and Justice). He teaches them justice, balance, and the importance of protection.",
-                        withZendayah: "Trained his sister Zendayah in battle. He saved her, Zenitha, and Zenna during Zamazara's attack. Zendayah named the region Zendonia after him, recognizing his legendary strength.",
-                        withAlsekemu: "Deep enmity exists between them. Al'sekemu hates Zendon because Suleiman favored him. During the War of Gods, Zendon defeated Al'sekemu in a fist fight, forcing him to unleash a massive wave of power that nearly drained him completely just to escape. This humiliation is one of the reasons Al'sekemu orchestrated the Zen Brothers' deaths."
+                        withZendayah: "Trained his sister Zendayah in battle. He saved her, Zenitha, and Zenna during Zamazara\'s attack. Zendayah named the region Zendonia after him, recognizing his legendary strength.",
+                        withAlsekemu: "Deep enmity exists between them. Al\'sekemu hates Zendon because Suleiman favored him. During the War of Gods, Zendon defeated Al\'sekemu in a fist fight, forcing him to unleash a massive wave of power that nearly drained him completely just to escape. This humiliation is one of the reasons Al\'sekemu orchestrated the Zen Brothers\' deaths."
                     },
 
                     teaching: "Strength is not found in attack, but in the willingness to stand between danger and those you protect. The shield that does not break is stronger than any sword. True courage is not fearlessness—it is standing your ground even when you are terrified.",
 
                     essence: "Protection in its purest form",
 
-                    nature: "Zendon embodies protection in its purest form. He is the god of those who put themselves in harm's way for others, the patron of guards, defenders, and all who shield the vulnerable. He teaches that the greatest strength is not in what you can destroy, but in what you can protect.",
+                    nature: "Zendon embodies protection in its purest form. He is the god of those who put themselves in harm\'s way for others, the patron of guards, defenders, and all who shield the vulnerable. He teaches that the greatest strength is not in what you can destroy, but in what you can protect.",
 
                     legacy: "Most gods fear Zendon because he has never lost a battle. The region of Zendonia in Eudoria bears his name, a testament to his legendary strength and the protection he represents."
                 },
