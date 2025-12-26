@@ -16422,6 +16422,7 @@ function renderEudoricGods() {
             'umar': 'Umar.png',
             'yusha': 'Yusha.png',
             'zane': 'Zane.png',
+            'zenbrothers': 'Zenbrothers.png',
             'zenitha': 'Zenitha.png'
         };
 
@@ -16472,12 +16473,19 @@ function renderZenBrothersProfile(god) {
         zavi: 'Zavi'
     };
 
+    const profileImageHTML = `
+        <div class="god-profile-image">
+            <img src="Images/Zenbrothers.png" alt="The Zen Brothers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="god-icon-large" style="display: none;">✦</div>
+        </div>
+    `;
+
     contentArea.innerHTML = `
         <div class="god-profile">
             <button class="back-button" onclick="renderEudoricGods()">← Back to Pantheon</button>
 
             <div class="god-header">
-                <div class="god-icon-large">✦</div>
+                ${profileImageHTML}
                 <h1 class="god-name">${god.name}${god.alternativeName ? ` <span class="alt-name">(${god.alternativeName})</span>` : ''}</h1>
                 <div class="god-titles">
                     ${titlesHTML}
@@ -16886,6 +16894,7 @@ function showGodDetail(godKey) {
         'umar': 'Umar.png',
         'yusha': 'Yusha.png',
         'zane': 'Zane.png',
+        'zenbrothers': 'Zenbrothers.png',
         'zenitha': 'Zenitha.png'
     };
 
