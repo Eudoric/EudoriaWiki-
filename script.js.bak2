@@ -16341,12 +16341,12 @@ function showCharacterProfile(charKey, section = 'royaltyDefenders') {
         if (sec && sec.title) {
             wikiSectionsHTML += `
                 <h2 class="wiki-section-header" id="wiki-section-${index + 1}">${sec.title}</h2>
-                <div class="zen-collapsible-section">
+                <div class="collapsible-section">
                     <button class="section-toggle" onclick="toggleSection(this)">
                         <span class="toggle-icon">+</span>
                         <span class="section-title">Expand Section</span>
                     </button>
-                    <div class="zen-section-content">
+                    <div class="section-content">
                         <div class="formatted-content">${formatCharContent(sec.content)}</div>
                     </div>
                 </div>
@@ -16568,12 +16568,12 @@ function renderZenBrothersProfile(god) {
                     </div>
 
                     <!-- Profile Section - Collapsible -->
-                    <details class="zen-collapsible-section" open>
+                    <details class="collapsible-section" open>
                         <summary class="section-header">
                             <h3 style="display: inline;">Profile</h3>
-                            <span class="zen-collapse-icon">▼</span>
+                            <span class="collapse-icon">▼</span>
                         </summary>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <h4 style="color: var(--accent-primary); margin-bottom: 1rem;">Divine Essence</h4>
                             <p>${brother.description}</p>
 
@@ -16602,12 +16602,12 @@ function renderZenBrothersProfile(god) {
 
                     <!-- Divine Power Section - Collapsible -->
                     ${brother.domains || brother.powers ? `
-                    <details class="zen-collapsible-section">
+                    <details class="collapsible-section">
                         <summary class="section-header">
                             <h3 style="display: inline;">Divine Power</h3>
-                            <span class="zen-collapse-icon">▼</span>
+                            <span class="collapse-icon">▼</span>
                         </summary>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             ${brother.domains && brother.domains.length > 0 ? `
                                 <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Domains</h4>
                                 ${brother.domains.map(domain => `
@@ -16643,12 +16643,12 @@ function renderZenBrothersProfile(god) {
 
                     <!-- Appearance & Nature Section - Collapsible -->
                     ${brother.appearance || brother.personality ? `
-                    <details class="zen-collapsible-section">
+                    <details class="collapsible-section">
                         <summary class="section-header">
                             <h3 style="display: inline;">Appearance & Nature</h3>
-                            <span class="zen-collapse-icon">▼</span>
+                            <span class="collapse-icon">▼</span>
                         </summary>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             ${brother.appearance && typeof brother.appearance === 'object' ? `
                                 <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Physical Appearance</h4>
                                 <p>${brother.appearance.description}</p>
@@ -16674,12 +16674,12 @@ function renderZenBrothersProfile(god) {
 
                     <!-- Relationships Section - Collapsible -->
                     ${brother.relationships ? `
-                    <details class="zen-collapsible-section">
+                    <details class="collapsible-section">
                         <summary class="section-header">
                             <h3 style="display: inline;">Relationships</h3>
-                            <span class="zen-collapse-icon">▼</span>
+                            <span class="collapse-icon">▼</span>
                         </summary>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             ${brother.relationships.withHisBrothers ? `
                                 <div style="margin: 1rem 0;">
                                     <h4 style="color: var(--accent-primary);">With His Brothers</h4>
@@ -25092,12 +25092,12 @@ function showMemberDetail(memberIndex) {
             <div class="collapsible-sections">
                 ${member.sections.background ? `
                     <h2 class="wiki-section-header" id="wiki-section-1">Background & Origin</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(member.sections.background))}</div>
                         </div>
                     </div>
@@ -25105,12 +25105,12 @@ function showMemberDetail(memberIndex) {
 
                 ${member.sections.abilities ? `
                     <h2 class="wiki-section-header" id="wiki-section-2">Powers & Abilities</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(member.sections.abilities))}</div>
                         </div>
                     </div>
@@ -25118,12 +25118,12 @@ function showMemberDetail(memberIndex) {
 
                 ${member.sections.appearance ? `
                     <h2 class="wiki-section-header" id="wiki-section-3">Appearance</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(member.sections.appearance))}</div>
                         </div>
                     </div>
@@ -25131,12 +25131,12 @@ function showMemberDetail(memberIndex) {
 
                 ${member.sections.role ? `
                     <h2 class="wiki-section-header" id="wiki-section-4">Role in Eudoria</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(member.sections.role))}</div>
                         </div>
                     </div>
@@ -25144,12 +25144,12 @@ function showMemberDetail(memberIndex) {
 
                 ${member.sections.relationships ? `
                     <h2 class="wiki-section-header" id="wiki-section-5">Relationships</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(member.sections.relationships))}</div>
                         </div>
                     </div>
@@ -25157,12 +25157,12 @@ function showMemberDetail(memberIndex) {
 
                 ${member.sections.personality ? `
                     <h2 class="wiki-section-header" id="wiki-section-6">Personality & Nature</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(member.sections.personality))}</div>
                         </div>
                     </div>
@@ -25170,12 +25170,12 @@ function showMemberDetail(memberIndex) {
 
                 ${member.sections.culture ? `
                     <h2 class="wiki-section-header" id="wiki-section-7">Cultural Significance</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(member.sections.culture))}</div>
                         </div>
                     </div>
@@ -25188,7 +25188,7 @@ function showMemberDetail(memberIndex) {
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(member.sections.death))}</div>
                         </div>
                     </div>
@@ -25348,12 +25348,12 @@ function showChildDetail(childIndex) {
             <div class="collapsible-sections">
                 ${child.sections.background ? `
                     <h2 class="wiki-section-header" id="wiki-section-1">Background & Origin</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(child.sections.background))}</div>
                         </div>
                     </div>
@@ -25361,12 +25361,12 @@ function showChildDetail(childIndex) {
 
                 ${child.sections.abilities ? `
                     <h2 class="wiki-section-header" id="wiki-section-2">Powers & Abilities</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(child.sections.abilities))}</div>
                         </div>
                     </div>
@@ -25374,12 +25374,12 @@ function showChildDetail(childIndex) {
 
                 ${child.sections.futureAbilities ? `
                     <h2 class="wiki-section-header" id="wiki-section-3">Future Goddess Powers</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(child.sections.futureAbilities))}</div>
                         </div>
                     </div>
@@ -25387,12 +25387,12 @@ function showChildDetail(childIndex) {
 
                 ${child.sections.pathToGodhood ? `
                     <h2 class="wiki-section-header" id="wiki-section-4">Path to Godhood</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(child.sections.pathToGodhood))}</div>
                         </div>
                     </div>
@@ -25400,12 +25400,12 @@ function showChildDetail(childIndex) {
 
                 ${child.sections.appearance ? `
                     <h2 class="wiki-section-header" id="wiki-section-5">Appearance</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(child.sections.appearance))}</div>
                         </div>
                     </div>
@@ -25413,12 +25413,12 @@ function showChildDetail(childIndex) {
 
                 ${child.sections.role ? `
                     <h2 class="wiki-section-header" id="wiki-section-6">Role in Eudoria</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(child.sections.role))}</div>
                         </div>
                     </div>
@@ -25426,12 +25426,12 @@ function showChildDetail(childIndex) {
 
                 ${child.sections.relationships ? `
                     <h2 class="wiki-section-header" id="wiki-section-7">Relationships</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(child.sections.relationships))}</div>
                         </div>
                     </div>
@@ -25439,12 +25439,12 @@ function showChildDetail(childIndex) {
 
                 ${child.sections.personality ? `
                     <h2 class="wiki-section-header" id="wiki-section-8">Personality & Nature</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(child.sections.personality))}</div>
                         </div>
                     </div>
@@ -25457,7 +25457,7 @@ function showChildDetail(childIndex) {
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(child.sections.prophecy))}</div>
                         </div>
                     </div>
@@ -25465,12 +25465,12 @@ function showChildDetail(childIndex) {
 
                 ${child.sections.culture ? `
                     <h2 class="wiki-section-header" id="wiki-section-10">Cultural Significance</h2>
-                    <div class="zen-collapsible-section">
+                    <div class="collapsible-section">
                         <button class="section-toggle" onclick="toggleSection(this)">
                             <span class="toggle-icon">+</span>
                             <span class="section-title">Expand Section</span>
                         </button>
-                        <div class="zen-section-content">
+                        <div class="section-content">
                             <div class="formatted-content">${addCrossReferences(formatSectionText(child.sections.culture))}</div>
                         </div>
                     </div>

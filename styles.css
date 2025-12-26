@@ -14461,16 +14461,15 @@ div .xref-link {
 }
 
 /* Collapsible Sections for Zen Brothers */
-.collapsible-section {
+.zen-collapsible-section {
     background: rgba(139, 90, 43, 0.08);
     border-radius: 0.75rem;
     padding: 0;
     margin: 1.5rem 0;
     border: 2px solid rgba(218, 165, 32, 0.2);
-    overflow: hidden;
 }
 
-.collapsible-section summary {
+.zen-collapsible-section summary {
     cursor: pointer;
     padding: 1.5rem;
     background: rgba(218, 165, 32, 0.1);
@@ -14482,15 +14481,15 @@ div .xref-link {
     transition: background 0.3s ease;
 }
 
-.collapsible-section summary:hover {
+.zen-collapsible-section summary:hover {
     background: rgba(218, 165, 32, 0.15);
 }
 
-.collapsible-section summary::-webkit-details-marker {
+.zen-collapsible-section summary::-webkit-details-marker {
     display: none;
 }
 
-.collapsible-section summary h3 {
+.zen-collapsible-section summary h3 {
     color: var(--accent-primary);
     font-family: 'Cinzel', serif;
     font-size: 1.4rem;
@@ -14498,17 +14497,17 @@ div .xref-link {
     text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
 }
 
-.collapse-icon {
+.zen-collapse-icon {
     font-size: 1rem;
     color: var(--accent-primary);
     transition: transform 0.3s ease;
 }
 
-.collapsible-section[open] .collapse-icon {
+.zen-collapsible-section[open] .zen-collapse-icon {
     transform: rotate(180deg);
 }
 
-.section-content {
+.zen-section-content {
     padding: 1.5rem;
     animation: slideDown 0.3s ease;
 }
