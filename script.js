@@ -26049,7 +26049,7 @@ const battleArenas = {
         bonus: "+15% power to Supreme gods",
         bonusType: "tier",
         bonusValue: { "Supreme": 1.15 },
-        backgroundImage: "assets:images:/Bonnia.png"
+        backgroundImage: "assets:images:/Court of EU.png"
     },
     fallingBonnia: {
         name: "The Falling Bonnia",
@@ -26073,7 +26073,7 @@ const battleArenas = {
         bonusType: "general",
         bonus: "+5% power to all gods",
         bonusValue: 1.05,
-        backgroundImage: "assets:images:/Bonnia.png"
+        backgroundImage: "assets:images:/The Oristhar.png"
     }
 };
 
