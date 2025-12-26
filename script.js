@@ -11502,70 +11502,115 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                 },
                 zan: {
                     title: "Zan - God of War and Endurance",
-                    fullTitle: "The Undefeated, The Eternal Warrior, Second of the Zen",
-                    attributes: "War, Endurance, Persistence, Determination, Resilience, Stamina, Unyielding Will",
-                    symbols: "The Eternal Flame (never extinguished in battle), Unsheathed Sword (always ready), Mountain That Won't Crumble (immovable endurance), Bloodied but Unbowed Banner",
-                    description: "Zan is the god of war and endurance, never defeated in battle. He bleeds courage into those who keep fighting, teaching that victory belongs not to the strongest or fastest, but to those who refuse to surrender. He is the warrior who gets back up one more time.",
+                    fullTitle: "The Eternal Warrior, The Unyielding Bull, Second of the Zen",
+                    tier: "Major God",
+                    gender: "Male",
+                    element: "War, Combat, Regeneration",
+                    space: "Eudraneth and Zamazara",
+                    alignment: "Neutral Good",
+                    sacredAnimal: "Bulls",
+                    sacredPlant: "None",
+                    attributes: "War, Endurance, Regeneration, Persistence, Trial, Combat, Relentlessness, Truth Through Conflict, Unyielding Will, Stamina",
+                    symbols: "The Bull (stubborn resolve and refusal to retreat), The Horns of Endurance (his massive double-ended war hammer), The Bull Sigil (circular sigil worn on armor), Endless Footprints (his unceasing march), Scarred Armor (marks of battles survived)",
+                    description: "Zan, the god of war, loves conflict not for conquest or suffering, but for the raw truth it exposes. He seeks testing, believing peace hides weakness. Zan creates war to avoid boredom and only seeks battle itself, making him the only god who rivals his tireless brother, Zendon.",
 
                     appearance: {
-                        description: "Battle-scarred but unbowed, Zan stands as a living testament to endurance. Every inch of him tells the story of countless battles fought and never lost—not because he never falls, but because he always rises.",
-                        skin: "Scarred bronze, covered in the marks of ten thousand battles—each scar a testament to survival",
-                        height: "7'8\", slightly shorter than Zendon but built broader through the shoulders",
-                        hair: "Dark and wild, tied back for battle, with streaks of silver from the fires he's walked through",
-                        build: "Heavily muscled and broad, built for sustained combat rather than speed—every muscle hardened by endless warfare",
-                        eyes: "Deep amber, burning with determination that never fades, even when exhausted",
-                        voice: "Rough and gravelly, worn from battle cries, but carrying unshakable conviction",
-                        presence: "When Zan enters a battlefield, the very air seems to thicken with resolve. Warriors near him feel their exhaustion fade, replaced by the unshakable will to continue. His presence says: 'We do not stop. We do not fall. We endure.'",
-                        distinctiveFeatures: "His armor is dented, scorched, and battered—but never broken. His sword is notched and worn—but never dulled. He wears his scars like medals, proof that he has survived everything thrown at him"
+                        description: "Zan, a towering figure of martial power, is marked by countless, eons-old battle scars on his bronze skin. His wild, flame-like orange hair and thick, battle-worn beard are inherited from Zenitha. He distinctively wears an ornate helmet, symbolizing his commitment to forward combat, and armor covered in the Bull Sigil, bearing the marks of thousands of battles. Through the helmet\\'s slits, his eyes burn with an undimming intensity, always seeking the next challenge.",
+                        skin: "Bronze skin marked by countless, eons-old battle scars",
+                        height: "Towering figure of martial power",
+                        hair: "Wild, flame-like orange hair inherited from Zenitha",
+                        beard: "Thick, battle-worn beard",
+                        build: "Towering figure of martial power",
+                        eyes: "Through the helmet\\'s slits, his eyes burn with an undimming intensity, always seeking the next challenge",
+                        voice: "Not described - speaks through action",
+                        presence: "A towering figure of martial power that commands the battlefield",
+                        distinctiveFeatures: "Ornate helmet symbolizing his commitment to forward combat, and armor covered in the Bull Sigil, bearing the marks of thousands of battles"
                     },
 
                     domains: [
                         {
                             name: "War",
-                            description: "Zan is the god of sustained warfare, not of quick victories or tactical genius, but of the long, brutal grind of battle. He represents the warrior who fights through exhaustion, pain, and despair. He teaches that war is not won in moments of glory—it is won by those who refuse to stop when everyone else has given up."
+                            description: "Zan does not fight for territories, kingdoms, or ideologies. He fights because war is the ultimate test of will, strength, and endurance. War strips away pretense and reveals what mortals and gods truly are when pushed to their limits. Warriors who pray to Zan do not ask for victory - they ask for the strength to keep fighting, no matter what comes."
                         },
                         {
                             name: "Endurance",
-                            description: "Zan's greatest domain is endurance itself—the ability to continue when your body screams to stop, when reason says you've lost, when every part of you wants to quit. He is the god of the second wind, the third wind, the hundredth wind. He teaches that endurance is not about feeling no pain—it's about moving forward despite it."
+                            description: "To Zan, endurance is the highest virtue. It is not enough to be strong - one must be unbreakable. Zan\\'s domain covers stamina, persistence, regeneration, and the refusal to yield. He is the patron of those who keep marching when others fall, who rise again no matter how many times they are struck down."
                         },
                         {
-                            name: "Persistence",
-                            description: "Where others see defeat, Zan sees another opportunity to rise. He is the god of 'not yet,' the refusal to accept that failure is final. He teaches that persistence transforms impossible odds into inevitable victory, because the warrior who refuses to stay down cannot truly be defeated."
+                            name: "The Bull\\'s Law",
+                            description: "Zan fights head-on. He does not ambush, deceive, or strike the helpless. Zan is incapable of retreat, deception, or indirect warfare. Even when wounded, outnumbered, or strategically disadvantaged, he will always choose to fight directly and openly. To Zan, survival gained through trickery is a hollow victory."
                         }
                     ],
 
                     powers: [
                         {
-                            name: "Endless Endurance",
-                            description: "Zan's signature power—he grants warriors the ability to continue fighting long past when their bodies should fail. Mortals blessed by Zan can fight for days without rest, can march through deserts without water, can endure wounds that would fell others. As long as their will holds, their body will follow."
+                            name: "Endless Vigor",
+                            description: "Zan never tires. The longer a battle lasts, the stronger his endurance becomes. Where others slow and weaken, Zan remains constant."
                         },
                         {
-                            name: "Courage's Blood",
-                            description: "Those who worship Zan find courage flowing into them like blood, sustaining them through impossible odds. When fear would paralyze, when despair would break them, Zan's blessing fills them with the determination to continue. It is not fearlessness—it is the courage to act despite fear."
+                            name: "Regenerative Continuum",
+                            description: "Zan\\'s body regenerates faster the longer a battle lasts. The more damage he takes, the more unyielding he becomes. Wounds that would cripple other gods only fuel his determination."
                         },
                         {
-                            name: "The Undefeated Will",
-                            description: "Zan cannot be broken. No matter how many times he is struck down, he rises. This power extends to his devoted followers—they gain an unbreakable will that refuses to accept defeat. Even when victory seems impossible, they continue, because surrender is not in their nature."
+                            name: "War Instinct",
+                            description: "Zan reads the flow of battle instinctively, anticipating strikes and countering movements with brutal efficiency born from endless combat experience."
                         },
                         {
-                            name: "War's Eternal Flame",
-                            description: "Zan carries an eternal flame that never goes out, no matter the storm, the flood, or the darkness. This flame represents the fire within every warrior who refuses to quit. He can ignite this flame in the hearts of his followers, giving them the strength to continue when all hope seems lost."
+                            name: "Bull\\'s Momentum",
+                            description: "Once Zan commits to a charge, nothing can stop it. His forward momentum becomes an unstoppable force that breaks through divine barriers and shatters enemy lines."
+                        },
+                        {
+                            name: "Last One Standing",
+                            description: "Zan will be the last warrior on the battlefield. Even if all allies fall, even if defeat is inevitable, Zan endures. He cannot be outlasted."
+                        },
+                        {
+                            name: "Aura of Trial",
+                            description: "Those who fight near Zan feel their own endurance tested and strengthened. His presence pushes warriors to discover their limits and surpass them."
                         }
                     ],
 
-                    personality: "Zan is relentless, grim, and utterly unbreakable. He does not boast of his victories or seek glory—he simply continues. Where Zendon is the patient protector, Zan is the stubborn fighter who will not yield. He is not the most skilled warrior, not the strongest, not the fastest—but he is the one who outlasts everyone else. He has a deep, quiet respect for those who endure hardship without complaint, and absolute disdain for those who give up when things get difficult. He teaches through example, not words—he shows you what endurance looks like by never, ever stopping.",
+                    legendaryFeats: [
+                        {
+                            name: "The 12,000 Demons",
+                            description: "Zan fought 12,000 demons continuously without rest, healing wounds as quickly as they were inflicted, until the battlefield collapsed under the weight of bodies."
+                        },
+                        {
+                            name: "The Seven Cycles of Zamazara",
+                            description: "Zan once marched across Zamazara for seven uninterrupted cycles of battle, never sleeping, never retreating, training the Zendols by example rather than command."
+                        },
+                        {
+                            name: "The Suleiman Defense",
+                            description: "Zan was the one who helped Suleiman escape for the first time before Obatala\\'s third attempt. He summoned a herd of bulls to push enemy forces back, creating an unstoppable wall of horns and fury."
+                        },
+                        {
+                            name: "The War of Gods Rampage",
+                            description: "The War of Gods was like a playground to Zan. He rushed through enemy lines, slicing through gods like child\\'s play. It reached the point where Suleiman had to order Zan to leave the battle - Suleiman wanted to stop the gods, not kill them all. Zan simply screamed at Suleiman and rushed back into battle, unable to resist the call of war."
+                        }
+                    ],
+
+                    personality: "Zan is a pure, undiluted warrior spirit given divine form. Where his brother Zendon fights to protect and preserve, Zan fights because battle is truth itself. He is not cruel or sadistic - he is simply obsessed with the purity of combat and the test of endurance. He has no interest in romance, family, or peace, viewing such things as distractions from his true calling. When asked why he doesn\\'t pursue relationships, Zan\\'s response is simple: \\'Why waste time on romance when I could be in war?\\' Despite his single-minded focus, Zan is Neutral Good - he fights to test himself and others, not to cause suffering. He follows the Bull\\'s Law strictly, refusing to strike the helpless or use deception. There is honor in his brutality, integrity in his relentlessness. He trains warriors by example, showing them what actual endurance looks like through his own unending march. Zan was deeply saddened when the War of Gods ended - not because of who won or lost, but because the most significant test of endurance in history had concluded. To Zan, that war was paradise, and its ending was a tragedy.",
 
                     relationships: {
-                        withHisBrothers: "Zan is fiercely loyal to his brothers, though he shows it through action rather than words. He fights beside them without hesitation and would endure any torment to protect them. Zendon's protection gives Zan the freedom to focus entirely on offense. Zevon's clarity keeps Zan from charging blindly into traps. Zavi's passion reminds Zan that there is something worth fighting for beyond the battle itself.",
-                        withZenitha: "Zan honors his mother with every battle he survives. She taught him that true strength is not in never falling—it is in always rising. He carries her lessons into every fight, knowing that endurance is the greatest tribute he can offer her.",
-                        withZane: "Trained by his father in the art of war, Zan learned that victory is not about brilliance or power—it is about outlasting your enemy. Zane taught him that the warrior who endures one second longer than their opponent wins. Zan embodies this lesson completely."
+                        withHisBrothers: "Zendon is the only god who could match Zan in battle due to Zan\\'s endless endurance, rivaling Zendon\\'s overwhelming power. While Zendon commands the Zen Brothers, Zan respects this leadership because Zendon has earned it through strength.",
+                        withZenitha: "Son of Zenitha, Mother Nature of War. He inherited her battle-worn nature and the wild, flame-like orange hair.",
+                        withZane: "Son and student of Zane, God of War. Trained by his father in the art of war.",
+                        withSuleiman: "Zan has a complicated relationship with Suleiman. He saved Suleiman during a crucial escape, summoning bulls to push back enemy forces. However, during the War of Gods, Zan openly defied Suleiman\\'s orders to show restraint, screaming at him and rushing back into battle when told to stop killing enemy gods.",
+                        withTheZendols: "Zan trained the warrior people of Zamazara through his seven-cycle march, teaching by relentless example rather than words."
                     },
 
-                    teaching: "Victory is not about strength or skill—it's about refusing to stop. The warrior who gets up one more time than they're knocked down cannot be defeated. The battle is not lost until you surrender.",
+                    teaching: "Endurance reveals character. Peace hides weakness, but conflict exposes reality. The warrior who stands after all others have fallen has proven their worth. Victory through trickery is hollow - true strength is measured in how long you can endure.",
 
-                    essence: "Persistence made divine. Zan is the embodiment of the warrior who will not quit, the flame that cannot be extinguished, the mountain that will not crumble.",
+                    essence: "The Bull - stubborn resolve, forward force, refusal to retreat",
 
-                    nature: "Zan is persistence made divine. He is the god of those who keep going when reason says to quit, who rise one more time after being beaten down, who turn 'impossible' into 'inevitable' through sheer refusal to surrender. He teaches that endurance is the ultimate weapon, because the fighter who will not stay down cannot be defeated."
+                    nature: "Zan embodies the bull: stubborn resolve, forward force, refusal to retreat. He does not dodge. He does not deceive. He does not flee. Like the bull, Zan lowers his head and survives whatever comes next.",
+
+                    legacy: "Zan is known for his endless endurance and regeneration. Warriors pray to him not for victory, but for the strength to keep fighting. The region of Zamazara honors his seven-cycle march as the ultimate example of warrior discipline.",
+
+                    limitations: "Zan can regenerate, but regeneration takes time. When facing layered tactics, reality-altering magic, or coordinated divine strategy, Zan may be delayed, redirected, or contained - even if he cannot be killed. Zan refuses to disengage - even when the battle no longer serves a greater good. His love of combat can make him a liability in situations requiring diplomacy or strategic withdrawal.",
+
+                    sacredWeapon: "The Horns of Endurance - A massive double-ended war hammer with horned flanges. Each strike carries the weight of endless battles, and the weapon grows heavier with each blow, building unstoppable momentum.",
+
+                    sacredArtifact: "The Bull Sigil - A circular sigil worn on armor that marks warriors who have sworn to never retreat, never deceive, and never strike the helpless. Those who bear it fight with Zan\\'s blessing of regeneration."
                 },
                 zevon: {
                     title: "Zevon - God of Frost, Ice, and Clarity",
