@@ -26033,7 +26033,7 @@ const battleArenas = {
         description: "The multi-realm battlefield where gods test their power and settle disputes",
         bonus: "Balanced arena - no special bonuses",
         image: "⚔️",
-        backgroundImage: "assets:images:/Bonnia.png"
+        backgroundImage: "assets/images/Bonnia.png"
     },
     zamazara: {
         name: "Zamazara",
@@ -26041,7 +26041,7 @@ const battleArenas = {
         bonus: "+10% power to Foundational gods",
         bonusType: "tier",
         bonusValue: { "Foundational": 1.1 },
-        backgroundImage: "assets:images:/Zamzara.png"
+        backgroundImage: "assets/images/Zamzara.png"
     },
     courtOfEu: {
         name: "The Court of Eu",
@@ -26049,7 +26049,7 @@ const battleArenas = {
         bonus: "+15% power to Supreme gods",
         bonusType: "tier",
         bonusValue: { "Supreme": 1.15 },
-        backgroundImage: "assets:images:/Court of EU.png"
+        backgroundImage: "assets/images/Court of EU.png"
     },
     fallingBonnia: {
         name: "The Falling Bonnia",
@@ -26057,7 +26057,7 @@ const battleArenas = {
         bonus: "+12% power to Major gods",
         bonusType: "tier",
         bonusValue: { "Major": 1.12 },
-        backgroundImage: "assets:images:/The fallen rift of Bonnia.png"
+        backgroundImage: "assets/images/The fallen rift of Bonnia.png"
     },
     ascendingHall: {
         name: "The Ascending Hall",
@@ -26065,7 +26065,7 @@ const battleArenas = {
         bonus: "+8% power to Minor gods",
         bonusType: "tier",
         bonusValue: { "Minor": 1.08 },
-        backgroundImage: "assets:images:/The Ascending .png"
+        backgroundImage: "assets/images/The Ascending .png"
     },
     oristhar: {
         name: "The Oristhar: The Hall of the Four",
@@ -26073,7 +26073,7 @@ const battleArenas = {
         bonusType: "general",
         bonus: "+5% power to all gods",
         bonusValue: 1.05,
-        backgroundImage: "assets:images:/The Oristhar.png"
+        backgroundImage: "assets/images/The Oristhar.png"
     }
 };
 
