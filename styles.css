@@ -13624,3 +13624,124 @@ div .xref-link {
         font-size: 0.75rem;
     }
 }
+
+/* Prediction System Styling */
+.prediction-section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: var(--surface-color);
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    text-align: center;
+}
+
+.prediction-section h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.prediction-prompt {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.prediction-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.prediction-btn {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.1rem;
+    background: var(--background-color);
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.prediction-btn:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.prediction-btn.selected {
+    background: linear-gradient(135deg, var(--accent-color) 0%, rgba(212, 175, 55, 0.8) 100%);
+    color: #1a1a1a;
+    border-color: var(--accent-color);
+    font-weight: bold;
+    box-shadow: 0 4px 16px rgba(212, 175, 55, 0.5);
+}
+
+.prediction-team-name {
+    display: block;
+}
+
+.prediction-status {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.prediction-result {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+    animation: slideDown 0.5s ease-out;
+}
+
+.prediction-result.correct {
+    background: linear-gradient(135deg, rgba(34, 139, 34, 0.2) 0%, rgba(34, 139, 34, 0.1) 100%);
+    border: 2px solid rgba(34, 139, 34, 0.5);
+    color: #4ade80;
+}
+
+.prediction-result.incorrect {
+    background: linear-gradient(135deg, rgba(220, 38, 38, 0.2) 0%, rgba(220, 38, 38, 0.1) 100%);
+    border: 2px solid rgba(220, 38, 38, 0.5);
+    color: #f87171;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .prediction-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .prediction-btn {
+        min-width: auto;
+        width: 100%;
+    }
+}

@@ -25706,6 +25706,10 @@ function renderBattleOfGods() {
     const contentArea = document.getElementById('contentArea');
     const gods = eudoriaData.eudoricGods;
 
+    // Reset battle state
+    userPrediction = null;
+    predictionMade = false;
+
     // Organize gods by tier for selection
     const godsByTier = {
         'Supreme': [],
@@ -25775,6 +25779,22 @@ function renderBattleOfGods() {
                 <!-- Dynamic team selection will be inserted here -->
             </div>
 
+            <div class="prediction-section" id="predictionSection" style="display: none;">
+                <h3>🎲 Make Your Prediction</h3>
+                <p class="prediction-prompt">Who do you think will win this battle?</p>
+                <div class="prediction-buttons">
+                    <button class="prediction-btn" id="predictTeam1" onclick="makePrediction(1)">
+                        <span class="prediction-team-name" id="predictTeam1Name">Team 1</span>
+                    </button>
+                    <button class="prediction-btn" id="predictTeam2" onclick="makePrediction(2)">
+                        <span class="prediction-team-name" id="predictTeam2Name">Team 2</span>
+                    </button>
+                </div>
+                <div class="prediction-status" id="predictionStatus" style="display: none;">
+                    ✓ Prediction locked in!
+                </div>
+            </div>
+
             <div class="battle-action-section">
                 <button id="battleBtn" class="battle-start-btn" onclick="simulateBattle()" disabled>
                     ⚔️ Begin Battle ⚔️
@@ -25827,6 +25847,8 @@ let currentBattleMode = '1v1';
 let team1Gods = [];
 let team2Gods = [];
 let selectedArena = 'bonnia';
+let userPrediction = null; // 1 for team1, 2 for team2
+let predictionMade = false;
 
 // Battle Arenas
 const battleArenas = {
@@ -26025,6 +26047,7 @@ function updateTeamPreview(previewId, godId) {
 
 function checkTeamBattleReady() {
     const battleBtn = document.getElementById('battleBtn');
+    const predictionSection = document.getElementById('predictionSection');
 
     // Check if all slots are filled and no duplicates
     const allGods = [...team1Gods, ...team2Gods].filter(id => id);
@@ -26035,15 +26058,48 @@ function checkTeamBattleReady() {
     const noDuplicates = allGods.length === uniqueGods.size;
 
     if (team1Filled && team2Filled && noDuplicates) {
-        battleBtn.disabled = false;
-        battleBtn.style.opacity = '1';
+        // Show prediction section
+        predictionSection.style.display = 'block';
+
+        // Update prediction button names
+        const team1Names = team1Gods.map(id => eudoriaData.eudoricGods[id].name).join(' & ');
+        const team2Names = team2Gods.map(id => eudoriaData.eudoricGods[id].name).join(' & ');
+        document.getElementById('predictTeam1Name').textContent = team1Names;
+        document.getElementById('predictTeam2Name').textContent = team2Names;
+
+        // Enable battle button only if prediction is made
+        if (predictionMade) {
+            battleBtn.disabled = false;
+            battleBtn.style.opacity = '1';
+        } else {
+            battleBtn.disabled = true;
+            battleBtn.style.opacity = '0.5';
+        }
     } else {
+        predictionSection.style.display = 'none';
         battleBtn.disabled = true;
         battleBtn.style.opacity = '0.5';
     }
 }
 
 function checkBattleReady() {
+    checkTeamBattleReady();
+}
+
+function makePrediction(team) {
+    userPrediction = team;
+    predictionMade = true;
+
+    // Update button states
+    document.querySelectorAll('.prediction-btn').forEach(btn => {
+        btn.classList.remove('selected');
+    });
+    document.getElementById(`predictTeam${team}`).classList.add('selected');
+
+    // Show status
+    document.getElementById('predictionStatus').style.display = 'block';
+
+    // Enable battle button
     checkTeamBattleReady();
 }
 
@@ -26085,10 +26141,22 @@ function simulateBattle() {
     const winningTeamNames = winningGods.map(g => g.name).join(', ');
     const losingTeamNames = losingGods.map(g => g.name).join(', ');
 
+    // Check if prediction was correct
+    const predictionCorrect = userPrediction === winningTeam;
+    const predictionHTML = predictionMade ? `
+        <div class="prediction-result ${predictionCorrect ? 'correct' : 'incorrect'}">
+            ${predictionCorrect
+                ? '🎯 <strong>Prediction Correct!</strong> You foresaw the outcome!'
+                : '❌ <strong>Prediction Incorrect!</strong> The gods surprised you!'}
+        </div>
+    ` : '';
+
     resultDiv.innerHTML = `
         <div class="battle-result-header">
             <h2>⚔️ Battle Complete ⚔️</h2>
         </div>
+
+        ${predictionHTML}
 
         <div class="battle-winner-announcement">
             <div class="winner-crown">👑</div>
