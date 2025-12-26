@@ -16455,6 +16455,170 @@ function renderEudoricGods() {
     `;
 }
 
+// Special rendering function for Zen Brothers - each brother gets their own tab
+function renderZenBrothersProfile(god) {
+    const contentArea = document.getElementById('contentArea');
+
+    const titlesHTML = god.titles.map(title =>
+        `<span class="god-title-tag">${title}</span>`
+    ).join('');
+
+    // Create tabs for each brother
+    const brotherEntries = Object.entries(god.brothers);
+    const brotherNames = {
+        zendon: 'Zendon',
+        zan: 'Zan',
+        zevon: 'Zevon',
+        zavi: 'Zavi'
+    };
+
+    contentArea.innerHTML = `
+        <div class="god-profile">
+            <button class="back-button" onclick="renderEudoricGods()">← Back to Pantheon</button>
+
+            <div class="god-header">
+                <div class="god-icon-large">✦</div>
+                <h1 class="god-name">${god.name}${god.alternativeName ? ` <span class="alt-name">(${god.alternativeName})</span>` : ''}</h1>
+                <div class="god-titles">
+                    ${titlesHTML}
+                </div>
+            </div>
+
+            <!-- Group Overview Section -->
+            <div class="detail-section">
+                <h3>The Four Divine Warriors</h3>
+                <p>${god.description}</p>
+            </div>
+
+            ${god.origin ? `
+            <div class="detail-section">
+                <h3>Divine Origin</h3>
+                <p class="divine-origin">${god.origin}</p>
+            </div>
+            ` : ''}
+
+            <!-- Brother Tabs - Each brother gets their own main tab -->
+            <div class="god-tabs">
+                ${brotherEntries.map(([key, brother], index) => `
+                    <button class="god-tab ${index === 0 ? 'active' : ''}" onclick="switchGodTab(event, '${key}-tab')">${brotherNames[key]}</button>
+                `).join('')}
+            </div>
+
+            <!-- Each Brother's Complete Profile -->
+            ${brotherEntries.map(([key, brother], index) => `
+                <div id="${key}-tab" class="god-tab-panel ${index === 0 ? 'active' : ''}">
+                    <!-- Brother Header -->
+                    <div class="detail-section">
+                        <h2 style="color: var(--accent-primary); font-size: 1.8rem;">${brother.title}</h2>
+                        ${brother.fullTitle ? `<p style="font-style: italic; color: var(--accent-secondary); font-size: 1.1rem; margin-top: 0.5rem;">${brother.fullTitle}</p>` : ''}
+                    </div>
+
+                    <!-- Profile Section -->
+                    <div class="detail-section">
+                        <h3>Profile</h3>
+                        <p><strong>Description:</strong> ${brother.description}</p>
+                        <p><strong>Attributes:</strong> ${brother.attributes}</p>
+                        <p><strong>Symbols:</strong> ${brother.symbols}</p>
+                        ${brother.essence ? `<p><strong>Essence:</strong> ${brother.essence}</p>` : ''}
+                        ${brother.teaching ? `<p><strong>Teaching:</strong> ${brother.teaching}</p>` : ''}
+                        ${brother.nature ? `<p><strong>Nature:</strong> ${brother.nature}</p>` : ''}
+                    </div>
+
+                    <!-- Divine Power Section -->
+                    ${brother.domains || brother.powers ? `
+                    <div class="detail-section">
+                        <h3>Divine Power</h3>
+
+                        ${brother.domains && brother.domains.length > 0 ? `
+                            <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Domains</h4>
+                            ${brother.domains.map(domain => `
+                                <div style="margin: 1rem 0; padding: 1rem; background: rgba(212, 175, 55, 0.05); border-left: 3px solid var(--accent-primary); border-radius: 0.25rem;">
+                                    <strong style="color: var(--accent-primary);">${domain.name}:</strong>
+                                    <p style="margin-top: 0.5rem;">${domain.description}</p>
+                                </div>
+                            `).join('')}
+                        ` : ''}
+
+                        ${brother.powers && brother.powers.length > 0 ? `
+                            <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Powers</h4>
+                            ${brother.powers.map(power => `
+                                <div style="margin: 1rem 0; padding: 1rem; background: rgba(212, 175, 55, 0.05); border-left: 3px solid var(--accent-primary); border-radius: 0.25rem;">
+                                    <strong style="color: var(--accent-primary);">${power.name}:</strong>
+                                    <p style="margin-top: 0.5rem;">${power.description}</p>
+                                </div>
+                            `).join('')}
+                        ` : ''}
+                    </div>
+                    ` : ''}
+
+                    <!-- Appearance & Nature Section -->
+                    ${brother.appearance || brother.personality ? `
+                    <div class="detail-section">
+                        <h3>Appearance & Nature</h3>
+
+                        ${brother.appearance && typeof brother.appearance === 'object' ? `
+                            <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Physical Appearance</h4>
+                            <p>${brother.appearance.description}</p>
+                            <ul style="margin: 1rem 0 1rem 1.5rem; line-height: 1.8;">
+                                ${brother.appearance.skin ? `<li><strong>Skin:</strong> ${brother.appearance.skin}</li>` : ''}
+                                ${brother.appearance.height ? `<li><strong>Height:</strong> ${brother.appearance.height}</li>` : ''}
+                                ${brother.appearance.hair ? `<li><strong>Hair:</strong> ${brother.appearance.hair}</li>` : ''}
+                                ${brother.appearance.build ? `<li><strong>Build:</strong> ${brother.appearance.build}</li>` : ''}
+                                ${brother.appearance.eyes ? `<li><strong>Eyes:</strong> ${brother.appearance.eyes}</li>` : ''}
+                                ${brother.appearance.voice ? `<li><strong>Voice:</strong> ${brother.appearance.voice}</li>` : ''}
+                                ${brother.appearance.presence ? `<li><strong>Presence:</strong> ${brother.appearance.presence}</li>` : ''}
+                                ${brother.appearance.distinctiveFeatures ? `<li><strong>Distinctive Features:</strong> ${brother.appearance.distinctiveFeatures}</li>` : ''}
+                            </ul>
+                        ` : brother.appearance ? `<p><strong>Appearance:</strong> ${brother.appearance}</p>` : ''}
+
+                        ${brother.personality ? `
+                            <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Personality & Temperament</h4>
+                            <p>${brother.personality}</p>
+                        ` : ''}
+                    </div>
+                    ` : ''}
+
+                    <!-- Relationships Section -->
+                    ${brother.relationships ? `
+                    <div class="detail-section">
+                        <h3>Relationships</h3>
+                        ${brother.relationships.withHisBrothers ? `
+                            <div style="margin: 1rem 0;">
+                                <h4 style="color: var(--accent-primary);">With His Brothers</h4>
+                                <p>${brother.relationships.withHisBrothers}</p>
+                            </div>
+                        ` : ''}
+                        ${brother.relationships.withZenitha ? `
+                            <div style="margin: 1rem 0;">
+                                <h4 style="color: var(--accent-primary);">With Zenitha (Mother)</h4>
+                                <p>${brother.relationships.withZenitha}</p>
+                            </div>
+                        ` : ''}
+                        ${brother.relationships.withZane ? `
+                            <div style="margin: 1rem 0;">
+                                <h4 style="color: var(--accent-primary);">With Zane (Father)</h4>
+                                <p>${brother.relationships.withZane}</p>
+                            </div>
+                        ` : ''}
+                    </div>
+                    ` : ''}
+                </div>
+            `).join('')}
+
+            <!-- Group History Section -->
+            ${god.history ? `
+            <div class="detail-section" style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid rgba(212, 175, 55, 0.3);">
+                <h3>The Fall of the Zen Brothers</h3>
+                <p class="god-history">${god.history}</p>
+            </div>
+            ` : ''}
+        </div>
+    `;
+
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 // Show detailed god profile
 function showGodDetail(godKey) {
     const god = eudoriaData.eudoricGods[godKey];
@@ -16462,6 +16626,12 @@ function showGodDetail(godKey) {
     if (!god) {
         console.error(`God not found for key: ${godKey}`);
         console.log('Available gods:', Object.keys(eudoriaData.eudoricGods));
+        return;
+    }
+
+    // Special rendering for Zen Brothers - show each brother as a main tab
+    if (godKey === 'zenbrothers' && god.brothers) {
+        renderZenBrothersProfile(god);
         return;
     }
 
