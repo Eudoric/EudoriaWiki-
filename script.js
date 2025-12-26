@@ -16614,13 +16614,70 @@ function showGodDetail(godKey) {
             ${Object.entries(god.brothers).map(([key, brother]) => `
                 <div class="brother-card" style="margin: 1.5rem 0; padding: 1.5rem; background: rgba(212, 175, 55, 0.1); border-left: 4px solid var(--accent-primary); border-radius: 0.5rem;">
                     <h4 style="color: var(--accent-primary); margin-bottom: 0.5rem; font-size: 1.2rem;">${brother.title}</h4>
+                    ${brother.fullTitle ? `<p style="font-style: italic; color: var(--accent-secondary); margin-bottom: 1rem;">${brother.fullTitle}</p>` : ''}
+
                     <p><strong>Attributes:</strong> ${brother.attributes}</p>
                     <p><strong>Symbols:</strong> ${brother.symbols}</p>
                     <p><strong>Description:</strong> ${brother.description}</p>
-                    <p><strong>Appearance:</strong> ${brother.appearance}</p>
-                    <p><strong>Essence:</strong> ${brother.essence}</p>
-                    <p><strong>Teaching:</strong> ${brother.teaching}</p>
-                    <p><strong>Nature:</strong> ${brother.nature}</p>
+
+                    ${brother.appearance && typeof brother.appearance === 'object' ? `
+                        <div style="margin: 1rem 0;">
+                            <h5 style="color: var(--accent-primary); margin-top: 1rem;">Appearance</h5>
+                            <p>${brother.appearance.description}</p>
+                            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                                ${brother.appearance.skin ? `<li><strong>Skin:</strong> ${brother.appearance.skin}</li>` : ''}
+                                ${brother.appearance.height ? `<li><strong>Height:</strong> ${brother.appearance.height}</li>` : ''}
+                                ${brother.appearance.hair ? `<li><strong>Hair:</strong> ${brother.appearance.hair}</li>` : ''}
+                                ${brother.appearance.build ? `<li><strong>Build:</strong> ${brother.appearance.build}</li>` : ''}
+                                ${brother.appearance.eyes ? `<li><strong>Eyes:</strong> ${brother.appearance.eyes}</li>` : ''}
+                                ${brother.appearance.voice ? `<li><strong>Voice:</strong> ${brother.appearance.voice}</li>` : ''}
+                                ${brother.appearance.presence ? `<li><strong>Presence:</strong> ${brother.appearance.presence}</li>` : ''}
+                                ${brother.appearance.distinctiveFeatures ? `<li><strong>Distinctive Features:</strong> ${brother.appearance.distinctiveFeatures}</li>` : ''}
+                            </ul>
+                        </div>
+                    ` : brother.appearance ? `<p><strong>Appearance:</strong> ${brother.appearance}</p>` : ''}
+
+                    ${brother.domains && brother.domains.length > 0 ? `
+                        <div style="margin: 1rem 0;">
+                            <h5 style="color: var(--accent-primary); margin-top: 1rem;">Domains</h5>
+                            ${brother.domains.map(domain => `
+                                <div style="margin: 0.75rem 0;">
+                                    <strong>${domain.name}:</strong> ${domain.description}
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+
+                    ${brother.powers && brother.powers.length > 0 ? `
+                        <div style="margin: 1rem 0;">
+                            <h5 style="color: var(--accent-primary); margin-top: 1rem;">Powers</h5>
+                            ${brother.powers.map(power => `
+                                <div style="margin: 0.75rem 0;">
+                                    <strong>${power.name}:</strong> ${power.description}
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+
+                    ${brother.personality ? `
+                        <div style="margin: 1rem 0;">
+                            <h5 style="color: var(--accent-primary); margin-top: 1rem;">Personality</h5>
+                            <p>${brother.personality}</p>
+                        </div>
+                    ` : ''}
+
+                    ${brother.relationships ? `
+                        <div style="margin: 1rem 0;">
+                            <h5 style="color: var(--accent-primary); margin-top: 1rem;">Relationships</h5>
+                            ${brother.relationships.withHisBrothers ? `<p><strong>With His Brothers:</strong> ${brother.relationships.withHisBrothers}</p>` : ''}
+                            ${brother.relationships.withZenitha ? `<p><strong>With Zenitha:</strong> ${brother.relationships.withZenitha}</p>` : ''}
+                            ${brother.relationships.withZane ? `<p><strong>With Zane:</strong> ${brother.relationships.withZane}</p>` : ''}
+                        </div>
+                    ` : ''}
+
+                    ${brother.teaching ? `<p style="margin-top: 1rem;"><strong>Teaching:</strong> ${brother.teaching}</p>` : ''}
+                    ${brother.essence ? `<p><strong>Essence:</strong> ${brother.essence}</p>` : ''}
+                    ${brother.nature ? `<p><strong>Nature:</strong> ${brother.nature}</p>` : ''}
                 </div>
             `).join('')}
         </div>
