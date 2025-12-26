@@ -25804,6 +25804,28 @@ function renderBattleOfGods() {
             <div id="battleResult" class="battle-result-section" style="display: none;">
                 <!-- Battle results will appear here -->
             </div>
+
+            <!-- Battle History Section -->
+            <div class="battle-history-section">
+                <h2>📊 Battle Statistics & History</h2>
+
+                <div class="stats-tabs">
+                    <button class="stats-tab active" onclick="showStatsTab('leaderboard')">🏆 Leaderboard</button>
+                    <button class="stats-tab" onclick="showStatsTab('history')">📜 Recent Battles</button>
+                </div>
+
+                <div id="leaderboardTab" class="stats-tab-content">
+                    ${renderLeaderboard()}
+                </div>
+
+                <div id="historyTab" class="stats-tab-content" style="display: none;">
+                    ${renderBattleHistoryList()}
+                </div>
+
+                <button class="clear-history-btn" onclick="clearBattleHistory()">
+                    🗑️ Clear All History
+                </button>
+            </div>
         </div>
     `;
 
@@ -25849,6 +25871,160 @@ let team2Gods = [];
 let selectedArena = 'bonnia';
 let userPrediction = null; // 1 for team1, 2 for team2
 let predictionMade = false;
+
+// Battle history tracking
+function getBattleHistory() {
+    const history = localStorage.getItem('eudoriaBattleHistory');
+    return history ? JSON.parse(history) : { battles: [], godStats: {} };
+}
+
+function saveBattleHistory(history) {
+    localStorage.setItem('eudoriaBattleHistory', JSON.stringify(history));
+}
+
+function recordBattle(winningGods, losingGods, arena, scoreDifference) {
+    const history = getBattleHistory();
+
+    // Add battle to history
+    const battle = {
+        date: new Date().toISOString(),
+        winners: winningGods.map(g => g.name),
+        losers: losingGods.map(g => g.name),
+        arena: battleArenas[arena].name,
+        margin: scoreDifference
+    };
+
+    history.battles.unshift(battle); // Add to beginning
+    if (history.battles.length > 50) {
+        history.battles = history.battles.slice(0, 50); // Keep only last 50
+    }
+
+    // Update god stats
+    winningGods.forEach(god => {
+        if (!history.godStats[god.name]) {
+            history.godStats[god.name] = { wins: 0, losses: 0 };
+        }
+        history.godStats[god.name].wins++;
+    });
+
+    losingGods.forEach(god => {
+        if (!history.godStats[god.name]) {
+            history.godStats[god.name] = { wins: 0, losses: 0 };
+        }
+        history.godStats[god.name].losses++;
+    });
+
+    saveBattleHistory(history);
+}
+
+function renderLeaderboard() {
+    const history = getBattleHistory();
+    const stats = history.godStats;
+
+    if (Object.keys(stats).length === 0) {
+        return '<p class="no-data">No battles yet! Start battling to see statistics.</p>';
+    }
+
+    // Calculate win rates and sort
+    const leaderboard = Object.entries(stats).map(([name, data]) => {
+        const total = data.wins + data.losses;
+        const winRate = total > 0 ? ((data.wins / total) * 100).toFixed(1) : 0;
+        return { name, wins: data.wins, losses: data.losses, total, winRate: parseFloat(winRate) };
+    }).sort((a, b) => b.winRate - a.winRate || b.wins - a.wins);
+
+    return `
+        <div class="leaderboard-table">
+            <div class="leaderboard-header">
+                <div class="rank-col">Rank</div>
+                <div class="god-col">God</div>
+                <div class="stat-col">Wins</div>
+                <div class="stat-col">Losses</div>
+                <div class="stat-col">Win Rate</div>
+            </div>
+            ${leaderboard.slice(0, 20).map((entry, index) => `
+                <div class="leaderboard-row ${index < 3 ? 'top-' + (index + 1) : ''}">
+                    <div class="rank-col">${index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : index + 1}</div>
+                    <div class="god-col">${entry.name}</div>
+                    <div class="stat-col">${entry.wins}</div>
+                    <div class="stat-col">${entry.losses}</div>
+                    <div class="stat-col"><strong>${entry.winRate}%</strong></div>
+                </div>
+            `).join('')}
+        </div>
+    `;
+}
+
+function renderBattleHistoryList() {
+    const history = getBattleHistory();
+
+    if (history.battles.length === 0) {
+        return '<p class="no-data">No battles yet! Start battling to see history.</p>';
+    }
+
+    return `
+        <div class="battle-history-list">
+            ${history.battles.slice(0, 20).map(battle => {
+                const date = new Date(battle.date);
+                const timeAgo = getTimeAgo(date);
+                return `
+                    <div class="history-item">
+                        <div class="history-date">${timeAgo}</div>
+                        <div class="history-matchup">
+                            <div class="history-winners">
+                                ${battle.winners.join(' & ')} <span class="victory-badge">Victory</span>
+                            </div>
+                            <div class="history-vs">vs</div>
+                            <div class="history-losers">
+                                ${battle.losers.join(' & ')}
+                            </div>
+                        </div>
+                        <div class="history-details">
+                            <span class="history-arena">📍 ${battle.arena}</span>
+                            <span class="history-margin">Margin: ${battle.margin}%</span>
+                        </div>
+                    </div>
+                `;
+            }).join('')}
+        </div>
+    `;
+}
+
+function getTimeAgo(date) {
+    const seconds = Math.floor((new Date() - date) / 1000);
+    const intervals = {
+        year: 31536000,
+        month: 2592000,
+        week: 604800,
+        day: 86400,
+        hour: 3600,
+        minute: 60
+    };
+
+    for (const [unit, secondsInUnit] of Object.entries(intervals)) {
+        const interval = Math.floor(seconds / secondsInUnit);
+        if (interval >= 1) {
+            return `${interval} ${unit}${interval > 1 ? 's' : ''} ago`;
+        }
+    }
+    return 'Just now';
+}
+
+function showStatsTab(tab) {
+    // Update tab buttons
+    document.querySelectorAll('.stats-tab').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    // Show/hide content
+    document.getElementById('leaderboardTab').style.display = tab === 'leaderboard' ? 'block' : 'none';
+    document.getElementById('historyTab').style.display = tab === 'history' ? 'block' : 'none';
+}
+
+function clearBattleHistory() {
+    if (confirm('Are you sure you want to clear all battle history and statistics? This cannot be undone.')) {
+        localStorage.removeItem('eudoriaBattleHistory');
+        renderBattleOfGods(); // Refresh the page
+    }
+}
 
 // Battle Arenas
 const battleArenas = {
@@ -26197,6 +26373,9 @@ function simulateBattle() {
             🔄 Battle Again
         </button>
     `;
+
+    // Record battle in history
+    recordBattle(winningGods, losingGods, selectedArena, scoreDifference);
 
     // Scroll to results
     resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
