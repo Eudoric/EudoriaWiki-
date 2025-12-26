@@ -11390,34 +11390,43 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                 zendon: {
                     title: "Zendon - God of Thunder, Protection, and Shield",
                     fullTitle: "The Unbreakable Shield, The Thunder Guardian, First of the Zen",
-                    attributes: "Protection, Thunder, Defense, Courage, Strength, Loyalty, Duty",
+                    tier: "Major God",
+                    gender: "Male",
+                    element: "Thunder",
+                    space: "Eudraneth",
+                    alignment: "Lawful Good",
+                    sacredAnimal: "Dosar (Lightning Horse)",
+                    sacredPlant: "None",
+                    court: "The Court of Thunder",
+                    attributes: "Lightning, Thunder, Storms, Protection, Defense, Courage, Strength, Loyalty, Duty",
                     symbols: "The Eternal Shield (never broken in battle), Thunder (his battle cry), Battle Drum (the heartbeat of war), Storm Clouds (his presence on the battlefield)",
-                    description: "Zendon is the eldest of the Zen Brothers, the God of Thunder and Shield. He is the protector, the defender, the wall that does not break. His voice is thunder itself—when he speaks, battlefields fall silent. His shield has never been broken in over 400 battles. He represents protection in its purest form: the strength to stand between danger and those you love, no matter the cost.",
+                    description: "Zendon is the eldest and leader of the Zen Brothers, son of Zane (God of War) and Zenitha (Mother Nature of War). He is an unstoppable force whose very arrival on the battlefield signals its end. When Zendon enters combat, enemies know their defeat is inevitable. He can shake and move mountains with his power.",
 
                     appearance: {
-                        description: "A towering, imposing figure — 8 feet tall, built like a fortress. Storm clouds literally gather around his shoulders when he enters battle. His presence is commanding and reassuring at once.",
-                        skin: "Deep bronze, like metal forged in lightning",
-                        height: "8 feet tall, the tallest of the four brothers",
-                        hair: "Dark as storm clouds, crackling with ambient electricity",
-                        build: "Massively muscular, broader than his brothers, built for defense",
-                        eyes: "Silver-white like lightning itself, crackling with protective energy. When angry, his eyes flash with thunderbolts",
+                        description: "Zendon is the most imposing Zen Brother, commanding attention even among gods. His bronze skin, a gleam of Zenitha's divine fire, reflects his heritage. His long, orange, wavy hair flows past his shoulders, a fiery mane from his mother, complemented by a braided beard with thunder and protection symbols. His battle-worn eyes have never known defeat. When his power surges, lightning dances through his hair and beard, resembling a living storm. His armor bears ancient protection symbols, and his legendary shield is always ready.",
+                        skin: "Bronze skin, a gleam of Zenitha's divine fire",
+                        height: "Towering and imposing, commanding attention even among gods",
+                        hair: "Long, orange, wavy hair flowing past his shoulders—a fiery mane from his mother",
+                        beard: "Braided beard woven with thunder and protection symbols",
+                        build: "Massively powerful, built like a fortress",
+                        eyes: "Battle-worn eyes that have never known defeat",
                         voice: "Deep, rumbling like distant thunder. When he shouts, it sounds like the sky breaking open",
-                        presence: "Commanding and protective. When Zendon enters a room, people feel safer. When he enters a battlefield, enemies feel doomed",
-                        distinctiveFeatures: "His shield — an enormous, circular shield of divine metal that has never been scratched, dented, or broken. It's said to be forged from the first lightning bolt that struck the glacier"
+                        presence: "When his power surges, lightning dances through his hair and beard, resembling a living storm",
+                        distinctiveFeatures: "His armor bears ancient protection symbols, and his legendary shield—an enormous, circular shield of divine metal that has never been scratched, dented, or broken—is always ready"
                     },
 
                     domains: [
                         {
                             name: "Protection",
-                            description: "Zendon is the ultimate defender. His domain covers all forms of protection: shields, armor, defensive magic, guardianship, and the act of putting yourself between danger and others. Warriors pray to him before battle not for victory, but for the strength to protect their comrades."
+                            description: "Zendon is the ultimate defender. His domain covers all forms of protection: shields, armor, defensive magic, guardianship, and the act of putting yourself between danger and those you love. Warriors pray to him before battle not for victory, but for the strength to protect their comrades."
                         },
                         {
                             name: "Thunder",
-                            description: "His voice IS thunder. When Zendon speaks on the battlefield, his words boom like storm clouds breaking. His battle cry can rally entire armies or shatter enemy morale. Thunder follows him wherever he goes."
+                            description: "His voice IS thunder. When Zendon speaks on the battlefield, his words boom like storm clouds breaking. His battle cry can rally entire armies or shatter enemy morale. Thunder represents protection in its purest form—he is the god of those who put themselves in harm's way for others. Warriors pray to him before battle not for victory, but for the strength to stand between danger and those they love, no matter the cost."
                         },
                         {
-                            name: "Courage",
-                            description: "True courage, Zendon teaches, is not fearlessness — it's standing your ground when you're terrified. He grants courage to defenders, to those who protect the vulnerable, to guards who hold the line."
+                            name: "The Shield Domain",
+                            description: "The shield that does not break is stronger than any sword. True courage is not fearlessness—it is standing your ground even when you are terrified."
                         }
                     ],
 
@@ -11435,24 +11444,61 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                             description: "When Zendon plants his shield and takes his stance, he becomes immovable. Mountains could crash into him and he would not budge. This is the stance that has never been broken."
                         },
                         {
+                            name: "The Betrayer's Shield",
+                            description: "When Zendon throws his shield, it transforms into an imitating weapon, wielding the power of whoever it strikes and forcing their own powers to betray them. This ability makes even the mightiest gods fear facing him in combat."
+                        },
+                        {
                             name: "Storm Summon",
-                            description: "Can call down lightning strikes on enemies who threaten those under his protection."
+                            description: "Can call down lightning strikes on enemies who threaten those under his protection. He can shake and move mountains with his power."
                         }
                     ],
 
-                    personality: "Zendon is the steadiest of his brothers—calm, patient, protective. He's the big brother who shields the others. Loyal to a fault. Duty-bound. He believes protection is the highest calling. He rarely smiles, but when he does, it's like the sun breaking through storm clouds.",
+                    legendaryFeats: [
+                        {
+                            name: "The Divine Anchor",
+                            description: "Zendon once held a collapsing section of Eudraneth together during a divine rupture, anchoring reality with his shield while lightning stitched the realm back into place."
+                        },
+                        {
+                            name: "The Chain of Mountains",
+                            description: "Zendon chained three war-torn mountains together with living lightning, preventing them from collapsing into the lower realms during the War of Gods."
+                        },
+                        {
+                            name: "The Silent Battlefield",
+                            description: "After Zendon ends a battle, the battlefield falls unnaturally silent—even thunder refuses to echo without his command."
+                        },
+                        {
+                            name: "The Bonnia Strike",
+                            description: "When Zendon and the Zen Brothers entered the War of Gods, they arrived at Bonnia in a sharp, massive lightning strike that killed 30 gods instantly, announcing their presence and turning the tide of battle."
+                        },
+                        {
+                            name: "The Shield's Command",
+                            description: "During the War of Gods, the Zen Brothers fought under a single command—Zendon's. When he raised his shield, Zan stopped advancing, Zevon ceased judgment, and Zavi restrained his fire. Unity under his leadership made them an unstoppable force."
+                        },
+                        {
+                            name: "The Al'sekemu Defeat",
+                            description: "During the War of Gods, Zendon fought Al'sekemu in a fist fight. When Zendon defeated him, Al'sekemu had to unleash a massive wave of power that nearly drained him completely just to get Zendon off him. This humiliation is one of the reasons Al'sekemu orchestrated the Zen Brothers' deaths."
+                        }
+                    ],
+
+                    personality: "Zendon is a steadfast protector—reliable, unbreakable, and a natural leader among the Zen Brothers. He believes in order, duty, and protecting the innocent. Despite his fearsome fighting reputation, he is compassionate, patient with his students like Zendayah, and a devoted husband and father, teaching justice and balance. In battle, Zendon becomes an unstoppable force, combining strategic skill and power to fight not for glory but to protect and resolve conflicts. His shield is a symbol of his commitment and a warning to enemies.",
 
                     relationships: {
-                        withHisBrothers: "Protective of all three younger brothers. Zan challenges him constantly (Zendon lets him). Zevon seeks his counsel. Zavi makes him laugh. He would die for any of them—and eventually, he did.",
-                        withZenitha: "Deeply respectful of his mother, the Mother of War. He inherited her unbreakable nature.",
-                        withZane: "Trained by his father to be the perfect defender. Zane taught him that the strongest warriors protect, not destroy."
+                        withHisBrothers: "Zendon is the natural leader and protector of his younger brothers. When he raises his shield in command, Zan stops advancing, Zevon ceases judgment, and Zavi restrains his fire. Unity under his leadership made them an unstoppable force during the War of Gods.",
+                        withZenitha: "Son of Zenitha, Mother Nature of War. He inherited her unbreakable nature and protective instincts.",
+                        withZane: "Son and student of Zane, God of War. Zane trained him to be the perfect defender, teaching him that the strongest warriors protect, not destroy.",
+                        withDishaniki: "Devoted husband to Dishaniki, Goddess of Passion and Love.",
+                        withChildren: "Father to Emen (God of Power and Justice), Dosi (God of Storms), Sayie (God of Balance and Health), and Nore (God of Truth and Justice). He teaches them justice, balance, and the importance of protection.",
+                        withZendayah: "Trained his sister Zendayah in battle. He saved her, Zenitha, and Zenna during Zamazara's attack. Zendayah named the region Zendonia after him, recognizing his legendary strength.",
+                        withAlsekemu: "Deep enmity exists between them. Al'sekemu hates Zendon because Suleiman favored him. During the War of Gods, Zendon defeated Al'sekemu in a fist fight, forcing him to unleash a massive wave of power that nearly drained him completely just to escape. This humiliation is one of the reasons Al'sekemu orchestrated the Zen Brothers' deaths."
                     },
 
                     teaching: "Strength is not found in attack, but in the willingness to stand between danger and those you protect. The shield that does not break is stronger than any sword. True courage is not fearlessness—it is standing your ground even when you are terrified.",
 
                     essence: "Protection in its purest form",
 
-                    nature: "Zendon embodies protection in its purest form. He is the god of those who put themselves in harm's way for others, the patron of guards, defenders, and all who shield the vulnerable. He teaches that the greatest strength is not in what you can destroy, but in what you can protect."
+                    nature: "Zendon embodies protection in its purest form. He is the god of those who put themselves in harm's way for others, the patron of guards, defenders, and all who shield the vulnerable. He teaches that the greatest strength is not in what you can destroy, but in what you can protect.",
+
+                    legacy: "Most gods fear Zendon because he has never lost a battle. The region of Zendonia in Eudoria bears his name, a testament to his legendary strength and the protection he represents."
                 },
                 zan: {
                     title: "Zan - God of War and Endurance",
@@ -16528,12 +16574,29 @@ function renderZenBrothersProfile(god) {
                             <span class="collapse-icon">▼</span>
                         </summary>
                         <div class="section-content">
-                            <p><strong>Description:</strong> ${brother.description}</p>
+                            <h4 style="color: var(--accent-primary); margin-bottom: 1rem;">Divine Essence</h4>
+                            <p>${brother.description}</p>
+
+                            ${brother.tier || brother.gender || brother.element || brother.space || brother.alignment || brother.sacredAnimal || brother.sacredPlant || brother.court ? `
+                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem; margin-bottom: 1rem;">Sacred Attributes</h4>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; margin-bottom: 1rem;">
+                                    ${brother.tier ? `<p><strong>Tier:</strong> ${brother.tier}</p>` : ''}
+                                    ${brother.gender ? `<p><strong>Gender:</strong> ${brother.gender}</p>` : ''}
+                                    ${brother.element ? `<p><strong>Element:</strong> ${brother.element}</p>` : ''}
+                                    ${brother.space ? `<p><strong>Space:</strong> ${brother.space}</p>` : ''}
+                                    ${brother.alignment ? `<p><strong>Alignment:</strong> ${brother.alignment}</p>` : ''}
+                                    ${brother.sacredAnimal ? `<p><strong>Sacred Animal:</strong> ${brother.sacredAnimal}</p>` : ''}
+                                    ${brother.sacredPlant ? `<p><strong>Sacred Plant:</strong> ${brother.sacredPlant}</p>` : ''}
+                                    ${brother.court ? `<p><strong>Court:</strong> ${brother.court}</p>` : ''}
+                                </div>
+                            ` : ''}
+
                             <p><strong>Attributes:</strong> ${brother.attributes}</p>
-                            <p><strong>Symbols:</strong> ${brother.symbols}</p>
+                            <p><strong>Sacred Symbols:</strong> ${brother.symbols}</p>
                             ${brother.essence ? `<p><strong>Essence:</strong> ${brother.essence}</p>` : ''}
                             ${brother.teaching ? `<p><strong>Teaching:</strong> ${brother.teaching}</p>` : ''}
                             ${brother.nature ? `<p><strong>Nature:</strong> ${brother.nature}</p>` : ''}
+                            ${brother.legacy ? `<p><strong>Legacy:</strong> ${brother.legacy}</p>` : ''}
                         </div>
                     </details>
 
@@ -16561,6 +16624,16 @@ function renderZenBrothersProfile(god) {
                                     <div style="margin: 1rem 0; padding: 1rem; background: rgba(212, 175, 55, 0.05); border-left: 3px solid var(--accent-primary); border-radius: 0.25rem;">
                                         <strong style="color: var(--accent-primary);">${power.name}:</strong>
                                         <p style="margin-top: 0.5rem;">${power.description}</p>
+                                    </div>
+                                `).join('')}
+                            ` : ''}
+
+                            ${brother.legendaryFeats && brother.legendaryFeats.length > 0 ? `
+                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Legendary Feats</h4>
+                                ${brother.legendaryFeats.map(feat => `
+                                    <div style="margin: 1rem 0; padding: 1rem; background: rgba(212, 175, 55, 0.1); border-left: 3px solid #daa520; border-radius: 0.25rem;">
+                                        <strong style="color: #daa520;">${feat.name}:</strong>
+                                        <p style="margin-top: 0.5rem;">${feat.description}</p>
                                     </div>
                                 `).join('')}
                             ` : ''}
@@ -16623,6 +16696,30 @@ function renderZenBrothersProfile(god) {
                                 <div style="margin: 1rem 0;">
                                     <h4 style="color: var(--accent-primary);">With Zane (Father)</h4>
                                     <p>${brother.relationships.withZane}</p>
+                                </div>
+                            ` : ''}
+                            ${brother.relationships.withDishaniki ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Dishaniki (Spouse)</h4>
+                                    <p>${brother.relationships.withDishaniki}</p>
+                                </div>
+                            ` : ''}
+                            ${brother.relationships.withChildren ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With His Children</h4>
+                                    <p>${brother.relationships.withChildren}</p>
+                                </div>
+                            ` : ''}
+                            ${brother.relationships.withZendayah ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Zendayah (Sister)</h4>
+                                    <p>${brother.relationships.withZendayah}</p>
+                                </div>
+                            ` : ''}
+                            ${brother.relationships.withAlsekemu ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Al'sekemu</h4>
+                                    <p>${brother.relationships.withAlsekemu}</p>
                                 </div>
                             ` : ''}
                         </div>
