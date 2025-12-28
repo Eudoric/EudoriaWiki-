@@ -11430,13 +11430,136 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                     philosophy: "The ocean speaks to those who listen. Balance is not control - it is understanding. Every creature has instinct, every ecosystem has rhythm. My role is not to dominate but to align, not to rule but to steward. Struggle is necessary for growth, but extinction serves no purpose. I ensure that life continues, adapts, and thrives - even when I cannot do the same for myself."
                 },
                 johannth: {
-                    title: "Second Sister - Goddess of Storms",
-                    attributes: "Passion, Love, Heartbreak, Intensity, Storm, Emotion",
-                    symbols: "Crashing Waves, Lightning on Water, Tempest Heart",
-                    description: "Johannth commands the storms of love and heartbreak. Her waters crash and roar with the intensity of passionate emotion.",
-                    appearance: "A fierce and beautiful figure surrounded by churning waters and storm clouds. Her eyes flash like lightning over turbulent seas, and her hair whips wildly like wind-driven waves.",
-                    essence: "Raw emotional intensity",
-                    nature: "Johannth represents the beautiful danger of deep emotion — the storms that break us and remake us. She is both the ecstasy of love and the agony of loss, reminding mortals that to feel deeply is to live fully, even when it hurts."
+                    title: "Johannth - Goddess of Safe Passage and Pearls",
+                    fullTitle: "The Sea Savior, The Woman with Gills, The One Who Sings You Home, Queen of Pearls, Mother of Clams",
+                    tier: "Major God",
+                    gender: "Female",
+                    element: "Water, Light",
+                    space: "Merlotia, Merlot",
+                    alignment: "Lawful Neutral",
+                    sacredAnimal: "Seahorses, Pearled Jellyfish, Sea Turtles",
+                    sacredPlant: "Coral, Sea Pearls, Ocean Jasmine",
+                    birthOrder: "4th child of Suleiman",
+                    attributes: "Mercy, Beauty, Safe Passage, Rescue, Harmony, De-escalation, Preservation, Song, Guidance, Calm, Navigation, Survival, Compassion, Pearl Creation, Threshold Balance",
+                    symbols: "The Singing Horizon (her rescue phenomenon), Glowing Pearls (vessels of preservation), Giant Clams (her resting place), The Woman with Gills (her mortal manifestation), Calm Corridors (paths through storms), The Merlottas (singing mermaids of her domain)",
+                    description: "Johannth embodies the ocean's mercy, beauty, and safe return. While her sisters govern life beneath the waves and defend the sea from corruption, Johannth ensures the ocean remains welcoming to life beyond it. She protects humans not out of superiority, but because they're vulnerable — a divine condition, not a flaw. She believes life should follow its natural course. Storms and currents are part of the truth, but unnecessary loss isn't. Oceania taught Johannth that the sea must be mighty, not cruel without reason. She mediates between ocean law and mortal survival. As the embodiment of Harmony within the Tryel, Johannth maintains balance at the threshold — where sea meets shore, danger meets deliverance, beauty prevents fear from turning to despair. She preserves surface ecosystems, guides currents, calms storms, and keeps the sea navigable. Known as the Queen of Pearls and Mother of Clams, pearls symbolize the sea's endurance — beauty through irritation, patience, and time. Her domain, Merlotia, is a floating kingdom of pearl beds, clam sanctuaries, and merlottas where singing mermaids dwell, where preservation is sacred.",
+
+                    appearance: {
+                        description: "Johannth's beauty is legendary, celebrated in songs, wars, and myths. She is regarded as the most beautiful goddess, radiating a soul-like glow that inspires obsession and conflict, even leading to a ban by Ta'hanne, the Earth goddess. Her transformation when entering Oceania's service involved dyeing her bronze hair with spells and pearls, becoming a mermaid tied to the ocean. Her red hair flows like silk, and her eyes reflect tropical waters, exuding warmth and vitality. In human form, she has faint gills and a beauty described as 'too perfect to be mortal, but too kind to be frightening.' She sleeps peacefully in a giant clam, surrounded by pearls and singing merlottas, embodying serenity in her domain.",
+                        form: "Legendary beauty radiating a soul-like glow, regarded as the most beautiful goddess in existence",
+                        hair: "Red hair flowing like silk (originally bronze, transformed using Jodami's spells and Oceania's pearls)",
+                        eyes: "Reflect tropical waters, exuding warmth and vitality",
+                        distinctiveFeatures: "In human form, displays faint gills on her neck. Sleeps in a giant clam surrounded by pearls and singing merlottas. Her beauty is both gift and burden, inspiring obsession and conflict among gods",
+                        transformation: "Like her sisters, used Jodami's spells and Oceania's enchanted pearls to transform from bronze-haired daughter of Suleiman into a red-haired mermaid devoted to the ocean"
+                    },
+
+                    domains: [
+                        {
+                            name: "Safe Passage",
+                            description: "Johannth governs transitional survival — the space between danger and deliverance. She oversees shipwrecks, drifting vessels, broken navigation, and disorientation at sea. She can subtly redirect currents toward land, hold ships in place during storms, create calm corridors through chaos, and ensure survivors remain afloat longer than should be possible. Her power does not eliminate danger, but it buys time — the precious moments between disaster and rescue that determine whether life continues."
+                        },
+                        {
+                            name: "Storm Moderation (Delegated by Oceania)",
+                            description: "Johannth does not create storms for punishment. Oceania granted her the authority to moderate storms because Johannth understands when mercy preserves balance rather than disrupting it. She can weaken storms without dispersing them, delay impact, soften waves, and open calm pockets within violent seas. This power does not cancel danger — it transforms catastrophe into a survivable challenge."
+                        },
+                        {
+                            name: "Pearl Dominion",
+                            description: "Pearls under Johannth's governance are vessels of preservation, crystallized mercy, and memory anchors. She governs pearl formation, pearl properties, and pearl activation. Each type serves a specific purpose: Preservation Pearls (store warmth, breath, strength), Memory Pearls (absorb final thoughts or prayers), Calm Pearls (emit soothing frequencies that prevent panic), Guiding Pearls (glow when land is near, respond to Johannth's song). Pearls are not mere treasures — they are living tools of mercy, each one a promise that the sea remembers those who suffer within it."
+                        },
+                        {
+                            name: "Merlotia - The Floating Kingdom",
+                            description: "Johannth rules Merlotia, a domain within the larger region of Merlot. Merlotia is a floating kingdom of pearl beds, living clams, and sanctuaries for the merlottas — the singing mermaids who serve Johannth and carry her songs across the waves. In Merlotia, preservation is as sacred as protection. The kingdom exists at the threshold between deep ocean and navigable waters, perfectly positioned to intervene when mortals cross into danger."
+                        }
+                    ],
+
+                    powers: [
+                        {
+                            name: "Authority of Safe Passage",
+                            description: "Johannth can redirect currents toward land, hold ships steady during storms, create calm corridors through chaotic seas, and ensure survivors float longer than physics should allow. She governs the moments between disaster and rescue."
+                        },
+                        {
+                            name: "Storm Moderation",
+                            description: "Granted by Oceania, Johannth can weaken storms without fully dispersing them, delay their impact, soften waves, and open pockets of calm within violent weather. She does not eliminate danger, but makes it survivable."
+                        },
+                        {
+                            name: "Pearl Creation & Dominion",
+                            description: "Johannth creates pearls with specific properties — preservation, memory, calm, and guidance. She governs their formation, activation, and purpose. Her pearls are scattered across the world's oceans, silent guardians waiting to preserve life."
+                        },
+                        {
+                            name: "Linguistic Adaptation",
+                            description: "Johannth learns human languages by listening, emphasizing her listening-first approach as essential to her merciful nature. She can't speak what she hasn't heard but can mimic accents, tones, and voices to comfort others. When no words are spoken, she uses song, tone, rhythm, and dolphin-like calls. She adapts to humans instead of expecting them to adapt to her."
+                        },
+                        {
+                            name: "Human-Form Manifestation",
+                            description: "Johannth appears human to prevent panic among those she rescues, showing faint gills on her neck to mark her as different, yet acting human enough to comfort. She speaks softly, often in the rescued person's language or in a loved one's voice, to ease fear."
+                        },
+                        {
+                            name: "Threshold Intervention",
+                            description: "Johannth can intervene just before death by drowning, her most sacred power — stepping between life and death to save someone. It requires perfect timing and costs her greatly, but she uses it when needed."
+                        },
+                        {
+                            name: "The Singing Horizon",
+                            description: "Johannth's legendary power makes the sea quiet, panic fade, and land appear where it shouldn't. Her song doesn't command but helps the dying breathe, hope, and survive. Each hears it differently, but all feel forgiveness, peace, and a will to live."
+                        },
+                        {
+                            name: "Healing Through Song and Pearl",
+                            description: "Johannth is the healer of her sisters. She uses song and dissolving pearls to heal wounds instantly. When Joath returns from battle injured, Johannth places a pearl on the wound and sings — the pearl dissolves, and the injury closes as if it never existed."
+                        },
+                        {
+                            name: "Last Resort — Ocean Wrath",
+                            description: "Johannth avoids violence but is not powerless. When harmony is beyond repair, mercy exhausted, and balance demands action, she can unleash devastating waves and storms. She does not use this power for punishment—only to restore balance after all other options fail."
+                        }
+                    ],
+
+                    legendaryFeats: [
+                        {
+                            name: "The Singing Horizon",
+                            description: "Countless survivors across different ages describe the same phenomenon: the sea goes quiet, panic fades, singing begins, and land appears where none should exist. Those rescued say the song did not command them or lure them — it simply reminded them how to breathe. Scholars later named this recurring miracle 'The Singing Horizon,' though they cannot explain how one goddess can be in so many places at once. The truth is that Johannth follows suffering wherever it calls to her."
+                        },
+                        {
+                            name: "The Woman with Gills",
+                            description: "Fisherfolk and traders across the world tell stories of a woman who emerges from the water bearing faint gills along her neck, speaks in their own language (though imperfectly), and leads them calmly to shore. She never asks for thanks. She never stays. The stories disagree on her face — but never on her kindness. This myth spread so widely that 'The Woman with Gills' became a prayer among sailors: 'May the Woman with Gills find me if I fall.'"
+                        },
+                        {
+                            name: "The Pearl of the Last Breath",
+                            description: "A dying sailor clutched a glowing pearl found near a wreck site. The pearl preserved his final breath, kept his body alive long enough to reach shore, and dissolved once he survived. The pearl was never found again. From this myth came the belief: 'Pearls are the sea's way of letting go.' Memorial pearls are now placed at grave sites and shrines across coastal communities, honoring those lost at sea."
+                        },
+                        {
+                            name: "Teaching Naime",
+                            description: "When Al'sekemu stripped Naime of her powers, it was Johannth who transformed her into a sea goddess. Oceania brought Naime into her domain to teach her the ocean's laws, but it was Johannth who took Naime to Merlotia and actually trained her. This is why Naime's beauty became otherworldly — she was trained under Johannth, the most beautiful goddess in existence. History credits Oceania with Naime's transformation, but those who know the truth understand it was Johannth's mentorship that made Naime what she became."
+                        },
+                        {
+                            name: "The Testimony of the Rescued",
+                            description: "'I followed the song because it felt like being forgiven.' This phrase appears in survivor accounts across cultures, languages, and centuries. No one can explain why the same sentiment appears in different words. Still, all those Johannth has rescued describe the experience as receiving forgiveness for something they didn't know they needed forgiveness for."
+                        }
+                    ],
+
+                    personality: "Johannth's sweetness is intentional, not naïve — though for much of her existence, naïveté colored her interactions with others. She understands fear intimately and has learned to respond with de-escalation. When she rescues humans, she appears in human form so they won't panic, sings softly to slow their breathing, and speaks gently or mimics familiar voices. Her sweetness manifests as active de-escalation of trauma. Johannth is a helper by nature. She does not wait to be asked. She follows ships quietly, watches coastlines, listens for desperation, and intervenes before disaster becomes tragedy. She helps not because she must, but because she cannot ignore suffering. This is why mortals call her The Sea Savior, The Woman with Gills, The One Who Sings You Home. She is fascinated by humans. She listens to their languages, learns words by hearing them spoken, mimics accents and tones, and remembers names. Her inability to speak human language until she hears it first is not a weakness — it shows that she listens before she speaks, a fundamental expression of her merciful nature. Among her sisters, Johannth is the calmest and gentlest. While Joth will simply ignore you and Joath will hurt you, Johannth will make sure you are okay. She is the healer of the trinity, always ready with a song and a dissolving pearl to mend Joath's battle wounds or soothe Joth's rare moments of distress. However, Johannth's beauty and initial naïveté made her vulnerable to manipulation. For much of her existence, she mistook attention for love, kindness for genuine affection. She could not distinguish between those who loved her and those who simply wanted to possess her beauty. Through heartbreak, tragedy, political catastrophe, and eventually the patient love of Tevye, she learned that mercy and self-protection are not opposites — they can coexist. She remains the sweetest, kindest, and gentlest of her sisters. But now her sweetness is a choice made with full awareness, not an innocent default.",
+
+                    relationships: {
+                        withSuleiman: "Father — complicated relationship. Unlike her sisters, Johannth is the only one who calls him 'father' rather than 'Suleiman.' She tries to maintain a relationship with him despite his being perpetually too busy. She understands his position — he is a Supreme God responsible for Eudraneth itself, constantly occupied with duties far beyond family. Though she wishes he could be there for her more, she has learned to accept his limitations. It took over 500 years before Suleiman could admit that he loved Johannth. He is a god who never expresses emotions through words. But when giants attacked Johannth, it was Suleiman who came to protect her — showing his love through action rather than speech. That single moment of protection meant more to Johannth than centuries of absent affection. She knows he loves her, even if he cannot say it.",
+                        withJodami: "Mother — extremely close relationship. Jodami and Johannth are like two peas in a pod. Jodami favors Johannth above her other daughters, though whether this is because of Johannth's extraordinary beauty or her gentle nature remains debated. Despite this favoritism, Johannth chose to leave her mother to be with her sisters when they entered Oceania's service — demonstrating that her loyalty to the trinity supersedes even maternal bonds.",
+                        withHerSisters: "Her world. Johannth would do anything for her sisters. They share the divine synchronization of the Tryel, able to sense each other's presence, emotions, and needs across any distance. Johannth is the healer and emotional anchor of the trinity — she soothes Joath's battle rage, draws Joth out of her cold detachment, and binds them together with her songs. When Joath returns wounded from battle, it is Johannth who places dissolving pearls on the injuries and sings them closed. When Joth becomes too isolated in her composed authority, it is Johannth who reminds her that connection matters. The three sisters are inseparable, and Johannth's gentle presence balances her sisters' harsher edges. The sisters are so loyal to each other that they helped Johannth kill Tiger (Oceania's son) in retaliation for his murder of Johannth's husband, Wale.",
+                        withNaime: "Mentee. When Al'sekemu stripped Naime of her powers, Johannth transformed her into a sea goddess. Though history credits Oceania with teaching Naime, it was actually Johannth who took Naime to Merlotia and trained her in the ocean's ways. This is why Naime's beauty became otherworldly — the most beautiful goddess in existence mentored her. Johannth saw potential in Naime and gave her a second chance at divinity, demonstrating her capacity for mercy even toward those who had fallen.",
+                        withMalak: "The love of Johannth's life. Their relationship was the most controversial in divine history — Suleiman's daughter with Al'sekemu's son, uniting two bitter enemies through love. Al'sekemu was so disgusted by this union that he almost disowned Malak. Despite the political nightmare their relationship created, Johannth and Malak shared genuine love. They had three children together (triplets): Geni (Goddess of Sacred Knowledge & Beauty), Gora (Goddess of Children), and Tove (God of Manifesting & Prosperity). After Malak's death, Johannth never found that same passionate love again.",
+                        withSove: "An affair after Malak's death that caused catastrophic consequences. When Ta'hanne (Supreme Goddess of Earth) learned that her husband was involved with a young sea goddess, she demanded Oceania curse Johannth's beauty. When Oceania refused, Ta'hanne banned Oceania and her entire domain — this is why Oceania was not present during the War of Gods. Ta'hanne then attempted to curse Johannth herself, but Johannth fled deep into the sea where Ta'hanne's power could not reach. This affair sparked a conflict between two Supreme Goddesses.",
+                        withTiger: "An affair that ended in tragedy. Tiger (son of Oceania) became deeply, dangerously obsessed with Johannth. He later killed Johannth's husband Wale in his sleep out of jealous rage. In retaliation, Johannth and her sisters hunted down and killed Tiger, proving that even the goddess of mercy has limits when those she loves are murdered.",
+                        withWale: "Johannth's first faithful husband after Malak. She settled with Wale, seeking peace and stability. But Tiger's obsession had not ended — he killed Wale in his sleep, leading to Tiger's own death at the hands of the three sisters.",
+                        withTevye: "Current husband — the longest and healthiest relationship of Johannth's existence. Though Tevye (son of Turk, the Octopus God) is not the passionate love that Malak was, he is patient, kind, and most importantly, he taught Johannth how not to be naïve. He showed her how to recognize manipulation, how to protect herself while remaining kind, how to distinguish genuine love from obsessive desire. They have 12 children together, including Orksar (God of Tides & Seaweed) and Fike (God turned Sea Demon). Tevye represents Johannth's growth — the understanding that healthy love is not always the most intense, but it is the most sustainable.",
+                        withOceania: "Like her sisters, Johannth entered Oceania's service after Jodami and Suleiman's breakup. Oceania granted Johannth authority over storm moderation and safe passage, recognizing her unique capacity for mercy paired with wisdom. Oceania respects Johannth's work at the threshold between ocean and shore."
+                    },
+
+                    teaching: "Vulnerability is not weakness — it is the divine condition that makes life precious. The sea is mighty, but it need not be cruel. I exist at the threshold between danger and deliverance, and I choose mercy whenever balance allows. Every life deserves the chance to complete its natural course.",
+
+                    essence: "Intentional kindness — mercy that chooses to act rather than weak mercy",
+
+                    nature: "Johannth represents intentional kindness — mercy that chooses to act rather than weak mercy. She understands fear intimately and responds with de-escalation rather than domination. Where Joath ends threats, and Joth prevents collapse, Johannth prevents terror from becoming trauma.",
+
+                    legacy: "Johannth is worshipped across every coastal culture as The Sea Savior, The One Who Sings You Home. Her pearls are found in shrines and on ships, her songs are whispered as prayers, and her beauty is immortalized in art and poetry. She taught Naime, mentored countless merlottas, and created the systems that allow humans to survive the ocean's dangers. But perhaps her most significant legacy is showing that kindness is not the same as weakness, that beauty is both a gift and a burden, and that mercy — true mercy — requires the wisdom to know when to save and when to let the ocean take its course.",
+
+                    philosophy: "I rescue not because you deserve it, but because life deserves the chance to continue. The sea is mighty, but it need not be cruel without reason. I exist at the threshold where fear meets hope, where drowning meets breathing, where beauty prevents despair. And I will always choose mercy — when balance allows.",
+
+                    characterArc: "Johannth's journey is about learning to balance her natural kindness with the necessary wisdom. She began as genuinely naïve, mistaking attention for affection and obsession for love. Her beauty attracted dangerous attention, and her gentle nature made her vulnerable to manipulation. Through heartbreak, tragedy, political catastrophe, and eventually the patient love of Tevye, she learned that mercy and self-protection are not opposites — they can coexist. She remains the sweetest, kindest, and gentlest of her sisters. But now her sweetness is a choice made with full awareness, not an innocent default."
                 },
                 joath: {
                     title: "Third Sister - Goddess of the Depths",
