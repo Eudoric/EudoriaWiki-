@@ -29495,6 +29495,12 @@ function buildRelationshipData() {
     // Create nodes for each god
     for (const godId in gods) {
         const god = gods[godId];
+
+        // Skip zenbrothers group - we'll add individual brothers instead
+        if (godId === 'zenbrothers') {
+            continue;
+        }
+
         nodes.push({
             id: godId,
             label: god.name,
@@ -29505,6 +29511,29 @@ function buildRelationshipData() {
             shape: 'dot',
             size: getTierSize(god.tier)
         });
+    }
+
+    // Create individual nodes for each Zen Brother
+    if (gods.zenbrothers && gods.zenbrothers.brothers) {
+        const zenBrothers = gods.zenbrothers.brothers;
+        const brotherIds = ['zendon', 'zan', 'zevon', 'zavi'];
+
+        // Add each brother as a separate node
+        for (const brotherId of brotherIds) {
+            const brother = zenBrothers[brotherId];
+            if (brother) {
+                nodes.push({
+                    id: brotherId,
+                    label: brother.title.split(' - ')[0], // "Zendon", "Zan", etc.
+                    title: `${brother.title}\n${brother.tier || 'Major God'}`,
+                    tier: brother.tier || 'Major',
+                    color: getTierColor(brother.tier || 'Major'),
+                    font: { color: '#fff', size: 14 },
+                    shape: 'dot',
+                    size: getTierSize(brother.tier || 'Major')
+                });
+            }
+        }
     }
 
     // Extract relationships from the Zen Brothers
