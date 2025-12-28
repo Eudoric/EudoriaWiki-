@@ -16764,6 +16764,245 @@ function renderEudoricGods() {
     `;
 }
 
+// Special rendering function for Jodath Sisters - each sister gets their own tab
+function renderJodathSistersProfile(god) {
+    const contentArea = document.getElementById('contentArea');
+
+    const titlesHTML = god.titles.map(title =>
+        `<span class="god-title-tag">${title}</span>`
+    ).join('');
+
+    // Create tabs for each sister
+    const sisterEntries = Object.entries(god.sisters);
+    const sisterNames = {
+        joth: 'Joth',
+        johannth: 'Johannth',
+        joath: 'Joath'
+    };
+
+    const profileImageHTML = `
+        <div class="god-profile-image">
+            <img src="Images/Jodathsisters.png" alt="The Jodath Sisters" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="god-icon-large" style="display: none;">✦</div>
+        </div>
+    `;
+
+    contentArea.innerHTML = `
+        <div class="god-profile">
+            <button class="back-button" onclick="renderEudoricGods()">← Back to Pantheon</button>
+
+            <div class="god-header">
+                ${profileImageHTML}
+                <h1 class="god-name">${god.name}${god.alternativeName ? ` <span class="alt-name">(${god.alternativeName})</span>` : ''}</h1>
+                <div class="god-titles">
+                    ${titlesHTML}
+                </div>
+            </div>
+
+            <!-- Group Overview Section -->
+            <div class="detail-section">
+                <h3>The Three Sea Sisters</h3>
+                <p>${god.description}</p>
+            </div>
+
+            ${god.worship ? `
+            <div class="detail-section">
+                <h3>Worship</h3>
+                <p>${god.worship}</p>
+            </div>
+            ` : ''}
+
+            <!-- Sister Tabs - Each sister gets their own main tab -->
+            <div class="god-tabs">
+                ${sisterEntries.map(([key, sister], index) => `
+                    <button class="god-tab ${index === 0 ? 'active' : ''}" onclick="switchGodTab(event, '${key}-tab')">${sisterNames[key]}</button>
+                `).join('')}
+            </div>
+
+            <!-- Each Sister's Complete Profile -->
+            ${sisterEntries.map(([key, sister], index) => `
+                <div id="${key}-tab" class="god-tab-panel ${index === 0 ? 'active' : ''}">
+                    <!-- Sister Header -->
+                    <div class="detail-section">
+                        <h2 style="color: var(--accent-primary); font-size: 1.8rem;">${sister.title}</h2>
+                        ${sister.fullTitle ? `<p style="font-style: italic; color: var(--accent-secondary); font-size: 1.1rem; margin-top: 0.5rem;">${sister.fullTitle}</p>` : ''}
+                    </div>
+
+                    <!-- Profile Section - Collapsible -->
+                    <details class="zen-collapsible-section" open>
+                        <summary class="section-header">
+                            <h3 style="display: inline;">Profile</h3>
+                            <span class="zen-collapse-icon">▼</span>
+                        </summary>
+                        <div class="zen-section-content">
+                            <h4 style="color: var(--accent-primary); margin-bottom: 1rem;">Divine Essence</h4>
+                            <p>${sister.description}</p>
+
+                            ${sister.tier || sister.gender || sister.element || sister.space || sister.alignment || sister.sacredAnimal || sister.sacredPlant || sister.birthOrder ? `
+                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem; margin-bottom: 1rem;">Sacred Attributes</h4>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; margin-bottom: 1rem;">
+                                    ${sister.tier ? `<p><strong>Tier:</strong> ${sister.tier}</p>` : ''}
+                                    ${sister.gender ? `<p><strong>Gender:</strong> ${sister.gender}</p>` : ''}
+                                    ${sister.element ? `<p><strong>Element:</strong> ${sister.element}</p>` : ''}
+                                    ${sister.space ? `<p><strong>Space:</strong> ${sister.space}</p>` : ''}
+                                    ${sister.alignment ? `<p><strong>Alignment:</strong> ${sister.alignment}</p>` : ''}
+                                    ${sister.sacredAnimal ? `<p><strong>Sacred Animal:</strong> ${sister.sacredAnimal}</p>` : ''}
+                                    ${sister.sacredPlant ? `<p><strong>Sacred Plant:</strong> ${sister.sacredPlant}</p>` : ''}
+                                    ${sister.birthOrder ? `<p><strong>Birth Order:</strong> ${sister.birthOrder}</p>` : ''}
+                                </div>
+                            ` : ''}
+
+                            <p><strong>Attributes:</strong> ${sister.attributes}</p>
+                            <p><strong>Sacred Symbols:</strong> ${sister.symbols}</p>
+                            ${sister.essence ? `<p><strong>Essence:</strong> ${sister.essence}</p>` : ''}
+                            ${sister.teaching ? `<p><strong>Teaching:</strong> ${sister.teaching}</p>` : ''}
+                            ${sister.nature ? `<p><strong>Nature:</strong> ${sister.nature}</p>` : ''}
+                            ${sister.legacy ? `<p><strong>Legacy:</strong> ${sister.legacy}</p>` : ''}
+                            ${sister.philosophy ? `<p><strong>Philosophy:</strong> ${sister.philosophy}</p>` : ''}
+                            ${sister.limitations ? `<p><strong>Limitations:</strong> ${sister.limitations}</p>` : ''}
+                        </div>
+                    </details>
+
+                    <!-- Divine Power Section - Collapsible -->
+                    ${sister.domains || sister.powers ? `
+                    <details class="zen-collapsible-section">
+                        <summary class="section-header">
+                            <h3 style="display: inline;">Divine Power</h3>
+                            <span class="zen-collapse-icon">▼</span>
+                        </summary>
+                        <div class="zen-section-content">
+                            ${sister.domains && sister.domains.length > 0 ? `
+                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Domains</h4>
+                                ${sister.domains.map(domain => `
+                                    <div style="margin: 1rem 0; padding: 1rem; background: rgba(212, 175, 55, 0.05); border-left: 3px solid var(--accent-primary); border-radius: 0.25rem;">
+                                        <strong style="color: var(--accent-primary);">${domain.name}:</strong>
+                                        <p style="margin-top: 0.5rem;">${domain.description}</p>
+                                    </div>
+                                `).join('')}
+                            ` : ''}
+
+                            ${sister.powers && sister.powers.length > 0 ? `
+                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Powers</h4>
+                                ${sister.powers.map(power => `
+                                    <div style="margin: 1rem 0; padding: 1rem; background: rgba(212, 175, 55, 0.05); border-left: 3px solid var(--accent-primary); border-radius: 0.25rem;">
+                                        <strong style="color: var(--accent-primary);">${power.name}:</strong>
+                                        <p style="margin-top: 0.5rem;">${power.description}</p>
+                                    </div>
+                                `).join('')}
+                            ` : ''}
+
+                            ${sister.legendaryFeats && sister.legendaryFeats.length > 0 ? `
+                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Legendary Feats</h4>
+                                ${sister.legendaryFeats.map(feat => `
+                                    <div style="margin: 1rem 0; padding: 1rem; background: rgba(212, 175, 55, 0.1); border-left: 3px solid #daa520; border-radius: 0.25rem;">
+                                        <strong style="color: #daa520;">${feat.name}:</strong>
+                                        <p style="margin-top: 0.5rem;">${feat.description}</p>
+                                    </div>
+                                `).join('')}
+                            ` : ''}
+                        </div>
+                    </details>
+                    ` : ''}
+
+                    <!-- Appearance & Nature Section - Collapsible -->
+                    ${sister.appearance || sister.personality ? `
+                    <details class="zen-collapsible-section">
+                        <summary class="section-header">
+                            <h3 style="display: inline;">Appearance & Nature</h3>
+                            <span class="zen-collapse-icon">▼</span>
+                        </summary>
+                        <div class="zen-section-content">
+                            ${sister.appearance && typeof sister.appearance === 'object' ? `
+                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Physical Appearance</h4>
+                                <p>${sister.appearance.description}</p>
+                                <ul style="margin: 1rem 0 1rem 1.5rem; line-height: 1.8;">
+                                    ${sister.appearance.form ? `<li><strong>Form:</strong> ${sister.appearance.form}</li>` : ''}
+                                    ${sister.appearance.skin ? `<li><strong>Skin:</strong> ${sister.appearance.skin}</li>` : ''}
+                                    ${sister.appearance.height ? `<li><strong>Height:</strong> ${sister.appearance.height}</li>` : ''}
+                                    ${sister.appearance.hair ? `<li><strong>Hair:</strong> ${sister.appearance.hair}</li>` : ''}
+                                    ${sister.appearance.eyes ? `<li><strong>Eyes:</strong> ${sister.appearance.eyes}</li>` : ''}
+                                    ${sister.appearance.distinctiveFeatures ? `<li><strong>Distinctive Features:</strong> ${sister.appearance.distinctiveFeatures}</li>` : ''}
+                                    ${sister.appearance.transformation ? `<li><strong>Transformation:</strong> ${sister.appearance.transformation}</li>` : ''}
+                                </ul>
+                            ` : sister.appearance ? `<p><strong>Appearance:</strong> ${sister.appearance}</p>` : ''}
+
+                            ${sister.personality ? `
+                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Personality & Temperament</h4>
+                                <p>${sister.personality}</p>
+                            ` : ''}
+                        </div>
+                    </details>
+                    ` : ''}
+
+                    <!-- Relationships Section - Collapsible -->
+                    ${sister.relationships ? `
+                    <details class="zen-collapsible-section">
+                        <summary class="section-header">
+                            <h3 style="display: inline;">Relationships</h3>
+                            <span class="zen-collapse-icon">▼</span>
+                        </summary>
+                        <div class="zen-section-content">
+                            ${sister.relationships.withHerSisters ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Her Sisters</h4>
+                                    <p>${sister.relationships.withHerSisters}</p>
+                                </div>
+                            ` : ''}
+                            ${sister.relationships.withSuleiman ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Suleiman (Father)</h4>
+                                    <p>${sister.relationships.withSuleiman}</p>
+                                </div>
+                            ` : ''}
+                            ${sister.relationships.withJodami ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Jodami (Mother)</h4>
+                                    <p>${sister.relationships.withJodami}</p>
+                                </div>
+                            ` : ''}
+                            ${sister.relationships.withAlsekemu ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Al'sekemu</h4>
+                                    <p>${sister.relationships.withAlsekemu}</p>
+                                </div>
+                            ` : ''}
+                            ${sister.relationships.withTakondwa ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Takondwa (Spouse)</h4>
+                                    <p>${sister.relationships.withTakondwa}</p>
+                                </div>
+                            ` : ''}
+                            ${sister.relationships.withHerChildren ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Her Children</h4>
+                                    <p>${sister.relationships.withHerChildren}</p>
+                                </div>
+                            ` : ''}
+                            ${sister.relationships.withOceania ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Oceania</h4>
+                                    <p>${sister.relationships.withOceania}</p>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </details>
+                    ` : ''}
+                </div>
+            `).join('')}
+
+            ${god.nature ? `
+            <div class="detail-section" style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid rgba(212, 175, 55, 0.3);">
+                <h3>Collective Nature</h3>
+                <p>${god.nature}</p>
+            </div>
+            ` : ''}
+        </div>
+    `;
+
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 // Special rendering function for Zen Brothers - each brother gets their own tab
 function renderZenBrothersProfile(god) {
     const contentArea = document.getElementById('contentArea');
@@ -17053,6 +17292,12 @@ function showGodDetail(godKey) {
     // Special rendering for Zen Brothers - show each brother as a main tab
     if (godKey === 'zenbrothers' && god.brothers) {
         renderZenBrothersProfile(god);
+        return;
+    }
+
+    // Special rendering for Jodath Sisters - show each sister as a main tab
+    if (godKey === 'jodath' && god.sisters) {
+        renderJodathSistersProfile(god);
         return;
     }
 
