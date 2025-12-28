@@ -16875,6 +16875,42 @@ function renderZenBrothersProfile(god) {
                                     <p>${brother.relationships.withAlsekemu}</p>
                                 </div>
                             ` : ''}
+                            ${brother.relationships.withNaavie ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Naavie</h4>
+                                    <p>${brother.relationships.withNaavie}</p>
+                                </div>
+                            ` : ''}
+                            ${brother.relationships.withSove ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Sove</h4>
+                                    <p>${brother.relationships.withSove}</p>
+                                </div>
+                            ` : ''}
+                            ${brother.relationships.withAdoptedChildren ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With His Adopted Children</h4>
+                                    <p>${brother.relationships.withAdoptedChildren}</p>
+                                </div>
+                            ` : ''}
+                            ${brother.relationships.withGodevea ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Godevea (Spouse)</h4>
+                                    <p>${brother.relationships.withGodevea}</p>
+                                </div>
+                            ` : ''}
+                            ${brother.relationships.withSuleiman ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With Suleiman</h4>
+                                    <p>${brother.relationships.withSuleiman}</p>
+                                </div>
+                            ` : ''}
+                            ${brother.relationships.withEkar ? `
+                                <div style="margin: 1rem 0;">
+                                    <h4 style="color: var(--accent-primary);">With E'kar</h4>
+                                    <p>${brother.relationships.withEkar}</p>
+                                </div>
+                            ` : ''}
                         </div>
                     </details>
                     ` : ''}
