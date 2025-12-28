@@ -12509,7 +12509,7 @@ But the legend of the Zen Brothers burns eternal.`,
         },
         oceania: {
             name: "Oceania",
-            tier: "Foundational",
+            tier: "Supreme",
             gender: "Female",
             element: "Water",
             alignment: "Chaotic Good",
