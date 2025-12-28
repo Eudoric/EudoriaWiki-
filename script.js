@@ -11312,13 +11312,122 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
 
             sisters: {
                 joth: {
-                    title: "First Sister - Goddess of Calm Seas",
-                    attributes: "Tranquility, Peace, Stillness, Serenity, Balance",
-                    symbols: "Calm Waters, Silver Moon on Still Sea, Peaceful Tides",
-                    description: "Joth commands calm seas and peace. Her waters are still and mirror-like, reflecting the truth of those who gaze upon them.",
-                    appearance: "Appears as a serene figure with water flowing gently around her, her hair moving like slow, peaceful waves. Her eyes are the color of deep, tranquil ocean waters at twilight.",
-                    essence: "Absolute stillness and peace",
-                    nature: "Joth represents the peace that comes after the storm, the calm that allows for reflection and healing. She is the stillness that lets you hear your own heart."
+                    title: "Joth - Goddess of Sea Animals",
+                    fullTitle: "The Keeper of Oceanic Life, Queen of Oceandom, First of the Jodath Trinity",
+                    tier: "Major God",
+                    gender: "Female",
+                    element: "Water, Light",
+                    space: "Oceandom, Limaelune",
+                    alignment: "Lawful Neutral",
+                    sacredAnimal: "Dolphins, Otters, Seahorses, Pearled Jellyfish, Sea Turtles",
+                    sacredPlant: "Coral, Sea Pearls, Ocean Jasmine",
+                    birthOrder: "3rd child of Suleiman",
+                    attributes: "Balance, Instinct, Continuity, Environmental Awareness, Stewardship, Adaptation, Ecological Harmony, Migration, Preservation, Quiet Authority, Deliberation",
+                    symbols: "The Living Accord (biological agreement of Oceandom), Athalume (the language of the sea), The Trinity Mark (connection to her sisters), Coral Crowns (her queenly authority), Migration Currents (her guidance of life)",
+                    description: "Joth embodies the ocean's instinct, balance, and continuity, existing because the sea cannot self-govern, and animals need guidance without oppression. She is the quiet intelligence of the ocean's creatures, acting as their steward—not ruler. She understands them without language and designs balance, ensuring each creature has purpose. Oceania, powerful enough to govern alone, delegates authority to sea gods and appoints Joth as her right-hand steward of Oceandom, a key domain within Limaelune.",
+
+                    appearance: {
+                        description: "Joth, a striking mermaid, transformed herself from her original appearance using her mother Jodami's spells and an enchanted pearl, dyeing her hair deep red to show her loyalty. She drank blessed saltwater and Time Tide wine, becoming a true mermaid and severing her ties to Eudraneth. Her red hair flows like living coral, her eyes now deep and calm, embodying authority. As Oceandom's Queen, she wears a crown of growing coral, symbolizing ongoing renewal. Her appearance reflects her belief that transformation must be deliberate and fully embraced.",
+                        form: "Striking mermaid with a powerful, regal presence",
+                        hair: "Deep red flowing like living coral (originally bronze, transformed using Jodami's spells and Oceania's enchanted pearl)",
+                        eyes: "Deep and calm, embodying authority (originally bronze like Suleiman)",
+                        skin: "Originally bronze like Suleiman, transformed to match oceanic heritage",
+                        distinctiveFeatures: "Wears a crown of growing coral that symbolizes ongoing renewal and her authority as Queen of Oceandom",
+                        transformation: "Used Jodami's spells and one of Oceania's enchanted pearls to dye her hair red. Drank saltwater blessed by Jodami and Time Tide wine from Oceania's domain, becoming a true mermaid and severing ties to Eudraneth. This was not just physical change - it was a declaration of independence from her father and complete devotion to Oceania's domain."
+                    },
+
+                    domains: [
+                        {
+                            name: "Sea Animals",
+                            description: "Joth controls and creates sea animals, but not through domination - through alignment. She takes them where they need to be, controls their environment, and determines which creatures thrive in each region of the world's oceans. This is why sea animals appear in different parts of the globe - Joth chose their environments based on balance and purpose. Animals do not 'obey' Joth - they align with her will. Her commands feel like natural instinct rather than force, which is why her control never feels tyrannical. She understands instinct, fear, hunger, migration patterns, and pain without needing speech. Every creature she governs exists with purpose, placed where it belongs within the greater ecosystem."
+                        },
+                        {
+                            name: "Environmental Stewardship",
+                            description: "Joth is extraordinarily environmentally aware. She can sense when trouble is coming and save sea animals from harm before catastrophe strikes. She doesn't move animals to fit the ocean - she shapes the sea to fit life. She can alter water temperature locally, shift currents subtly, enrich or starve ecosystems, and accelerate coral and reef growth. This explains why certain sea animals exist in specific regions and why oceans across the world feel different from one another."
+                        },
+                        {
+                            name: "Queen of Oceandom",
+                            description: "Oceandom is not like Oceanana (controlled by Naime, one of Eudora's Protectors who works under Oceania). Joth is Oceania's appointed right-hand leader, given authority to govern Oceandom specifically. With this influential role, all sea creatures in Oceandom bow to her. The domain is one of the most resource-rich in Limaelune because it sits closest to the underwater queen's primary power source."
+                        }
+                    ],
+
+                    powers: [
+                        {
+                            name: "Communion with Sea Life",
+                            description: "Joth can communicate with all sea animals, but it's deeper than speech. She understands instinct, fear, hunger, migration, and pain. Animals align with her will rather than obeying commands, making her governance feel natural rather than forced."
+                        },
+                        {
+                            name: "Oceanic Shaping",
+                            description: "Joth can alter water temperature locally, shift currents subtly, enrich or starve ecosystems, and accelerate coral and reef growth. She doesn't force life to adapt to harsh conditions - she changes the conditions to support life."
+                        },
+                        {
+                            name: "Trinity Synchronization",
+                            description: "As the embodiment of Trinity within the Tryel (the Eudoric numeral for three), Joth shares a divine alignment with her triplet sisters. She can sense their presence at any distance, feel imbalance in their emotional or spiritual state, and coordinate action without spoken communication. This is not telepathy - it is shared divine existence. She can feel Johannth's compassion surging or waning, sense Joath's battle-readiness or restraint, and coordinate them across vast distances without words. This power is why she leads."
+                        },
+                        {
+                            name: "Athalume - The Language of the Sea",
+                            description: "Joth did not teach sea animals a spoken language. She taught them Athalume, a language of movement, light, pressure, and rhythm. Body posture communicates intent, light patterns convey urgency, current shifts signal direction, and sound frequencies indicate safety or threat. This is why sea animals cooperate across species, why large-scale coordination is possible, and why Joth can govern without constant intervention. It is not speech - it is shared understanding."
+                        },
+                        {
+                            name: "Environmental Foresight",
+                            description: "Joth notices subtle environmental shifts, emotional undercurrents, and imbalances before they become a catastrophe. She often already knows the outcome before anyone asks."
+                        }
+                    ],
+
+                    limitations: "Joth cannot create life out of nothing, cannot force animals against their nature, and cannot undo mass extinction instantly. Her power is slow, permanent, and deliberate - she works with the rhythms of nature, not against them.",
+
+                    legendaryFeats: [
+                        {
+                            name: "The Living Accord of Oceandom",
+                            description: "Rather than issuing decrees, Joth established a biological agreement that governs her domain: No species dominates unchecked, No resource is consumed beyond renewal, No being is abandoned without migration paths. The ecosystem itself enforces this accord. Even Oceania respects it. Oceania could rule Oceandom directly, but she chooses not to - because Joth's governance is quieter, more sustainable, and more intimate with life."
+                        },
+                        {
+                            name: "The Creation of Dolphins",
+                            description: "Joth created dolphins to serve as guides, messengers, and emotional stabilizers. They became the navigators of Oceandom, ensuring no being was genuinely lost in the vast waters."
+                        },
+                        {
+                            name: "The Perfection of Otters",
+                            description: "Joth shaped otters to serve as ecosystem regulators, conflict diffusers, and reef caretakers. Otters prevent over-aggression between species and maintain coral health, keeping the delicate balance of ocean life intact."
+                        },
+                        {
+                            name: "Athalume - The Language of the Sea",
+                            description: "Joth's most significant contribution to oceanic civilization. By teaching sea animals to communicate through movement, light, pressure, and rhythm, she enabled cooperation across species and large-scale coordination without her constant intervention."
+                        },
+                        {
+                            name: "The Turning of the Dead Waters",
+                            description: "Joth revived an entire stagnant region by introducing Tideweavers, altering migration patterns, and reseeding coral. What was once lifeless became the breadbasket of Limaelune, feeding countless beings."
+                        },
+                        {
+                            name: "The Pearl Cycle",
+                            description: "Joth stabilized pearl formation so that Johannth's pearls became sustainable, overharvesting became impossible, and pearls began forming with different properties (healing, memory, light). This ensured the prosperity of Oceandom and protected one of its most precious resources."
+                        },
+                        {
+                            name: "The Silent Defense",
+                            description: "Before Joath ever raised an army, Joth redirected hostile entities away from Oceandom's heart using migration pressure alone. Many invasions never happened because enemies never reached their target - they were turned away by the natural movements of ocean life itself, guided by Joth's invisible hand."
+                        }
+                    ],
+
+                    personality: "Joth embodies composed authority. She does not rush. She speaks slowly, moves deliberately, and acts only when necessary. Even in crisis, she remains calm—not because she is unfeeling, but because panic serves no purpose. Joth notices everything: subtle environmental shifts, emotional undercurrents, and imbalances before they become catastrophes. She often already knows the outcome before anyone asks. She understands suffering but does not soften reality. She believes that struggle is part of balance, but extinction is not. This philosophical stance informs all her decisions—she will allow hardship if it serves growth, but she will never permit the permanent erasure of life that has purpose. As the embodiment of the Trinity within the Tryel, Joth exists in constant connection with her sisters, Johannth and Joath. She can sense their emotional states, readiness, and needs across any distance. This connection is why she leads—not because she is stronger or wiser than her sisters, but because she can coordinate them with perfect precision. However, Joth's composed exterior hides deep contradictions. She criticized her mother, Jodami, for being weak for a man, for begging for Suleiman's love, and for refusing to move on. Yet Joth became exactly what she despised in her father—detached, unable to love properly, treating those closest to her like subjects rather than family. The one who hates her father most is the one who most resembles him. In her personal life, Joth is not the wise, balanced steward she appears to be publicly. She is cold to her husband, Takondwa, unfaithful, and sometimes abusive. She told him plainly: 'If you want the crown, you must deal with the unhappy queen.' Where she brings perfect balance to Oceandom's ecosystem, she brings chaos to her own marriage. Where she ensures every sea creature has purpose and place, she cannot find purpose or place in her own heart.",
+
+                    relationships: {
+                        withSuleiman: "Father - no relationship. Suleiman is over 12,000 years old and doesn't know how to be a father, how to care, or how to show support. His children call him 'Suleiman' instead of 'father.' Joth and her sisters are treated like subjects, wisdom-carriers, but not family. With this lack of care, Joth doesn't care if Suleiman lives or dies - not because she doesn't love him, but because there's no relationship between them. He is just an ordinary god to her, a stranger who happens to share her blood.",
+                        withJodami: "Mother - complicated relationship. Joth grew up watching her mother beg for Suleiman's love, watching her put a man who would never love her properly above everything else. Joth knew her father loved her mother, but didn't know how to express it, yet she still saw her mother's behavior as weak. She tried to tell Jodami to move on (which she eventually did), but it took far too long. Joth's relationship with her mother is wonky because she doesn't like how Jodami behaved for Suleiman. She saw her mother as weak for a man, and that judgment carried into her own adulthood - shaping how she approaches love, relationships, and vulnerability.",
+                        withHerSisters: "Inseparable. The Trinity within the Tryel. Joth shares divine synchronization with both sisters - she can sense their presence, emotions, and readiness across any distance. They work under her authority in Oceandom and are known as the Princesses of Oceandom. The sisters are so close that they help Joth beat up Takondwa during their violent fights, demonstrating their absolute loyalty to each other over any other relationship.",
+                        withAlsekemu: "Depending on how one views Al'sekemu's relationship to Suleiman (son or brother), Joth is either his sister or niece. There is no indication of a close relationship.",
+                        withTakondwa: "Rocky, violent marriage. Takondwa (Shark God, Apex Enforcer of Oceania's Domain) married Joth to become King of Oceandom; Joth married for reasons unclear but certainly not love. She doesn't love him as he loves her. She cheats on him and sometimes abuses him. Though he fights back - as he is a powerful oceanic god - their fighting is so powerful it literally shakes all of Oceandom. Oceania has had to separate them multiple times, but they eventually find each other again. Joth told Takondwa plainly: 'If you want the crown, you must deal with the unhappy queen.' This marriage represents everything broken in Joth's personal life - she cannot give love, cannot receive love, and treats her spouse with the same detachment her father showed her mother.",
+                        withHerChildren: "Over 300 Thalakari (children with Takondwa). No details provided about her relationship with them, but given her detachment and her father's pattern, one wonders if she treats them as subjects rather than children - perpetuating the cycle Suleiman began.",
+                        withOceania: "Joth's true allegiance. When Jodami and Suleiman broke up, Joth and her sisters went to Oceania for stability. They lived in her domain, Limaelune, and transformed themselves to match Oceania - dyeing their hair red, drinking her sacred waters, becoming mermaids. Oceania appointed Joth as her right-hand leader and gave her authority over Oceandom. Oceania respects Joth's governance so much that she allows the Living Accord to stand even though it technically limits Oceania's own power. Their relationship is one of mutual respect between a mother figure and a devoted steward."
+                    },
+
+                    teaching: "I do not rule the ocean - I listen to it. Balance is not imposed; it is understood. Struggle is part of life, but extinction is not. Every creature has a purpose. Every environment has capacity. My role is to ensure they align.",
+
+                    essence: "Composed authority - not loud leadership, not emotional leadership, but natural leadership",
+
+                    nature: "Joth represents composed authority - not loud leadership, not emotional leadership, but natural leadership. She is the steward who understands that true power lies not in domination but in a deep understanding of the systems she governs. This duality defines Joth: she can govern millions of lives with perfect wisdom, yet cannot govern her own life with even basic compassion. She understands the instincts of every creature in the ocean, yet does not understand her own heart. She is both the most capable leader in Oceandom and the most broken woman in Limaelune.",
+
+                    legacy: "Joth rules Oceandom with perfect balance and wisdom, maintaining ecosystems, protecting life, and ensuring continuity. Yet in her personal life, she perpetuates the same cycles of detachment and dysfunction that she experienced as a child. She became what she criticized - detached like her father, unable to love properly, treating those closest to her as subjects rather than family. She is both Oceandom's most outstanding leader and its most tragic figure: a goddess who can balance entire ecosystems but cannot balance her own heart.",
+
+                    philosophy: "The ocean speaks to those who listen. Balance is not control - it is understanding. Every creature has instinct, every ecosystem has rhythm. My role is not to dominate but to align, not to rule but to steward. Struggle is necessary for growth, but extinction serves no purpose. I ensure that life continues, adapts, and thrives - even when I cannot do the same for myself."
                 },
                 johannth: {
                     title: "Second Sister - Goddess of Storms",
