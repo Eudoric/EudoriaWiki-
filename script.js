@@ -14979,6 +14979,8 @@ function navigateTo(view) {
         renderGodQuiz();
     } else if (view === 'god-comparison') {
         renderGodComparison();
+    } else if (view === 'relationship-map') {
+        renderRelationshipMap();
     } else if (view === 'battle-of-gods') {
         renderBattleOfGods();
     } else if (view === 'tournament-mode') {
@@ -29373,4 +29375,368 @@ function scrollToTop() {
         top: 0,
         behavior: 'smooth'
     });
+}
+// Divine Relationship Map
+function renderRelationshipMap() {
+    const contentArea = document.getElementById('contentArea');
+
+    contentArea.innerHTML = `
+        <div class="relationship-map-container">
+            <div class="relationship-map-header">
+                <div class="divine-symbol-small">✦</div>
+                <h2>Divine Relationship Map</h2>
+                <p class="relationship-map-subtitle">Explore the intricate web of connections between gods - family, love, conflict, and tragedy</p>
+            </div>
+
+            <div class="relationship-controls">
+                <div class="filter-section">
+                    <h3>Filter Relationships:</h3>
+                    <div class="relationship-filters">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" id="filter-family" checked onchange="updateRelationshipMap()">
+                            <span class="filter-label" style="color: #4CAF50;">💚 Family</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" id="filter-romance" checked onchange="updateRelationshipMap()">
+                            <span class="filter-label" style="color: #E91E63;">❤️ Romance</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" id="filter-conflict" checked onchange="updateRelationshipMap()">
+                            <span class="filter-label" style="color: #FF9800;">⚔️ Conflict</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" id="filter-death" checked onchange="updateRelationshipMap()">
+                            <span class="filter-label" style="color: #9E9E9E;">💀 Death</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" id="filter-alliance" checked onchange="updateRelationshipMap()">
+                            <span class="filter-label" style="color: #2196F3;">🤝 Alliance</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="search-section">
+                    <input type="text" id="godSearch" placeholder="Search for a god..." oninput="searchGodInMap(this.value)">
+                    <button onclick="resetRelationshipMap()">Reset View</button>
+                </div>
+            </div>
+
+            <div id="relationshipMap"></div>
+
+            <div class="relationship-legend">
+                <h3>Legend:</h3>
+                <div class="legend-items">
+                    <div class="legend-item"><span style="color: #4CAF50;">●</span> Family/Parent-Child</div>
+                    <div class="legend-item"><span style="color: #E91E63;">●</span> Romance/Marriage</div>
+                    <div class="legend-item"><span style="color: #FF9800;">●</span> Rivalry/Conflict</div>
+                    <div class="legend-item"><span style="color: #9E9E9E;">●</span> Killed by/Death</div>
+                    <div class="legend-item"><span style="color: #2196F3;">●</span> Alliance/Friendship</div>
+                </div>
+            </div>
+
+            <div class="relationship-info">
+                <p><strong>How to use:</strong> Click on a god to see their connections. Hover over connections to see relationship details. Use filters to show specific relationship types.</p>
+            </div>
+        </div>
+    `;
+
+    // Build the relationship data
+    const relationshipData = buildRelationshipData();
+
+    // Initialize the network
+    initializeRelationshipNetwork(relationshipData);
+}
+
+function buildRelationshipData() {
+    const gods = eudoriaData.eudoricGods;
+    const nodes = [];
+    const edges = [];
+    const processedRelationships = new Set();
+
+    // Create nodes for each god
+    for (const godId in gods) {
+        const god = gods[godId];
+        nodes.push({
+            id: godId,
+            label: god.name,
+            title: `${god.name}\n${god.tier || 'God'}`,
+            tier: god.tier,
+            color: getTierColor(god.tier),
+            font: { color: '#fff', size: 14 },
+            shape: 'dot',
+            size: getTierSize(god.tier)
+        });
+    }
+
+    // Extract relationships from the Zen Brothers
+    if (gods.zenbrothers && gods.zenbrothers.brothers) {
+        const zenBrothers = gods.zenbrothers.brothers;
+        const brotherIds = ['zendon', 'zan', 'zevon', 'zavi'];
+
+        // Sibling relationships
+        for (let i = 0; i < brotherIds.length; i++) {
+            for (let j = i + 1; j < brotherIds.length; j++) {
+                const edgeId = `${brotherIds[i]}-${brotherIds[j]}`;
+                if (!processedRelationships.has(edgeId)) {
+                    edges.push({
+                        from: brotherIds[i],
+                        to: brotherIds[j],
+                        label: 'Brothers',
+                        color: { color: '#4CAF50', highlight: '#66BB6A' },
+                        type: 'family',
+                        title: 'Brothers - Zen Brothers'
+                    });
+                    processedRelationships.add(edgeId);
+                }
+            }
+        }
+
+        // Parent relationships
+        const parentIds = ['zane', 'zenitha'];
+        for (const brotherId of brotherIds) {
+            for (const parentId of parentIds) {
+                const edgeId = `${parentId}-${brotherId}`;
+                if (!processedRelationships.has(edgeId)) {
+                    edges.push({
+                        from: parentId,
+                        to: brotherId,
+                        label: 'Parent',
+                        color: { color: '#4CAF50', highlight: '#66BB6A' },
+                        type: 'family',
+                        title: 'Parent-Child'
+                    });
+                    processedRelationships.add(edgeId);
+                }
+            }
+        }
+
+        // Zendon's relationships
+        if (zenBrothers.zendon) {
+            // Marriage to Dishaniki
+            addRelationship(edges, processedRelationships, 'zendon', 'dishaniki', 'Married', 'romance', 'Husband and Wife');
+
+            // Children
+            const zendonChildren = ['emen', 'dosi', 'sayie', 'nore'];
+            for (const child of zendonChildren) {
+                addRelationship(edges, processedRelationships, 'zendon', child, 'Father', 'family', 'Father-Son');
+            }
+
+            // Death by Al'sekemu
+            addRelationship(edges, processedRelationships, 'alsekemu', 'zendon', 'Orchestrated Death', 'death', 'Al\'sekemu orchestrated Zendon\'s death');
+        }
+
+        // Zevon's relationships
+        if (zenBrothers.zevon) {
+            // Marriage to Godevea
+            addRelationship(edges, processedRelationships, 'zevon', 'godevea', 'Married (Transactional)', 'romance', 'Transactional marriage for protection');
+
+            // Death by Al'sekemu
+            addRelationship(edges, processedRelationships, 'alsekemu', 'zevon', 'Orchestrated Death', 'death', 'Al\'sekemu orchestrated Zevon\'s death');
+        }
+
+        // Zavi's relationships
+        if (zenBrothers.zavi) {
+            // Romantic relationship with Naavie
+            addRelationship(edges, processedRelationships, 'zavi', 'naavie', 'Centuries-long Love', 'romance', 'Promised to marry, died before wedding');
+
+            // Conflict with Sove
+            addRelationship(edges, processedRelationships, 'zavi', 'sove', 'Rivalry', 'conflict', 'Rival for Naavie\'s love');
+
+            // Death by Al'sekemu
+            addRelationship(edges, processedRelationships, 'alsekemu', 'zavi', 'Orchestrated Death', 'death', 'Al\'sekemu orchestrated Zavi\'s death via Akili-Chazak');
+        }
+
+        // Zan's death
+        addRelationship(edges, processedRelationships, 'alsekemu', 'zan', 'Orchestrated Death', 'death', 'Al\'sekemu orchestrated Zan\'s death');
+    }
+
+    // Add more relationships as we find them
+    // Al'sekemu and Akili-Chazak
+    addRelationship(edges, processedRelationships, 'alsekemu', 'akilichazak', 'Right-hand Man', 'alliance', 'Closest friend and strategist');
+
+    return { nodes, edges };
+}
+
+function addRelationship(edges, processedRelationships, from, to, label, type, title) {
+    const edgeId = `${from}-${to}`;
+    const reverseId = `${to}-${from}`;
+
+    if (!processedRelationships.has(edgeId) && !processedRelationships.has(reverseId)) {
+        edges.push({
+            from: from,
+            to: to,
+            label: label,
+            color: getRelationshipColor(type),
+            type: type,
+            title: title,
+            arrows: type === 'death' ? 'to' : undefined
+        });
+        processedRelationships.add(edgeId);
+    }
+}
+
+function getRelationshipColor(type) {
+    const colors = {
+        'family': { color: '#4CAF50', highlight: '#66BB6A' },
+        'romance': { color: '#E91E63', highlight: '#F06292' },
+        'conflict': { color: '#FF9800', highlight: '#FFB74D' },
+        'death': { color: '#9E9E9E', highlight: '#BDBDBD' },
+        'alliance': { color: '#2196F3', highlight: '#64B5F6' }
+    };
+    return colors[type] || { color: '#fff', highlight: '#fff' };
+}
+
+function getTierColor(tier) {
+    const colors = {
+        'Supreme': '#FFD700',
+        'Foundational': '#C0C0C0',
+        'Major': '#CD7F32',
+        'Minor': '#8B7355'
+    };
+    return colors[tier] || '#daa520';
+}
+
+function getTierSize(tier) {
+    const sizes = {
+        'Supreme': 30,
+        'Foundational': 25,
+        'Major': 20,
+        'Minor': 15
+    };
+    return sizes[tier] || 15;
+}
+
+let network = null;
+let allEdges = [];
+
+function initializeRelationshipNetwork(data) {
+    const container = document.getElementById('relationshipMap');
+    allEdges = data.edges;
+
+    const options = {
+        nodes: {
+            borderWidth: 2,
+            borderWidthSelected: 4,
+            font: {
+                color: '#fff',
+                size: 14,
+                face: 'Cinzel, serif'
+            }
+        },
+        edges: {
+            width: 2,
+            smooth: {
+                type: 'continuous',
+                roundness: 0.5
+            },
+            font: {
+                size: 12,
+                color: '#daa520',
+                face: 'Cinzel, serif',
+                strokeWidth: 3,
+                strokeColor: '#0d2818'
+            }
+        },
+        physics: {
+            stabilization: {
+                iterations: 200
+            },
+            barnesHut: {
+                gravitationalConstant: -8000,
+                centralGravity: 0.3,
+                springLength: 150,
+                springConstant: 0.04,
+                damping: 0.09,
+                avoidOverlap: 0.5
+            }
+        },
+        interaction: {
+            hover: true,
+            tooltipDelay: 100,
+            zoomView: true,
+            dragView: true
+        }
+    };
+
+    network = new vis.Network(container, data, options);
+
+    // Event listeners
+    network.on('click', function(params) {
+        if (params.nodes.length > 0) {
+            const godId = params.nodes[0];
+            highlightGodConnections(godId);
+        }
+    });
+
+    network.on('doubleClick', function(params) {
+        if (params.nodes.length > 0) {
+            const godId = params.nodes[0];
+            showGodDetail(godId);
+        }
+    });
+}
+
+function highlightGodConnections(godId) {
+    const connectedEdges = network.getConnectedEdges(godId);
+    const connectedNodes = network.getConnectedNodes(godId);
+
+    // Update edge colors to highlight connected ones
+    const updateEdges = allEdges.map(edge => {
+        if (edge.from === godId || edge.to === godId) {
+            return { ...edge, width: 4 };
+        } else {
+            return { ...edge, width: 1, color: { color: '#333', highlight: '#333' } };
+        }
+    });
+
+    network.setData({
+        nodes: network.body.data.nodes,
+        edges: updateEdges
+    });
+}
+
+function updateRelationshipMap() {
+    const filters = {
+        family: document.getElementById('filter-family').checked,
+        romance: document.getElementById('filter-romance').checked,
+        conflict: document.getElementById('filter-conflict').checked,
+        death: document.getElementById('filter-death').checked,
+        alliance: document.getElementById('filter-alliance').checked
+    };
+
+    const filteredEdges = allEdges.filter(edge => filters[edge.type]);
+
+    network.setData({
+        nodes: network.body.data.nodes,
+        edges: filteredEdges
+    });
+}
+
+function searchGodInMap(searchTerm) {
+    if (!searchTerm) {
+        resetRelationshipMap();
+        return;
+    }
+
+    const nodes = network.body.data.nodes.get();
+    const matchedNode = nodes.find(node =>
+        node.label.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    if (matchedNode) {
+        network.focus(matchedNode.id, {
+            scale: 1.5,
+            animation: true
+        });
+        network.selectNodes([matchedNode.id]);
+        highlightGodConnections(matchedNode.id);
+    }
+}
+
+function resetRelationshipMap() {
+    network.setData({
+        nodes: network.body.data.nodes,
+        edges: allEdges
+    });
+    network.fit();
 }
