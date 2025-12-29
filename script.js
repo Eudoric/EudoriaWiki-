@@ -17023,7 +17023,7 @@ function renderJodathSistersProfile(god) {
 
     const profileImageHTML = `
         <div class="god-profile-image">
-            <img src="Images/Jodathsisters.png" alt="The Jodath Sisters" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <img src="Images/jodathsisters.png" alt="The Jodath Sisters" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="god-icon-large" style="display: none;">✦</div>
         </div>
     `;
