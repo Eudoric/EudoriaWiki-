@@ -17183,48 +17183,35 @@ function renderJodathSistersProfile(god) {
                             <span class="zen-collapse-icon">▼</span>
                         </summary>
                         <div class="zen-section-content">
-                            ${sister.relationships.withHerSisters ? `
-                                <div style="margin: 1rem 0;">
-                                    <h4 style="color: var(--accent-primary);">With Her Sisters</h4>
-                                    <p>${sister.relationships.withHerSisters}</p>
-                                </div>
-                            ` : ''}
-                            ${sister.relationships.withSuleiman ? `
-                                <div style="margin: 1rem 0;">
-                                    <h4 style="color: var(--accent-primary);">With Suleiman (Father)</h4>
-                                    <p>${sister.relationships.withSuleiman}</p>
-                                </div>
-                            ` : ''}
-                            ${sister.relationships.withJodami ? `
-                                <div style="margin: 1rem 0;">
-                                    <h4 style="color: var(--accent-primary);">With Jodami (Mother)</h4>
-                                    <p>${sister.relationships.withJodami}</p>
-                                </div>
-                            ` : ''}
-                            ${sister.relationships.withAlsekemu ? `
-                                <div style="margin: 1rem 0;">
-                                    <h4 style="color: var(--accent-primary);">With Al'sekemu</h4>
-                                    <p>${sister.relationships.withAlsekemu}</p>
-                                </div>
-                            ` : ''}
-                            ${sister.relationships.withTakondwa ? `
-                                <div style="margin: 1rem 0;">
-                                    <h4 style="color: var(--accent-primary);">With Takondwa (Spouse)</h4>
-                                    <p>${sister.relationships.withTakondwa}</p>
-                                </div>
-                            ` : ''}
-                            ${sister.relationships.withHerChildren ? `
-                                <div style="margin: 1rem 0;">
-                                    <h4 style="color: var(--accent-primary);">With Her Children</h4>
-                                    <p>${sister.relationships.withHerChildren}</p>
-                                </div>
-                            ` : ''}
-                            ${sister.relationships.withOceania ? `
-                                <div style="margin: 1rem 0;">
-                                    <h4 style="color: var(--accent-primary);">With Oceania</h4>
-                                    <p>${sister.relationships.withOceania}</p>
-                                </div>
-                            ` : ''}
+                            ${Object.entries(sister.relationships).map(([relKey, relValue]) => {
+                                // Format the relationship key into a readable title
+                                const relationshipTitles = {
+                                    withHerSisters: 'With Her Sisters',
+                                    withSuleiman: 'With Suleiman (Father)',
+                                    withJodami: 'With Jodami (Mother)',
+                                    withOceania: 'With Oceania',
+                                    withAlsekemu: "With Al'sekemu",
+                                    withTakondwa: 'With Takondwa (Spouse)',
+                                    withHerChildren: 'With Her Children',
+                                    withMalak: 'With Malak',
+                                    withSove: 'With Sove',
+                                    withTiger: 'With Tiger',
+                                    withWale: 'With Wale',
+                                    withTurk: 'With Turk (Current Husband)',
+                                    withNaime: 'With Naime (Mentee)',
+                                    withTevye: 'With Tevye',
+                                    withUmar: 'With Umar',
+                                    withCocao: 'With Cocao (First Husband)',
+                                    withDipak: 'With Dipak'
+                                };
+                                const title = relationshipTitles[relKey] || relKey.replace(/^with/, 'With ');
+                                return `
+                                    <div style="margin: 1rem 0;">
+                                        <h4 style="color: var(--accent-primary);">${title}</h4>
+                                        <p>${relValue}</p>
+                                    </div>
+                                `;
+                            }).join('')}
                         </div>
                     </details>
                     ` : ''}
