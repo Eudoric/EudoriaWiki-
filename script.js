@@ -11305,10 +11305,10 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
             alignment: "Lawful Neutral",
             sacredAnimal: "Seahorses, Pearled Jellyfish, Sea Turtles",
             sacredPlant: "Coral, Sea Pearls, Ocean Jasmine",
-            titles: ["The Three Sea Sisters", "Goddesses of the Tides of Emotion", "The Triple Waters"],
-            attributes: ["Emotion", "Tides", "Peace", "Passion", "Memory", "Balance"],
-            symbols: ["Three Waves", "Floating Temples", "The Moon's Reflection on Water"],
-            description: "The Jodath Sisters are triplet goddesses who rule the tides of emotion together. Joth commands calm seas and peace, Johannth commands storms of love and heartbreak, and Joath governs the depths where memories sleep. Together, they embody the full spectrum of emotional experience — from tranquil stillness to passionate intensity to the hidden depths of the unconscious.",
+            titles: ["The Three Oceanic Guardians", "The Trinity of the Deep", "Daughters Who Chose Their Mother"],
+            attributes: ["Balance", "Mercy", "Protection", "Oceanic Stewardship", "Transformation", "Loyalty", "Choice"],
+            symbols: ["Three Waves", "Red Hair (Transformation)", "The Tryel (Divine Synchronization)", "Oceania's Chosen"],
+            description: "The Jodath Sisters are three divine sea goddesses born from Suleiman and Jodami — a union marked not by love but by absence. Born as the 3rd, 4th, and 5th children of Suleiman, they knew their father only as a title, never as a presence. They are not merely Oceania's servants — they are her chosen daughters, her most trusted guardians, and the embodiment of the ocean's three-fold nature: balance, mercy, and relentless protection. They rejected their father's absence, their mother's dysfunction, and the bronze legacy of Eudraneth. They transformed themselves with red hair and became the Tryel embodied — the most faithful daughters Oceania ever had. Together, they prove that family is defined not by blood but by choice, and that three sisters who choose each other are more powerful than any force that tries to break them apart.",
 
             sisters: {
                 joth: {
