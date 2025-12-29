@@ -3314,13 +3314,7 @@ body {
 
 /* Eudoric Divine Background - Bronze/Aged Gold Gradient */
 body.eudoric-mode {
-    background: linear-gradient(135deg,
-        #3d2817 0%,      /* Muted bronze - darker, aged */
-        #2a1810 25%,     /* Deep bronze-umber transition */
-        #1a0f08 50%,     /* Dark umber center */
-        #2a1810 75%,     /* Deep bronze-umber transition */
-        #3d2817 100%     /* Muted bronze - darker, aged */
-    );
+    background-color: #1a0f08 !important;
     background-image:
         /* Subtle divine glow overlay - very restrained */
         radial-gradient(ellipse at 50% 30%, rgba(184, 134, 11, 0.08) 0%, transparent 60%),
@@ -3335,10 +3329,12 @@ body.eudoric-mode {
             #1a0f08 50%,
             #2a1810 75%,
             #3d2817 100%
-        );
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+        ) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-blend-mode: normal !important;
 }
 
 /* Eudoric Mode Overrides - Maintain Dark Divine Aesthetic */
