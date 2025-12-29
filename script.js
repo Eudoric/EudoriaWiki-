@@ -17909,6 +17909,7 @@ function showGodDetail(godKey) {
         'jesang': 'Jesang.png',
         'jodami': 'Jodami.png',
         'kilth': 'Kilth.png',
+        'malak': 'malak.png',
         'malaikanya': 'Malai Kanya.png',
         'naavie': 'Naavie.png',
         'nasr': 'Nasr.png',
