@@ -12339,6 +12339,149 @@ But the legend of the Zen Brothers burns eternal.`,
 
             nature: "Tia is the embodiment of desperate love turned into obsession. She was created to heal and organize dreams, but her need for validation changed these gifts into tools for manipulation. She shows what happens when purpose is sacrificed for approval, when a goddess meant to help others uses her powers only to serve her own insecurities. She is tragic because she was never truly free. Created from another's desires, rejected right away, and spending 40 years in silence, she learned that love must be forced, staged, and performed. She became what she needed to survive: a woman who would rather create danger than live without being saved. Her nature is a warning: When you love someone more than yourself, you stop existing, and in the end, you break apart."
         },
+        malak: {
+            name: "Malak",
+            tier: "Major God",
+            gender: "Male",
+            element: "Light, Metal (Solar power through weapon)",
+            alignment: "Lawful Evil",
+            sacredAnimal: "Falcon (specifically his companion Peregrine)",
+            sacredPlant: "None",
+            birthOrder: "Second son of Al'sekemu",
+            titles: ["The Falcon Prince", "Prince of Order", "The Golden Boy", "Leader of the Second Coming"],
+            attributes: ["Authority", "Order", "Law", "Hierarchy", "Enforcement", "Leadership", "Obedience", "Strength", "Command", "Loyalty", "Execution", "Legitimacy", "Structure", "Discipline"],
+            symbols: ["The Falcon clutching a sunburst", "Falcon Pedigree (his transforming spear)", "Circlet with falcon symbol", "Peregrine (his eyes from above)", "Golden flash", "The Sunarian symbol"],
+            description: "Malak embodies obedience and power as the God of Order and Authority, representing unquestioned command, hierarchy, and law beyond morality. Favorite of Al'sekemu not for strength but for loyalty, he acts without moral doubt, enforcing authority because it exists. His obedience, rivaling legendary gods, makes him one of the most dangerous deities. As Leader of the Second Coming, he commands divine offspring, his orders overriding others and suppressing rebellion. Beneath his commanding exterior, he is not cruel or sadistic, merely obedient to his father—a loyalty that leads to darker acts like killing gods, stealing artifacts, and ambiguous missions. He remains kind and devoted to Al'sekemu, who calls him 'my golden boy.'",
+
+            appearance: {
+                description: "Malak's appearance is a study in contradictions—golden divinity concealing absolute obedience, beauty masking brutality, and a face that looks perpetually angry, housing a personality described as nice and sweet. His skin is golden—not bronze but metallic, marking him as Al'sekemu's child, signifying he is chosen, favored, and carries his father's transformation. His heterochromatic eyes—one brown, one hazel—make him recognizable and give an unsettling gaze, symbolizing law and hierarchy. His sharp features give a perpetual, involuntary stern look, creating an intimidating presence that encourages compliance. His build is agile, strong, and regal—swift and precise, enabling him to outmaneuver multiple opponents with speed rather than brute force.",
+                skin: "Golden metallic skin marking him as Al'sekemu's chosen child",
+                eyes: "Heterochromatic—one brown, one hazel",
+                hair: "Short brown hair, practical and functional",
+                distinctiveFeatures: "Can summon golden falcon wings on command (unlike his father's permanent wings). Wears a simple gold circlet with a falcon symbol marking his rank as Prince of Order. His companion Peregrine is always nearby. His commanding voice always sounds like he's giving orders, even casually.",
+                build: "Agile, strong, and regal—less bulky but swift and precise"
+            },
+
+            domains: [
+                {
+                    name: "Authority",
+                    description: "Malak's Authority is his most dangerous power—it doesn't control minds, but defines the legitimacy of command. It acts as command gravity, pressing down on subordinates' will. Disobedience feels like fighting the natural order. He can compel obedience from beings lower in hierarchy, suppress rebellion, override conflicting commands in structured systems, and establish himself as the recognized leader in moments of chaos. Critical limitation: He cannot control free will absolutely. Those with equal or higher authority (Suleiman, Oceania, Zendon) can resist."
+                },
+                {
+                    name: "Order",
+                    description: "Malak embodies perfectly functioning systems, emphasizing that order is about everything having its proper place and role within a hierarchy. He perceives system correctness and disorder, and can manifest Order into reality—creating things out of thin air, a power usually reserved for Supreme gods. This shows Malak's incredible power: he doesn't create ex nihilo but reveals what should exist based on the correct structure of reality."
+                },
+                {
+                    name: "Law",
+                    description: "To Malak, Law exists independent of morality. A law is not good or evil—it simply is. His role is not to judge the righteousness of law but to enforce its existence. This separation allows him to execute orders that would cause moral conflict in others. When Al'sekemu commands, Malak enforces—not because the command is just, but because it comes from legitimate authority within the hierarchy."
+                },
+                {
+                    name: "Hierarchy",
+                    description: "Everyone has a place, and Malak knows it instinctively. He can assess divine rank, recognize legitimate authority, and understand command structures with perfect clarity. This enables him to navigate complex political situations, override lower-ranking commanders, and establish dominance in chaotic environments. As Leader of the Second Coming, Malak sits at the apex of an entire generation's hierarchy."
+                },
+                {
+                    name: "Court of Authority",
+                    description: "Malak is the only child of Al'sekemu to possess his own domain—the Court of Authority. It is a desert under a blazing sun, similar in structure to Al'sekemu's Court of Order but less elaborate. The desert mirrors the harsh, unforgiving nature of absolute authority—no shade, no mercy, no escape from the light that exposes all disorder. Here, Malak's power is amplified, his commands carry even greater weight, and those who enter feel the full weight of hierarchy bearing down on them."
+                }
+            ],
+
+            powers: [
+                {
+                    name: "Command Gravity (Authority)",
+                    description: "Malak's orders carry supernatural weight. Those lower in hierarchy feel compelled to obey not through mind control but through recognition of legitimate command. Resistance is possible but requires active, deliberate defiance. Most beings cannot summon the will to resist—not because they can't, but because defying Malak feels like fighting against the natural order of existence."
+                },
+                {
+                    name: "Order Manifestation",
+                    description: "Malak can make things appear that weren't there moments before—a reality-warping ability typically reserved for Supreme and Foundational gods. He does not create from nothing; he reveals what should exist according to proper structure. This power has countless applications: manifesting weapons, creating barriers, revealing hidden truths, or establishing order where chaos reigns."
+                },
+                {
+                    name: "Hierarchy Perception",
+                    description: "Malak instinctively understands command structures, divine ranks, and legitimate authority. He can assess the relative power and position of any being, allowing him to navigate complex political situations and establish dominance in moments of chaos."
+                },
+                {
+                    name: "Command Override",
+                    description: "In structured systems (armies, councils, divine hierarchies), Malak can override conflicting commands from those of lower rank. If two generals give contradictory orders, Malak's command supersedes both. This makes him invaluable in coordinated operations and devastating in conflicts where the chain of command matters."
+                },
+                {
+                    name: "Rebellion Suppression",
+                    description: "Malak can suppress hesitation, insubordination, and rebellion in divine and mortal forces, not through fear, but through the weight of legitimate authority pressing down on potential dissent. Doubt becomes difficult. Defiance requires extraordinary will."
+                },
+                {
+                    name: "Falcon Flight & Aerial Superiority",
+                    description: "Malak can summon falcon wings (unlike his father's permanent cape-wings). He is the only one of Al'sekemu's 43 children with this ability. Once airborne, Malak becomes extremely difficult to bring down—it takes gods like Zendon, Zevon, or other top-tier Major Gods to force him from the sky. During the War of Gods, Zavi had to unleash three different powers just to get Malak to his knees."
+                },
+                {
+                    name: "Peregrine Vision",
+                    description: "Malak can see through Peregrine, his falcon companion, allowing reconnaissance, battlefield awareness, and surveillance from above. Peregrine serves as his eyes in situations where Malak cannot personally observe, giving him tactical advantages in combat and strategic planning."
+                },
+                {
+                    name: "Solar Empowerment (Through Falcon Pedigree)",
+                    description: "While not inherently a solar god, Malak channels solar power through his weapon—the Falcon Pedigree spear. This power was acquired after he killed Gizzo, the Sun God, on Al'sekemu's orders. The spear itself carries the solar aspect, not Malak directly."
+                }
+            ],
+
+            weapons: {
+                primary: "The Falcon Pedigree - A magnificent 7-foot golden spear with a falcon's wing descending from the shaft. The weapon is not merely a spear—it is a symbol of Malak's authority, a repository of stolen solar power, and a transforming instrument of enforcement.",
+                abilities: "Transformation (can become any weapon), Boomerang Return (always returns to Malak's hand), Solar Power (channels energy stolen from Gizzo the Sun God)"
+            },
+
+            limitations: "Authority does not work on those of equal or higher rank. Order Manifestation is powerful but requires concentration and cannot create life. He is mortal (for a god)—he can be killed. His falcon wings can be destroyed. His power is strongest in structured environments; pure chaos weakens Authority's effectiveness.",
+
+            legendaryFeats: [
+                {
+                    name: "The Execution of Gizzo (The Sun God)",
+                    description: "When Gizzo, the Sun God, refused to bow down to Al'sekemu and call him 'lord,' Malak was sent to enforce obedience. Gizzo believed his solar divinity made him untouchable. He was wrong. Malak killed Gizzo in single combat, claiming the sun god's power and forging it into the Falcon Pedigree spear. This was not merely an assassination—it was a declaration: authority does not negotiate, and refusal to acknowledge hierarchy results in annihilation."
+                },
+                {
+                    name: "The Slaying of Olamilekan (The Giant)",
+                    description: "Olamilekan, a colossal giant, had been kidnapping children and devouring them. While this was an act of monstrous evil, Malak's execution of the giant was not heroism—it was enforcement. The giant represented chaos, disorder, and violation of structure. Malak hunted Olamilekan, killed him, took his single eye, and fed it to his siblings—establishing dominance within the Second Coming."
+                },
+                {
+                    name: "The Rescue and Courtship of Johannth",
+                    description: "When Cris, God of the Dead and Chaos, attempted to assault Johannth sexually, Malak intervened—pretending that Johannth had already slept with him, thus 'claiming' her and preventing Cris from touching her. Then Malak descended into the underworld, beat Cris brutally, and stole his fire as a trophy for Johannth. This began a pattern of legendary feats performed for Johannth's sake: stealing the enchanted crab for her voice, beheading Gwendal the Octopus Queen, harvesting the Noodin fruit, taking her around the world. Every feat was a courtship gesture."
+                },
+                {
+                    name: "Leadership of the Second Coming",
+                    description: "Malak was chosen to lead the Second Coming—the collective of children born to Supreme and Foundational gods—not because he was the eldest (that honor belongs to Nasr), but because he embodied perfect obedience, overwhelming power, and instinctive command. Under his leadership, the Second Coming became a formidable force during the War of Gods."
+                },
+                {
+                    name: "The Eternal Rivalry with Zendon",
+                    description: "Malak and Zendon represent two philosophies of power: Authority vs. War, Order vs. Protection, Hierarchy vs. Loyalty. Their rivalry was personal, vicious, and unrelenting. The Zen Brothers ambushed Malak when he returned from visiting Johannth; Malak used water (not his element) to stop all four brothers simultaneously. Malak and Nasr ambushed Zendon in retaliation. Their fights were legendary, their hatred mutual, and when the War of Gods came, their rivalry would have fatal consequences."
+                },
+                {
+                    name: "The Ambiguous Death",
+                    description: "How Malak died remains one of the great mysteries of divine history. Version One: Zendon killed Peregrine and then Malak during the War of Gods. Version Two: Sa'di (Malak's beloved younger brother) accidentally killed Malak in the chaos, caught in the crossfire. Only Tia knows this version is true. She told Sa'di never to reveal it to Al'sekemu. Perhaps both versions are true—Zendon delivered the killing blow to a Malak already dying from Sa'di's crossfire. What is certain: Malak died during the War of Gods, and Al'sekemu orchestrated the Sunarian Ambush that killed all four Zen Brothers in revenge twenty years later."
+                }
+            ],
+
+            personality: "Malak is nice. He is sweet. He is approachable in a way that his father, Al'sekemu, has never been. People who meet Malak expecting the brutality of his father are often disarmed by his pleasant demeanor, his genuine warmth, and his seemingly kind nature. But this pleasantness is not incompatible with his evil. Malak is not cruel, but cruelty is not required for tyranny. He does not enjoy suffering—but he will inflict it without hesitation if ordered. His evil is not the sadistic cruelty of a torturer. It is the banal evil of absolute obedience to corrupt authority. He does terrible things not because he is terrible, but because he follows orders without question. The only time Malak's obedience wavered was for Johannth—he loved her enough to defy Al'sekemu's explicit command to stay away from her.",
+
+            relationships: {
+                withAlsekemu: "Father — the center of Malak's existence. Out of 43 children, Al'sekemu loves Malak most, calls him 'my golden boy,' and showcases him above all others. Al'sekemu sees in Malak what he wished he could have been for Suleiman—the perfect, unquestioning servant. When Malak died, Al'sekemu did not know for twenty years. When he finally learned the truth, his grief became cold rage, and he orchestrated the Sunarian Ambush that killed all four Zen Brothers in revenge.",
+                withTia: "Mother — respectful but distant. Malak belongs entirely to Al'sekemu. Tia is the only one who knows that Sa'di accidentally killed Malak, protecting her youngest son from Al'sekemu's wrath by hiding the truth.",
+                withNasr: "Elder brother — Al'sekemu's greatest disappointment. Malak tried to help Nasr earn their father's approval, but when Nasr violated Order, Malak punched him so hard he couldn't talk for months. Their relationship is defined by Malak trying to help, Nasr failing, Malak punishing. Despite this abuse, they fought together during key moments.",
+                withSadi: "Youngest brother — Malak loved Sa'di with genuine protective affection. Sa'di praised Malak, looked up to him, depended on him. This makes Sa'di's role in Malak's death unbearably tragic. Sa'di accidentally killed Malak during the War of Gods, caught in the crossfire. Only Tia knows. Sa'di carries the guilt silently.",
+                withJohannth: "Wife — the love of Malak's life. The only being for whom he compromised his obedience to Al'sekemu. He saved her from Cris, performed impossible feats for her, showed her the world. Their secret affair lasted over a century until Al'sekemu discovered it. Malak defied his father's orders, hiding their triplets from the gods. Johannth never found that same passionate love again after his death.",
+                withGeni: "Daughter (first of the triplets) — Malak has no relationship with her. Johannth hid the children on Malak's order. Geni probably doesn't know Malak is her father.",
+                withGora: "Daughter (second of the triplets, 'Idolis') — No relationship. Extraordinarily vain, a planet is named after her. She doesn't know Malak.",
+                withTove: "Son (third of the triplets) — No relationship. Tove grew up without knowing who created him.",
+                withTahanne: "One-time affair. Ta'hanne was attracted to Malak's strength and power. They slept together once, Malak wanted more, but Ta'hanne refused, declaring loyalty to Sove.",
+                withTatianna: "Affair before and during her early relationship with Suleiman. Malak pursued her but she chose Suleiman, famously telling Malak: 'It's SULEIMAN!' This rejection stung—to lose a woman to the god his father both served and resented.",
+                withZendon: "Greatest rival and possibly his killer. Their rivalry defined both of them: Authority vs. War, Order vs. Protection, Hierarchy vs. Loyalty. Zendon never let Malak forget that he led only because of his father's name. Their mutual sabotage escalated until the War of Gods, where one or both may have killed him."
+            },
+
+            teaching: "Authority does not negotiate. Order does not apologize. Hierarchy exists independent of individual will. My role is not to question—it is to enforce. When legitimate authority gives an order, obedience is not optional; it is the natural structure of reality asserting itself. Resistance is possible, but resistance is disorder, and disorder must be corrected.",
+
+            essence: "Pleasant tyranny — kindness that serves absolute obedience to corrupt authority",
+
+            nature: "Malak is the paradox of pleasant tyranny. He is nice, sweet, and approachable—but he will kill you without hesitation if ordered to do so. He is not cruel, but cruelty is not required for evil; obedience to evil authority accomplishes the same result. He does not enjoy violence, but violence is simply another form of enforcement, and enforcement is his domain.",
+
+            legacy: "Malak's legacy is written in blood, revenge, and unanswered questions: Leader of the Second Coming who coordinated an entire generation during the War of Gods. The Sunarians used his falcon-and-sunburst emblem. His ambiguous death allows blame to fall where it is most convenient. Al'sekemu's orchestration of the Sunarian Ambush was direct revenge for Malak's death—four of the mightiest gods died in retaliation. Johannth carries his memory as the love of her life. The triplets exist as proof that even the golden boy could love enough to defy. He showed that authority without morality is tyranny, and that the capacity for love does not guarantee the courage to choose it over obedience.",
+
+            philosophy: "Authority is not negotiable. Orders exist independently of will, and hierarchy must be enforced because it is legitimate, not necessarily just. When authority gives an order, obedience follows naturally. I do not question if it's moral or earned, only if it is clear. Enforcing authority is not cruelty but function. I am the extension of my father's will, performing this role without doubt. Even loving her, I couldn't fully choose love over obedience—perhaps my tragedy or simply my nature. As the Prince of Order, if that makes me a villain, so be it. Authority only requires obedience, not approval.",
+
+            characterArc: "Malak never had his own voice. He began with absolute obedience and ended as absolute obedience. The only deviation—his love for Johannth—was hidden, secret, compromised. He never questioned his father. He never wondered if Order might be wrong. He was capable of love, which means he was capable of defiance, which means he could have been more than Al'sekemu's golden boy. But he never extended that love beyond one person. He died before he could become something more. Whether killed by Zendon or Sa'di, whether in glorious combat or chaotic crossfire, Malak died as he lived: following orders, enforcing hierarchy, serving Authority. And perhaps, in his final moment, he thought of Johannth—the only being for whom he had ever compromised his obedience."
+        },
         nasr: {
             name: "Nasr",
             tier: "Minor",
