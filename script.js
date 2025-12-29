@@ -11562,13 +11562,131 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                     characterArc: "Johannth's journey is about learning to balance her natural kindness with the necessary wisdom. She began as genuinely naïve, mistaking attention for affection and obsession for love. Her beauty attracted dangerous attention, and her gentle nature made her vulnerable to manipulation. Through heartbreak, tragedy, political catastrophe, and eventually the patient love of Tevye, she learned that mercy and self-protection are not opposites — they can coexist. She remains the sweetest, kindest, and gentlest of her sisters. But now her sweetness is a choice made with full awareness, not an innocent default."
                 },
                 joath: {
-                    title: "Third Sister - Goddess of the Depths",
-                    attributes: "Mystery, Preservation, The Unconscious, Dreams, Hidden Truths",
-                    symbols: "Deep Ocean Abyss, Sunken Treasures, Sleeping Memories",
-                    description: "Joath governs the depths where memories sleep. In her dark waters lie forgotten dreams, lost treasures, and memories too precious or painful to surface.",
-                    appearance: "The most mysterious of the sisters, appearing as a shadowy figure in the deep waters, surrounded by bioluminescent lights. Her form shifts between visibility and invisibility like something seen deep underwater.",
-                    essence: "The hidden depths of the unconscious",
-                    nature: "Joath is the depths beneath consciousness, the place where everything eventually sinks and rests. She is neither cruel nor kind — she simply keeps what the surface world cannot hold, preserving it in eternal darkness until it's time to remember or let go."
+                    title: "Joath - Goddess of Oceanic Warfare and Time",
+                    fullTitle: "The Relentless Shield, Commander of the Tidelocks, The Siren's Nightmare, Third of the Jodath Trinity",
+                    tier: "Major God",
+                    gender: "Female",
+                    element: "Water, Time",
+                    space: "Oceandom (Sunken Ship), Time Tidal",
+                    alignment: "Lawful Neutral",
+                    sacredAnimal: "Seahorses, Pearled Jellyfish, Sea Turtles, War-Beasts of the Deep",
+                    sacredPlant: "Coral, Sea Pearls, Ocean Jasmine, Blue Lagoon Seaweed",
+                    birthOrder: "5th child of Suleiman",
+                    attributes: "War, Protection, Time, Enforcement, Relentlessness, Combat, Loyalty, Severity, Temporal Pressure, Containment, Proximity Fighting, Eradication, Vigilance",
+                    symbols: "The Tideblade (Blue Lagoon Seaweed weapon), The Ecrmoes Eels (her living hair-guards), The Tidelocks (her elite warriors), The Sunken Ship (her dwelling in Oceandom), Siren Corpses (her eternal war), Temporal Severance (her combat signature)",
+                    description: "Joath exists because peace is not preserved by mercy alone. Where Joth governs balance and Johannth preserves harmony, Joath embodies the truth that some threats must be confronted, hunted, and destroyed before they reach the innocent. She is driven not by bloodlust or glory, but by an unshakable sense of responsibility: if danger exists beneath the waves, it must never reach the surface unchallenged. Joath's philosophy of combat is simple and uncompromising: Evil does not negotiate, Corruption spreads if ignored, Hesitation costs lives. She fights so others do not have to. Joath is a warrior not because she enjoys violence, but because she refuses to let the sea be violated. She sees the ocean as sacred, where predators belong but corrupters do not, and war as containment, not chaos. Her role is to confront threats early, long before mortals know. She leads the Tidelocks, Oceania's elite oceanic fighters, who eliminate danger before it appears. As the embodiment of Time in the Tryel, Joath controls oceanic temporality, protecting Time Tidal, which governs youth and flow. She can travel forward in time and fights to prevent unauthorized time travel.",
+
+                    appearance: {
+                        description: "Joath's deceptive beauty hides lethal intent. Unlike her sisters' inspiring beauty, hers causes enemies to underestimate her, mistaking her for a gentle sister. She embraces her beauty as a weapon, distracting foes before striking. Born with bronze features, she transformed herself with spells and enchanted pearls, dyeing her hair deep red—composed of living Ecrmoes eels, which coil around her head like a deadly crown. Her eyes are cold and calculating, promising violence to threats. She moves with predatory grace, appearing like a goddess, but always ready for combat. Living in a sunken ship within Oceandom, once responsible for Oceanana, she lost her authority after poor performance. Her home is a fortress filled with weapons, war-beasts, and maps, symbolizing her resolve never to fail again.",
+                        form: "Deceptively beautiful warrior whose appearance causes enemies to underestimate her",
+                        hair: "Deep red, composed of living Ecrmoes eels that coil around her head like a deadly crown, serving as constant sentinels and reflexive defenders",
+                        eyes: "Cold and calculating, promising violence to threats",
+                        distinctiveFeatures: "Living hair made of Ecrmoes eels that attack on command and protect her automatically. Lives in a sunken ship within Oceandom that serves as a fortress filled with weapons, war-beasts, and tactical maps",
+                        transformation: "Like her sisters, used Jodami's spells and Oceania's enchanted pearls to transform from bronze-haired daughter of Suleiman into a red-haired mermaid warrior",
+                        presence: "Moves with predatory grace, appearing divine but always combat-ready"
+                    },
+
+                    domains: [
+                        {
+                            name: "Oceanic Warfare",
+                            description: "Joath is the sea's warrior, confronting corruption and threats early. She hunts danger in depths and shadows, focusing on containment and eradication, not glory. Leading the Tidelocks with authority, she eliminates threats before they escalate, preventing corruption and enemies from spreading. She believes war is containment, not chaos, and fights with precision, purpose, and overwhelming force to end threats permanently."
+                        },
+                        {
+                            name: "Time (Temporal Combat Control)",
+                            description: "As the third aspect of the Tryel, Joath's relationship with Time manifests as control over combat-time, rather than reality-time. She can manipulate the flow of moments in battle, creating tactical advantages through temporal pressure. She can accelerate her own movements briefly, slow enemy reactions in short bursts, create moments where attacks land before opponents realize they moved, and lock enemies into 'delayed consequences' where they are struck but feel it a moment later. This makes her terrifying in close combat — she moves between seconds, strikes before reactions occur, and turns the temporal flow of battle itself into a weapon. She protects Time Tidal, the domain within Oceania's realm that governs the foundation of youth and temporal manipulation. She can travel forward in time, but only within the ocean and sea — never on land."
+                        },
+                        {
+                            name: "Siren Eradication",
+                            description: "Joath's greatest and most enduring mission is the complete eradication of Sirens. Where Sirens weaponize beauty to deceive, Joath wields beauty without deception. Where Sirens lure and consume, Joath confronts and eradicates. Their conflicts are ancient, brutal, and personal — fought in trenches, reefs, and shadowed waters where no mortal can witness. Joath is uniquely resistant to sonic manipulation, charm-based magic, and illusion through beauty. Sirens cannot sway her. Their songs fail against her temporal focus and emotional suppression. When Sirens sense Joath's presence, their songs fracture. The war has never truly ended — but Sirens now fear to surface."
+                        },
+                        {
+                            name: "Command of the Tidelocks",
+                            description: "Joath leads the Tidelocks, Oceania's elite oceanic fighters who eliminate danger before it manifests. Under her command, they serve as the ocean's first and last line of defense against corruption, invasion, and temporal violations."
+                        }
+                    ],
+
+                    powers: [
+                        {
+                            name: "Combat-Time Manipulation",
+                            description: "Joath manipulates timing in battle with devastating precision. She can accelerate her movements briefly, slow enemy reactions, create moments where her strikes land before opponents realize she moved, and lock enemies into delayed consequences. This temporal pressure makes her nearly impossible to counter in close combat."
+                        },
+                        {
+                            name: "Temporal Travel (Ocean Only)",
+                            description: "Joath can travel forward in time, but only within oceanic and sea environments. She cannot time travel on land. This power allows her to scout future threats and position defenses before danger arrives."
+                        },
+                        {
+                            name: "Temporal Severance",
+                            description: "Joath can halt regenerative cycles, preventing enemies from healing or recovering. She used this ability to defeat Lagouisha, the Giant Devourer, by cutting through its armored hide and severing its temporal regeneration."
+                        },
+                        {
+                            name: "Command of War-Beasts",
+                            description: "Joath commands sea creatures specifically aligned with warfare — armored leviathans, shock-generating predators, abyssal hunters. This distinguishes her from Joth, who governs all sea animals. Joath's creatures are weapons, not ecosystems."
+                        },
+                        {
+                            name: "Siren Countermeasure",
+                            description: "Joath is uniquely immune to sonic manipulation, charm-based magic, and illusion through beauty. Sirens' songs cannot affect her, making her their perfect predator."
+                        },
+                        {
+                            name: "Proximity Combat Mastery",
+                            description: "Joath fights close, absorbing damage meant for others. She believes distance creates hesitation, and hesitation costs lives. Her combat style is brutal, direct, and uncompromising."
+                        },
+                        {
+                            name: "Ecrmoes Eels (Living Hair-Guards)",
+                            description: "Joath's hair is not adornment — it is composed of Ecrmoes eels, living serpents that serve as constant sentinels and reflexive defenders. They attack on Joath's command and protect her automatically when she is unaware, such as during sleep or surprise attacks. Even when Joath's guard appears down, her defenses are always active."
+                        }
+                    ],
+
+                    weapons: {
+                        primary: "The Tideblade - Joath's weapon is not forged metal but living, flexible, lethal seaweed from the Blue Lagoon. The weapon adapts, flows, and cuts through threats without shattering the environment around it. This reflects her combat doctrine: adapt rather than resist, flow rather than clash, and eliminate threats without destroying what you protect. The Tideblade can cut through divine armor, sever temporal connections, and slice through illusions as easily as flesh.",
+                        livingArmor: "The Ecrmoes Eels - Joath's hair itself serves as armor and weapon. The Ecrmoes eels are manifestations of her constant readiness — they never sleep, never relax, never assume safety. Even when Joath appears vulnerable, she is guarded."
+                    },
+
+                    limitations: "She cannot stop time completely, cannot travel through time outside of the ocean, cannot undo death. Her power is pressure, not paradox.",
+
+                    legendaryFeats: [
+                        {
+                            name: "The Eternal Siren War",
+                            description: "Joath's defining legacy is her unending war against the Sirens. Sirens weaponized beauty, illusion, and song to lure mortals and corrupt oceanic routes. Joath recognized Sirens not as predators but as corruption masquerading as harmony. She led the Tidelocks in relentless purges: collapsing Siren nesting grounds, severing song-channels in abyssal caverns, and executing Siren Matrons personally in trench duels. It is said that when Sirens sense Joath's presence, their songs fracture in fear. The war has never truly ended. Joath hates Sirens with an intensity that borders on obsession. Every time she sees a Siren, she attacks — even when her sisters tell her to be discreet. The hatred is personal: Sirens killed Cocao, her first husband and the father of her daughters Kikio and Kitan. This murder transformed Joath's tactical opposition to Sirens into an eternal vendetta. She will not rest until every Siren is dead."
+                        },
+                        {
+                            name: "The Slaughter Beneath the Still Water",
+                            description: "When abyssal demons breached deep-sea seals during a planar disturbance, Joath was the first responder. She descended alone into pressure zones lethal to most gods, hunted demons in total darkness, and used temporal pressure to strike before attacks manifested. By the time reinforcements arrived, the incursion was already neutralized. The sea above never stirred. No mortal ever knew how close catastrophe had come."
+                        },
+                        {
+                            name: "The Fall of Lagouisha",
+                            description: "Lagouisha, the Giant Devourer of the Deep, was a colossal sea creature that could swallow fleets and crush trenches. Joath fought it alone, cutting through its armor with the Tideblade, using temporal severance to stop its regeneration, causing it to collapse. Its remains form a deserted trench avoided by sea life. The site warns: challenge Joath, and you become geography."
+                        },
+                        {
+                            name: "The Defense of Limaelune (Tevye's Betrayal)",
+                            description: "When Tevye turned on Oceania, Joath immediately sided with Oceania, coordinating Tidelocks with warriors and preventing Tevye's advances. The sea was scarred, but Limaelune remained standing. Joath was seriously injured in battle, one of her rare fierce encounters, and was healed by Johannth using pearls and song, showcasing full Tryel unity. Her loyalty to the Supreme Goddess always took precedence over Tevye."
+                        }
+                    ],
+
+                    personality: "Joath is severe, direct, and uncompromising. She isn't cruel but unsoftened. She has feelings but doesn't indulge them. Emotional expression is inefficient, vulnerability is a weakness, and softness exposes her to enemies. Joath's first instinct is to attack. If something threatens Oceania or behaves unpredictably, she strikes first, believing hesitation costs lives. She won't risk the safety of those she protects for politeness. She tolerates vulnerability but not weakness. Weakness is refusing to act when needed; vulnerability is honest acknowledgment of limits. She respects warriors who know their limits but despises cowards. Joath is socially disinterested, bored by small talk unless it involves threats, tactics, or anomalies. She doesn't engage in pleasantries or pretend to care about irrelevant matters. Among her sisters, Joath is the enforcer. Joth ignores you, Johannth cares, but Joath will hurt you. She acts as a consequence for threats to her family or domain. Her sisters use this strategically — when Takondwa is too aggressive with Joth, all three beat him, with Joath delivering the most brutal strikes. She believes war is containment, not chaos. She fights with precision, purpose, and overwhelming force. She does not duel for honor or sport — she eradicates threats. She chooses proximity over distance because she believes hesitation comes from separation. She absorbs damage meant for others because she would rather be injured than allow harm to reach those she protects.",
+
+                    relationships: {
+                        withSuleiman: "Father — no relationship, deep resentment. Joath has never spoken to her father. She thought that if she remained silent, if she refused to reach out, he would eventually come to her. He never did. This absence created deep resentment that has calcified into hatred over millennia. Joath doesn't know that Suleiman is incapable of understanding emotions. When he sees Joath's hatred, he analyzes it as data, but he never concludes that it stems from his detachment. He doesn't understand that silence was her test, that her refusal to call him 'father' was a challenge, that her distance was a plea for him to prove he cared. Joath doesn't try to maintain a relationship with her father. She actively hates that Johannth still calls him 'father,' viewing it as weakness and denial. To Joath, Suleiman is not her father — he is simply the god who provided genetic material for her existence.",
+                        withJodami: "Mother — severed relationship. After Jodami left Suleiman and married E'kar (Suleiman's right-hand man), Joath was disgusted. Though she hated her father, she thought it was deeply inappropriate that her mother married someone so close to Suleiman. When Jodami began having more children with E'kar, Joath completely severed the relationship. She left her family entirely and went to Oceania with her sisters.",
+                        withHerSisters: "Her world. Joath shares the divine synchronization of the Tryel with her sisters — she can sense their presence, emotions, and needs across any distance. Despite her severity and social disinterest, Joath is fiercely protective of her sisters. She obeys Joth without question, recognizing her eldest sister's authority as Queen of Oceandom. When Joth decides what must be protected, Joath decides how to defend it. Their partnership is seamless — Joth's composed strategy channeled through Joath's relentless execution. She allows Johannth to heal her after battles, one of the few moments when Joath's guard lowers. Accepting healing from Johannth is Joath's way of demonstrating trust and love — she cannot speak softly, but she can receive care. The three sisters are so loyal to each other that they collectively beat up Takondwa (Joth's abusive husband) when he becomes too aggressive. They also kill Tiger (Oceania's son) together in retaliation for his murder of Johannth's husband, Wale.",
+                        withOceania: "The only pure parental relationship in Joath's life. When Joath and her sisters fled their dysfunctional family, Oceania took them in, loved them genuinely, and gave them purpose. The Jodath sisters call Oceania 'mother' because she earned the title through action. Joath looks up to Oceania more than anyone. She would die for Oceania without hesitation, disobey anyone else for her, and annihilate worlds if commanded. During Tevye's betrayal, Joath didn't hesitate for a second — she stood with Oceania and fought against her former lover because Oceania's safety supersedes all other bonds. Joath respects that Oceania is harsh and demanding. She doesn't soften this truth or make excuses for it. To Joath, the sea does not apologize — neither should its guardian.",
+                        withTevye: "Former lover and ultimate betrayal. Joath was in a relationship with Tevye while he was also involved with Oceania. Joath discovered this when she saw them together. Critically, Oceania knew nothing about Joath and Tevye's relationship. When forced to choose, Joath chose Oceania over Tevye without hesitation. She never told Oceania about the relationship, protecting her mother figure from the knowledge. Years later, when Tevye betrayed Oceania and turned against her domain, Joath fought him during the Defense of Limaelune and was gravely injured.",
+                        withUmar: "A love-hate relationship defined by competition. Both constantly tried to outpower each other, comparing feats and accomplishments. Joath ended the relationship violently — she punched Umar in the face and threw him out of the ocean while screaming, 'I'm done with you!' This perfectly encapsulates Joath's approach to relationships: when she's finished, she's finished, and she makes it clear through force.",
+                        withCocao: "First husband and father of her daughters Kikio and Kitan (sea goddesses). Sirens killed Cocao, and this murder transformed Joath's tactical opposition to Sirens into eternal, personal vendetta. Every Siren she kills is vengeance for Cocao. The war will never end until every Siren is dead.",
+                        withDipak: "Joath's most disturbing relationship. She wanted a child with fast-swimming genetics (Dipak's primary trait), but rather than conceiving naturally, she killed Dipak, took his essence, and impregnated herself. This act demonstrates Joath's ruthless pragmatism — she wanted specific genetic traits, so she took them by force and eliminated the inconvenience of a partner. She bore a son named Ndidi, who now rules his father's kingdom in his mother's name.",
+                        withHerChildren: "Kikio & Kitan (sea goddesses) - daughters with Cocao. Ndidi (rules his father's kingdom) - son conceived from Dipak's stolen essence after she killed him."
+                    },
+
+                    teaching: "Hesitation costs lives. Evil does not negotiate. Corruption spreads if ignored. I fight so others do not have to. The ocean is sacred territory, and I am its shield. Distance creates doubt — I fight close, I absorb the damage meant for the innocent, and I do not stop until the threat is eradicated.",
+
+                    essence: "Relentless protection — the warrior who stands between danger and peace",
+
+                    nature: "Joath embodies relentless protection. She is the warrior who stands between danger and peace, who hunts threats before they manifest, who refuses to allow corruption to touch what she guards. She is severe, direct, and utterly uncompromising — not because she lacks compassion, but because she understands that softness in the face of evil is complicity.",
+
+                    legacy: "Joath is feared across oceanic realms as the Siren's Nightmare. She has protected Time Tidal for millennia, led countless campaigns, and eradicated threats before they could reach the surface. Her greatest legacy is showing that protection sometimes requires relentlessness, that mercy isn't the only form of love, and that the guardians who stand between peace and chaos cannot afford to be soft. She demonstrates that love can be expressed through relentless protection, that family is earned through action not blood, and that some wars never end — they simply pause between battles.",
+
+                    philosophy: "I do not fight for glory. I fight because hesitation costs lives, because evil does not negotiate, because corruption spreads if ignored. I am the shield that stands between danger and innocence. I absorb the damage meant for others. I hunt threats at their source. I do not rest, because the sea never rests. And I will not stop until every Siren is dead, every threat is eradicated, and Oceania's domain is secure. This is not cruelty — this is love expressed through relentless protection.",
+
+                    combatPhilosophy: "War is containment, not chaos. I fight with precision, purpose, and overwhelming force. I do not duel for honor or sport — I eradicate threats. When I enter combat, I fight to end it permanently. I choose proximity over distance because hesitation comes from separation. I absorb damage meant for others because I would rather be injured than allow harm to reach those I protect. That Johannth heals me with pearls and song after battle is not weakness — it is the Tryel functioning as intended. Each sister has her role. War never truly ends — it simply pauses between engagements."
                 }
             },
 
