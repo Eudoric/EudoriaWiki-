@@ -15712,7 +15712,7 @@ function renderEudoricWelcome() {
                 <div class="eudoric-stats">
                     <div class="divine-stat-card">
                         <div class="stat-icon">🕊️</div>
-                        <h3>40</h3>
+                        <h3>46</h3>
                         <p>Divine Beings</p>
                     </div>
                     <div class="divine-stat-card">
