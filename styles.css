@@ -3312,21 +3312,33 @@ body {
     transition: background 0.5s ease;
 }
 
-/* Eudoric Divine Background */
+/* Eudoric Divine Background - Bronze/Aged Gold Gradient */
 body.eudoric-mode {
-    background: #0a0806;
+    background: linear-gradient(135deg,
+        #3d2817 0%,      /* Muted bronze - darker, aged */
+        #2a1810 25%,     /* Deep bronze-umber transition */
+        #1a0f08 50%,     /* Dark umber center */
+        #2a1810 75%,     /* Deep bronze-umber transition */
+        #3d2817 100%     /* Muted bronze - darker, aged */
+    );
     background-image:
-        linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(26, 20, 16, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%),
-        linear-gradient(135deg, rgba(205, 127, 50, 0.15) 0%, transparent 50%, rgba(184, 134, 11, 0.15) 100%),
-        radial-gradient(circle at 20% 30%, rgba(205, 127, 50, 0.12) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(184, 134, 11, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 50% 50%, rgba(218, 165, 32, 0.08) 0%, transparent 70%),
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" opacity="0.25"><circle cx="200" cy="150" r="3" fill="%23daa520"/><circle cx="400" cy="250" r="2" fill="%23cd7f32"/><circle cx="600" cy="180" r="4" fill="%23b8860b"/><circle cx="800" cy="300" r="3" fill="%23daa520"/><circle cx="1000" cy="200" r="2" fill="%23cd7f32"/><circle cx="300" cy="450" r="3" fill="%23b8860b"/><circle cx="700" cy="550" r="4" fill="%23daa520"/><circle cx="900" cy="650" r="2" fill="%23cd7f32"/><path d="M100,400 L150,350 L200,400 L150,375 Z" fill="%23daa520" opacity="0.5"/><path d="M500,300 L550,250 L600,300 L550,275 Z" fill="%23cd7f32" opacity="0.5"/><path d="M900,500 L950,450 L1000,500 L950,475 Z" fill="%23b8860b" opacity="0.5"/></svg>'),
-        url('Images/Eudraneth.jpg');
-    background-size: cover, cover, cover, cover, cover, cover, cover;
-    background-position: center, center, center, center, center, center, center;
+        /* Subtle divine glow overlay - very restrained */
+        radial-gradient(ellipse at 50% 30%, rgba(184, 134, 11, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 20% 50%, rgba(205, 127, 50, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(139, 90, 43, 0.06) 0%, transparent 50%),
+        /* Divine metallic sheen - like etched bronze */
+        linear-gradient(135deg, rgba(205, 127, 50, 0.05) 0%, transparent 30%, rgba(184, 134, 11, 0.04) 70%, transparent 100%),
+        /* Base gradient */
+        linear-gradient(135deg,
+            #3d2817 0%,
+            #2a1810 25%,
+            #1a0f08 50%,
+            #2a1810 75%,
+            #3d2817 100%
+        );
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    background-blend-mode: normal, screen, screen, screen, screen, normal, normal;
 }
 
 /* Eudoric Mode Overrides - Maintain Dark Divine Aesthetic */
