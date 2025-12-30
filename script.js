@@ -18758,32 +18758,28 @@ function renderEudoraProfile() {
 // State for Noga Calendar
 let currentNogaMoonIndex = null;
 
-function renderNogaCalendar() {
+function renderNogaCalendar(startMoonIndex) {
     // Get current real-world date to determine default moon
     const now = new Date();
-    const month = now.getMonth();
-    const day = now.getDate();
+    const oneDay = 1000 * 60 * 60 * 24;
 
-    // Map real-world months to Eudorian moons
-    let defaultMoonIndex;
-    switch(month) {
-        case 2: defaultMoonIndex = 0; break; // March - Eudorasis
-        case 3: defaultMoonIndex = 1; break; // April - Primoria
-        case 4: defaultMoonIndex = 2; break; // May - Sera
-        case 5: defaultMoonIndex = 3; break; // June - Maunox
-        case 6: defaultMoonIndex = 4; break; // July - Naimara
-        case 7: defaultMoonIndex = 5; break; // August - Afronox
-        case 8: defaultMoonIndex = 6; break; // September - Eudorine
-        case 9: defaultMoonIndex = 7; break; // October - Suliamun
-        case 10: defaultMoonIndex = 8; break; // November - Naaviemun
-        case 11: defaultMoonIndex = 9; break; // December - Kanythos
-        case 0: defaultMoonIndex = 10; break; // January - Zendariyah
-        case 1: defaultMoonIndex = day <= 19 ? 11 : 12; break; // February
-        default: defaultMoonIndex = 0;
+    // Noga calendar year starts on March 22
+    const march22ThisYear = new Date(now.getFullYear(), 2, 22);
+    const march22LastYear = new Date(now.getFullYear() - 1, 2, 22);
+
+    let daysFromNewYear;
+    if (now >= march22ThisYear) {
+        daysFromNewYear = Math.floor((now - march22ThisYear) / oneDay);
+    } else {
+        daysFromNewYear = Math.floor((now - march22LastYear) / oneDay);
     }
 
-    // Initialize current moon index if not set
-    if (currentNogaMoonIndex === null) {
+    const defaultMoonIndex = Math.floor(daysFromNewYear / 28) % 13;
+
+    // Initialize current moon index
+    if (startMoonIndex !== undefined) {
+        currentNogaMoonIndex = startMoonIndex;
+    } else if (currentNogaMoonIndex === null) {
         currentNogaMoonIndex = defaultMoonIndex;
     }
 
@@ -30022,36 +30018,28 @@ function updateCurrentMoonWidget() {
 
     // Get current date
     const now = new Date();
-
-    // Calculate day of year (1-365/366)
-    const start = new Date(now.getFullYear(), 0, 1);
-    const diff = now - start;
     const oneDay = 1000 * 60 * 60 * 24;
-    const dayOfYear = Math.floor(diff / oneDay) + 1;
 
-    // Each moon is 28 days, starting with Eudorasis on March 1 (day 60 of year)
-    // March 1 = Eudorasis 1
-    const marchFirst = new Date(now.getFullYear(), 2, 1); // March 1
-    const diffFromMarch = now - marchFirst;
-    const daysFromMarchFirst = Math.floor(diffFromMarch / oneDay);
+    // Noga calendar year starts on March 22
+    // Each moon is exactly 28 days
+    const march22ThisYear = new Date(now.getFullYear(), 2, 22); // March 22 of current year
+    const march22LastYear = new Date(now.getFullYear() - 1, 2, 22); // March 22 of last year
 
     // Calculate which moon (0-12) and which day within that moon (1-28)
     let moonIndex;
     let dayInMoon;
+    let daysFromNewYear;
 
-    if (daysFromMarchFirst >= 0) {
-        // From March 1 onwards in current year
-        moonIndex = Math.floor(daysFromMarchFirst / 28);
-        dayInMoon = (daysFromMarchFirst % 28) + 1;
+    if (now >= march22ThisYear) {
+        // From March 22 onwards in current year
+        daysFromNewYear = Math.floor((now - march22ThisYear) / oneDay);
     } else {
-        // Before March 1 (January-February)
-        // We're in the moons from previous cycle
-        // Days from March 1 of previous year
-        const prevYearMarchFirst = new Date(now.getFullYear() - 1, 2, 1);
-        const daysFromPrevMarch = Math.floor((now - prevYearMarchFirst) / oneDay);
-        moonIndex = Math.floor(daysFromPrevMarch / 28);
-        dayInMoon = (daysFromPrevMarch % 28) + 1;
+        // Before March 22 (we're in the previous Noga year that started last March 22)
+        daysFromNewYear = Math.floor((now - march22LastYear) / oneDay);
     }
+
+    moonIndex = Math.floor(daysFromNewYear / 28);
+    dayInMoon = (daysFromNewYear % 28) + 1;
 
     // Wrap around if moonIndex exceeds 12 (there are 13 moons: 0-12)
     moonIndex = moonIndex % 13;
