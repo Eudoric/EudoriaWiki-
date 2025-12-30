@@ -30022,37 +30022,49 @@ function updateCurrentMoonWidget() {
 
     // Get current date
     const now = new Date();
-    const month = now.getMonth(); // 0-11 (January = 0, December = 11)
-    const day = now.getDate(); // 1-31
 
-    // Map real-world months to Eudorian moons
+    // Calculate day of year (1-365/366)
+    const start = new Date(now.getFullYear(), 0, 1);
+    const diff = now - start;
+    const oneDay = 1000 * 60 * 60 * 24;
+    const dayOfYear = Math.floor(diff / oneDay) + 1;
+
+    // Each moon is 28 days, starting with Eudorasis on March 1 (day 60 of year)
+    // March 1 = Eudorasis 1
+    const marchFirst = new Date(now.getFullYear(), 2, 1); // March 1
+    const diffFromMarch = now - marchFirst;
+    const daysFromMarchFirst = Math.floor(diffFromMarch / oneDay);
+
+    // Calculate which moon (0-12) and which day within that moon (1-28)
     let moonIndex;
+    let dayInMoon;
 
-    switch(month) {
-        case 2: moonIndex = 0; break; // March - Eudorasis
-        case 3: moonIndex = 1; break; // April - Primoria
-        case 4: moonIndex = 2; break; // May - Sera
-        case 5: moonIndex = 3; break; // June - Maunox
-        case 6: moonIndex = 4; break; // July - Naimara
-        case 7: moonIndex = 5; break; // August - Afronox
-        case 8: moonIndex = 6; break; // September - Eudorine
-        case 9: moonIndex = 7; break; // October - Suliamun
-        case 10: moonIndex = 8; break; // November - Naaviemun
-        case 11: moonIndex = 9; break; // December - Kanythos
-        case 0: moonIndex = 10; break; // January - Zendariyah
-        case 1: moonIndex = day <= 19 ? 11 : 12; break; // February
-        default: moonIndex = 0;
+    if (daysFromMarchFirst >= 0) {
+        // From March 1 onwards in current year
+        moonIndex = Math.floor(daysFromMarchFirst / 28);
+        dayInMoon = (daysFromMarchFirst % 28) + 1;
+    } else {
+        // Before March 1 (January-February)
+        // We're in the moons from previous cycle
+        // Days from March 1 of previous year
+        const prevYearMarchFirst = new Date(now.getFullYear() - 1, 2, 1);
+        const daysFromPrevMarch = Math.floor((now - prevYearMarchFirst) / oneDay);
+        moonIndex = Math.floor(daysFromPrevMarch / 28);
+        dayInMoon = (daysFromPrevMarch % 28) + 1;
     }
+
+    // Wrap around if moonIndex exceeds 12 (there are 13 moons: 0-12)
+    moonIndex = moonIndex % 13;
 
     const currentMoon = moons[moonIndex];
     const currentHolidays = holidays[moonIndex] || [];
 
     // Find upcoming holidays and check if today is a holiday
     const upcomingHolidays = currentHolidays
-        .filter(h => h.day >= day)
+        .filter(h => h.day >= dayInMoon)
         .slice(0, 2);
 
-    const todayHoliday = currentHolidays.find(h => h.day === day);
+    const todayHoliday = currentHolidays.find(h => h.day === dayInMoon);
 
     // Update widget
     const iconElement = document.getElementById('moonWidgetIcon');
