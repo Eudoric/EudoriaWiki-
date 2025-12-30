@@ -30069,18 +30069,31 @@ function updateCurrentMoonWidget() {
     // Update widget
     const iconElement = document.getElementById('moonWidgetIcon');
     const nameElement = document.getElementById('moonWidgetName');
+    const dateElement = document.getElementById('moonWidgetDate');
     const zodiacElement = document.getElementById('moonWidgetZodiac');
     const holidaysElement = document.getElementById('moonWidgetHolidays');
+    const linkElement = document.getElementById('moonWidgetLink');
 
-    if (iconElement && nameElement && zodiacElement && holidaysElement && currentMoon) {
+    if (iconElement && nameElement && dateElement && zodiacElement && holidaysElement && currentMoon) {
         iconElement.textContent = currentMoon.icon;
         nameElement.textContent = currentMoon.name;
+
+        // Display today's date
+        dateElement.textContent = `${dayInMoon}${getDaySuffix(dayInMoon)}`;
 
         // Display zodiac
         zodiacElement.innerHTML = `
             <span class="zodiac-symbol">${currentMoon.zodiac.symbol}</span>
             <span class="zodiac-sign">${currentMoon.zodiac.sign}</span>
         `;
+
+        // Update the link to open to current moon
+        if (linkElement) {
+            linkElement.onclick = function() {
+                renderNogaCalendar(moonIndex);
+                return false;
+            };
+        }
 
         // Display holidays
         let holidaysHTML = '';

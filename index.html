@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Eudoria Wiki</title>
-    <link rel="stylesheet" href="styles.css?v=1767050364">
+    <link rel="stylesheet" href="styles.css?v=1767054841">
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <style>
         #relationshipMap {
@@ -34,7 +34,7 @@
                     <button class="mode-tab" data-mode="eudoric">Eudoric</button>
                 </div>
             </div>
-            
+
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Search Eudoria..." />
                 <div id="searchResults" class="search-results" style="display: none;">
@@ -47,6 +47,7 @@
                 <div class="moon-widget-header">Current Moon</div>
                 <div class="moon-widget-icon" id="moonWidgetIcon">🌿</div>
                 <div class="moon-widget-name" id="moonWidgetName">Eudorasis</div>
+                <div class="moon-widget-date" id="moonWidgetDate">1st</div>
                 <div class="moon-widget-zodiac" id="moonWidgetZodiac">
                     <span class="zodiac-symbol">🌱</span>
                     <span class="zodiac-sign">ISRA</span>
@@ -54,7 +55,7 @@
                 <div class="moon-widget-holidays" id="moonWidgetHolidays">
                     <div class="holiday-upcoming-label">Loading...</div>
                 </div>
-                <a href="#" class="moon-widget-link" onclick="renderNogaCalendar(); return false;">View Full Calendar →</a>
+                <a href="#" class="moon-widget-link" id="moonWidgetLink" onclick="renderNogaCalendar(); return false;">View Full Calendar →</a>
             </div>
 
             <nav class="nav-menu">
@@ -225,6 +226,6 @@
         <span class="back-to-top-text">Top</span>
     </button>
 
-    <script src="script.js?v=1767054499"></script>
+    <script src="script.js?v=1767054841"></script>
 </body>
 </html>

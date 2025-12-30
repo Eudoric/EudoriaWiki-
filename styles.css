@@ -3523,6 +3523,15 @@ body.eudoric-mode h3 {
     font-family: 'Cinzel', serif;
 }
 
+.moon-widget-date {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0.25rem 0 0.5rem 0;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.05em;
+}
+
 .moon-widget-meaning {
     font-size: 0.85rem;
     color: var(--text-secondary);
