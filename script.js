@@ -27170,6 +27170,14 @@ function showRegionDetail(regionId, unionKey) {
                 </div>
             ` : ''}
 
+            ${regionId === 'xuerai' ? `
+            <div class="detail-section" style="background: rgba(100, 149, 237, 0.1); border-left: 4px solid #6495ED; padding: 1rem; margin-bottom: 1.5rem; border-radius: 0 0.5rem 0.5rem 0;">
+                <h3 style="color: #6495ED; margin-top: 0;">The Spirits of Xuerai</h3>
+                <p>Deep within Xuerai lie the bound spirits of ancient chaos. Learn about the legends of the frozen north.</p>
+                <button onclick="renderChaoticSpirits()" style="background: var(--bg-primary); color: var(--accent-primary); border: 1px solid var(--accent-primary); padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-family: 'Cinzel', serif; margin-top: 10px;">Read about the Chaotic Spirits →</button>
+            </div>
+            ` : ''}
+
             ${region.culture ? `
                 <div class="detail-section">
                     <h3>Culture</h3>
@@ -30551,3 +30559,46 @@ function resetRelationshipMap() {
     });
     network.fit();
 }
+function renderChaoticSpirits() {
+    const contentArea = document.getElementById('contentArea');
+
+    // Generate breadcrumbs
+    const breadcrumbs = generateBreadcrumbs([
+        { name: 'Home', onclick: 'showWelcomeScreen()' },
+        { name: 'The Four Chaotic Spirits', onclick: '' }
+    ]);
+
+    // Generate See Also links
+    const seeAlsoLinks = [
+        { name: 'Eckio - God of Xuerai and Spirits', onclick: 'showGodDetail("eckio")' },
+        { name: 'Xuerai Region', onclick: 'loadView("xuerai")' },
+        { name: 'Sì Líng Zhuān', onclick: 'renderLocationDetail("si-ling-zhuan")' }
+    ];
+    const seeAlso = generateSeeAlso(seeAlsoLinks);
+
+    // Generate categories
+    const categories = ['Spirits & Guardians', 'Ancient Demons', 'Xuerai', 'Chaotic Spirits', 'Eckio'];
+    const categoriesHTML = generateCategories(categories);
+
+    contentArea.innerHTML = `
+        <div class="region-detail">
+            ${breadcrumbs}
+
+            <h1 class="wiki-title">The Four Chaotic Spirits of Xuerai</h1>
+            <p class="wiki-subtitle">Ancient malevolent entities contained by Eckio</p>
+
+            <!-- OVERVIEW SECTION -->
+            <details open style="margin: 1.5rem 0; border: 3px solid var(--accent-primary); border-radius: 0.5rem; padding: 1rem; background: var(--bg-tertiary);">
+                <summary style="cursor: pointer; font-weight: 600; color: var(--accent-primary); font-size: 1.2rem;">▶ Overview</summary>
+                <div style="margin-top: 1rem;">
+                    <p>The Four Chaotic Spirits are ancient, malevolent entities that embody the darkest aspects of mortal nature:</p>
+                    <ul>
+                        <li><strong style="color: #dc2626;">Lóng Wáng (龙王) - The Dragon King:</strong> Power-hungry desire</li>
+                        <li><strong style="color: #3b82f6;">Xing Troll - The Rage Incarnate:</strong> Destructive rage</li>
+                        <li><strong style="color: #000;">Junpei Bear - The Devourer:</strong> Wild animalistic impulses</li>
+                        <li><strong style="color: #a855f7;">Kanata Mask - The Silent Death:</strong> Chaotic instability</li>
+                    </ul>
+                    <p>These spirits once terrorized the region of Xuerai until <strong>Eckio, the God of Xuerai and Spirits</strong>, contained them within four sacred pillars at Sì Líng Zhuān to protect the world from their corrupting influence.</p>
+                    <p>High in the unyielding frost of northern Xuerai sits <strong>Sì Líng Zhuān</strong>, the sacred and accursed expanse where the four chaotic spirits were bound. The land itself seems carved from old fear—silent, wind-torn, and utterly exposed to the winter sky. It lies just beyond the Hu Guiying Forest, a place whispered about in taverns and temples, where even seasoned warriors admit they've heard laughter with no source or encountered footsteps that never leave prints.</p>
+                </div>
+            </details>
