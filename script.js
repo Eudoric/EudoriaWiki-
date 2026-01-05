@@ -11305,10 +11305,10 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
             alignment: "Lawful Neutral",
             sacredAnimal: "Seahorses, Pearled Jellyfish, Sea Turtles",
             sacredPlant: "Coral, Sea Pearls, Ocean Jasmine",
-            titles: ["The Three Oceanic Guardians", "The Trinity of the Deep", "Daughters Who Chose Their Mother"],
-            attributes: ["Balance", "Mercy", "Protection", "Oceanic Stewardship", "Transformation", "Loyalty", "Choice"],
-            symbols: ["Three Waves", "Red Hair (Transformation)", "The Tryel (Divine Synchronization)", "Oceania's Chosen"],
-            description: "The Jodath Sisters are three divine sea goddesses born from Suleiman and Jodami — a union marked not by love but by absence. Born as the 3rd, 4th, and 5th children of Suleiman, they knew their father only as a title, never as a presence. They are not merely Oceania's servants — they are her chosen daughters, her most trusted guardians, and the embodiment of the ocean's three-fold nature: balance, mercy, and relentless protection. They rejected their father's absence, their mother's dysfunction, and the bronze legacy of Eudraneth. They transformed themselves with red hair and became the Tryel embodied — the most faithful daughters Oceania ever had. Together, they prove that family is defined not by blood but by choice, and that three sisters who choose each other are more powerful than any force that tries to break them apart.",
+            titles: ["The Three Sea Sisters", "Goddesses of the Tides of Emotion", "The Triple Waters"],
+            attributes: ["Emotion", "Tides", "Peace", "Passion", "Memory", "Balance"],
+            symbols: ["Three Waves", "Floating Temples", "The Moon's Reflection on Water"],
+            description: "The Jodath Sisters are triplet goddesses who rule the tides of emotion together. Joth commands calm seas and peace, Johannth commands storms of love and heartbreak, and Joath governs the depths where memories sleep. Together, they embody the full spectrum of emotional experience — from tranquil stillness to passionate intensity to the hidden depths of the unconscious.",
 
             sisters: {
                 joth: {
@@ -11430,263 +11430,22 @@ Dubaku — **The Ancient Foundation Who Learned That Tradition and Mercy Can Bui
                     philosophy: "The ocean speaks to those who listen. Balance is not control - it is understanding. Every creature has instinct, every ecosystem has rhythm. My role is not to dominate but to align, not to rule but to steward. Struggle is necessary for growth, but extinction serves no purpose. I ensure that life continues, adapts, and thrives - even when I cannot do the same for myself."
                 },
                 johannth: {
-                    title: "Johannth - Goddess of Safe Passage and Pearls",
-                    fullTitle: "The Sea Savior, The Woman with Gills, The One Who Sings You Home, Queen of Pearls, Mother of Clams",
-                    tier: "Major God",
-                    gender: "Female",
-                    element: "Water, Light",
-                    space: "Merlotia, Merlot",
-                    alignment: "Lawful Neutral",
-                    sacredAnimal: "Seahorses, Pearled Jellyfish, Sea Turtles",
-                    sacredPlant: "Coral, Sea Pearls, Ocean Jasmine",
-                    birthOrder: "4th child of Suleiman",
-                    attributes: "Mercy, Beauty, Safe Passage, Rescue, Harmony, De-escalation, Preservation, Song, Guidance, Calm, Navigation, Survival, Compassion, Pearl Creation, Threshold Balance",
-                    symbols: "The Singing Horizon (her rescue phenomenon), Glowing Pearls (vessels of preservation), Giant Clams (her resting place), The Woman with Gills (her mortal manifestation), Calm Corridors (paths through storms), The Merlottas (singing mermaids of her domain)",
-                    description: "Johannth embodies the ocean's mercy, beauty, and safe return. While her sisters govern life beneath the waves and defend the sea from corruption, Johannth ensures the ocean remains welcoming to life beyond it. She protects humans not out of superiority, but because they're vulnerable — a divine condition, not a flaw. She believes life should follow its natural course. Storms and currents are part of the truth, but unnecessary loss isn't. Oceania taught Johannth that the sea must be mighty, not cruel without reason. She mediates between ocean law and mortal survival. As the embodiment of Harmony within the Tryel, Johannth maintains balance at the threshold — where sea meets shore, danger meets deliverance, beauty prevents fear from turning to despair. She preserves surface ecosystems, guides currents, calms storms, and keeps the sea navigable. Known as the Queen of Pearls and Mother of Clams, pearls symbolize the sea's endurance — beauty through irritation, patience, and time. Her domain, Merlotia, is a floating kingdom of pearl beds, clam sanctuaries, and merlottas where singing mermaids dwell, where preservation is sacred.",
-
-                    appearance: {
-                        description: "Johannth's beauty is legendary, celebrated in songs, wars, and myths. She is regarded as the most beautiful goddess, radiating a soul-like glow that inspires obsession and conflict, even leading to a ban by Ta'hanne, the Earth goddess. Her transformation when entering Oceania's service involved dyeing her bronze hair with spells and pearls, becoming a mermaid tied to the ocean. Her red hair flows like silk, and her eyes reflect tropical waters, exuding warmth and vitality. In human form, she has faint gills and a beauty described as 'too perfect to be mortal, but too kind to be frightening.' She sleeps peacefully in a giant clam, surrounded by pearls and singing merlottas, embodying serenity in her domain.",
-                        form: "Legendary beauty radiating a soul-like glow, regarded as the most beautiful goddess in existence",
-                        hair: "Red hair flowing like silk (originally bronze, transformed using Jodami's spells and Oceania's pearls)",
-                        eyes: "Reflect tropical waters, exuding warmth and vitality",
-                        distinctiveFeatures: "In human form, displays faint gills on her neck. Sleeps in a giant clam surrounded by pearls and singing merlottas. Her beauty is both gift and burden, inspiring obsession and conflict among gods",
-                        transformation: "Like her sisters, used Jodami's spells and Oceania's enchanted pearls to transform from bronze-haired daughter of Suleiman into a red-haired mermaid devoted to the ocean"
-                    },
-
-                    domains: [
-                        {
-                            name: "Safe Passage",
-                            description: "Johannth governs transitional survival — the space between danger and deliverance. She oversees shipwrecks, drifting vessels, broken navigation, and disorientation at sea. She can subtly redirect currents toward land, hold ships in place during storms, create calm corridors through chaos, and ensure survivors remain afloat longer than should be possible. Her power does not eliminate danger, but it buys time — the precious moments between disaster and rescue that determine whether life continues."
-                        },
-                        {
-                            name: "Storm Moderation (Delegated by Oceania)",
-                            description: "Johannth does not create storms for punishment. Oceania granted her the authority to moderate storms because Johannth understands when mercy preserves balance rather than disrupting it. She can weaken storms without dispersing them, delay impact, soften waves, and open calm pockets within violent seas. This power does not cancel danger — it transforms catastrophe into a survivable challenge."
-                        },
-                        {
-                            name: "Pearl Dominion",
-                            description: "Pearls under Johannth's governance are vessels of preservation, crystallized mercy, and memory anchors. She governs pearl formation, pearl properties, and pearl activation. Each type serves a specific purpose: Preservation Pearls (store warmth, breath, strength), Memory Pearls (absorb final thoughts or prayers), Calm Pearls (emit soothing frequencies that prevent panic), Guiding Pearls (glow when land is near, respond to Johannth's song). Pearls are not mere treasures — they are living tools of mercy, each one a promise that the sea remembers those who suffer within it."
-                        },
-                        {
-                            name: "Merlotia - The Floating Kingdom",
-                            description: "Johannth rules Merlotia, a domain within the larger region of Merlot. Merlotia is a floating kingdom of pearl beds, living clams, and sanctuaries for the merlottas — the singing mermaids who serve Johannth and carry her songs across the waves. In Merlotia, preservation is as sacred as protection. The kingdom exists at the threshold between deep ocean and navigable waters, perfectly positioned to intervene when mortals cross into danger."
-                        }
-                    ],
-
-                    powers: [
-                        {
-                            name: "Authority of Safe Passage",
-                            description: "Johannth can redirect currents toward land, hold ships steady during storms, create calm corridors through chaotic seas, and ensure survivors float longer than physics should allow. She governs the moments between disaster and rescue."
-                        },
-                        {
-                            name: "Storm Moderation",
-                            description: "Granted by Oceania, Johannth can weaken storms without fully dispersing them, delay their impact, soften waves, and open pockets of calm within violent weather. She does not eliminate danger, but makes it survivable."
-                        },
-                        {
-                            name: "Pearl Creation & Dominion",
-                            description: "Johannth creates pearls with specific properties — preservation, memory, calm, and guidance. She governs their formation, activation, and purpose. Her pearls are scattered across the world's oceans, silent guardians waiting to preserve life."
-                        },
-                        {
-                            name: "Linguistic Adaptation",
-                            description: "Johannth learns human languages by listening, emphasizing her listening-first approach as essential to her merciful nature. She can't speak what she hasn't heard but can mimic accents, tones, and voices to comfort others. When no words are spoken, she uses song, tone, rhythm, and dolphin-like calls. She adapts to humans instead of expecting them to adapt to her."
-                        },
-                        {
-                            name: "Human-Form Manifestation",
-                            description: "Johannth appears human to prevent panic among those she rescues, showing faint gills on her neck to mark her as different, yet acting human enough to comfort. She speaks softly, often in the rescued person's language or in a loved one's voice, to ease fear."
-                        },
-                        {
-                            name: "Threshold Intervention",
-                            description: "Johannth can intervene just before death by drowning, her most sacred power — stepping between life and death to save someone. It requires perfect timing and costs her greatly, but she uses it when needed."
-                        },
-                        {
-                            name: "The Singing Horizon",
-                            description: "Johannth's legendary power makes the sea quiet, panic fade, and land appear where it shouldn't. Her song doesn't command but helps the dying breathe, hope, and survive. Each hears it differently, but all feel forgiveness, peace, and a will to live."
-                        },
-                        {
-                            name: "Healing Through Song and Pearl",
-                            description: "Johannth is the healer of her sisters. She uses song and dissolving pearls to heal wounds instantly. When Joath returns from battle injured, Johannth places a pearl on the wound and sings — the pearl dissolves, and the injury closes as if it never existed."
-                        },
-                        {
-                            name: "Last Resort — Ocean Wrath",
-                            description: "Johannth avoids violence but is not powerless. When harmony is beyond repair, mercy exhausted, and balance demands action, she can unleash devastating waves and storms. She does not use this power for punishment—only to restore balance after all other options fail."
-                        }
-                    ],
-
-                    legendaryFeats: [
-                        {
-                            name: "The Singing Horizon",
-                            description: "Countless survivors across different ages describe the same phenomenon: the sea goes quiet, panic fades, singing begins, and land appears where none should exist. Those rescued say the song did not command them or lure them — it simply reminded them how to breathe. Scholars later named this recurring miracle 'The Singing Horizon,' though they cannot explain how one goddess can be in so many places at once. The truth is that Johannth follows suffering wherever it calls to her."
-                        },
-                        {
-                            name: "The Woman with Gills",
-                            description: "Fisherfolk and traders across the world tell stories of a woman who emerges from the water bearing faint gills along her neck, speaks in their own language (though imperfectly), and leads them calmly to shore. She never asks for thanks. She never stays. The stories disagree on her face — but never on her kindness. This myth spread so widely that 'The Woman with Gills' became a prayer among sailors: 'May the Woman with Gills find me if I fall.'"
-                        },
-                        {
-                            name: "The Pearl of the Last Breath",
-                            description: "A dying sailor clutched a glowing pearl found near a wreck site. The pearl preserved his final breath, kept his body alive long enough to reach shore, and dissolved once he survived. The pearl was never found again. From this myth came the belief: 'Pearls are the sea's way of letting go.' Memorial pearls are now placed at grave sites and shrines across coastal communities, honoring those lost at sea."
-                        },
-                        {
-                            name: "Teaching Naime",
-                            description: "When Al'sekemu stripped Naime of her powers, it was Johannth who transformed her into a sea goddess. Oceania brought Naime into her domain to teach her the ocean's laws, but it was Johannth who took Naime to Merlotia and actually trained her. This is why Naime's beauty became otherworldly — she was trained under Johannth, the most beautiful goddess in existence. History credits Oceania with Naime's transformation, but those who know the truth understand it was Johannth's mentorship that made Naime what she became."
-                        },
-                        {
-                            name: "The Testimony of the Rescued",
-                            description: "'I followed the song because it felt like being forgiven.' This phrase appears in survivor accounts across cultures, languages, and centuries. No one can explain why the same sentiment appears in different words. Still, all those Johannth has rescued describe the experience as receiving forgiveness for something they didn't know they needed forgiveness for."
-                        }
-                    ],
-
-                    personality: "Johannth's sweetness is intentional, not naïve — though for much of her existence, naïveté colored her interactions with others. She understands fear intimately and has learned to respond with de-escalation. When she rescues humans, she appears in human form so they won't panic, sings softly to slow their breathing, and speaks gently or mimics familiar voices. Her sweetness manifests as active de-escalation of trauma. Johannth is a helper by nature. She does not wait to be asked. She follows ships quietly, watches coastlines, listens for desperation, and intervenes before disaster becomes tragedy. She helps not because she must, but because she cannot ignore suffering. This is why mortals call her The Sea Savior, The Woman with Gills, The One Who Sings You Home. She is fascinated by humans. She listens to their languages, learns words by hearing them spoken, mimics accents and tones, and remembers names. Her inability to speak human language until she hears it first is not a weakness — it shows that she listens before she speaks, a fundamental expression of her merciful nature. Among her sisters, Johannth is the calmest and gentlest. While Joth will simply ignore you and Joath will hurt you, Johannth will make sure you are okay. She is the healer of the trinity, always ready with a song and a dissolving pearl to mend Joath's battle wounds or soothe Joth's rare moments of distress. However, Johannth's beauty and initial naïveté made her vulnerable to manipulation. For much of her existence, she mistook attention for love, kindness for genuine affection. She could not distinguish between those who loved her and those who simply wanted to possess her beauty. Through heartbreak, tragedy, political catastrophe, and eventually the patient love of Tevye, she learned that mercy and self-protection are not opposites — they can coexist. She remains the sweetest, kindest, and gentlest of her sisters. But now her sweetness is a choice made with full awareness, not an innocent default.",
-
-                    relationships: {
-                        withSuleiman: "Father — complicated relationship. Unlike her sisters, Johannth is the only one who calls him 'father' rather than 'Suleiman.' She tries to maintain a relationship with him despite his being perpetually too busy. She understands his position — he is a Supreme God responsible for Eudraneth itself, constantly occupied with duties far beyond family. Though she wishes he could be there for her more, she has learned to accept his limitations. It took over 500 years before Suleiman could admit that he loved Johannth. He is a god who never expresses emotions through words. But when giants attacked Johannth, it was Suleiman who came to protect her — showing his love through action rather than speech. That single moment of protection meant more to Johannth than centuries of absent affection. She knows he loves her, even if he cannot say it.",
-                        withJodami: "Mother — extremely close relationship. Jodami and Johannth are like two peas in a pod. Jodami favors Johannth above her other daughters, though whether this is because of Johannth's extraordinary beauty or her gentle nature remains debated. Despite this favoritism, Johannth chose to leave her mother to be with her sisters when they entered Oceania's service — demonstrating that her loyalty to the trinity supersedes even maternal bonds.",
-                        withHerSisters: "Her world. Johannth would do anything for her sisters. They share the divine synchronization of the Tryel, able to sense each other's presence, emotions, and needs across any distance. Johannth is the healer and emotional anchor of the trinity — she soothes Joath's battle rage, draws Joth out of her cold detachment, and binds them together with her songs. When Joath returns wounded from battle, it is Johannth who places dissolving pearls on the injuries and sings them closed. When Joth becomes too isolated in her composed authority, it is Johannth who reminds her that connection matters. The three sisters are inseparable, and Johannth's gentle presence balances her sisters' harsher edges. The sisters are so loyal to each other that they helped Johannth kill Tiger (Oceania's son) in retaliation for his murder of Johannth's husband, Wale.",
-                        withOceania: "Like her sisters, Johannth entered Oceania's service after Jodami and Suleiman's breakup. Oceania granted Johannth authority over storm moderation and safe passage, recognizing her unique capacity for mercy paired with wisdom. Oceania respects Johannth's work at the threshold between ocean and shore.",
-                        withMalak: "The love of Johannth's life. Their relationship was the most controversial in divine history — Suleiman's daughter with Al'sekemu's son, uniting two bitter enemies through love. Al'sekemu was so disgusted by this union that he almost disowned Malak. Despite the political nightmare their relationship created, Johannth and Malak shared genuine love. They had three children together (triplets): Geni (Goddess of Sacred Knowledge & Beauty), Gora (Goddess of Children), and Tove (God of Manifesting & Prosperity). After Malak's death, Johannth never found that same passionate love again.",
-                        withSove: "An affair after Malak's death that caused catastrophic consequences. When Ta'hanne (Supreme Goddess of Earth) learned that her husband was involved with a young sea goddess, she demanded Oceania curse Johannth's beauty. When Oceania refused, Ta'hanne banned Oceania and her entire domain — this is why Oceania was not present during the War of Gods. Ta'hanne then attempted to curse Johannth herself, but Johannth fled deep into the sea where Ta'hanne's power could not reach. This affair sparked a conflict between two Supreme Goddesses.",
-                        withTiger: "An affair that ended in tragedy. Tiger (son of Oceania) became deeply, dangerously obsessed with Johannth. He later killed Johannth's husband Wale in his sleep out of jealous rage. In retaliation, Johannth and her sisters hunted down and killed Tiger, proving that even the goddess of mercy has limits when those she loves are murdered.",
-                        withWale: "Johannth's first faithful husband after Malak. She settled with Wale, seeking peace and stability. But Tiger's obsession had not ended — he killed Wale in his sleep, leading to Tiger's own death at the hands of the three sisters.",
-                        withTurk: "Current husband — the longest and healthiest relationship of Johannth's existence. Though Turk (son of Tevye, the Foundational God) is not the passionate love that Malak was, he is patient, kind, and most importantly, he taught Johannth how not to be naïve. He showed her how to recognize manipulation, how to protect herself while remaining kind, how to distinguish genuine love from obsessive desire. They have 12 children together, including Orksar (God of Tides & Seaweed) and Fike (God turned Sea Demon). Turk represents Johannth's growth — the understanding that healthy love is not always the most intense, but it is the most sustainable.",
-                        withNaime: "Mentee. When Al'sekemu stripped Naime of her powers, Johannth transformed her into a sea goddess. Though history credits Oceania with teaching Naime, it was actually Johannth who took Naime to Merlotia and trained her in the ocean's ways. This is why Naime's beauty became otherworldly — the most beautiful goddess in existence mentored her. Johannth saw potential in Naime and gave her a second chance at divinity, demonstrating her capacity for mercy even toward those who had fallen."
-                    },
-
-                    teaching: "Vulnerability is not weakness — it is the divine condition that makes life precious. The sea is mighty, but it need not be cruel. I exist at the threshold between danger and deliverance, and I choose mercy whenever balance allows. Every life deserves the chance to complete its natural course.",
-
-                    essence: "Intentional kindness — mercy that chooses to act rather than weak mercy",
-
-                    nature: "Johannth represents intentional kindness — mercy that chooses to act rather than weak mercy. She understands fear intimately and responds with de-escalation rather than domination. Where Joath ends threats, and Joth prevents collapse, Johannth prevents terror from becoming trauma.",
-
-                    legacy: "Johannth is worshipped across every coastal culture as The Sea Savior, The One Who Sings You Home. Her pearls are found in shrines and on ships, her songs are whispered as prayers, and her beauty is immortalized in art and poetry. She taught Naime, mentored countless merlottas, and created the systems that allow humans to survive the ocean's dangers. But perhaps her most significant legacy is showing that kindness is not the same as weakness, that beauty is both a gift and a burden, and that mercy — true mercy — requires the wisdom to know when to save and when to let the ocean take its course.",
-
-                    philosophy: "I rescue not because you deserve it, but because life deserves the chance to continue. The sea is mighty, but it need not be cruel without reason. I exist at the threshold where fear meets hope, where drowning meets breathing, where beauty prevents despair. And I will always choose mercy — when balance allows.",
-
-                    characterArc: "Johannth's journey is about learning to balance her natural kindness with the necessary wisdom. She began as genuinely naïve, mistaking attention for affection and obsession for love. Her beauty attracted dangerous attention, and her gentle nature made her vulnerable to manipulation. Through heartbreak, tragedy, political catastrophe, and eventually the patient love of Tevye, she learned that mercy and self-protection are not opposites — they can coexist. She remains the sweetest, kindest, and gentlest of her sisters. But now her sweetness is a choice made with full awareness, not an innocent default."
+                    title: "Second Sister - Goddess of Storms",
+                    attributes: "Passion, Love, Heartbreak, Intensity, Storm, Emotion",
+                    symbols: "Crashing Waves, Lightning on Water, Tempest Heart",
+                    description: "Johannth commands the storms of love and heartbreak. Her waters crash and roar with the intensity of passionate emotion.",
+                    appearance: "A fierce and beautiful figure surrounded by churning waters and storm clouds. Her eyes flash like lightning over turbulent seas, and her hair whips wildly like wind-driven waves.",
+                    essence: "Raw emotional intensity",
+                    nature: "Johannth represents the beautiful danger of deep emotion — the storms that break us and remake us. She is both the ecstasy of love and the agony of loss, reminding mortals that to feel deeply is to live fully, even when it hurts."
                 },
                 joath: {
-                    title: "Joath - Goddess of Oceanic Warfare and Time",
-                    fullTitle: "The Relentless Shield, Commander of the Tidelocks, The Siren's Nightmare, Third of the Jodath Trinity",
-                    tier: "Major God",
-                    gender: "Female",
-                    element: "Water, Time",
-                    space: "Oceandom (Sunken Ship), Time Tidal",
-                    alignment: "Lawful Neutral",
-                    sacredAnimal: "Seahorses, Pearled Jellyfish, Sea Turtles, War-Beasts of the Deep",
-                    sacredPlant: "Coral, Sea Pearls, Ocean Jasmine, Blue Lagoon Seaweed",
-                    birthOrder: "5th child of Suleiman",
-                    attributes: "War, Protection, Time, Enforcement, Relentlessness, Combat, Loyalty, Severity, Temporal Pressure, Containment, Proximity Fighting, Eradication, Vigilance",
-                    symbols: "The Tideblade (Blue Lagoon Seaweed weapon), The Ecrmoes Eels (her living hair-guards), The Tidelocks (her elite warriors), The Sunken Ship (her dwelling in Oceandom), Siren Corpses (her eternal war), Temporal Severance (her combat signature)",
-                    description: "Joath exists because peace is not preserved by mercy alone. Where Joth governs balance and Johannth preserves harmony, Joath embodies the truth that some threats must be confronted, hunted, and destroyed before they reach the innocent. She is driven not by bloodlust or glory, but by an unshakable sense of responsibility: if danger exists beneath the waves, it must never reach the surface unchallenged. Joath's philosophy of combat is simple and uncompromising: Evil does not negotiate, Corruption spreads if ignored, Hesitation costs lives. She fights so others do not have to. Joath is a warrior not because she enjoys violence, but because she refuses to let the sea be violated. She sees the ocean as sacred, where predators belong but corrupters do not, and war as containment, not chaos. Her role is to confront threats early, long before mortals know. She leads the Tidelocks, Oceania's elite oceanic fighters, who eliminate danger before it appears. As the embodiment of Time in the Tryel, Joath controls oceanic temporality, protecting Time Tidal, which governs youth and flow. She can travel forward in time and fights to prevent unauthorized time travel.",
-
-                    appearance: {
-                        description: "Joath's deceptive beauty hides lethal intent. Unlike her sisters' inspiring beauty, hers causes enemies to underestimate her, mistaking her for a gentle sister. She embraces her beauty as a weapon, distracting foes before striking. Born with bronze features, she transformed herself with spells and enchanted pearls, dyeing her hair deep red—composed of living Ecrmoes eels, which coil around her head like a deadly crown. Her eyes are cold and calculating, promising violence to threats. She moves with predatory grace, appearing like a goddess, but always ready for combat. Living in a sunken ship within Oceandom, once responsible for Oceanana, she lost her authority after poor performance. Her home is a fortress filled with weapons, war-beasts, and maps, symbolizing her resolve never to fail again.",
-                        form: "Deceptively beautiful warrior whose appearance causes enemies to underestimate her",
-                        hair: "Deep red, composed of living Ecrmoes eels that coil around her head like a deadly crown, serving as constant sentinels and reflexive defenders",
-                        eyes: "Cold and calculating, promising violence to threats",
-                        distinctiveFeatures: "Living hair made of Ecrmoes eels that attack on command and protect her automatically. Lives in a sunken ship within Oceandom that serves as a fortress filled with weapons, war-beasts, and tactical maps",
-                        transformation: "Like her sisters, used Jodami's spells and Oceania's enchanted pearls to transform from bronze-haired daughter of Suleiman into a red-haired mermaid warrior",
-                        presence: "Moves with predatory grace, appearing divine but always combat-ready"
-                    },
-
-                    domains: [
-                        {
-                            name: "Oceanic Warfare",
-                            description: "Joath is the sea's warrior, confronting corruption and threats early. She hunts danger in depths and shadows, focusing on containment and eradication, not glory. Leading the Tidelocks with authority, she eliminates threats before they escalate, preventing corruption and enemies from spreading. She believes war is containment, not chaos, and fights with precision, purpose, and overwhelming force to end threats permanently."
-                        },
-                        {
-                            name: "Time (Temporal Combat Control)",
-                            description: "As the third aspect of the Tryel, Joath's relationship with Time manifests as control over combat-time, rather than reality-time. She can manipulate the flow of moments in battle, creating tactical advantages through temporal pressure. She can accelerate her own movements briefly, slow enemy reactions in short bursts, create moments where attacks land before opponents realize they moved, and lock enemies into 'delayed consequences' where they are struck but feel it a moment later. This makes her terrifying in close combat — she moves between seconds, strikes before reactions occur, and turns the temporal flow of battle itself into a weapon. She protects Time Tidal, the domain within Oceania's realm that governs the foundation of youth and temporal manipulation. She can travel forward in time, but only within the ocean and sea — never on land."
-                        },
-                        {
-                            name: "Siren Eradication",
-                            description: "Joath's greatest and most enduring mission is the complete eradication of Sirens. Where Sirens weaponize beauty to deceive, Joath wields beauty without deception. Where Sirens lure and consume, Joath confronts and eradicates. Their conflicts are ancient, brutal, and personal — fought in trenches, reefs, and shadowed waters where no mortal can witness. Joath is uniquely resistant to sonic manipulation, charm-based magic, and illusion through beauty. Sirens cannot sway her. Their songs fail against her temporal focus and emotional suppression. When Sirens sense Joath's presence, their songs fracture. The war has never truly ended — but Sirens now fear to surface."
-                        },
-                        {
-                            name: "Command of the Tidelocks",
-                            description: "Joath leads the Tidelocks, Oceania's elite oceanic fighters who eliminate danger before it manifests. Under her command, they serve as the ocean's first and last line of defense against corruption, invasion, and temporal violations."
-                        }
-                    ],
-
-                    powers: [
-                        {
-                            name: "Combat-Time Manipulation",
-                            description: "Joath manipulates timing in battle with devastating precision. She can accelerate her movements briefly, slow enemy reactions, create moments where her strikes land before opponents realize she moved, and lock enemies into delayed consequences. This temporal pressure makes her nearly impossible to counter in close combat."
-                        },
-                        {
-                            name: "Temporal Travel (Ocean Only)",
-                            description: "Joath can travel forward in time, but only within oceanic and sea environments. She cannot time travel on land. This power allows her to scout future threats and position defenses before danger arrives."
-                        },
-                        {
-                            name: "Temporal Severance",
-                            description: "Joath can halt regenerative cycles, preventing enemies from healing or recovering. She used this ability to defeat Lagouisha, the Giant Devourer, by cutting through its armored hide and severing its temporal regeneration."
-                        },
-                        {
-                            name: "Command of War-Beasts",
-                            description: "Joath commands sea creatures specifically aligned with warfare — armored leviathans, shock-generating predators, abyssal hunters. This distinguishes her from Joth, who governs all sea animals. Joath's creatures are weapons, not ecosystems."
-                        },
-                        {
-                            name: "Siren Countermeasure",
-                            description: "Joath is uniquely immune to sonic manipulation, charm-based magic, and illusion through beauty. Sirens' songs cannot affect her, making her their perfect predator."
-                        },
-                        {
-                            name: "Proximity Combat Mastery",
-                            description: "Joath fights close, absorbing damage meant for others. She believes distance creates hesitation, and hesitation costs lives. Her combat style is brutal, direct, and uncompromising."
-                        },
-                        {
-                            name: "Ecrmoes Eels (Living Hair-Guards)",
-                            description: "Joath's hair is not adornment — it is composed of Ecrmoes eels, living serpents that serve as constant sentinels and reflexive defenders. They attack on Joath's command and protect her automatically when she is unaware, such as during sleep or surprise attacks. Even when Joath's guard appears down, her defenses are always active."
-                        }
-                    ],
-
-                    weapons: {
-                        primary: "The Tideblade - Joath's weapon is not forged metal but living, flexible, lethal seaweed from the Blue Lagoon. The weapon adapts, flows, and cuts through threats without shattering the environment around it. This reflects her combat doctrine: adapt rather than resist, flow rather than clash, and eliminate threats without destroying what you protect. The Tideblade can cut through divine armor, sever temporal connections, and slice through illusions as easily as flesh.",
-                        livingArmor: "The Ecrmoes Eels - Joath's hair itself serves as armor and weapon. The Ecrmoes eels are manifestations of her constant readiness — they never sleep, never relax, never assume safety. Even when Joath appears vulnerable, she is guarded."
-                    },
-
-                    limitations: "She cannot stop time completely, cannot travel through time outside of the ocean, cannot undo death. Her power is pressure, not paradox.",
-
-                    legendaryFeats: [
-                        {
-                            name: "The Eternal Siren War",
-                            description: "Joath's defining legacy is her unending war against the Sirens. Sirens weaponized beauty, illusion, and song to lure mortals and corrupt oceanic routes. Joath recognized Sirens not as predators but as corruption masquerading as harmony. She led the Tidelocks in relentless purges: collapsing Siren nesting grounds, severing song-channels in abyssal caverns, and executing Siren Matrons personally in trench duels. It is said that when Sirens sense Joath's presence, their songs fracture in fear. The war has never truly ended. Joath hates Sirens with an intensity that borders on obsession. Every time she sees a Siren, she attacks — even when her sisters tell her to be discreet. The hatred is personal: Sirens killed Cocao, her first husband and the father of her daughters Kikio and Kitan. This murder transformed Joath's tactical opposition to Sirens into an eternal vendetta. She will not rest until every Siren is dead."
-                        },
-                        {
-                            name: "The Slaughter Beneath the Still Water",
-                            description: "When abyssal demons breached deep-sea seals during a planar disturbance, Joath was the first responder. She descended alone into pressure zones lethal to most gods, hunted demons in total darkness, and used temporal pressure to strike before attacks manifested. By the time reinforcements arrived, the incursion was already neutralized. The sea above never stirred. No mortal ever knew how close catastrophe had come."
-                        },
-                        {
-                            name: "The Fall of Lagouisha",
-                            description: "Lagouisha, the Giant Devourer of the Deep, was a colossal sea creature that could swallow fleets and crush trenches. Joath fought it alone, cutting through its armor with the Tideblade, using temporal severance to stop its regeneration, causing it to collapse. Its remains form a deserted trench avoided by sea life. The site warns: challenge Joath, and you become geography."
-                        },
-                        {
-                            name: "The Defense of Limaelune (Tevye's Betrayal)",
-                            description: "When Tevye turned on Oceania, Joath immediately sided with Oceania, coordinating Tidelocks with warriors and preventing Tevye's advances. The sea was scarred, but Limaelune remained standing. Joath was seriously injured in battle, one of her rare fierce encounters, and was healed by Johannth using pearls and song, showcasing full Tryel unity. Her loyalty to the Supreme Goddess always took precedence over Tevye."
-                        }
-                    ],
-
-                    personality: "Joath is severe, direct, and uncompromising. She isn't cruel but unsoftened. She has feelings but doesn't indulge them. Emotional expression is inefficient, vulnerability is a weakness, and softness exposes her to enemies. Joath's first instinct is to attack. If something threatens Oceania or behaves unpredictably, she strikes first, believing hesitation costs lives. She won't risk the safety of those she protects for politeness. She tolerates vulnerability but not weakness. Weakness is refusing to act when needed; vulnerability is honest acknowledgment of limits. She respects warriors who know their limits but despises cowards. Joath is socially disinterested, bored by small talk unless it involves threats, tactics, or anomalies. She doesn't engage in pleasantries or pretend to care about irrelevant matters. Among her sisters, Joath is the enforcer. Joth ignores you, Johannth cares, but Joath will hurt you. She acts as a consequence for threats to her family or domain. Her sisters use this strategically — when Takondwa is too aggressive with Joth, all three beat him, with Joath delivering the most brutal strikes. She believes war is containment, not chaos. She fights with precision, purpose, and overwhelming force. She does not duel for honor or sport — she eradicates threats. She chooses proximity over distance because she believes hesitation comes from separation. She absorbs damage meant for others because she would rather be injured than allow harm to reach those she protects.",
-
-                    relationships: {
-                        withSuleiman: "Father — no relationship, deep resentment. Joath has never spoken to her father. She thought that if she remained silent, if she refused to reach out, he would eventually come to her. He never did. This absence created deep resentment that has calcified into hatred over millennia. Joath doesn't know that Suleiman is incapable of understanding emotions. When he sees Joath's hatred, he analyzes it as data, but he never concludes that it stems from his detachment. He doesn't understand that silence was her test, that her refusal to call him 'father' was a challenge, that her distance was a plea for him to prove he cared. Joath doesn't try to maintain a relationship with her father. She actively hates that Johannth still calls him 'father,' viewing it as weakness and denial. To Joath, Suleiman is not her father — he is simply the god who provided genetic material for her existence.",
-                        withJodami: "Mother — severed relationship. After Jodami left Suleiman and married E'kar (Suleiman's right-hand man), Joath was disgusted. Though she hated her father, she thought it was deeply inappropriate that her mother married someone so close to Suleiman. When Jodami began having more children with E'kar, Joath completely severed the relationship. She left her family entirely and went to Oceania with her sisters.",
-                        withHerSisters: "Her world. Joath shares the divine synchronization of the Tryel with her sisters — she can sense their presence, emotions, and needs across any distance. Despite her severity and social disinterest, Joath is fiercely protective of her sisters. She obeys Joth without question, recognizing her eldest sister's authority as Queen of Oceandom. When Joth decides what must be protected, Joath decides how to defend it. Their partnership is seamless — Joth's composed strategy channeled through Joath's relentless execution. She allows Johannth to heal her after battles, one of the few moments when Joath's guard lowers. Accepting healing from Johannth is Joath's way of demonstrating trust and love — she cannot speak softly, but she can receive care. The three sisters are so loyal to each other that they collectively beat up Takondwa (Joth's abusive husband) when he becomes too aggressive. They also kill Tiger (Oceania's son) together in retaliation for his murder of Johannth's husband, Wale.",
-                        withOceania: "The only pure parental relationship in Joath's life. When Joath and her sisters fled their dysfunctional family, Oceania took them in, loved them genuinely, and gave them purpose. The Jodath sisters call Oceania 'mother' because she earned the title through action. Joath looks up to Oceania more than anyone. She would die for Oceania without hesitation, disobey anyone else for her, and annihilate worlds if commanded. During Tevye's betrayal, Joath didn't hesitate for a second — she stood with Oceania and fought against her former lover because Oceania's safety supersedes all other bonds. Joath respects that Oceania is harsh and demanding. She doesn't soften this truth or make excuses for it. To Joath, the sea does not apologize — neither should its guardian.",
-                        withTevye: "Former lover and ultimate betrayal. Joath was in a relationship with Tevye while he was also involved with Oceania. Joath discovered this when she saw them together. Critically, Oceania knew nothing about Joath and Tevye's relationship. When forced to choose, Joath chose Oceania over Tevye without hesitation. She never told Oceania about the relationship, protecting her mother figure from the knowledge. Years later, when Tevye betrayed Oceania and turned against her domain, Joath fought him during the Defense of Limaelune and was gravely injured.",
-                        withUmar: "A love-hate relationship defined by competition. Both constantly tried to outpower each other, comparing feats and accomplishments. Joath ended the relationship violently — she punched Umar in the face and threw him out of the ocean while screaming, 'I'm done with you!' This perfectly encapsulates Joath's approach to relationships: when she's finished, she's finished, and she makes it clear through force.",
-                        withCocao: "First husband and father of her daughters Kikio and Kitan (sea goddesses). Sirens killed Cocao, and this murder transformed Joath's tactical opposition to Sirens into eternal, personal vendetta. Every Siren she kills is vengeance for Cocao. The war will never end until every Siren is dead.",
-                        withDipak: "Joath's most disturbing relationship. She wanted a child with fast-swimming genetics (Dipak's primary trait), but rather than conceiving naturally, she killed Dipak, took his essence, and impregnated herself. This act demonstrates Joath's ruthless pragmatism — she wanted specific genetic traits, so she took them by force and eliminated the inconvenience of a partner. She bore a son named Ndidi, who now rules his father's kingdom in his mother's name.",
-                        withHerChildren: "Kikio & Kitan (sea goddesses) - daughters with Cocao. Ndidi (rules his father's kingdom) - son conceived from Dipak's stolen essence after she killed him."
-                    },
-
-                    teaching: "Hesitation costs lives. Evil does not negotiate. Corruption spreads if ignored. I fight so others do not have to. The ocean is sacred territory, and I am its shield. Distance creates doubt — I fight close, I absorb the damage meant for the innocent, and I do not stop until the threat is eradicated.",
-
-                    essence: "Relentless protection — the warrior who stands between danger and peace",
-
-                    nature: "Joath embodies relentless protection. She is the warrior who stands between danger and peace, who hunts threats before they manifest, who refuses to allow corruption to touch what she guards. She is severe, direct, and utterly uncompromising — not because she lacks compassion, but because she understands that softness in the face of evil is complicity.",
-
-                    legacy: "Joath is feared across oceanic realms as the Siren's Nightmare. She has protected Time Tidal for millennia, led countless campaigns, and eradicated threats before they could reach the surface. Her greatest legacy is showing that protection sometimes requires relentlessness, that mercy isn't the only form of love, and that the guardians who stand between peace and chaos cannot afford to be soft. She demonstrates that love can be expressed through relentless protection, that family is earned through action not blood, and that some wars never end — they simply pause between battles.",
-
-                    philosophy: "I do not fight for glory. I fight because hesitation costs lives, because evil does not negotiate, because corruption spreads if ignored. I am the shield that stands between danger and innocence. I absorb the damage meant for others. I hunt threats at their source. I do not rest, because the sea never rests. And I will not stop until every Siren is dead, every threat is eradicated, and Oceania's domain is secure. This is not cruelty — this is love expressed through relentless protection.",
-
-                    combatPhilosophy: "War is containment, not chaos. I fight with precision, purpose, and overwhelming force. I do not duel for honor or sport — I eradicate threats. When I enter combat, I fight to end it permanently. I choose proximity over distance because hesitation comes from separation. I absorb damage meant for others because I would rather be injured than allow harm to reach those I protect. That Johannth heals me with pearls and song after battle is not weakness — it is the Tryel functioning as intended. Each sister has her role. War never truly ends — it simply pauses between engagements."
+                    title: "Third Sister - Goddess of the Depths",
+                    attributes: "Mystery, Preservation, The Unconscious, Dreams, Hidden Truths",
+                    symbols: "Deep Ocean Abyss, Sunken Treasures, Sleeping Memories",
+                    description: "Joath governs the depths where memories sleep. In her dark waters lie forgotten dreams, lost treasures, and memories too precious or painful to surface.",
+                    appearance: "The most mysterious of the sisters, appearing as a shadowy figure in the deep waters, surrounded by bioluminescent lights. Her form shifts between visibility and invisibility like something seen deep underwater.",
+                    essence: "The hidden depths of the unconscious",
+                    nature: "Joath is the depths beneath consciousness, the place where everything eventually sinks and rests. She is neither cruel nor kind — she simply keeps what the surface world cannot hold, preserving it in eternal darkness until it's time to remember or let go."
                 }
             },
 
@@ -12338,150 +12097,6 @@ But the legend of the Zen Brothers burns eternal.`,
             ],
 
             nature: "Tia is the embodiment of desperate love turned into obsession. She was created to heal and organize dreams, but her need for validation changed these gifts into tools for manipulation. She shows what happens when purpose is sacrificed for approval, when a goddess meant to help others uses her powers only to serve her own insecurities. She is tragic because she was never truly free. Created from another's desires, rejected right away, and spending 40 years in silence, she learned that love must be forced, staged, and performed. She became what she needed to survive: a woman who would rather create danger than live without being saved. Her nature is a warning: When you love someone more than yourself, you stop existing, and in the end, you break apart."
-        },
-        malak: {
-            name: "Malak",
-            tier: "Major God",
-            gender: "Male",
-            element: "Light, Metal (Solar power through weapon)",
-            alignment: "Lawful Evil",
-            sacredAnimal: "Falcon (specifically his companion Peregrine)",
-            sacredPlant: "None",
-            birthOrder: "Second son of Al'sekemu",
-            titles: ["The Falcon Prince", "Prince of Order", "The Golden Boy", "Leader of the Second Coming"],
-            attributes: ["Authority", "Order", "Law", "Hierarchy", "Enforcement", "Leadership", "Obedience", "Strength", "Command", "Loyalty", "Execution", "Legitimacy", "Structure", "Discipline"],
-            symbols: ["The Falcon clutching a sunburst", "Falcon Pedigree (his transforming spear)", "Circlet with falcon symbol", "Peregrine (his eyes from above)", "Golden flash", "The Sunarian symbol"],
-            description: "Malak embodies obedience and power as the God of Order and Authority, representing unquestioned command, hierarchy, and law beyond morality. Favorite of Al'sekemu not for strength but for loyalty, he acts without moral doubt, enforcing authority because it exists. His obedience, rivaling legendary gods, makes him one of the most dangerous deities. As Leader of the Second Coming, he commands divine offspring, his orders overriding others and suppressing rebellion. Beneath his commanding exterior, he is not cruel or sadistic, merely obedient to his father—a loyalty that leads to darker acts like killing gods, stealing artifacts, and ambiguous missions. He remains kind and devoted to Al'sekemu, who calls him 'my golden boy.'",
-            image: "Images/malak.png",
-
-            appearance: {
-                description: "Malak's appearance is a study in contradictions—golden divinity concealing absolute obedience, beauty masking brutality, and a face that looks perpetually angry, housing a personality described as nice and sweet. His skin is golden—not bronze but metallic, marking him as Al'sekemu's child, signifying he is chosen, favored, and carries his father's transformation. His heterochromatic eyes—one brown, one hazel—make him recognizable and give an unsettling gaze, symbolizing law and hierarchy. His sharp features give a perpetual, involuntary stern look, creating an intimidating presence that encourages compliance. His build is agile, strong, and regal—swift and precise, enabling him to outmaneuver multiple opponents with speed rather than brute force.",
-                skin: "Golden metallic skin marking him as Al'sekemu's chosen child",
-                eyes: "Heterochromatic—one brown, one hazel",
-                hair: "Short brown hair, practical and functional",
-                distinctiveFeatures: "Can summon golden falcon wings on command (unlike his father's permanent wings). Wears a simple gold circlet with a falcon symbol marking his rank as Prince of Order. His companion Peregrine is always nearby. His commanding voice always sounds like he's giving orders, even casually.",
-                build: "Agile, strong, and regal—less bulky but swift and precise"
-            },
-
-            domains: [
-                {
-                    name: "Authority",
-                    description: "Malak's Authority is his most dangerous power—it doesn't control minds, but defines the legitimacy of command. It acts as command gravity, pressing down on subordinates' will. Disobedience feels like fighting the natural order. He can compel obedience from beings lower in hierarchy, suppress rebellion, override conflicting commands in structured systems, and establish himself as the recognized leader in moments of chaos. Critical limitation: He cannot control free will absolutely. Those with equal or higher authority (Suleiman, Oceania, Zendon) can resist."
-                },
-                {
-                    name: "Order",
-                    description: "Malak embodies perfectly functioning systems, emphasizing that order is about everything having its proper place and role within a hierarchy. He perceives system correctness and disorder, and can manifest Order into reality—creating things out of thin air, a power usually reserved for Supreme gods. This shows Malak's incredible power: he doesn't create ex nihilo but reveals what should exist based on the correct structure of reality."
-                },
-                {
-                    name: "Law",
-                    description: "To Malak, Law exists independent of morality. A law is not good or evil—it simply is. His role is not to judge the righteousness of law but to enforce its existence. This separation allows him to execute orders that would cause moral conflict in others. When Al'sekemu commands, Malak enforces—not because the command is just, but because it comes from legitimate authority within the hierarchy."
-                },
-                {
-                    name: "Hierarchy",
-                    description: "Everyone has a place, and Malak knows it instinctively. He can assess divine rank, recognize legitimate authority, and understand command structures with perfect clarity. This enables him to navigate complex political situations, override lower-ranking commanders, and establish dominance in chaotic environments. As Leader of the Second Coming, Malak sits at the apex of an entire generation's hierarchy."
-                },
-                {
-                    name: "Court of Authority",
-                    description: "Malak is the only child of Al'sekemu to possess his own domain—the Court of Authority. It is a desert under a blazing sun, similar in structure to Al'sekemu's Court of Order but less elaborate. The desert mirrors the harsh, unforgiving nature of absolute authority—no shade, no mercy, no escape from the light that exposes all disorder. Here, Malak's power is amplified, his commands carry even greater weight, and those who enter feel the full weight of hierarchy bearing down on them."
-                }
-            ],
-
-            powers: [
-                {
-                    name: "Command Gravity (Authority)",
-                    description: "Malak's orders carry supernatural weight. Those lower in hierarchy feel compelled to obey not through mind control but through recognition of legitimate command. Resistance is possible but requires active, deliberate defiance. Most beings cannot summon the will to resist—not because they can't, but because defying Malak feels like fighting against the natural order of existence."
-                },
-                {
-                    name: "Order Manifestation",
-                    description: "Malak can make things appear that weren't there moments before—a reality-warping ability typically reserved for Supreme and Foundational gods. He does not create from nothing; he reveals what should exist according to proper structure. This power has countless applications: manifesting weapons, creating barriers, revealing hidden truths, or establishing order where chaos reigns."
-                },
-                {
-                    name: "Hierarchy Perception",
-                    description: "Malak instinctively understands command structures, divine ranks, and legitimate authority. He can assess the relative power and position of any being, allowing him to navigate complex political situations and establish dominance in moments of chaos."
-                },
-                {
-                    name: "Command Override",
-                    description: "In structured systems (armies, councils, divine hierarchies), Malak can override conflicting commands from those of lower rank. If two generals give contradictory orders, Malak's command supersedes both. This makes him invaluable in coordinated operations and devastating in conflicts where the chain of command matters."
-                },
-                {
-                    name: "Rebellion Suppression",
-                    description: "Malak can suppress hesitation, insubordination, and rebellion in divine and mortal forces, not through fear, but through the weight of legitimate authority pressing down on potential dissent. Doubt becomes difficult. Defiance requires extraordinary will."
-                },
-                {
-                    name: "Falcon Flight & Aerial Superiority",
-                    description: "Malak can summon falcon wings (unlike his father's permanent cape-wings). He is the only one of Al'sekemu's 43 children with this ability. Once airborne, Malak becomes extremely difficult to bring down—it takes gods like Zendon, Zevon, or other top-tier Major Gods to force him from the sky. During the War of Gods, Zavi had to unleash three different powers just to get Malak to his knees."
-                },
-                {
-                    name: "Peregrine Vision",
-                    description: "Malak can see through Peregrine, his falcon companion, allowing reconnaissance, battlefield awareness, and surveillance from above. Peregrine serves as his eyes in situations where Malak cannot personally observe, giving him tactical advantages in combat and strategic planning."
-                },
-                {
-                    name: "Solar Empowerment (Through Falcon Pedigree)",
-                    description: "While not inherently a solar god, Malak channels solar power through his weapon—the Falcon Pedigree spear. This power was acquired after he killed Gizzo, the Sun God, on Al'sekemu's orders. The spear itself carries the solar aspect, not Malak directly."
-                }
-            ],
-
-            weapons: {
-                primary: "The Falcon Pedigree - A magnificent 7-foot golden spear with a falcon's wing descending from the shaft. The weapon is not merely a spear—it is a symbol of Malak's authority, a repository of stolen solar power, and a transforming instrument of enforcement.",
-                abilities: "Transformation (can become any weapon), Boomerang Return (always returns to Malak's hand), Solar Power (channels energy stolen from Gizzo the Sun God)"
-            },
-
-            limitations: "Authority does not work on those of equal or higher rank. Order Manifestation is powerful but requires concentration and cannot create life. He is mortal (for a god)—he can be killed. His falcon wings can be destroyed. His power is strongest in structured environments; pure chaos weakens Authority's effectiveness.",
-
-            legendaryFeats: [
-                {
-                    name: "The Execution of Gizzo (The Sun God)",
-                    description: "When Gizzo, the Sun God, refused to bow down to Al'sekemu and call him 'lord,' Malak was sent to enforce obedience. Gizzo believed his solar divinity made him untouchable. He was wrong. Malak killed Gizzo in single combat, claiming the sun god's power and forging it into the Falcon Pedigree spear. This was not merely an assassination—it was a declaration: authority does not negotiate, and refusal to acknowledge hierarchy results in annihilation."
-                },
-                {
-                    name: "The Slaying of Olamilekan (The Giant)",
-                    description: "Olamilekan, a colossal giant, had been kidnapping children and devouring them. While this was an act of monstrous evil, Malak's execution of the giant was not heroism—it was enforcement. The giant represented chaos, disorder, and violation of structure. Malak hunted Olamilekan, killed him, took his single eye, and fed it to his siblings—establishing dominance within the Second Coming."
-                },
-                {
-                    name: "The Rescue and Courtship of Johannth",
-                    description: "When Cris, God of the Dead and Chaos, attempted to assault Johannth sexually, Malak intervened—pretending that Johannth had already slept with him, thus 'claiming' her and preventing Cris from touching her. Then Malak descended into the underworld, beat Cris brutally, and stole his fire as a trophy for Johannth. This began a pattern of legendary feats performed for Johannth's sake: stealing the enchanted crab for her voice, beheading Gwendal the Octopus Queen, harvesting the Noodin fruit, taking her around the world. Every feat was a courtship gesture."
-                },
-                {
-                    name: "Leadership of the Second Coming",
-                    description: "Malak was chosen to lead the Second Coming—the collective of children born to Supreme and Foundational gods—not because he was the eldest (that honor belongs to Nasr), but because he embodied perfect obedience, overwhelming power, and instinctive command. Under his leadership, the Second Coming became a formidable force during the War of Gods."
-                },
-                {
-                    name: "The Eternal Rivalry with Zendon",
-                    description: "Malak and Zendon represent two philosophies of power: Authority vs. War, Order vs. Protection, Hierarchy vs. Loyalty. Their rivalry was personal, vicious, and unrelenting. The Zen Brothers ambushed Malak when he returned from visiting Johannth; Malak used water (not his element) to stop all four brothers simultaneously. Malak and Nasr ambushed Zendon in retaliation. Their fights were legendary, their hatred mutual, and when the War of Gods came, their rivalry would have fatal consequences."
-                },
-                {
-                    name: "The Ambiguous Death",
-                    description: "How Malak died remains one of the great mysteries of divine history. Version One: Zendon killed Peregrine and then Malak during the War of Gods. Version Two: Sa'di (Malak's beloved younger brother) accidentally killed Malak in the chaos, caught in the crossfire. Only Tia knows this version is true. She told Sa'di never to reveal it to Al'sekemu. Perhaps both versions are true—Zendon delivered the killing blow to a Malak already dying from Sa'di's crossfire. What is certain: Malak died during the War of Gods, and Al'sekemu orchestrated the Sunarian Ambush that killed all four Zen Brothers in revenge twenty years later."
-                }
-            ],
-
-            personality: "Malak is nice. He is sweet. He is approachable in a way that his father, Al'sekemu, has never been. People who meet Malak expecting the brutality of his father are often disarmed by his pleasant demeanor, his genuine warmth, and his seemingly kind nature. But this pleasantness is not incompatible with his evil. Malak is not cruel, but cruelty is not required for tyranny. He does not enjoy suffering—but he will inflict it without hesitation if ordered. His evil is not the sadistic cruelty of a torturer. It is the banal evil of absolute obedience to corrupt authority. He does terrible things not because he is terrible, but because he follows orders without question. The only time Malak's obedience wavered was for Johannth—he loved her enough to defy Al'sekemu's explicit command to stay away from her.",
-
-            relationships: {
-                withAlsekemu: "Father — the center of Malak's existence. Out of 43 children, Al'sekemu loves Malak most, calls him 'my golden boy,' and showcases him above all others. Al'sekemu sees in Malak what he wished he could have been for Suleiman—the perfect, unquestioning servant. When Malak died, Al'sekemu did not know for twenty years. When he finally learned the truth, his grief became cold rage, and he orchestrated the Sunarian Ambush that killed all four Zen Brothers in revenge.",
-                withTia: "Mother — respectful but distant. Malak belongs entirely to Al'sekemu. Tia is the only one who knows that Sa'di accidentally killed Malak, protecting her youngest son from Al'sekemu's wrath by hiding the truth.",
-                withNasr: "Elder brother — Al'sekemu's greatest disappointment. Malak tried to help Nasr earn their father's approval, but when Nasr violated Order, Malak punched him so hard he couldn't talk for months. Their relationship is defined by Malak trying to help, Nasr failing, Malak punishing. Despite this abuse, they fought together during key moments.",
-                withSadi: "Youngest brother — Malak loved Sa'di with genuine protective affection. Sa'di praised Malak, looked up to him, depended on him. This makes Sa'di's role in Malak's death unbearably tragic. Sa'di accidentally killed Malak during the War of Gods, caught in the crossfire. Only Tia knows. Sa'di carries the guilt silently.",
-                withJohannth: "Wife — the love of Malak's life. The only being for whom he compromised his obedience to Al'sekemu. He saved her from Cris, performed impossible feats for her, showed her the world. Their secret affair lasted over a century until Al'sekemu discovered it. Malak defied his father's orders, hiding their triplets from the gods. Johannth never found that same passionate love again after his death.",
-                withGeni: "Daughter (first of the triplets) — Malak has no relationship with her. Johannth hid the children on Malak's order. Geni probably doesn't know Malak is her father.",
-                withGora: "Daughter (second of the triplets, 'Idolis') — No relationship. Extraordinarily vain, a planet is named after her. She doesn't know Malak.",
-                withTove: "Son (third of the triplets) — No relationship. Tove grew up without knowing who created him.",
-                withTahanne: "One-time affair. Ta'hanne was attracted to Malak's strength and power. They slept together once, Malak wanted more, but Ta'hanne refused, declaring loyalty to Sove.",
-                withTatianna: "Affair before and during her early relationship with Suleiman. Malak pursued her but she chose Suleiman, famously telling Malak: 'It's SULEIMAN!' This rejection stung—to lose a woman to the god his father both served and resented.",
-                withZendon: "Greatest rival and possibly his killer. Their rivalry defined both of them: Authority vs. War, Order vs. Protection, Hierarchy vs. Loyalty. Zendon never let Malak forget that he led only because of his father's name. Their mutual sabotage escalated until the War of Gods, where one or both may have killed him."
-            },
-
-            teaching: "Authority does not negotiate. Order does not apologize. Hierarchy exists independent of individual will. My role is not to question—it is to enforce. When legitimate authority gives an order, obedience is not optional; it is the natural structure of reality asserting itself. Resistance is possible, but resistance is disorder, and disorder must be corrected.",
-
-            essence: "Pleasant tyranny — kindness that serves absolute obedience to corrupt authority",
-
-            nature: "Malak is the paradox of pleasant tyranny. He is nice, sweet, and approachable—but he will kill you without hesitation if ordered to do so. He is not cruel, but cruelty is not required for evil; obedience to evil authority accomplishes the same result. He does not enjoy violence, but violence is simply another form of enforcement, and enforcement is his domain.",
-
-            legacy: "Malak's legacy is written in blood, revenge, and unanswered questions: Leader of the Second Coming who coordinated an entire generation during the War of Gods. The Sunarians used his falcon-and-sunburst emblem. His ambiguous death allows blame to fall where it is most convenient. Al'sekemu's orchestration of the Sunarian Ambush was direct revenge for Malak's death—four of the mightiest gods died in retaliation. Johannth carries his memory as the love of her life. The triplets exist as proof that even the golden boy could love enough to defy. He showed that authority without morality is tyranny, and that the capacity for love does not guarantee the courage to choose it over obedience.",
-
-            philosophy: "Authority is not negotiable. Orders exist independently of will, and hierarchy must be enforced because it is legitimate, not necessarily just. When authority gives an order, obedience follows naturally. I do not question if it's moral or earned, only if it is clear. Enforcing authority is not cruelty but function. I am the extension of my father's will, performing this role without doubt. Even loving her, I couldn't fully choose love over obedience—perhaps my tragedy or simply my nature. As the Prince of Order, if that makes me a villain, so be it. Authority only requires obedience, not approval.",
-
-            characterArc: "Malak never had his own voice. He began with absolute obedience and ended as absolute obedience. The only deviation—his love for Johannth—was hidden, secret, compromised. He never questioned his father. He never wondered if Order might be wrong. He was capable of love, which means he was capable of defiance, which means he could have been more than Al'sekemu's golden boy. But he never extended that love beyond one person. He died before he could become something more. Whether killed by Zendon or Sa'di, whether in glorious combat or chaotic crossfire, Malak died as he lived: following orders, enforcing hierarchy, serving Authority. And perhaps, in his final moment, he thought of Johannth—the only being for whom he had ever compromised his obedience."
         },
         nasr: {
             name: "Nasr",
@@ -15712,7 +15327,7 @@ function renderEudoricWelcome() {
                 <div class="eudoric-stats">
                     <div class="divine-stat-card">
                         <div class="stat-icon">🕊️</div>
-                        <h3>46</h3>
+                        <h3>40</h3>
                         <p>Divine Beings</p>
                     </div>
                     <div class="divine-stat-card">
@@ -17097,10 +16712,8 @@ function renderEudoricGods() {
             'forest': 'Forest.png',
             'godevea': 'Godevea.png',
             'jesang': 'Jesang.png',
-            'jodath': 'jodathsisters.png',
             'jodami': 'Jodami.png',
             'kilth': 'Kilth.png',
-            'malak': 'malak.png',
             'malaikanya': 'Malai Kanya.png',
             'naavie': 'Naavie.png',
             'nasr': 'Nasr.png',
@@ -17149,232 +16762,6 @@ function renderEudoricGods() {
             </div>
         </div>
     `;
-}
-
-// Special rendering function for Jodath Sisters - each sister gets their own tab
-function renderJodathSistersProfile(god) {
-    const contentArea = document.getElementById('contentArea');
-
-    const titlesHTML = god.titles.map(title =>
-        `<span class="god-title-tag">${title}</span>`
-    ).join('');
-
-    // Create tabs for each sister
-    const sisterEntries = Object.entries(god.sisters);
-    const sisterNames = {
-        joth: 'Joth',
-        johannth: 'Johannth',
-        joath: 'Joath'
-    };
-
-    const profileImageHTML = `
-        <div class="god-profile-image">
-            <img src="Images/jodathsisters.png" alt="The Jodath Sisters" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="god-icon-large" style="display: none;">✦</div>
-        </div>
-    `;
-
-    contentArea.innerHTML = `
-        <div class="god-profile">
-            <button class="back-button" onclick="renderEudoricGods()">← Back to Pantheon</button>
-
-            <div class="god-header">
-                ${profileImageHTML}
-                <h1 class="god-name">${god.name}${god.alternativeName ? ` <span class="alt-name">(${god.alternativeName})</span>` : ''}</h1>
-                <div class="god-titles">
-                    ${titlesHTML}
-                </div>
-            </div>
-
-            <!-- Group Overview Section -->
-            <div class="detail-section">
-                <h3>The Three Sea Sisters</h3>
-                <p>${god.description}</p>
-            </div>
-
-            ${god.worship ? `
-            <div class="detail-section">
-                <h3>Worship</h3>
-                <p>${god.worship}</p>
-            </div>
-            ` : ''}
-
-            <!-- Sister Tabs - Each sister gets their own main tab -->
-            <div class="god-tabs">
-                ${sisterEntries.map(([key, sister], index) => `
-                    <button class="god-tab ${index === 0 ? 'active' : ''}" onclick="switchGodTab(event, '${key}-tab')">${sisterNames[key]}</button>
-                `).join('')}
-            </div>
-
-            <!-- Each Sister's Complete Profile -->
-            ${sisterEntries.map(([key, sister], index) => `
-                <div id="${key}-tab" class="god-tab-panel ${index === 0 ? 'active' : ''}">
-                    <!-- Sister Header -->
-                    <div class="detail-section">
-                        <h2 style="color: var(--accent-primary); font-size: 1.8rem;">${sister.title}</h2>
-                        ${sister.fullTitle ? `<p style="font-style: italic; color: var(--accent-secondary); font-size: 1.1rem; margin-top: 0.5rem;">${sister.fullTitle}</p>` : ''}
-                    </div>
-
-                    <!-- Profile Section - Collapsible -->
-                    <details class="zen-collapsible-section" open>
-                        <summary class="section-header">
-                            <h3 style="display: inline;">Profile</h3>
-                            <span class="zen-collapse-icon">▼</span>
-                        </summary>
-                        <div class="zen-section-content">
-                            <h4 style="color: var(--accent-primary); margin-bottom: 1rem;">Divine Essence</h4>
-                            <p>${sister.description}</p>
-
-                            ${sister.tier || sister.gender || sister.element || sister.space || sister.alignment || sister.sacredAnimal || sister.sacredPlant || sister.birthOrder ? `
-                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem; margin-bottom: 1rem;">Sacred Attributes</h4>
-                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; margin-bottom: 1rem;">
-                                    ${sister.tier ? `<p><strong>Tier:</strong> ${sister.tier}</p>` : ''}
-                                    ${sister.gender ? `<p><strong>Gender:</strong> ${sister.gender}</p>` : ''}
-                                    ${sister.element ? `<p><strong>Element:</strong> ${sister.element}</p>` : ''}
-                                    ${sister.space ? `<p><strong>Space:</strong> ${sister.space}</p>` : ''}
-                                    ${sister.alignment ? `<p><strong>Alignment:</strong> ${sister.alignment}</p>` : ''}
-                                    ${sister.sacredAnimal ? `<p><strong>Sacred Animal:</strong> ${sister.sacredAnimal}</p>` : ''}
-                                    ${sister.sacredPlant ? `<p><strong>Sacred Plant:</strong> ${sister.sacredPlant}</p>` : ''}
-                                    ${sister.birthOrder ? `<p><strong>Birth Order:</strong> ${sister.birthOrder}</p>` : ''}
-                                </div>
-                            ` : ''}
-
-                            <p><strong>Attributes:</strong> ${sister.attributes}</p>
-                            <p><strong>Sacred Symbols:</strong> ${sister.symbols}</p>
-                            ${sister.essence ? `<p><strong>Essence:</strong> ${sister.essence}</p>` : ''}
-                            ${sister.teaching ? `<p><strong>Teaching:</strong> ${sister.teaching}</p>` : ''}
-                            ${sister.nature ? `<p><strong>Nature:</strong> ${sister.nature}</p>` : ''}
-                            ${sister.legacy ? `<p><strong>Legacy:</strong> ${sister.legacy}</p>` : ''}
-                            ${sister.philosophy ? `<p><strong>Philosophy:</strong> ${sister.philosophy}</p>` : ''}
-                            ${sister.limitations ? `<p><strong>Limitations:</strong> ${sister.limitations}</p>` : ''}
-                        </div>
-                    </details>
-
-                    <!-- Divine Power Section - Collapsible -->
-                    ${sister.domains || sister.powers ? `
-                    <details class="zen-collapsible-section">
-                        <summary class="section-header">
-                            <h3 style="display: inline;">Divine Power</h3>
-                            <span class="zen-collapse-icon">▼</span>
-                        </summary>
-                        <div class="zen-section-content">
-                            ${sister.domains && sister.domains.length > 0 ? `
-                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Domains</h4>
-                                ${sister.domains.map(domain => `
-                                    <div style="margin: 1rem 0; padding: 1rem; background: rgba(212, 175, 55, 0.05); border-left: 3px solid var(--accent-primary); border-radius: 0.25rem;">
-                                        <strong style="color: var(--accent-primary);">${domain.name}:</strong>
-                                        <p style="margin-top: 0.5rem;">${domain.description}</p>
-                                    </div>
-                                `).join('')}
-                            ` : ''}
-
-                            ${sister.powers && sister.powers.length > 0 ? `
-                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Powers</h4>
-                                ${sister.powers.map(power => `
-                                    <div style="margin: 1rem 0; padding: 1rem; background: rgba(212, 175, 55, 0.05); border-left: 3px solid var(--accent-primary); border-radius: 0.25rem;">
-                                        <strong style="color: var(--accent-primary);">${power.name}:</strong>
-                                        <p style="margin-top: 0.5rem;">${power.description}</p>
-                                    </div>
-                                `).join('')}
-                            ` : ''}
-
-                            ${sister.legendaryFeats && sister.legendaryFeats.length > 0 ? `
-                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Legendary Feats</h4>
-                                ${sister.legendaryFeats.map(feat => `
-                                    <div style="margin: 1rem 0; padding: 1rem; background: rgba(212, 175, 55, 0.1); border-left: 3px solid #daa520; border-radius: 0.25rem;">
-                                        <strong style="color: #daa520;">${feat.name}:</strong>
-                                        <p style="margin-top: 0.5rem;">${feat.description}</p>
-                                    </div>
-                                `).join('')}
-                            ` : ''}
-                        </div>
-                    </details>
-                    ` : ''}
-
-                    <!-- Appearance & Nature Section - Collapsible -->
-                    ${sister.appearance || sister.personality ? `
-                    <details class="zen-collapsible-section">
-                        <summary class="section-header">
-                            <h3 style="display: inline;">Appearance & Nature</h3>
-                            <span class="zen-collapse-icon">▼</span>
-                        </summary>
-                        <div class="zen-section-content">
-                            ${sister.appearance && typeof sister.appearance === 'object' ? `
-                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Physical Appearance</h4>
-                                <p>${sister.appearance.description}</p>
-                                <ul style="margin: 1rem 0 1rem 1.5rem; line-height: 1.8;">
-                                    ${sister.appearance.form ? `<li><strong>Form:</strong> ${sister.appearance.form}</li>` : ''}
-                                    ${sister.appearance.skin ? `<li><strong>Skin:</strong> ${sister.appearance.skin}</li>` : ''}
-                                    ${sister.appearance.height ? `<li><strong>Height:</strong> ${sister.appearance.height}</li>` : ''}
-                                    ${sister.appearance.hair ? `<li><strong>Hair:</strong> ${sister.appearance.hair}</li>` : ''}
-                                    ${sister.appearance.eyes ? `<li><strong>Eyes:</strong> ${sister.appearance.eyes}</li>` : ''}
-                                    ${sister.appearance.distinctiveFeatures ? `<li><strong>Distinctive Features:</strong> ${sister.appearance.distinctiveFeatures}</li>` : ''}
-                                    ${sister.appearance.transformation ? `<li><strong>Transformation:</strong> ${sister.appearance.transformation}</li>` : ''}
-                                </ul>
-                            ` : sister.appearance ? `<p><strong>Appearance:</strong> ${sister.appearance}</p>` : ''}
-
-                            ${sister.personality ? `
-                                <h4 style="color: var(--accent-primary); margin-top: 1.5rem;">Personality & Temperament</h4>
-                                <p>${sister.personality}</p>
-                            ` : ''}
-                        </div>
-                    </details>
-                    ` : ''}
-
-                    <!-- Relationships Section - Collapsible -->
-                    ${sister.relationships ? `
-                    <details class="zen-collapsible-section">
-                        <summary class="section-header">
-                            <h3 style="display: inline;">Relationships</h3>
-                            <span class="zen-collapse-icon">▼</span>
-                        </summary>
-                        <div class="zen-section-content">
-                            ${Object.entries(sister.relationships).map(([relKey, relValue]) => {
-                                // Format the relationship key into a readable title
-                                const relationshipTitles = {
-                                    withHerSisters: 'With Her Sisters',
-                                    withSuleiman: 'With Suleiman (Father)',
-                                    withJodami: 'With Jodami (Mother)',
-                                    withOceania: 'With Oceania',
-                                    withAlsekemu: "With Al'sekemu",
-                                    withTakondwa: 'With Takondwa (Spouse)',
-                                    withHerChildren: 'With Her Children',
-                                    withMalak: 'With Malak',
-                                    withSove: 'With Sove',
-                                    withTiger: 'With Tiger',
-                                    withWale: 'With Wale',
-                                    withTurk: 'With Turk (Current Husband)',
-                                    withNaime: 'With Naime (Mentee)',
-                                    withTevye: 'With Tevye',
-                                    withUmar: 'With Umar',
-                                    withCocao: 'With Cocao (First Husband)',
-                                    withDipak: 'With Dipak'
-                                };
-                                const title = relationshipTitles[relKey] || relKey.replace(/^with/, 'With ');
-                                return `
-                                    <div style="margin: 1rem 0;">
-                                        <h4 style="color: var(--accent-primary);">${title}</h4>
-                                        <p>${relValue}</p>
-                                    </div>
-                                `;
-                            }).join('')}
-                        </div>
-                    </details>
-                    ` : ''}
-                </div>
-            `).join('')}
-
-            ${god.nature ? `
-            <div class="detail-section" style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid rgba(212, 175, 55, 0.3);">
-                <h3>Collective Nature</h3>
-                <p>${god.nature}</p>
-            </div>
-            ` : ''}
-        </div>
-    `;
-
-    // Scroll to top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Special rendering function for Zen Brothers - each brother gets their own tab
@@ -17908,10 +17295,8 @@ function showGodDetail(godKey) {
         'forest': 'Forest.png',
         'godevea': 'Godevea.png',
         'jesang': 'Jesang.png',
-        'jodath': 'jodathsisters.png',
         'jodami': 'Jodami.png',
         'kilth': 'Kilth.png',
-        'malak': 'malak.png',
         'malaikanya': 'Malai Kanya.png',
         'naavie': 'Naavie.png',
         'nasr': 'Nasr.png',
@@ -18758,28 +18143,32 @@ function renderEudoraProfile() {
 // State for Noga Calendar
 let currentNogaMoonIndex = null;
 
-function renderNogaCalendar(startMoonIndex) {
+function renderNogaCalendar() {
     // Get current real-world date to determine default moon
     const now = new Date();
-    const oneDay = 1000 * 60 * 60 * 24;
+    const month = now.getMonth();
+    const day = now.getDate();
 
-    // Noga calendar year starts on March 22
-    const march22ThisYear = new Date(now.getFullYear(), 2, 22);
-    const march22LastYear = new Date(now.getFullYear() - 1, 2, 22);
-
-    let daysFromNewYear;
-    if (now >= march22ThisYear) {
-        daysFromNewYear = Math.floor((now - march22ThisYear) / oneDay);
-    } else {
-        daysFromNewYear = Math.floor((now - march22LastYear) / oneDay);
+    // Map real-world months to Eudorian moons
+    let defaultMoonIndex;
+    switch(month) {
+        case 2: defaultMoonIndex = 0; break; // March - Eudorasis
+        case 3: defaultMoonIndex = 1; break; // April - Primoria
+        case 4: defaultMoonIndex = 2; break; // May - Sera
+        case 5: defaultMoonIndex = 3; break; // June - Maunox
+        case 6: defaultMoonIndex = 4; break; // July - Naimara
+        case 7: defaultMoonIndex = 5; break; // August - Afronox
+        case 8: defaultMoonIndex = 6; break; // September - Eudorine
+        case 9: defaultMoonIndex = 7; break; // October - Suliamun
+        case 10: defaultMoonIndex = 8; break; // November - Naaviemun
+        case 11: defaultMoonIndex = 9; break; // December - Kanythos
+        case 0: defaultMoonIndex = 10; break; // January - Zendariyah
+        case 1: defaultMoonIndex = day <= 19 ? 11 : 12; break; // February
+        default: defaultMoonIndex = 0;
     }
 
-    const defaultMoonIndex = Math.floor(daysFromNewYear / 28) % 13;
-
-    // Initialize current moon index
-    if (startMoonIndex !== undefined) {
-        currentNogaMoonIndex = startMoonIndex;
-    } else if (currentNogaMoonIndex === null) {
+    // Initialize current moon index if not set
+    if (currentNogaMoonIndex === null) {
         currentNogaMoonIndex = defaultMoonIndex;
     }
 
@@ -27170,14 +26559,6 @@ function showRegionDetail(regionId, unionKey) {
                 </div>
             ` : ''}
 
-            ${regionId === 'xuerai' ? `
-            <div class="detail-section" style="background: rgba(100, 149, 237, 0.1); border-left: 4px solid #6495ED; padding: 1rem; margin-bottom: 1.5rem; border-radius: 0 0.5rem 0.5rem 0;">
-                <h3 style="color: #6495ED; margin-top: 0;">The Spirits of Xuerai</h3>
-                <p>Deep within Xuerai lie the bound spirits of ancient chaos. Learn about the legends of the frozen north.</p>
-                <button onclick="renderChaoticSpirits()" style="background: var(--bg-primary); color: var(--accent-primary); border: 1px solid var(--accent-primary); padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-family: 'Cinzel', serif; margin-top: 10px;">Read about the Chaotic Spirits →</button>
-            </div>
-            ` : ''}
-
             ${region.culture ? `
                 <div class="detail-section">
                     <h3>Culture</h3>
@@ -30026,70 +29407,53 @@ function updateCurrentMoonWidget() {
 
     // Get current date
     const now = new Date();
-    const oneDay = 1000 * 60 * 60 * 24;
+    const month = now.getMonth(); // 0-11 (January = 0, December = 11)
+    const day = now.getDate(); // 1-31
 
-    // Noga calendar year starts on March 22
-    // Each moon is exactly 28 days
-    const march22ThisYear = new Date(now.getFullYear(), 2, 22); // March 22 of current year
-    const march22LastYear = new Date(now.getFullYear() - 1, 2, 22); // March 22 of last year
-
-    // Calculate which moon (0-12) and which day within that moon (1-28)
+    // Map real-world months to Eudorian moons
     let moonIndex;
-    let dayInMoon;
-    let daysFromNewYear;
 
-    if (now >= march22ThisYear) {
-        // From March 22 onwards in current year
-        daysFromNewYear = Math.floor((now - march22ThisYear) / oneDay);
-    } else {
-        // Before March 22 (we're in the previous Noga year that started last March 22)
-        daysFromNewYear = Math.floor((now - march22LastYear) / oneDay);
+    switch(month) {
+        case 2: moonIndex = 0; break; // March - Eudorasis
+        case 3: moonIndex = 1; break; // April - Primoria
+        case 4: moonIndex = 2; break; // May - Sera
+        case 5: moonIndex = 3; break; // June - Maunox
+        case 6: moonIndex = 4; break; // July - Naimara
+        case 7: moonIndex = 5; break; // August - Afronox
+        case 8: moonIndex = 6; break; // September - Eudorine
+        case 9: moonIndex = 7; break; // October - Suliamun
+        case 10: moonIndex = 8; break; // November - Naaviemun
+        case 11: moonIndex = 9; break; // December - Kanythos
+        case 0: moonIndex = 10; break; // January - Zendariyah
+        case 1: moonIndex = day <= 19 ? 11 : 12; break; // February
+        default: moonIndex = 0;
     }
-
-    moonIndex = Math.floor(daysFromNewYear / 28);
-    dayInMoon = (daysFromNewYear % 28) + 1;
-
-    // Wrap around if moonIndex exceeds 12 (there are 13 moons: 0-12)
-    moonIndex = moonIndex % 13;
 
     const currentMoon = moons[moonIndex];
     const currentHolidays = holidays[moonIndex] || [];
 
     // Find upcoming holidays and check if today is a holiday
     const upcomingHolidays = currentHolidays
-        .filter(h => h.day >= dayInMoon)
+        .filter(h => h.day >= day)
         .slice(0, 2);
 
-    const todayHoliday = currentHolidays.find(h => h.day === dayInMoon);
+    const todayHoliday = currentHolidays.find(h => h.day === day);
 
     // Update widget
     const iconElement = document.getElementById('moonWidgetIcon');
     const nameElement = document.getElementById('moonWidgetName');
-    const dateElement = document.getElementById('moonWidgetDate');
     const zodiacElement = document.getElementById('moonWidgetZodiac');
     const holidaysElement = document.getElementById('moonWidgetHolidays');
-    const linkElement = document.getElementById('moonWidgetLink');
 
-    if (iconElement && nameElement && dateElement && zodiacElement && holidaysElement && currentMoon) {
+    if (iconElement && nameElement && zodiacElement && holidaysElement && currentMoon) {
         iconElement.textContent = currentMoon.icon;
         nameElement.textContent = currentMoon.name;
-
-        // Display today's date
-        dateElement.textContent = `${dayInMoon}${getDaySuffix(dayInMoon)}`;
 
         // Display zodiac
         zodiacElement.innerHTML = `
             <span class="zodiac-symbol">${currentMoon.zodiac.symbol}</span>
             <span class="zodiac-sign">${currentMoon.zodiac.sign}</span>
         `;
-
-        // Update the link to open to current moon
-        if (linkElement) {
-            linkElement.onclick = function() {
-                renderNogaCalendar(moonIndex);
-                return false;
-            };
-        }
 
         // Display holidays
         let holidaysHTML = '';
@@ -30559,46 +29923,3 @@ function resetRelationshipMap() {
     });
     network.fit();
 }
-function renderChaoticSpirits() {
-    const contentArea = document.getElementById('contentArea');
-
-    // Generate breadcrumbs
-    const breadcrumbs = generateBreadcrumbs([
-        { name: 'Home', onclick: 'showWelcomeScreen()' },
-        { name: 'The Four Chaotic Spirits', onclick: '' }
-    ]);
-
-    // Generate See Also links
-    const seeAlsoLinks = [
-        { name: 'Eckio - God of Xuerai and Spirits', onclick: 'showGodDetail("eckio")' },
-        { name: 'Xuerai Region', onclick: 'loadView("xuerai")' },
-        { name: 'Sì Líng Zhuān', onclick: 'renderLocationDetail("si-ling-zhuan")' }
-    ];
-    const seeAlso = generateSeeAlso(seeAlsoLinks);
-
-    // Generate categories
-    const categories = ['Spirits & Guardians', 'Ancient Demons', 'Xuerai', 'Chaotic Spirits', 'Eckio'];
-    const categoriesHTML = generateCategories(categories);
-
-    contentArea.innerHTML = `
-        <div class="region-detail">
-            ${breadcrumbs}
-
-            <h1 class="wiki-title">The Four Chaotic Spirits of Xuerai</h1>
-            <p class="wiki-subtitle">Ancient malevolent entities contained by Eckio</p>
-
-            <!-- OVERVIEW SECTION -->
-            <details open style="margin: 1.5rem 0; border: 3px solid var(--accent-primary); border-radius: 0.5rem; padding: 1rem; background: var(--bg-tertiary);">
-                <summary style="cursor: pointer; font-weight: 600; color: var(--accent-primary); font-size: 1.2rem;">▶ Overview</summary>
-                <div style="margin-top: 1rem;">
-                    <p>The Four Chaotic Spirits are ancient, malevolent entities that embody the darkest aspects of mortal nature:</p>
-                    <ul>
-                        <li><strong style="color: #dc2626;">Lóng Wáng (龙王) - The Dragon King:</strong> Power-hungry desire</li>
-                        <li><strong style="color: #3b82f6;">Xing Troll - The Rage Incarnate:</strong> Destructive rage</li>
-                        <li><strong style="color: #000;">Junpei Bear - The Devourer:</strong> Wild animalistic impulses</li>
-                        <li><strong style="color: #a855f7;">Kanata Mask - The Silent Death:</strong> Chaotic instability</li>
-                    </ul>
-                    <p>These spirits once terrorized the region of Xuerai until <strong>Eckio, the God of Xuerai and Spirits</strong>, contained them within four sacred pillars at Sì Líng Zhuān to protect the world from their corrupting influence.</p>
-                    <p>High in the unyielding frost of northern Xuerai sits <strong>Sì Líng Zhuān</strong>, the sacred and accursed expanse where the four chaotic spirits were bound. The land itself seems carved from old fear—silent, wind-torn, and utterly exposed to the winter sky. It lies just beyond the Hu Guiying Forest, a place whispered about in taverns and temples, where even seasoned warriors admit they've heard laughter with no source or encountered footsteps that never leave prints.</p>
-                </div>
-            </details>
