@@ -1,0 +1,30 @@
+{
+  "name": "Eudoria Wiki",
+  "short_name": "Eudoria",
+  "description": "A world of balance, harmony, and divine unity - Explore the regions, gods, and lore of Eudoria",
+  "start_url": "/EudoriaWiki-/",
+  "display": "standalone",
+  "background_color": "#0d1812",
+  "theme_color": "#d4af37",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "app/eudoriaapplogo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "app/eudoriaapplogo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["entertainment", "education", "books"],
+  "screenshots": [],
+  "share_target": {
+    "action": "/EudoriaWiki-/",
+    "method": "GET"
+  }
+}

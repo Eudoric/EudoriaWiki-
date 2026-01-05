@@ -7,6 +7,21 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Eudoria Wiki</title>
+
+    <!-- PWA Meta Tags -->
+    <meta name="description" content="A world of balance, harmony, and divine unity - Explore the regions, gods, and lore of Eudoria">
+    <meta name="theme-color" content="#d4af37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Eudoria">
+
+    <!-- App Icons -->
+    <link rel="icon" type="image/jpeg" href="app/eudoriaapplogo.jpeg">
+    <link rel="apple-touch-icon" href="app/eudoriaapplogo.jpeg">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+
     <link rel="stylesheet" href="styles.css?v=1767054841">
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <style>
@@ -227,5 +242,20 @@
     </button>
 
     <script src="script.js?v=1736108400"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/EudoriaWiki-/sw.js')
+                    .then((registration) => {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch((err) => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
