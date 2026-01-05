@@ -29439,15 +29439,20 @@ function updateCurrentMoonWidget() {
 
     const todayHoliday = currentHolidays.find(h => h.day === day);
 
+    // Calculate Eudorian day (offset by 5 days from real-world date)
+    const eudorianDay = day + 5;
+
     // Update widget
     const iconElement = document.getElementById('moonWidgetIcon');
     const nameElement = document.getElementById('moonWidgetName');
+    const dateElement = document.getElementById('moonWidgetDate');
     const zodiacElement = document.getElementById('moonWidgetZodiac');
     const holidaysElement = document.getElementById('moonWidgetHolidays');
 
-    if (iconElement && nameElement && zodiacElement && holidaysElement && currentMoon) {
+    if (iconElement && nameElement && dateElement && zodiacElement && holidaysElement && currentMoon) {
         iconElement.textContent = currentMoon.icon;
         nameElement.textContent = currentMoon.name;
+        dateElement.textContent = eudorianDay + getDaySuffix(eudorianDay);
 
         // Display zodiac
         zodiacElement.innerHTML = `
